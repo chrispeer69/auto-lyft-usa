@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { isSupabaseConfigured, supabase } from '../lib/supabase';
 import { siteConfig } from '../siteConfig';
 
 const SERVICE_OPTIONS = [
@@ -37,6 +37,17 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // No database configured — send them to the phone rather than silently
+    // dropping the request.
+    if (!supabase) {
+      setStatus('error');
+      setErrorMessage(
+        `Our request form is temporarily unavailable. Please call us at ${siteConfig.phone}.`
+      );
+      return;
+    }
+
     setStatus('loading');
     setErrorMessage('');
 
@@ -92,6 +103,27 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
+              {!isSupabaseConfigured && (
+                <div className="mb-6 bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start space-x-3">
+                  <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-amber-800">
+                      Online requests are temporarily unavailable
+                    </p>
+                    <p className="text-sm text-amber-700">
+                      Please call{' '}
+                      <a
+                        href={siteConfig.phoneHref}
+                        className="font-semibold underline"
+                      >
+                        {siteConfig.phone}
+                      </a>{' '}
+                      — we answer 24/7.
+                    </p>
+                  </div>
+                </div>
+              )}
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>

@@ -1,0 +1,20 @@
+# Build/run instructions for Railway (Nixpacks).
+#
+# Nixpacks makes the service's environment variables available during the build
+# phase, which matters here: Vite inlines VITE_* values at BUILD time, not at
+# run time. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in Railway before
+# deploying, and redeploy after any change to them.
+
+providers = ["node"]
+
+[phases.setup]
+nixPkgs = ["nodejs_20", "caddy"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build", "caddy fmt --overwrite Caddyfile"]
+
+[start]
+cmd = "caddy run --config Caddyfile --adapter caddyfile"

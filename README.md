@@ -17,7 +17,8 @@ Live at **https://autolyftusa.online**
 | Tailwind 3 | All styling (utility classes, no separate CSS)   |
 | lucide-react | Icons                                          |
 | Supabase   | Stores contact-form submissions                  |
-| Netlify    | Hosting                                          |
+| Caddy      | Serves the built site in production               |
+| Railway    | Hosting                                          |
 
 ## Running it locally
 
@@ -57,7 +58,9 @@ src/
     Footer.tsx          Footer nav + contact info
 index.html              Page title, meta tags, SEO structured data
 supabase/schema.sql     Database table + security policies
-netlify.toml            Build and redirect settings for Netlify
+Caddyfile               Production web server config (SPA routing, caching)
+nixpacks.toml           How Railway builds and starts the site
+railway.json            Railway builder + restart policy
 ```
 
 ## Common edits
@@ -91,8 +94,8 @@ To take ownership:
 2. Open SQL Editor, paste in `supabase/schema.sql`, and run it.
 3. Go to Project Settings → API and copy the **Project URL** and the **anon
    public** key.
-4. Put those two values in `.env` (local) and in Netlify under
-   Site settings → Environment variables (production).
+4. Put those two values in `.env` (local) and in Railway under
+   your service → **Variables** (production).
 5. Redeploy.
 
 The anon key is safe to expose in the browser — that is what it is designed
@@ -100,16 +103,53 @@ for, and the security policies in `schema.sql` mean the public can submit a
 request but cannot read anything back. Never put the `service_role` key in
 this project.
 
-## Deploying
+## Deploying to Railway
 
-Netlify builds from this repository. Pushing to `main` triggers a deploy.
+Railway builds from this repository. Pushing to `main` triggers a deploy.
 
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Required environment variables: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`
+**First-time setup**
 
-The domain `autolyftusa.online` is registered at GoDaddy and its DNS points at
-Netlify.
+1. In Railway: **New Project → Deploy from GitHub repo →
+   `chrispeer69/auto-lyft-usa`**.
+2. Open the service → **Variables** and add both:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+3. Deploy. Railway reads `nixpacks.toml`: it runs `npm ci`, then
+   `npm run build`, then serves `dist/` with Caddy on `$PORT`.
+4. Confirm the generated `*.up.railway.app` URL loads before touching DNS.
+
+**Important:** Vite bakes `VITE_*` variables into the JavaScript at *build*
+time, not run time. Changing a variable in Railway does nothing until you
+**redeploy**. If they are missing entirely the site still loads fine — only the
+contact form disables itself and tells visitors to call.
+
+## Pointing the domain at Railway
+
+`autolyftusa.online` is registered at GoDaddy.
+
+1. In Railway: service → **Settings → Networking → Custom Domain**, add the
+   domain. Railway shows you the DNS record it wants.
+2. Add that record at GoDaddy (**My Products → DNS → Manage Zones**).
+3. Wait for Railway to show the domain as verified, then delete the old
+   Netlify DNS records so nothing points at Netlify any more.
+4. Only after the site is confirmed live on Railway, delete the Netlify site.
+
+**The apex-domain catch.** Railway issues a **CNAME** target. DNS does not
+allow a CNAME on a bare/apex domain, and GoDaddy does not support the
+CNAME-flattening (ALIAS/ANAME) workaround that some providers offer. So
+`autolyftusa.online` with no `www` cannot point at Railway through GoDaddy DNS
+alone. Two ways around it:
+
+- **Move DNS to Cloudflare (recommended, free).** Keep the domain registered at
+  GoDaddy; just change its nameservers to Cloudflare's. Cloudflare flattens
+  CNAMEs at the apex, so the bare domain works. This is the standard fix.
+- **Use `www` as the real site.** Point `www.autolyftusa.online` at Railway via
+  CNAME, then use GoDaddy's domain forwarding to send the bare domain to
+  `www`. Simpler, but the canonical URL becomes the `www` version and
+  forwarding adds a redirect hop.
+
+Whichever you choose, make the canonical tag in `index.html` match the final
+URL exactly — see the note below.
 
 ## Notes / open items
 

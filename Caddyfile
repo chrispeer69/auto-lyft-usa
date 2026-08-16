@@ -1,0 +1,38 @@
+# Web server for the production build on Railway.
+#
+# Railway terminates TLS at its edge and forwards plain HTTP to this process on
+# $PORT, so auto_https is off here — the public site is still HTTPS.
+{
+	admin off
+	persist_config off
+	auto_https off
+
+	log {
+		format json
+	}
+
+	servers {
+		trusted_proxies static private_ranges
+	}
+}
+
+:{$PORT:3000} {
+	log {
+		format json
+	}
+
+	root * dist
+	encode gzip zstd
+
+	# Hashed build assets never change contents — cache them hard.
+	@assets path /assets/*
+	header @assets Cache-Control "public, max-age=31536000, immutable"
+
+	# index.html must always be revalidated so deploys take effect immediately.
+	@html path / /index.html
+	header @html Cache-Control "public, max-age=0, must-revalidate"
+
+	# Single-page app: unknown paths fall back to index.html.
+	try_files {path} /index.html
+	file_server
+}
