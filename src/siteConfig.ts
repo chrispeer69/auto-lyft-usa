@@ -9,8 +9,13 @@ export const siteConfig = {
    * entry is built from this, so it must match the domain the site is actually
    * served from — pointing it at a domain you do not control hands your search
    * ranking to that domain.
+   *
+   * This is the WWW host on purpose. GoDaddy DNS cannot point a bare domain at
+   * Railway (no CNAME flattening at the apex), so www is the real site and the
+   * bare domain forwards to it. If DNS ever moves to Cloudflare, change this
+   * back to the bare domain and rebuild.
    */
-  origin: 'https://autolyftusa.online',
+  origin: 'https://www.autolyftusa.online',
   phone: '614-633-7935',
   phoneHref: 'tel:614-633-7935',
   email: 'info@autolyftusa.com',

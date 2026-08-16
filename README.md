@@ -3,7 +3,7 @@
 Marketing site for Auto Lyft USA, the 24/7 towing and roadside assistance
 service covering the Columbus, Dayton, and Cincinnati metros.
 
-Live at **https://autolyftusa.online**
+Live at **https://www.autolyftusa.online**
 
 ---
 
@@ -55,11 +55,14 @@ npm run typecheck  # type errors only, no build
 
 ```
 public/                 Static files served as-is
-  3.png                 Header logo
+  logo-header.png       Header logo (optimised; original in design-assets/)
   auto_logo.jpg         Footer logo + favicon + social share image
+  google*.html          Search Console verification file
+design-assets/          Full-resolution originals, NOT served to visitors
 scripts/
   prerender.mjs         Renders every route to static HTML for SEO
   generate-seo-files.mjs  Builds sitemap.xml + robots.txt from the data files
+  seo-audit.mjs         Checks all 96 pages; fails the build on errors
 src/
   siteConfig.ts         Phone, email, domain, social links — EDIT HERE FIRST
   routes.tsx            The route table (client)
@@ -79,9 +82,11 @@ src/
     Contact.tsx         Contact form (writes to Supabase)
     Hero / Services / About / ServiceAreas / Fleet / Testimonials
   pages/                One file per page type
+  lib/seoText.ts        Clamps titles/descriptions to Google's limits
 supabase/schema.sql     Database table + security policies
-Caddyfile               Production web server config
-nixpacks.toml           How Railway builds and starts the site
+Dockerfile              How Railway builds and runs the site
+Caddyfile               Production web server config (routing, caching, 404s)
+railway.json            Tells Railway to use the Dockerfile
 ```
 
 ## Common edits
@@ -108,13 +113,18 @@ loudly if a route cannot be prerendered.
 ## How the SEO works
 
 This is a React single-page app, which normally means crawlers see an empty
-page. To avoid that, `npm run build` does four things:
+page. To avoid that, `npm run build` does five things:
 
 1. `vite build` — the normal client bundle
 2. `vite build --ssr` — the same app compiled to run in Node
 3. `scripts/prerender.mjs` — renders all 96 routes to real static HTML, each
    with its own title, description, canonical URL and JSON-LD structured data
 4. `scripts/generate-seo-files.mjs` — writes `sitemap.xml` and `robots.txt`
+5. `scripts/seo-audit.mjs` — checks every page for duplicate or over-length
+   titles and descriptions, missing canonicals, H1 problems, heading skips,
+   invalid JSON-LD, images without alt text, thin content and sitemap gaps
+
+Run the audit on its own any time with `npm run seo`.
 
 The result is that every page is a complete HTML document on disk. The React
 bundle then hydrates on top of it, so navigation stays instant.
@@ -156,8 +166,12 @@ Railway builds from this repository. Pushing to `main` triggers a deploy.
 2. Open the service → **Variables** and add both:
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
-3. Deploy. Railway reads `nixpacks.toml`: it runs `npm ci`, then
-   `npm run build`, then serves `dist/` with Caddy on `$PORT`.
+3. Deploy. Railway builds the `Dockerfile`: `npm ci`, `npm run build`, then
+   serves `dist/` with Caddy on `$PORT`.
+
+   A Dockerfile is used rather than Nixpacks on purpose — Nixpacks auto-detects
+   the `Caddyfile` and installs its own Caddy, which collides with ours and
+   fails the build outright.
 4. Confirm the generated `*.up.railway.app` URL loads before touching DNS.
 
 **Important:** Vite bakes `VITE_*` variables into the JavaScript at *build*
@@ -167,31 +181,48 @@ contact form disables itself and tells visitors to call.
 
 ## Pointing the domain at Railway
 
-`autolyftusa.online` is registered at GoDaddy.
+`autolyftusa.online` is registered at GoDaddy, and **`www.autolyftusa.online`
+is the canonical site**.
 
-1. In Railway: service → **Settings → Networking → Custom Domain**, add the
-   domain. Railway shows you the DNS record it wants.
-2. Add that record at GoDaddy (**My Products → DNS → Manage Zones**).
-3. Wait for Railway to show the domain as verified, then delete the old
-   Netlify DNS records so nothing points at Netlify any more.
-4. Only after the site is confirmed live on Railway, delete the Netlify site.
+**Why www and not the bare domain.** Railway issues a CNAME target for custom
+domains. DNS does not permit a CNAME on a bare/apex domain, and GoDaddy does
+not support the CNAME-flattening (ALIAS/ANAME) workaround that Cloudflare and
+others offer. So the bare domain cannot point at Railway through GoDaddy DNS.
+`www` takes a normal CNAME and works fine; the bare domain forwards to it.
 
-**The apex-domain catch.** Railway issues a **CNAME** target. DNS does not
-allow a CNAME on a bare/apex domain, and GoDaddy does not support the
-CNAME-flattening (ALIAS/ANAME) workaround that some providers offer. So
-`autolyftusa.online` with no `www` cannot point at Railway through GoDaddy DNS
-alone. Two ways around it:
+`src/siteConfig.ts` sets `origin` to the www host, and every canonical tag,
+`og:url` and sitemap entry is built from it. **If you ever move DNS to
+Cloudflare, change `origin` back to the bare domain and redeploy** — otherwise
+the canonicals point at a host that only redirects.
 
-- **Move DNS to Cloudflare (recommended, free).** Keep the domain registered at
-  GoDaddy; just change its nameservers to Cloudflare's. Cloudflare flattens
-  CNAMEs at the apex, so the bare domain works. This is the standard fix.
-- **Use `www` as the real site.** Point `www.autolyftusa.online` at Railway via
-  CNAME, then use GoDaddy's domain forwarding to send the bare domain to
-  `www`. Simpler, but the canonical URL becomes the `www` version and
-  forwarding adds a redirect hop.
+### Steps
 
-Whichever you choose, make the canonical tag in `index.html` match the final
-URL exactly — see the note below.
+1. **Railway** → your service → Settings → Networking → Custom Domain →
+   add `www.autolyftusa.online`. Railway shows a CNAME and a TXT record.
+2. **GoDaddy** → My Products → DNS → Manage Zones → `autolyftusa.online`:
+   - Add `CNAME` · Name `www` · Value `<the value Railway gave you>` · TTL 600
+   - Add the `TXT` record Railway gave you (used to issue the certificate)
+   - Delete any existing `www` record that points at Netlify
+3. Wait for Railway to mark the domain **verified** and issue the certificate.
+   Usually minutes; allow up to a few hours.
+4. **Forward the bare domain**: GoDaddy → Domain Settings → Forwarding →
+   forward `autolyftusa.online` to `https://www.autolyftusa.online` with a
+   **permanent (301)** redirect. A 301 passes ranking signal; a 302 does not.
+5. Confirm `https://www.autolyftusa.online` serves from Railway, then remove
+   the old Netlify DNS records and delete the Netlify site.
+
+### Verifying the cutover
+
+```bash
+# should show the Railway CNAME, not Netlify
+nslookup -type=CNAME www.autolyftusa.online 8.8.8.8
+
+# should be 200 and NOT report "Server: Netlify"
+curl -sSI https://www.autolyftusa.online | head -20
+
+# bare domain should 301 to www
+curl -sSI https://autolyftusa.online | grep -iE 'HTTP|location'
+```
 
 ## Notes / open items
 
