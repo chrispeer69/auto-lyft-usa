@@ -1,82 +1,7 @@
-import {
-  Battery,
-  Car,
-  Clock,
-  Fuel,
-  Key,
-  Package,
-  Settings,
-  Shield,
-  Truck,
-  Wrench,
-} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Clock } from 'lucide-react';
+import { FEATURED_SERVICES } from '../data/services';
 import { siteConfig } from '../siteConfig';
-
-const SERVICES = [
-  {
-    icon: Truck,
-    title: 'Emergency Towing',
-    description:
-      'Fast, professional towing for all vehicle types. From compact cars to heavy-duty trucks, our fleet handles it all.',
-    features: ['Light & Heavy Duty', 'Flatbed Available', 'Secure Transport'],
-  },
-  {
-    icon: Battery,
-    title: 'Jump Start Service',
-    description:
-      'Dead battery? We provide quick jump start services to get you back on the road in minutes.',
-    features: ['All Vehicle Types', 'Mobile Service', 'Battery Testing'],
-  },
-  {
-    icon: Key,
-    title: 'Lockout Assistance',
-    description:
-      'Locked out of your vehicle? Our technicians can safely unlock your car without damage.',
-    features: ['Non-Destructive Entry', 'All Makes & Models', 'Fast Response'],
-  },
-  {
-    icon: Fuel,
-    title: 'Fuel Delivery',
-    description:
-      'Ran out of gas? We deliver fuel directly to your location so you can continue your journey.',
-    features: ['Multiple Fuel Types', 'Emergency Delivery', 'Quick Service'],
-  },
-  {
-    icon: Wrench,
-    title: 'Tire Change',
-    description:
-      'Flat tire? Our experts will change your tire quickly and safely, getting you moving again.',
-    features: ['Spare Installation', 'Mobile Service', 'Safety Check'],
-  },
-  {
-    icon: Car,
-    title: 'Accident Recovery',
-    description:
-      'Specialized accident recovery services with careful vehicle handling and professional support.',
-    features: ['24/7 Response', 'Insurance Coordination', 'Damage Documentation'],
-  },
-  {
-    icon: Settings,
-    title: 'Winch Out Service',
-    description:
-      'Stuck in mud, snow, or a ditch? Our powerful winch equipment safely extracts your vehicle.',
-    features: ['Heavy-Duty Winch', 'Off-Road Recovery', 'Safe Extraction'],
-  },
-  {
-    icon: Package,
-    title: 'Motorcycle Towing',
-    description:
-      'Specialized motorcycle towing with equipment designed to safely transport your bike.',
-    features: ['Secure Tie-Downs', 'Experienced Handlers', 'All Bike Types'],
-  },
-  {
-    icon: Shield,
-    title: 'Long Distance Towing',
-    description:
-      'Need to transport your vehicle across states? We offer reliable long-distance towing services.',
-    features: ['Cross-Country', 'Real-Time Tracking', 'Insured Transport'],
-  },
-];
 
 export default function Services() {
   return (
@@ -96,12 +21,13 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {SERVICES.map((service) => {
+          {FEATURED_SERVICES.map((service) => {
             const Icon = service.icon;
             return (
-              <div
-                key={service.title}
-                className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-slate-200"
+              <Link
+                key={service.slug}
+                to={`/services/${service.slug}`}
+                className="group bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-slate-200 flex flex-col"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-slate-100 text-slate-900 rounded-2xl mb-6 group-hover:bg-slate-900 group-hover:text-white transition-colors">
                   <Icon className="w-8 h-8" />
@@ -112,7 +38,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-4">
                   {service.features.map((feature) => (
                     <li
                       key={feature}
@@ -123,9 +49,23 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
+                <span className="mt-auto inline-flex items-center text-sm font-semibold text-red-700 group-hover:gap-1 transition-all">
+                  Learn more
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </span>
+              </Link>
             );
           })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link
+            to="/services"
+            className="inline-flex items-center space-x-2 text-slate-900 font-bold hover:text-red-700 transition-colors"
+          >
+            <span>View all services we offer</span>
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
 
         <div className="mt-16 bg-gradient-to-r from-red-700 to-red-600 rounded-2xl p-8 sm:p-12 text-center text-white">

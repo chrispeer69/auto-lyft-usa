@@ -19,3 +19,4 @@ Thumbs.db
 # Business documents — keep private, never push to GitHub
 *.pdf
 *.docx
+dist-ssr

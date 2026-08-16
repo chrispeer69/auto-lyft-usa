@@ -1,56 +1,13 @@
-import { MapPin, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, MapPin, Phone } from 'lucide-react';
+import { CITIES_BY_METRO, METROS } from '../data/cities';
 import { siteConfig } from '../siteConfig';
 
-const AREAS = [
-  {
-    city: 'Columbus Metro',
-    description: 'Serving Columbus and surrounding areas within 50 miles',
-    coverage: '50 mile radius',
-    neighborhoods: [
-      'Downtown Columbus',
-      'Short North',
-      'German Village',
-      'Clintonville',
-      'Upper Arlington',
-      'Westerville',
-      'Dublin',
-      'Grove City',
-    ],
-    color: 'from-blue-700 to-blue-900',
-  },
-  {
-    city: 'Dayton Metro',
-    description: 'Serving Dayton and surrounding areas within 50 miles',
-    coverage: '50 mile radius',
-    neighborhoods: [
-      'Downtown Dayton',
-      'Oakwood',
-      'Kettering',
-      'Beavercreek',
-      'Centerville',
-      'Huber Heights',
-      'Fairborn',
-      'Miamisburg',
-    ],
-    color: 'from-red-700 to-red-600',
-  },
-  {
-    city: 'Cincinnati Metro',
-    description: 'Serving Cincinnati and surrounding areas within 50 miles',
-    coverage: '50 mile radius',
-    neighborhoods: [
-      'Downtown Cincinnati',
-      'Over-the-Rhine',
-      'Hyde Park',
-      'Mount Adams',
-      'West Chester',
-      'Mason',
-      'Blue Ash',
-      'Norwood',
-    ],
-    color: 'from-blue-700 to-blue-900',
-  },
-];
+const METRO_COLORS: Record<string, string> = {
+  columbus: 'from-blue-700 to-blue-900',
+  dayton: 'from-red-700 to-red-600',
+  cincinnati: 'from-blue-700 to-blue-900',
+};
 
 export default function ServiceAreas() {
   return (
@@ -70,41 +27,55 @@ export default function ServiceAreas() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {AREAS.map((area) => (
-            <div
-              key={area.city}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
-            >
+          {(['columbus', 'dayton', 'cincinnati'] as const).map((metro) => {
+            const cities = CITIES_BY_METRO(metro);
+            return (
               <div
-                className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${area.color} text-white rounded-2xl mb-6`}
+                key={metro}
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
-                <MapPin className="w-8 h-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                {area.city}
-              </h3>
-              <p className="text-gray-600 mb-4">{area.description}</p>
-              <div className="mb-4 px-4 py-2 bg-slate-50 rounded-lg">
-                <div className="text-sm font-semibold text-slate-900">
-                  Coverage: {area.coverage}
+                <div
+                  className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${METRO_COLORS[metro]} text-white rounded-2xl mb-6`}
+                >
+                  <MapPin className="w-8 h-8" />
                 </div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-sm font-semibold text-gray-700 mb-2">
-                  Areas We Serve:
-                </div>
-                {area.neighborhoods.map((neighborhood) => (
-                  <div
-                    key={neighborhood}
-                    className="flex items-center text-sm text-gray-600"
-                  >
-                    <div className="w-1.5 h-1.5 bg-slate-900 rounded-full mr-2" />
-                    {neighborhood}
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  {METROS[metro].label}
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Serving {METROS[metro].name} and surrounding areas within 50
+                  miles.
+                </p>
+                <div className="mb-4 px-4 py-2 bg-slate-50 rounded-lg">
+                  <div className="text-sm font-semibold text-slate-900">
+                    Coverage: 50 mile radius · {cities.length} cities
                   </div>
-                ))}
+                </div>
+                <div className="space-y-2">
+                  <div className="text-sm font-semibold text-gray-700 mb-2">
+                    Areas We Serve:
+                  </div>
+                  {cities.slice(0, 8).map((city) => (
+                    <Link
+                      key={city.slug}
+                      to={`/service-area/${city.slug}`}
+                      className="flex items-center text-sm text-gray-600 hover:text-red-700 transition-colors"
+                    >
+                      <div className="w-1.5 h-1.5 bg-slate-900 rounded-full mr-2" />
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  to="/service-areas"
+                  className="mt-4 inline-flex items-center text-sm font-semibold text-red-700 hover:gap-1 transition-all"
+                >
+                  All {METROS[metro].name} areas
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-12 text-white">

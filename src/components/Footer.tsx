@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Facebook,
   Instagram,
@@ -8,38 +9,17 @@ import {
   Twitter,
 } from 'lucide-react';
 import { siteConfig } from '../siteConfig';
+import { SERVICES } from '../data/services';
+import { CITIES_BY_METRO, METROS } from '../data/cities';
 
-type FooterProps = {
-  scrollToSection: (id: string) => void;
-};
-
-const QUICK_LINKS = [
-  { id: 'home', label: 'Home' },
-  { id: 'services', label: 'Services' },
-  { id: 'about', label: 'About Us' },
-  { id: 'areas', label: 'Service Areas' },
-  { id: 'contact', label: 'Contact' },
-];
-
-const SERVICE_LIST = [
-  'Emergency Towing',
-  'Jump Start Service',
-  'Lockout Assistance',
-  'Fuel Delivery',
-  'Tire Change',
-  'Accident Recovery',
-  'Winch Out Service',
-  'Long Distance Towing',
-];
-
-const SOCIAL_LINKS = [
+const SOCIAL = [
   { icon: Facebook, href: siteConfig.social.facebook, label: 'Facebook' },
   { icon: Twitter, href: siteConfig.social.twitter, label: 'Twitter' },
   { icon: Instagram, href: siteConfig.social.instagram, label: 'Instagram' },
   { icon: Linkedin, href: siteConfig.social.linkedin, label: 'LinkedIn' },
-];
+].filter((s): s is typeof s & { href: string } => Boolean(s.href));
 
-export default function Footer({ scrollToSection }: FooterProps) {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -58,34 +38,47 @@ export default function Footer({ scrollToSection }: FooterProps) {
               Ohio's most trusted 24/7 towing and roadside assistance service
               serving Columbus, Dayton, and Cincinnati metros.
             </p>
-            <div className="flex space-x-4">
-              {SOCIAL_LINKS.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="text-gray-400 hover:text-red-700 transition-colors"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </div>
+            {SOCIAL.length > 0 && (
+              <div className="flex space-x-4">
+                {SOCIAL.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      aria-label={social.label}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-red-700 transition-colors"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {QUICK_LINKS.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
+              {[
+                { to: '/', label: 'Home' },
+                { to: '/services', label: 'Services' },
+                { to: '/service-areas', label: 'Service Areas' },
+                { to: '/auto-repair', label: 'Auto Repair' },
+                { to: '/vip-program', label: 'VIP Program' },
+                { to: '/blog', label: 'Blog' },
+                { to: '/quote', label: 'Get a Quote' },
+                { to: '/sos', label: 'Emergency SOS' },
+              ].map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
                     className="text-gray-400 hover:text-red-700 transition-colors"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -93,9 +86,16 @@ export default function Footer({ scrollToSection }: FooterProps) {
 
           <div>
             <h3 className="text-lg font-bold mb-4">Our Services</h3>
-            <ul className="space-y-2 text-gray-400">
-              {SERVICE_LIST.map((service) => (
-                <li key={service}>{service}</li>
+            <ul className="space-y-2">
+              {SERVICES.slice(0, 10).map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    to={`/services/${service.slug}`}
+                    className="text-gray-400 hover:text-red-700 transition-colors"
+                  >
+                    {service.short}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -140,30 +140,56 @@ export default function Footer({ scrollToSection }: FooterProps) {
           </div>
         </div>
 
+        {/* Service-area link block — helps both visitors and search engines
+            find the city pages. */}
+        <div className="border-t border-gray-800 pt-8 mb-8">
+          <h3 className="text-lg font-bold mb-4">Areas We Serve</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {(['columbus', 'dayton', 'cincinnati'] as const).map((metro) => (
+              <div key={metro}>
+                <div className="text-sm font-semibold text-gray-300 mb-2">
+                  {METROS[metro].label}
+                </div>
+                <div className="flex flex-wrap gap-x-3 gap-y-1">
+                  {CITIES_BY_METRO(metro).map((city) => (
+                    <Link
+                      key={city.slug}
+                      to={`/service-area/${city.slug}`}
+                      className="text-sm text-gray-500 hover:text-red-700 transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
               © {currentYear} Auto Lyft USA. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <a
-                href="#"
+              <Link
+                to="/privacy-policy"
                 className="text-gray-400 hover:text-red-700 transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/terms-of-service"
                 className="text-gray-400 hover:text-red-700 transition-colors"
               >
                 Terms of Service
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/accessibility"
                 className="text-gray-400 hover:text-red-700 transition-colors"
               >
-                Cookie Policy
-              </a>
+                Accessibility
+              </Link>
             </div>
           </div>
         </div>

@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="/auto_logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
 
+    <!--
+      These are the site-wide defaults. Every page overrides the title,
+      description, canonical URL and structured data at runtime via
+      src/components/Seo.tsx, and the prerender step bakes the correct values
+      into each page's static HTML at build time.
+    -->
     <title>Auto Lyft USA - 24/7 Towing Columbus, Dayton &amp; Cincinnati Ohio</title>
     <meta name="description" content="Fast, reliable 24/7 towing and roadside assistance in Columbus, Dayton & Cincinnati, Ohio. Emergency towing, jump starts, lockout service & more. 15-min avg response time. Call 614-633-7935 now!" />
-    <meta name="keywords" content="towing service Ohio, roadside assistance Columbus, emergency towing Dayton, Cincinnati towing, 24/7 towing Columbus, jump start Ohio, lockout service, fuel delivery, tire change, accident recovery Columbus, winch out Dayton, motorcycle towing Cincinnati" />
     <meta name="author" content="Auto Lyft USA" />
 
-    <link rel="canonical" href="https://autolyftusa.com" />
+    <link rel="canonical" href="https://autolyftusa.online" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Auto Lyft USA - 24/7 Towing Columbus, Dayton & Cincinnati Ohio" />
-    <meta property="og:description" content="Fast, reliable 24/7 towing and roadside assistance in Columbus, Dayton & Cincinnati, Ohio. Emergency towing, jump starts, lockout service & more. Call 614-633-7935 now!" />
-    <meta property="og:url" content="https://autolyftusa.com" />
-    <meta property="og:image" content="/auto_logo.jpg" />
+    <meta property="og:description" content="Fast, reliable 24/7 towing and roadside assistance in Columbus, Dayton & Cincinnati, Ohio. Call 614-633-7935 now!" />
+    <meta property="og:url" content="https://autolyftusa.online" />
+    <meta property="og:image" content="https://autolyftusa.online/auto_logo.jpg" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Auto Lyft USA" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Auto Lyft USA - 24/7 Towing Columbus, Dayton & Cincinnati Ohio" />
     <meta name="twitter:description" content="Fast, reliable 24/7 towing and roadside assistance in Columbus, Dayton & Cincinnati, Ohio. Call 614-633-7935 now!" />
-    <meta name="twitter:image" content="/auto_logo.jpg" />
+    <meta name="twitter:image" content="https://autolyftusa.online/auto_logo.jpg" />
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
@@ -31,93 +37,7 @@
     <meta name="geo.region" content="US-OH" />
     <meta name="geo.placename" content="Columbus, Dayton, Cincinnati, Ohio" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRepair",
-      "name": "Auto Lyft USA",
-      "description": "24/7 Emergency Towing and Roadside Assistance Services in Columbus, Dayton, and Cincinnati, Ohio",
-      "url": "https://autolyftusa.com",
-      "telephone": "614-633-7935",
-      "email": "info@autolyftusa.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "OH",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Columbus",
-          "addressRegion": "OH",
-          "addressCountry": "US"
-        },
-        {
-          "@type": "City",
-          "name": "Dayton",
-          "addressRegion": "OH",
-          "addressCountry": "US"
-        },
-        {
-          "@type": "City",
-          "name": "Cincinnati",
-          "addressRegion": "OH",
-          "addressCountry": "US"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "priceRange": "$$",
-      "image": "/auto_logo.jpg",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "12000"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Towing and Roadside Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Emergency Towing" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Jump Start Service" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Lockout Assistance" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Fuel Delivery" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Tire Change Service" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Accident Recovery" }
-          }
-        ]
-      }
-    }
-    </script>
+    <link rel="preconnect" href="https://images.pexels.com" />
   </head>
   <body>
     <div id="root"></div>

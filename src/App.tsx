@@ -1,45 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import ServiceAreas from './components/ServiceAreas';
-import Fleet from './components/Fleet';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-export default function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
+/**
+ * Scrolls to the top on navigation, but honours in-page #anchor links so the
+ * homepage section links keep working.
+ */
+function ScrollManager() {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    if (hash) {
+      const el = document.getElementById(hash.slice(1));
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-    const top = element.getBoundingClientRect().top + window.pageYOffset - 80;
-    window.scrollTo({ top, behavior: 'smooth' });
-  };
+  return null;
+}
 
+export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header isScrolled={isScrolled} scrollToSection={scrollToSection} />
-
-      <main className="pt-20">
-        <Hero scrollToSection={scrollToSection} />
-        <Services />
-        <About />
-        <ServiceAreas />
-        <Fleet />
-        <Testimonials />
-        <Contact />
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <Header />
+      <ScrollManager />
+      <main className="pt-20 flex-1">
+        <Outlet />
       </main>
-
-      <Footer scrollToSection={scrollToSection} />
+      <Footer />
     </div>
   );
 }

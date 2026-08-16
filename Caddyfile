@@ -32,7 +32,8 @@
 	@html path / /index.html
 	header @html Cache-Control "public, max-age=0, must-revalidate"
 
-	# Single-page app: unknown paths fall back to index.html.
-	try_files {path} /index.html
+	# Every route is prerendered to <route>/index.html, so try that first and
+	# only fall back to the SPA shell for anything genuinely unknown.
+	try_files {path} {path}/index.html /index.html
 	file_server
 }

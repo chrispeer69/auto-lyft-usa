@@ -5,7 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    // Ship source maps so this site can always be recovered / debugged from production.
+    // Ship source maps so this site can always be recovered / debugged from
+    // production — this project itself was rebuilt from a deployed bundle.
     sourcemap: true,
+    chunkSizeWarningLimit: 800,
   },
 });

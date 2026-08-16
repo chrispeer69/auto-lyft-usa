@@ -36,49 +36,91 @@ npm run preview    # serve the production build locally
 npm run typecheck  # type errors only, no build
 ```
 
+## Site structure
+
+96 pages, all generated from data files rather than hand-written:
+
+| Route | Count | Source of truth |
+| ----- | ----- | --------------- |
+| `/` | 1 | `src/pages/Home.tsx` |
+| `/services` + `/services/:slug` | 19 | `src/data/services.ts` |
+| `/service-areas` + `/service-area/:slug` | 49 | `src/data/cities.ts` |
+| `/auto-repair` + `/auto-repair/:slug` | 13 | `src/data/autoRepair.ts` |
+| `/blog` + `/blog/:slug` | 7 | `src/data/blog.ts` |
+| `/vip-program`, `/quote`, `/sos` | 3 | individual pages |
+| `/privacy-policy`, `/terms-of-service`, `/accessibility` | 3 | `src/pages/LegalPage.tsx` |
+| `/404` | 1 | `src/pages/NotFound.tsx` |
+
 ## Where things live
 
 ```
 public/                 Static files served as-is
   3.png                 Header logo
   auto_logo.jpg         Footer logo + favicon + social share image
+scripts/
+  prerender.mjs         Renders every route to static HTML for SEO
+  generate-seo-files.mjs  Builds sitemap.xml + robots.txt from the data files
 src/
-  siteConfig.ts         Phone, email, service area, social links — EDIT HERE FIRST
-  App.tsx               Page shell, scroll handling, section order
-  lib/supabase.ts       Supabase client + ContactRequest type
+  siteConfig.ts         Phone, email, domain, social links — EDIT HERE FIRST
+  routes.tsx            The route table (client)
+  entry-server.tsx      Same routes for prerendering — KEEP IN SYNC
+  App.tsx               Layout: header, footer, scroll handling
+  seoHead.ts            Collects head tags during prerendering
+  data/
+    cities.ts           Every city page: copy, highways, landmarks, ZIPs
+    services.ts         Every service page: copy, features, FAQs
+    autoRepair.ts       Every repair page
+    blog.ts             Every blog post
   components/
-    Header.tsx          Fixed nav bar + mobile menu
-    Hero.tsx            Top banner
-    Services.tsx        The 9 service cards
-    About.tsx           About copy, stats, "Why choose us"
-    ServiceAreas.tsx    Columbus / Dayton / Cincinnati coverage
-    Fleet.tsx           Truck types
-    Testimonials.tsx    Customer reviews
+    Seo.tsx             Per-page title, meta, canonical, structured data
+    ui.tsx              PageHero, CallToAction, FaqList, Breadcrumbs, Section
+    Header.tsx          Nav with dropdowns + mobile menu
+    Footer.tsx          Footer nav, service links, city links
     Contact.tsx         Contact form (writes to Supabase)
-    Footer.tsx          Footer nav + contact info
-index.html              Page title, meta tags, SEO structured data
+    Hero / Services / About / ServiceAreas / Fleet / Testimonials
+  pages/                One file per page type
 supabase/schema.sql     Database table + security policies
-Caddyfile               Production web server config (SPA routing, caching)
+Caddyfile               Production web server config
 nixpacks.toml           How Railway builds and starts the site
-railway.json            Railway builder + restart policy
 ```
 
 ## Common edits
 
-**Change the phone number or email** — edit `src/siteConfig.ts`. It updates
-everywhere on the page at once. Also update `index.html`, which repeats the
-phone number in the SEO tags for Google.
+**Change the phone number, email or domain** — `src/siteConfig.ts`. It updates
+every page at once, including canonical URLs and the sitemap.
 
-**Change service descriptions** — the `SERVICES` array at the top of
-`src/components/Services.tsx`.
+**Add a city** — add one entry to the `CITIES` array in `src/data/cities.ts`.
+That single entry creates the page, its nav entry, its footer links, its
+sitemap entry and its structured data. Give it genuinely local copy — the
+highways, landmarks and intro are what stop Google treating these as
+duplicate pages.
 
-**Change the cities or neighborhoods** — the `AREAS` array at the top of
-`src/components/ServiceAreas.tsx`.
+**Add a service** — add an entry to `SERVICES` in `src/data/services.ts`. Set
+`featured: true` to also show it in the homepage grid.
 
-**Add or edit a review** — the `TESTIMONIALS` array at the top of
-`src/components/Testimonials.tsx`.
+**Add a blog post** — add an entry to `BLOG_POSTS` in `src/data/blog.ts`. The
+body is a list of `{h2}`, `{p}` and `{ul}` blocks.
 
-**Change the page title or Google description** — `index.html`.
+**Add a whole new route type** — add it to BOTH `src/routes.tsx` and
+`src/entry-server.tsx`, then to the arrays in the two scripts. The build fails
+loudly if a route cannot be prerendered.
+
+## How the SEO works
+
+This is a React single-page app, which normally means crawlers see an empty
+page. To avoid that, `npm run build` does four things:
+
+1. `vite build` — the normal client bundle
+2. `vite build --ssr` — the same app compiled to run in Node
+3. `scripts/prerender.mjs` — renders all 96 routes to real static HTML, each
+   with its own title, description, canonical URL and JSON-LD structured data
+4. `scripts/generate-seo-files.mjs` — writes `sitemap.xml` and `robots.txt`
+
+The result is that every page is a complete HTML document on disk. The React
+bundle then hydrates on top of it, so navigation stays instant.
+
+If a route fails to prerender the build **fails** rather than silently
+shipping a blank page.
 
 ## Own your leads
 
@@ -153,12 +195,16 @@ URL exactly — see the note below.
 
 ## Notes / open items
 
-- `index.html` sets the canonical URL and Open Graph URL to
-  `https://autolyftusa.com`, but the live site is `autolyftusa.online`. If the
-  `.com` is not yours, these should be changed to `.online` — pointing the
-  canonical tag at a domain you do not control tells Google to rank that one
-  instead.
-- The footer's Privacy Policy, Terms of Service, and Cookie Policy links, and
-  the four social icons, all point at `#` — they need real destinations.
-- Hero, About, and Fleet images are hotlinked from Pexels. Replacing them with
-  photos of your own trucks would load faster and look genuine.
+- **Social links are hidden, not broken.** `siteConfig.social` is set to `null`
+  for all four networks, so the footer icons do not render at all rather than
+  linking to `#`. Put your real profile URLs in to switch them back on.
+- **Legal pages are drafts.** Privacy, Terms and Accessibility are written to
+  be accurate about what this site actually does, but have your attorney read
+  them before you rely on them.
+- **VIP pricing is indicative.** The figures on `/vip-program` are placeholders
+  and the page says so. Set your real prices in `src/pages/VipProgram.tsx`.
+- **Photography is stock.** Hero, About and Fleet images are hotlinked from
+  Pexels. Replacing them with photos of your own trucks would load faster, look
+  genuine, and give you images you own.
+- **After the domain moves,** submit `https://autolyftusa.online/sitemap.xml`
+  in Google Search Console so the 96 pages get crawled promptly.
