@@ -5,6 +5,7 @@ import Seo, {
   businessSchema,
   faqSchema,
 } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, FaqList, PageHero, Section } from '../components/ui';
 import { getService, SERVICES } from '../data/services';
 import { CITIES_BY_METRO, METROS } from '../data/cities';
@@ -23,8 +24,10 @@ export default function ServicePage() {
   return (
     <>
       <Seo
-        title={`${service.title} in Columbus, Dayton & Cincinnati | Auto Lyft USA`}
-        description={`${service.description} Available 24/7 across Ohio. Call ${siteConfig.phone}.`}
+        title={seoTitle(`${service.short} in Ohio | Auto Lyft USA`)}
+        description={seoDescription(
+          `${service.description} 24/7 across Ohio. Call ${siteConfig.phone}.`
+        )}
         path={path}
         schema={[
           breadcrumbSchema([

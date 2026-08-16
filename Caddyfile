@@ -1,4 +1,4 @@
-# Web server for the production build on Railway.
+# Web server for the production build.
 #
 # Railway terminates TLS at its edge and forwards plain HTTP to this process on
 # $PORT, so auto_https is off here — the public site is still HTTPS.
@@ -21,19 +21,35 @@
 		format json
 	}
 
-	root * dist
+	# /srv in the container; override with SITE_ROOT=dist to test locally.
+	root * {$SITE_ROOT:/srv}
 	encode gzip zstd
 
 	# Hashed build assets never change contents — cache them hard.
 	@assets path /assets/*
 	header @assets Cache-Control "public, max-age=31536000, immutable"
 
-	# index.html must always be revalidated so deploys take effect immediately.
-	@html path / /index.html
+	# HTML must always be revalidated so a deploy takes effect immediately.
+	# Matches "/" and every extensionless route path (/service-area/kettering).
+	# Note: conditions inside a named matcher are ANDed, so this is one regex
+	# rather than a path + path_regexp pair, which can never both match.
+	@html path_regexp ^/[^.]*$
 	header @html Cache-Control "public, max-age=0, must-revalidate"
 
-	# Every route is prerendered to <route>/index.html, so try that first and
-	# only fall back to the SPA shell for anything genuinely unknown.
-	try_files {path} {path}/index.html /index.html
+	header X-Content-Type-Options "nosniff"
+	header X-Frame-Options "SAMEORIGIN"
+	header Referrer-Policy "strict-origin-when-cross-origin"
+
+	# Every route is prerendered to <route>/index.html, so serve that directly.
+	# Deliberately NO catch-all rewrite to /index.html: that would answer every
+	# unknown URL with 200 and a homepage body, which Google treats as a soft
+	# 404 and can pull junk URLs into the index.
+	try_files {path} {path}/index.html
 	file_server
+
+	# Unknown paths get the real 404 page with a real 404 status.
+	handle_errors {
+		rewrite * /404/index.html
+		file_server
+	}
 }

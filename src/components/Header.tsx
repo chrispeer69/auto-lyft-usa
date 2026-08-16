@@ -64,8 +64,12 @@ export default function Header() {
         <div className="flex justify-between items-center py-2">
           <Link to="/" className="flex items-center -my-4 flex-shrink-0">
             <img
-              src="/3.png"
-              alt="Auto Lyft USA"
+              src="/logo-header.png"
+              alt="Auto Lyft USA — 24/7 towing and roadside assistance"
+              width={720}
+              height={480}
+              loading="eager"
+              decoding="async"
               className="h-[8rem] w-auto scale-[1.4]"
             />
           </Link>

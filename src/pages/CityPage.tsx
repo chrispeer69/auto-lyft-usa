@@ -5,6 +5,7 @@ import Seo, {
   businessSchema,
   faqSchema,
 } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, FaqList, PageHero, Section } from '../components/ui';
 import { getCity, METROS, nearbyCities } from '../data/cities';
 import { FEATURED_SERVICES, SERVICES } from '../data/services';
@@ -43,8 +44,10 @@ export default function CityPage() {
   return (
     <>
       <Seo
-        title={`Towing in ${city.name}, OH | 24/7 Tow Truck | Auto Lyft USA`}
-        description={`${city.blurb} Response in ${city.responseTime}. Emergency towing, jump starts, lockouts and winch outs in ${city.name}, ${city.county}. Call ${siteConfig.phone}.`}
+        title={seoTitle(`Towing in ${city.name}, OH | Auto Lyft USA`)}
+        description={seoDescription(
+          `${city.blurb} ${city.responseTime} average response. Call ${siteConfig.phone}.`
+        )}
         path={path}
         schema={[
           breadcrumbSchema([

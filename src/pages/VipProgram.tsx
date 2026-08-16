@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Check, Crown, Phone, Zap } from 'lucide-react';
 import Seo, { breadcrumbSchema, faqSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, FaqList, PageHero, Section } from '../components/ui';
 import { siteConfig } from '../siteConfig';
 
@@ -71,8 +72,10 @@ export default function VipProgram() {
   return (
     <>
       <Seo
-        title="VIP Roadside Membership | Auto Lyft USA Ohio"
-        description={`Priority dispatch and discounted towing across Columbus, Dayton and Cincinnati from $9 a month. No contract, cancel anytime. Call ${siteConfig.phone}.`}
+        title={seoTitle("VIP Roadside Membership | Auto Lyft USA Ohio")}
+        description={seoDescription(
+          `Priority dispatch and discounted towing across Columbus, Dayton and Cincinnati from $9/month. No contract. Call ${siteConfig.phone}.`
+        )}
         path="/vip-program"
         schema={[
           breadcrumbSchema([

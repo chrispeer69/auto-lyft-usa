@@ -53,7 +53,11 @@ export default function Fleet() {
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={vehicle.image}
-                  alt={vehicle.name}
+                  alt={`${vehicle.name} — ${vehicle.capacity} capacity, Auto Lyft USA fleet`}
+                  width={800}
+                  height={512}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold">

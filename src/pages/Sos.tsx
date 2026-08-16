@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, Phone, ShieldAlert, TriangleAlert } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { Section } from '../components/ui';
 import { siteConfig } from '../siteConfig';
 import { FEATURED_SERVICES } from '../data/services';
@@ -28,8 +29,10 @@ export default function Sos() {
   return (
     <>
       <Seo
-        title="Emergency SOS | Stranded? Do This Now | Auto Lyft USA"
-        description={`Broken down or in an accident in Ohio? Follow these steps to stay safe, then call ${siteConfig.phone} for 24/7 emergency towing in Columbus, Dayton and Cincinnati.`}
+        title={seoTitle("Emergency SOS | Stranded? Do This Now | Auto Lyft USA")}
+        description={seoDescription(
+          `Broken down in Ohio? Follow these steps to stay safe, then call ${siteConfig.phone} for 24/7 emergency towing.`
+        )}
         path="/sos"
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

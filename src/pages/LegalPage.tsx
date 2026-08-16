@@ -1,4 +1,5 @@
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { PageHero } from '../components/ui';
 import { siteConfig } from '../siteConfig';
 
@@ -11,6 +12,8 @@ const CONTENT: Record<
     name: string;
     title: string;
     subtitle: string;
+    /** Longer than the subtitle so search snippets are not thin. */
+    metaDescription: string;
     sections: { h: string; p: string[] }[];
   }
 > = {
@@ -19,6 +22,8 @@ const CONTENT: Record<
     name: 'Privacy Policy',
     title: 'Privacy Policy',
     subtitle: 'What we collect when you contact us, and what we do with it.',
+    metaDescription:
+      'How Auto Lyft USA collects, uses and protects your information when you request towing or roadside assistance in Ohio. We do not sell your personal data.',
     sections: [
       {
         h: 'What we collect',
@@ -65,6 +70,8 @@ const CONTENT: Record<
     name: 'Terms of Service',
     title: 'Terms of Service',
     subtitle: 'The terms that apply when you request or receive our services.',
+    metaDescription:
+      'Terms of service for Auto Lyft USA towing, recovery and roadside assistance across Columbus, Dayton and Cincinnati — pricing, liability and your responsibilities.',
     sections: [
       {
         h: 'Services',
@@ -112,6 +119,8 @@ const CONTENT: Record<
     name: 'Accessibility',
     title: 'Accessibility Statement',
     subtitle: 'We want this site to be usable by everyone who needs it.',
+    metaDescription:
+      'Auto Lyft USA aims to meet WCAG 2.1 Level AA so anyone can reach help in an emergency. Read what we have done and how to report an accessibility problem.',
     sections: [
       {
         h: 'Our commitment',
@@ -149,8 +158,8 @@ export default function LegalPage({ kind }: { kind: Kind }) {
   return (
     <>
       <Seo
-        title={`${content.title} | Auto Lyft USA`}
-        description={content.subtitle}
+        title={seoTitle(`${content.title} | Auto Lyft USA`)}
+        description={seoDescription(content.metaDescription)}
         path={content.path}
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

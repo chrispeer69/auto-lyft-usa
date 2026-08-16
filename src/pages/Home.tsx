@@ -1,4 +1,5 @@
 import Seo, { businessSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import About from '../components/About';
@@ -54,8 +55,10 @@ export default function Home() {
   return (
     <>
       <Seo
-        title={`Auto Lyft USA - 24/7 Towing Columbus, Dayton & Cincinnati Ohio`}
-        description={`Fast, reliable 24/7 towing and roadside assistance in Columbus, Dayton & Cincinnati, Ohio. Emergency towing, jump starts, lockout service & more. Serving ${CITIES.length}+ cities. Call ${siteConfig.phone} now!`}
+        title={seoTitle('24/7 Towing Columbus, Dayton & Cincinnati | Auto Lyft USA')}
+        description={seoDescription(
+          `Fast 24/7 towing and roadside assistance across Columbus, Dayton and Cincinnati. ${CITIES.length} cities, 15-min average response. Call ${siteConfig.phone}.`
+        )}
         path="/"
         schema={schema}
       />

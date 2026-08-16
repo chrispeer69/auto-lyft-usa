@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, Section } from '../components/ui';
 import { Breadcrumbs } from '../components/ui';
 import { getPost, sortedPosts } from '../data/blog';
@@ -22,8 +23,9 @@ export default function BlogPostPage() {
   return (
     <>
       <Seo
-        title={`${post.title} | Auto Lyft USA`}
-        description={post.excerpt}
+        title={seoTitle(`${post.seoTitle ?? post.title} | Auto Lyft USA`)}
+        description={seoDescription(post.excerpt)}
+        ogType="article"
         path={path}
         schema={[
           breadcrumbSchema([

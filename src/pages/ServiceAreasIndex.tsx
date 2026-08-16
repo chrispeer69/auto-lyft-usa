@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, PageHero, Section } from '../components/ui';
 import { CITIES, CITIES_BY_METRO, METROS } from '../data/cities';
 import { siteConfig } from '../siteConfig';
@@ -9,8 +10,10 @@ export default function ServiceAreasIndex() {
   return (
     <>
       <Seo
-        title="Service Areas | Towing in Columbus, Dayton & Cincinnati Ohio"
-        description={`Auto Lyft USA serves ${CITIES.length} cities across the Columbus, Dayton and Cincinnati metros with 24/7 towing and roadside assistance. Find your city and call ${siteConfig.phone}.`}
+        title={seoTitle("Service Areas | Towing Across Ohio | Auto Lyft USA")}
+        description={seoDescription(
+          `We serve ${CITIES.length} cities across the Columbus, Dayton and Cincinnati metros with 24/7 towing. Find your city. Call ${siteConfig.phone}.`
+        )}
         path="/service-areas"
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

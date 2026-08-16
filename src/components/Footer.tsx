@@ -31,6 +31,10 @@ export default function Footer() {
               <img
                 src="/auto_logo.jpg"
                 alt="Auto Lyft USA"
+                width={229}
+                height={146}
+                loading="lazy"
+                decoding="async"
                 className="h-16 w-auto brightness-0 invert"
               />
             </div>
@@ -60,7 +64,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h2 className="text-lg font-bold mb-4">Quick Links</h2>
             <ul className="space-y-2">
               {[
                 { to: '/', label: 'Home' },
@@ -85,7 +89,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Our Services</h3>
+            <h2 className="text-lg font-bold mb-4">Our Services</h2>
             <ul className="space-y-2">
               {SERVICES.slice(0, 10).map((service) => (
                 <li key={service.slug}>
@@ -101,7 +105,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+            <h2 className="text-lg font-bold mb-4">Contact Info</h2>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-red-700 flex-shrink-0 mt-1" />
@@ -143,7 +147,7 @@ export default function Footer() {
         {/* Service-area link block — helps both visitors and search engines
             find the city pages. */}
         <div className="border-t border-gray-800 pt-8 mb-8">
-          <h3 className="text-lg font-bold mb-4">Areas We Serve</h3>
+          <h2 className="text-lg font-bold mb-4">Areas We Serve</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {(['columbus', 'dayton', 'cincinnati'] as const).map((metro) => (
               <div key={metro}>

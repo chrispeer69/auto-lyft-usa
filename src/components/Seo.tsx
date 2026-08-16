@@ -10,6 +10,10 @@ type SeoProps = {
   /** Optional JSON-LD structured data for this page. */
   schema?: object | object[];
   noindex?: boolean;
+  /** "article" for blog posts, "website" everywhere else. */
+  ogType?: 'website' | 'article';
+  /** Absolute or root-relative image for social cards. */
+  image?: string;
 };
 
 /**
@@ -37,7 +41,10 @@ export default function Seo({
   path,
   schema,
   noindex = false,
+  ogType = 'website',
+  image = '/auto_logo.jpg',
 }: SeoProps) {
+  const ogImage = image.startsWith('http') ? image : absoluteUrl(image);
   const robots = noindex
     ? 'noindex, nofollow'
     : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -50,6 +57,8 @@ export default function Seo({
       description,
       canonical: absoluteUrl(path),
       robots,
+      ogType,
+      image: ogImage,
       schema,
     });
   }
@@ -62,6 +71,9 @@ export default function Seo({
     setMeta('meta[property="og:title"]', 'content', title);
     setMeta('meta[property="og:description"]', 'content', description);
     setMeta('meta[property="og:url"]', 'content', url);
+    setMeta('meta[property="og:type"]', 'content', ogType);
+    setMeta('meta[property="og:image"]', 'content', ogImage);
+    setMeta('meta[name="twitter:image"]', 'content', ogImage);
     setMeta('meta[name="twitter:title"]', 'content', title);
     setMeta('meta[name="twitter:description"]', 'content', description);
     setMeta('meta[name="robots"]', 'content', robots);
@@ -88,7 +100,7 @@ export default function Seo({
       script.textContent = JSON.stringify(schema);
       document.head.appendChild(script);
     }
-  }, [title, description, path, schema, robots]);
+  }, [title, description, path, schema, robots, ogType, ogImage]);
 
   return null;
 }

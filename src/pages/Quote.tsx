@@ -1,4 +1,5 @@
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { PageHero, Section } from '../components/ui';
 import Contact from '../components/Contact';
 import { siteConfig } from '../siteConfig';
@@ -7,8 +8,10 @@ export default function Quote() {
   return (
     <>
       <Seo
-        title="Request Service or a Quote | Auto Lyft USA"
-        description={`Request non-emergency towing or a quote in Columbus, Dayton or Cincinnati. For emergencies call ${siteConfig.phone} — we answer 24/7.`}
+        title={seoTitle("Request Service or a Quote | Auto Lyft USA")}
+        description={seoDescription(
+          `Request non-emergency towing or a quote in Columbus, Dayton or Cincinnati. For emergencies call ${siteConfig.phone} — we answer 24/7.`
+        )}
         path="/quote"
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

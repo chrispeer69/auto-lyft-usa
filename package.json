@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npm run build:ssr && node scripts/prerender.mjs && node scripts/generate-seo-files.mjs",
+    "build": "tsc -b && vite build && npm run build:ssr && node scripts/prerender.mjs && node scripts/generate-seo-files.mjs && node scripts/seo-audit.mjs",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
     "preview": "vite preview",
-    "typecheck": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit",
+    "seo": "node scripts/seo-audit.mjs --verbose"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.58.0",
@@ -23,6 +24,7 @@
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
+    "sharp": "^0.35.3",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
     "vite": "^5.4.8"

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, PageHero, Section } from '../components/ui';
 import { REPAIR_SERVICES } from '../data/autoRepair';
 import { siteConfig } from '../siteConfig';
@@ -9,8 +10,10 @@ export default function AutoRepairIndex() {
   return (
     <>
       <Seo
-        title="Auto Repair Services | Tow & Repair in One Call | Auto Lyft USA"
-        description={`Broken down? We tow your vehicle and connect you with vetted repair shops across Columbus, Dayton and Cincinnati — engine, brakes, transmission, electrical and more. Call ${siteConfig.phone}.`}
+        title={seoTitle("Auto Repair | Tow & Repair in One Call | Auto Lyft USA")}
+        description={seoDescription(
+          `We tow your vehicle and connect you with vetted repair shops across Columbus, Dayton and Cincinnati. Call ${siteConfig.phone}.`
+        )}
         path="/auto-repair"
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

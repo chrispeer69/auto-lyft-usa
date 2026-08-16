@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send } from 'lucide-react';
-import { isSupabaseConfigured, supabase } from '../lib/supabase';
+import { getSupabase, isSupabaseConfigured } from '../lib/supabase';
 import { siteConfig } from '../siteConfig';
 
 const SERVICE_OPTIONS = [
@@ -38,20 +38,22 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // No database configured — send them to the phone rather than silently
-    // dropping the request.
-    if (!supabase) {
-      setStatus('error');
-      setErrorMessage(
-        `Our request form is temporarily unavailable. Please call us at ${siteConfig.phone}.`
-      );
-      return;
-    }
-
     setStatus('loading');
     setErrorMessage('');
 
     try {
+      const supabase = await getSupabase();
+
+      // No database configured — send them to the phone rather than silently
+      // dropping the request.
+      if (!supabase) {
+        setStatus('error');
+        setErrorMessage(
+          `Our request form is temporarily unavailable. Please call us at ${siteConfig.phone}.`
+        );
+        return;
+      }
+
       const { error } = await supabase.from('contact_requests').insert([
         {
           name: formData.name,

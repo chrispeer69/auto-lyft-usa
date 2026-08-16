@@ -76,7 +76,11 @@ export default function About() {
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.pexels.com/photos/5214413/pexels-photo-5214413.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Professional tow truck and flatbed"
+                alt="Auto Lyft USA flatbed tow truck loading a vehicle in Ohio"
+                width={800}
+                height={800}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,6 +1,8 @@
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Shorter title for the <title> tag, so search results are not truncated. */
+  seoTitle?: string;
   /** ISO date — also used for sitemap lastmod and article schema. */
   date: string;
   author: string;
@@ -14,6 +16,7 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'what-to-do-after-a-car-accident-in-ohio',
+    seoTitle: 'What To Do After a Car Accident in Ohio',
     title: 'What To Do After a Car Accident in Ohio',
     date: '2026-07-28',
     author: 'Auto Lyft USA',
@@ -68,6 +71,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'why-your-car-battery-dies-in-ohio-winters',
+    seoTitle: 'Why Car Batteries Die in Ohio Winters',
     title: 'Why Your Car Battery Always Dies on the Coldest Morning',
     date: '2026-07-20',
     author: 'Auto Lyft USA',
@@ -122,6 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-choose-a-towing-company',
+    seoTitle: 'How To Choose a Towing Company',
     title: 'How To Choose a Towing Company (Before You Need One)',
     date: '2026-07-12',
     author: 'Auto Lyft USA',
@@ -168,6 +173,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'stuck-in-a-ditch-what-not-to-do',
+    seoTitle: 'Slid Off the Road? What Not To Do',
     title: 'Slid Off the Road? What Not To Do Next',
     date: '2026-07-04',
     author: 'Auto Lyft USA',
@@ -211,6 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'towing-costs-in-columbus-explained',
+    seoTitle: 'What Towing Costs in Ohio',
     title: 'What Towing Actually Costs in Ohio, and Why',
     date: '2026-06-24',
     author: 'Auto Lyft USA',
@@ -260,6 +267,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'get-your-car-summer-ready-ohio',
+    seoTitle: 'Getting Your Car Through an Ohio Summer',
     title: 'Getting Your Car Through an Ohio Summer',
     date: '2026-06-10',
     author: 'Auto Lyft USA',

@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
@@ -12,17 +12,25 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
  */
 export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 
-if (!isSupabaseConfigured) {
-  console.error(
-    'Missing VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY. The contact form is ' +
-      'disabled and will ask visitors to call instead. Set both variables in ' +
-      'your host (Railway → Variables) and rebuild.'
-  );
-}
+let client: SupabaseClient | null = null;
 
-export const supabase = isSupabaseConfigured
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null;
+/**
+ * Loads the Supabase client on first use, in the browser only.
+ *
+ * The import is dynamic for two reasons. It keeps ~120KB of client library out
+ * of the initial bundle on every page when only the contact form needs it. And
+ * it keeps supabase-js out of the prerender step entirely: the library builds a
+ * realtime client on construction, which needs a global WebSocket that Node 20
+ * does not provide, and that crashed the production build.
+ */
+export async function getSupabase(): Promise<SupabaseClient | null> {
+  if (!isSupabaseConfigured || typeof window === 'undefined') return null;
+  if (client) return client;
+
+  const { createClient } = await import('@supabase/supabase-js');
+  client = createClient(supabaseUrl, supabaseAnonKey);
+  return client;
+}
 
 /** A row in the `contact_requests` table. */
 export type ContactRequest = {

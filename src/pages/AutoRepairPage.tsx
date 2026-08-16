@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { AlertTriangle, ArrowRight, Phone } from 'lucide-react';
 import Seo, { breadcrumbSchema, businessSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, PageHero, Section } from '../components/ui';
 import { getRepairService, REPAIR_SERVICES } from '../data/autoRepair';
 import { absoluteUrl, siteConfig } from '../siteConfig';
@@ -18,8 +19,10 @@ export default function AutoRepairPage() {
   return (
     <>
       <Seo
-        title={`${repair.title} | Ohio Tow & Repair | Auto Lyft USA`}
-        description={`${repair.description} We tow to a vetted repair partner in Columbus, Dayton or Cincinnati. Call ${siteConfig.phone}.`}
+        title={seoTitle(`${repair.title} | Auto Lyft USA Ohio`)}
+        description={seoDescription(
+          `${repair.description} Tow and repair in one call. ${siteConfig.phone}.`
+        )}
         path={path}
         schema={[
           breadcrumbSchema([

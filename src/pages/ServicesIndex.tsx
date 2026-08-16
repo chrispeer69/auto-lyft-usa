@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, PageHero, Section } from '../components/ui';
 import { SERVICES } from '../data/services';
 import { siteConfig } from '../siteConfig';
@@ -9,8 +10,10 @@ export default function ServicesIndex() {
   return (
     <>
       <Seo
-        title={`Towing & Roadside Services | Auto Lyft USA Ohio`}
-        description={`All ${SERVICES.length} towing and roadside services offered by Auto Lyft USA across Columbus, Dayton and Cincinnati — emergency towing, flatbed, winch outs, lockouts, jump starts and more. Call ${siteConfig.phone}.`}
+        title={seoTitle(`Towing & Roadside Services | Auto Lyft USA Ohio`)}
+        description={seoDescription(
+          `All ${SERVICES.length} towing and roadside services across Columbus, Dayton and Cincinnati — emergency towing, winch outs, lockouts and more. Call ${siteConfig.phone}.`
+        )}
         path="/services"
         schema={breadcrumbSchema([
           { name: 'Home', path: '/' },

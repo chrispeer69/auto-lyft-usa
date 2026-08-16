@@ -107,6 +107,21 @@ for (const route of routes) {
       );
       page = replaceTag(
         page,
+        /<meta property="og:type"[^>]*>/,
+        `<meta property="og:type" content="${escapeAttr(head.ogType)}" />`
+      );
+      page = replaceTag(
+        page,
+        /<meta property="og:image"[^>]*>/,
+        `<meta property="og:image" content="${escapeAttr(head.image)}" />`
+      );
+      page = replaceTag(
+        page,
+        /<meta name="twitter:image"[^>]*>/,
+        `<meta name="twitter:image" content="${escapeAttr(head.image)}" />`
+      );
+      page = replaceTag(
+        page,
         /<meta name="twitter:title"[^>]*>/,
         `<meta name="twitter:title" content="${escapeAttr(head.title)}" />`
       );

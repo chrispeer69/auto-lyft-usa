@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import Seo, { breadcrumbSchema } from '../components/Seo';
+import { title as seoTitle, description as seoDescription } from '../lib/seoText';
 import { CallToAction, PageHero, Section } from '../components/ui';
 import { sortedPosts } from '../data/blog';
 import { absoluteUrl } from '../siteConfig';
@@ -18,8 +19,10 @@ export default function BlogIndex() {
   return (
     <>
       <Seo
-        title="Towing & Roadside Advice Blog | Auto Lyft USA Ohio"
-        description="Practical advice from the crews who do this every day — what to do after an accident, why batteries die in winter, how to choose a tow company, and what towing really costs in Ohio."
+        title={seoTitle("Towing & Roadside Advice | Auto Lyft USA Ohio")}
+        description={seoDescription(
+          "Practical advice from the crews who do this every day — accidents, winter batteries, choosing a tow company, and what towing costs in Ohio."
+        )}
         path="/blog"
         schema={[
           breadcrumbSchema([

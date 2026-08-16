@@ -10,6 +10,8 @@ export type HeadData = {
   description: string;
   canonical: string;
   robots: string;
+  ogType: string;
+  image: string;
   schema?: object | object[];
 };
 
