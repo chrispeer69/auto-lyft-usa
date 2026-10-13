@@ -1,0 +1,58 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { REPAIR_PAGES } from "../../data/repair";
+import { REPAIRS, repairBySlug, repairPath } from "../../data/repair/catalog";
+import { serviceNode, cityPlace } from "../../lib/schema";
+import { rich } from "../../lib/text";
+import type { RepairService } from "../../data/types";
+
+export function getStaticPaths() {
+  return REPAIR_PAGES.map((r) => ({ params: { slug: r.slug }, props: { r } }));
+}
+const { r } = Astro.props as { r: RepairService };
+const path = repairPath(r.slug);
+const schema = [
+  serviceNode({
+    path,
+    name: `${r.name} — tow-in and repair coordination`,
+    serviceType: "Auto repair coordination",
+    description: `${r.description} Repairs are performed by independent partner shops.`,
+    areaServed: [cityPlace("Columbus"), { "@type": "Place", name: "Central Ohio" }],
+  }),
+];
+const related = r.related.map((s) => repairBySlug(s)).filter((x) => x !== undefined);
+---
+<Base title={r.title} description={r.description} path={path} crumbs={[{ name: "Repair help", path: "/repair" }, { name: r.name, path }]} schema={schema} faqs={r.faqs}>
+  <Hero eyebrow="Tow-in repair help" h1={r.h1} lede={r.lede} secondary={{ href: "/repair", label: "How repair help works" }} />
+  <section class="band">
+    <div class="wrap prose">
+      <p class="small muted"><strong>How this works:</strong> Auto Lyft USA is a towing company, not a repair shop. We tow your car to an independent partner shop (or any shop you choose), and that shop diagnoses, quotes and does the repair.</p>
+      {r.intro.map((t) => <p set:html={rich(t)} />)}
+    </div>
+  </section>
+  <section class="band alt">
+    <div class="wrap">
+      <h2>What the shop typically handles</h2>
+      <ul class="rules cols two" style="display:grid">{r.jobs.map((j) => <li><h3>{j.title}</h3><p set:html={rich(j.text)} /></li>)}</ul>
+    </div>
+  </section>
+  <section class="band dark">
+    <div class="wrap prose">
+      <h2>Signs it's time to get it looked at</h2>
+      <ul>{r.signs.map((s) => <li set:html={rich(s)} />)}</ul>
+    </div>
+  </section>
+  <section class="band"><div class="wrap prose"><FaqList faqs={r.faqs} heading={`${r.name}: questions`} /></div></section>
+  <CtaBand heading="Car can't make it to the shop?" text="We tow it there on a flatbed and the shop takes it from there." />
+  <section class="band alt">
+    <div class="wrap cols two">
+      <div><h2>Related repair help</h2><ul class="linklist" style="columns:1">{related.map((x) => <li><a href={repairPath(x.slug)}>{x.name}</a></li>)}<li><a href="/repair">All repair help</a></li></ul></div>
+      <div><h2>Getting the car there</h2><ul class="linklist" style="columns:1"><li><a href="/towing/repair-shop-towing">Repair shop towing</a></li><li><a href="/towing/flatbed-towing">Flatbed towing</a></li><li><a href="/towing/emergency-towing">Emergency towing</a></li><li><a href="/rates">Towing rates</a></li></ul></div>
+    </div>
+  </section>
+  <Nap />
+</Base>

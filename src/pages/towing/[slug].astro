@@ -1,0 +1,177 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { SERVICE_CONTENT, townsForService } from "../../data/services";
+import { SERVICES, SERVICE_GROUPS, servicePath, serviceBySlug } from "../../data/services/catalog";
+import { CITY_FACTS, cityPath } from "../../data/cities/catalog";
+import { abs, serviceNode } from "../../lib/schema";
+import { offersFor, usd, RATES, AFTER_HOURS_WINDOW } from "../../data/rates";
+import { ids } from "../../data/company";
+import { rich } from "../../lib/text";
+import { placesForService } from "../../data/places";
+import { placePath } from "../../data/places/catalog";
+import type { Service } from "../../data/types";
+
+export function getStaticPaths() {
+  return SERVICE_CONTENT.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props as { s: Service };
+const path = servicePath(s.slug);
+const group = SERVICE_GROUPS.find((g) => g.id === s.group)!;
+const venues = placesForService(s.slug);
+const towns = townsForService(s.slug, CITY_FACTS);
+const related = s.related.map((r) => serviceBySlug(r)).filter((r) => r !== undefined);
+const offers = offersFor(s.slug);
+const UNIT_CODE: Record<string, string | undefined> = { "per mile": "SMI", "per hour": "HUR" };
+const schema = [
+  serviceNode({
+    path,
+    name: s.name,
+    serviceType: s.name,
+    description: s.description,
+    offers: offers.map((o) => ({
+      "@type": "Offer",
+      name: `${s.name} — ${o.name.toLowerCase()}`,
+      description: o.note,
+      price: o.price,
+      priceCurrency: "USD",
+      url: abs(path),
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: o.price,
+        priceCurrency: "USD",
+        unitText: o.unit,
+        ...(UNIT_CODE[o.unit] ? { unitCode: UNIT_CODE[o.unit] } : {}),
+      },
+      offeredBy: { "@id": ids.business },
+    })),
+  }),
+];
+---
+<Base
+  title={s.title}
+  description={s.description}
+  path={path}
+  crumbs={[{ name: "Towing services", path: "/towing" }, { name: s.name, path }]}
+  schema={schema}
+  faqs={s.faqs}
+>
+  <Hero
+    eyebrow={`${group.label} · Columbus, OH`}
+    h1={s.h1}
+    lede={s.lede}
+    facts={[
+      ["Truck", s.group === "roadside" ? "Service truck or flatbed" : "Flatbed carrier"],
+      ["Hours", "24/7, holidays included"],
+      ["Price", offers.length ? `From ${usd(offers[0].price)} ${offers[0].unit}` : "Quoted per job"],
+      ["Base", "Harrisburg Pike yard"],
+    ]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      {s.intro.map((p) => <p set:html={rich(p)} />)}
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="when-h">
+    <div class="wrap">
+      <p class="kicker">When to call</p>
+      <h2 id="when-h">Situations where {s.name.toLowerCase()} is the right call</h2>
+      <ul class="rules cols two" style="display:grid">
+        {s.situations.map((x) => <li><h3>{x.title}</h3><p set:html={rich(x.text)} /></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band dark" aria-labelledby="how-h">
+    <div class="wrap">
+      <p class="kicker" style="color:var(--amber)">On scene</p>
+      <h2 id="how-h">How our drivers handle it</h2>
+      <ol class="steps">
+        {s.method.map((m) => <li><h3>{m.title}</h3><p set:html={rich(m.text)} /></li>)}
+      </ol>
+    </div>
+  </section>
+
+  {s.sections?.map((sec, i) => (
+    <section class={`band${i % 2 ? " alt" : ""}`}>
+      <div class="wrap prose">
+        <h2>{sec.heading}</h2>
+        {sec.paragraphs.map((p) => <p set:html={rich(p)} />)}
+        {sec.bullets && <ul>{sec.bullets.map((b) => <li set:html={rich(b)} />)}</ul>}
+      </div>
+    </section>
+  ))}
+
+  <section class="band">
+    <div class="wrap prose">
+      <FaqList faqs={s.faqs} heading={`${s.name}: questions and answers`} />
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="price-h">
+    <div class="wrap prose">
+      <h2 id="price-h">What {s.name.toLowerCase()} costs</h2>
+      {offers.length ? (
+        <>
+          <div class="table-scroll"><table class="table">
+            <thead><tr><th>Charge</th><th>Rate</th><th>What it covers</th></tr></thead>
+            <tbody>{offers.map((o) => <tr><td>{o.name}</td><td>{usd(o.price)} {o.unit}</td><td>{o.note}</td></tr>)}</tbody>
+          </table></div>
+          <p class="small muted" style="margin-top:12px">Surcharges where they apply: after hours ({AFTER_HOURS_WINDOW}) +{usd(RATES.afterHours)} · Saturday or Sunday +{usd(RATES.weekend)} · interstate shoulder +{usd(RATES.highway)}. Ohio sales tax is added for the pickup county. Veterans get {RATES.veteranPercent}% off with a military or VA ID. Full details on the <a href="/rates">rates page</a>, or price your exact trip with the <a href="/estimate">estimate tool</a>.</p>
+        </>
+      ) : (
+        <p>This work is priced per job because the equipment, distance and time vary so much. Call {"(614) 633-8163"} with the details and the office quotes it before anything is scheduled. See the <a href="/rates">rates page</a> for our standard charges.</p>
+      )}
+    </div>
+  </section>
+
+  <CtaBand heading={`Need ${s.name.toLowerCase()} now?`} />
+
+  <section class="band" aria-labelledby="rel-h">
+    <div class="wrap cols two">
+      <div>
+        <h2 id="rel-h">Related services</h2>
+        <ul class="rules">
+          {related.map((r) => <li><a href={servicePath(r.slug)}><strong>{r.name}</strong></a><p>{r.blurb}</p></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Towns we cover for this</h2>
+        <p class="muted">We handle {s.name.toLowerCase()} calls in Columbus and every town on our <a href="/areas">service area list</a>, including:</p>
+        <ul class="linklist">
+          <li><a href="/areas/columbus-oh">Columbus</a></li>
+          {towns.map((t) => <li><a href={cityPath(t.slug)}>{t.name}</a></li>)}
+        </ul>
+        {venues.length > 0 && (<>
+          <h3 style="margin-top:20px">Places we're often called for this</h3>
+          <ul class="linklist">{venues.map((v) => <li><a href={placePath(v.slug)}>{v.label}</a></li>)}</ul>
+        </>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="all-h">
+    <div class="wrap">
+      <h2 id="all-h">Everything else we do</h2>
+      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+        {SERVICE_GROUPS.map((g) => (
+          <div>
+            <h3>{g.label}</h3>
+            <ul class="linklist" style="columns:1">
+              {SERVICES.filter((x) => x.group === g.id && x.slug !== s.slug).map((x) => <li><a href={servicePath(x.slug)}>{x.name}</a></li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Nap />
+</Base>

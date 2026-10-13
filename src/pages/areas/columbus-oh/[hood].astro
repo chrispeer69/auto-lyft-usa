@@ -1,0 +1,83 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Hero from "../../../components/Hero.astro";
+import FaqList from "../../../components/FaqList.astro";
+import CtaBand from "../../../components/CtaBand.astro";
+import Nap from "../../../components/Nap.astro";
+import { HOOD_PAGES, hoodTitle, type Hood } from "../../../data/columbus";
+import { hoodBySlug, hoodPath } from "../../../data/columbus/catalog";
+import { localPlaceNode, LOCAL_LABELS } from "../../../data/cities";
+import { SERVICES, servicePath } from "../../../data/services/catalog";
+import { serviceNode } from "../../../lib/schema";
+import { rich } from "../../../lib/text";
+
+export function getStaticPaths() {
+  return HOOD_PAGES.map((h) => ({ params: { hood: h.slug }, props: { h } }));
+}
+const { h } = Astro.props as { h: Hood };
+const path = hoodPath(h.slug);
+const contains = h.local.map(localPlaceNode).filter((n) => n !== null);
+const schema = [
+  serviceNode({
+    path,
+    name: `Towing and roadside help in ${h.name}, Columbus`,
+    serviceType: "Towing service",
+    description: h.description,
+    areaServed: {
+      "@type": "Place",
+      name: `${h.name}, Columbus, Ohio`,
+      containedInPlace: { "@type": "City", name: "Columbus", containedInPlace: { "@type": "State", name: "Ohio" } },
+      ...(contains.length ? { containsPlace: contains } : {}),
+    },
+  }),
+];
+const kinds = [...new Set(h.local.map((l) => l.kind))];
+const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
+---
+<Base
+  title={hoodTitle(h.name)}
+  description={h.description}
+  path={path}
+  crumbs={[{ name: "Areas", path: "/areas" }, { name: "Columbus", path: "/areas/columbus-oh" }, { name: h.name, path }]}
+  schema={schema}
+  faqs={h.faqs}
+>
+  <Hero eyebrow={`Columbus · ${h.name}`} h1={h.h1} lede={h.lede} facts={[["Neighborhood", h.name], ["City", "Columbus, Franklin County"], ["ZIP codes", h.zips.join(", ")], ["Dispatch", "24/7, price quoted first"]]} />
+  <section class="band"><div class="wrap prose">{h.intro.map((p) => <p set:html={rich(p)} />)}</div></section>
+  <section class="band alt" aria-labelledby="streets-h">
+    <div class="wrap">
+      <p class="kicker">Street by street</p>
+      <h2 id="streets-h">Where we pick up cars in {h.name}</h2>
+      <ul class="rules cols two" style="display:grid">{h.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}</ul>
+    </div>
+  </section>
+  {h.local.length > 0 && (
+    <section class="band dark" aria-labelledby="local-h">
+      <div class="wrap">
+        <h2 id="local-h">{h.name} landmarks drivers ask about</h2>
+        <div class="cols two">
+          {kinds.map((k) => (<div><h3>{LOCAL_LABELS[k]}</h3><ul class="rules">{h.local.filter((l) => l.kind === k).map((l) => <li><strong>{l.name}</strong><p set:html={rich(l.detail)} /></li>)}</ul></div>))}
+        </div>
+      </div>
+    </section>
+  )}
+  <section class="band"><div class="wrap prose"><FaqList faqs={h.faqs} heading={`${h.name} towing questions`} /></div></section>
+  <CtaBand heading={`Need a truck in ${h.name}?`} />
+  <section class="band alt">
+    <div class="wrap cols two">
+      <div>
+        <h2>Neighboring parts of Columbus</h2>
+        <ul class="linklist" style="columns:1">
+          {next.map((n) => <li><a href={hoodPath(n.slug)}>{n.name}</a></li>)}
+          <li><a href="/areas/columbus-oh">All Columbus neighborhoods</a></li>
+          <li><a href="/areas">Suburbs and towns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>What we do in {h.name}</h2>
+        <ul class="linklist">{SERVICES.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}</ul>
+      </div>
+    </div>
+  </section>
+  <Nap />
+</Base>

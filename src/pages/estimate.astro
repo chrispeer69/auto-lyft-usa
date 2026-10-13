@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import Estimator from "../components/Estimator.astro";
+import Nap from "../components/Nap.astro";
+import { RATES } from "../data/rates";
+import type { Faq } from "../data/types";
+
+const path = "/estimate";
+const faqs: Faq[] = [
+  { q: "How do I know how far you are from me?", a: "Every truck leaves from 1620 Harrisburg Pike, southwest of downtown. Plug that address and yours into any map app and use the driving miles. Every town page on our [areas list](/areas) also shows its distance from the yard." },
+  { q: "Is the online towing estimate the final price?", a: "It is built from the same rate card the dispatcher uses, so it should be close. The dispatcher confirms the final number on the phone before sending a truck, using the actual address and conditions." },
+  { q: "Can I book the tow from this page?", a: "Not directly. Call (614) 633-8163, or send your location by text from the [request page](/request), and mention the estimate you got here." },
+  { q: "What if I don't know where the car needs to go?", a: `Leave the drop-off at a guess. Most local tows land within 5 to 15 miles. If you need a mechanic, we can suggest a [partner shop](/repair) close to you, which keeps the loaded miles down. Each loaded mile is ${"$"}${RATES.loadedPerMile}.` },
+];
+---
+<Base title="Online Towing Estimate, Columbus OH" description="Work out what your tow, jump start, fuel delivery or winch-out will cost in Columbus before you call, using Auto Lyft USA's published rate card." path={path} crumbs={[{ name: "Estimate", path }]} faqs={faqs}>
+  <Hero eyebrow="Estimate" h1="Estimate Your Tow Before You Call" lede="Enter the distances and conditions and the calculator applies our published rates, including Ohio sales tax for the county you're in." secondary={{ href: "/rates", label: "See the rate card" }} />
+  <section class="band"><div class="wrap"><Estimator /><p style="margin-top:18px">Towing an electric car? Use the <a href="/estimate/ev">EV estimate</a>. It uses a different card.</p></div></section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="About the estimate" /></div></section>
+  <Nap />
+</Base>

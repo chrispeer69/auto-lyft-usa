@@ -1,0 +1,16 @@
+---
+import type { Faq } from "../data/types";
+import { rich } from "../lib/text";
+interface Props { faqs: Faq[]; heading?: string; id?: string; intro?: string }
+const { faqs, heading = "Questions people ask us", id = "faq", intro } = Astro.props;
+---
+<section class="faq" id={id} aria-labelledby={`${id}-h`}>
+  <h2 id={`${id}-h`}>{heading}</h2>
+  {intro && <p class="muted">{intro}</p>}
+  {faqs.map((f) => (
+    <details>
+      <summary><h3 set:html={rich(f.q)} /></summary>
+      <div><p set:html={rich(f.a)} /></div>
+    </details>
+  ))}
+</section>

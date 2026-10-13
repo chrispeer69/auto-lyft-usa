@@ -1,0 +1,121 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import Nap from "../components/Nap.astro";
+import PhoneIcon from "../components/PhoneIcon.astro";
+import { COMPANY } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/request";
+const plainBody = "Tow request. My location: ___. Vehicle: ___. Problem: ___";
+const plainSms = `sms:${COMPANY.phoneE164}?&body=${encodeURIComponent(plainBody)}`;
+const faqs: Faq[] = [
+  { q: "Does this page track my location?", a: "No. Your phone asks permission, and the coordinates are only placed inside a text message on your own screen. Nothing is sent to us or stored by the website. If you delete the message without sending, we never see it." },
+  { q: "What if location is turned off or the button does nothing?", a: `Use the plain text or call buttons instead and describe where you are: a street address, a business name, or the highway, direction and nearest exit. Calling ${COMPANY.phone} is always fine.` },
+  { q: "Is a text request a commitment to pay?", a: "No. Nothing is booked until the dispatcher replies with a price and you agree to it. You can say no, ask questions or change the destination first." },
+  { q: "Can I use this for a roadside call instead of a tow?", a: "Yes. Replace the problem line with what you need, such as a [jump start](/towing/jump-start), a [lockout](/towing/car-lockout) or [fuel](/towing/fuel-delivery). The dispatcher quotes the roadside rate if no tow is needed." },
+];
+---
+<Base
+  title="Request a Tow by Text Message"
+  description="Send Auto Lyft USA a text with your GPS location, vehicle and problem in one tap. A dispatcher replies with a price before a truck moves. (614) 633-8163."
+  path={path}
+  crumbs={[{ name: "Request a tow", path }]}
+  faqs={faqs}
+>
+  <Hero
+    eyebrow="Request a tow"
+    h1="Request a Tow Truck From Your Phone"
+    lede="One tap drops your map pin into a text message addressed to our dispatch line. You add the vehicle and the problem, then press send."
+    secondary={{ href: COMPANY.smsHref, label: "Text dispatch" }}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      <h2>Send your location by text</h2>
+      <p id="geo-intro">
+        Tap the button below. Your phone will ask whether this page may read your location. If you allow it, a text message opens with a Google Maps link to your exact spot already written in. Fill in the blanks and send it.
+      </p>
+      <p>
+        <button type="button" id="geo-btn" class="btn btn-call" hidden>Share my location by text</button>
+      </p>
+      <p id="geo-status" class="muted" role="status" aria-live="polite"></p>
+      <p id="geo-ready" hidden>
+        <a id="geo-link" class="btn btn-call" href={plainSms}>Open the text message</a>
+      </p>
+
+      <h3>No location? Use these instead</h3>
+      <p>These work on any phone, with or without location services.</p>
+      <p style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn-call" href={COMPANY.telHref}><PhoneIcon /> Call {COMPANY.phone}</a>
+        <a class="btn btn-ghost" href={plainSms}>Text a request</a>
+      </p>
+      <p class="small muted">
+        Typing your location by hand? A street address works best. On the interstate, name the road, which way you were headed and the last exit you passed.
+      </p>
+
+      <h2>What happens after you send it</h2>
+      <ol>
+        <li><strong>A dispatcher reads it.</strong> Texts to {COMPANY.phone} go to the same people who answer the phone, at any hour.</li>
+        <li><strong>You get questions or a quote.</strong> If something is unclear, such as whether the keys are with you or where the car should go, the dispatcher texts or calls to ask. Then you receive a price built from our published <a href="/rates">rates</a> and a live estimate of when the truck should reach you.</li>
+        <li><strong>You confirm.</strong> Reply yes and a flatbed is assigned. No reply, no truck, no charge.</li>
+        <li><strong>The driver arrives and photographs the car.</strong> Before loading, the driver takes pictures all the way around, then secures the vehicle on the deck and confirms the drop-off address with you.</li>
+        <li><strong>Drop-off and payment.</strong> The car goes where you asked: home, your mechanic or a <a href="/repair">repair shop</a> we suggest. Payment is by cash, debit or credit card.</li>
+      </ol>
+      <p>
+        If you are on a busy road, stay in the car with your belt on or move well away from traffic. Anyone injured, or a car stopped in a travel lane, means dialing 911 before you contact us.
+      </p>
+    </div>
+  </section>
+
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="About texting a request" /></div></section>
+  <Nap />
+
+  <script is:inline define:vars={{ phone: COMPANY.phoneE164 }}>
+    (function () {
+      try {
+        var btn = document.getElementById("geo-btn");
+        var status = document.getElementById("geo-status");
+        var ready = document.getElementById("geo-ready");
+        var link = document.getElementById("geo-link");
+        if (!btn || !("geolocation" in navigator)) return;
+        btn.hidden = false;
+        function fail(msg) {
+          status.textContent = msg + " Use the call or text buttons below and tell us where you are.";
+          btn.disabled = false;
+        }
+        btn.addEventListener("click", function () {
+          try {
+            btn.disabled = true;
+            status.textContent = "Finding your location…";
+            navigator.geolocation.getCurrentPosition(
+              function (pos) {
+                try {
+                  var lat = pos.coords.latitude.toFixed(6);
+                  var lng = pos.coords.longitude.toFixed(6);
+                  var body = "Tow request. My location: https://maps.google.com/?q=" + lat + "," + lng + ". Vehicle: ___. Problem: ___";
+                  link.href = "sms:" + phone + "?&body=" + encodeURIComponent(body);
+                  ready.hidden = false;
+                  status.textContent = "Location found. Opening your messages app. If it does not open, tap the button below.";
+                  btn.disabled = false;
+                  window.location.href = link.href;
+                } catch (e) {
+                  fail("Something went wrong building the message.");
+                }
+              },
+              function () {
+                fail("We could not get your location (permission denied or no signal).");
+              },
+              { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 }
+            );
+          } catch (e) {
+            fail("Location is not available on this device.");
+          }
+        });
+      } catch (e) {
+        /* Page still works: the call and text links need no script. */
+      }
+    })();
+  </script>
+</Base>

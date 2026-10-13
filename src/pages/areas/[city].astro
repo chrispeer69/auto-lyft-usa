@@ -1,0 +1,146 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { CITIES, cityTitle, localPlaceNode, LOCAL_LABELS, type City } from "../../data/cities";
+import { cityBySlug, cityPath } from "../../data/cities/catalog";
+import { SERVICES, SERVICE_GROUPS, servicePath } from "../../data/services/catalog";
+import { cityPlace, serviceNode } from "../../lib/schema";
+import { rich } from "../../lib/text";
+import { COMPANY } from "../../data/company";
+import { placesForCity } from "../../data/places";
+import { placePath } from "../../data/places/catalog";
+
+export function getStaticPaths() {
+  return CITIES.map((c) => ({ params: { city: `${c.slug}-oh` }, props: { c } }));
+}
+
+const { c } = Astro.props as { c: City };
+const path = cityPath(c.slug);
+const title = cityTitle(c.name);
+const contains = c.local.map(localPlaceNode).filter((n) => n !== null);
+const schema = [
+  serviceNode({
+    path,
+    name: `Towing and roadside assistance in ${c.name}, Ohio`,
+    serviceType: "Towing service",
+    description: c.description,
+    areaServed: [
+      cityPlace(c.name, c.geo, contains),
+      { "@type": "DefinedRegion", name: `${c.name}, OH ZIP codes`, addressCountry: "US", addressRegion: "OH", postalCode: c.zips },
+    ],
+  }),
+];
+const kinds = [...new Set(c.local.map((l) => l.kind))];
+// Rotate the call-to-action wording so the 40 town pages don't share a sentence.
+const CTA_LINES = [
+  (n: string) => `Tell the dispatcher the nearest ${n} cross street and you will hear the full price before a truck is assigned.`,
+  (n: string) => `One call covers it: where you are in ${n}, what you drive, where it should go — and the quote comes first.`,
+  (n: string) => `Our dispatcher can usually price a ${n} job in under a minute on the phone.`,
+  (n: string) => `Stuck in ${n} with no plan? Call, describe the problem and we will tell you whether it needs a tow or a quick fix.`,
+  (n: string) => `Give us a landmark or an address in ${n}; we handle the rest and confirm the price before rolling.`,
+];
+let ctaHash = 0;
+for (const ch of c.slug) ctaHash = (ctaHash * 31 + ch.charCodeAt(0)) >>> 0;
+const ctaText = CTA_LINES[ctaHash % CTA_LINES.length](c.name);
+const venues = placesForCity(c.slug);
+const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefined);
+---
+<Base
+  title={title}
+  description={c.description}
+  path={path}
+  crumbs={[{ name: "Areas", path: "/areas" }, { name: `${c.name}, OH`, path }]}
+  schema={schema}
+  faqs={c.faqs}
+>
+  <Hero
+    eyebrow={`${c.county} County · ${c.zips.join(", ")}`}
+    h1={c.h1}
+    lede={c.lede}
+    facts={[
+      ["County", `${c.county} County`],
+      ["ZIP codes", c.zips.join(", ")],
+      ["From our yard", `${c.miles} miles (straight line)`],
+      ["Dispatch", "24/7 — price quoted first"],
+    ]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      {c.intro.map((p) => <p set:html={rich(p)} />)}
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="roads-h">
+    <div class="wrap">
+      <p class="kicker">Where calls come from</p>
+      <h2 id="roads-h">Roads we get called to in {c.name}</h2>
+      <ul class="rules cols two" style="display:grid">
+        {c.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="svc-h">
+    <div class="wrap">
+      <h2 id="svc-h">Services available in {c.name}</h2>
+      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+        {SERVICE_GROUPS.map((g) => (
+          <div>
+            <h3>{g.label}</h3>
+            <ul class="linklist" style="columns:1">
+              {SERVICES.filter((s) => s.group === g.id).map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {c.local.length > 0 && (
+    <section class="band dark" aria-labelledby="local-h">
+      <div class="wrap">
+        <p class="kicker" style="color:var(--amber)">Know the area</p>
+        <h2 id="local-h">Around {c.name}</h2>
+        <div class="cols two">
+          {kinds.map((k) => (
+            <div>
+              <h3>{LOCAL_LABELS[k]}</h3>
+              <ul class="rules">
+                {c.local.filter((l) => l.kind === k).map((l) => <li><strong>{l.name}</strong><p set:html={rich(l.detail)} /></li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="band">
+    <div class="wrap prose">
+      <FaqList faqs={c.faqs} heading={`Towing in ${c.name}: common questions`} />
+    </div>
+  </section>
+
+  <CtaBand heading={`Broken down in ${c.name}?`} text={ctaText} />
+
+  <section class="band alt" aria-labelledby="near-h">
+    <div class="wrap">
+      <h2 id="near-h">Next towns over</h2>
+      <ul class="linklist">
+        {neighbours.map((n) => <li><a href={cityPath(n.slug)}>{n.name}</a> <span class="muted small">· {n.miles} mi from our yard</span></li>)}
+        <li><a href="/areas/columbus-oh">Columbus neighborhoods</a></li>
+        <li><a href="/areas">Every town we cover</a></li>
+      </ul>
+      {venues.length > 0 && (<>
+        <h2 style="margin-top:28px">Venues and campuses near {c.name}</h2>
+        <ul class="linklist">{venues.map((v) => <li><a href={placePath(v.slug)}>{v.label}</a></li>)}</ul>
+      </>)}
+    </div>
+  </section>
+
+  <Nap />
+</Base>

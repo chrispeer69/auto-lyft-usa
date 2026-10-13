@@ -1,0 +1,112 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { HOME, HOME_FAQS } from "../data/home";
+import { COMPANY } from "../data/company";
+import { SERVICES, SERVICE_GROUPS, servicePath } from "../data/services/catalog";
+import { CITY_FACTS, cityPath } from "../data/cities/catalog";
+
+// Towns grouped by compass direction from downtown, so the list reads like a map.
+const DOWNTOWN = { lat: 39.9612, lng: -82.9988 };
+function direction(lat: number, lng: number): "North" | "East" | "South" | "West" {
+  const dy = lat - DOWNTOWN.lat;
+  const dx = (lng - DOWNTOWN.lng) * Math.cos((DOWNTOWN.lat * Math.PI) / 180);
+  if (Math.abs(dy) >= Math.abs(dx)) return dy >= 0 ? "North" : "South";
+  return dx >= 0 ? "East" : "West";
+}
+const byDir = ["North", "East", "South", "West"].map((d) => ({
+  dir: d,
+  cities: CITY_FACTS.filter((c) => direction(c.geo.lat, c.geo.lng) === d).sort((a, b) => a.name.localeCompare(b.name)),
+}));
+---
+<Base title={HOME.title} description={HOME.description} path="/" faqs={HOME_FAQS}>
+  <Hero
+    eyebrow="Auto Lyft USA · Columbus, Ohio"
+    h1={HOME.h1}
+    lede={HOME.lede}
+    facts={[
+      ["Dispatch", "24/7, every day"],
+      ["Fleet", `${COMPANY.fleet.trucks} flatbed carriers`],
+      ["Yard", "Harrisburg Pike, 43223"],
+      ["Coverage", `Columbus + ${CITY_FACTS.length} nearby towns`],
+    ]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      {HOME.intro.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="how-h">
+    <div class="wrap">
+      <p class="kicker">How a call goes</p>
+      <h2 id="how-h">From your phone call to your car on the deck</h2>
+      <ol class="steps">
+        {HOME.steps.map((s) => <li><h3>{s.title}</h3><p>{s.text}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="svc-h" id="services">
+    <div class="wrap">
+      <p class="kicker">What we do</p>
+      <h2 id="svc-h">Towing and roadside services around Columbus</h2>
+      <div class="cols two">
+        {SERVICE_GROUPS.map((g) => (
+          <div>
+            <h3>{g.label}</h3>
+            <p class="muted">{g.intro}</p>
+            <ul class="rules">
+              {SERVICES.filter((s) => s.group === g.id).map((s) => (
+                <li><a href={servicePath(s.slug)}><strong>{s.name}</strong></a><p>{s.blurb}</p></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark" aria-labelledby="flat-h">
+    <div class="wrap">
+      <p class="kicker" style="color:var(--amber)">Why it matters</p>
+      <h2 id="flat-h">Why every Auto Lyft tow is a flatbed tow</h2>
+      <ul class="rules cols two" style="display:grid">
+        {HOME.whyFlatbed.map((w) => <li><h3>{w.title}</h3><p>{w.text}</p></li>)}
+      </ul>
+      <p style="margin-top:20px">Read more on the <a href="/towing/flatbed-towing">flatbed towing page</a>.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="area-h" id="areas">
+    <div class="wrap">
+      <p class="kicker">Where we go</p>
+      <h2 id="area-h">Columbus and the towns around it</h2>
+      <p class="prose">Start with <a href="/areas/columbus-oh">towing in Columbus by neighborhood</a>, or find your town below. Each page lists the ZIP codes, the main roads we work and how far it is from our yard.</p>
+      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+        {byDir.map((g) => (
+          <div>
+            <h3>{g.dir} of downtown</h3>
+            <ul class="linklist" style="columns:1">
+              {g.cities.map((c) => <li><a href={cityPath(c.slug)}>{c.name}</a> <span class="muted small">· {c.miles} mi</span></li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+
+  <section class="band">
+    <div class="wrap prose">
+      <FaqList faqs={HOME_FAQS} heading="Columbus towing questions" />
+    </div>
+  </section>
+
+  <Nap />
+</Base>

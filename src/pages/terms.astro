@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import { COMPANY } from "../data/company";
+import { RATES, EV_RATES, usd } from "../data/rates";
+import type { Faq } from "../data/types";
+
+const path = "/terms";
+const updated = "October 13, 2026";
+const faqs: Faq[] = [
+  { q: "Can the price go up after I agree to it?", a: "Only if the job itself changes from what was described, for instance a different drop-off, a car buried in snow that needs winching, or a vehicle that turns out larger. The driver tells you the revised amount and waits for your okay before doing the extra work." },
+  { q: "How long do I have to report damage?", a: "Please check the vehicle and point out anything new to the driver at drop-off, before the truck leaves. Then email the owner with photos within a day or two. Reports made on the spot are far easier to verify against the loading photos." },
+];
+---
+<Base
+  title="Terms of Service"
+  description="Auto Lyft USA terms: how quotes become final prices, storage fees, payment, the damage claim process and the limits of our liability. (614) 633-8163."
+  path={path}
+  crumbs={[{ name: "Terms", path }]}
+  faqs={faqs}
+>
+  <Hero
+    eyebrow="Terms"
+    h1="The Terms Behind Every Tow and Service Call"
+    lede="These are the ground rules for working with us, written so you can read them in a few minutes. Calling for service means you accept them."
+  />
+  <section class="band">
+    <div class="wrap prose">
+      <p class="muted">Last updated {updated}. "We" and "us" mean {COMPANY.legalName}. "You" means the person who requests or pays for the service.</p>
+
+      <h2>Using this website</h2>
+      <p>
+        The site is here to explain our services, prices and service area. We try to keep it accurate, but information on it, including the <a href="/estimate">online estimator</a>, is a guide and not a binding offer. A job is agreed only when a dispatcher gives you a quote and you accept it.
+      </p>
+
+      <h2>Quotes and the final price</h2>
+      <p>
+        Every quote is built from our published <a href="/rates">rate card</a> using what you tell the dispatcher: where the vehicle is, what it is, its condition and where it is going. The amount you are quoted is the amount you pay, plus Ohio sales tax for the pickup county and any card fee you choose to incur.
+      </p>
+      <p>
+        The price changes only if the job changes. Examples include a new destination, a vehicle that is stuck and needs a winch-out, keys that are missing when we were told they were present, or a vehicle that qualifies for the large-vehicle add-on. In every such case the driver or dispatcher explains the change and the new figure before doing the additional work, and you may decline. If you decline, you owe only for the work already done, such as the en-route miles.
+      </p>
+      <p>If you cancel after a truck has been sent, we may charge the en-route miles driven up to that point.</p>
+
+      <h2>Payment</h2>
+      <p>
+        We accept cash, debit and credit cards. Card payments made online carry a {RATES.cardFeePercent}% card fee, shown before you pay. Veterans receive {RATES.veteranPercent}% off with a military or VA ID presented to the driver. Business customers with an approved account may be invoiced on the terms agreed in writing for that account.
+      </p>
+
+      <h2>Storage</h2>
+      <p>
+        If a vehicle stays in our yard past the day it arrives, storage is charged at {usd(RATES.storagePerDay)} per day, or {usd(EV_RATES.storagePerDay)} per day for an electric vehicle. Towing and storage charges must be paid before the vehicle is released. The person collecting it needs photo ID and proof of ownership or written authorization from the owner. Vehicles left unclaimed are handled under the procedures Ohio law sets for abandoned vehicles.
+      </p>
+
+      <h2>Your vehicle and what is in it</h2>
+      <p>
+        Please remove valuables, cash, documents and anything fragile before loading if you safely can. We are not responsible for loose personal property left in the vehicle. Let the dispatcher know about anything unusual: lowered suspension, aftermarket body parts, a fragile load, or an electric or hybrid drivetrain. That information determines how we load the vehicle.
+      </p>
+
+      <h2>Damage claims</h2>
+      <p>Our process is built around a simple before-and-after record.</p>
+      <ol>
+        <li>Before loading, the driver photographs the vehicle on all sides. Those photos are part of the job record.</li>
+        <li>At drop-off, look the vehicle over and tell the driver about any new damage before the truck leaves. If no one will be present at drop-off, inspect it as soon as you can.</li>
+        <li>Email <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> with the date, the location, a description and your own photos.</li>
+        <li>We compare the report against the loading photos and reply. Where we caused the damage, we arrange repair or payment directly or through our commercial insurer, {COMPANY.insurer}.</li>
+      </ol>
+
+      <h2>Limits of our liability</h2>
+      <p>
+        We are responsible for physical damage our drivers cause through their own negligence while moving or storing your vehicle. To the extent Ohio law permits, we are not responsible for:
+      </p>
+      <ul>
+        <li>damage that was present before loading, including damage visible in the loading photos;</li>
+        <li>mechanical or electrical failures that were not caused by the tow, including the fault that led you to call;</li>
+        <li>harm that results from information that was wrong or left out when the job was booked;</li>
+        <li>lost or damaged personal items left inside the vehicle;</li>
+        <li>indirect losses such as missed work, rental cars or lost business, unless the law requires otherwise.</li>
+      </ul>
+      <p>
+        Roadside services such as jump starts and lockouts carry a small risk to older or already failing parts, and the driver will tell you if a car looks like a poor candidate before starting. Nothing in these terms removes rights you have under Ohio consumer protection law.
+      </p>
+
+      <h2>Work done by partners</h2>
+      <p>
+        When we arrange a job with a heavy-wrecker or other partner company, that company performs the work under its own terms and insurance. We coordinate and stay in contact, and we will help you reach the right people if a problem comes up.
+      </p>
+
+      <h2>Governing law</h2>
+      <p>
+        These terms are governed by the laws of the State of Ohio. Any dispute that we cannot settle directly will be handled in the courts of Franklin County, Ohio, unless the law entitles you to a different venue. We would much rather resolve a problem by phone, so please call or email first.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        We may update these terms from time to time; the version that applies is the one posted on the day of your service. How we treat personal information is covered separately in our <a href="/privacy">privacy policy</a>.
+      </p>
+      <address style="font-style:normal">
+        <strong>{COMPANY.legalName}</strong><br />
+        {COMPANY.address.full}<br />
+        <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> · <a href={COMPANY.telHref}>{COMPANY.phone}</a>
+      </address>
+    </div>
+  </section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="Questions about these terms" /></div></section>
+</Base>

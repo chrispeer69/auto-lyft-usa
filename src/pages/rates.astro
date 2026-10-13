@@ -1,0 +1,125 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { RATES, EV_RATES, COUNTY_TAX, AFTER_HOURS_WINDOW, usd } from "../data/rates";
+import { serviceNode, abs } from "../lib/schema";
+import { ids } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/rates";
+const card: [string, string, string][] = [
+  ["En-route", `${usd(RATES.enroutePerMile)} per mile`, "Every call. Counted from our Harrisburg Pike yard to where you are."],
+  ["Hook-up (tow)", usd(RATES.hookup), "Loading and strapping the vehicle on the flatbed."],
+  ["Loaded miles (tow)", `${usd(RATES.loadedPerMile)} per mile`, "Each mile your vehicle rides on the deck."],
+  ["Roadside service call", usd(RATES.roadsideFlat), "Jump start, lockout, spare-tire change or battery call."],
+  ["Fuel delivery", `${usd(RATES.fuelBase)} + fuel at ${RATES.fuelMultiplier}× pump price`, "A few gallons to get you to a station."],
+  ["Winch-out", `${usd(RATES.winchPerHour)} per hour`, "Ditch, snow or mud recovery; one-hour minimum."],
+  ["Interstate shoulder", `+${usd(RATES.highway)}`, "Breakdowns on the shoulder of any interstate or limited-access freeway."],
+  ["After hours", `+${usd(RATES.afterHours)}`, `Calls between ${AFTER_HOURS_WINDOW}.`],
+  ["Weekend", `+${usd(RATES.weekend)}`, "Saturday and Sunday calls."],
+  ["Large vehicle", `+${usd(RATES.largeVehicle)}`, "Heavier pickups and full-size vans that still fit a light-duty deck."],
+  ["Storage", `${usd(RATES.storagePerDay)} per day`, "Only if a car stays in our yard past the day it arrives."],
+];
+const evCard: [string, string][] = [
+  ["En-route", `${usd(EV_RATES.enroutePerMile)} per mile`],
+  ["EV hook-up", usd(EV_RATES.hookup)],
+  ["Loaded miles", `${usd(EV_RATES.loadedPerMile)} per mile`],
+  ["Interstate shoulder", `+${usd(EV_RATES.highway)}`],
+  ["Storage", `${usd(EV_RATES.storagePerDay)} per day`],
+];
+// Worked examples, computed from the card so they never drift from it.
+const ex1 = 6 * RATES.enroutePerMile + RATES.hookup + 9 * RATES.loadedPerMile;
+const ex1Tax = Math.round(ex1 * 8) / 100;
+const ex2 = 14 * RATES.enroutePerMile + RATES.roadsideFlat + RATES.afterHours;
+const ex2Tax = Math.round(ex2 * 7.25) / 100;
+const faqs: Faq[] = [
+  { q: "How much is a tow in Columbus with Auto Lyft USA?", a: `A local flatbed tow is ${usd(RATES.enroutePerMile)} per mile from our yard to you, then ${usd(RATES.hookup)} to load it and ${usd(RATES.loadedPerMile)} per mile on the deck, plus sales tax. Night, weekend and interstate calls add the surcharges listed on this page. The dispatcher adds it up for you before the truck is sent.` },
+  { q: "Why do you charge for the miles to reach me?", a: "Because that drive is real work: a driver and a truck spend the time and fuel to get to you. Charging it per mile keeps the price fair. Someone two miles from our yard pays less than someone twenty miles away, instead of everyone paying the same padded flat fee." },
+  { q: "Is a jump start cheaper than a tow?", a: `Yes. A jump start is a ${usd(RATES.roadsideFlat)} roadside call plus the en-route miles, with no hook-up and no loaded miles. If the car still won't run after the jump, the driver can load it then, and you pay the tow charges instead.` },
+  { q: "Do electric vehicles cost more to tow?", a: `EVs have their own card: a ${usd(EV_RATES.hookup)} hook-up and ${usd(EV_RATES.loadedPerMile)} per loaded mile, but a lower ${usd(EV_RATES.enroutePerMile)} per en-route mile. Loading an EV in transport mode takes more time and care. Price one on the [EV estimate page](/estimate/ev).` },
+  { q: "Do you charge sales tax on towing in Ohio?", a: "Yes. Ohio taxes towing and roadside services, and the rate depends on the county where we pick the car up, from 7.25% to 8.25% in the counties we serve. The table on this page lists each one." },
+  { q: "Is there a discount for veterans?", a: `Yes: ${RATES.veteranPercent}% off for veterans who show a military or VA ID to the driver. Mention it when you call so the dispatcher includes it in your quote.` },
+  { q: "What payment do you take?", a: `Cash and cards. Paying online by card adds a ${RATES.cardFeePercent}% card fee, which is shown before you pay. Businesses with an approved [fleet account](/towing/fleet-towing) can be invoiced monthly.` },
+  { q: "Will the final bill ever be higher than the quote?", a: "Only if the job changes, for example the car turns out to be stuck in mud and needs a winch, or you ask to go somewhere farther. When that happens, the driver tells you the new price before doing the extra work, not afterward." },
+];
+const schema = [
+  serviceNode({
+    path,
+    name: "Towing and roadside assistance rate card",
+    serviceType: "Towing service",
+    description: "Published towing and roadside rates for Columbus and Central Ohio.",
+    offers: [
+      { name: "Hook-up", price: RATES.hookup, unit: "per tow" },
+      { name: "Loaded mileage", price: RATES.loadedPerMile, unit: "per mile", code: "SMI" },
+      { name: "En-route mileage", price: RATES.enroutePerMile, unit: "per mile", code: "SMI" },
+      { name: "Roadside service call", price: RATES.roadsideFlat, unit: "per call" },
+      { name: "Winch-out", price: RATES.winchPerHour, unit: "per hour", code: "HUR" },
+      { name: "EV hook-up", price: EV_RATES.hookup, unit: "per tow" },
+    ].map((o) => ({
+      "@type": "Offer",
+      name: o.name,
+      price: o.price,
+      priceCurrency: "USD",
+      url: abs(path),
+      priceSpecification: { "@type": "UnitPriceSpecification", price: o.price, priceCurrency: "USD", unitText: o.unit, ...(o.code ? { unitCode: o.code } : {}) },
+      offeredBy: { "@id": ids.business },
+    })),
+  }),
+];
+---
+<Base title="Towing Rates in Columbus, OH" description={`Auto Lyft USA's published towing rates: ${usd(RATES.hookup)} hook-up, ${usd(RATES.loadedPerMile)}/loaded mile, ${usd(RATES.roadsideFlat)} roadside calls. See every charge before you call. (614) 633-8163.`} path={path} crumbs={[{ name: "Rates", path }]} schema={schema} faqs={faqs}>
+  <Hero eyebrow="Published rate card" h1="What a Tow Costs: Our Columbus Rate Card" lede="Every charge we can put on a bill is on this page. The dispatcher uses these same numbers to quote your job before a truck leaves the yard." secondary={{ href: "/estimate", label: "Price my trip" }} />
+  <section class="band">
+    <div class="wrap">
+      <h2>The rate card</h2>
+      <div class="table-scroll"><table class="table">
+        <thead><tr><th>Charge</th><th>Rate</th><th>When it applies</th></tr></thead>
+        <tbody>{card.map(([a, b, c]) => <tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>)}</tbody>
+      </table></div>
+      <p class="small muted" style="margin-top:12px">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county.</p>
+    </div>
+  </section>
+  <section class="band alt">
+    <div class="wrap cols two">
+      <div>
+        <h2>Electric vehicle card</h2>
+        <p>EVs go on the flatbed in transport mode, which takes longer to load, so they are billed on their own card. Night, weekend and large-vehicle charges are the same as above.</p>
+        <table class="table"><tbody>{evCard.map(([a, b]) => <tr><td>{a}</td><td>{b}</td></tr>)}</tbody></table>
+        <p style="margin-top:12px"><a href="/estimate/ev">Estimate an EV tow →</a></p>
+      </div>
+      <div>
+        <h2>Sales tax by county</h2>
+        <p>Tax follows the county where we pick the vehicle up.</p>
+        <table class="table"><tbody>{COUNTY_TAX.map((c) => <tr><td>{c.county} County</td><td>{c.rate}%</td></tr>)}</tbody></table>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap prose">
+      <h2>Two bills, worked out</h2>
+      <h3>A weekday tow across the west side</h3>
+      <p>Say your car won't start in a lot 6 miles from our yard on a Tuesday afternoon, and it needs to go to a shop 9 miles away, all in Franklin County.</p>
+      <ul>
+        <li>En-route: 6 × {usd(RATES.enroutePerMile)} = {usd(6 * RATES.enroutePerMile)}</li>
+        <li>Hook-up: {usd(RATES.hookup)}</li>
+        <li>Loaded: 9 × {usd(RATES.loadedPerMile)} = {usd(9 * RATES.loadedPerMile)}</li>
+        <li>Subtotal {usd(ex1)} + 8% tax {usd(ex1Tax)} = <strong>{usd(ex1 + ex1Tax)}</strong></li>
+      </ul>
+      <h3>A midnight jump start in Madison County</h3>
+      <p>Now say your battery dies near West Jefferson, 14 miles from the yard, at 12:30 AM.</p>
+      <ul>
+        <li>En-route: 14 × {usd(RATES.enroutePerMile)} = {usd(14 * RATES.enroutePerMile)}</li>
+        <li>Roadside call: {usd(RATES.roadsideFlat)}</li>
+        <li>After hours: {usd(RATES.afterHours)}</li>
+        <li>Subtotal {usd(ex2)} + 7.25% tax {usd(ex2Tax)} = <strong>{usd(ex2 + ex2Tax)}</strong></li>
+      </ul>
+      <p>Have your own numbers? The <a href="/estimate">estimate tool</a> does this math for you.</p>
+    </div>
+  </section>
+  <CtaBand heading="Want the exact number?" text="Call and the dispatcher quotes your job from this card in under a minute." />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Pricing questions" /></div></section>
+  <Nap />
+</Base>

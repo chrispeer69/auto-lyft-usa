@@ -1,0 +1,42 @@
+import type { HoodContent } from "../index";
+
+export default {
+  description:
+    "Downtown Columbus towing for garages, event lots and the I-70/I-71 innerbelt: flatbed only, price before dispatch, any hour of the day. (614) 633-8163.",
+  h1: "Downtown Columbus Towing, From Garage Decks to the Innerbelt",
+  lede:
+    "Parking garages, one-way streets and the busiest interchange in the city make downtown its own kind of tow job.",
+  intro: [
+    "Downtown Columbus packs a lot of driving into a small square. High and Broad cross at the Statehouse, the I-70 and I-71 innerbelt wraps the south and east sides, I-670 caps the north, and the Scioto runs down the west. Inside that ring are office towers, state buildings, two college campuses, the theaters and the arena, and thousands of parking spaces stacked in garages. From our yard at 1620 Harrisburg Pike, we come in from the southwest, usually over the river near Franklinton.",
+    "Much of what we do downtown happens under a roof. A car that won't start on the fourth level of a garage needs a truck that clears the entrance and a driver who knows how to load in a tight aisle. If clearance is too low for a flatbed, we jump, unlock or change the tire in place, or bring the car down to street level another way before loading. On the surface streets, one-way grids, bus lanes and loading zones mean the driver has to choose the right block to stop on, and event nights at Nationwide Arena or the theaters can fill every curb in the district.",
+    "The innerbelt is the other half of downtown work. The rebuild of the I-70/I-71 overlap has cut the number of ramps and changed where they land, and shoulders are narrow in places. If you break down there, stay buckled in and call. We quote the full job before the truck rolls. Reach us at [(614) 633-8163](/contact) or through the [request form](/request); our [parking garage towing](/towing/parking-garage-towing) page covers garage jobs in more depth.",
+  ],
+  roads: [
+    { name: "I-70 / I-71 innerbelt", note: "The shared stretch along the south and east edge of downtown, partly rebuilt with fewer ramps. Narrow shoulders and quick merges make it a frequent highway call; the $75 highway surcharge applies." },
+    { name: "I-670 (north edge)", note: "Separates downtown from the Arena District and Short North side. Breakdowns near the convention center ramps are common on event weekends." },
+    { name: "High Street and Broad Street", note: "The two main streets meet at Capitol Square. Bus traffic and turn restrictions mean the driver may stop around the corner and walk to you first." },
+    { name: "Third and Fourth streets", note: "One-way streets with garages and surface lots on both sides; a good place to say which garage level and which exit ramp you are near." },
+    { name: "Civic Center Drive and the riverfront", note: "Runs along the Scioto Mile parks near City Hall. Festival weekends close parts of it, so we may approach from Front Street instead." },
+  ],
+  local: [
+    { kind: "landmark", name: "Ohio Statehouse", detail: "The Greek Revival capitol on Capitol Square, finished in 1861, with an underground garage below it." },
+    { kind: "park", name: "Columbus Commons", detail: "A six-acre lawn where the City Center mall used to stand, surrounded by garages that fill for concerts." },
+    { kind: "landmark", name: "Nationwide Arena", detail: "Home of the Blue Jackets since 2000. See our [arena towing notes](/local/nationwide-arena) for game-night tips." },
+    { kind: "park", name: "Scioto Mile", detail: "A string of riverfront parks along the downtown bank of the Scioto, busy during festivals and fireworks." },
+    { kind: "college", name: "Columbus State Community College", detail: "A large campus on the east side of downtown with its own garages; more on our [Columbus State page](/local/columbus-state)." },
+    { kind: "college", name: "Columbus College of Art and Design", detail: "The art college next to the Columbus Museum of Art, with students parking on nearby streets; see [CCAD towing](/local/ccad)." },
+    { kind: "medical", name: "Grant Medical Center", detail: "OhioHealth's downtown hospital and Level I trauma center. Visitor garage dead batteries are a regular call." },
+    { kind: "employer", name: "Nationwide and AEP headquarters", detail: "Two of the biggest employers downtown, which means full garages every weekday." },
+  ],
+  faqs: [
+    { q: "Can a flatbed get into a downtown parking garage?", a: "Sometimes, but not always. Many downtown garages have clearances that a flatbed cannot pass, especially on upper decks and ramps. Tell us the garage name and the height painted or hung over the entry bar. If the truck cannot fit, we can still jump the battery, unlock the car or change a tire in place, and for a car that truly will not move, we work out a way to get it down to street level before loading." },
+    { q: "My car died after a game at Nationwide Arena. How do I get help?", a: "Call as soon as you know the car won't start, and say which garage or surface lot you are in, along with the level and the closest stairwell or exit. After games, traffic leaving the Arena District is heavy, so the truck may take longer to reach you than on a quiet night. Most of these calls are batteries, which our driver handles at the $75 roadside rate. Our [Arena District page](/local/arena-district) has more tips." },
+    { q: "What happens if I break down on the I-70/I-71 split downtown?", a: "Turn on the hazards, stay buckled in, and dial 911 first if the car is sitting in traffic. After that, phone us with the direction, the nearest ramp or overpass, and whether you are on the left or right shoulder. The innerbelt has been rebuilt in stages, and ramp locations are not where long-time drivers remember. Police may move the car quickly; we coordinate with them and add the $75 highway charge to the normal rate." },
+    { q: "Can you tow during festivals and street closures downtown?", a: "Yes, but closures change the route. During large events along the riverfront or on High Street, some blocks are shut and barricaded. The dispatcher will ask for the nearest open cross street so the driver can reach you without going through the closure. If you can walk the keys to a spot outside the barricades, that sometimes saves time. See our [festival towing notes](/local/columbus-festivals) for the big summer events." },
+    { q: "I got towed from a downtown lot. Is that you?", a: "Probably not. We do private property towing for some lot owners, but downtown has many towing contractors and city impound handles street violations. The sign at the lot entrance should list the company that tows from it and a phone number. Our page on [tracking down a towed car in Columbus](/local/towed-car-columbus) explains how to track it down and what to bring when you pick it up." },
+    { q: "Do you tow low or sports cars from downtown?", a: "Yes. Every tow we run is on a flatbed, which is the safe way to move a car with low ground clearance or a front splitter. On a garage ramp, a low car can scrape on the way down, so the driver may use ramp extenders or wood blocks. Let us know the make and model when you call. Our [low-profile towing](/towing/low-profile-towing) page explains the process." },
+    { q: "Can you deliver my car to a downtown shop or dealer?", a: "Yes, if the shop is open or has an after-hours drop area, we will deliver it there. Because many downtown shops are small and on busy streets, we confirm their hours before loading. If they are closed, we can bring it to our Harrisburg Pike yard and drop it off later; storage runs $45 a day. We can also suggest an independent partner shop if you do not have one." },
+    { q: "Is towing more expensive downtown at night?", a: "The rate card is the same everywhere we work, but time and road type matter. Overnight pickups, from 10 PM to 6 AM, carry a $150 surcharge, weekends add $50, and an interstate pickup adds $75. Downtown is a short run up from our southwest-side yard, so the en-route charge stays modest. The dispatcher adds everything up and tells you the total before the truck leaves." },
+  ],
+  zips: ["43215"],
+} satisfies HoodContent;

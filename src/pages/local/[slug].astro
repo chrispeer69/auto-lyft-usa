@@ -1,0 +1,64 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { PLACE_PAGES } from "../../data/places";
+import { PLACE_CATEGORIES, placeBySlug, placePath } from "../../data/places/catalog";
+import { cityBySlug, cityPath } from "../../data/cities/catalog";
+import { serviceBySlug, servicePath } from "../../data/services/catalog";
+import { serviceNode } from "../../lib/schema";
+import { rich } from "../../lib/text";
+import type { Place } from "../../data/types";
+
+export function getStaticPaths() {
+  return PLACE_PAGES.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Place };
+const path = placePath(p.slug);
+const v = p.venue;
+const venueNode = {
+  "@type": v.schemaType,
+  name: v.name,
+  address: {
+    "@type": "PostalAddress",
+    ...(v.street ? { streetAddress: v.street } : {}),
+    addressLocality: v.locality,
+    addressRegion: "OH",
+    ...(v.postal ? { postalCode: v.postal } : {}),
+    addressCountry: "US",
+  },
+  ...(v.lat && v.lng ? { geo: { "@type": "GeoCoordinates", latitude: v.lat, longitude: v.lng } } : {}),
+  containedInPlace: { "@type": "City", name: v.locality, containedInPlace: { "@type": "State", name: "Ohio" } },
+};
+const schema = [serviceNode({ path, name: p.h1, serviceType: "Towing service", description: p.description, areaServed: venueNode })];
+const category = PLACE_CATEGORIES.find((c) => c.id === p.category)!;
+const services = p.services.map((s) => serviceBySlug(s)).filter((s) => s !== undefined);
+const towns = p.cities.map((s) => (s === "columbus" ? { slug: "columbus", name: "Columbus" } : cityBySlug(s))).filter((c) => c !== undefined);
+const related = p.related.map((s) => placeBySlug(s)).filter((s) => s !== undefined);
+---
+<Base title={p.title} description={p.description} path={path} crumbs={[{ name: "Venues & campuses", path: "/local" }, { name: p.label, path }]} schema={schema} faqs={p.faqs}>
+  <Hero eyebrow={category.label} h1={p.h1} lede={p.lede} facts={[["Location", `${v.name}, ${v.locality}`], ["Dispatch", "24/7"], ["Price", "Quoted before we roll"]]} />
+  <section class="band"><div class="wrap prose">{p.intro.map((t) => <p set:html={rich(t)} />)}</div></section>
+  {p.sections.map((sec, i) => (
+    <section class={`band${i % 2 === 0 ? " alt" : ""}`}>
+      <div class="wrap prose">
+        <h2>{sec.heading}</h2>
+        {sec.paragraphs.map((t) => <p set:html={rich(t)} />)}
+        {sec.bullets && <ul>{sec.bullets.map((b) => <li set:html={rich(b)} />)}</ul>}
+      </div>
+    </section>
+  ))}
+  <section class="band"><div class="wrap prose"><FaqList faqs={p.faqs} heading={`${p.label}: what drivers ask`} /></div></section>
+  <CtaBand />
+  <section class="band alt" aria-labelledby="help-h">
+    <div class="wrap cols three">
+      <div><h2 id="help-h">Services here</h2><ul class="linklist" style="columns:1">{services.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}<li><a href="/rates">Our rates</a></li></ul></div>
+      <div><h2>Nearby towns</h2><ul class="linklist" style="columns:1">{towns.map((t) => <li><a href={t.slug === "columbus" ? "/areas/columbus-oh" : cityPath(t.slug)}>{t.name}</a></li>)}<li><a href="/areas">All areas</a></li></ul></div>
+      <div><h2>Similar spots</h2><ul class="linklist" style="columns:1">{related.map((r) => <li><a href={placePath(r.slug)}>{r.label}</a></li>)}<li><a href="/local">All venues &amp; campuses</a></li></ul></div>
+    </div>
+    <div class="wrap"><p class="small muted" style="margin-top:20px">{p.notAffiliated}</p></div>
+  </section>
+  <Nap />
+</Base>

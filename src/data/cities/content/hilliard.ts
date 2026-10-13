@@ -1,0 +1,43 @@
+import type { CityContent } from "../../types";
+
+export default {
+  description:
+    "Need a tow in Hilliard? Flatbeds for Cemetery Road, Roberts Road, Old Hilliard and the I-270 ramps, plus jump starts and lockouts. (614) 633-8163.",
+  h1: "Need a Tow in Hilliard? Flatbeds Out of West Columbus",
+  lede:
+    "Hilliard grew from a railroad stop into one of the busiest suburbs on the west side, and its outerbelt exits keep our carriers coming back day and night.",
+  intro: [
+    "Hilliard lies about nine miles northwest of our yard on Harrisburg Pike. The quickest path for a carrier is usually I-70 west to the outerbelt, then north on I-270 to Roberts Road or Cemetery Road. For addresses in the southern subdivisions, the driver may instead leave I-70 at Hilliard-Rome Road and work north on surface streets.",
+    "A large share of our Hilliard work starts on I-270 itself. The stretch between Roberts Road and Cemetery Road carries heavy commuter traffic, and stalled cars on the shoulder or the ramps need to be cleared quickly. Off the highway, Cemetery Road is lined with shopping centers and fast-food lots where dead batteries and locked doors are routine. The new data center construction along Scioto Darby Road has added work trucks and gravel to that corridor, which means more flat tires than you might expect. In Old Hilliard, the narrow blocks around Main Street and the railroad tracks are where we pick up cars that will not restart after an evening downtown.",
+    "Three high schools, the county fairgrounds and a steady flow of new houses keep the town busy year round, and every vehicle we haul out of here rides on a flatbed. If you are stuck anywhere in Hilliard, call (614) 633-8163 or [request a truck online](/request); the dispatcher confirms a price and an arrival estimate before a driver leaves.",
+  ],
+  roads: [
+    { name: "I-270 at Roberts Road (Exit 10)", note: "Hilliard's southern outerbelt exit, close to warehouse and office parks. Cars that overheat in the afternoon backup often limp off here." },
+    { name: "I-270 at Cemetery Road / Fishinger Boulevard (Exit 13)", note: "The main gateway into town from the highway, shared with Upper Arlington. The commercial strip just west of it generates many of our parking-lot calls." },
+    { name: "Cemetery Road", note: "Hilliard's east-west retail corridor running from the outerbelt toward Old Hilliard, with heavy turning traffic at nearly every light." },
+    { name: "Scioto Darby Road", note: "Home to the county fairgrounds and the growing data center campus, where construction traffic shares the lanes with commuters." },
+    { name: "Main Street in Old Hilliard", note: "A compact downtown crossed by the railroad. Parallel parking and short blocks mean the driver will ask exactly where the car sits." },
+    { name: "Hilliard-Rome Road", note: "The north-south route on the west side of town that links Hilliard to I-70, used heavily by people living in the newer neighborhoods." },
+  ],
+  local: [
+    { kind: "park", name: "Hilliard's Station Park", detail: "The old depot square in Old Hilliard. On event nights, nearby street parking fills and a few cars inevitably end up with drained batteries." },
+    { kind: "landmark", name: "Early Television Museum", detail: "A small museum full of vintage TV sets; its modest lot is easy for a flatbed to back into if a visitor's car will not start." },
+    { kind: "landmark", name: "Historical Village at Weaver Park", detail: "A collection of relocated old buildings and a vintage train that draws school groups, so expect buses in the drive on weekday mornings." },
+    { kind: "park", name: "First Responders Park", detail: "The city's 9/11 memorial with a reflecting pool and name walls; we treat every call near it with extra care for the setting." },
+    { kind: "school", name: "Hilliard Bradley, Darby and Davidson high schools", detail: "Hilliard City Schools' three high schools. Student drivers stuck in campus lots are among the most common afternoon calls we get in town." },
+    { kind: "employer", name: "Advanced Drainage Systems", detail: "The company's head office and engineering center on Trueman Boulevard bring a large daytime workforce, and their parking lots see occasional no-start calls." },
+    { kind: "employer", name: "Amazon Web Services data center campus", detail: "The Scioto Darby Road site, where active construction can mean loose debris on the shoulders and punctured tires on passing cars." },
+    { kind: "park", name: "Heritage Rail Trail", detail: "The paved path that begins in Old Hilliard. If you return to a trailhead lot to find a flat or a dead battery, we can usually fix it in place." },
+  ],
+  faqs: [
+    { q: "How does your truck get to Hilliard from Harrisburg Pike?", a: "Most runs go west on I-70 and then north on I-270, leaving the outerbelt at Roberts Road or Cemetery Road depending on your address. For the neighborhoods near I-70, the driver may come up Hilliard-Rome Road instead. Hilliard sits about nine miles from our yard, and the dispatcher gives you an arrival window that reflects the traffic at the time of your call." },
+    { q: "I broke down on I-270 between Roberts Road and Cemetery Road. What now?", a: "Put your hazards on, stay belted in and keep your doors shut on the traffic side. Call (614) 633-8163 and tell us whether you are northbound or southbound and which exit you passed last. That stretch moves fast, so if a trooper or deputy asks for the car to be cleared, our driver will coordinate with them when the truck arrives." },
+    { q: "My car quit in a Cemetery Road shopping center. Will you come?", a: "Yes. Store and restaurant lots along Cemetery Road are where many of our Hilliard calls come from. Let the dispatcher know the name of the business you are parked at and which side of the lot you are on. Before towing, the driver checks whether a [jump start](/towing/jump-start) or a tire swap would get you going." },
+    { q: "Do you help people at the Franklin County Fair in Hilliard?", a: "Yes. The fairgrounds on Scioto Darby Road draw big crowds in summer, and the grass and gravel parking areas can trap a car after a storm. Tell us the gate or parking area you used. If the car is stuck in soft ground, the driver winches it to firm footing before deciding whether it needs to be towed." },
+    { q: "Can a flatbed get down Main Street in Old Hilliard?", a: "Yes, but parking on the downtown blocks is tight and the railroad crossing can hold up traffic. If your car is parallel parked, the driver may need to pull it out carefully with the winch before loading. Mention any nearby landmark, such as Station Park, so the truck can line up without blocking the street for long." },
+    { q: "My teenager's car will not start at Hilliard Davidson. Can you help?", a: "Yes, and you do not have to be there. Tell us which school lot the car is in, describe the vehicle, and let us know who will meet the driver. Most student car problems turn out to be a flat battery or a flat tire, and both can usually be handled on the spot. Ask the school office whether a tow truck needs to check in." },
+    { q: "What will a Hilliard tow set me back?", a: "Three things drive the number: the mileage to your chosen drop-off, the hour you call, and any extra labor such as winching. Hilliard is in our regular service range, and we never send a truck without telling you the full price first. Our [rates page](/rates) explains each part of the charge, so you know what you are paying for." },
+    { q: "Do you remove cars from Hilliard apartment lots for owners?", a: "We handle [private property towing](/towing/private-property-towing) for landlords and managers who have the signs Ohio law requires at every entrance. We set up an agreement with the property first, and a manager must authorize each removal. We do not patrol lots or tow vehicles at random, and every removal is logged with the time, location and reason so the owner can recover the car without confusion." },
+    { q: "Which towns near Hilliard do you also cover?", a: "Hilliard shares borders with several places we serve every week, including [Dublin](/areas/dublin-oh) to the north, Upper Arlington to the east and the Galloway area to the south. A driver finishing a job in one of them can often swing over to the next without returning to the yard. That makes it practical to tow a car from a Hilliard driveway to a trusted mechanic in a neighbouring suburb." },
+  ],
+} satisfies CityContent;

@@ -1,0 +1,99 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import { COMPANY } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/privacy";
+const updated = "October 13, 2026";
+const faqs: Faq[] = [
+  { q: "Do you sell or share my phone number?", a: "No. We do not sell, rent or trade any contact details. Your number is used to handle the job you called or texted about, and it is shared only when that job needs it, such as with a partner company we bring in for a heavy vehicle." },
+  { q: "Does the website set cookies or run trackers?", a: "Not at the moment. There are no analytics, advertising pixels or login cookies. If that ever changes, this policy will be updated first and the date at the top will change." },
+];
+---
+<Base
+  title="Privacy Policy"
+  description="How Auto Lyft USA handles your information: no accounts, no analytics, contact details used only to handle your tow request. Questions? (614) 633-8163."
+  path={path}
+  crumbs={[{ name: "Privacy", path }]}
+  faqs={faqs}
+>
+  <Hero
+    eyebrow="Privacy"
+    h1="How We Handle Your Information"
+    lede="Short version: this website collects almost nothing, and what you tell us on the phone or by text is used to move your vehicle and run the business, not to market to you."
+  />
+  <section class="band">
+    <div class="wrap prose">
+      <p class="muted">Last updated {updated}. This policy covers the website at autolyftusa.online and the calls, texts and emails that come to {COMPANY.legalName} through it.</p>
+
+      <h2>What the website collects</h2>
+      <p>
+        This is a plain information site. It has no user accounts, no sign-up forms and no shopping cart. We do not run analytics software, advertising pixels or tracking cookies at this time. Your browser may keep its own cache of the pages you view, but that stays on your device.
+      </p>
+      <p>
+        Like every website, ours is delivered by a hosting provider whose servers record routine technical details when a page is requested: your IP address, the browser type, the page asked for and the time. Those logs exist to keep the site running and secure. We do not use them to identify visitors or build profiles.
+      </p>
+
+      <h2>Location on the request page</h2>
+      <p>
+        Our <a href="/request">request page</a> offers a button that reads your phone's location. That happens only if you tap the button and approve your phone's permission prompt. The coordinates are written into a draft text message on your own device. They are not uploaded to the website, saved by it or sent anywhere else. We see your location only if you choose to press send on that message. If you close the draft, the location goes nowhere.
+      </p>
+
+      <h2>What you tell us directly</h2>
+      <p>When you call, text or email, we receive what you share, which usually includes:</p>
+      <ul>
+        <li>your name and phone number, and your email address if you write to us;</li>
+        <li>where the vehicle is and where it should go;</li>
+        <li>the year, make, model and condition of the vehicle, and sometimes its plate or VIN;</li>
+        <li>payment details needed to complete the charge;</li>
+        <li>photos the driver takes of the vehicle before loading it.</li>
+      </ul>
+
+      <h2>How we use it</h2>
+      <p>
+        We use this information to quote and carry out the job, to reach you about it, to bill for it and to keep a record of it. Job records and loading photos are kept so we can answer later questions about an invoice or a damage report, and because tax and business rules require us to keep certain records. We do not use your phone number for marketing calls or promotional texts.
+      </p>
+
+      <h2>When information is shared</h2>
+      <p>We share only what a particular job requires, with:</p>
+      <ul>
+        <li>a partner towing or heavy-wrecker company when we arrange a job our own trucks cannot handle;</li>
+        <li>the repair shop or destination you send the vehicle to;</li>
+        <li>our payment processor, to complete a card charge;</li>
+        <li>police or a court, when the law requires it, for example after a crash or when a vehicle is towed from private property.</li>
+      </ul>
+      <p>We do not sell, rent or trade personal information to anyone.</p>
+
+      <h2>Links to other sites</h2>
+      <p>
+        Some links leave our site, such as the Google Maps directions to our yard and our US Tow Alliance listing. Those services have their own privacy policies, and what they collect when you visit them is governed by those policies, not this one.
+      </p>
+
+      <h2>Security and retention</h2>
+      <p>
+        We keep job records only as long as we need them for the reasons above, and we limit who on our team can see them. No method of storage is perfect, but we take reasonable care, and we never ask for full card numbers by text or email.
+      </p>
+
+      <h2>Children</h2>
+      <p>The site is not aimed at children, and we do not knowingly collect information from anyone under 13.</p>
+
+      <h2>Your choices</h2>
+      <p>
+        You can ask to see the information we hold about a job of yours, have something corrected, or ask us to delete records we are not required to keep. Email <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or call <a href={COMPANY.telHref}>{COMPANY.phone}</a>, and tell us the date and location of the job so we can find it.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If we add analytics, an online form or anything else that changes what we collect, we will update this page before the change goes live. Our <a href="/terms">terms of service</a> cover pricing, payment and claims.
+      </p>
+      <address style="font-style:normal">
+        <strong>{COMPANY.legalName}</strong><br />
+        {COMPANY.address.full}<br />
+        <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> · <a href={COMPANY.telHref}>{COMPANY.phone}</a>
+      </address>
+    </div>
+  </section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="Privacy questions" /></div></section>
+</Base>

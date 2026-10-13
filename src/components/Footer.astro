@@ -1,0 +1,70 @@
+---
+import { COMPANY, licenceLine } from "../data/company";
+import { SERVICES, SERVICE_GROUPS, servicePath } from "../data/services/catalog";
+import { CITY_FACTS, cityPath } from "../data/cities/catalog";
+
+// Footer cities: the closest towns to the yard first, so the strongest local
+// signals get a sitewide link (a different set from the sister site's footer).
+const footerCities = [...CITY_FACTS].sort((a, b) => a.miles - b.miles).slice(0, 12);
+const hubs = [
+  { href: "/towing", label: "All services" },
+  { href: "/areas", label: "Areas we cover" },
+  { href: "/areas/columbus-oh", label: "Columbus neighborhoods" },
+  { href: "/local", label: "Venues & campuses" },
+  { href: "/rates", label: "Rates" },
+  { href: "/estimate", label: "Get an estimate" },
+  { href: "/repair", label: "Repair help" },
+  { href: "/questions", label: "Questions" },
+  { href: "/guides", label: "Driver guides" },
+  { href: "/about", label: "About us" },
+  { href: "/contact", label: "Contact" },
+];
+const licence = licenceLine();
+---
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>{COMPANY.name}</h2>
+        <address>
+          {COMPANY.address.street}<br />
+          {COMPANY.address.city}, {COMPANY.address.region} {COMPANY.address.postal}<br />
+          <a href={COMPANY.telHref}>{COMPANY.phone}</a> · open 24/7<br />
+          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+        </address>
+        <p style="margin-top:14px">
+          Licensed and insured towing carrier.
+          <a href={COMPANY.allianceProfile} rel="noopener" target="_blank">US Tow Alliance member profile</a>
+        </p>
+        {licence && <p>{licence}</p>}
+      </div>
+      {SERVICE_GROUPS.filter((g) => g.id !== "commercial").map((g) => (
+        <div>
+          <h2>{g.label}</h2>
+          <ul>{SERVICES.filter((s) => s.group === g.id).map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}</ul>
+        </div>
+      ))}
+      <div>
+        <h2>Business &amp; property</h2>
+        <ul>{SERVICES.filter((s) => s.group === "commercial").map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}</ul>
+      </div>
+      <div>
+        <h2>Near our yard</h2>
+        <ul>
+          <li><a href="/areas/columbus-oh">Columbus</a></li>
+          {footerCities.map((c) => <li><a href={cityPath(c.slug)}>{c.name}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>More</h2>
+        <ul>{hubs.map((h) => <li><a href={h.href}>{h.label}</a></li>)}</ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© {new Date().getFullYear()} {COMPANY.legalName}</span>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,43 @@
+import type { HoodContent } from "../index";
+
+export default {
+  description:
+    "Hilltop tows and roadside help from our Harrisburg Pike yard next door: West Broad, Sullivant, Hague and the I-70 ramps, flatbed only. (614) 633-8163.",
+  h1: "Hilltop Tow Trucks Based Just Down Harrisburg Pike",
+  lede:
+    "Our flatbeds are parked on Harrisburg Pike, which leads straight up into the west side, so the Hilltop is close to home for every driver we send.",
+  intro: [
+    "Ask anyone at our dispatch desk which part of Columbus they know best and the Hilltop comes up first. The yard at 1620 Harrisburg Pike sits just south of it, and US-62 carries our trucks north into the neighborhood without touching a freeway. A breakdown on Sullivant Avenue or a dead battery off Hague Avenue is often a quick trip across our own side of town rather than a run through downtown traffic.",
+    "The Hilltop is wide, bounded by I-70 on the north and the I-270 outerbelt wrapping its south and west sides, and the calls we take reflect that spread. West Broad Street is the busy commercial spine, with car lots, gas stations and strip centers where engines quit in the middle of errands. The side streets between Broad and Sullivant are older and tighter, lined with houses that have narrow driveways and detached garages off the alleys. Farther southwest, around Briggs Road and Demorest Road, the blocks open up into postwar subdivisions with wider lots.",
+    "Every tow we run is on a flatbed, so a lowered coupe, a pickup or an all-wheel-drive SUV all ride the same way, wheels off the pavement. When you call [(614) 633-8163](/contact), mention the nearest corner and say if the car sits in a driveway, behind the house on an alley, or out on Broad itself. You get a full price before the truck pulls out, and the driver can take the car to your mechanic, a dealer or our yard. If you want something online first, the [request form](/request) works too.",
+  ],
+  roads: [
+    { name: "West Broad Street (US-40)", note: "The Hilltop's main business strip. Cars stall at the lights near the old state hospital grounds and in shopping-center lots; COTA's planned LinkUS rapid bus lanes will change curb space here, so expect us to ask exactly where the car is sitting." },
+    { name: "Sullivant Avenue", note: "A long east-west street that recently got safety upgrades. Our drivers reach it quickly from Harrisburg Pike, and it is a common spot for overheating and no-start calls." },
+    { name: "Hague Avenue", note: "Runs north-south past the Hilltop library branch. The homes along it often have alley garages behind them, which we reach from the back when the street side is blocked." },
+    { name: "I-70 along the north edge", note: "The interstate forms the neighborhood's northern line. Shoulder breakdowns here are highway calls, which carry a $75 surcharge on our rate card." },
+    { name: "I-270 west and south of the Hilltop", note: "The outerbelt curls around two sides of the neighborhood. A flat tire or empty tank on these ramps is one of the shortest outerbelt runs we make." },
+    { name: "Briggs Road and Demorest Road", note: "Residential stretches on the southwest side near Briggs and Franklin Heights high schools, where most of our driveway jump starts come from." },
+  ],
+  local: [
+    { kind: "park", name: "Big Run Park", detail: "A large regional park on Clime Road whose Derby Hill doubles as a soap box derby course; race days fill the lots, so tell us if the car is parked on the grass." },
+    { kind: "park", name: "Glenwood Park", detail: "On Fairmont Avenue, with an outdoor pool and a statue of former mayor Jack Sensenbrenner; summer afternoons bring a lot of parked cars and the occasional dead battery." },
+    { kind: "park", name: "Rhodes Park", detail: "Ball fields that draw families from all over the west side, especially on weekend evenings." },
+    { kind: "landmark", name: "Hilltop Branch Library", detail: "One of the biggest branches in the city library system, on South Hague Avenue." },
+    { kind: "employer", name: "ODOT and Ohio Public Safety offices", detail: "State agencies occupy the old Columbus State Hospital grounds on West Broad, which means a big weekday parking population." },
+    { kind: "school", name: "Briggs High School", detail: "Columbus City Schools high school on Briggs Road, opened in 1974." },
+    { kind: "school", name: "Franklin Heights High School", detail: "South-Western City Schools high school on Demorest Road, at the neighborhood's southwest corner." },
+    { kind: "park", name: "Camp Chase Trail", detail: "A rail-trail that crosses over West Broad on an old trestle and links into the Ohio to Erie Trail." },
+  ],
+  faqs: [
+    { q: "How far is your yard from the Hilltop?", a: "Very close. We are at 1620 Harrisburg Pike, and that road runs north into the Hilltop and Franklinton area, so our trucks can usually reach Sullivant Avenue or West Broad on surface streets. Because the en-route charge is $4 per mile from the yard, Hilltop customers pay less for travel than almost anyone else in Columbus. The dispatcher gives a live arrival estimate when you call." },
+    { q: "My car is in a garage off the alley behind my house. Can a flatbed get to it?", a: "Often, yes. Many Hilltop homes between Broad and Sullivant have detached garages facing an alley. Our light-duty carriers are built for tight work, and drivers are used to backing in from the alley end. Let us know about low wires, overhanging trees or a car parked across the alley so the driver can plan the approach. If the alley is too narrow, we may winch the car out to the street first." },
+    { q: "Do you tow from West Broad Street during the LinkUS construction?", a: "Yes. COTA's rapid bus project along West Broad is changing lanes and curbs on the Hilltop stretch, and some spots where you could pull over before may be coned off. If your car dies there, put the hazards on, get somewhere safe and give the dispatcher the closest intersection and say whether you are facing east or west. Our driver will position the flatbed where it is legal and safe to load." },
+    { q: "Can you jump start my car at Big Run Park or Glenwood Park?", a: "Yes. Dead batteries in park lots, left from a radio playing during a ball game or a cold snap overnight, are a common summer and winter call for us on the west side. A jump start is part of our $75 roadside flat rate. The driver tests the battery after the car starts, and if it is failing, we can arrange a [battery replacement](/towing/car-battery-replacement) right there before the next cold morning catches you." },
+    { q: "Will you tow my car off I-270 near the Hilltop?", a: "Yes. The outerbelt wraps around the Hilltop's south and west sides, and those ramps are only a few minutes from our yard. Stay in the car with your belt on if you are on a narrow shoulder, call (614) 633-8163 and give the direction and nearest interchange. Interstate pickups add a $75 highway charge to the normal hook-up and mileage rates." },
+    { q: "Where can you take a car from the Hilltop?", a: "Wherever you want it. Most Hilltop customers send cars to a mechanic on West Broad or Sullivant, a dealer, or back to their own driveway. If the shop is closed, our Harrisburg Pike lot can keep it overnight, and it is close enough that moving it again the next morning is a short ride. Storage there is $45 a day." },
+    { q: "Do you help Hilltop landlords with abandoned cars or unwanted vehicles?", a: "We do two things here. Property managers can set up [private property towing](/towing/private-property-towing) for apartment lots, which requires proper signs under Ohio law. Owners of a car that no longer runs can ask about [junk car removal](/towing/junk-car-removal) if they have the title. Call the office first and we will walk through what paperwork each option needs, who signs it, and how soon a truck can come out once everything is in order. We do not remove a vehicle from a lot until the owner or manager has confirmed the request." },
+    { q: "Do you offer a discount for veterans on the Hilltop?", a: "Yes. Veterans get 10% off with a valid ID, anywhere we work, including the Hilltop. Say so at the start of the call so the dispatcher can build it into the price you hear, then show the ID to the driver at pickup. The discount applies to the whole job, whether that is a short tow from a Hague Avenue driveway, a lockout at a Broad Street store or a ride off the outerbelt. If you book online instead, note your service in the comments." },
+  ],
+  zips: ["43204", "43223"],
+} satisfies HoodContent;

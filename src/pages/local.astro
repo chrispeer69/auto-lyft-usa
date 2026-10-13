@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { PLACE_PAGES } from "../data/places";
+import { PLACE_CATEGORIES, placePath } from "../data/places/catalog";
+import { itemListNode } from "../lib/schema";
+import type { Faq } from "../data/types";
+
+const path = "/local";
+const faqs: Faq[] = [
+  { q: "Can a tow truck get into a stadium or campus lot during an event?", a: "Usually, but timing matters. While crowds are arriving or leaving, police may close streets and lot exits. The dispatcher plans around that, and sometimes it is quicker to wait until the lot clears. Tell us the lot name or the nearest gate when you call." },
+  { q: "My car died in a mall parking lot. Do I need a tow?", a: "Often not. Most parking-lot calls are dead batteries or lockouts, which a driver fixes on the spot for a flat roadside rate. If the car still won't run, it can go on the flatbed right there. See [jump start service](/towing/jump-start)." },
+  { q: "My car is gone from where I parked. Was it towed?", a: "It may have been towed under Ohio's private-property rules or by police order. Our guide to [finding a towed car in Columbus](/local/towed-car-columbus) explains who to call and what to bring." },
+];
+const schema = [itemListNode(path, PLACE_PAGES.map((p) => ({ name: p.label, path: placePath(p.slug) })))];
+---
+<Base title="Towing at Columbus Venues & Campuses" description="Towing and roadside help at Columbus stadiums, arenas, campuses, malls and the airport: where to meet the truck and what to expect. (614) 633-8163." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Venues & campuses", path }]} schema={schema} faqs={faqs}>
+  <Hero eyebrow="Venues & campuses" h1="Tow Trucks for Columbus Game Days, Campuses and Malls" lede="Busy places break cars in their own ways: crowded garages, closed streets and long walks back to the lot. These pages cover the spots we get called to most." />
+  {PLACE_CATEGORIES.map((c, i) => {
+    const list = PLACE_PAGES.filter((p) => p.category === c.id);
+    return list.length ? (
+      <section class={`band${i % 2 ? " alt" : ""}`}>
+        <div class="wrap">
+          <h2>{c.label}</h2>
+          <ul class="rules cols two" style="display:grid">{list.map((p) => <li><a href={placePath(p.slug)}><strong>{p.label}</strong></a><p>{p.lede}</p></li>)}</ul>
+        </div>
+      </section>
+    ) : null;
+  })}
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Event and parking-lot questions" /></div></section>
+  <Nap />
+</Base>

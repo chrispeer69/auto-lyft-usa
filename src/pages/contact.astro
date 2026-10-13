@@ -1,0 +1,95 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import { COMPANY } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/contact";
+const faqs: Faq[] = [
+  { q: "Is texting as fast as calling?", a: "For a vehicle that needs moving right now, calling is quicker because the dispatcher can ask follow-up questions in seconds. Texting works well when you are somewhere loud, cannot talk freely, or want to send a photo of the car or a pin of your spot." },
+  { q: "Will someone really pick up at 3 a.m.?", a: `Yes. The dispatch line at ${COMPANY.phone} is staffed every hour of every day, holidays included. Overnight jobs carry the after-hours add-on listed on our [rates](/rates) page, and the dispatcher tells you the total before sending a truck.` },
+  { q: "Can I just show up at the yard?", a: "Please call ahead. The yard is a working lot, not a storefront, and the trucks are often out. A quick call makes sure someone is there to release a stored vehicle or hand over paperwork." },
+  { q: "Who handles billing questions or a complaint?", a: `Email ${COMPANY.email}. That inbox goes to the owner, ${COMPANY.owner.name}. Include the date, the pickup location and the name on the invoice so she can pull the job record and the loading photos.` },
+];
+---
+<Base
+  title="Contact Auto Lyft USA Dispatch"
+  description="Call, text or email Auto Lyft USA. Dispatch answers 24/7 from our yard at 1620 Harrisburg Pike, Columbus. What to have ready when you call. (614) 633-8163."
+  path={path}
+  pageType={["WebPage", "ContactPage"]}
+  crumbs={[{ name: "Contact", path }]}
+  faqs={faqs}
+>
+  <Hero
+    eyebrow="Contact"
+    h1="Reach the Dispatcher by Phone, Text or Email"
+    lede="A real person answers the dispatch line day and night. Pick whichever way of reaching us suits where you are standing right now."
+    secondary={{ href: COMPANY.smsHref, label: "Text us instead" }}
+  />
+
+  <section class="band">
+    <div class="wrap cols two">
+      <div class="prose">
+        <h2>Ways to reach us</h2>
+        <ul class="rules">
+          <li>
+            <h3><a href={COMPANY.telHref}>Call {COMPANY.phone}</a></h3>
+            <p>The fastest route for anything urgent. You talk straight to dispatch, get a quote, and hear when the truck is expected.</p>
+          </li>
+          <li>
+            <h3><a href={COMPANY.smsHref}>Text {COMPANY.phone}</a></h3>
+            <p>Handy on a noisy shoulder or in a meeting. Send your location, the vehicle and what went wrong; a dispatcher texts back. Our <a href="/request">request page</a> can fill in your location for you.</p>
+          </li>
+          <li>
+            <h3><a href={`mailto:${COMPANY.email}`}>Email {COMPANY.email}</a></h3>
+            <p>Best for anything that is not an emergency: invoices, insurance paperwork, account setup, a scheduled move next week.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="prose">
+        <h2>The yard</h2>
+        <address style="font-style:normal">
+          <strong>{COMPANY.legalName}</strong><br />
+          {COMPANY.address.street}<br />
+          {COMPANY.address.city}, {COMPANY.address.region} {COMPANY.address.postal}<br />
+          <a href={COMPANY.directionsUrl} rel="noopener" target="_blank">Get directions in Google Maps</a>
+        </address>
+        <p>
+          We sit {COMPANY.yardArea}, close to the I-70, I-71 and I-270 interchanges. This is where stored vehicles are kept and released. Call before you drive over so a staff member can meet you at the gate.
+        </p>
+        <h3>Hours</h3>
+        <p>
+          Dispatch is open {COMPANY.hours}. There is no answering service and no "call back Monday." To collect a stored vehicle, phone first and the dispatcher sets a pickup time with you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap prose">
+      <h2>What to have ready when you call</h2>
+      <p>A two-minute call turns into a firm quote when the dispatcher has these five things. Do not worry if you are missing one; we will work it out together.</p>
+      <ol>
+        <li><strong>Where you are.</strong> A street address is ideal. On a highway, say which way you were heading plus the closest exit sign or mile marker. In a parking garage, the level and the entrance you used.</li>
+        <li><strong>The vehicle.</strong> Year, make and model, plus anything unusual: all-wheel drive, electric or hybrid, lowered suspension, a flat tire or a wheel that will not turn.</li>
+        <li><strong>The keys.</strong> Whether you have them, and whether the car rolls in neutral. A locked car with no key changes how the driver loads it.</li>
+        <li><strong>Where it is going.</strong> Your home, a dealer, your own mechanic or a shop we suggest. Loaded miles are part of the price, so the destination matters.</li>
+        <li><strong>How you will pay.</strong> We take cash and debit or credit cards. The card fee and any discounts are on the <a href="/rates">rate card</a>, and you can run the numbers yourself with the <a href="/estimate">estimator</a>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap prose">
+      <h2>For businesses</h2>
+      <p>
+        Fleet operators, repair shops, dealers and property managers can set up an account so drivers or staff call one number and the paperwork lands in one place. Email {COMPANY.email} with your company name, roughly how many vehicles or lots are involved and the kind of work you expect, and {COMPANY.owner.name} will reply to talk terms. Details on each kind of account live on our <a href="/towing/fleet-towing">fleet towing</a> and <a href="/towing/private-property-towing">private property towing</a> pages.
+      </p>
+    </div>
+  </section>
+
+  <CtaBand heading="Rather talk to a person?" text="Dispatch is one tap away, at any hour." />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Contact questions" /></div></section>
+</Base>

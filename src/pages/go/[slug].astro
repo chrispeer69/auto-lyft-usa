@@ -1,0 +1,39 @@
+---
+import Base from "../../layouts/Base.astro";
+import PhoneIcon from "../../components/PhoneIcon.astro";
+import { LANDINGS, landingPath, type Landing } from "../../data/landing";
+import { COMPANY } from "../../data/company";
+
+export function getStaticPaths() {
+  return LANDINGS.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+}
+const { l } = Astro.props as { l: Landing };
+---
+<Base title={l.title} description={l.description} path={landingPath(l.slug)} noindex bare>
+  <section class="hero" style="padding-bottom:64px">
+    <div class="wrap">
+      <p class="eyebrow">{l.keyword} · Columbus, Ohio</p>
+      <h1>{l.h1}</h1>
+      <p class="lede">{l.sub}</p>
+      <div class="ctas"><a class="btn btn-call" style="font-size:1.25rem;min-height:60px" href={COMPANY.telHref}><PhoneIcon /> Call {COMPANY.phone}</a></div>
+      <ul style="list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px">{l.ticks.map((t) => <li>✓ {t}</li>)}</ul>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <ol class="steps">
+        <li><h3>Call</h3><p>A dispatcher answers, day or night.</p></li>
+        <li><h3>Get the price</h3><p>You hear the full cost before anything is sent.</p></li>
+        <li><h3>Driver on the way</h3><p>We text you the driver's name and a callback number.</p></li>
+        <li><h3>Sorted</h3><p>Fixed on the spot, or loaded and delivered where you choose.</p></li>
+      </ol>
+    </div>
+  </section>
+  <section class="band alt">
+    <div class="wrap prose faq">
+      <h2>Quick answers</h2>
+      {l.faqs.map((f) => <details><summary><h3>{f.q}</h3></summary><div><p>{f.a}</p></div></details>)}
+    </div>
+  </section>
+  <section class="cta"><div class="wrap"><h2>{COMPANY.name} · Harrisburg Pike, Columbus</h2><a class="btn btn-call" href={COMPANY.telHref}><PhoneIcon /> {COMPANY.phone}</a></div></section>
+</Base>

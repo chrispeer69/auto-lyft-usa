@@ -1,0 +1,50 @@
+import type { HubContent } from "./index";
+
+export default {
+  description:
+    "Columbus towing from a southwest-side yard: flatbed tows, jumps and lockouts in 26 neighborhoods, from the Hilltop to Northland. (614) 633-8163.",
+  h1: "Flatbed Towing in Every Corner of Columbus",
+  lede:
+    "Our four flatbeds leave from Harrisburg Pike on the southwest side. Choose your neighborhood for the streets, landmarks and questions we hear there.",
+  intro: [
+    "Columbus is a big city to tow in. It spreads across more than two hundred square miles, and the routes that tie it together all pass close to our yard at 1620 Harrisburg Pike. From the gate, our trucks reach I-70, I-71 and the I-270 outerbelt within a few minutes, which lets us head downtown, across to the east side or up to the north end without crawling through neighborhood streets. The west-side neighborhoods, the Hilltop, Westgate and Franklinton, are practically next door.",
+    "Downtown is where most cross-town trips meet. I-70 and I-71 share a crowded stretch along the south and east sides of the center, and the rebuilt ramps still catch drivers off guard. I-670 runs along the north edge toward the airport, and SR-315 follows the Olentangy past Ohio State to the northwest side. Each of those roads produces its own breakdowns, and the outerbelt adds a long loop of ramps and shoulders. Away from the highways, the work changes: parking garages downtown and around campus, where clearance matters more than horsepower, and older neighborhoods on the east and south sides where streets are narrow, brick in places, and garages sit back on alleys.",
+    "Whatever part of town you are in, the process is the same. Every vehicle rides on a flatbed. The dispatcher learns the location and the symptoms, quotes the full price from our published [rate card](/rates), and gives you a live arrival estimate before a truck leaves. We take the car where you choose, or suggest an independent partner shop. Call [(614) 633-8163](/contact) any hour, or use the [request form](/request).",
+  ],
+  blurbs: {
+    "hilltop": "Our closest neighbor: West Broad, Sullivant and Hague, a short climb up Harrisburg Pike from the yard.",
+    "franklinton": "COSI, the Veterans Museum and the arts district grid, all a quick hop north of our gate.",
+    "westgate": "Curving 1920s blocks around Westgate Park between West Broad, Sullivant and Wilson Road, minutes from our trucks.",
+    "downtown": "Garage decks, event nights and the I-70/I-71 innerbelt, where clearance and ramp locations shape every job.",
+    "german-village": "Brick streets, cars packed curb to curb and alley garages that call for slow, careful loading.",
+    "short-north": "Gallery-hop crowds, tight High Street curbs and garages behind the arches between downtown and campus.",
+    "clintonville": "Leafy streets off North High and Indianola, with driveway no-starts and Olentangy corridor breakdowns.",
+    "linden": "North-side blocks around Cleveland Avenue and Hudson Street, with quick access to I-71 for our trucks.",
+    "brewery-district": "Front Street nights, old brewery buildings and the Scioto Audubon lots just across the river.",
+    "italian-village": "Converted warehouses, new apartments and narrow side streets just east of the Short North.",
+    "victorian-village": "Historic homes around Goodale Park where alley access and street parking decide how we load.",
+    "harrison-west": "Riverside blocks near the Olentangy and SR-315, between Victorian Village and the campus area.",
+    "weinland-park": "Compact streets east of campus where student cars and older homes keep our flatbeds busy.",
+    "university-district": "Ohio State garages, student lots and game-day traffic around High Street and SR-315.",
+    "old-north": "North of campus along High Street, with rentals, side-street parking and plenty of dead batteries.",
+    "beechwold": "Quiet wooded streets off North High between Clintonville and the Worthington area, mostly driveway calls.",
+    "northland": "Morse Road shopping, I-71 ramps and busy apartment lots on the north side of the city.",
+    "sharon-woods": "Northern neighborhood near the outerbelt, where highway breakdowns and driveway calls make up most work.",
+    "northwest-columbus": "Bethel, Henderson and Sawmill roads plus SR-315, a long run north from our yard.",
+    "olde-towne-east": "Victorian mansions on Bryden Road and East Broad, with carriage-house garages reached by old alleys.",
+    "king-lincoln-bronzeville": "Long Street, Mount Vernon Avenue and the Lincoln Theatre, just across I-71 from downtown.",
+    "driving-park": "The old racetrack neighborhood along East Livingston, with I-70 exits at Kelton and Alum Creek.",
+    "eastmoor": "Settled east-side streets between Bexley and Whitehall, split down the middle by East Main Street.",
+    "berwick": "Curving postwar streets laid over an old golf course, bounded by Livingston, James Road and I-70.",
+    "merion-village": "Front-porch blocks between South High and Parsons, close to the I-71 ramps at Greenlawn.",
+    "schumacher-place": "Permit-parking blocks beside German Village, facing Nationwide Children's Hospital across Parsons Avenue.",
+  },
+  faqs: [
+    { q: "Do you cover every neighborhood in Columbus?", a: "Yes. Our trucks work all of Columbus, from the west side near our yard to the far north and east ends, plus the suburbs around it. The neighborhoods listed on this page are the ones we have written up in detail, but if yours is not here, call anyway. The rate card is the same everywhere; only the mileage from our yard changes." },
+    { q: "How is the price worked out for a Columbus tow?", a: "It is built from our published rates: $4 per mile for the truck to reach you from Harrisburg Pike, a $125 hook-up, and $7 per mile with your car on board. Roadside jobs such as jumps, lockouts and tire changes are a $75 flat rate. Night, weekend, highway and large-vehicle surcharges are added when they apply. The dispatcher quotes the full total before the truck leaves." },
+    { q: "Why do you only use flatbeds?", a: "A flatbed carries the whole car with no wheels on the road, which protects all-wheel-drive systems, low bumpers, electric drivetrains and damaged suspensions. It also suits city work, because one type of truck can handle nearly any passenger vehicle we meet. Our four light-duty carriers handle cars, SUVs, pickups and light vans. For heavier vehicles, we bring in a heavy-wrecker partner and coordinate the job." },
+    { q: "Can you tow from a parking garage downtown or at Ohio State?", a: "Often, but garage clearance is the deciding factor. Many decks are too low for a flatbed, especially on upper levels. When we cannot drive in, we handle what we can on the spot, such as a jump, a lockout or a tire change, and work out how to bring the car to a level where it can be loaded. Tell us the garage name and the posted clearance when you call." },
+    { q: "Is a freeway breakdown handled differently from a city-street call?", a: "Mostly in the details. On I-70, I-71, I-670, SR-315 or the outerbelt, your safety comes before the car: ease as far right as possible, keep your belt fastened with the flashers on, and ring 911 if traffic is passing within feet of you. When you reach our dispatcher, a mile marker or the last sign you passed pins you down fastest. Interstate pickups add $75 to the normal rates. Our guide on [what to do when your car breaks down](/guides/what-to-do-when-your-car-breaks-down-columbus) covers more." },
+    { q: "Do you tow electric vehicles anywhere in Columbus?", a: "Yes. EVs are carried on the flatbed in tow or transport mode, which keeps the drive motors from turning. Our EV rate card is a little different: $2.50 per mile en route, a $150 hook-up, $7.50 per loaded mile and a $100 highway surcharge, with storage at $75 a day. If the battery simply ran flat, we can take the car to a charger or home. Our [EV towing](/towing/ev-towing) page has the details." },
+  ],
+} satisfies HubContent;

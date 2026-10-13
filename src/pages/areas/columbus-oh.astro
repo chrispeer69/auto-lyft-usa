@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { HOOD_PAGES } from "../../data/columbus";
+import { hoodPath } from "../../data/columbus/catalog";
+import { COLUMBUS_ZIPS } from "../../data/cities/catalog";
+import { cityPlace, serviceNode, abs } from "../../lib/schema";
+import { rich } from "../../lib/text";
+import hub from "../../data/columbus/hub";
+
+const path = "/areas/columbus-oh";
+const schema = [
+  serviceNode({
+    path,
+    name: "Towing and roadside assistance in Columbus, Ohio",
+    serviceType: "Towing service",
+    description: hub.description,
+    areaServed: [
+      cityPlace("Columbus", { lat: 39.9612, lng: -82.9988 }, HOOD_PAGES.map((h) => ({ "@type": "Place", name: `${h.name}, Columbus`, url: abs(hoodPath(h.slug)) }))),
+      { "@type": "DefinedRegion", name: "Columbus, OH ZIP codes", addressCountry: "US", addressRegion: "OH", postalCode: COLUMBUS_ZIPS },
+    ],
+  }),
+];
+---
+<Base title="Columbus, OH Towing by Neighborhood" description={hub.description} path={path} crumbs={[{ name: "Areas", path: "/areas" }, { name: "Columbus", path }]} schema={schema} faqs={hub.faqs}>
+  <Hero eyebrow="Columbus, Ohio" h1={hub.h1} lede={hub.lede} facts={[["Neighborhood pages", String(HOOD_PAGES.length)], ["ZIP codes", String(COLUMBUS_ZIPS.length)], ["Yard", "Harrisburg Pike, 43223"], ["Dispatch", "24/7"]]} />
+  <section class="band"><div class="wrap prose">{hub.intro.map((p) => <p set:html={rich(p)} />)}</div></section>
+  <section class="band alt" aria-labelledby="hoods-h">
+    <div class="wrap">
+      <h2 id="hoods-h">Pick your neighborhood</h2>
+      <ul class="rules cols two" style="display:grid">
+        {HOOD_PAGES.map((h) => <li><a href={hoodPath(h.slug)}><strong>{h.name}</strong></a>{hub.blurbs[h.slug] && <p>{hub.blurbs[h.slug]}</p>}</li>)}
+      </ul>
+      <p class="small muted" style="margin-top:16px">Columbus ZIP codes we cover: {COLUMBUS_ZIPS.join(", ")}. Outside the city? See <a href="/areas">every suburb and town</a>.</p>
+    </div>
+  </section>
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={hub.faqs} heading="Towing in Columbus: questions" /></div></section>
+  <Nap />
+</Base>

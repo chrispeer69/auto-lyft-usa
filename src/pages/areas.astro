@@ -1,0 +1,72 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { CITY_FACTS, COLUMBUS_ZIPS, cityPath } from "../data/cities/catalog";
+import { itemListNode } from "../lib/schema";
+import type { Faq } from "../data/types";
+
+const path = "/areas";
+const towns = [...CITY_FACTS].sort((a, b) => a.name.localeCompare(b.name));
+const counties = [...new Set(CITY_FACTS.map((c) => c.county))].sort();
+const faqs: Faq[] = [
+  { q: "How far from Columbus will Auto Lyft USA go?", a: `Our regular area is Columbus plus the ${CITY_FACTS.length} towns on this page, spread over ${counties.length} counties: ${counties.join(", ")}. For trips beyond that — Dayton, Cincinnati, Cleveland or out of state — ask about [long-distance towing](/towing/long-distance-towing).` },
+  { q: "My town isn't listed. Can you still come?", a: "Probably. The list covers the places we serve every week, not a hard border. Call (614) 633-8163 with your address and the dispatcher will tell you right away whether a truck can reach you and what it costs." },
+  { q: "Why do you list miles from your yard?", a: "Because every truck leaves from the same gate on Harrisburg Pike, southwest of downtown. That makes Grove City or Galloway a short hop and Sunbury or Lancaster a long haul. Distance is part of the price, and the dispatcher quotes it first." },
+];
+const schema = [itemListNode(path, [{ name: "Columbus", path: "/areas/columbus-oh" }, ...towns.map((t) => ({ name: `${t.name}, OH`, path: cityPath(t.slug) }))])];
+---
+<Base
+  title="Towns We Tow In Around Columbus, OH"
+  description={`Auto Lyft USA tows in Columbus and ${CITY_FACTS.length} Central Ohio towns. Find your town, its ZIP codes and its distance from our yard. (614) 633-8163.`}
+  path={path}
+  pageType={["WebPage", "CollectionPage"]}
+  crumbs={[{ name: "Areas", path }]}
+  schema={schema}
+  faqs={faqs}
+>
+  <Hero eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus plus ${CITY_FACTS.length} towns across ${counties.length} counties, all reached from one yard on Harrisburg Pike.`} />
+  <section class="band">
+    <div class="wrap">
+      <form class="prose" style="margin:0 0 24px" role="search" action="/areas" method="get">
+        <label for="q"><strong>Find your town or ZIP code</strong></label>
+        <div style="display:flex;gap:8px;margin-top:6px"><input id="q" name="q" type="search" placeholder="e.g. Hilliard or 43026" style="flex:1;min-height:48px;padding:8px 12px;font:inherit;border:2px solid var(--ink)" /><button class="btn btn-call" type="submit">Search</button></div>
+      </form>
+      <h2>Columbus</h2>
+      <p class="prose" style="margin-left:0">We cover every Columbus neighborhood. <a href="/areas/columbus-oh">Towing in Columbus by neighborhood</a> · ZIP codes: {COLUMBUS_ZIPS.join(", ")}</p>
+      <h2 style="margin-top:32px">Towns and their ZIP codes</h2>
+      <div class="table-scroll">
+        <table class="table" id="towns">
+          <thead><tr><th>Town</th><th>County</th><th>ZIP codes</th><th>Miles from yard</th></tr></thead>
+          <tbody>
+            {towns.map((t) => (
+              <tr data-search={`${t.name} ${t.zips.join(" ")}`.toLowerCase()}>
+                <td><a href={cityPath(t.slug)}>{t.name}</a></td><td>{t.county}</td><td>{t.zips.join(", ")}</td><td>{t.miles}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p id="nores" class="muted" hidden>No town matched. Call (614) 633-8163 — we likely still reach you.</p>
+    </div>
+  </section>
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Service area questions" /></div></section>
+  <Nap />
+  <script is:inline>
+    (function () {
+      var q = new URLSearchParams(location.search).get("q");
+      var input = document.getElementById("q");
+      function run(v) {
+        v = (v || "").trim().toLowerCase();
+        var rows = document.querySelectorAll("#towns tbody tr"), shown = 0;
+        rows.forEach(function (r) { var hit = !v || r.getAttribute("data-search").indexOf(v) > -1; r.hidden = !hit; if (hit) shown++; });
+        document.getElementById("nores").hidden = shown > 0;
+      }
+      if (q) { input.value = q; run(q); }
+      input.addEventListener("input", function () { run(input.value); });
+    })();
+  </script>
+</Base>

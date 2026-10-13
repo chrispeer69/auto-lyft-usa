@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { COMPANY } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/about";
+const faqs: Faq[] = [
+  { q: "Is Auto Lyft USA part of a national chain?", a: `No. It is a local, independent business. ${COMPANY.owner.name} owns and runs it. She set it up in ${COMPANY.foundingYear} as ${COMPANY.legalName}, an Ohio corporation, and she is the person to email at ${COMPANY.email} about a billing question, a business account or anything a dispatcher could not settle.` },
+  { q: "Why only flatbeds and no wheel-lift trucks?", a: "A flatbed carries the whole vehicle off the pavement, so the drivetrain, bumpers and bodywork are not dragged or strained. That suits all-wheel-drive cars, EVs, lowered cars and anything already damaged. Keeping one kind of truck also means every driver trains on the same equipment." },
+  { q: "Can you visit the yard on Harrisburg Pike?", a: `Yes, if your vehicle is stored with us or you are picking up paperwork. Call ${COMPANY.phone} first so someone is at the gate to meet you; the trucks are often all out on calls.` },
+  { q: "Are you insured?", a: `Yes. We carry commercial towing insurance through ${COMPANY.insurer}. If you need a certificate of insurance for a property account or a dealer, email the request and we will send one.` },
+  { q: "What if my job needs a bigger truck than yours?", a: "We still take the call. For box trucks, buses and loaded commercial units we bring in a heavy-wrecker partner, pass along your details, and keep you updated so you are not left making five phone calls. See [heavy-duty towing](/towing/heavy-duty-towing)." },
+];
+---
+<Base
+  title="About Our Columbus Flatbed Company"
+  description="Auto Lyft USA Inc. is a Columbus flatbed towing company owned by Lisa Peer, running four carriers from Harrisburg Pike since 2024. (614) 633-8163."
+  path={path}
+  pageType={["WebPage", "AboutPage"]}
+  crumbs={[{ name: "About", path }]}
+  faqs={faqs}
+>
+  <Hero
+    eyebrow="About us"
+    h1="Meet Auto Lyft USA: A Small Flatbed Outfit on the Southwest Side"
+    lede={`We are ${COMPANY.legalName}, owned by ${COMPANY.owner.name} and running ${COMPANY.fleet.trucks} ${COMPANY.fleet.kind} out of one yard on Harrisburg Pike.`}
+    facts={[["Founded", String(COMPANY.foundingYear)], ["Owner", COMPANY.owner.name], ["Fleet", `${COMPANY.fleet.trucks} flatbeds`], ["Dispatch", "24/7/365"]]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      <h2>Who we are</h2>
+      <p>
+        Auto Lyft USA started in {COMPANY.foundingYear}, when {COMPANY.owner.name} decided Columbus drivers deserved a towing company that tells them the price on the phone and then sticks to it. The business is incorporated in Ohio as {COMPANY.legalName}, and it is still small enough that the owner reads the email inbox herself.
+      </p>
+      <p>
+        Our fleet is {COMPANY.fleet.trucks} {COMPANY.fleet.kind}. There is no wheel-lift truck in the lot and no plan to add one. Every car, SUV, pickup, motorcycle or EV we move rides fully on the deck, which is the gentlest way to haul a vehicle and the one most manufacturers ask for. That choice shapes what we do well: <a href="/towing/flatbed-towing">flatbed towing</a>, <a href="/towing/ev-towing">electric vehicle transport</a>, <a href="/towing/low-profile-towing">lowered and low-clearance cars</a>, plus the roadside calls that keep a car from needing a tow at all.
+      </p>
+      <p>
+        The trucks live in our yard at {COMPANY.address.full}. Harrisburg Pike is US-62, and from that stretch of the southwest side a driver reaches the I-70, I-71 and I-270 ramps within a few minutes. That position is why we cover the whole metro and the towns around it; see the <a href="/areas">service area list</a> for the places we reach most often.
+      </p>
+
+      <h2>How we work</h2>
+      <p>Three habits run through every job, from a dead battery in a grocery lot to a crash on the outerbelt.</p>
+      <ul>
+        <li><strong>The price comes before the truck.</strong> The dispatcher asks where you are, what you drive and where it is going, then quotes from our published <a href="/rates">rate card</a>. You say yes before anyone is sent. If the job turns out different from what was described, the driver explains the change and the new number before doing the extra work.</li>
+        <li><strong>Photos before loading.</strong> Our driver walks around your vehicle and photographs it before it goes on the bed. Those pictures protect you and us, and they make any later question about a scratch quick to answer.</li>
+        <li><strong>Partners for the heavy stuff.</strong> Light-duty flatbeds have limits. When a call involves a box truck, a bus or a loaded commercial vehicle, we arrange it with a heavy-wrecker company we trust and stay on the line as your contact. Our <a href="/towing/medium-duty-towing">medium-duty</a> page explains how that hand-off works.</li>
+      </ul>
+      <p>
+        We are not a repair shop. When your car needs work, we take it to the garage you choose, or we can suggest an independent shop that will diagnose it, give you a quote and do the repair if you approve. More on that is on our <a href="/repair">repair help</a> page.
+      </p>
+
+      <h2>The facts, in one place</h2>
+      <table class="table">
+        <tbody>
+          <tr><th scope="row">Legal name</th><td>{COMPANY.legalName}</td></tr>
+          <tr><th scope="row">Owner</th><td>{COMPANY.owner.name}</td></tr>
+          <tr><th scope="row">Founded</th><td>{COMPANY.foundingYear}, in Ohio</td></tr>
+          <tr><th scope="row">Yard address</th><td>{COMPANY.address.full}</td></tr>
+          <tr><th scope="row">Phone</th><td><a href={COMPANY.telHref}>{COMPANY.phone}</a></td></tr>
+          <tr><th scope="row">Email</th><td><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></td></tr>
+          <tr><th scope="row">Hours</th><td>Dispatch answers {COMPANY.hours}</td></tr>
+          <tr><th scope="row">Fleet</th><td>{COMPANY.fleet.trucks} {COMPANY.fleet.kind}</td></tr>
+          <tr><th scope="row">Insurance</th><td>Commercial towing coverage through {COMPANY.insurer}</td></tr>
+          <tr><th scope="row">Association</th><td>Member of the <a href={COMPANY.allianceProfile} rel="noopener" target="_blank">US Tow Alliance</a></td></tr>
+        </tbody>
+      </table>
+
+      <h2>What we won't do</h2>
+      <p>
+        Some towing work brings in money but costs a company its good name. We have decided to stay out of it.
+      </p>
+      <ul>
+        <li><strong>No involuntary repossessions.</strong> We do not take cars from people in the night on behalf of lenders. When a lender or dealer needs a vehicle moved that the owner has already surrendered, we can haul it, and our <a href="/towing/repo-towing">repo transport</a> page spells out exactly where that line sits.</li>
+        <li><strong>No surprise fees.</strong> Every charge we bill appears on the published card: hook-up, mileage, the after-hours, weekend and highway add-ons, storage by the day. Nothing gets invented at the curb. If you are quoted one figure and the invoice shows another, the driver should have told you why before the work happened, and you can email the owner directly if that did not happen.</li>
+        <li><strong>No pretending we can do everything.</strong> If a job is outside what a light-duty flatbed handles safely, we say so on the phone and line up the right partner instead of sending a truck that cannot finish it.</li>
+      </ul>
+      <p>
+        That is the whole pitch: a straight quote, careful loading and honest answers when something is not ours to handle. If that sounds like the company you want to call, the number is <a href={COMPANY.telHref}>{COMPANY.phone}</a>, or you can <a href="/request">send a tow request from your phone</a>.
+      </p>
+    </div>
+  </section>
+  <CtaBand heading="Need a flatbed now?" text="Call the yard on Harrisburg Pike. You hear the price first, then a truck is sent." />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Questions about the company" /></div></section>
+  <Nap />
+</Base>

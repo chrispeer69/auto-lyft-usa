@@ -1,0 +1,27 @@
+---
+import Logo from "./Logo.astro";
+import PhoneIcon from "./PhoneIcon.astro";
+import { COMPANY } from "../data/company";
+
+interface Props { path: string; minimal?: boolean }
+const { path, minimal = false } = Astro.props;
+const links = [
+  { href: "/towing", label: "Towing" },
+  { href: "/towing/roadside-assistance", label: "Roadside" },
+  { href: "/areas", label: "Areas" },
+  { href: "/rates", label: "Rates" },
+  { href: "/repair", label: "Repair" },
+  { href: "/guides", label: "Guides" },
+  { href: "/about", label: "About" },
+];
+const current = (href: string) => path === href || (href !== "/" && path.startsWith(href + "/"));
+---
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label={`${COMPANY.name} home`}><Logo /> Auto Lyft <b>USA</b></a>
+    {!minimal && <nav class="nav" aria-label="Main">
+      {links.map((l) => <a href={l.href} aria-current={current(l.href) ? "page" : undefined}>{l.label}</a>)}
+    </nav>}
+    <a class="btn btn-call call" href={COMPANY.telHref}><PhoneIcon /> <span>{COMPANY.phone}</span></a>
+  </div>
+</header>

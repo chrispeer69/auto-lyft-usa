@@ -1,0 +1,41 @@
+import type { CityContent } from "../../types";
+
+export default {
+  description:
+    "Blacklick, OH tows and ditch pulls on Clark State Road, Havens Corners and Reynoldsburg-New Albany Road, by flatbed any hour. Call (614) 633-8163.",
+  h1: "Need a Tow in Blacklick? Flatbeds for Jefferson Township",
+  lede:
+    "Blacklick mixes newer subdivisions with the winding two-lane roads of Jefferson Township, so our calls here run from driveway jump starts to cars pulled out of roadside ditches.",
+  intro: [
+    "Blacklick is an unincorporated community in Jefferson Township, roughly 14 miles east-northeast of our yard on Harrisburg Pike. That puts it across the whole metro from us. Our drivers normally run I-70 east, take the I-270 outerbelt north and then head out East Broad Street, though the dispatcher may send them another way if the interstates are jammed. You will hear a live arrival estimate before you hang up.",
+    "What makes Blacklick different from the suburbs around it is the road network. Reynoldsburg-New Albany Road is the main north-south spine, and Clark State Road, Havens Corners Road and Havens Road branch off through wooded, rolling country that is part of a state scenic byway. Those roads are pretty but narrow, with soft shoulders and drainage ditches, and a car that slides off on a wet or icy night usually needs a winch before it can ride on a deck. Deer strikes along the creek corridors are another regular reason for a call.",
+    "Closer to Broad Street the township looks more like the rest of the east side, with apartment complexes, subdivisions and schools where dead batteries and lockouts are the typical job. Whatever the problem, the car goes on one of our flatbeds with the wheels off the pavement. If it went into a ditch, our [winch-out service](/towing/winch-out) gets it back on solid ground first; otherwise call (614) 633-8163 and tell us where it should end up.",
+  ],
+  roads: [
+    { name: "Reynoldsburg-New Albany Road", note: "Blacklick's north-south artery and the street the 43004 post office moved to; most addresses we are sent to here are a short turn off it." },
+    { name: "Clark State Road", note: "Passes Jefferson Community Park and Boehnke Nature Preserve and crosses the Rocky Fork gorge, a stretch where cars leaving the pavement end up in steep ditches." },
+    { name: "Havens Corners Road", note: "Home to the township fire station and service garage; the curves and limited shoulder make a disabled car here a hazard worth moving quickly." },
+    { name: "Havens Road", note: "One of the two main legs of the township scenic byway, wooded and dark at night, with few safe places to pull over." },
+    { name: "East Broad Street", note: "Runs along the southern side of the community and is the route our trucks usually take in from the I-270 outerbelt." },
+    { name: "Waggoner Road", note: "A county-maintained north-south road where rural driveways and field entrances make it hard to spot a stranded car without a landmark." },
+  ],
+  local: [
+    { kind: "park", name: "Jefferson Community Park", detail: "The township's largest park on Clark State Road; with three shelter houses it fills up on weekends, so describe where you parked near the pond or shelters." },
+    { kind: "park", name: "Olde Quarry Park", detail: "A wooded trail park on Reynoldsburg-New Albany Road with a small lot where a carrier has to back in carefully." },
+    { kind: "park", name: "Boehnke Nature Preserve", detail: "Meadow and woodland trails off Clark State Road; the gravel lot is fine for a flatbed in dry weather but can get soft after rain." },
+    { kind: "park", name: "Blacklick Ridge Community Park", detail: "A neighborhood park on Blacklick Ridge Boulevard, convenient as a meeting point if your street is hard to find." },
+    { kind: "school", name: "Gahanna-Jefferson Public Schools", detail: "Most Blacklick households fall in this district, so morning and afternoon bus traffic shapes how quickly a driver can move through the township." },
+    { kind: "school", name: "Licking Heights West Elementary", detail: "This school and the township use Jefferson Run Park together, a reminder that part of Blacklick sends children to the Licking Heights district to the east." },
+    { kind: "landmark", name: "Jefferson Township Scenic Byway", detail: "Fifteen miles of designated byway roads where tree cover and tight curves turn a small slide-off into a winch job." },
+  ],
+  faqs: [
+    { q: "What route does a truck take out to Blacklick?", a: "Blacklick is about 14 miles from our Harrisburg Pike lot in a straight line, but on the road it is a cross-metro trip. Drivers usually take I-70 east to the I-270 outerbelt, go north and then come out East Broad Street toward Reynoldsburg-New Albany Road. Since traffic changes so much by the hour, the dispatcher gives you a live estimate rather than a fixed time." },
+    { q: "My car slid off Clark State Road into the ditch. Can you get it out?", a: "Yes. Ditch recoveries on Clark State Road and the other byway roads are some of the most common Blacklick calls we get. The driver anchors the carrier on the pavement, uses the winch to bring the car back up, then checks for damage before loading it. If no one is hurt and the car runs fine afterward, you may be able to drive away without a tow at all." },
+    { q: "Do you come out to the wooded roads around Havens Corners at night?", a: "We do, around the clock. Those roads have very little lighting, so stay inside the car with the flashers on and give us the nearest crossroad, house number or mailbox you can see. Sharing your phone's location helps too. The driver will set out warning lights before working on the shoulder." },
+    { q: "Is Blacklick part of Columbus or Gahanna for towing?", a: "For the most part, neither. The heart of Blacklick is unincorporated and governed by Jefferson Township, with its own fire department and road crews. That does not change anything about how we tow: you call, we quote, a flatbed comes. It can matter for police reports after a crash, which may be handled by the county sheriff instead of a city department." },
+    { q: "I hit a deer near Blacklick Creek. What happens next?", a: "First make sure everyone is safe and move away from the roadway if you can. Many deer strikes leave the car drivable, but a damaged radiator or headlight means it should not be driven at night. We can carry it to a body shop or your home, and our [accident towing](/towing/accident-towing) crews take photos of the damage that are useful for your insurer." },
+    { q: "Can a flatbed get into the parking lot at Jefferson Community Park?", a: "Yes, the lot off Clark State Road is wide enough for our carriers. On busy weekends the driver may need to wait for parked cars to move or load from the drive aisle, so tell us which shelter or the pond you are nearest. Gravel and grass areas are avoided when they are soft." },
+    { q: "What will it cost to tow from Blacklick?", a: "Because Blacklick is on the far side of the metro, the mileage to reach you plays a bigger part than it does near our yard. A winch-out or a late-night call can also change the total. Every one of those pieces is folded into a single quote you hear before dispatch, and the [rates](/rates) page lays them out." },
+    { q: "Do you tow to shops in Gahanna or Reynoldsburg from Blacklick?", a: "Yes. Most Blacklick drivers use repair shops in Gahanna, Reynoldsburg or along Broad Street, and we deliver to any of them, or to a dealer, your insurer's body shop or your driveway. Neighboring stops like [Gahanna](/areas/gahanna-oh), [New Albany](/areas/new-albany-oh) and Pataskala are all regular destinations for us. After hours, we can hold the car on Harrisburg Pike and make the delivery when the shop opens." },
+  ],
+} satisfies CityContent;

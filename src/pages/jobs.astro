@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import { COMPANY } from "../data/company";
+
+const path = "/jobs";
+const subject = encodeURIComponent("Flatbed operator - application");
+---
+<Base
+  title="Drive for Auto Lyft USA"
+  description="Experienced flatbed operators in Columbus: Auto Lyft USA occasionally adds drivers. Email the owner with your experience and licence details."
+  path={path}
+  crumbs={[{ name: "Jobs", path }]}
+  noindex
+>
+  <Hero
+    eyebrow="Jobs"
+    h1="Flatbed Operators: Come Work Out of Our Harrisburg Pike Yard"
+    lede="We are a small crew running four light-duty carriers in Columbus. When we have room for another driver, we want someone who already knows the work."
+    secondary={{ href: `mailto:${COMPANY.email}?subject=${subject}`, label: "Email the owner" }}
+  />
+  <section class="band">
+    <div class="wrap prose">
+      <h2>Who we are looking for</h2>
+      <p>
+        Every truck we own is a flatbed, and every job starts with a quote the customer has already agreed to. That makes the driver's part of the job clear: arrive, photograph the vehicle, load it carefully, deliver it where it belongs and treat the customer like a neighbor. If that sounds like how you already work, we would like to hear from you.
+      </p>
+      <p>You are a good fit if you:</p>
+      <ul>
+        <li>have real experience running a flatbed or rollback, including winching and securing vehicles on the deck;</li>
+        <li>are comfortable with interstate shoulders, tight parking lots and overnight calls;</li>
+        <li>hold a valid driver's licence and can show a clean driving record;</li>
+        <li>know Columbus and the surrounding towns, or learn roads quickly;</li>
+        <li>can explain things plainly to someone who is having a bad day.</li>
+      </ul>
+      <p>
+        We are not always hiring. Openings depend on how busy the trucks are, so sending your details now simply puts you on our list for when a seat opens.
+      </p>
+
+      <h2>How to apply</h2>
+      <p>
+        Email <a href={`mailto:${COMPANY.email}?subject=${subject}`}>{COMPANY.email}</a>. That inbox goes to {COMPANY.owner.name}, the owner. Please include:
+      </p>
+      <ol>
+        <li>your name and a phone number;</li>
+        <li>how long you have operated a flatbed, and for which companies;</li>
+        <li>the type of licence you hold and any towing or recovery training you have completed;</li>
+        <li>which shifts you can work, including nights and weekends.</li>
+      </ol>
+      <p>
+        Pay, schedule and any other terms are discussed directly with candidates who move forward; nothing on this page is an offer of employment. Please do not call the dispatch line about jobs. That number has to stay open for people waiting on the side of the road.
+      </p>
+    </div>
+  </section>
+</Base>

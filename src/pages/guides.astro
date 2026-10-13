@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import FaqList from "../components/FaqList.astro";
+import Nap from "../components/Nap.astro";
+import { GUIDE_PAGES } from "../data/guides";
+import { guidePath } from "../data/guides/catalog";
+import { abs } from "../lib/schema";
+import { ids } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/guides";
+const faqs: Faq[] = [
+  { q: "Who writes these guides?", a: "Our team at Auto Lyft USA, from what we see on real calls around Columbus. They are general information, not legal or mechanical advice for your specific car." },
+  { q: "Can I suggest a topic?", a: "Yes. Email lisa@autolyftusa.online with the question you wish someone had answered for you on the side of the road." },
+];
+const schema = [
+  {
+    "@type": "Blog",
+    "@id": `${abs(path)}#blog`,
+    name: "Auto Lyft USA driver guides",
+    url: abs(path),
+    publisher: { "@id": ids.business },
+    blogPost: GUIDE_PAGES.map((g) => ({ "@type": "BlogPosting", headline: g.title, url: abs(guidePath(g.slug)), datePublished: `${g.date}T09:00:00-04:00` })),
+  },
+];
+---
+<Base title="Driver Guides for Columbus Roads" description="Plain-English guides from a Columbus towing company: breakdowns, towing prices, towed cars, EVs, winter driving and what to do after a crash." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Guides", path }]} schema={schema} faqs={faqs}>
+  <Hero eyebrow="Driver guides" h1="Roadside Guides for Central Ohio Drivers" lede="What we wish every driver knew before the car stopped. Short, practical and written from real calls." />
+  <section class="band">
+    <div class="wrap">
+      <ul class="rules">
+        {GUIDE_PAGES.map((g) => (
+          <li>
+            <span class="tag"><time datetime={g.date}>{g.date}</time> · {g.readMinutes} min</span>
+            <h2 style="font-size:1.4rem;margin:8px 0 4px"><a href={guidePath(g.slug)}>{g.title}</a></h2>
+            <p>{g.excerpt}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="About the guides" /></div></section>
+  <Nap />
+</Base>

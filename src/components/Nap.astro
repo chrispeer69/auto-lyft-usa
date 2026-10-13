@@ -1,0 +1,26 @@
+---
+import { COMPANY } from "../data/company";
+import { pick } from "../lib/pick";
+const lead = pick(Astro.url.pathname, [
+  `Every Auto Lyft USA truck rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
+  `Our flatbeds are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
+  `All four carriers start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
+  `Home base is ${COMPANY.yardArea.replace(/^on /, "")}; dispatch works ${COMPANY.hours}.`,
+]);
+---
+<section class="band alt" aria-labelledby="nap-h">
+  <div class="wrap cols two">
+    <div>
+      <h2 id="nap-h">Where the trucks start</h2>
+      <p>{lead}</p>
+    </div>
+    <address class="small" style="font-style:normal">
+      <strong>{COMPANY.legalName}</strong><br />
+      {COMPANY.address.street}<br />
+      {COMPANY.address.city}, {COMPANY.address.region} {COMPANY.address.postal}<br />
+      Phone: <a href={COMPANY.telHref}>{COMPANY.phone}</a><br />
+      Email: <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a><br />
+      <a href={COMPANY.directionsUrl} rel="noopener" target="_blank">Directions to the yard</a>
+    </address>
+  </div>
+</section>

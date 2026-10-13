@@ -1,0 +1,72 @@
+---
+// Client-side tow estimate. Reads the same rate card as every other price on
+// the site; the server never sees the numbers a visitor enters.
+import { RATES, EV_RATES, COUNTY_TAX, AFTER_HOURS_WINDOW } from "../data/rates";
+interface Props { ev?: boolean }
+const { ev = false } = Astro.props;
+const card = ev ? { ...RATES, ...EV_RATES } : RATES;
+const config = JSON.stringify({ card, tax: COUNTY_TAX, ev });
+---
+<form class="estimator" id="est" onsubmit="return false" aria-describedby="est-note">
+  {!ev && (
+    <label>Service
+      <select name="svc">
+        <option value="tow">Tow (flatbed)</option>
+        <option value="roadside">Jump start, lockout, tire change or battery call</option>
+        <option value="fuel">Fuel delivery</option>
+        <option value="winch">Winch-out</option>
+      </select>
+    </label>
+  )}
+  <label>Miles from our yard to you <input name="enroute" type="number" min="1" max="200" value="8" inputmode="decimal" /></label>
+  <label data-for="tow">Miles to the drop-off <input name="loaded" type="number" min="0" max="500" value="10" inputmode="decimal" /></label>
+  <label data-for="winch" hidden>Hours of winching <input name="hours" type="number" min="1" max="12" value="1" /></label>
+  <label data-for="fuel" hidden>Pump price of the fuel you need ($) <input name="fuel" type="number" min="0" max="200" value="12" step="0.5" /></label>
+  <label>Pickup county
+    <select name="county">{COUNTY_TAX.map((c) => <option value={c.rate}>{c.county} ({c.rate}%)</option>)}</select>
+  </label>
+  <fieldset>
+    <legend>Anything that applies</legend>
+    <label class="check"><input type="checkbox" name="highway" /> On an interstate shoulder</label>
+    <label class="check"><input type="checkbox" name="night" /> Between {AFTER_HOURS_WINDOW}</label>
+    <label class="check"><input type="checkbox" name="weekend" /> Saturday or Sunday</label>
+    <label class="check"><input type="checkbox" name="large" /> Large vehicle (3/4-ton pickup, 15-passenger van)</label>
+  </fieldset>
+  <output id="est-out" for="est" aria-live="polite"><noscript>Turn on JavaScript to see the estimate, or call (614) 633-8163.</noscript></output>
+  <p id="est-note" class="small muted">An estimate, not a bill: the dispatcher confirms the final price before a truck is sent. Veterans get {RATES.veteranPercent}% off with ID. Paying by card online adds {RATES.cardFeePercent}%.</p>
+</form>
+<script is:inline define:vars={{ config }}>
+  (function () {
+    var C = JSON.parse(config), f = document.getElementById("est"), out = document.getElementById("est-out");
+    function n(name) { var v = parseFloat(f.elements[name] ? f.elements[name].value : 0); return isFinite(v) && v > 0 ? v : 0; }
+    function money(v) { return "$" + v.toFixed(2).replace(/\.00$/, ""); }
+    function calc() {
+      var k = C.card, svc = C.ev ? "tow" : f.elements.svc.value, rows = [];
+      document.querySelectorAll("#est [data-for]").forEach(function (el) { el.hidden = el.getAttribute("data-for") !== svc; });
+      var enroute = Math.max(1, n("enroute"));
+      rows.push(["En-route " + enroute + " mi × " + money(k.enroutePerMile), enroute * k.enroutePerMile]);
+      if (svc === "tow") {
+        rows.push([C.ev ? "EV hook-up" : "Hook-up", k.hookup]);
+        if (n("loaded")) rows.push(["Loaded " + n("loaded") + " mi × " + money(k.loadedPerMile), n("loaded") * k.loadedPerMile]);
+        if (f.elements.highway.checked) rows.push(["Highway call", k.highway]);
+      } else if (svc === "roadside") rows.push(["Roadside service call", k.roadsideFlat]);
+      else if (svc === "fuel") { rows.push(["Fuel delivery", k.fuelBase]); if (n("fuel")) rows.push(["Fuel (" + money(n("fuel")) + " × " + k.fuelMultiplier + ")", n("fuel") * k.fuelMultiplier]); }
+      else if (svc === "winch") { var h = Math.max(1, n("hours")); rows.push(["Winch-out " + h + " hr × " + money(k.winchPerHour), h * k.winchPerHour]); }
+      if (f.elements.night.checked) rows.push(["After-hours", k.afterHours]);
+      if (f.elements.weekend.checked) rows.push(["Weekend", k.weekend]);
+      if (f.elements.large.checked) rows.push(["Large vehicle", k.largeVehicle]);
+      var sub = rows.reduce(function (s, r) { return s + r[1]; }, 0), rate = parseFloat(f.elements.county.value), tax = Math.round(sub * rate) / 100;
+      out.innerHTML = '<table class="table"><tbody>' + rows.map(function (r) { return "<tr><td>" + r[0] + "</td><td>" + money(r[1]) + "</td></tr>"; }).join("") +
+        "<tr><td>Ohio sales tax (" + rate + "%)</td><td>" + money(tax) + '</td></tr><tr><th scope="row">Estimated total</th><th>' + money(sub + tax) + "</th></tr></tbody></table>";
+    }
+    f.addEventListener("input", calc); f.addEventListener("change", calc); calc();
+  })();
+</script>
+<style>
+  .estimator { display: grid; gap: 14px; max-width: 640px; border-top: 4px solid var(--amber); padding-top: 18px; }
+  .estimator label { display: grid; gap: 4px; font-weight: 600; }
+  .estimator input[type="number"], .estimator select { min-height: 46px; padding: 8px 10px; font: inherit; border: 2px solid var(--ink); background: #fff; }
+  .estimator fieldset { border: 1px solid var(--line); padding: 10px 14px; display: grid; gap: 6px; }
+  .estimator .check { display: flex; gap: 10px; align-items: center; font-weight: 400; }
+  .estimator [hidden] { display: none; }
+</style>

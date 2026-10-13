@@ -1,0 +1,8 @@
+---
+import Base from "../layouts/Base.astro";
+import { COMPANY } from "../data/company";
+---
+<Base title="Page Not Found" description={`That page is not here. Call Auto Lyft USA at ${COMPANY.phone} for a tow, or use the links below to find what you need.`} path="/404" notFound>
+  <section class="hero"><div class="wrap"><p class="eyebrow">Error 404</p><h1>This page took a wrong exit</h1><p class="lede">The address you followed does not exist on our site. If you need a truck, the phone line is faster than any page.</p><div class="ctas"><a class="btn btn-call" href={COMPANY.telHref}>Call {COMPANY.phone}</a><a class="btn btn-ghost" href="/">Go to the homepage</a></div></div></section>
+  <section class="band"><div class="wrap"><ul class="linklist"><li><a href="/towing">All services</a></li><li><a href="/areas">Areas we cover</a></li><li><a href="/rates">Rates</a></li><li><a href="/request">Request a tow</a></li><li><a href="/contact">Contact</a></li></ul></div></section>
+</Base>

@@ -1,0 +1,21 @@
+---
+import PhoneIcon from "./PhoneIcon.astro";
+import { COMPANY } from "../data/company";
+import { pick } from "../lib/pick";
+interface Props { heading?: string; text?: string }
+const path = Astro.url.pathname;
+const { heading = pick(path + "h", ["Stuck somewhere right now?", "Need a truck?", "Car won't go?", "Broken down?", "Waiting on the shoulder?"]), text = pick(path, [
+  "A dispatcher answers day and night and gives you a price before a truck moves.",
+  "Call any hour. You hear the full price first, then a flatbed heads your way.",
+  "Someone picks up 24/7, quotes the job, and texts you the driver's name.",
+  "Tell us where you are and what you drive; the quote comes before the truck.",
+  "Round-the-clock dispatch from Harrisburg Pike, with the cost confirmed up front.",
+  "One call: your location, your vehicle, your destination. We price it on the spot.",
+]) } = Astro.props;
+---
+<section class="cta">
+  <div class="wrap">
+    <div><h2>{heading}</h2><p style="margin:6px 0 0">{text}</p></div>
+    <a class="btn btn-call" href={COMPANY.telHref}><PhoneIcon /> {COMPANY.phone}</a>
+  </div>
+</section>

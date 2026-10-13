@@ -1,0 +1,67 @@
+---
+import Base from "../../layouts/Base.astro";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { GUIDE_PAGES } from "../../data/guides";
+import { guidePath } from "../../data/guides/catalog";
+import { COMPANY, ids } from "../../data/company";
+import { abs } from "../../lib/schema";
+import { rich, slugify } from "../../lib/text";
+import type { Guide } from "../../data/types";
+
+export function getStaticPaths() {
+  return GUIDE_PAGES.map((g) => ({ params: { slug: g.slug }, props: { g } }));
+}
+const { g } = Astro.props as { g: Guide };
+const path = guidePath(g.slug);
+const iso = `${g.date}T09:00:00-04:00`;
+const schema = [
+  {
+    "@type": "BlogPosting",
+    "@id": `${abs(path)}#article`,
+    headline: g.title,
+    description: g.description,
+    image: abs("/og.png"),
+    url: abs(path),
+    mainEntityOfPage: { "@id": `${abs(path)}#page` },
+    datePublished: iso,
+    dateModified: iso,
+    inLanguage: "en-US",
+    author: { "@id": ids.owner },
+    publisher: { "@id": ids.business },
+    isPartOf: { "@id": ids.website },
+  },
+];
+const more = GUIDE_PAGES.filter((x) => x.slug !== g.slug).slice(0, 4);
+const pretty = new Date(`${g.date}T12:00:00`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+---
+<Base title={g.metaTitle} description={g.description} path={path} crumbs={[{ name: "Guides", path: "/guides" }, { name: g.title, path }]} schema={schema} faqs={g.faqs} ogType="article" datePublished={iso} dateModified={iso}>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><time datetime={g.date}>{pretty}</time> · {g.readMinutes} min read · {COMPANY.owner.name}</p>
+      <h1 style="max-width:26ch">{g.title}</h1>
+      <p class="lede">{g.excerpt}</p>
+    </div>
+  </section>
+  <article class="band">
+    <div class="wrap prose">
+      {g.body.map((sec) => (
+        <section>
+          <h2 id={slugify(sec.heading)}>{sec.heading}</h2>
+          {sec.paragraphs.map((t) => <p set:html={rich(t)} />)}
+          {sec.bullets && <ul>{sec.bullets.map((b) => <li set:html={rich(b)} />)}</ul>}
+        </section>
+      ))}
+    </div>
+  </article>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={g.faqs} heading="Quick answers" /></div></section>
+  <CtaBand />
+  <section class="band">
+    <div class="wrap">
+      <h2>More driver guides</h2>
+      <ul class="rules cols two" style="display:grid">{more.map((m) => <li><a href={guidePath(m.slug)}><strong>{m.title}</strong></a><p>{m.excerpt}</p></li>)}</ul>
+    </div>
+  </section>
+  <Nap />
+</Base>

@@ -1,0 +1,100 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { COMPANY } from "../data/company";
+import { RATES, EV_RATES, AFTER_HOURS_WINDOW, usd } from "../data/rates";
+import { rich } from "../lib/text";
+import type { Faq } from "../data/types";
+
+const path = "/questions";
+const sample = { enroute: 5, loaded: 8 };
+const sampleTotal = sample.enroute * RATES.enroutePerMile + RATES.hookup + sample.loaded * RATES.loadedPerMile;
+
+const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
+  {
+    id: "pricing",
+    heading: "Prices and paying",
+    intro: "Every number below comes straight from the published rate card.",
+    faqs: [
+      { q: "How is a tow priced?", a: `It adds up three pieces. The drive out costs ${usd(RATES.enroutePerMile)} per mile, measured from the yard gate to your car. Loading is a flat ${usd(RATES.hookup)}. Then each mile the car spends on the deck is ${usd(RATES.loadedPerMile)}. A car ${sample.enroute} miles from the yard going ${sample.loaded} miles to a shop comes to ${usd(sampleTotal)} before tax. The full list is on our [rates](/rates) page.` },
+      { q: "What add-ons can show up on a bill?", a: `Only the ones printed on the card, and only when they fit the job. A highway pickup adds ${usd(RATES.highway)}. Calls between ${AFTER_HOURS_WINDOW} add ${usd(RATES.afterHours)}. Saturday and Sunday work adds ${usd(RATES.weekend)}. Oversized vehicles add ${usd(RATES.largeVehicle)}. Any that apply are spelled out in your quote.` },
+      { q: "What do jump starts, lockouts and tire changes cost?", a: `Each is a ${usd(RATES.roadsideFlat)} flat service call plus the en-route miles. Fuel delivery is ${usd(RATES.fuelBase)} plus the fuel at ${RATES.fuelMultiplier} times the pump price, and a winch-out is ${usd(RATES.winchPerHour)} an hour.` },
+      { q: "Which forms of payment do you accept?", a: `Cash, debit and credit cards. Card payments made online carry a ${RATES.cardFeePercent}% fee, shown to you before you pay. Ohio sales tax is added at the rate of the county where the car was picked up.` },
+      { q: "Do you offer any discounts?", a: `Veterans who show a military or VA ID get ${RATES.veteranPercent}% taken off. Tell the dispatcher when you call so the quote reflects it. You can also check a price yourself with our [online estimator](/estimate) before calling.` },
+    ],
+  },
+  {
+    id: "towed",
+    heading: "Towed and stored vehicles",
+    intro: "For drivers whose car was moved from a lot, and for anyone collecting a vehicle from our yard.",
+    faqs: [
+      { q: "My car vanished from a private lot. How does that work in Ohio?", a: "Ohio lets property owners have unauthorized vehicles removed, but the state sets conditions, including signs posted where drivers enter the lot. Those signs should list who tows there and a phone number, so read them first. If there is none, the local police non-emergency line can usually tell you who took the car. Our guide on [cars towed from private lots](/guides/car-towed-from-private-lot-ohio) walks through the steps." },
+      { q: "Do you tow cars off private property?", a: "Yes, for property managers and owners who have signed up with us and posted the required signs. We do not tow from a lot on a passerby's say-so. Managers can read about setting it up on our [private property towing](/towing/private-property-towing) page." },
+      { q: "How do I get my vehicle back from your yard?", a: `Call ${COMPANY.phone} first to confirm we have it and to set a time. Bring photo ID and something that shows the car is yours, such as the registration or title. You pay the towing and any storage owed when the car is released.` },
+      { q: "How much is storage?", a: `${usd(RATES.storagePerDay)} per day for a standard vehicle and ${usd(EV_RATES.storagePerDay)} per day for an electric one. Picking the car up promptly is the simplest way to keep that cost small.` },
+      { q: "Can someone else pick up my car for me?", a: "Usually, if they bring their own ID and a signed note from you along with the ownership paperwork. Call ahead and tell the dispatcher who is coming so there is no confusion at the gate." },
+    ],
+  },
+  {
+    id: "coverage",
+    heading: "Insurance, coverage and damage",
+    intro: "Questions about who pays and what happens if something goes wrong.",
+    faqs: [
+      { q: "Will my car insurance pay for the tow?", a: "Many auto policies include towing or roadside coverage, and some credit cards and new-car warranties do too. Rules differ, so check your policy. Keep the itemized invoice from the driver; it lists each charge separately, which is what most reimbursement forms ask for." },
+      { q: "I have a roadside plan. Can I still call you?", a: "Yes. Some drivers call us because their plan's wait is long or their provider has no flatbed nearby. Pay us directly, then send the invoice to your plan to ask for reimbursement. Whether and how much they repay is up to them." },
+      { q: "What happens after a crash?", a: "When police clear the vehicle to leave, the driver secures it on the deck and hauls it to the body shop, your home or our yard while you talk to your insurer. Our [accident towing](/towing/accident-towing) page and the [after-a-crash guide](/guides/after-a-car-accident-ohio) explain the order of things." },
+      { q: "What if my car is damaged during the tow?", a: "The driver photographs your vehicle all the way around before loading it. Look the car over when it is dropped off and point out anything new to the driver right then, then email the owner with photos. The before pictures make it quick to sort out." },
+      { q: "Are your trucks insured?", a: `Yes, with commercial towing insurance through ${COMPANY.insurer}. Businesses that need a certificate of insurance on file can request one by email.` },
+    ],
+  },
+  {
+    id: "vehicles",
+    heading: "Vehicles, trucks and service area",
+    intro: "What we carry, how we carry it and where the trucks go.",
+    faqs: [
+      { q: "Why does Auto Lyft USA use flatbeds only?", a: `All ${COMPANY.fleet.trucks} of our trucks are light-duty flatbed carriers. Lifting the whole vehicle onto a deck avoids dragging wheels or a driveshaft and keeps bumpers clear of the pavement, so we never have to pick a gentler truck for some cars and a rougher one for others.` },
+      { q: "Can you tow an electric vehicle or hybrid?", a: `Yes. EVs ride on the deck in transport mode with no wheel on the road. They have their own rate card: ${usd(EV_RATES.enroutePerMile)} per en-route mile, a ${usd(EV_RATES.hookup)} hook-up and ${usd(EV_RATES.loadedPerMile)} per loaded mile. See [EV towing](/towing/ev-towing).` },
+      { q: "Is towing safe for an all-wheel-drive car?", a: "On a flatbed, yes. Pulling an AWD car with two wheels turning can strain the center differential and transfer case, which is why most AWD owner's manuals call for all four wheels off the ground. Our [AWD guide](/guides/why-awd-cars-need-a-flatbed) goes deeper." },
+      { q: "Do you handle box trucks, RVs or semis?", a: "Not with our own trucks. We take the call, then arrange the job with a heavy-wrecker partner and keep you posted. See [heavy-duty towing](/towing/heavy-duty-towing) for how that works." },
+      { q: "Which towns do you serve?", a: "All of Columbus plus the suburbs and nearby towns in the surrounding counties, from Delaware County down to Lancaster. Our [areas page](/areas) lists each town with its ZIP codes and distance from the yard. Longer trips are possible as [long-distance towing](/towing/long-distance-towing)." },
+    ],
+  },
+];
+const allFaqs = groups.flatMap((g) => g.faqs);
+---
+<Base
+  title="Towing Questions and Answers"
+  description="Answers on towing prices, payment, getting a towed car back, storage, insurance reimbursement, EVs, AWD and where we go. Auto Lyft USA, (614) 633-8163."
+  path={path}
+  crumbs={[{ name: "Questions", path }]}
+  faqs={allFaqs}
+>
+  <Hero
+    eyebrow="FAQ"
+    h1="Straight Answers to Common Towing Questions"
+    lede={`${allFaqs.length} questions drivers ask us most, grouped by topic. If yours is not here, call the dispatcher; there is no charge for asking.`}
+  />
+  <section class="band">
+    <div class="wrap prose">
+      <nav aria-label="Topics">
+        <p><strong>Jump to:</strong> {groups.map((g, i) => (<>{i > 0 && " · "}<a href={`#${g.id}`}>{g.heading}</a></>))}</p>
+      </nav>
+      {groups.map((g) => (
+        <section class="faq" id={g.id} aria-labelledby={`${g.id}-h`}>
+          <h2 id={`${g.id}-h`}>{g.heading}</h2>
+          <p class="muted">{g.intro}</p>
+          {g.faqs.map((f) => (
+            <details>
+              <summary><h3 set:html={rich(f.q)} /></summary>
+              <div><p set:html={rich(f.a)} /></div>
+            </details>
+          ))}
+        </section>
+      ))}
+    </div>
+  </section>
+  <CtaBand heading="Still have a question?" text="Call dispatch any hour. A quick answer costs nothing." />
+  <Nap />
+</Base>

@@ -1,0 +1,22 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import FaqList from "../../components/FaqList.astro";
+import Estimator from "../../components/Estimator.astro";
+import Nap from "../../components/Nap.astro";
+import { EV_RATES, usd } from "../../data/rates";
+import type { Faq } from "../../data/types";
+
+const path = "/estimate/ev";
+const faqs: Faq[] = [
+  { q: "Why does an EV tow have its own estimate?", a: `Electric cars are loaded in transport mode with no wheel on the road, which takes longer and needs extra care with low battery packs and underbody panels. That is why the hook-up is ${usd(EV_RATES.hookup)}. The en-route rate is lower, at ${usd(EV_RATES.enroutePerMile)} per mile.` },
+  { q: "Can you tow my Tesla to a Supercharger?", a: "Yes. If the car simply ran out of charge, the cheapest fix is often a short tow to the nearest fast charger. Give the dispatcher the charger location as your drop-off. See [EV towing](/towing/ev-towing) for what to do before we arrive." },
+  { q: "Does the EV card apply to hybrids?", a: "Plug-in hybrids and conventional hybrids are usually priced on the standard card unless the maker requires transport-mode loading. The dispatcher will tell you which card applies when you give the make and model." },
+];
+---
+<Base title="EV & Tesla Tow Estimate, Columbus" description="Estimate an electric vehicle or Tesla tow in Columbus on Auto Lyft USA's EV rate card: transport-mode flatbed loading and tax included." path={path} crumbs={[{ name: "Estimate", path: "/estimate" }, { name: "EV", path }]} faqs={faqs}>
+  <Hero eyebrow="EV estimate" h1="Electric Vehicle Tow Estimate for Central Ohio" lede="Teslas, Mach-Es, Ioniqs, Bolts and other EVs ride on the flatbed in transport mode. Price the trip on our EV card." secondary={{ href: "/towing/ev-towing", label: "How we tow EVs" }} />
+  <section class="band"><div class="wrap"><Estimator ev /></div></section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={faqs} heading="EV towing price questions" /></div></section>
+  <Nap />
+</Base>

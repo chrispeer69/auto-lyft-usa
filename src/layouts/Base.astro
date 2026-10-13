@@ -1,0 +1,141 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Crumbs from "../components/Crumbs.astro";
+import { COMPANY, TITLE_SUFFIX } from "../data/company";
+import { CITY_FACTS, COLUMBUS_ZIPS } from "../data/cities/catalog";
+import { SERVICES, servicePath } from "../data/services/catalog";
+import {
+  abs,
+  breadcrumbNode,
+  businessNode,
+  faqNode,
+  ownerNode,
+  webPageNode,
+  websiteNode,
+  type Crumb,
+  type Node,
+} from "../lib/schema";
+import type { Faq } from "../data/types";
+
+interface Props {
+  /** Page part of the title; the brand suffix is added unless `fullTitle` is set. */
+  title: string;
+  fullTitle?: boolean;
+  description: string;
+  path: string;
+  crumbs?: Crumb[];
+  noindex?: boolean;
+  pageType?: string | string[];
+  /** Nodes added to the page graph (Service, ItemList, BlogPosting...). */
+  schema?: Node[];
+  /** FAQs rendered on the page; emitted as the page's one FAQPage node. */
+  faqs?: Faq[];
+  ogImage?: string;
+  ogType?: "website" | "article";
+  datePublished?: string;
+  dateModified?: string;
+  /** 404 page: no canonical, no og:url. */
+  notFound?: boolean;
+  bare?: boolean;
+}
+
+const {
+  title,
+  fullTitle = false,
+  description,
+  path,
+  crumbs = [],
+  noindex = false,
+  pageType,
+  schema = [],
+  faqs = [],
+  ogImage = "/og.png",
+  ogType = "website",
+  datePublished,
+  dateModified,
+  notFound = false,
+  bare = false,
+} = Astro.props;
+
+const docTitle = fullTitle ? title : `${title}${TITLE_SUFFIX}`;
+const canonical = abs(path);
+const allZips = [...new Set([...COLUMBUS_ZIPS, ...CITY_FACTS.flatMap((c) => c.zips)])].sort();
+
+const graph: Node[] = [
+  businessNode({
+    cities: [{ name: "Columbus" }, ...CITY_FACTS],
+    zips: allZips,
+    services: SERVICES.map((s) => ({ name: s.name, path: servicePath(s.slug) })),
+  }),
+  websiteNode(),
+  ownerNode(),
+];
+if (!notFound) {
+  graph.push(
+    webPageNode({
+      path,
+      title: docTitle,
+      description,
+      type: pageType,
+      hasCrumbs: crumbs.length > 0,
+      image: ogImage,
+      datePublished,
+      dateModified,
+    }),
+  );
+  if (crumbs.length) graph.push(breadcrumbNode(path, crumbs));
+  graph.push(...schema);
+  if (faqs.length) graph.push(faqNode(path, faqs));
+}
+const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c");
+const robots = notFound ? "noindex, nofollow" : noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1";
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{docTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    {!notFound && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={COMPANY.name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content={docTitle} />
+    <meta property="og:description" content={description} />
+    {!notFound && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content={abs(ogImage)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={docTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={abs(ogImage)} />
+    <meta name="geo.region" content="US-OH" />
+    <meta name="geo.placename" content="Columbus, Ohio" />
+    <meta name="geo.position" content={`${COMPANY.geo.lat};${COMPANY.geo.lng}`} />
+    <meta name="ICBM" content={`${COMPANY.geo.lat}, ${COMPANY.geo.lng}`} />
+    <meta name="theme-color" content="#0b1220" />
+    <meta name="format-detection" content="telephone=yes" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <script type="application/ld+json" set:html={jsonLd} />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <Header path={path} minimal={bare} />
+    {crumbs.length > 0 && <Crumbs crumbs={crumbs} />}
+    <main id="content">
+      <slot />
+    </main>
+    {!bare && <Footer />}
+    <nav class="callbar" aria-label="Quick contact">
+      <a class="primary" href={COMPANY.telHref}>Call {COMPANY.phone}</a>
+      <a href="/request">Request a tow</a>
+    </nav>
+  </body>
+</html>
