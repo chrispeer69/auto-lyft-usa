@@ -1,5 +1,4 @@
 ---
-import Logo from "./Logo.astro";
 import PhoneIcon from "./PhoneIcon.astro";
 import { COMPANY } from "../data/company";
 
@@ -18,7 +17,7 @@ const current = (href: string) => path === href || (href !== "/" && path.startsW
 ---
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/" aria-label={`${COMPANY.name} home`}><Logo /><span class="brand-text">Auto Lyft USA<small>24/7 Towing · Columbus, OH</small></span></a>
+    <a class="brand wordmark" href="/" aria-label={`${COMPANY.name} home`}><span class="bar"></span><span class="name"><strong>Auto Lyft USA</strong><small>Towing · Columbus, Ohio</small></span></a>
     {!minimal && <nav class="nav" aria-label="Main">
       {links.map((l) => <a href={l.href} aria-current={current(l.href) ? "page" : undefined}>{l.label}</a>)}
     </nav>}

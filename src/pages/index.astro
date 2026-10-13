@@ -22,23 +22,11 @@ const byDir = ["North", "East", "South", "West"].map((d) => ({
   cities: CITY_FACTS.filter((c) => direction(c.geo.lat, c.geo.lng) === d).sort((a, b) => a.name.localeCompare(b.name)),
 }));
 
-// Line icons (24px grid, stroke = currentColor) for the facts strip and service cards.
-const ICON = {
-  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
-  truck: '<path d="M2 16V7h11v9M13 10h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/>',
-  pin: '<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
-  tag: '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8" r="1.4"/>',
-  bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
-  star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
-  building: '<path d="M4 21V5l8-3v19M12 21V9l8 3v9M2 21h20M7 8h2M7 12h2M7 16h2M15 14h2M15 18h2"/>',
-};
-const svg = (d: string) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
-const GROUP_ICON: Record<string, string> = { towing: ICON.truck, roadside: ICON.bolt, specialty: ICON.star, commercial: ICON.building };
 const FACTS = [
-  { icon: ICON.clock, big: "24/7", small: "Dispatch, every day of the year" },
-  { icon: ICON.truck, big: `${COMPANY.fleet.trucks} flatbeds`, small: "Light-duty carriers, no hook-and-chain" },
-  { icon: ICON.pin, big: `${CITY_FACTS.length}+ towns`, small: "Columbus and the metro around it" },
-  { icon: ICON.tag, big: "Price first", small: "Quoted on the call, before a truck rolls" },
+  { big: "24/7", small: "Live dispatch, every day of the year" },
+  { big: `${COMPANY.fleet.trucks}`, small: "Light-duty flatbed carriers. No hook-and-chain." },
+  { big: `${CITY_FACTS.length}+`, small: "Towns covered across the Columbus metro" },
+  { big: "1 call", small: "Location, vehicle, destination. Priced before a truck rolls." },
 ];
 ---
 <Base title={HOME.title} description={HOME.description} path="/" faqs={HOME_FAQS}>
@@ -52,11 +40,12 @@ const FACTS = [
       ["Yard", "Harrisburg Pike, 43223"],
       ["Coverage", `Columbus + ${CITY_FACTS.length} nearby towns`],
     ]}
+    showTrust={false}
   />
 
   <section class="facts-bar" aria-label="At a glance">
     <div class="wrap">
-      <ul>{FACTS.map((f) => <li><Fragment set:html={svg(f.icon)} /><div><strong>{f.big}</strong><span>{f.small}</span></div></li>)}</ul>
+      <ul>{FACTS.map((f) => <li><strong>{f.big}</strong><span>{f.small}</span></li>)}</ul>
     </div>
   </section>
 
@@ -85,7 +74,7 @@ const FACTS = [
           <div class="svc-group-head"><h3>{g.label}</h3><p>{g.intro}</p></div>
           <ul class="svc-grid">
             {SERVICES.filter((s) => s.group === g.id).map((s) => (
-              <li><a class="svc-card" href={servicePath(s.slug)}><Fragment set:html={svg(GROUP_ICON[g.id] ?? ICON.truck)} /><strong>{s.name}</strong><span>{s.blurb}</span><em>Details &amp; rates →</em></a></li>
+              <li><a class="svc-card" href={servicePath(s.slug)}><strong>{s.name}</strong><span>{s.blurb}</span><em aria-hidden="true">→</em></a></li>
             ))}
           </ul>
         </div>
