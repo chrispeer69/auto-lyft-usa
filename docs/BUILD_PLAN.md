@@ -17,7 +17,7 @@ How we differ from the sister site on purpose:
 |---|---|---|
 | Stack | React SPA + Express injection | Astro, static HTML |
 | URLs | /services/x, /service-area/x, /places/x, /blog/x, /pricing, /quote, /faq | /towing/x, /areas/x-oh, /local/x, /guides/x, /rates, /estimate, /questions |
-| Design | navy/cream, Oswald + DM Sans, cards | ink/amber, Archivo + Source Sans 3, rule lists |
+| Design | navy/cream, Oswald + DM Sans, photo hero | charcoal/red, Plus Jakarta Sans + Inter, grid-texture hero |
 | Schema ids | #business, #website, #owner | #org, #site, #lisa-peer, one @graph |
 | Title patterns | "Towing {City} OH \| Roadside…" | "{City} OH Towing & Roadside Help \| Auto Lyft USA" |
 | City pages | ETA tiers, fixed H1 formula | miles from yard, county, roads-we-get-called-to, unique H1s |

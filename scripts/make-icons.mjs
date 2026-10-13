@@ -8,12 +8,14 @@ for (const [file, size] of [["favicon-32.png", 32], ["apple-touch-icon.png", 180
 }
 
 const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
-  <rect width="1200" height="630" fill="#0b1220"/>
-  <polygon points="0,560 1200,470 1200,630 0,630" fill="#f59e0b"/>
+  <defs><radialGradient id="g" cx="0.9" cy="0" r="0.8"><stop offset="0" stop-color="#c81e1e" stop-opacity="0.45"/><stop offset="1" stop-color="#c81e1e" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="#0f1419"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#c81e1e"/>
   <g transform="translate(80,90) scale(3.2)">${icon.toString().replace(/<\/?svg[^>]*>/g, "")}</g>
-  <text x="80" y="340" fill="#ffffff" font-family="Arial Narrow, Arial, sans-serif" font-weight="800" font-size="92">AUTO LYFT USA</text>
-  <text x="80" y="410" fill="#f59e0b" font-family="Arial, sans-serif" font-weight="700" font-size="40">24/7 Flatbed Towing · Columbus, Ohio</text>
-  <text x="80" y="465" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="34">(614) 633-8163</text>
+  <text x="80" y="340" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="88">Auto Lyft USA</text>
+  <text x="80" y="410" fill="#ffffff" fill-opacity="0.85" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="40">24/7 Flatbed Towing · Columbus, Ohio</text>
+  <text x="80" y="465" fill="#ff6b6b" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="38">(614) 633-8163</text>
 </svg>`;
 await sharp(Buffer.from(og)).png().toFile("public/og.png");
 console.log("icons + og.png written");

@@ -1,10 +1,12 @@
 ---
 import PhoneIcon from "./PhoneIcon.astro";
 import { COMPANY } from "../data/company";
-interface Props { eyebrow: string; h1: string; lede: string; facts?: [string, string][]; secondary?: { href: string; label: string } }
-const { eyebrow, h1, lede, facts, secondary = { href: "/request", label: "Request a tow online" } } = Astro.props;
+interface Props { eyebrow: string; h1: string; lede: string; facts?: [string, string][]; secondary?: { href: string; label: string }; image?: string }
+const { eyebrow, h1, lede, facts, secondary = { href: "/request", label: "Request a tow online" }, image } = Astro.props;
+// Only claims the business can stand behind (see CLAUDE.md): no times, ratings or counts.
+const trust = ["Open 24/7, 365 days", "Flatbed-only fleet", "Price quoted before dispatch", "Licensed & insured"];
 ---
-<section class="hero">
+<section class={`hero${image ? " has-photo" : ""}`} style={image ? `--hero-img:url(${image})` : undefined}>
   <div class="wrap">
     <div class={`hero-grid${facts?.length ? " has-aside" : ""}`}>
       <div>
@@ -15,6 +17,9 @@ const { eyebrow, h1, lede, facts, secondary = { href: "/request", label: "Reques
           <a class="btn btn-call" href={COMPANY.telHref}><PhoneIcon /> Call {COMPANY.phone}</a>
           <a class="btn btn-ghost" href={secondary.href}>{secondary.label}</a>
         </div>
+        <ul class="trust">
+          {trust.map((t) => <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>{t}</li>)}
+        </ul>
         <slot />
       </div>
       {facts?.length ? (

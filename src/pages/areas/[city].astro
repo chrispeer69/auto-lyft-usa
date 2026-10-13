@@ -103,7 +103,7 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
   {c.local.length > 0 && (
     <section class="band dark" aria-labelledby="local-h">
       <div class="wrap">
-        <p class="kicker" style="color:var(--amber)">Know the area</p>
+        <p class="kicker">Know the area</p>
         <h2 id="local-h">Around {c.name}</h2>
         <div class="cols two">
           {kinds.map((k) => (

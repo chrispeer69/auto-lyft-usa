@@ -91,7 +91,7 @@ const schema = [
 
   <section class="band dark" aria-labelledby="how-h">
     <div class="wrap">
-      <p class="kicker" style="color:var(--amber)">On scene</p>
+      <p class="kicker">On scene</p>
       <h2 id="how-h">How our drivers handle it</h2>
       <ol class="steps">
         {s.method.map((m) => <li><h3>{m.title}</h3><p set:html={rich(m.text)} /></li>)}
