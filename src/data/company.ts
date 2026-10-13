@@ -8,7 +8,7 @@
   missing one.
 */
 
-export const SITE_URL = "https://autolyftusa.online";
+export const SITE_URL = "https://www.autolyftusa.online";
 
 export const COMPANY = {
   name: "Auto Lyft USA",

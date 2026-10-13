@@ -39,7 +39,7 @@ const CTA_LINES = [
   (n: string) => `Tell the dispatcher the nearest ${n} cross street and you will hear the full price before a truck is assigned.`,
   (n: string) => `One call covers it: where you are in ${n}, what you drive, where it should go — and the quote comes first.`,
   (n: string) => `Our dispatcher can usually price a ${n} job in under a minute on the phone.`,
-  (n: string) => `Stuck in ${n} with no plan? Call, describe the problem and we will tell you whether it needs a tow or a quick fix.`,
+  (n: string) => `Stuck in ${n} with no plan? Call, describe the problem and we will tell you whether that ${n} breakdown needs a tow or a quick fix.`,
   (n: string) => `Give us a landmark or an address in ${n}; we handle the rest and confirm the price before rolling.`,
 ];
 let ctaHash = 0;
@@ -142,5 +142,5 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
     </div>
   </section>
 
-  <Nap />
+  <Nap place={c.name} />
 </Base>

@@ -1,12 +1,21 @@
 ---
 import { COMPANY } from "../data/company";
 import { pick } from "../lib/pick";
-const lead = pick(Astro.url.pathname, [
-  `Every Auto Lyft USA truck rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
-  `Our flatbeds are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
-  `All four carriers start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
-  `Home base is ${COMPANY.yardArea.replace(/^on /, "")}; dispatch works ${COMPANY.hours}.`,
-]);
+const { place } = Astro.props as { place?: string };
+// Name the page's place when we have one, so local pages don't share this sentence.
+const lead = pick(Astro.url.pathname, place
+  ? [
+      `Every truck sent to ${place} rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
+      `The flatbeds that cover ${place} are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
+      `All four carriers that work ${place} start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
+      `Calls from ${place} are dispatched from ${COMPANY.yardArea.replace(/^on /, "")}, ${COMPANY.hours}.`,
+    ]
+  : [
+      `Every Auto Lyft USA truck rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
+      `Our flatbeds are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
+      `All four carriers start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
+      `Home base is ${COMPANY.yardArea.replace(/^on /, "")}; dispatch works ${COMPANY.hours}.`,
+    ]);
 ---
 <section class="band alt" aria-labelledby="nap-h">
   <div class="wrap cols two">

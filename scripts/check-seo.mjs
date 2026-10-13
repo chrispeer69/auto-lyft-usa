@@ -9,11 +9,11 @@
   that does.
 */
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from "node:fs";
-import { join, relative, sep } from "node:path";
+import { basename, join, relative, sep } from "node:path";
 import { parse } from "node-html-parser";
 
 const DIST = "dist";
-const SITE = "https://autolyftusa.online";
+const SITE = "https://www.autolyftusa.online";
 const LASTMOD = JSON.parse(readFileSync("src/data/lastmod.json", "utf8"));
 
 function walk(dir) {
@@ -32,7 +32,8 @@ const errors = [];
 const warn = [];
 const pages = [];
 
-for (const file of walk(DIST).filter((f) => f.endsWith(".html"))) {
+// Skip the Google Search Console verification file; it isn't a page.
+for (const file of walk(DIST).filter((f) => f.endsWith(".html") && !/^google[0-9a-f]+\.html$/.test(basename(f)))) {
   const path = toPath(file);
   if (path === "/404") continue;
   const root = parse(readFileSync(file, "utf8"));

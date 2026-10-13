@@ -2,16 +2,28 @@
 import PhoneIcon from "./PhoneIcon.astro";
 import { COMPANY } from "../data/company";
 import { pick } from "../lib/pick";
-interface Props { heading?: string; text?: string }
+interface Props { heading?: string; text?: string; place?: string }
 const path = Astro.url.pathname;
-const { heading = pick(path + "h", ["Stuck somewhere right now?", "Need a truck?", "Car won't go?", "Broken down?", "Waiting on the shoulder?"]), text = pick(path, [
-  "A dispatcher answers day and night and gives you a price before a truck moves.",
-  "Call any hour. You hear the full price first, then a flatbed heads your way.",
-  "Someone picks up 24/7, quotes the job, and texts you the driver's name.",
-  "Tell us where you are and what you drive; the quote comes before the truck.",
-  "Round-the-clock dispatch from Harrisburg Pike, with the cost confirmed up front.",
-  "One call: your location, your vehicle, your destination. We price it on the spot.",
-]) } = Astro.props;
+const { place } = Astro.props;
+// With a place name, every local page gets its own sentence instead of one of six shared ones.
+const lines = place
+  ? [
+      `A dispatcher answers day and night and prices your ${place} call before a truck moves.`,
+      `Call from ${place} at any hour; you hear the full price first, then a flatbed heads your way.`,
+      `Someone picks up 24/7, quotes the ${place} job and texts you the driver's name.`,
+      `Tell us where in ${place} you are and what you drive; the quote comes before the truck.`,
+      `Round-the-clock dispatch to ${place} from Harrisburg Pike, with the cost confirmed up front.`,
+      `One call: your spot in ${place}, your vehicle, your destination. We price it on the spot.`,
+    ]
+  : [
+      "A dispatcher answers day and night and gives you a price before a truck moves.",
+      "Call any hour. You hear the full price first, then a flatbed heads your way.",
+      "Someone picks up 24/7, quotes the job, and texts you the driver's name.",
+      "Tell us where you are and what you drive; the quote comes before the truck.",
+      "Round-the-clock dispatch from Harrisburg Pike, with the cost confirmed up front.",
+      "One call: your location, your vehicle, your destination. We price it on the spot.",
+    ];
+const { heading = pick(path + "h", ["Stuck somewhere right now?", "Need a truck?", "Car won't go?", "Broken down?", "Waiting on the shoulder?"]), text = pick(path, lines) } = Astro.props;
 ---
 <section class="cta">
   <div class="wrap">

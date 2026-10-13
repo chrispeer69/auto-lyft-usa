@@ -51,7 +51,7 @@ const related = p.related.map((s) => placeBySlug(s)).filter((s) => s !== undefin
     </section>
   ))}
   <section class="band"><div class="wrap prose"><FaqList faqs={p.faqs} heading={`${p.label}: what drivers ask`} /></div></section>
-  <CtaBand />
+  <CtaBand place={v.name} />
   <section class="band alt" aria-labelledby="help-h">
     <div class="wrap cols three">
       <div><h2 id="help-h">Services here</h2><ul class="linklist" style="columns:1">{services.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}<li><a href="/rates">Our rates</a></li></ul></div>
@@ -60,5 +60,5 @@ const related = p.related.map((s) => placeBySlug(s)).filter((s) => s !== undefin
     </div>
     <div class="wrap"><p class="small muted" style="margin-top:20px">{p.notAffiliated}</p></div>
   </section>
-  <Nap />
+  <Nap place={v.name} />
 </Base>

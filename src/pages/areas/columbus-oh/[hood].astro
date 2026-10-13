@@ -62,7 +62,7 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
     </section>
   )}
   <section class="band"><div class="wrap prose"><FaqList faqs={h.faqs} heading={`${h.name} towing questions`} /></div></section>
-  <CtaBand heading={`Need a truck in ${h.name}?`} />
+  <CtaBand heading={`Need a truck in ${h.name}?`} place={h.name} />
   <section class="band alt">
     <div class="wrap cols two">
       <div>
@@ -79,5 +79,5 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
       </div>
     </div>
   </section>
-  <Nap />
+  <Nap place={h.name} />
 </Base>

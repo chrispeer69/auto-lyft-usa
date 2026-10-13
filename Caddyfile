@@ -1,0 +1,63 @@
+# Web server for Railway. Railway terminates TLS at its edge and forwards plain
+# HTTP on $PORT, so auto_https is off; the public site is still HTTPS.
+# Mirrors public/_headers and public/_redirects, which Caddy does not read.
+{
+	admin off
+	persist_config off
+	auto_https off
+	servers {
+		trusted_proxies static private_ranges
+	}
+}
+
+:{$PORT:3000} {
+	root * {$SITE_ROOT:/srv}
+	encode gzip zstd
+
+	# Bare domain -> www, in case it ever reaches this server directly.
+	@apex host autolyftusa.online
+	redir @apex https://www.autolyftusa.online{uri} 301
+
+	# trailingSlash: "never" — /towing/ -> /towing
+	@slash path_regexp slash ^(/.+)/$
+	redir @slash {re.slash.1} 301
+
+	# Old URLs from the previous site and the sister-site pattern.
+	redir /index.html / 301
+	redir /index / 301
+	redir /services /towing 301
+	@services path_regexp services ^/services/(.+)$
+	redir @services /towing/{re.services.1} 301
+	redir /service-areas /areas 301
+	redir /pricing /rates 301
+	redir /quote /estimate 301
+	redir /faq /questions 301
+	redir /blog /guides 301
+	@blog path_regexp blog ^/blog/(.+)$
+	redir @blog /guides/{re.blog.1} 301
+
+	header {
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "geolocation=(self), camera=(), microphone=()"
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	}
+	header /_astro/* Cache-Control "public, max-age=31536000, immutable"
+	header *.png Cache-Control "public, max-age=604800"
+	@html path_regexp ^/[^.]*$
+	header @html Cache-Control "public, max-age=0, must-revalidate"
+	header /go/* X-Robots-Tag "noindex, follow"
+	header /jobs X-Robots-Tag "noindex, follow"
+	header /llms-full.txt X-Robots-Tag "noindex"
+
+	# build.format "file": /towing/x is dist/towing/x.html. No catch-all to the
+	# homepage (Google treats that as a soft 404).
+	try_files {path} {path}.html {path}/index.html
+	file_server
+
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}
