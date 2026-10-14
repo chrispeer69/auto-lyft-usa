@@ -79,7 +79,7 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
     <div class="wrap">
       <p class="kicker">Where calls come from</p>
       <h2 id="roads-h">Roads we get called to in {c.name}</h2>
-      <ul class="rules cols two" style="display:grid">
+      <ul class="rules cols two grid">
         {c.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}
       </ul>
     </div>
@@ -88,11 +88,11 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
   <section class="band" aria-labelledby="svc-h">
     <div class="wrap">
       <h2 id="svc-h">Services available in {c.name}</h2>
-      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="cols two auto-cols">
         {SERVICE_GROUPS.map((g) => (
           <div>
             <h3>{g.label}</h3>
-            <ul class="linklist" style="columns:1">
+            <ul class="linklist one-col">
               {SERVICES.filter((s) => s.group === g.id).map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}
             </ul>
           </div>
@@ -137,7 +137,7 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
         <li><a href="/areas">Every town we cover</a></li>
       </ul>
       {venues.length > 0 && (<>
-        <h2 style="margin-top:28px">Venues and campuses near {c.name}</h2>
+        <h2 class="mt-28">Venues and campuses near {c.name}</h2>
         <ul class="linklist">{venues.map((v) => <li><a href={placePath(v.slug)}>{v.label}</a></li>)}</ul>
       </>)}
     </div>

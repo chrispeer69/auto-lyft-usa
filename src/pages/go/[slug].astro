@@ -10,17 +10,18 @@ export function getStaticPaths() {
 const { l } = Astro.props as { l: Landing };
 ---
 <Base title={l.title} description={l.description} path={landingPath(l.slug)} noindex bare>
-  <section class="hero" style="padding-bottom:64px">
+  <section class="hero go-hero">
     <div class="wrap">
       <p class="eyebrow">{l.keyword} · Columbus, Ohio</p>
       <h1>{l.h1}</h1>
       <p class="lede">{l.sub}</p>
-      <div class="ctas"><a class="btn btn-call" style="font-size:1.25rem;min-height:60px" href={COMPANY.telHref}><PhoneIcon /> Call {COMPANY.phone}</a></div>
-      <ul style="list-style:none;padding:0;margin:18px 0 0;display:grid;gap:6px">{l.ticks.map((t) => <li>✓ {t}</li>)}</ul>
+      <div class="ctas"><a class="btn btn-call btn-xl" href={COMPANY.telHref}><PhoneIcon /> Call {COMPANY.phone}</a></div>
+      <ul class="ticks">{l.ticks.map((t) => <li>✓ {t}</li>)}</ul>
     </div>
   </section>
   <section class="band">
     <div class="wrap">
+      <h2 class="steps-title">How it works</h2>
       <ol class="steps">
         <li><h3>Call</h3><p>A dispatcher answers, day or night.</p></li>
         <li><h3>Get the price</h3><p>You hear the full cost before anything is sent.</p></li>

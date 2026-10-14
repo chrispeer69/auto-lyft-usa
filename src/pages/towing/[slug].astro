@@ -84,7 +84,7 @@ const schema = [
     <div class="wrap">
       <p class="kicker">When to call</p>
       <h2 id="when-h">Situations where {s.name.toLowerCase()} is the right call</h2>
-      <ul class="rules cols two" style="display:grid">
+      <ul class="rules cols two grid">
         {s.situations.map((x) => <li><h3>{x.title}</h3><p set:html={rich(x.text)} /></li>)}
       </ul>
     </div>
@@ -125,7 +125,7 @@ const schema = [
             <thead><tr><th>Charge</th><th>Rate</th><th>What it covers</th></tr></thead>
             <tbody>{offers.map((o) => <tr><td>{o.name}</td><td>{usd(o.price)} {o.unit}</td><td>{o.note}</td></tr>)}</tbody>
           </table></div>
-          <p class="small muted" style="margin-top:12px">Surcharges where they apply: after hours ({AFTER_HOURS_WINDOW}) +{usd(RATES.afterHours)} · Saturday or Sunday +{usd(RATES.weekend)} · interstate shoulder +{usd(RATES.highway)}. Ohio sales tax is added for the pickup county. Veterans get {RATES.veteranPercent}% off with a military or VA ID. Full details on the <a href="/rates">rates page</a>, or price your exact trip with the <a href="/estimate">estimate tool</a>.</p>
+          <p class="small muted mt-12">Surcharges where they apply: after hours ({AFTER_HOURS_WINDOW}) +{usd(RATES.afterHours)} · Saturday or Sunday +{usd(RATES.weekend)} · interstate shoulder +{usd(RATES.highway)}. Ohio sales tax is added for the pickup county. Veterans get {RATES.veteranPercent}% off with a military or VA ID. Full details on the <a href="/rates">rates page</a>, or price your exact trip with the <a href="/estimate">estimate tool</a>.</p>
         </>
       ) : (
         <p>This work is priced per job because the equipment, distance and time vary so much. Call {"(614) 633-8163"} with the details and the office quotes it before anything is scheduled. See the <a href="/rates">rates page</a> for our standard charges.</p>
@@ -151,7 +151,7 @@ const schema = [
           {towns.map((t) => <li><a href={cityPath(t.slug)}>{t.name}</a></li>)}
         </ul>
         {venues.length > 0 && (<>
-          <h3 style="margin-top:20px">Places we're often called for this</h3>
+          <h3 class="mt-20">Places we're often called for this</h3>
           <ul class="linklist">{venues.map((v) => <li><a href={placePath(v.slug)}>{v.label}</a></li>)}</ul>
         </>)}
       </div>
@@ -161,11 +161,11 @@ const schema = [
   <section class="band alt" aria-labelledby="all-h">
     <div class="wrap">
       <h2 id="all-h">Everything else we do</h2>
-      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div class="cols two auto-cols">
         {SERVICE_GROUPS.map((g) => (
           <div>
             <h3>{g.label}</h3>
-            <ul class="linklist" style="columns:1">
+            <ul class="linklist one-col">
               {SERVICES.filter((x) => x.group === g.id && x.slug !== s.slug).map((x) => <li><a href={servicePath(x.slug)}>{x.name}</a></li>)}
             </ul>
           </div>

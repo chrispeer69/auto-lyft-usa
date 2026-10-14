@@ -6,6 +6,6 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://www.autolyftusa.online",
   trailingSlash: "never",
-  build: { format: "file", inlineStylesheets: "auto" },
+  build: { format: "file", inlineStylesheets: "always" },
   compressHTML: true,
 });

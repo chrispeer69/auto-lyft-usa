@@ -26,7 +26,7 @@ const schema = [itemListNode(path, list)];
   <section class="band">
     <div class="wrap">
       <h2>Pick the problem</h2>
-      <ul class="rules cols two" style="display:grid">{REPAIR_PAGES.map((r) => <li><a href={repairPath(r.slug)}><strong>{r.name}</strong></a><p>{r.lede}</p></li>)}</ul>
+      <ul class="rules cols two grid">{REPAIR_PAGES.map((r) => <li><a href={repairPath(r.slug)}><strong>{r.name}</strong></a><p>{r.lede}</p></li>)}</ul>
     </div>
   </section>
   <CtaBand />

@@ -34,7 +34,7 @@ const schema = [
         {GUIDE_PAGES.map((g) => (
           <li>
             <span class="tag"><time datetime={g.date}>{g.date}</time> · {g.readMinutes} min</span>
-            <h2 style="font-size:1.4rem;margin:8px 0 4px"><a href={guidePath(g.slug)}>{g.title}</a></h2>
+            <h2 class="guide-title"><a href={guidePath(g.slug)}>{g.title}</a></h2>
             <p>{g.excerpt}</p>
           </li>
         ))}

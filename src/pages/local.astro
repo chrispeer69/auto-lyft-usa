@@ -26,7 +26,7 @@ const schema = [itemListNode(path, PLACE_PAGES.map((p) => ({ name: p.label, path
       <section class={`band${i % 2 ? " alt" : ""}`}>
         <div class="wrap">
           <h2>{c.label}</h2>
-          <ul class="rules cols two" style="display:grid">{list.map((p) => <li><a href={placePath(p.slug)}><strong>{p.label}</strong></a><p>{p.lede}</p></li>)}</ul>
+          <ul class="rules cols two grid">{list.map((p) => <li><a href={placePath(p.slug)}><strong>{p.label}</strong></a><p>{p.lede}</p></li>)}</ul>
         </div>
       </section>
     ) : null;

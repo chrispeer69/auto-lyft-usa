@@ -91,6 +91,7 @@ export function businessNode({ cities, zips, services }: BusinessInput): Node {
     },
     paymentAccepted: ["Cash", "Credit Card", "Debit Card"],
     currenciesAccepted: "USD",
+    priceRange: "$$",
     hasMap: COMPANY.directionsUrl,
     logo: `${SITE_URL}/icon-512.png`,
     image: `${SITE_URL}/og.png`,

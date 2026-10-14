@@ -44,7 +44,8 @@
 		Strict-Transport-Security "max-age=31536000; includeSubDomains"
 	}
 	header /_astro/* Cache-Control "public, max-age=31536000, immutable"
-	header *.png Cache-Control "public, max-age=604800"
+	@media path *.png *.webp *.jpg *.svg *.ico *.woff2
+	header @media Cache-Control "public, max-age=2592000"
 	@html path_regexp ^/[^.]*$
 	header @html Cache-Control "public, max-age=0, must-revalidate"
 	header /go/* X-Robots-Tag "noindex, follow"

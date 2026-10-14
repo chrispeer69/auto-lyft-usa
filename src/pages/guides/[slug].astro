@@ -40,7 +40,7 @@ const pretty = new Date(`${g.date}T12:00:00`).toLocaleDateString("en-US", { year
   <section class="hero">
     <div class="wrap">
       <p class="eyebrow"><time datetime={g.date}>{pretty}</time> · {g.readMinutes} min read · {COMPANY.owner.name}</p>
-      <h1 style="max-width:26ch">{g.title}</h1>
+      <h1 class="h1-wide">{g.title}</h1>
       <p class="lede">{g.excerpt}</p>
     </div>
   </section>
@@ -60,7 +60,7 @@ const pretty = new Date(`${g.date}T12:00:00`).toLocaleDateString("en-US", { year
   <section class="band">
     <div class="wrap">
       <h2>More driver guides</h2>
-      <ul class="rules cols two" style="display:grid">{more.map((m) => <li><a href={guidePath(m.slug)}><strong>{m.title}</strong></a><p>{m.excerpt}</p></li>)}</ul>
+      <ul class="rules cols two grid">{more.map((m) => <li><a href={guidePath(m.slug)}><strong>{m.title}</strong></a><p>{m.excerpt}</p></li>)}</ul>
     </div>
   </section>
   <Nap />

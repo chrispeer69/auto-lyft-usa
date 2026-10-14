@@ -32,8 +32,8 @@ const schema = [itemListNode(path, SERVICES.map((s) => ({ name: s.name, path: se
     <section class={`band${i % 2 ? " alt" : ""}`} aria-labelledby={`g-${g.id}`}>
       <div class="wrap">
         <h2 id={`g-${g.id}`}>{g.label}</h2>
-        <p class="muted prose" style="margin-left:0">{g.intro}</p>
-        <ul class="rules cols two" style="display:grid">
+        <p class="muted prose flush">{g.intro}</p>
+        <ul class="rules cols two grid">
           {SERVICES.filter((s) => s.group === g.id).map((s) => (
             <li><h3><a href={servicePath(s.slug)}>{s.name}</a></h3><p>{s.blurb}</p></li>
           ))}

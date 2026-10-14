@@ -49,7 +49,7 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
     <div class="wrap">
       <p class="kicker">Street by street</p>
       <h2 id="streets-h">Where we pick up cars in {h.name}</h2>
-      <ul class="rules cols two" style="display:grid">{h.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}</ul>
+      <ul class="rules cols two grid">{h.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}</ul>
     </div>
   </section>
   {h.local.length > 0 && (
@@ -68,7 +68,7 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
     <div class="wrap cols two">
       <div>
         <h2>Neighboring parts of Columbus</h2>
-        <ul class="linklist" style="columns:1">
+        <ul class="linklist one-col">
           {next.map((n) => <li><a href={hoodPath(n.slug)}>{n.name}</a></li>)}
           <li><a href="/areas/columbus-oh">All Columbus neighborhoods</a></li>
           <li><a href="/areas">Suburbs and towns</a></li>

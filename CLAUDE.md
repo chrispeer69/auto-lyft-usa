@@ -16,6 +16,8 @@ Sister site to Columbus Roadside Towing (`../Columbus Roadside Towing/Website Fi
 ## Commands
 - `npm run build`: builds `dist/`, then runs `scripts/check-seo.mjs` (fails on bad titles/descriptions, duplicate H1s, schema problems or broken links; writes sitemap.xml, llms.txt and llms-full.txt).
 - `npm run check:overlap`: compares built pages to the sister site's source. **Must report 0.** `node scripts/check-overlap.mjs --files <file.ts>` checks a data file before building.
+- `npm run audit:seo`: deep per-page SEO audit of `dist/` (head tags, social cards, headings, images, links, schema, sitemap, orphans, click depth). Run after a build; should report 0 errors and 0 warnings.
+- `node scripts/optimize-photos.mjs <folder>`: turns real photos into `public/img/*.webp` (+ `-640` copies). Keep the file names in `src/data/photos.ts`.
 - `npx astro preview --port 4329`: preview the site locally.
 - `npm run indexnow`: ping search engines after deploy (key file in `public/`).
 

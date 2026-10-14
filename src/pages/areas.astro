@@ -31,13 +31,13 @@ const schema = [itemListNode(path, [{ name: "Columbus", path: "/areas/columbus-o
   <Hero image={PHOTOS.city.src} eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus plus ${CITY_FACTS.length} towns across ${counties.length} counties, all reached from one yard on Harrisburg Pike.`} />
   <section class="band">
     <div class="wrap">
-      <form class="prose" style="margin:0 0 24px" role="search" action="/areas" method="get">
+      <form class="prose search-form" role="search" action="/areas" method="get">
         <label for="q"><strong>Find your town or ZIP code</strong></label>
-        <div style="display:flex;gap:8px;margin-top:6px"><input id="q" name="q" type="search" placeholder="e.g. Hilliard or 43026" style="flex:1;min-height:48px;padding:8px 12px;font:inherit;border:2px solid var(--ink)" /><button class="btn btn-call" type="submit">Search</button></div>
+        <div class="search-row"><input id="q" name="q" type="search" placeholder="e.g. Hilliard or 43026" class="search-input" /><button class="btn btn-call" type="submit">Search</button></div>
       </form>
       <h2>Columbus</h2>
-      <p class="prose" style="margin-left:0">We cover every Columbus neighborhood. <a href="/areas/columbus-oh">Towing in Columbus by neighborhood</a> · ZIP codes: {COLUMBUS_ZIPS.join(", ")}</p>
-      <h2 style="margin-top:32px">Towns and their ZIP codes</h2>
+      <p class="prose flush">We cover every Columbus neighborhood. <a href="/areas/columbus-oh">Towing in Columbus by neighborhood</a> · ZIP codes: {COLUMBUS_ZIPS.join(", ")}</p>
+      <h2 class="mt-32">Towns and their ZIP codes</h2>
       <div class="table-scroll">
         <table class="table" id="towns">
           <thead><tr><th>Town</th><th>County</th><th>ZIP codes</th><th>Miles from yard</th></tr></thead>

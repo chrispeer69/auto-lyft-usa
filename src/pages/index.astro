@@ -55,7 +55,7 @@ const FACTS = [
       <div class="prose">
         {HOME.intro.map((p) => <p>{p}</p>)}
       </div>
-      <figure class="photo"><img src={PHOTOS.yard.src} alt={PHOTOS.yard.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
+      <figure class="photo"><img src={PHOTOS.yard.src} srcset={PHOTOS.yard.srcset} sizes="(min-width: 900px) 540px, 100vw" alt={PHOTOS.yard.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
     </div>
   </section>
 
@@ -63,7 +63,7 @@ const FACTS = [
     <div class="wrap">
       <p class="kicker">How a call goes</p>
       <h2 id="how-h">From your phone call to your car on the deck</h2>
-      <figure class="photo wide"><img src={PHOTOS.dispatch.src} alt={PHOTOS.dispatch.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
+      <figure class="photo wide"><img src={PHOTOS.dispatch.src} srcset={PHOTOS.dispatch.srcset} sizes="(min-width: 1200px) 1120px, 100vw" alt={PHOTOS.dispatch.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
       <ol class="steps">
         {HOME.steps.map((s) => <li><h3>{s.title}</h3><p>{s.text}</p></li>)}
       </ol>
@@ -76,7 +76,7 @@ const FACTS = [
       <h2 id="svc-h">Towing and roadside services around Columbus</h2>
       {SERVICE_GROUPS.map((g) => (
         <div class="svc-group">
-          <div class="svc-group-head"><img src={GROUP_PHOTO[g.id].src} alt={GROUP_PHOTO[g.id].alt} width="1200" height="800" loading="lazy" decoding="async" /><h3>{g.label}</h3><p>{g.intro}</p></div>
+          <div class="svc-group-head"><img src={GROUP_PHOTO[g.id].small} srcset={GROUP_PHOTO[g.id].srcset} sizes="(min-width: 900px) 300px, 100vw" alt={GROUP_PHOTO[g.id].alt} width="1200" height="800" loading="lazy" decoding="async" /><h3>{g.label}</h3><p>{g.intro}</p></div>
           <ul class="svc-grid">
             {SERVICES.filter((s) => s.group === g.id).map((s) => (
               <li><a class="svc-card" href={servicePath(s.slug)}><strong>{s.name}</strong><span>{s.blurb}</span><em aria-hidden="true">→</em></a></li>
@@ -91,10 +91,10 @@ const FACTS = [
     <div class="wrap">
       <p class="kicker">Why it matters</p>
       <h2 id="flat-h">Why every Auto Lyft tow is a flatbed tow</h2>
-      <ul class="rules cols two" style="display:grid">
+      <ul class="rules cols two grid">
         {HOME.whyFlatbed.map((w) => <li><h3>{w.title}</h3><p>{w.text}</p></li>)}
       </ul>
-      <p style="margin-top:20px">Read more on the <a href="/towing/flatbed-towing">flatbed towing page</a>.</p>
+      <p class="mt-20">Read more on the <a href="/towing/flatbed-towing">flatbed towing page</a>.</p>
     </div>
   </section>
 
@@ -103,11 +103,11 @@ const FACTS = [
       <p class="kicker">Where we go</p>
       <h2 id="area-h">Columbus and the towns around it</h2>
       <p class="prose">Start with <a href="/areas/columbus-oh">towing in Columbus by neighborhood</a>, or find your town below. Each page lists the ZIP codes, the main roads we work and how far it is from our yard.</p>
-      <div class="cols two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="cols two auto-cols">
         {byDir.map((g) => (
           <div>
             <h3>{g.dir} of downtown</h3>
-            <ul class="linklist" style="columns:1">
+            <ul class="linklist one-col">
               {g.cities.map((c) => <li><a href={cityPath(c.slug)}>{c.name}</a> <span class="muted small">· {c.miles} mi</span></li>)}
             </ul>
           </div>

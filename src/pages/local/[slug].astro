@@ -55,11 +55,11 @@ const related = p.related.map((s) => placeBySlug(s)).filter((s) => s !== undefin
   <CtaBand place={v.name} />
   <section class="band alt" aria-labelledby="help-h">
     <div class="wrap cols three">
-      <div><h2 id="help-h">Services here</h2><ul class="linklist" style="columns:1">{services.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}<li><a href="/rates">Our rates</a></li></ul></div>
-      <div><h2>Nearby towns</h2><ul class="linklist" style="columns:1">{towns.map((t) => <li><a href={t.slug === "columbus" ? "/areas/columbus-oh" : cityPath(t.slug)}>{t.name}</a></li>)}<li><a href="/areas">All areas</a></li></ul></div>
-      <div><h2>Similar spots</h2><ul class="linklist" style="columns:1">{related.map((r) => <li><a href={placePath(r.slug)}>{r.label}</a></li>)}<li><a href="/local">All venues &amp; campuses</a></li></ul></div>
+      <div><h2 id="help-h">Services here</h2><ul class="linklist one-col">{services.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}<li><a href="/rates">Our rates</a></li></ul></div>
+      <div><h2>Nearby towns</h2><ul class="linklist one-col">{towns.map((t) => <li><a href={t.slug === "columbus" ? "/areas/columbus-oh" : cityPath(t.slug)}>{t.name}</a></li>)}<li><a href="/areas">All areas</a></li></ul></div>
+      <div><h2>Similar spots</h2><ul class="linklist one-col">{related.map((r) => <li><a href={placePath(r.slug)}>{r.label}</a></li>)}<li><a href="/local">All venues &amp; campuses</a></li></ul></div>
     </div>
-    <div class="wrap"><p class="small muted" style="margin-top:20px">{p.notAffiliated}</p></div>
+    <div class="wrap"><p class="small muted mt-20">{p.notAffiliated}</p></div>
   </section>
   <Nap place={v.name} />
 </Base>

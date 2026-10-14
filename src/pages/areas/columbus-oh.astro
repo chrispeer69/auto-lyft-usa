@@ -32,10 +32,10 @@ const schema = [
   <section class="band alt" aria-labelledby="hoods-h">
     <div class="wrap">
       <h2 id="hoods-h">Pick your neighborhood</h2>
-      <ul class="rules cols two" style="display:grid">
+      <ul class="rules cols two grid">
         {HOOD_PAGES.map((h) => <li><a href={hoodPath(h.slug)}><strong>{h.name}</strong></a>{hub.blurbs[h.slug] && <p>{hub.blurbs[h.slug]}</p>}</li>)}
       </ul>
-      <p class="small muted" style="margin-top:16px">Columbus ZIP codes we cover: {COLUMBUS_ZIPS.join(", ")}. Outside the city? See <a href="/areas">every suburb and town</a>.</p>
+      <p class="small muted mt-16">Columbus ZIP codes we cover: {COLUMBUS_ZIPS.join(", ")}. Outside the city? See <a href="/areas">every suburb and town</a>.</p>
     </div>
   </section>
   <CtaBand place="Columbus" />

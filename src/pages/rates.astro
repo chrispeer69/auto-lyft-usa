@@ -80,7 +80,7 @@ const schema = [
         <thead><tr><th>Charge</th><th>Rate</th><th>When it applies</th></tr></thead>
         <tbody>{card.map(([a, b, c]) => <tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>)}</tbody>
       </table></div>
-      <p class="small muted" style="margin-top:12px">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county.</p>
+      <p class="small muted mt-12">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county.</p>
     </div>
   </section>
   <section class="band alt">
@@ -89,7 +89,7 @@ const schema = [
         <h2>Electric vehicle card</h2>
         <p>EVs go on the flatbed in transport mode, which takes longer to load, so they are billed on their own card. Night, weekend and large-vehicle charges are the same as above.</p>
         <table class="table"><tbody>{evCard.map(([a, b]) => <tr><td>{a}</td><td>{b}</td></tr>)}</tbody></table>
-        <p style="margin-top:12px"><a href="/estimate/ev">Estimate an EV tow →</a></p>
+        <p class="mt-12"><a href="/estimate/ev">Estimate an EV tow →</a></p>
       </div>
       <div>
         <h2>Sales tax by county</h2>

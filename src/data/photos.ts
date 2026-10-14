@@ -6,8 +6,12 @@
 */
 import type { ServiceGroup } from "./services/catalog";
 
-export interface Photo { src: string; alt: string }
-const p = (name: string, alt: string): Photo => ({ src: `/img/${name}.webp`, alt });
+export interface Photo { src: string; alt: string; srcset: string; small: string }
+// Full-size file plus a 640px copy (scripts/optimize-photos.mjs makes both).
+const p = (name: string, alt: string): Photo => {
+  const big = /^(hero|city)-/.test(name) ? 1920 : 1200;
+  return { src: `/img/${name}.webp`, small: `/img/${name}-640.webp`, srcset: `/img/${name}-640.webp 640w, /img/${name}.webp ${big}w`, alt };
+};
 
 export const PHOTOS = {
   heroDusk: p("hero-flatbed-dusk", "Flatbed tow truck loading a sedan on a wet city street at dusk"),

@@ -27,7 +27,7 @@ const { heading = pick(path + "h", ["Stuck somewhere right now?", "Need a truck?
 ---
 <section class="cta">
   <div class="wrap">
-    <div><h2>{heading}</h2><p style="margin:6px 0 0">{text}</p></div>
+    <div><h2>{heading}</h2><p class="cta-text">{text}</p></div>
     <a class="btn btn-call" href={COMPANY.telHref}><PhoneIcon /> {COMPANY.phone}</a>
   </div>
 </section>
