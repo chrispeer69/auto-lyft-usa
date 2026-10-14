@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import Nap from "../components/Nap.astro";
 import { GUIDE_PAGES } from "../data/guides";
@@ -26,7 +27,7 @@ const schema = [
 ];
 ---
 <Base title="Driver Guides for Columbus Roads" description="Plain-English guides from a Columbus towing company: breakdowns, towing prices, towed cars, EVs, winter driving and what to do after a crash." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Guides", path }]} schema={schema} faqs={faqs}>
-  <Hero eyebrow="Driver guides" h1="Roadside Guides for Central Ohio Drivers" lede="What we wish every driver knew before the car stopped. Short, practical and written from real calls." />
+  <Hero image={PHOTOS.tire.src} eyebrow="Driver guides" h1="Roadside Guides for Central Ohio Drivers" lede="What we wish every driver knew before the car stopped. Short, practical and written from real calls." />
   <section class="band">
     <div class="wrap">
       <ul class="rules">

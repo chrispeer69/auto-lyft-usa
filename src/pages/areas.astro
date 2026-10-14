@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import CtaBand from "../components/CtaBand.astro";
 import Nap from "../components/Nap.astro";
@@ -27,7 +28,7 @@ const schema = [itemListNode(path, [{ name: "Columbus", path: "/areas/columbus-o
   schema={schema}
   faqs={faqs}
 >
-  <Hero eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus plus ${CITY_FACTS.length} towns across ${counties.length} counties, all reached from one yard on Harrisburg Pike.`} />
+  <Hero image={PHOTOS.city.src} eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus plus ${CITY_FACTS.length} towns across ${counties.length} counties, all reached from one yard on Harrisburg Pike.`} />
   <section class="band">
     <div class="wrap">
       <form class="prose" style="margin:0 0 24px" role="search" action="/areas" method="get">

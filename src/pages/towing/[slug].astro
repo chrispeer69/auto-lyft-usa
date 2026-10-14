@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hero from "../../components/Hero.astro";
+import { servicePhoto } from "../../data/photos";
 import FaqList from "../../components/FaqList.astro";
 import CtaBand from "../../components/CtaBand.astro";
 import Nap from "../../components/Nap.astro";
@@ -61,7 +62,7 @@ const schema = [
   schema={schema}
   faqs={s.faqs}
 >
-  <Hero
+  <Hero image={servicePhoto(s.slug, s.group).src}
     eyebrow={`${group.label} · Columbus, OH`}
     h1={s.h1}
     lede={s.lede}

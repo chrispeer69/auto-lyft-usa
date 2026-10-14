@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import CtaBand from "../components/CtaBand.astro";
 import Nap from "../components/Nap.astro";
@@ -18,7 +19,7 @@ const faqs: Faq[] = [
 const schema = [itemListNode(path, PLACE_PAGES.map((p) => ({ name: p.label, path: placePath(p.slug) })))];
 ---
 <Base title="Towing at Columbus Venues & Campuses" description="Towing and roadside help at Columbus stadiums, arenas, campuses, malls and the airport: where to meet the truck and what to expect. (614) 633-8163." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Venues & campuses", path }]} schema={schema} faqs={faqs}>
-  <Hero eyebrow="Venues & campuses" h1="Tow Trucks for Columbus Game Days, Campuses and Malls" lede="Busy places break cars in their own ways: crowded garages, closed streets and long walks back to the lot. These pages cover the spots we get called to most." />
+  <Hero image={PHOTOS.heroDusk.src} eyebrow="Venues & campuses" h1="Tow Trucks for Columbus Game Days, Campuses and Malls" lede="Busy places break cars in their own ways: crowded garages, closed streets and long walks back to the lot. These pages cover the spots we get called to most." />
   {PLACE_CATEGORIES.map((c, i) => {
     const list = PLACE_PAGES.filter((p) => p.category === c.id);
     return list.length ? (

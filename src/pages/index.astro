@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS, GROUP_PHOTO } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import CtaBand from "../components/CtaBand.astro";
 import Nap from "../components/Nap.astro";
@@ -30,7 +31,7 @@ const FACTS = [
 ];
 ---
 <Base title={HOME.title} description={HOME.description} path="/" faqs={HOME_FAQS}>
-  <Hero
+  <Hero image={PHOTOS.heroDusk.src}
     eyebrow="Auto Lyft USA · Columbus, Ohio"
     h1={HOME.h1}
     lede={HOME.lede}
@@ -50,8 +51,11 @@ const FACTS = [
   </section>
 
   <section class="band">
-    <div class="wrap prose">
-      {HOME.intro.map((p) => <p>{p}</p>)}
+    <div class="wrap split">
+      <div class="prose">
+        {HOME.intro.map((p) => <p>{p}</p>)}
+      </div>
+      <figure class="photo"><img src={PHOTOS.yard.src} alt={PHOTOS.yard.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
     </div>
   </section>
 
@@ -59,6 +63,7 @@ const FACTS = [
     <div class="wrap">
       <p class="kicker">How a call goes</p>
       <h2 id="how-h">From your phone call to your car on the deck</h2>
+      <figure class="photo wide"><img src={PHOTOS.dispatch.src} alt={PHOTOS.dispatch.alt} width="1200" height="800" loading="lazy" decoding="async" /></figure>
       <ol class="steps">
         {HOME.steps.map((s) => <li><h3>{s.title}</h3><p>{s.text}</p></li>)}
       </ol>
@@ -71,7 +76,7 @@ const FACTS = [
       <h2 id="svc-h">Towing and roadside services around Columbus</h2>
       {SERVICE_GROUPS.map((g) => (
         <div class="svc-group">
-          <div class="svc-group-head"><h3>{g.label}</h3><p>{g.intro}</p></div>
+          <div class="svc-group-head"><img src={GROUP_PHOTO[g.id].src} alt={GROUP_PHOTO[g.id].alt} width="1200" height="800" loading="lazy" decoding="async" /><h3>{g.label}</h3><p>{g.intro}</p></div>
           <ul class="svc-grid">
             {SERVICES.filter((s) => s.group === g.id).map((s) => (
               <li><a class="svc-card" href={servicePath(s.slug)}><strong>{s.name}</strong><span>{s.blurb}</span><em aria-hidden="true">→</em></a></li>

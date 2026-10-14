@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import CtaBand from "../components/CtaBand.astro";
 import Nap from "../components/Nap.astro";
@@ -21,7 +22,7 @@ const list = REPAIR_PAGES.length ? REPAIR_PAGES.map((r) => ({ name: r.name, path
 const schema = [itemListNode(path, list)];
 ---
 <Base title="Tow-In Auto Repair Help in Columbus" description="Car needs a mechanic, not just a tow? Auto Lyft USA tows it to your shop or a trusted Columbus partner shop for diagnosis and repair. (614) 633-8163." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Repair help", path }]} schema={schema} faqs={faqs}>
-  <Hero eyebrow="Repair help" h1="Columbus Auto Repair Help That Starts With the Tow" lede="We get the car off the road and into a mechanic's bay. You choose the shop, or we suggest an independent partner shop that does the kind of work your car needs." />
+  <Hero image={PHOTOS.accident.src} eyebrow="Repair help" h1="Columbus Auto Repair Help That Starts With the Tow" lede="We get the car off the road and into a mechanic's bay. You choose the shop, or we suggest an independent partner shop that does the kind of work your car needs." />
   <section class="band">
     <div class="wrap">
       <h2>Pick the problem</h2>

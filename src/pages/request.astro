@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import Nap from "../components/Nap.astro";
 import PhoneIcon from "../components/PhoneIcon.astro";
@@ -24,7 +25,7 @@ const faqs: Faq[] = [
   crumbs={[{ name: "Request a tow", path }]}
   faqs={faqs}
 >
-  <Hero
+  <Hero image={PHOTOS.dispatch.src}
     eyebrow="Request a tow"
     h1="Request a Tow Truck From Your Phone"
     lede="One tap drops your map pin into a text message addressed to our dispatch line. You add the vehicle and the problem, then press send."

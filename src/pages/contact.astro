@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
 import FaqList from "../components/FaqList.astro";
 import CtaBand from "../components/CtaBand.astro";
 import { COMPANY } from "../data/company";
@@ -22,7 +23,7 @@ const faqs: Faq[] = [
   crumbs={[{ name: "Contact", path }]}
   faqs={faqs}
 >
-  <Hero
+  <Hero image={PHOTOS.dispatch.src}
     eyebrow="Contact"
     h1="Reach the Dispatcher by Phone, Text or Email"
     lede="A real person answers the dispatch line day and night. Pick whichever way of reaching us suits where you are standing right now."
