@@ -113,9 +113,12 @@ const priorityFor = (path) => {
   if (["/privacy", "/terms"].includes(path)) return "0.3";
   return "0.6";
 };
+// Highest priority first (home, service pages, then areas), so crawlers and audit
+// tools that stop after N URLs reach the money pages; search engines ignore order.
+const byPriority = [...indexable].sort((a, b) => priorityFor(b.path).localeCompare(priorityFor(a.path)) || (/^\/towing/.test(b.path) - /^\/towing/.test(a.path)) || a.path.localeCompare(b.path));
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${indexable.map((p) => `  <url><loc>${p.path === "/" ? SITE : SITE + p.path}</loc><lastmod>${lastmodFor(p.path)}</lastmod><priority>${priorityFor(p.path)}</priority></url>`).join("\n")}
+${byPriority.map((p) => `  <url><loc>${p.path === "/" ? SITE : SITE + p.path}</loc><lastmod>${lastmodFor(p.path)}</lastmod><priority>${priorityFor(p.path)}</priority></url>`).join("\n")}
 </urlset>
 `;
 writeFileSync(join(DIST, "sitemap.xml"), sitemap);
