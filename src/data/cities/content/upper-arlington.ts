@@ -18,6 +18,7 @@ export default {
     { name: "Northwest Boulevard", note: "A long residential and commercial spine through the middle of the city, with the Mallway shops near its southern end." },
     { name: "I-270 at Fishinger Boulevard (Exit 13)", note: "The outerbelt exit Upper Arlington shares with Hilliard's Cemetery Road. Breakdowns on the ramps there tend to happen during the evening rush." },
     { name: "Fifth Avenue", note: "Links the southern end of UA with Marble Cliff and Grandview, and is often how our trucks first enter the city from downtown." },
+    { name: "Northam Road", note: "A residential street beside Northam Park. Pool and library visitors line its curbs in summer, so give the house number nearest your car." },
   ],
   local: [
     { kind: "shopping", name: "Kingsdale Shopping Center", detail: "A 1959 shopping center on Tremont Road that is being reshaped into a mixed-use district; construction fencing can change which entrances a truck can use." },
@@ -28,6 +29,10 @@ export default {
     { kind: "park", name: "Griggs Reservoir Park", detail: "The city park strung along the reservoir off Riverside Drive, where small pull-off lots make loading a car slow but doable." },
     { kind: "school", name: "Upper Arlington High School", detail: "Home of the Golden Bears in a building finished in 2021. Student lots are best reached during class time rather than at dismissal." },
     { kind: "college", name: "The Ohio State University", detail: "Main campus sits just across the Olentangy from UA's eastern edge, and many of our Lane Avenue calls involve students or game visitors." },
+    { kind: "park", name: "Northam Park", detail: "A central park on Tremont Road next to the main library; its shared lot is busy enough that the driver may load from the street instead." },
+    { kind: "landmark", name: "Upper Arlington Main Library", detail: "The city's main library beside Northam Park, where a car that won't start after a visit can usually be boosted without a tow." },
+    { kind: "park", name: "Mallway Park", detail: "A small park by the Mallway shops with a veterans memorial; angled spaces around it are tight, so the carrier may stage on a side street." },
+    { kind: "shopping", name: "Giant Eagle Market District at Kingsdale", detail: "The large grocery at the Kingsdale center; its wide lot is one of the easier places in UA to load a car on a flatbed." },
   ],
   faqs: [
     { q: "What route does your driver take from Harrisburg Pike to Upper Arlington?", a: "From our yard the driver usually heads north through Franklinton and then up SR-315, Riverside Drive or Fifth Avenue, depending on which part of UA you are in. Homes in the northwest corner are sometimes quicker to reach from I-270 at Fishinger Boulevard. The dispatcher looks at current traffic and tells you when to expect the truck." },

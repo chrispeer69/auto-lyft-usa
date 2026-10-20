@@ -18,9 +18,12 @@ export default {
     { name: "East Fifth Avenue", note: "The southern boundary shared with Italian Village, with an I-71 interchange that has no northbound off-ramp." },
     { name: "Chittenden Avenue", note: "The northern boundary, where the student rental blocks of the University District begin." },
     { name: "Grant Avenue", note: "Runs along the new houses of the Grant Park development on the east side." },
+    { name: "East Sixth Avenue", note: "Crosses the southern half of the neighborhood and meets Grant Avenue at Joyce Hughes Park. Residential and fairly calm, so it is an easy place to wait for the truck." },
+    { name: "East Ninth Avenue", note: "Home to Terrace Place, a 60-unit apartment building that opened in 2016. Residents' cars line the curb, so tell us whether you are in a lot or on the street." },
   ],
   local: [
     { kind: "park", name: "Weinland Park", detail: "The neighborhood's namesake park on Summit Street, about four acres with a playground and basketball court." },
+    { kind: "park", name: "Joyce Hughes Park", detail: "Under an acre of green where East Sixth Avenue crosses Grant Avenue. It honors a longtime civic leader from the neighborhood." },
     { kind: "school", name: "Weinland Park Elementary", detail: "A Columbus City Schools elementary on East Seventh Avenue, dating to the early 1950s." },
     { kind: "school", name: "Schoenbaum Family Center", detail: "Ohio State's early-childhood center, built beside the elementary school in 2007." },
     { kind: "landmark", name: "Northside Branch Library", detail: "A Columbus Metropolitan Library branch in a newer building on North High Street, opened in 2017." },

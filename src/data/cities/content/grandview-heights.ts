@@ -18,6 +18,9 @@ export default {
     { name: "SR-315 and I-670", note: "The two highways meet at the city's east edge next to Grandview Yard. Short merge lanes on the nearby ramps are where fender-benders tend to happen." },
     { name: "West First Avenue", note: "A residential street that is also home to the public library, with steady daytime parking demand along its curbs." },
     { name: "Fifth Avenue", note: "The northern edge of town toward Marble Cliff and Upper Arlington, with strip retail and fast-food lots that send us jump-start calls." },
+    { name: "Oxley Road", note: "Passes Robert Louis Stevenson Elementary at its First Avenue corner. School arrival and dismissal are the slowest times to load a car nearby." },
+    { name: "Wyandotte Road", note: "A residential street between Third and Fifth avenues with parked cars on both sides, so loading here can mean a careful winch onto the bed." },
+    { name: "Glendale Avenue", note: "Being upgraded alongside the new city safety and administrative building on Goodale; expect cones and lane shifts while that work continues." },
   ],
   local: [
     { kind: "employer", name: "Nationwide campus at Grandview Yard", detail: "Nationwide's three-building office complex on Yard Street. Employees whose cars die in the garages can leave keys with security and let us handle the rest." },
@@ -28,6 +31,8 @@ export default {
     { kind: "landmark", name: "Grandview Heights Public Library", detail: "The city's library on West First Avenue, in service since 1924; its small lot is a common spot for a quick battery boost." },
     { kind: "park", name: "Wyman Woods Park", detail: "A shaded park on Grandview Avenue that will grow once the old city building next door is cleared, so watch for changes in access." },
     { kind: "landmark", name: "Anderson Field", detail: "The high school stadium dating to 1938. On Friday nights in the fall, parking spills into nearby residential streets." },
+    { kind: "park", name: "Pierce Field", detail: "Tennis and pickleball courts that keep the nearby curbs busy on fair-weather evenings, when a stalled car may need a short wait for space to load." },
+    { kind: "park", name: "C. Ray Buck Park", detail: "A neighborhood park with a story walk run with the library; its quiet streets make a jump start or tire swap easy to handle on the spot." },
   ],
   faqs: [
     { q: "How long a drive is it from your yard to Grandview Heights?", a: "It is one of our shorter runs. The center of Grandview is roughly four and a half miles north of 1620 Harrisburg Pike, reached by city streets through Franklinton or a quick hop up SR-315. Traffic around downtown and the I-670 ramps still matters, so the dispatcher checks conditions and gives you a current arrival estimate when you call." },

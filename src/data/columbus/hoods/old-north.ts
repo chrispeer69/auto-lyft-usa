@@ -17,6 +17,12 @@ export default {
     { name: "Lane Avenue", note: "The southern edge, crossing the Olentangy to an SR-315 interchange. Game days fill it with traffic." },
     { name: "Indianola Avenue (US-23)", note: "Carries US-23 through the east side of the neighborhood, past rentals and small apartment buildings." },
     { name: "Dodridge Street", note: "One of the few Olentangy crossings in the area, useful for drivers working their way up Olentangy River Road." },
+    { name: "Medary Avenue", note: "A residential street west of High with an 1890s school building on it. Parked cars line both curbs, so the driver may load from the closest corner." },
+    { name: "Wilcox Street", note: "A short cross street meeting High beside a large church. A good corner to name if you broke down on the commercial strip." },
+    { name: "Norwich Avenue", note: "Home to a pioneer log cabin that was moved here. Curb spaces are packed near campus, so describe the car and the nearest house number." },
+    { name: "West Oakland Avenue", note: "Tuttle Park is addressed on this street, so it is the one to give us for a car parked at the park." },
+    { name: "Northwood Avenue and Patterson Avenue", note: "Older blocks between High and Indianola, with front-porch houses and tight curb space for a carrier." },
+    { name: "Silver Drive", note: "Usually treated as the east edge of Old North, beyond Indianola. Calls here are often a short hop from the I-71 ramps at Hudson." },
   ],
   local: [
     { kind: "park", name: "Tuttle Park", detail: "A 48-acre park along the river with a pool, ice rink, boat launch and a skate park that opened in 2022." },
@@ -25,6 +31,10 @@ export default {
     { kind: "landmark", name: "Glen Echo Historic District", detail: "A National Register area at the neighborhood's north end, between the ravine, Indianola Avenue and Hudson Street." },
     { kind: "school", name: "Dominion Middle School", detail: "Housed in the old North High School, a 1924 Tudor-style building on East Arcadia Avenue." },
     { kind: "shopping", name: "North High Street shops", detail: "Small restaurants, bars and stores along the historic stretch between Hudson and Dodridge streets." },
+    { kind: "landmark", name: "North Columbus Commercial Historic District", detail: "About two dozen High Street buildings between Hudson and Dodridge, added to the National Register in 2010." },
+    { kind: "landmark", name: "Northwood Park Historic District", detail: "A city-designated pocket of homes on East Northwood and East Oakwood between High Street and Indianola." },
+    { kind: "landmark", name: "Global Community United Methodist Church", detail: "The church at High and Wilcox, rebuilt in 1942 after a fire; a recognizable spot to meet the driver." },
+    { kind: "landmark", name: "Tuttle Community Center", detail: "The city recreation building inside Tuttle Park; its lot is an easy place for a carrier to pull in." },
   ],
   faqs: [
     { q: "My car slid on an icy ravine street and hit the curb. Can you tow it?", a: "Yes. The streets along the Iuka and Glen Echo ravines dip and curve, and a car can easily slide on a frosty morning. If it bent a wheel or suspension part, it should not be driven. Putting it on a flatbed solves that, since the damaged wheel never touches the road. If the car went off the pavement, the driver can winch it back first, billed at $150 an hour for winching." },

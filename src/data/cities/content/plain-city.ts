@@ -17,6 +17,9 @@ export default {
     { name: "SR-161 at Chillicothe Street (Town Clock)", note: "The uptown crossroads where the village's main routes meet. Parking is tight here, so the driver loads from a side street when possible." },
     { name: "SR-736 toward Marysville", note: "A rural state route heading north from US-42 through Union County farmland. Breakdowns here are miles from anything, and an exact location helps." },
     { name: "Plain City–Georgesville Road", note: "Runs south from the village toward the I-70 SR-142 exit and Prairie Oaks Metro Park, and is a common back way to West Jefferson." },
+    { name: "Jackson Street", note: "The street with the village dog park. Owners park along it at the busier hours, so the driver may need a minute to line up behind your car." },
+    { name: "Village Boulevard", note: "Where the village government offices are based; the lot there is a simple place to meet a truck if your car can still roll a short distance." },
+    { name: "Lafayette-Plain City Road", note: "Slated for upgrades paid for by a recent tax-increment district. Expect work zones to shift, and give a nearby crossroad when you call." },
   ],
   local: [
     { kind: "landmark", name: "Plain City Town Clock", detail: "The landmark clock at SR-161 and Chillicothe Street; tell us you are near it and the driver knows exactly where uptown you are." },
@@ -26,6 +29,9 @@ export default {
     { kind: "school", name: "Jonathan Alder High School", detail: "The Pioneers' campus on US-42 south of the village, where game-night crowds and student cars bring in lockout calls." },
     { kind: "school", name: "Tolles Career & Technical Center", detail: "The career-tech school near Jonathan Alder; students in its automotive programs sometimes need a car moved to campus." },
     { kind: "landmark", name: "Public Square splash pad", detail: "The uptown square on Church Street fills with families in summer, which makes street parking scarce around it." },
+    { kind: "park", name: "Bicentennial Park", detail: "The uptown green at Main and South Chillicothe that hosts the farmers market and the holiday event under the clock, when parking nearby is scarce." },
+    { kind: "park", name: "Plain City Aquatic Center", detail: "The village pool at the south end of Pastime Park; on hot afternoons its lot fills early, and a dead battery there is a common summer call." },
+    { kind: "landmark", name: "Plain City Public Library", detail: "A small library on the main street through the village, where short-term curb parking keeps a quick jump start or lockout simple." },
   ],
   faqs: [
     { q: "Which way does your truck come to Plain City?", a: "Plain City is roughly seventeen miles northwest of our Harrisburg Pike yard. Depending on traffic, the driver goes up I-270 and out SR-161 through Dublin, or west on I-70 and north on US-42. The dispatcher picks the faster route at that moment and shares the expected arrival time while you are still on the line." },

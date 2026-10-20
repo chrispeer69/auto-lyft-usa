@@ -17,6 +17,9 @@ export default {
     { name: "West Fifth Avenue", note: "The busy road along the north side of the village, with traffic moving between Grandview, Upper Arlington and the river." },
     { name: "Dublin Road", note: "Runs past Quarry Trails Metro Park toward the river and the US-33 corridor, carrying fast through traffic past the park entrance." },
     { name: "Riverside Drive (US-33)", note: "The river road that turns into Dublin Road farther south, often how our carriers reach the village from the north side." },
+    { name: "Fernwood Avenue", note: "The street where the village office keeps its weekday morning hours. Blocks here are quiet and narrow, so the driver may angle the bed in from the nearest corner." },
+    { name: "Village Court", note: "A short residential street with little space to turn a truck; the driver may back in rather than try to swing around at the end." },
+    { name: "Trabue Road", note: "Marks the point where the river road changes its name from Riverside Drive to Dublin Road, a useful landmark when you are telling us which way you were heading." },
   ],
   local: [
     { kind: "park", name: "Quarry Trails Metro Park", detail: "Built in the old limestone quarry that named the village, it opened in 2021; its parking lots are a frequent spot for lockouts and no-starts." },
@@ -27,6 +30,8 @@ export default {
     { kind: "landmark", name: "First Community Church south campus", detail: "Its Cambridge Boulevard building includes a child development center, so drop-off and pickup hours bring a burst of traffic." },
     { kind: "landmark", name: "Our Lady of Victory Church", detail: "A Romanesque Revival parish on Roxbury Road whose weekend services fill the adjacent blocks with parked cars." },
     { kind: "school", name: "Grandview Heights City Schools", detail: "The district that serves Marble Cliff's students; the high school on West Third Avenue is a short drive south." },
+    { kind: "landmark", name: "Marble Cliff Village Hall", detail: "The village office on Fernwood Avenue, open on weekday mornings and otherwise by appointment; handy as a meeting point if your car is on a nearby side street." },
+    { kind: "landmark", name: "Mary Evans Child Development Center", detail: "Part of the church's south campus on Cambridge Boulevard; arrival and pickup times are when curb space nearby is hardest to find." },
   ],
   faqs: [
     { q: "How do your tow trucks reach Marble Cliff?", a: "Measured in a straight line, the village sits about four and a half miles from our gate, a little west of due north. Drivers generally go north through Franklinton and then along Fifth Avenue or Dublin Road to reach Marble Cliff's streets. The trip is short, but downtown traffic and work zones can change it, so the dispatcher gives you an up-to-date estimate when you call." },

@@ -19,6 +19,10 @@ export default {
     { name: "Side streets: Russell, Lincoln, Hubbard, Buttles", note: "Narrow brick-lined blocks with permit sections and resident parking where lockouts and no-starts are common." },
     { name: "Wall Street, Bollinger Place and West Greenwood Avenue", note: "Mural-lined service lanes behind the High Street storefronts. Handy for loading if a delivery van isn't already parked there." },
     { name: "Warren Street and Second to Third Avenue", note: "The quieter north half of the strip, where curb space opens up a little and a carrier can usually pull in beside the car." },
+    { name: "West Poplar Avenue", note: "The south end of the historic district, near the convention center. Short blocks and busy sidewalks mean the driver will want the exact storefront." },
+    { name: "West Russell Street", note: "A side street off High known for a large mural. Residents' cars fill it, so a dead battery here is usually handled at the curb." },
+    { name: "East Lincoln Street", note: "Just east of High, with a well-known painted wall near the corner. A handy reference when you are not sure of the address." },
+    { name: "Clark Place", note: "A small street at the north end of the Fifth Avenue storefront group, close to where the arches stop." },
   ],
   local: [
     { kind: "landmark", name: "The High Street arches", detail: "Seventeen lit steel arches put up in 2002, paid for by the district's special improvement district." },
@@ -27,6 +31,10 @@ export default {
     { kind: "employer", name: "Hilton Columbus Downtown", detail: "Its second tower opened in 2022 across High Street, making it the largest hotel in Ohio by room count." },
     { kind: "park", name: "Poplar Park", detail: "A tiny brick plaza on a leftover piece of East Poplar Avenue where performers set up during Gallery Hop." },
     { kind: "employer", name: "800 block of North High", detail: "Mixed-use block finished in 2019 that holds a hotel and Klarna's U.S. offices." },
+    { kind: "landmark", name: "Short North Historic District", detail: "A National Register area along High from West Poplar up to Warren, listed in 1990." },
+    { kind: "landmark", name: "North High Historic District listings", detail: "Two smaller National Register groups of storefronts, one around Second and Third avenues and one from Fourth Avenue to Clark Place." },
+    { kind: "landmark", name: "Union Station cap", detail: "The I-670 cap carries the name of the old Union Station, and its shops sit right over the freeway at the district's south end." },
+    { kind: "landmark", name: "Short North Arts District", detail: "The gallery district behind the monthly Gallery Hop, held on the first Saturday since 1984. The Short North Special Improvement District, set up in 1999, works alongside it; expect packed curbs on Hop nights." },
   ],
   faqs: [
     { q: "My car died during Gallery Hop. Can you get a truck onto High Street?", a: "Usually yes, but not always right at your car. Gallery Hop falls on the first Saturday of each month and the sidewalks and curbs are packed from early evening on. Our driver will look for a side street, alley or loading zone close to you, and if the car is stuck in a tight spot we may need to roll it a short distance first. Give the dispatcher a cross street, and say whether the car will shift into neutral." },

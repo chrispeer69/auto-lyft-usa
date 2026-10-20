@@ -18,6 +18,10 @@ export default {
     { name: "Fairwood Avenue", note: "A north-south residential street past Fairwood Elementary; one of the main routes through the old racetrack grounds." },
     { name: "Old Oaks streets (Mooberry, Kimball, Will, Branger)", note: "The historic district's tree-lined blocks. Big trees and parked cars mean the driver may need to load from the end of the block." },
     { name: "East Whittier Street", note: "The southern boundary, toward Schumacher Place and Merion Village." },
+    { name: "Linwood Avenue", note: "Meets East Livingston at a corner with Underground Railroad history. A useful cross street to give if you stall on Livingston nearby." },
+    { name: "Frebis Avenue", note: "Marks the south end of the older blocks below Livingston. Quiet streets, so the driver can usually pull right up beside a car at the curb." },
+    { name: "Studer Avenue", note: "A residential street with a small city park on it; the park frontage gives the carrier a little extra room to set up." },
+    { name: "Bowman Avenue and Clay Court", note: "Two of the Hanford Village streets lined with postwar Cape Cod homes. Driveways are short, so the carrier usually loads from the street in front of the house." },
   ],
   local: [
     { kind: "landmark", name: "Rickenbacker House", detail: "Eddie Rickenbacker's boyhood home on East Livingston, a National Historic Landmark since 1976." },
@@ -27,6 +31,11 @@ export default {
     { kind: "park", name: "Old Oaks Park", detail: "A small green with a gazebo at the center of the historic district." },
     { kind: "school", name: "Fairwood Alternative Elementary", detail: "A 1924 school at Fairwood Avenue and Mooberry Street." },
     { kind: "landmark", name: "Driving Park Branch Library", detail: "The library branch on East Livingston near Alum Creek Drive." },
+    { kind: "landmark", name: "Columbus Driving Park racetrack site", detail: "The old track between Ellsworth and Seymour avenues hosted the first 24-hour automobile race in 1905, and the neighborhood took its name." },
+    { kind: "park", name: "Roosevelt Park", detail: "A three-acre city park on Studer Avenue with a playground and a short paved loop." },
+    { kind: "park", name: "Driving Park Circle", detail: "A one-acre green on East Columbus Street, easy to name as a meeting point." },
+    { kind: "park", name: "Hanford Village Park", detail: "A two-acre park on Alum Creek Drive beside the Alum Creek Trail, inside the historic Hanford Village area." },
+    { kind: "park", name: "Deshler Park", detail: "A park of about ten acres just south of Driving Park, with paths, a playground and its own parking lot." },
   ],
   faqs: [
     { q: "My car broke down on I-70 near the Kelton or Livingston exit. What do I do?", a: "If you can, take the exit and pull onto a side street, which is safer than the shoulder and avoids the highway surcharge. If you are stuck on the interstate, stay buckled in with the hazards on and call 911 if you are in a travel lane. Next, ring us and say which way you were driving and which ramp is behind you. The I-70 exits for Driving Park are at Miller/Kelton and Livingston/Alum Creek Drive." },

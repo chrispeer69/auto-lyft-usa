@@ -18,6 +18,9 @@ export default {
     { name: "I-71 on the west side", note: "The North Freeway, our route in. Breakdowns near the Morse Road and SR-161 interchanges are common." },
     { name: "I-270 on the north side", note: "The outerbelt runs along the top of the Northland area. We handle shoulder breakdowns there too." },
     { name: "Tamarack Boulevard", note: "Runs through Northland Village past the Kroger, the state offices and the county dog shelter." },
+    { name: "Tamarack Circle", note: "The large roundabout at the heart of Forest Park East, with a cluster of small businesses around it. Tell us which spoke of the circle you are nearest so the driver enters on the right side." },
+    { name: "Maize Road", note: "Cuts through the Clinton Estates homes north of Morse Road, past Maize Road Elementary. School traffic crowds it in the morning and mid-afternoon." },
+    { name: "I-71 Exit 116 (Morse Road)", note: "The interchange most Northland drivers use. A car that quits on the ramp is a highway pickup, so the $75 surcharge applies." },
   ],
   local: [
     { kind: "shopping", name: "Northland Village", detail: "The redeveloped former mall at Morse and Karl, with a large Kroger, government offices and new shops." },
@@ -26,6 +29,8 @@ export default {
     { kind: "landmark", name: "Northland Performing Arts Center", detail: "A theater venue in the rebuilt former JCPenney, home to a long-running variety show." },
     { kind: "shopping", name: "Global Mall", detail: "A Morse Road shopping center opened in 2002, filled with Somali-owned businesses." },
     { kind: "park", name: "Woodward Park", detail: "A 49-acre city park with a rec center, sports fields and a nature trail." },
+    { kind: "landmark", name: "Franklin County Dog Shelter and Adoption Center", detail: "The county animal shelter on Tamarack Boulevard, built on part of the old mall grounds. Its lot is open and flat, which makes for an easy load." },
+    { kind: "school", name: "Columbus Global Academy", detail: "A middle and high school for newcomer students that moved in 2008 into the former Brookhaven High School building." },
     { kind: "school", name: "Northland High School", detail: "Home of the Vikings since 1966, this Columbus City Schools campus sits in the Forest Park area." },
   ],
   faqs: [

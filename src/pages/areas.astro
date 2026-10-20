@@ -13,7 +13,7 @@ const path = "/areas";
 const towns = [...CITY_FACTS].sort((a, b) => a.name.localeCompare(b.name));
 const counties = [...new Set(CITY_FACTS.map((c) => c.county))].sort();
 const faqs: Faq[] = [
-  { q: "How far from Columbus will Auto Lyft USA go?", a: `Our regular area is Columbus plus the ${CITY_FACTS.length} towns on this page, spread over ${counties.length} counties: ${counties.join(", ")}. For trips beyond that — Dayton, Cincinnati, Cleveland or out of state — ask about [long-distance towing](/towing/long-distance-towing).` },
+  { q: "How far from Columbus will Auto Lyft USA go?", a: `Our regular area is Columbus plus every town on this page, spread over these counties: ${counties.join(", ")}. For trips beyond that — Dayton, Cincinnati, Cleveland or out of state — ask about [long-distance towing](/towing/long-distance-towing).` },
   { q: "My town isn't listed. Can you still come?", a: "Probably. The list covers the places we serve every week, not a hard border. Call (614) 633-8163 with your address and the dispatcher will tell you right away whether a truck can reach you and what it costs." },
   { q: "Why do you list miles from your yard?", a: "Because every truck leaves from the same gate on Harrisburg Pike, southwest of downtown. That makes Grove City or Galloway a short hop and Sunbury or Lancaster a long haul. Distance is part of the price, and the dispatcher quotes it first." },
 ];
@@ -21,14 +21,14 @@ const schema = [itemListNode(path, [{ name: "Columbus", path: "/areas/columbus-o
 ---
 <Base
   title="Towns We Tow In Around Columbus, OH"
-  description={`Auto Lyft USA tows in Columbus and ${CITY_FACTS.length} Central Ohio towns. Find your town, its ZIP codes and its distance from our yard. (614) 633-8163.`}
+  description={`Auto Lyft USA tows in Columbus and the Central Ohio towns around it. Find your town, its ZIP codes and its distance from our yard. (614) 633-8163.`}
   path={path}
   pageType={["WebPage", "CollectionPage"]}
   crumbs={[{ name: "Areas", path }]}
   schema={schema}
   faqs={faqs}
 >
-  <Hero image={PHOTOS.city} eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus plus ${CITY_FACTS.length} towns across ${counties.length} counties, all reached from one yard on Harrisburg Pike.`} />
+  <Hero image={PHOTOS.city} eyebrow="Service area" h1="Where Auto Lyft USA Tows: Columbus and Nearby Towns" lede={`Columbus and the towns around it in ${counties.slice(0, -1).join(", ")} and ${counties.at(-1)} counties, all reached from one yard on Harrisburg Pike.`} />
   <section class="band">
     <div class="wrap">
       <form class="prose search-form" role="search" action="/areas" method="get">
@@ -51,6 +51,14 @@ const schema = [itemListNode(path, [{ name: "Columbus", path: "/areas/columbus-o
         </table>
       </div>
       <p id="nores" class="muted" hidden>No town matched. Call (614) 633-8163 — we likely still reach you.</p>
+    </div>
+  </section>
+  <section class="band alt" aria-labelledby="reach-h">
+    <div class="wrap prose">
+      <h2 id="reach-h">How the map works from one yard</h2>
+      <p>Every truck starts at 1620 Harrisburg Pike, which sits a few minutes from I-70, I-71 and the I-270 outerbelt. That puts the southwest corner of Franklin County closest: Urbancrest, Valleyview and Grove City are each about three miles away, and Galloway, Lincoln Village and Prairie Township are not much farther along West Broad Street.</p>
+      <p>Heading north, SR-315 and US-23 carry our drivers up through Upper Arlington, Worthington and Powell and on into Delaware County, where Lewis Center, Sunbury and the city of Delaware are the longest runs on that side. East, I-70 and SR-161 lead past Whitehall, Reynoldsburg and New Albany into Licking County: Pataskala, Etna and Johnstown. South and southeast, US-33 reaches Canal Winchester, Pickerington and Lancaster in Fairfield County, while US-23 south passes Lockbourne on the way to Commercial Point in Pickaway County. West, I-70 and US-40 go out to West Jefferson and London in Madison County, and US-33 runs northwest toward Plain City and Marysville in Union County.</p>
+      <p>Distance changes the price only through the per-mile charges on our <a href="/rates">rate card</a>, so a call from Marysville costs more than one from Obetz, but the hookup fee and the rules are the same everywhere. The miles column above is a straight-line figure from the yard; the dispatcher prices the real road route before a truck leaves.</p>
     </div>
   </section>
   <CtaBand />

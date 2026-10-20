@@ -17,6 +17,8 @@ export default {
     { name: "Schrock Road", note: "The northern boundary, just south of I-270." },
     { name: "Karl Road", note: "The western boundary, shared with the Forest Park side of Northland." },
     { name: "Maple Canyon Avenue", note: "The eastern boundary, where Columbus Fire Station 6 sits." },
+    { name: "Alpine Drive", note: "A residential street just east of Karl Road and home to Alpine Elementary. Drop-off and pickup times bring a line of parent cars, so mention the school if you are close to it." },
+    { name: "I-71 Exit 117 (SR-161)", note: "The nearest interstate link for most of the neighborhood. Breakdowns on the ramps count as highway pickups and carry the $75 surcharge." },
     { name: "Beechcroft Road", note: "Runs past Beechcroft High School and Beechcroft Park, busy at school start and dismissal." },
   ],
   local: [
@@ -25,6 +27,7 @@ export default {
     { kind: "school", name: "Northgate Intermediate School", detail: "A Columbus City Schools building on Sharon Woods Boulevard." },
     { kind: "park", name: "Beechcroft Park", detail: "A neighborhood park of nearly five acres on Beechcroft Road." },
     { kind: "park", name: "Northgate Park", detail: "A small city park at the north end of the neighborhood, off Lisamarie Road." },
+    { kind: "college", name: "Felbry College", detail: "A college on Cleveland Avenue, a little east of Maple Canyon Avenue. If your car will not start in its lot after class, a $75 jump or lockout call usually beats a full tow." },
     { kind: "shopping", name: "Sharon Woods Center", detail: "A neighborhood shopping center on East Dublin-Granville Road." },
   ],
   faqs: [

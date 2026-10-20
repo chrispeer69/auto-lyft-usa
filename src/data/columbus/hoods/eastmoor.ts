@@ -23,6 +23,8 @@ export default {
     { kind: "school", name: "Eastmoor Academy", detail: "The Columbus City Schools high school on South Weyant Avenue; its stadium is named for Archie Griffin." },
     { kind: "school", name: "Broadleigh Elementary", detail: "A preschool through fifth grade building on Maryland Avenue." },
     { kind: "park", name: "Napoleon Park", detail: "A neighborhood park of about six acres on South Napoleon Avenue." },
+    { kind: "park", name: "Brownlee Park", detail: "City open space of a little over two acres on Brownlee Avenue, a quiet street where a flatbed can pull up close." },
+    { kind: "park", name: "Eastmoor Park", detail: "A Columbus Recreation and Parks site that carries the neighborhood name. When you call, say which street borders the side of the park you are parked on." },
     { kind: "park", name: "Virginialee Park", detail: "Open space on South Virginialee Road, a little over two acres." },
     { kind: "landmark", name: "St. Catharine Church", detail: "A Catholic parish straddling the Bexley-Eastmoor line; its lot opens off Bexley Park Road, and Fair Avenue takes the overflow." },
     { kind: "employer", name: "Kroger regional office", detail: "A Poth Road office building at the corner where three east-side communities meet." },

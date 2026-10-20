@@ -17,6 +17,9 @@ export default {
     { name: "Galloway Road", note: "The road the town grew up around. It passes Westland High School, so weekday calls here cluster around the start and end of the school day." },
     { name: "Alkire Road", note: "Galloway's southern edge, with curves out toward Darby Creek Drive. Cars slide off here in ice and heavy rain, and those jobs usually need a winch before loading." },
     { name: "Darby Creek Drive", note: "The access road for the Metro Park and its nature center. Narrow and rural, so we ask callers to say which lot or picnic area they are near." },
+    { name: "Kuhlwein Road", note: "Meets Darby Creek Drive south of Alkire, on a curving stretch the county has marked for future work. Shoulders there are thin, so stay buckled in the car if traffic is close." },
+    { name: "Johnson Road", note: "Sits at the far end of the Alkire Road bend that begins at Darby Creek Drive; tell us which end of that curve you are nearer so the truck comes in from the safe side." },
+    { name: "Alton Darby Creek Road", note: "A long north-south road on the west side with a Galloway mailing address for Cypress Christian School, where a school lot gives a carrier room to load." },
   ],
   local: [
     { kind: "park", name: "Battelle Darby Creek Metro Park", detail: "A huge Metro Park with a bison herd on restored prairie; its gravel lots are spread out, so name the trailhead when you call." },
@@ -26,6 +29,10 @@ export default {
     { kind: "school", name: "Westland High School", detail: "Home of the Cougars on Galloway Road; student cars that will not start after practice are a familiar call for us." },
     { kind: "school", name: "Alton Hall Elementary", detail: "A South-Western City Schools building on Alton Road, where pickup lines make it smart to wait for the lot to clear before loading." },
     { kind: "school", name: "Darby Woods Elementary", detail: "Sits on Westwoods Boulevard inside a residential neighborhood, so our drivers keep the carrier on the street rather than in the drop-off loop." },
+    { kind: "park", name: "Cobshell Trail", detail: "A gravel hike of just under a mile leading to an overlook above Big Darby Creek; if your car is stuck at its trailhead, say so, because the park has several lots." },
+    { kind: "park", name: "Indian Ridge Trail", detail: "Starts at the Indian Ridge picnic area on Darby Creek Drive, roughly half a mile below Alkire Road, which is an easy spot for our driver to find." },
+    { kind: "park", name: "Terrace Trail", detail: "A wooded loop of about two miles that ties into the other trails; hikers who return to a dead battery should tell us which lot they parked in, not just the trail name." },
+    { kind: "park", name: "Hawthorn Trail", detail: "A short, easy walk that begins beside the rentable lodge at the Cedar Ridge picnic area, where group events can leave the lot packed on weekends." },
   ],
   faqs: [
     { q: "What route does the truck take out to Galloway?", a: "Galloway is about six miles west of our yard as the crow flies. Depending on traffic, the driver takes the interstate west or uses surface roads such as Georgesville Road, whichever looks clearer on the traffic map. In both cases the trip stays on the southwest side, and you hear a real-time arrival window from the person who answers (614) 633-8163." },

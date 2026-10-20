@@ -17,6 +17,10 @@ export default {
     { name: "Wilson Road", note: "The west boundary, carrying traffic down from I-70 and toward the outerbelt; a common route for our trucks heading in and out." },
     { name: "South Powell Avenue", note: "Home to West High School, where weekday arrival and dismissal fill the curbs for a while." },
     { name: "Binns Boulevard and the park streets", note: "The curving residential blocks around Westgate Park, where most of our driveway jump starts and lockouts happen." },
+    { name: "South Westgate Avenue", note: "The address street for the park and its community center. If you are stuck in a park lot, this is the street to give the dispatcher." },
+    { name: "South Roys Avenue", note: "Home to the Catholic parish church and its buildings. Around service times the curbs are fuller, so the driver may load around the corner." },
+    { name: "South Algonquin Avenue", note: "Runs just north of the park past a Methodist church; a calm residential street where a carrier can usually stop beside the car." },
+    { name: "Parkside Road", note: "The parish school sits on this street, so weekday drop-off and pickup bring a short rush of parked and idling cars." },
   ],
   local: [
     { kind: "park", name: "Westgate Park", detail: "A big neighborhood park with a fishing lake, a walking loop and the oversized ABC letters; its parking lots fill on summer evenings." },
@@ -25,6 +29,11 @@ export default {
     { kind: "school", name: "West High School", detail: "A 1929 Columbus City Schools building on South Powell Avenue." },
     { kind: "school", name: "Westgate Elementary", detail: "The neighborhood's public elementary on Wicklow Road." },
     { kind: "shopping", name: "Westgate Farmers Market", detail: "Saturday mornings in season on West Broad, with food trucks and live music, and plenty of cars parked along the side streets." },
+    { kind: "park", name: "Harder Lake", detail: "The stocked fishing lake inside Westgate Park; if your car will not start after an evening of fishing, say you are at the lake so the driver goes to the nearest lot." },
+    { kind: "landmark", name: "Westgate Community Recreation Center", detail: "The city rec center in the park, with a gym, auditorium and weight room. Its lot is a simple place to meet the driver." },
+    { kind: "landmark", name: "Saint Mary Magdalene Church", detail: "A Catholic parish founded in 1927; the present church on South Roys Avenue was dedicated in 1956." },
+    { kind: "landmark", name: "Parkview United Methodist Church", detail: "A 1941 church on South Algonquin Avenue, on the north side of Westgate Park." },
+    { kind: "landmark", name: "Westgate United Methodist Church", detail: "A second Methodist congregation, on South Powell Avenue near West High School." },
   ],
   faqs: [
     { q: "Is Westgate close to your tow yard?", a: "Yes, it is one of the closest neighborhoods we serve. Our trucks start at 1620 Harrisburg Pike, south of the Hilltop, and reach Westgate on local roads. Because en-route travel is billed at $4 a mile from the yard, a Westgate call keeps that part of the price small. The dispatcher will tell you how soon a truck can arrive based on where the drivers are at that moment." },

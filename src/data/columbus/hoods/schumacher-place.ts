@@ -17,6 +17,12 @@ export default {
     { name: "East Whittier Street", note: "The southern line, where Schumacher Place meets Merion Village." },
     { name: "South Grant Avenue", note: "A north-south street through the middle of the neighborhood, crossing the site of the old Recreation Park." },
     { name: "Kossuth, Sycamore and Lathrop streets", note: "Narrow residential blocks with cars packed on both curbs, where most of our in-neighborhood calls come from." },
+    { name: "Ebner Street", note: "Bordered the old Recreation Park ballfield on one side. Now it is a tight residential street, so the driver may load from the nearest corner." },
+    { name: "Brust Street", note: "One of the short streets along the German Village side. Say which end you are nearer, because the two neighborhoods meet here." },
+    { name: "Briggs Street and South Ninth Street", note: "Blocks on the western edge that were included in the German Village historic listing. Tight curbs mean the driver may set up at a corner and winch the car out." },
+    { name: "East Blenkner Street", note: "A cross street near the German Village line; a useful corner to give if your car is on Ninth or a side alley close by." },
+    { name: "Forest Street", note: "Remembered locally as the first street in the area to be paved. Parking runs bumper to bumper, so expect a short winch to the truck if the car is wedged in." },
+    { name: "Children's Drive", note: "The hospital's address street just across Parsons. If your car is in a hospital garage, tell us the garage and level so the driver can find it." },
   ],
   local: [
     { kind: "medical", name: "Nationwide Children's Hospital", detail: "The large pediatric hospital just across Parsons Avenue. Families' cars in its garages are a regular jump-start and lockout call." },
@@ -24,7 +30,7 @@ export default {
     { kind: "landmark", name: "Recreation Park marker", detail: "A historical marker for the ballpark where the Buckeyes played their first home game, on the block around Ebner and Kossuth streets." },
     { kind: "park", name: "Kobacker Park", detail: "A small park with a basketball court and playground on Parsons Avenue." },
     { kind: "park", name: "Livingston Park", detail: "An old city cemetery turned park, sitting in front of the hospital north of Livingston Avenue." },
-    { kind: "landmark", name: "Beck Street School", detail: "An 1884 school building designed by David Riebel, now home to a charter school." },
+    { kind: "landmark", name: "Beck Street School", detail: "An 1884 school building by Columbus architect David Riebel, now home to a charter school." },
   ],
   faqs: [
     { q: "How does the Schumacher Place permit parking affect a tow?", a: "It does not stop us from towing your own car, but it matters in two ways. First, if you parked on a permit block without a permit, the car may already have been ticketed or towed by someone else, so check before you call. Second, our driver needs a legal spot to set up the flatbed briefly. Tell us the block and whether the car sits in a permit zone." },

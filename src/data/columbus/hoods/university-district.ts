@@ -17,6 +17,9 @@ export default {
     { name: "Indianola Avenue", note: "A residential street lined with student houses and small lots, where many of our dead-battery calls come from." },
     { name: "Lane Avenue", note: "The northern edge of campus, leading to SR-315 and Ohio Stadium. Very congested before and after games." },
     { name: "I-71 at 11th and 17th Avenues", note: "The interstate exits on the east side of the district, and our usual way in from the south." },
+    { name: "Woodruff Avenue", note: "Forms the northern edge of the Indianola Forest blocks between High and Fourth. Parked cars narrow it to a single lane in spots, so the driver may need to back in." },
+    { name: "Dennison Place", note: "Part of the quieter, more owner-occupied pocket on the campus side of High, south of 11th Avenue. Driveways here are short, and a flatbed usually loads from the street." },
+    { name: "Borror Drive", note: "The address of the Schottenstein Center. Arena lots empty all at once after events; a car that will not start there can often be fixed with a jump instead of a tow." },
     { name: "SR-315 at Lane Avenue and King Avenue", note: "Freeway exits on the west side of campus, near the stadium and the medical center." },
   ],
   local: [
@@ -27,6 +30,9 @@ export default {
     { kind: "landmark", name: "Newport Music Hall", detail: "A High Street rock club that began as a theater in 1921." },
     { kind: "landmark", name: "Wexner Center for the Arts", detail: "Contemporary arts center on High Street at the edge of the Oval, opened in 1989." },
     { kind: "medical", name: "Ohio State Wexner Medical Center", detail: "The university hospital complex on the west side of campus, near SR-315." },
+    { kind: "landmark", name: "Mirror Lake", detail: "The spring-fed pond in the middle of campus, restored beginning in 2015. Nearby parking is mostly permit-only, so pickups tend to happen at a campus garage or the closest public street." },
+    { kind: "college", name: "Hale Hall", detail: "Put up between 1909 and 1911 on West 12th Avenue; it was the earliest student union built by any state university." },
+    { kind: "college", name: "Thompson Memorial Library", detail: "Ohio State's main library, opened in 1913 and renovated in 2009, at the west end of the Oval." },
     { kind: "park", name: "Iuka Park", detail: "A small wooded ravine park east of High Street, surrounded by older homes." },
   ],
   faqs: [

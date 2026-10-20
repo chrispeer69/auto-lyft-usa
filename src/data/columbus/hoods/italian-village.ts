@@ -13,10 +13,13 @@ export default {
   ],
   roads: [
     { name: "North Fourth Street", note: "The Village's commercial street, home to Budd Dairy Food Hall. Evening crowds and tight curbs mean the driver may stage a block away." },
-    { name: "East Fifth Avenue", note: "The northern edge, with shops and a busy I-71 interchange. The Fifth Avenue exit has no northbound off-ramp, which matters when we route a truck." },
+    { name: "East Fifth Avenue", note: "The northern edge, with shops and a busy I-71 interchange. The Fifth Avenue exit, Exit 110A, has no northbound off-ramp, which matters when we route a truck." },
     { name: "I-670", note: "The southern edge, separating the Village from Downtown. Breakdowns on the ramps near Fourth Street are a common pickup." },
     { name: "North High Street", note: "The western boundary shared with the Short North. Parking here is metered and often full." },
     { name: "East Second Avenue", note: "Runs past the old industrial strip on its north side, where warehouses have turned into offices and apartments." },
+    { name: "East Russell Street", note: "A short street near the I-670 edge where an old firehouse stood until the freeway came through. Parking is tight, so the driver may load from the corner." },
+    { name: "Auden Avenue", note: "One of the newer streets inside the Jeffrey development, with a large mural on it. Garage and lot entrances here make a precise building number helpful." },
+    { name: "Columbus-Worthington Pike", note: "The 1823 name for what is now High Street on the Village's west edge. Today the curb is metered, so tell the dispatcher which block you are on." },
   ],
   local: [
     { kind: "landmark", name: "St. John the Baptist Italian Catholic Church", detail: "The 1898 church that anchors the Village and hosts the Columbus Italian Festival each October." },
@@ -25,6 +28,9 @@ export default {
     { kind: "park", name: "Italian Village Park", detail: "Small neighborhood park with a playground and picnic area." },
     { kind: "landmark", name: "Jeffrey Park", detail: "Apartments and townhomes built since 2013 on roughly 41 acres where the Jeffrey Manufacturing plant once stood." },
     { kind: "landmark", name: "Second Avenue School building", detail: "Dating to 1874, one of the oldest school buildings left standing in Columbus." },
+    { kind: "landmark", name: "Bethany Baptist Colored Church", detail: "A congregation started in 1882 by Black families who settled in the Village's northeast corner." },
+    { kind: "landmark", name: "Jeffrey Place", detail: "The 2004 plan for the old Jeffrey site that stalled after two small buildings; the later Jeffrey Park project took its place." },
+    { kind: "landmark", name: "Fourth Street Special Improvement District", detail: "A 2020 service district, also covering part of Fifth Avenue, that carries cleaning and safety work off High Street and into the Village." },
   ],
   faqs: [
     { q: "Can you reach my car inside a Jeffrey Park garage or gated lot?", a: "Yes, as long as the driver can get through the gate and the garage is tall enough for the carrier. Have the gate code ready or ask the leasing office to let us in. If the car is on a lower deck with a low ceiling, we can bring it up to the entrance before loading. Tell the dispatcher the building name and your parking level when you call." },

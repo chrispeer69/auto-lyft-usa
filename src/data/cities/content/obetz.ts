@@ -17,6 +17,10 @@ export default {
     { name: "Groveport Road", note: "Runs east through the village and past the auction gates, which get congested on sale days." },
     { name: "Lockbourne Road", note: "Obetz's western road, home to the Area 51 disc golf course and the pickup point for homes on that side of the village." },
     { name: "I-270 at US-33 (Exits 46A/46B)", note: "The interchange northeast of Obetz where traffic splits toward Bexley and Lancaster; the merges there generate a steady flow of breakdowns." },
+    { name: "Recreation Trail", note: "A short lane inside Memorial Park that leads to the athletic club and its ballfields. On game nights, tell the driver which field you parked beside so he can come in from the right end." },
+    { name: "Stegner Road", note: "The village water department has its base on this street, which makes a good reference point when you are not sure of the nearest house number." },
+    { name: "Jermoore Road", note: "Runs through the McFadyen Acres subdivision. Driveways here are short, so the carrier normally loads from the curb in front of the house." },
+    { name: "Obetz Avenue", note: "Shared address of the community center and the park beside it; a car left behind after an evening program is simplest to collect once the lot has emptied." },
   ],
   local: [
     { kind: "landmark", name: "Fortress Obetz", detail: "A stadium assembled from 122 shipping containers on the former speedway site; its lots empty all at once after a match, so calling early beats the rush." },
@@ -26,6 +30,8 @@ export default {
     { kind: "park", name: "Junction Park", detail: "A downtown park on Lancaster Avenue with pickleball, chess tables and a seasonal ice rink, where curbside spaces run short." },
     { kind: "school", name: "Hamilton Township High School", detail: "On Rathmell Road and serving most of Obetz; a typical spot for an afternoon jump start when a student's car sat all day in the cold." },
     { kind: "employer", name: "Obetz Business Park", detail: "A distribution park planned at around four million square feet on 239 acres; its newest streets may be missing from older map apps, so describe your building." },
+    { kind: "park", name: "McFadyen Park", detail: "A small neighborhood park on Jermoore Road with street parking only, so a stalled car there is usually loaded right where it sits." },
+    { kind: "park", name: "D. Greg Scott Park and Obetz Community Center", detail: "The park and the community center sit together on Obetz Avenue; mention which building you parked closest to when you call." },
   ],
   faqs: [
     { q: "How long a trip is it from your yard to Obetz?", a: "Short by our standards. Obetz is roughly 6.5 miles from 1620 Harrisburg Pike, and most of the route is I-270 heading east to the Alum Creek Drive exit. The dispatcher looks at what traffic is doing on the outerbelt before giving you a live arrival estimate, which is more honest than a fixed promise." },

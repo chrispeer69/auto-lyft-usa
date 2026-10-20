@@ -18,6 +18,9 @@ export default {
     { name: "Mink Road", note: "Lined with large new warehouses; shift-change traffic and big trucks make this a place where stalled cars need quick removal." },
     { name: "Southgate Parkway", note: "The spine of the Etna Township Industrial Park, where many of our calls come from employee lots at end of shift." },
     { name: "Tollgate Road", note: "A rural road named for an old toll gate on the route to Wagram, with ditches that can catch a car on slick nights." },
+    { name: "Hazelton-Etna Road", note: "Meets the National Road on the township's west side, near where an early log schoolhouse once stood; the corner is a handy reference if you are calling from a farm lane." },
+    { name: "Palmer Road (Watkins Road to York Road)", note: "A rural stretch past the old St. Jacobs burial ground. Name whichever of those two cross roads you passed last so the driver knows which way to come in." },
+    { name: "Pike Street", note: "A short street just below US-40 on the west side of SR-310, next to the old Etna cemetery; it is quiet enough for a carrier to load at the curb." },
   ],
   local: [
     { kind: "employer", name: "The Cubes at Etna 70", detail: "Kohl's moved into this enormous building; employee lots are large and easy to load in, but give us the door number or gate." },
@@ -25,6 +28,7 @@ export default {
     { kind: "employer", name: "Amazon and Ashley Furniture facilities", detail: "These Etna buildings brought hundreds of jobs, plus the dead batteries and lockouts that come with large parking lots." },
     { kind: "school", name: "Watkins Memorial High School", detail: "Home of the Warriors on Warrior Way; student lots are a frequent spot for winter jump starts." },
     { kind: "landmark", name: "Etna Township Hall", detail: "The historic hall on Liberty Street marks the old village center, a good meeting point if your location is hard to describe." },
+    { kind: "landmark", name: "Licking River", detail: "Etna sits in this river's watershed, with runoff heading off toward its South Fork; after heavy storms, low spots on rural roads can hold water, so do not drive into a flooded dip." },
     { kind: "park", name: "High Point Park (Etna Commons)", detail: "The former fairgrounds on SR-310 now hold a veterans memorial and a small lot easy for a truck to reach." },
   ],
   faqs: [

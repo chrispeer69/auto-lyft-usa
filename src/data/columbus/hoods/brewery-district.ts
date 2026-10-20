@@ -17,6 +17,9 @@ export default {
     { name: "Greenlawn Avenue", note: "The southern line, leading west across the river and east toward I-71. A frequent route for our trucks coming from Harrisburg Pike." },
     { name: "Whittier Street", note: "Heads west to Scioto Audubon Metro Park and the Audubon Center, where most of our park-lot calls start." },
     { name: "I-70 (north edge)", note: "The interstate separates the district from downtown. Breakdowns near the Front Street ramps are highway calls with a $75 surcharge." },
+    { name: "Short Street", note: "The line between the older brick blocks and the former industrial land west toward the river, sometimes called the Oxbow. Tell us which side of it you are on." },
+    { name: "Furnace Street", note: "A short street by the electrical substation with the tall stone Needles of Stone sculptures, a landmark the driver can spot from a distance." },
+    { name: "Maier Place", note: "A small side street with a bouldering gym on it. If the curb is full, the driver may stop in the street briefly to load, with flashers on." },
   ],
   local: [
     { kind: "park", name: "Scioto Audubon Metro Park", detail: "A riverside park of about 120 acres with wetlands, a dog park and an outdoor climbing wall; weekend lots fill fast." },
@@ -25,6 +28,11 @@ export default {
     { kind: "landmark", name: "Front and Fulton", detail: "The former Hoster Brewing complex being turned into offices, apartments and restaurants." },
     { kind: "landmark", name: "King Gambrinus statue", detail: "The restored beer king statue, set in a tiny green where Sycamore meets Front." },
     { kind: "park", name: "Greenlawn Park", detail: "City riverfront land on Greenlawn Avenue with a greenway trailhead and a parking area." },
+    { kind: "landmark", name: "Schlee Brewery Historic District", detail: "Six brick commercial buildings from the late 1800s on South Front Street, on the National Register since 1988." },
+    { kind: "landmark", name: "Zion Evangelical Lutheran Church", detail: "A congregation dating to 1882 whose current church on South High Street was finished in 1954." },
+    { kind: "park", name: "Keller Park", detail: "A narrow half-acre strip of city land on South Front Street with a wooded edge and a path onto the greenway." },
+    { kind: "park", name: "Scioto Audubon Dog Park", detail: "The fenced dog area inside the Metro Park, split into large-dog and small-dog sides. If your car won't start after a visit, name the dog park so the driver heads to the right lot." },
+    { kind: "park", name: "Hermit Thrush Trail", detail: "A very short mulched path in Scioto Audubon that leads to the restored wetlands; park in the main lot if you are meeting us there." },
   ],
   faqs: [
     { q: "Can you jump my car after a show at Shadowbox Live?", a: "Yes. A dead battery after an evening show is one of the most common calls we get in the Brewery District. Tell the dispatcher whether you parked in a lot near the theater or on the street, and the driver will come to you. Jump starts fall under our $75 roadside flat rate, with the overnight surcharge applying only between 10 PM and 6 AM." },

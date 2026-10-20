@@ -17,6 +17,10 @@ export default {
     { name: "Gift, Lucas, Town and Rich streets", note: "The arts district grid. Narrow lanes, curb parking on both sides and delivery trucks make a precise address more useful than usual." },
     { name: "I-70 on the west edge", note: "The interstate forms Franklinton's western line. Ramp breakdowns here are quick for us to reach from Harrisburg Pike and are billed with the highway surcharge." },
     { name: "Greenlawn Avenue", note: "Marks the south side of the neighborhood near Stimmel Road, with warehouse and industrial lots where a work truck or van sometimes needs moving." },
+    { name: "Harmon Avenue", note: "The eastern line of Franklinton. Give the nearest cross street, since a call here could be anywhere along the edge of the neighborhood." },
+    { name: "Glenwood Avenue", note: "A west-side street that links West Broad and Sullivant, handy for the driver when the median on Sullivant blocks a direct turn." },
+    { name: "McKinley Avenue", note: "Runs through the northwest corner past a city park with ball diamonds. If you are parked at the park, say which lot or field you are near." },
+    { name: "Renick Street", note: "A residential street with a small park and community building on it. Name the park if your house number is hard to read from the road." },
   ],
   local: [
     { kind: "landmark", name: "COSI", detail: "The science center on West Broad, built around the old Central High School. School groups and family crowds fill its lot on weekends." },
@@ -26,6 +30,11 @@ export default {
     { kind: "park", name: "Genoa Park", detail: "A small riverfront green on the west bank of the Scioto, facing downtown." },
     { kind: "college", name: "Mount Carmel College of Nursing", detail: "The nursing college on South Davis Avenue, founded in Franklinton in 1903." },
     { kind: "medical", name: "Mount Carmel Franklinton care center", detail: "Mount Carmel closed its Franklinton emergency department in August 2026 and now runs primary care at 775 West Broad, so emergency patients go elsewhere." },
+    { kind: "landmark", name: "Holy Family Church", detail: "A Gothic Revival Catholic church on West Broad, begun in 1882 and dedicated in 1889." },
+    { kind: "landmark", name: "Ohio Central Railroad Station", detail: "The pagoda-roofed Toledo and Ohio Central depot from 1896 on West Broad. No other train station building survives in Columbus, and it now serves as a firefighters' union hall." },
+    { kind: "park", name: "McKinley Park", detail: "A seven-acre park on McKinley Avenue with ball diamonds and an open shelter." },
+    { kind: "park", name: "Sullivant Gardens Park", detail: "Close to four acres on Renick Street; besides the green there is a small community building and a futsal pitch." },
+    { kind: "landmark", name: "Franklinton Branch Library", detail: "The neighborhood library on West Town Street, which offers free homework help after school." },
   ],
   faqs: [
     { q: "How quickly can you reach Franklinton from your yard?", a: "Franklinton is one of the closest neighborhoods to us. Our yard is on Harrisburg Pike, which runs north into the Hilltop and Franklinton area, so most trips stay on surface streets. We do not promise a set number of minutes because traffic, weather and other calls change things, but the dispatcher checks where the trucks are and gives you a live estimate before you agree to anything." },

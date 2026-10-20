@@ -25,6 +25,11 @@ export default {
     { kind: "school", name: "Whetstone High School", detail: "A Columbus City Schools high school on Scenic Drive that opened in 1961." },
     { kind: "landmark", name: "East North Broadway Historic District", detail: "A long stretch of North Broadway lined with homes from the late 1800s through the mid-1900s." },
     { kind: "shopping", name: "Indianola Plaza", detail: "A neighborhood shopping strip on Indianola Avenue on the east side." },
+    { kind: "park", name: "Northmoor Park", detail: "About 9.4 acres fronting Olentangy Boulevard. Parking is along the curb, so on a busy afternoon the driver may stop a few car lengths away and walk over." },
+    { kind: "park", name: "Brevoort Park", detail: "A small park of under three acres on Brevoort Road, surrounded by homes on quiet streets." },
+    { kind: "landmark", name: "Whetstone Community Center", detail: "The Recreation and Parks center inside Whetstone Park, sharing its North High Street address with the rose garden. Class nights fill the lot." },
+    { kind: "landmark", name: "Immaculate Conception Church", detail: "A Catholic parish on East North Broadway; weekend Masses bring heavy curb parking to the side streets around it." },
+    { kind: "landmark", name: "Overbrook Presbyterian Church", detail: "A Presbyterian church on North High Street, a short way north of the Whetstone Park entrance." },
     { kind: "park", name: "Clinton-Como Park", detail: "A riverside park of about 21 acres near Riverside Drive." },
   ],
   faqs: [

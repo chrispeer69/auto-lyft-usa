@@ -58,7 +58,7 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
   faqs={c.faqs}
 >
   <Hero image={PHOTOS.city}
-    eyebrow={`${c.county} County · ${c.zips.join(", ")}`}
+    eyebrow={`${c.name} towing & roadside help · ${c.county} County`}
     h1={c.h1}
     lede={c.lede}
     facts={[

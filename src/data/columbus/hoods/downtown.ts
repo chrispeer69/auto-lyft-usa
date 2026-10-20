@@ -17,6 +17,7 @@ export default {
     { name: "High Street and Broad Street", note: "The two main streets meet at Capitol Square. Bus traffic and turn restrictions mean the driver may stop around the corner and walk to you first." },
     { name: "Third and Fourth streets", note: "One-way streets with garages and surface lots on both sides; a good place to say which garage level and which exit ramp you are near." },
     { name: "Civic Center Drive and the riverfront", note: "Runs along the Scioto Mile parks near City Hall. Festival weekends close parts of it, so we may approach from Front Street instead." },
+    { name: "Nationwide Boulevard", note: "Heads west from High Street past One Nationwide Plaza into the Arena District. After a game or concert the lanes jam quickly, so give us the block and the curb side when you call." },
   ],
   local: [
     { kind: "landmark", name: "Ohio Statehouse", detail: "The Greek Revival capitol on Capitol Square, finished in 1861, with an underground garage below it." },
@@ -27,6 +28,11 @@ export default {
     { kind: "college", name: "Columbus College of Art and Design", detail: "The art college next to the Columbus Museum of Art, with students parking on nearby streets; see [CCAD towing](/local/ccad)." },
     { kind: "medical", name: "Grant Medical Center", detail: "OhioHealth's downtown hospital and Level I trauma center. Visitor garage dead batteries are a regular call." },
     { kind: "employer", name: "Nationwide and AEP headquarters", detail: "Two of the biggest employers downtown, which means full garages every weekday." },
+    { kind: "park", name: "Topiary Park", detail: "Officially Old Deaf School Park, this Discovery District garden shapes its shrubs into the people from a Seurat painting. Street parking ringing it is metered, and a flatbed can usually load right at that curb." },
+    { kind: "park", name: "Galbreath Bicentennial Park", detail: "Named for John W. Galbreath, this park sits on Civic Center Drive by the river and draws big crowds on summer evenings. If you are stuck nearby, give us the closest open corner rather than the park itself." },
+    { kind: "park", name: "Battelle Riverfront Park", detail: "The green beside City Hall that holds the 1958 Columbus Firefighters Memorial. Event setups sometimes block the lanes next to it." },
+    { kind: "park", name: "North Bank Park", detail: "The pavilion and lawn at the top end of the riverfront parks, opened in 2005. If its lot is closed, the driver can meet you on Spring Street or Marconi Boulevard instead." },
+    { kind: "landmark", name: "Holy Cross Church", detail: "A Gothic Revival Catholic church finished in 1848 and often named as the oldest church building in Columbus. Weekend Mass brings a burst of curb parking on the surrounding blocks." },
   ],
   faqs: [
     { q: "Can a flatbed get into a downtown parking garage?", a: "Sometimes, but not always. Many downtown garages have clearances that a flatbed cannot pass, especially on upper decks and ramps. Tell us the garage name and the height painted or hung over the entry bar. If the truck cannot fit, we can still jump the battery, unlock the car or change a tire in place, and for a car that truly will not move, we work out a way to get it down to street level before loading." },

@@ -17,6 +17,12 @@ export default {
     { name: "SR 37 at US 62", note: "The central intersection beside Bigelow Park, listed by Licking County for upgrades to handle growing traffic." },
     { name: "Mink Street", note: "A rural road southwest of the village that now carries Intel-related traffic; shoulders are soft and narrow, so expect cones while loading." },
     { name: "Green Chapel Road and County Line Road", note: "Country roads scheduled for improvements as the area grows, where a car in the ditch is a more likely call than one in a parking lot." },
+    { name: "Johnstown-Utica Road", note: "Leaves the village heading northeast toward Utica through open farm country, where a stalled car can sit a long way from the nearest driveway; a mailbox number helps us find you." },
+    { name: "Johnstown-Alexandria Road", note: "Runs south from the village toward Alexandria, a quiet two-lane route where the driver may set out cones before loading on the shoulder." },
+    { name: "Jug Street", note: "A rural road in the Johnstown ZIP code that now sees far more contractor pickups and delivery trucks than it was built for; pull fully off the pavement if the car still rolls." },
+    { name: "Clover Valley Road", note: "Another long country road with Johnstown addresses, lined with fields and few places to stop, so a nearby house number or crossroad is the best way to describe your spot." },
+    { name: "Duncan Plains Road", note: "A rural road with Johnstown addresses in the area growing up around the chip plant; ditches run close to the edge, which can turn a simple tow into a winch job." },
+    { name: "Kasson Street", note: "A village street near the center of town, close enough to the square that a carrier can usually load right at the curb." },
   ],
   local: [
     { kind: "park", name: "Bigelow Park", detail: "The public square donated by the village founder, holding the old town hall bell; parking around it is on the street." },

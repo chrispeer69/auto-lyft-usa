@@ -18,6 +18,11 @@ export default {
     { name: "Centerpoint Drive", note: "A business street across the village's northern section, where employee lots see shift-change traffic." },
     { name: "I-270", note: "The outerbelt passes close by, so a car that quits on the nearby ramps is only a short hop for our drivers." },
     { name: "Harrisburg Pike (US-62)", note: "Our own street and the direct route from the yard to the village." },
+    { name: "John Cooley Drive", note: "Once known as Popular Street, it is where the village's first home went up at the First Avenue corner. Today it is a quiet residential block with on-street parking." },
+    { name: "Urbancrest Industrial Court", note: "A short dead-end on the western edge of the village; a carrier has to turn around at the end, so tell us if trailers are parked along it." },
+    { name: "Urban Hollow Court", note: "A cul-de-sac near the middle of the village where the bulb at the end gives the driver room to swing the truck around." },
+    { name: "Wallace Lane", note: "Homes sit close to the pavement on this lane in the eastern part of the original grid, so there is little extra shoulder for a truck." },
+    { name: "Walnut Street", note: "Runs along the southern blocks toward Grove City; if you are unsure which town you are in, the street name tells us." },
   ],
   local: [
     { kind: "landmark", name: "Vaughn E. Hairston-South West Community Center", detail: "The 3500 First Avenue center has a pool, a gym and a walking track, and its lot is the kind of place a battery gives out after a workout." },
@@ -27,6 +32,7 @@ export default {
     { kind: "landmark", name: "Urbancrest Village Hall", detail: "Village offices at 3492 First Avenue in the community that elected Ellen Walker Craig-Jones as mayor in 1971." },
     { kind: "employer", name: "Best Buy warehouse", detail: "A facility on Urbancrest Industrial Drive that uses a Grove City mailing address, which can confuse map apps." },
     { kind: "school", name: "South-Western City School District", detail: "The district serving Urbancrest's students, along with Grove City and much of the southwest side of Franklin County." },
+    { kind: "landmark", name: "True Vine Church of Apostolic Faith", detail: "A congregation on Central Avenue; Sunday services bring a full curb, so mid-week is the simplest time to move a car parked nearby." },
   ],
   faqs: [
     { q: "How close is your yard to Urbancrest?", a: "Very close. Our yard at 1620 Harrisburg Pike is about 2.5 miles from the village in a straight line, and the drive is a short run down our own street. That makes Urbancrest one of the easiest places for us to reach. The dispatcher still gives you a live arrival estimate based on where the nearest truck is at that moment, since a carrier may be out on another job when you call." },

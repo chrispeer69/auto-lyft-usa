@@ -32,7 +32,7 @@ export const LANDINGS: Landing[] = [
     slug: "towing-near-me", keyword: "towing near me", title: "Towing Near Me in Columbus, OH",
     description: "Towing near you anywhere in Columbus and nearby suburbs. Flatbed-only fleet, 24/7 dispatch, quote first. Call Auto Lyft USA now.",
     h1: "Columbus Towing, Close By and Ready", sub: "From Hilltop to Westerville, a flatbed is on its way as soon as you approve the price.",
-    ticks: ["Columbus + 40 nearby towns", "Car, SUV, pickup or EV", "No membership required"],
+    ticks: ["Columbus + 40+ nearby towns", "Car, SUV, pickup or EV", "No membership required"],
     faqs: [
       { q: "Which areas count as near?", a: "All of Columbus and the surrounding towns, from Delaware and Sunbury to Lancaster and London. If you're unsure, call and ask." },
       { q: "Can you take my car to my own mechanic?", a: "Yes, to any address you choose, or to our yard if the shop is closed." },

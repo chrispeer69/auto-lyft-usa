@@ -17,6 +17,9 @@ export default {
     { name: "Alum Creek Drive exit off I-270 (Exit 49)", note: "The outerbelt exit signed for Rickenbacker; our trucks use it for calls on the north side of the airport." },
     { name: "Commerce Street", note: "The village's main street, with the village office and the way into Lock Meadows Park." },
     { name: "Rowe Road at Rowe Bridge", note: "A 150-foot steel span at the west end of the village. Tell us which side of the bridge you are on so the driver approaches from the right end." },
+    { name: "Vause Street and Mechanics Street", note: "Small residential streets in the village center, each home to a church; curb space can tighten around service times, so let us know if cars are parked on both sides." },
+    { name: "Shook Road", note: "Carries a Lockbourne address for the Hamilton Local district office; it is a straightforward place for a carrier to stop if your car quits nearby." },
+    { name: "Star Check Drive", note: "A street on the Rickenbacker grounds where AirNet Systems has listed its office; give the company name on the building so the driver finds the right entrance." },
   ],
   local: [
     { kind: "park", name: "Lock Meadows Park", detail: "Home to Lock No. 30 of the Ohio and Erie Canal, the sort of lock the village is named for; parking is limited, so say where you left the car." },
@@ -26,6 +29,10 @@ export default {
     { kind: "employer", name: "Norfolk Southern Rickenbacker Intermodal Terminal", detail: "The rail-to-truck container yard that opened in 2008, and the reason so many semis share SR-762 with local drivers." },
     { kind: "employer", name: "ODW Logistics campus", detail: "A group of large warehouses on Schieser Farms Road, where night-shift workers sometimes come back out to a car that will not start." },
     { kind: "school", name: "Hamilton Township High School", detail: "The Rangers' school on Rathmell Road, shared by Lockbourne, Obetz, Reese, Shadeville and the rest of the township." },
+    { kind: "park", name: "Magnolia Trail", detail: "A two-mile hike in two loops along the old canal towpath; if the car will not start when you get back, tell us which trailhead lot you used." },
+    { kind: "park", name: "Boot Jack Square", detail: "The village's smallest park, right in the center and used as its events board, which makes it an easy spot to describe when you call." },
+    { kind: "landmark", name: "Historical Hall", detail: "The restored village hall that Lockbourne rents out for gatherings; on event nights, nearby parking fills and the driver may load from the street." },
+    { kind: "landmark", name: "Lockbourne United Methodist Church", detail: "The village's Methodist congregation on Vause Street, a clear landmark if you are parked anywhere in the older blocks." },
     { kind: "park", name: "Lockbourne Veterans Park", detail: "Flags, memorial bricks and a gazebo; the Memorial Day parade closes nearby streets, so a tow that morning may need a longer way in." },
   ],
   faqs: [

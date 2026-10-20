@@ -18,6 +18,7 @@ export default {
     { name: "Fifth Avenue", note: "The northern boundary, a busy cross-town route with a bridge over the Olentangy." },
     { name: "Harrison Avenue and Neil Avenue", note: "The eastern side of the neighborhood, lined with parked cars and close to Victorian Village." },
     { name: "Third Avenue", note: "Crosses the Olentangy near Perry Street, with the river trail passing under the bridge." },
+    { name: "Quality Place", note: "A short street at one end of Harrison Park. On summer concert nights curb space around the park gets scarce, so the driver may stage on First Avenue instead." },
   ],
   local: [
     { kind: "park", name: "Wheeler Memorial Park", detail: "On Thurber Drive West, a block from Neil Avenue, with a large fenced off-leash dog area." },
@@ -26,6 +27,10 @@ export default {
     { kind: "landmark", name: "Fourth Avenue School", detail: "A 1904 school building that closed in the 1970s and now holds apartments for seniors." },
     { kind: "park", name: "Harrison West Park", detail: "The first park the neighborhood ever had, on the Fourth Avenue corner of Oregon Street; it has swings and a play area for small kids." },
     { kind: "medical", name: "Ohio State Wexner Medical Center", detail: "A short drive north via SR-315's King Avenue exit. We pick up patients' and visitors' cars that won't start there." },
+    { kind: "park", name: "Perry Street Park", detail: "The newest green in the neighborhood, at the corner of Third Avenue and Perry Street, used for kites and frisbee. A clear landmark to give if you stall nearby." },
+    { kind: "landmark", name: "Third Avenue Bridge", detail: "The Olentangy crossing a block west of Perry Street; the trail ducks under it, and the bridge approach is no place to wait, so pull onto a side street if you can." },
+    { kind: "park", name: "Olentangy Recreation Trail", detail: "The full name of the multi-use path along the river. If you parked to use the trail and the car will not start, tell us the nearest street that meets it." },
+    { kind: "landmark", name: "Near Northside Historic District", detail: "A district of about 70 blocks of homes, mostly built between 1870 and 1920, with Harrison West as its western part." },
   ],
   faqs: [
     { q: "My car broke down on SR-315 next to Harrison West. What should I do?", a: "Pull right, onto the widest bit of shoulder you can find, switch the flashers on and keep your belt fastened inside the car unless it feels unsafe to stay put. Call (614) 633-8163 and say whether you were northbound or southbound and which ramp you last passed, for example Goodale Street or King Avenue. SR-315 has short shoulders in places, so police may ask that the car be moved quickly. Highway pickups carry a $75 surcharge on our rate card." },

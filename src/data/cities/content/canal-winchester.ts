@@ -17,6 +17,9 @@ export default {
     { name: "Gender Road (SR-674)", note: "Canal Winchester's main shopping and dining road, where parking-lot lockouts and flat batteries outnumber everything else." },
     { name: "High Street and Waterloo Street", note: "The historic downtown blocks. Curb parking is tight, so the driver may stage the carrier around the corner before loading." },
     { name: "Bixby Road", note: "Under widening, with land held for a future US-33 interchange. Work zones move around, so give the nearest cross street when you call." },
+    { name: "Ashbrook Road", note: "Runs near the covered bridge and Washington Street. It is the road name to give us if your car stopped close to the bridge." },
+    { name: "Lithopolis Road", note: "A two-lane route heading south out of town toward Lithopolis; note the nearest driveway or crossroad, since some stretches have few landmarks." },
+    { name: "Winchester Pike", note: "The older road between Columbus and Canal Winchester, useful as a back way when US-33 is slowed by a crash." },
   ],
   local: [
     { kind: "landmark", name: "Bergstresser Covered Bridge", detail: "An 1887 covered bridge now open only to people on foot, so if you broke down near it, tell us the closest road rather than the bridge itself." },
@@ -26,6 +29,7 @@ export default {
     { kind: "school", name: "Canal Winchester High School", detail: "The district's single high school on Washington Street, whose student lot is the kind of place a weak battery gives out after a long practice." },
     { kind: "employer", name: "Canal Crossing Commerce Center", detail: "A big industrial development going up near US-33 and Gender Road, adding construction trucks to the interchange for now." },
     { kind: "shopping", name: "Gender Road retail corridor", detail: "Two power centers and a newer OhioHealth medical office building, which means wide lots and plenty of room to load a car." },
+    { kind: "landmark", name: "North High Street Historic District", detail: "The old canal-era core of town, with closely spaced storefronts where the carrier usually loads from a side street rather than the main block." },
   ],
   faqs: [
     { q: "How do your trucks get from Harrisburg Pike to Canal Winchester?", a: "Our drivers take I-270 east around the south side of Columbus and pick up the US-33 freeway heading southeast. The Gender Road or Diley Road exit then puts them in town. The yard is about 14.5 miles away in a straight line and a bit more by road, so the dispatcher works out a live arrival estimate from current traffic instead of quoting a fixed number." },

@@ -19,6 +19,9 @@ export default {
     { name: "Scottwood Road and Berwick Boulevard", note: "The old edges of the golf course; Scottwood also holds Berwick Alternative K-8, where school traffic fills the curbs twice a day." },
   ],
   local: [
+    { kind: "road", name: "Brookwood Road", detail: "Where Berwick began: in 1927 a stone house with gables became the first home built here, at the Brookwood and College Avenue corner. Curb parking is the norm on these older blocks, so tell us whether the car is in a driveway or on the street." },
+    { kind: "road", name: "Haddon Road", detail: "A residential street with Bliss Run passing behind the houses on one side. If the car is stuck in a back-yard garage, mention it so the driver brings extra cable for a winch-out." },
+    { kind: "landmark", name: "Redeemer Lutheran Church", detail: "A church on James Road where the Berwick Civic Association has held its monthly meetings. Its lot is a handy meeting point if your car stalls on James." },
     { kind: "park", name: "Berwick Park", detail: "Four acres of city green tucked among homes, where neighbors hold cultural and learning events." },
     { kind: "park", name: "Ambos Park", detail: "A small park on Kenwick Road taken over by the city in 2024 and named for Emil Ambos." },
     { kind: "school", name: "Berwick Alternative K-8", detail: "A Columbus City Schools building on Scottwood Road." },

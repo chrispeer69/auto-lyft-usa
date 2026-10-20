@@ -32,7 +32,7 @@ export default {
       heading: "Living with a temporary spare until the tire shop",
       paragraphs: [
         "A compact spare is built to get you somewhere, not to replace a tire for weeks. Most carry a 50 mph speed limit printed on the sidewall and are meant for a limited number of miles. They also sit a little lower than the other three tires, which some all-wheel-drive systems don't like for long. Use it to reach a tire shop, then get the original repaired or replaced.",
-        "If your trip involves I-270 at highway speed or a drive out to [Lancaster](/areas/lancaster-oh) or Marysville, think about whether a donut is the right way to get there. Sometimes a tow straight to the shop is the safer call, and the dispatcher will talk it through with you.",
+        "If your trip involves I-270 at highway speed or a drive out to [Lancaster](/areas/lancaster-oh) or Marysville, think about whether a donut is the right way to get there. Sometimes a tow straight to the shop is the safer call, and the dispatcher will talk it through with you. Our guide to [a flat on the interstate](/guides/flat-tire-on-the-interstate) covers what to do before the truck arrives.",
       ],
       bullets: [
         "Keep the speed at or under the limit printed on the spare.",

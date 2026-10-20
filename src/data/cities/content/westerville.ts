@@ -18,6 +18,9 @@ export default {
     { name: "Schrock Road", note: "An east-west route across the south side of the city that meets both Cleveland Avenue and State Street at busy signals." },
     { name: "Cleveland Avenue near St. Ann's", note: "Runs past the Mount Carmel hospital campus; visitor-lot battery calls along this stretch are common." },
     { name: "County Line Road", note: "Marks the Franklin-Delaware line through the north part of town, which is useful to know when police ask which county you are in." },
+    { name: "Atlas Avenue", note: "One of the newer Westar streets built alongside the recent roundabout work. Older phone maps may not show it yet, so give the company name on the building." },
+    { name: "Africa Road", note: "A two-lane road running north from the northeast edge of town, with long gaps between driveways; a nearby mailbox number or crossroad helps us find a car stopped on it." },
+    { name: "Maxtown Road", note: "An east-west road across the north end of town toward the Polaris area, with narrow shoulders on its older stretches." },
   ],
   local: [
     { kind: "college", name: "Otterbein University", detail: "The campus sits just west of Uptown, and students parked in permit lots should tell us which lot so the driver doesn't circle the block." },
@@ -28,6 +31,9 @@ export default {
     { kind: "medical", name: "Mount Carmel St. Ann's", detail: "A full hospital on South Cleveland Avenue whose garages and patient lots produce regular dead-battery and lockout requests." },
     { kind: "employer", name: "Westar business district", detail: "Corporate offices and distribution buildings clustered near I-71, where we pick up company cars and commuters' vehicles alike." },
     { kind: "school", name: "Westerville North, South and Central high schools", detail: "Three high schools in one district, each with big student lots that see winter no-starts after practice." },
+    { kind: "landmark", name: "Westerville Public Library", detail: "The library building that also holds the temperance museum. Its lot turns over all day, which leaves room for a carrier to pull in beside a car that won't start." },
+    { kind: "school", name: "Westerville South High School", detail: "The oldest of the three, opened in 1960 and now an IB school; if you call from its lot, name the door or field closest to your car." },
+    { kind: "employer", name: "Westar Park", detail: "Corporate sites the city has opened up for new buildings in the Westar district; while construction continues, tell the dispatcher which gate or entrance you used." },
   ],
   faqs: [
     { q: "How long is the drive from your yard to Westerville?", a: "It is one of the longer runs on our map. The yard sits on Harrisburg Pike in southwest Columbus, about 15 miles from Westerville in a straight line, and the road route goes past downtown on I-71 or around the outerbelt. Traffic on those highways decides the timing more than anything, so the dispatcher checks where each truck is and gives you a live estimate on the phone." },

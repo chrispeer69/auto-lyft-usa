@@ -18,6 +18,12 @@ export default {
     { name: "Gibson Road", note: "The site of a large annexation proposal; if building begins there, expect construction traffic." },
     { name: "Walker Pointe Drive and Adrian Court", note: "Newer streets on the south side where the village has raised concerns about cars lining the curb. Tell us if the street is lined with cars." },
     { name: "Canterbury Road", note: "Home of The Players Club at Foxfire, a quiet road where a car can be loaded without blocking traffic." },
+    { name: "Foxfire Boulevard", note: "Runs east of the old center through the Foxfire homes; with driveways close together, a note on which side of the street you are parked saves the driver a turnaround." },
+    { name: "Kenmore Boulevard", note: "One of the newer streets in the northeast growth area. Map apps sometimes lag behind fresh construction, so add a nearby cross street when you call." },
+    { name: "Commercial Point Parkway", note: "Carries the village name through the annexed northeast section, with room along the edge for a carrier to stop and tilt its deck." },
+    { name: "Durrett Road", note: "A rural road on the north side of the village in Scioto Township; it has no streetlights in places, so keep your hazards on while you wait." },
+    { name: "Congress Street and Cyrus Street", note: "Short blocks in the original grid near the municipal building, quiet enough that loading from the curb rarely holds anyone up." },
+    { name: "Welch Road", note: "A country road outside the old grid where a slide into the ditch is more likely than a fender-bender, so mention whether the car is still on the pavement." },
   ],
   local: [
     { kind: "landmark", name: "Commercial Point village center", detail: "Main, Front and East Scioto streets hold the shops and places to eat, Station House 81 among them, and the short blocks make pickups simple." },
@@ -26,6 +32,8 @@ export default {
     { kind: "school", name: "Teays Valley West Middle School", detail: "On Grove Run, part of the Teays Valley district that serves Commercial Point families." },
     { kind: "employer", name: "Rickenbacker Exchange at Commercial Point", detail: "A VanTrust logistics park begun in 2020 on more than 900 acres, whose employee lots are a regular source of no-start calls." },
     { kind: "landmark", name: "The Players Club at Foxfire", detail: "A family-run 18-hole course that opened in 1994; if the car won't start after a round, we can meet you in its lot." },
+    { kind: "landmark", name: "Faith Baptist Church", detail: "The village lists this congregation on Welch Road; after a service, its lot is an open, level place for a flatbed to load a car that won't start." },
+    { kind: "landmark", name: "Encounter Church", detail: "Meets on West Scioto Street a few doors from the municipal building, so Sunday parking along that block can be tight." },
   ],
   faqs: [
     { q: "How far is Commercial Point from your Columbus yard?", a: "In a straight line, about 9.4 miles south. By road our drivers run down through Grove City and out toward the county line, so the actual drive is a bit longer. Because the route crosses busy stretches near I-71, the dispatcher gives a live estimate based on traffic and on which truck is closest." },

@@ -18,6 +18,10 @@ export default {
     { name: "SR-762", note: "Begins at a signal on US-62 just south of the village limits and heads east toward Commercial Point." },
     { name: "Harrisburg-Georgesville Road", note: "A county road through Darbydale, past the Osprey Lake entrance to Battelle Darby Creek Metro Park." },
     { name: "High Street", note: "The village's main street, with the offices, the library and the community center a short walk apart." },
+    { name: "Chenoweth Street", note: "Named for the settler's son who had the village surveyed in 1836, and set among the older eastern blocks where curbside loading is simple." },
+    { name: "Lincoln Street", note: "A short street close to Chenoweth in the original part of town; traffic is light, so the driver can usually pull up right beside your car." },
+    { name: "Springlawn Avenue and Hillside Avenue", note: "Residential streets toward the western village limits. Driveways are the easiest place for us to load, so tell us if the car is parked on the street instead." },
+    { name: "Columbus Drive", note: "A residential street in the southwest corner of the village; say the full street name so the dispatcher does not take it for a general direction toward the city." },
   ],
   local: [
     { kind: "landmark", name: "Harrisburg Village Hall", detail: "Village offices at 1100 High Street, an easy meeting point if you are not sure of a house number." },

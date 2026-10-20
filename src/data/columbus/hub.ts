@@ -2,7 +2,7 @@ import type { HubContent } from "./index";
 
 export default {
   description:
-    "Columbus towing from a southwest-side yard: flatbed tows, jumps and lockouts in 26 neighborhoods, from the Hilltop to Northland. (614) 633-8163.",
+    "Columbus towing from a southwest-side yard: flatbed tows, jumps and lockouts in every neighborhood, from the Hilltop to Northland. (614) 633-8163.",
   h1: "Flatbed Towing in Every Corner of Columbus",
   lede:
     "Our four flatbeds leave from Harrisburg Pike on the southwest side. Choose your neighborhood for the streets, landmarks and questions we hear there.",

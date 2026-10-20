@@ -17,6 +17,9 @@ export default {
     { name: "West Fifth Avenue", note: "The northern edge of the district, a busy east-west route between SR-315 and I-71." },
     { name: "Harrison Avenue", note: "The western edge where Harrison West begins, with tight residential parking." },
     { name: "Park Street", note: "A narrow street on the Short North side of the Village. Restaurant and bar traffic spills onto it at night, and loading space is scarce." },
+    { name: "Buttles Avenue", note: "Runs along the north side of Goodale Park. During the Community Festival (ComFest) both curbs fill up, so a stalled car here may be loaded from the end of the block." },
+    { name: "West Fourth Avenue", note: "A residential cross street with an 1890s church at its east end. Cars park tight to both curbs, so give the driver the nearest corner with Neil Avenue or Park Street." },
+    { name: "North Park Street", note: "The northern run of Park Street, where a hospital stood until the 1960s. Curb space is hard to find after dark, so a side lot or alley is often the better place to load." },
   ],
   local: [
     { kind: "park", name: "Goodale Park", detail: "A 32-acre park given to the city in 1851, with a pond, gazebo and an elephant fountain that recalls the Sells Brothers Circus." },
@@ -25,6 +28,10 @@ export default {
     { kind: "school", name: "Hubbard Elementary", detail: "The neighborhood's Columbus City Schools elementary on West Hubbard Avenue; drop-off and pickup times crowd the nearby blocks." },
     { kind: "landmark", name: "Thompson Community Center", detail: "City recreation center on Dennison Avenue with a boxing gym, ceramics studio and community garden." },
     { kind: "college", name: "The Ohio State University", detail: "Campus begins a short way north of Fifth Avenue, straight up Neil Avenue. See our [Ohio State campus page](/local/ohio-state-campus)." },
+    { kind: "landmark", name: "Victorian Village Historic District", detail: "Created by the city in 1973 and placed on the National Register in 1980, it covers most of the streets between Goodale and Fifth." },
+    { kind: "landmark", name: "Plymouth Congregational Church", detail: "A church from 1895 on West Fourth Avenue, remodeled heavily in the 1910s." },
+    { kind: "landmark", name: "Grace United Brethren Church", detail: "A congregation on West Fifth Avenue whose first church went up in 1894 and was replaced on the same lot in 1915." },
+    { kind: "landmark", name: "White Cross Hospital site", detail: "White Cross Hospital, which opened as Protestant Hospital, stood on North Park Street until it closed in 1961; the building came down in 1970." },
   ],
   faqs: [
     { q: "My car is parked at the curb under the trees with no driveway. How do you load it?", a: "The driver pulls the carrier as close as traffic allows, tilts the bed, and winches your car straight up onto it. On streets where cars are parked nose to tail, the driver may first pull the car forward or backward a few feet to get a clean angle. Low branches are watched closely when the bed rises. If your car sits in a spot between two others, it helps to leave the keys out and the parking brake off." },
