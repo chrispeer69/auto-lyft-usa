@@ -28,6 +28,10 @@ export default {
     { kind: "landmark", name: "Delaware Municipal Airport (Jim Moore Field)", detail: "The city airport southwest of downtown, where we pick up cars left by pilots and hangar tenants." },
     { kind: "school", name: "Rutherford B. Hayes High School", detail: "On Euclid Avenue, with a Pacers mascot that honors the Little Brown Jug." },
     { kind: "park", name: "Delaware State Park", detail: "North of the city on the lake; boat-ramp lots and grassy overflow areas are where we tend to winch out stuck vehicles." },
+    { kind: "college", name: "Selby Stadium", detail: "Ohio Wesleyan's outdoor stadium. Home games bring heavy foot traffic and full side streets, so give the driver the lot or entrance you used." },
+    { kind: "college", name: "Branch Rickey Arena", detail: "The university's indoor arena, named for the baseball executive who studied at Ohio Wesleyan. Winter games end with plenty of cold engines that need a jump." },
+    { kind: "park", name: "Mingo Park", detail: "A city park with a public swimming pool. On summer afternoons its lot is busy, but it still makes an easy meeting spot for a carrier." },
+    { kind: "landmark", name: "Stratford Ecological Center", detail: "A working farm and nature preserve that hosts school groups and visitors. If your car is parked on grass or gravel, mention it so the driver knows whether a winch may be needed." },
   ],
   faqs: [
     { q: "Do you really send a truck from southwest Columbus all the way to Delaware?", a: "Yes. Delaware is near the outer limit of the area we cover regularly, but it is inside it. A driver usually takes I-71 to the US 36 / SR 37 exit or heads straight up US 23, depending on where your car is. Because the trip is long, the dispatcher gives you a live estimate and tells you right away if a long wait is likely." },

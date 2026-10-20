@@ -59,5 +59,5 @@ export default {
       a: "If your car has a transmission dipstick, checking it the way the owner's manual describes is a quick way to spot low or burnt fluid. Many newer cars have sealed units with no dipstick, and those need a shop to check the level correctly. Low fluid almost always means a leak, so topping it off is only a short-term step before an inspection.",
     },
   ],
-  related: ["engine-diagnostics", "electrical-repair", "scheduled-maintenance"],
+  related: ["engine-diagnostics", "electrical-repair", "oil-change"],
 } satisfies Omit<RepairService, "slug" | "name">;

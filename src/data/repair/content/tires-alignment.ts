@@ -59,5 +59,5 @@ export default {
       a: "Yes. The driver winches the car onto the flatbed, so a flat or even a tire torn off the rim does not stop it from being loaded. A badly bent wheel may roll unevenly, which just means loading slowly. Once it is on the deck and strapped down, the damaged wheel never touches the road again until the shop. Let the dispatcher know which corner is damaged and where the car is sitting.",
     },
   ],
-  related: ["suspension-steering", "brake-repair", "scheduled-maintenance"],
+  related: ["suspension-steering", "brake-repair", "pre-purchase-inspection"],
 } satisfies Omit<RepairService, "slug" | "name">;

@@ -27,6 +27,11 @@ export default {
     { kind: "employer", name: "London and Madison Correctional Institutions", detail: "Two state prisons on SR-56 west of town; our drivers will not enter secure areas, so meet us in the visitor parking lot." },
     { kind: "park", name: "Madison Lake State Park", detail: "East of town, with a small lake and boat ramp; lots there are fine for a flatbed, but cell service and directions help." },
     { kind: "landmark", name: "Prairie Grass Trail London trailhead", detail: "The rail-trail trailhead on West High Street, where cyclists sometimes leave cars that will not start when they return." },
+    { kind: "landmark", name: "London Public Library", detail: "The downtown branch on East First Street. Tell us whether you are parked at the curb or in a lot so the truck can line up without holding up uptown traffic." },
+    { kind: "landmark", name: "Madison County Airport", detail: "A small general-aviation field north of town with a single runway. Give us the parking area or hangar row; our drivers stay out of any area closed to the public." },
+    { kind: "park", name: "Cowling Park", detail: "Home of Noah's Playground, built so children of all abilities can play. Families who return to a car with a dead battery can have it jumped for our $75 roadside rate." },
+    { kind: "landmark", name: "St. Patrick Church", detail: "London's Catholic parish on South Union Street. If the car will not start after Mass, say which side of the church you parked on." },
+    { kind: "landmark", name: "Madison County Historical Society Museum", detail: "The museum keeps settler Jonathan Alder's log cabin on its grounds and opens only a few afternoons a week, so its lot is usually quiet and easy for a flatbed to use." },
   ],
   faqs: [
     { q: "How long does it take a truck to reach London from your Columbus yard?", a: "As the crow flies London sits some twenty miles from our gate; on the pavement it is farther via I-70 and US-42. Traffic, weather and what our trucks are already doing all affect timing, so our dispatcher checks the board and quotes a live arrival window on the phone instead of a stock number." },

@@ -18,6 +18,9 @@ export default {
     { name: "Havens Road", note: "One of the two main legs of the township scenic byway, wooded and dark at night, with few safe places to pull over." },
     { name: "East Broad Street", note: "Runs along the southern side of the community and is the route our trucks usually take in from the I-270 outerbelt." },
     { name: "Waggoner Road", note: "A county-maintained north-south road where rural driveways and field entrances make it hard to spot a stranded car without a landmark." },
+    { name: "Crooked Mile Road", note: "A wooded part of the scenic byway stretches east as far as this road. It is dark and quiet after sunset, so a mailbox number or the last crossroad you passed helps us find you." },
+    { name: "Headley Road", note: "Gahanna and the township share upkeep on parts of it, and that patchwork can trip up map apps. Read us a house number or the name of the closest side street." },
+    { name: "Babbitt Road", note: "Maintained by the Franklin County Engineer although it lies inside the township. It is a rural run, and a car that drops off the edge here often needs winching before it can be loaded." },
   ],
   local: [
     { kind: "park", name: "Jefferson Community Park", detail: "The township's largest park on Clark State Road; with three shelter houses it fills up on weekends, so describe where you parked near the pond or shelters." },
@@ -27,6 +30,7 @@ export default {
     { kind: "school", name: "Gahanna-Jefferson Public Schools", detail: "Most Blacklick households fall in this district, so morning and afternoon bus traffic shapes how quickly a driver can move through the township." },
     { kind: "school", name: "Licking Heights West Elementary", detail: "This school and the township use Jefferson Run Park together, a reminder that part of Blacklick sends children to the Licking Heights district to the east." },
     { kind: "landmark", name: "Jefferson Township Scenic Byway", detail: "Fifteen miles of designated byway roads where tree cover and tight curves turn a small slide-off into a winch job." },
+    { kind: "landmark", name: "Rocky Fork Creek", detail: "On the west side of the township the creek has cut a gorge you can see from the Clark State Road bridge. If a car goes down that bank, stay up at the road and let the driver handle the recovery." },
   ],
   faqs: [
     { q: "What route does a truck take out to Blacklick?", a: "Blacklick is about 14 miles from our Harrisburg Pike lot in a straight line, but on the road it is a cross-metro trip. Drivers usually take I-70 east to the I-270 outerbelt, go north and then come out East Broad Street toward Reynoldsburg-New Albany Road. Since traffic changes so much by the hour, the dispatcher gives you a live estimate rather than a fixed time." },

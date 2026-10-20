@@ -18,6 +18,7 @@ export default {
     { name: "College Avenue", note: "Borders Capital University's campus, where student lots and game-day parking fill the side streets." },
     { name: "Livingston Avenue", note: "Bexley's southern edge, slated for transit improvements, with commercial lots where we pick up stalled cars." },
     { name: "East Broad Street", note: "Marks the north side of town near the Governor's Residence and Jeffrey Park, with fast traffic and few places to stop." },
+    { name: "Pleasant Ridge Avenue", note: "Capital closed the block of Mound Street between this avenue and College Avenue and made it a walkway, so a truck cannot cut across campus there. Name the nearest open cross street and we will come around." },
   ],
   local: [
     { kind: "college", name: "Capital University", detail: "The campus spreads across south Bexley, and its lots generate a steady stream of student jump starts and lockouts during the semester." },
@@ -28,6 +29,9 @@ export default {
     { kind: "school", name: "St. Charles Preparatory School", detail: "A Catholic boys' school along Alum Creek whose busy arrival hour can slow access to nearby streets." },
     { kind: "school", name: "Columbus School for Girls", detail: "Its campus on South Drexel Avenue sees heavy drop-off traffic, so a morning pickup nearby may need a few extra minutes." },
     { kind: "park", name: "Schneider Park", detail: "A small park at the end of Astor Avenue with a splash pad and dog area, reached by a dead-end street where the truck must back out." },
+    { kind: "park", name: "Havenwood Park", detail: "An oval lawn north of Charles Street where the summer Jazz in the Park concerts bring out folding chairs and fill every nearby curb. Tell us which side of the oval you are parked on." },
+    { kind: "landmark", name: "Bexley Public Library", detail: "The library building stands on ground leased from Capital University, so its visitors and students end up hunting for the same spaces. Say whether you are in a lot or on the street." },
+    { kind: "college", name: "Clowson Field", detail: "Where Capital's baseball and softball teams play. On a game afternoon, naming the field gets our driver to you faster than a house number on a crowded block." },
   ],
   faqs: [
     { q: "Why is Bexley one of your faster east-side towns?", a: "Our yard on Harrisburg Pike is only about seven miles west of Bexley in a straight line. The driver gets on I-70 east quickly, passes the downtown interchanges and exits at Main Street right on the edge of Bexley. A slowdown downtown can still stretch that trip, which is why you get an up-to-the-minute estimate on the phone rather than a promise." },

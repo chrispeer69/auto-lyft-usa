@@ -59,5 +59,5 @@ export default {
       a: "Yes. Tell the dispatcher what the car is doing and roughly where you would like it serviced, and the dispatcher can name a nearby independent partner with diagnostic equipment. Those shops are separate businesses; they set their own prices, write their own estimates and answer for their own work. You are never obligated to use them, and you can redirect the car any time before it is loaded.",
     },
   ],
-  related: ["electrical-repair", "cooling-system-repair", "scheduled-maintenance"],
+  related: ["electrical-repair", "cooling-system-repair", "transmission-repair"],
 } satisfies Omit<RepairService, "slug" | "name">;

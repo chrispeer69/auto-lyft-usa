@@ -61,5 +61,5 @@ export default {
       a: "A tiny change over months can be evaporation, but a sealed cooling system should hold its level. Needing to top off every week or two means a leak somewhere, either external or internal. Small leaks grow, and an internal one can contaminate the engine oil. Have a shop pressure-test the system before it becomes an overheat on the highway.",
     },
   ],
-  related: ["ac-heating-repair", "engine-diagnostics", "scheduled-maintenance"],
+  related: ["ac-heating-repair", "engine-diagnostics", "oil-change"],
 } satisfies Omit<RepairService, "slug" | "name">;

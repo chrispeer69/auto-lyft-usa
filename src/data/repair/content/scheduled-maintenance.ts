@@ -60,5 +60,5 @@ export default {
       a: "Many owner's manuals list a severe-service schedule for short trips, stop-and-go traffic, temperature extremes and dusty or salted roads. Plenty of Central Ohio driving fits that description, especially in winter. Following the shorter intervals for oil, filters and fluids costs a little more up front and often saves money over the life of the car. Your shop can tell you which schedule matches how you drive.",
     },
   ],
-  related: ["oil-change", "brake-repair", "cooling-system-repair"],
+  related: ["oil-change", "brake-repair", "transmission-repair"],
 } satisfies Omit<RepairService, "slug" | "name">;

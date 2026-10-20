@@ -17,6 +17,8 @@ export default {
     { name: "City Park Avenue and Jaeger Street", note: "Frame Schiller Park on two sides. Weekend events and summer performances in the park fill these curbs." },
     { name: "Kossuth, Mohawk and Sycamore streets", note: "Tight residential and restaurant blocks, some still in brick. Expect the driver to ask about parked cars and low branches before pulling in." },
     { name: "The alleys behind the houses", note: "Many cars live in small garages off narrow back lanes. We often winch a car out of the alley to the street before loading." },
+    { name: "Pearl Street", note: "The narrow street along the village's western edge. With cars on the curb there is little room for a flatbed to pass, so the driver may stage around the corner and walk over to you." },
+    { name: "Nursery Lane", note: "Forms the southern limit of the historic district, well away from the freeway ramps. Let us know if you are near it so the driver can plan the approach from the south." },
   ],
   local: [
     { kind: "park", name: "Schiller Park", detail: "The neighborhood's big park, with a Schiller statue from 1891 and the Umbrella Girl sculpture; its edge streets are where many visitors park." },
@@ -25,6 +27,8 @@ export default {
     { kind: "shopping", name: "Schmidt's Sausage Haus", detail: "A long-time German restaurant on Kossuth Street, busiest on weekend evenings." },
     { kind: "park", name: "Frank Fetch Park", detail: "A small park named for the man who started the German Village Society and the push to restore the area." },
     { kind: "school", name: "Stewart Alternative Elementary", detail: "A Columbus City Schools building on Stewart Avenue that dates to 1874 and was rebuilt after a 2010 fire." },
+    { kind: "landmark", name: "Schiller Community Center", detail: "The city rec center on Jaeger Street, with a gym, a ceramics room and a pond beside it. If your car quits after a class or game, tell us if it is in the center's lot or out on the street." },
+    { kind: "landmark", name: "Livingston United Methodist Church", detail: "A congregation begun in the 1840s for German newcomers, which moved into its current building after highway construction claimed its older church. Service times crowd the curbs nearby." },
   ],
   faqs: [
     { q: "Will a flatbed damage the brick streets in German Village?", a: "We take care not to. Our carriers are light-duty, and drivers avoid spinning tires, dragging chains or setting wheel skates down hard on the brick. When we need to winch a car, we keep the cable off the pavement where we can and use blocks under any equipment that touches the street. If you are worried about a particular spot, such as a loose patch near your house, tell the driver before loading begins." },

@@ -60,5 +60,5 @@ export default {
       a: "Salt and slush coat brake lines, caliper brackets and rotor edges all winter, and over a few seasons that turns into rust. Steel lines can corrode until they leak, and rusted slide pins make calipers stick. Rinsing the underside after storms helps, and many drivers have the brakes checked each spring. A shop can tell you whether lines or hardware are getting thin before they fail.",
     },
   ],
-  related: ["suspension-steering", "tires-alignment", "scheduled-maintenance"],
+  related: ["suspension-steering", "tires-alignment", "pre-purchase-inspection"],
 } satisfies Omit<RepairService, "slug" | "name">;
