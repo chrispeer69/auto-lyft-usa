@@ -4,7 +4,7 @@ export const HOME = {
   title: "Towing Columbus, Ohio & Surrounding Suburbs",
   description:
     "Need a tow truck in Columbus, OH? Auto Lyft USA sends a flatbed day or night for tows, jump starts, lockouts and EV transport. Call (614) 633-8163.",
-  h1: "Tow Truck in Columbus, Ohio — Flatbed Towing Day or Night",
+  h1: "Towing & Roadside Services in Columbus, Ohio & All of the Surrounding Suburbs, 24/7",
   lede:
     "One call puts a flatbed on the road from our Harrisburg Pike yard to anywhere in Columbus or its suburbs. You get a price before the truck leaves and a driver who loads your car so not one tire touches the pavement on the way.",
   intro: [
