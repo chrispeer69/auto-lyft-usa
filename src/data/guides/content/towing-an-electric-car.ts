@@ -11,7 +11,7 @@ export default {
     {
       heading: "Why an EV is a different kind of tow",
       paragraphs: [
-        "More electric cars show up on Central Ohio roads every year, from commuter hatchbacks in Dublin driveways to heavy electric pickups on job sites near New Albany. Most owners never think about a tow until the dash goes dark, and the habits that worked for a gas car do not all carry over.",
+        "More electric cars show up on Central Ohio roads every year, from commuter hatchbacks in Dublin driveways to heavy electric pickups on job sites near New Albany. Most owners never think about a tow until the dash goes dark, and the habits that worked for a gas car do not all carry over when the goal is to move an EV safely.",
         "The core issue is the drive motor. In most EVs the motor is connected to the wheels through a fixed reduction gear, with no true neutral that disconnects it the way a manual gearbox can. When those wheels turn, the motor turns too, and a spinning motor acts as a generator. Pulling a car on its drive wheels can push current back toward electronics that are not expecting it, build heat in components with no cooling running, and wear parts that were never meant to spin with the car switched off. That is why many EV makers tell owners the car should travel with every wheel lifted clear of the pavement.",
         "Weight is the second difference. A battery pack adds a lot of mass low in the chassis, and the pack itself often runs nearly the full length of the floor. A carrier needs a deck and winch rated for that weight, and the operator needs to know where not to put a strap or a lifting point.",
       ],

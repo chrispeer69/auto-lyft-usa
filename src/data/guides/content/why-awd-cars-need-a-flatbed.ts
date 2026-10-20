@@ -11,7 +11,7 @@ export default {
     {
       heading: "The short answer",
       paragraphs: [
-        "An all-wheel-drive car sends power to both axles through a set of parts that keeps the front and rear wheels linked. When a tow truck lifts one end and lets the other end roll down the road, one pair of wheels is spinning at highway speed while the other pair is standing still. The drivetrain tries to reconcile that difference the whole trip, with the engine off and nothing pumping oil to the parts doing the work.",
+        "All-wheel-drive cars send power to both axles through a set of parts that keeps the front and rear wheels linked, which is why towing them calls for a flatbed. When a tow truck lifts one end and lets the other end roll down the road, one pair of wheels is spinning at highway speed while the other pair is standing still. The drivetrain tries to reconcile that difference the whole trip, with the engine off and nothing pumping oil to the parts doing the work.",
         "A flatbed avoids the problem completely because none of the wheels turn. That is why so many owner's manuals for AWD cars, crossovers and SUVs tell you to transport the vehicle with all four wheels off the ground. Here in Central Ohio, where a large share of the crossovers in any Polaris or Easton parking lot are AWD, that advice applies to a lot of drivers who may not realize their car has it.",
       ],
     },

@@ -11,7 +11,7 @@ export default {
     {
       heading: "First, make sure it was towed and not stolen",
       paragraphs: [
-        "Walk the lot once before you assume anything. In big apartment complexes and shopping centers it is easy to misremember the row, especially after dark. Then look for the signs posted at the entrances. In Ohio, a property owner who has unauthorized cars removed generally has to post visible signage saying so, and those signs normally name the towing company and give a phone number.",
+        "Before you decide the car was towed from a private lot, walk the rows once. In big apartment complexes and shopping centers it is easy to misremember the row, especially after dark. Then look for the signs posted at the entrances. In Ohio, a property owner who has unauthorized cars removed generally has to post visible signage saying so, and those signs normally name the towing company and give a phone number.",
         "Ask a building manager, a store employee or a security guard too. Staff often know when a tow truck came through and which company the property uses, and that can save you a round of phone calls on a night when the sign is hard to read or partly hidden by snow.",
         "If you find a sign, call that number first. If you cannot find one, call the police non-emergency line for the city you are in. Ohio law generally requires the property owner or towing company to notify local police when a car is removed from private property, so the department can usually tell you whether your vehicle was reported as towed and where it went. If the police have no record, you may be dealing with a theft, and they can take a report.",
       ],

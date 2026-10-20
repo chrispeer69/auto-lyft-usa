@@ -11,7 +11,7 @@ export default {
     {
       heading: "Pack for the winter we actually get",
       paragraphs: [
-        "Columbus does not usually get buried the way the snowbelt east of Cleveland does. What it does get is a temperature that swings back and forth across freezing, which turns wet roads into black ice overnight, glazes windshields with freezing rain, and leaves slush that refreezes into ruts on side streets. Overpasses and bridges on I-270 and I-70 ice up before the pavement around them.",
+        "In a Central Ohio winter, Columbus does not usually get buried the way the snowbelt east of Cleveland does. What it does get is a temperature that swings back and forth across freezing, which turns wet roads into black ice overnight, glazes windshields with freezing rain, and leaves slush that refreezes into ruts on side streets. Overpasses and bridges on I-270 and I-70 ice up before the pavement around them.",
         "That pattern shapes what is worth carrying. You are less likely to be snowed in for a day on a rural road and more likely to slide into a median, sit in a long backup after a crash, or return from work to a car that will not crank. A good kit covers warmth, traction, power and being seen. Build it in a plastic tote that lives in the trunk from November through March.",
         "Keep the tote light enough to lift with one hand and organized so the things you need first sit on top. If you share the car with a partner or a teenage driver, show them what is inside and how each item works. A jump pack nobody knows how to use is just extra weight in the trunk.",
       ],

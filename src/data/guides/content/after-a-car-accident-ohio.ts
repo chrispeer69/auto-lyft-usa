@@ -11,7 +11,7 @@ export default {
     {
       heading: "Minute one: people before cars",
       paragraphs: [
-        "Shock does strange things to judgment, so it helps to have an order of operations already in your head. The first job is the people. Check yourself, then your passengers, then the other driver. Anyone with neck or back pain, confusion, or trouble breathing should stay still, and that means calling 911 right away.",
+        "Shock after a car accident does strange things to judgment, so it helps to have the first steps already in your head. The first job is the people. Check yourself, then your passengers, then the other driver. Anyone with neck or back pain, confusion, or trouble breathing should stay still, and that means calling 911 right away.",
         "Next, think about traffic. On a busy road such as Broad Street, Morse Road or any stretch of I-270, a second collision is a real danger. If the cars can be driven and nobody is hurt, move them out of the travel lanes to the shoulder or a nearby lot. If a car cannot move, turn on the hazard lights, and if it is safe to get out, stand well away from the vehicles, behind a guardrail when one is available. Do not stand between two damaged cars.",
       ],
     },

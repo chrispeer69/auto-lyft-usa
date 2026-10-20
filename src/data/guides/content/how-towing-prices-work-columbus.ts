@@ -11,7 +11,7 @@ export default {
     {
       heading: "Why we publish the arithmetic",
       paragraphs: [
-        "Most people only learn how towing is priced while standing on a shoulder, tired and in a hurry, which is the worst possible moment to evaluate a quote. We would rather you understand the structure ahead of time. Every figure in this article comes straight from the rate card on our [rates page](/rates), and the same numbers drive our [online estimate tool](/estimate).",
+        "Most people only learn how Columbus towing prices are built while standing on a shoulder, tired and in a hurry, which is the worst possible moment to evaluate a quote. We would rather you understand the structure ahead of time. Every figure in this article comes straight from the rate card on our [rates page](/rates), and the same numbers drive our [online estimate tool](/estimate).",
         "A light-duty tow from Auto Lyft USA is built from three base charges, then any surcharges that apply, then Ohio sales tax for the county where we pick the car up. That is the whole recipe. The examples below are hypothetical, chosen to show how each piece behaves, but the math is exactly what you would see on an invoice.",
       ],
     },

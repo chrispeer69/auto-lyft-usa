@@ -11,7 +11,7 @@ export default {
     {
       heading: "First, get the car somewhere better",
       paragraphs: [
-        "When a tire lets go at highway speed, the car will pull toward the flat side and you may feel a heavy vibration or hear flapping rubber. Grip the wheel, ease off the gas and avoid hard braking until the car is under control. Signal and move right.",
+        "When a tire lets go at interstate speed, the car will pull toward the flat side and you may feel a heavy vibration or hear flapping rubber. Grip the wheel, ease off the gas and avoid hard braking until the car is under control. Signal and move right.",
         "Where you stop matters more than how quickly you stop. A wide right shoulder is better than a narrow one, an exit ramp is better than a shoulder, and a gas station or parking lot is best of all. Driving a short distance on a flat at low speed with hazards on will likely ruin the tire, which is often ruined already, and it can damage the wheel. That trade is usually worth making if it gets you off the interstate. Use judgment: if the car is hard to control, stop sooner.",
         "Avoid the left shoulder if you possibly can. On many stretches of I-270 and I-71, it is narrow and sits right against fast lanes and a concrete barrier, with no room to work and no easy way to get back across traffic.",
       ],
