@@ -106,7 +106,7 @@ const indexable = pages.filter((p) => !p.noindex).sort((a, b) => a.path.localeCo
 const lastmodFor = (path) => LASTMOD.paths[path] ?? Object.entries(LASTMOD.prefixes ?? {}).find(([pre]) => path.startsWith(pre))?.[1] ?? LASTMOD.default;
 const priorityFor = (path) => {
   if (path === "/") return "1.0";
-  if (["/towing", "/areas", "/rates", "/areas/columbus-oh"].includes(path)) return "0.9";
+  if (["/towing", "/areas", "/rates", "/areas/columbus-oh", "/about"].includes(path)) return "0.9";
   if (/^\/(towing|areas)\//.test(path)) return "0.8";
   if (/^\/(local|repair)\//.test(path)) return "0.7";
   if (/^\/guides\//.test(path)) return "0.6";
