@@ -1,12 +1,12 @@
 import type { Faq } from "./types";
 
 export const HOME = {
-  title: "Columbus Tow Truck & Flatbed Towing 24/7",
+  title: "Towing Columbus, Ohio & Surrounding Suburbs",
   description:
     "Need a tow truck in Columbus, OH? Auto Lyft USA sends a flatbed day or night for tows, jump starts, lockouts and EV transport. Call (614) 633-8163.",
   h1: "Tow Truck in Columbus, Ohio — Flatbed Towing Day or Night",
   lede:
-    "One call puts a flatbed on the road from our Harrisburg Pike yard. You get a price before the truck leaves and a driver who loads your car so not one tire touches the pavement on the way.",
+    "One call puts a flatbed on the road from our Harrisburg Pike yard to anywhere in Columbus or its suburbs. You get a price before the truck leaves and a driver who loads your car so not one tire touches the pavement on the way.",
   intro: [
     "Auto Lyft USA is a Columbus towing company with one simple rule: every tow rides on a flatbed. When you call for a tow truck in Columbus, the dispatcher asks where you are, what you drive and where it needs to go, then quotes the job before a driver is assigned. No membership, no app to download, no surprise line items when the truck arrives.",
     "Our yard sits on Harrisburg Pike on the southwest side, a few minutes from I-70, I-71 and the I-270 outerbelt. From there the trucks cover Franklin County and the towns around it — from Delaware and Sunbury in the north to Lancaster in the southeast and London to the west.",
