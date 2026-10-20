@@ -18,6 +18,7 @@ import {
   type Node,
 } from "../lib/schema";
 import type { Faq } from "../data/types";
+import LASTMOD from "../data/lastmod.json";
 
 interface Props {
   /** Page part of the title; the brand suffix is added unless `fullTitle` is set. */
@@ -59,6 +60,11 @@ const {
   bare = false,
 } = Astro.props;
 
+// Every page states when it last changed (same git-based date as the sitemap).
+const lastmod: Record<string, string> = LASTMOD.paths;
+const prefixes: Record<string, string> = (LASTMOD as { prefixes?: Record<string, string> }).prefixes ?? {};
+const modified = dateModified ?? lastmod[path] ?? Object.entries(prefixes).find(([pre]) => path.startsWith(pre))?.[1] ?? LASTMOD.default;
+
 const docTitle = fullTitle ? title : `${title}${TITLE_SUFFIX}`;
 const canonical = abs(path);
 const allZips = [...new Set([...COLUMBUS_ZIPS, ...CITY_FACTS.flatMap((c) => c.zips)])].sort();
@@ -82,7 +88,7 @@ if (!notFound) {
       hasCrumbs: crumbs.length > 0,
       image: ogImage,
       datePublished,
-      dateModified,
+      dateModified: modified,
     }),
   );
   if (crumbs.length) graph.push(breadcrumbNode(path, crumbs));
