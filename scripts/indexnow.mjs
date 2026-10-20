@@ -6,7 +6,7 @@
 */
 import { readFileSync } from "node:fs";
 const KEY = "bfd1e370ded6e766059fd039d6967140";
-const HOST = "autolyftusa.online";
+const HOST = "www.autolyftusa.online";
 const xml = readFileSync("dist/sitemap.xml", "utf8");
 const all = [...xml.matchAll(/<loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)].map((m) => ({ url: m[1], lastmod: m[2] }));
 const cutoff = Date.now() - 3 * 864e5;
