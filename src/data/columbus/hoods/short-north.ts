@@ -17,6 +17,8 @@ export default {
     { name: "Goodale Street", note: "The south edge of the district and the way our trucks often arrive after leaving SR-315 at the Goodale connector." },
     { name: "Fifth Avenue", note: "Marks the north end of the arches near the Garden Theater and leads east to I-71 and west toward SR-315." },
     { name: "Side streets: Russell, Lincoln, Hubbard, Buttles", note: "Narrow brick-lined blocks with permit sections and resident parking where lockouts and no-starts are common." },
+    { name: "Wall Street, Bollinger Place and West Greenwood Avenue", note: "Mural-lined service lanes behind the High Street storefronts. Handy for loading if a delivery van isn't already parked there." },
+    { name: "Warren Street and Second to Third Avenue", note: "The quieter north half of the strip, where curb space opens up a little and a carrier can usually pull in beside the car." },
   ],
   local: [
     { kind: "landmark", name: "The High Street arches", detail: "Seventeen lit steel arches put up in 2002, paid for by the district's special improvement district." },

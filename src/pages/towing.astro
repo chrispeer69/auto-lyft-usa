@@ -27,7 +27,7 @@ const schema = [itemListNode(path, SERVICES.map((s) => ({ name: s.name, path: se
   schema={schema}
   faqs={faqs}
 >
-  <Hero image={PHOTOS.highway.src} eyebrow="Services" h1="Every Towing and Roadside Service We Run in Columbus" lede="Pick the one that fits, or just call and describe the problem. The dispatcher matches the job to the right driver and prices it before anyone rolls." />
+  <Hero image={PHOTOS.highway} eyebrow="Services" h1="Every Towing and Roadside Service We Run in Columbus" lede="Pick the one that fits, or just call and describe the problem. The dispatcher matches the job to the right driver and prices it before anyone rolls." />
   {SERVICE_GROUPS.map((g, i) => (
     <section class={`band${i % 2 ? " alt" : ""}`} aria-labelledby={`g-${g.id}`}>
       <div class="wrap">

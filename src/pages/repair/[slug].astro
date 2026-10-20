@@ -28,7 +28,7 @@ const schema = [
 const related = r.related.map((s) => repairBySlug(s)).filter((x) => x !== undefined);
 ---
 <Base title={r.title} description={r.description} path={path} crumbs={[{ name: "Repair help", path: "/repair" }, { name: r.name, path }]} schema={schema} faqs={r.faqs}>
-  <Hero image={PHOTOS.accident.src} eyebrow="Tow-in repair help" h1={r.h1} lede={r.lede} secondary={{ href: "/repair", label: "How repair help works" }} />
+  <Hero image={PHOTOS.accident} eyebrow="Tow-in repair help" h1={r.h1} lede={r.lede} secondary={{ href: "/repair", label: "How repair help works" }} />
   <section class="band">
     <div class="wrap prose">
       <p class="small muted"><strong>How this works:</strong> Auto Lyft USA is a towing company, not a repair shop. We tow your car to an independent partner shop (or any shop you choose), and that shop diagnoses, quotes and does the repair.</p>

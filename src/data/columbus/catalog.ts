@@ -15,7 +15,8 @@ export const HOODS: HoodFacts[] = [
   "nearby": [
    "hilltop",
    "downtown",
-   "harrison-west"
+   "harrison-west",
+   "westgate"
   ]
  },
  {
@@ -64,7 +65,8 @@ export const HOODS: HoodFacts[] = [
    "short-north",
    "linden",
    "beechwold",
-   "old-north"
+   "old-north",
+   "northwest-columbus"
   ]
  },
  {
@@ -72,7 +74,8 @@ export const HOODS: HoodFacts[] = [
   "name": "Linden",
   "nearby": [
    "clintonville",
-   "northland"
+   "northland",
+   "sharon-woods"
   ]
  },
  {
@@ -201,7 +204,8 @@ export const HOODS: HoodFacts[] = [
    "olde-towne-east",
    "king-lincoln-bronzeville",
    "schumacher-place",
-   "berwick"
+   "berwick",
+   "eastmoor"
   ]
  },
  {

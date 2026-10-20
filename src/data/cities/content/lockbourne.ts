@@ -22,7 +22,7 @@ export default {
     { kind: "park", name: "Lock Meadows Park", detail: "Home to Lock No. 30 of the Ohio and Erie Canal, the sort of lock the village is named for; parking is limited, so say where you left the car." },
     { kind: "landmark", name: "Rickenbacker International Airport", detail: "A cargo-focused airport next door to the village; if your car is in an airport or tenant lot, the driver needs the lot name and any gate instructions." },
     { kind: "landmark", name: "Rickenbacker Memorial Wall", detail: "A granite tribute to the people stationed at the former air base, the Tuskegee Airmen and WASPs among them." },
-    { kind: "employer", name: "Rickenbacker Air National Guard Station", detail: "Founded in 1942 as Lockbourne Army Airfield; entry is controlled, so plan to have the car at a public spot or arrange access before we arrive." },
+    { kind: "employer", name: "Rickenbacker Air National Guard Station", detail: "Opened during World War II as Lockbourne Army Airfield; entry is controlled, so plan to have the car at a public spot or arrange access before we arrive." },
     { kind: "employer", name: "Norfolk Southern Rickenbacker Intermodal Terminal", detail: "The rail-to-truck container yard that opened in 2008, and the reason so many semis share SR-762 with local drivers." },
     { kind: "employer", name: "ODW Logistics campus", detail: "A group of large warehouses on Schieser Farms Road, where night-shift workers sometimes come back out to a car that will not start." },
     { kind: "school", name: "Hamilton Township High School", detail: "The Rangers' school on Rathmell Road, shared by Lockbourne, Obetz, Reese, Shadeville and the rest of the township." },
