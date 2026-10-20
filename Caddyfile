@@ -14,9 +14,10 @@
 	root * {$SITE_ROOT:/srv}
 	encode gzip zstd
 
-	# Bare domain -> www, in case it ever reaches this server directly.
-	@apex host autolyftusa.online
-	redir @apex https://www.autolyftusa.online{uri} 301
+	# Any other host (bare domain, autolyft.up.railway.app) -> www, so the site
+	# only answers on its canonical host. Local hosts stay for testing.
+	@offhost not host www.autolyftusa.online localhost 127.0.0.1
+	redir @offhost https://www.autolyftusa.online{uri} 301
 
 	# trailingSlash: "never" — /towing/ -> /towing
 	@slash path_regexp slash ^(/.+)/$

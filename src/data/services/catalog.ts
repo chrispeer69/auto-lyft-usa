@@ -33,7 +33,7 @@ export const SERVICES: ServiceEntry[] = [
   { slug: "flat-tire-change", name: "Flat Tire Change", group: "roadside", blurb: "Your spare goes on, the flat goes in the trunk, and lug nuts are torqued to spec." },
   { slug: "fuel-delivery", name: "Fuel Delivery", group: "roadside", blurb: "Out of gas on the shoulder? We bring enough to reach the next station." },
   { slug: "winch-out", name: "Winch-Out & Ditch Recovery", group: "roadside", blurb: "Stuck in a ditch, snowbank, mud or a soft yard? We pull it back to solid ground." },
-  { slug: "ev-towing", name: "EV & Tesla Towing", group: "specialty", blurb: "Electric cars carried with all four wheels off the pavement, in transport mode." },
+  { slug: "ev-towing", name: "EV & Tesla Towing", group: "specialty", blurb: "EVs ride fully on the deck in transport mode, no wheel touching the road." },
   { slug: "low-profile-towing", name: "Low Profile Towing", group: "specialty", blurb: "Lowered, sports and exotic cars loaded with ramp extensions at a shallow angle." },
   { slug: "motorcycle-towing", name: "Motorcycle Towing", group: "specialty", blurb: "Bikes chocked and soft-strapped upright on the deck, never dragged." },
   { slug: "parking-garage-towing", name: "Parking Garage Towing", group: "specialty", blurb: "Cars that die on level three of a low-clearance garage get out with us." },

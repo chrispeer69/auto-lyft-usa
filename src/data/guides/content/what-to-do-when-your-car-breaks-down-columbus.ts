@@ -16,7 +16,7 @@ export default {
       ],
     },
     {
-      heading: "On I-70, I-71, I-270 or any divided highway",
+      heading: "Stuck on an interstate or divided highway (I-70, I-71, I-270)",
       paragraphs: [
         "Momentum is your friend. If the car is still rolling when trouble starts, signal and coast as far right as you can, ideally onto the paved shoulder or past the end of a guardrail where there is more room. An exit ramp is even better if you can reach one without stopping in a live lane. A few hundred extra feet of coasting can turn a dangerous stop into a routine one.",
         "Once stopped, turn the wheels away from traffic, set the parking brake and switch on the hazard lights. After dark, keep the running lights glowing as well. Warning triangles are worth setting out only when you can reach the area behind the car without drifting toward moving traffic.",
