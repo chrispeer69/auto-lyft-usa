@@ -11,7 +11,7 @@ import type { Faq } from "../data/types";
 
 const path = "/towing";
 const faqs: Faq[] = [
-  { q: "What towing services does Auto Lyft USA offer in Columbus?", a: `We run ${SERVICES.length} services: emergency and long-distance flatbed tows, battery jumps, door unlocks, spare-tire swaps, gas runs and ditch pulls, plus accounts for fleets, lenders and property managers. Each one has its own page below.` },
+  { q: "What towing services does Auto Lyft USA offer in Columbus?", a: `Our towing and roadside services cover emergency and long-distance tows by flatbed or wheel lift, battery jumps, door unlocks, spare-tire swaps, gas runs and ditch pulls, plus accounts for fleets, lenders and property managers. Each one has its own page below.` },
   { q: "Which service should I ask for if I am not sure what is wrong?", a: "Just describe what happened: the car won't start, it made a noise and stopped, you hit something. The dispatcher works out whether a [jump start](/towing/jump-start), a [tire change](/towing/flat-tire-change) or a [tow](/towing/emergency-towing) makes sense, and quotes that." },
   { q: "Do roadside calls cost less than a tow?", a: "Usually yes, because the car stays where it is and there are no loaded miles. If the roadside fix doesn't work, the driver can load the car on the spot. The dispatcher tells you both prices up front; see [rates](/rates)." },
   { q: "Do you handle trucks bigger than a pickup?", a: "Our own carriers are light-duty flatbeds. For box trucks, buses and semis we take the call and arrange the job with a heavy-wrecker partner — see [medium-duty](/towing/medium-duty-towing) and [heavy-duty towing](/towing/heavy-duty-towing)." },
@@ -20,7 +20,7 @@ const schema = [itemListNode(path, SERVICES.map((s) => ({ name: s.name, path: se
 ---
 <Base
   title="Towing & Roadside Services in Columbus"
-  description={`All ${SERVICES.length} Auto Lyft USA services in Columbus, OH: flatbed towing, EV transport, jump starts, lockouts, winch-outs and fleet accounts. (614) 633-8163.`}
+  description={`Every Auto Lyft USA tow and roadside service in Columbus, OH: flatbed towing, EV transport, jump starts, lockouts, winch-outs, fleets. (614) 633-8163.`}
   path={path}
   pageType={["WebPage", "CollectionPage"]}
   crumbs={[{ name: "Towing services", path }]}
