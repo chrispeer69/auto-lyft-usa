@@ -18,7 +18,7 @@ export default {
   intro: [
     "Capital University has been in Bexley since 1876, on a compact campus where College Avenue meets East Main Street. It's a walkable place, and that's part of the trouble: students who walk everywhere during the week let their cars sit, then discover on a Friday that the battery gave up somewhere around Tuesday. Auto Lyft USA provides Capital University towing and roadside help for that Friday, and for every other kind of bad day a car can have near campus.",
     "Because Bexley is a residential city with tidy streets and a busy stretch of Main, our drivers load and unload carefully and keep the flatbed out of the way of traffic and neighbors. A tow from Capital to a shop on the east side, or to the student's home in another part of Ohio, is a routine job for us.",
-    "We run out of a yard on Harrisburg Pike on Columbus's southwest side and reach Bexley by the interstate. Every tow is a flatbed tow, and every price is quoted from the published rate card before a driver is dispatched. Parents can book on behalf of a student and never have to drive in themselves.",
+    "Our office and yard are on Harrisburg Pike on Columbus's southwest side, and our trucks, posted around the city, reach Bexley by the interstate. A flatbed goes out whenever the car needs one, and every price is quoted from the published rate card before a driver is dispatched. Parents can book on behalf of a student and never have to drive in themselves.",
   ],
   sections: [
     {
@@ -72,11 +72,11 @@ export default {
     },
     {
       q: "Is Bexley far from your yard?",
-      a: "No, it's a straightforward interstate run from our yard on Harrisburg Pike across the south side and out to the east. The en-route charge is $4 per mile, so the trip to Bexley adds a modest amount to your bill. Nobody can promise an exact arrival minute before the call, but the dispatcher will give you a current estimate on the phone.",
+      a: "No. Bexley is a straightforward interstate run east of our yard on Harrisburg Pike, and dispatch sends whichever truck is nearest. The en-route charge is $4 per mile, so the trip to Bexley adds a modest amount to your bill. Nobody can promise an exact arrival minute before the call, but the dispatcher will give you a current estimate on the phone.",
     },
     {
       q: "Will a flatbed fit on the narrow Bexley streets near campus?",
-      a: "Usually, yes. Our carriers are light-duty flatbeds, the same trucks we use all over Columbus's older neighborhoods. If the car is in a tight spot, such as a narrow drive behind a house, describe it on the call. The driver may need to winch the car out to the street before loading it, which is part of the normal job.",
+      a: "Usually, yes. Our light-duty flatbeds and wheel-lift trucks work all over Columbus's older neighborhoods. If the car is in a tight spot, such as a narrow drive behind a house, describe it on the call. The driver may need to winch the car out to the street before loading it, which is part of the normal job.",
     },
     {
       q: "Can I get my car from Capital to a mechanic back home in Dayton or Cleveland?",

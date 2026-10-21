@@ -32,7 +32,7 @@ export default {
       heading: "Why the truck usually waits outside",
       paragraphs: [
         "A light-duty flatbed carrier is tall even with the bed lowered, and it gets taller as the deck tilts to load. Garages are built for passenger cars and vans, so the posted limit at most city entrances is well below what the carrier needs. We don't guess at clearances, which is why the driver asks for the number on the sign rather than assuming.",
-        "Some surface-level or open-top decks do have room, and a few garages have a loading area near the exit. When that is the case, the driver uses it. Otherwise, moving the car to the street is quicker and safer than squeezing a truck through a ramp. If space outside is tight too, our [wheel-lift towing](/towing/wheel-lift-towing) page describes the other options.",
+        "Some surface-level or open-top decks do have room, and a few garages have a loading area near the exit. When that is the case, the driver uses it. A wheel-lift truck usually needs less headroom than a carrier, so where the posted limit allows, dispatch may send one to hook the car and tow it out directly. Otherwise, moving the car to the street is quicker and safer than squeezing a truck through a ramp. If space outside is tight too, our [wheel-lift towing](/towing/wheel-lift-towing) page describes the other options.",
       ],
     },
     {

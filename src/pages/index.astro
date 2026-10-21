@@ -25,7 +25,7 @@ const byDir = ["North", "East", "South", "West"].map((d) => ({
 
 const FACTS = [
   { big: "24/7", small: "Live dispatch, every day of the year" },
-  { big: `${COMPANY.fleet.trucks}`, small: "Light-duty flatbed carriers. No hook-and-chain." },
+  { big: `${COMPANY.fleet.trucks}`, small: "Light-duty flatbeds, plus wheel-lift trucks and dollies." },
   { big: `${CITY_FACTS.length}+`, small: "Towns covered across the Columbus metro" },
   { big: "1 call", small: "Location, vehicle, destination. Priced before a truck rolls." },
 ];
@@ -90,11 +90,11 @@ const FACTS = [
   <section class="band dark" aria-labelledby="flat-h">
     <div class="wrap">
       <p class="kicker">Why it matters</p>
-      <h2 id="flat-h">Why every Auto Lyft tow is a flatbed tow</h2>
+      <h2 id="flat-h">Why most Auto Lyft tows ride on a flatbed</h2>
       <ul class="rules cols two grid">
         {HOME.whyFlatbed.map((w) => <li><h3>{w.title}</h3><p>{w.text}</p></li>)}
       </ul>
-      <p class="mt-20">Read more on the <a href="/towing/flatbed-towing">flatbed towing page</a>.</p>
+      <p class="mt-20">Read more on the <a href="/towing/flatbed-towing">flatbed towing page</a>, or see when we use <a href="/towing/wheel-lift-towing">wheel-lift towing</a> instead.</p>
     </div>
   </section>
 

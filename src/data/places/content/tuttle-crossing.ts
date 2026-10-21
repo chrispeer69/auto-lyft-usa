@@ -17,7 +17,7 @@ export default {
   intro: [
     "The Tuttle Crossing area grew up around its interchange on the west side of the outerbelt, where Tuttle Crossing Boulevard meets I-270 at Exit 15. Today it packs an enclosed mall, a ring of restaurants and big stores, several hotels, and a lot of office buildings into the corner where Dublin and Hilliard meet. Each of those draws a different kind of breakdown.",
     "Shoppers lose batteries and keys. Hotel guests walk out at 7 AM to a car that won't turn over in a lot they've never seen in daylight. Office workers come out to a flat tire from a nail picked up on the commute. And drivers coming off I-270 sometimes reach the boulevard just as a temperature gauge climbs into the red.",
-    "Auto Lyft USA handles Tuttle Crossing towing and roadside service at every hour, from our yard on Harrisburg Pike. That's a straight shot north once we're on the outerbelt, which helps when traffic cooperates. Every vehicle we move rides on a flatbed, so AWD cars, EVs and low sports cars travel with all four wheels off the pavement. You'll get the price before we roll and a live arrival estimate from the dispatcher.",
+    "Auto Lyft USA handles Tuttle Crossing towing and roadside service at every hour, with trucks posted around the city and our yard on Harrisburg Pike. From the south side it's a straight shot north once a driver is on the outerbelt, which helps when traffic cooperates. A flatbed goes out whenever the car needs one, so AWD cars, EVs and low sports cars travel with all four wheels off the pavement. You'll get the price before we roll and a live arrival estimate from the dispatcher.",
   ],
   sections: [
     {

@@ -19,7 +19,7 @@ export default {
     {
       heading: "1. Who are you, exactly?",
       paragraphs: [
-        "Start with identity. You want a real business name, a physical yard address and a phone that is answered by a dispatcher rather than forwarded to an anonymous call center that hands jobs to whoever is free. Ask where the trucks are based. For the record, our trucks run out of 1620 Harrisburg Pike, along US-62 southwest of downtown, and you can read who runs it on our [about page](/about).",
+        "Start with identity. You want a real business name, a physical yard address and a phone that is answered by a dispatcher rather than forwarded to an anonymous call center that hands jobs to whoever is free. Ask where the trucks are based. For the record, our office and yard are at 1620 Harrisburg Pike, along US-62 southwest of downtown, our trucks are positioned around Columbus, and you can read who runs it on our [about page](/about).",
         "Look the company up afterwards. A working website with a street address, a name on the trucks and a consistent business name across listings are basic signs of an outfit that plans to be around next year.",
       ],
     },
@@ -46,7 +46,7 @@ export default {
       heading: "4. The right truck for your car",
       paragraphs: [
         "Tow trucks are not interchangeable. A wheel-lift truck raises one end of the car and lets the other roll on the road. That is fine for some vehicles over short distances, but it is the wrong choice for all-wheel-drive cars, many automatics on longer trips, electric vehicles and anything lowered or damaged. A flatbed carries the whole car on a deck so no tire touches the pavement.",
-        "Describe the car fully when you call: what it is, how it is driven, and what is broken. Then listen for a sensible answer about which truck is coming. Our own fleet is four light-duty flatbeds and nothing else, which you can read about on our [flatbed towing](/towing/flatbed-towing) page. For box trucks or buses, ask whether the company has heavy equipment of its own or works with a partner; we coordinate those jobs with partner heavy-wrecker companies rather than pretending a light-duty truck can handle them.",
+        "Describe the car fully when you call: what it is, how it is driven, and what is broken. Then listen for a sensible answer about which truck is coming. Our own fleet is four light-duty flatbeds plus wheel-lift trucks for tight spots, which you can read about on our [flatbed towing](/towing/flatbed-towing) page. For box trucks or buses, ask whether the company has heavy equipment of its own or works with a partner; we coordinate those jobs with partner heavy-wrecker companies rather than pretending a light-duty truck can handle them.",
       ],
     },
     {
@@ -92,7 +92,7 @@ export default {
   faqs: [
     {
       q: "Is a flatbed always better than a wheel-lift tow?",
-      a: "For many cars it is the safer option, and for some it is the only safe one. All-wheel-drive vehicles, electric cars, lowered cars and anything with damaged wheels or suspension should ride with all four wheels off the road. A wheel-lift can work for some front-wheel-drive cars on short trips, but a flatbed removes the guesswork, which is why our whole fleet is flatbeds.",
+      a: "For many cars it is the safer option, and for some it is the only safe one. All-wheel-drive vehicles, electric cars, lowered cars and anything with damaged wheels or suspension should ride with all four wheels off the road. A wheel-lift can work for some front-wheel-drive cars on short trips, but a flatbed removes the guesswork, which is why it is our default. When we do use a wheel lift, dollies go under any drive wheels left on the road.",
     },
     {
       q: "What should I do if a tow truck I did not call shows up after a crash?",

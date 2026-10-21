@@ -4,7 +4,7 @@ export default {
   keyword: "Polaris towing",
   title: "Polaris Towing & Roadside Service",
   description:
-    "Polaris towing and roadside help around Polaris Fashion Place, Polaris Parkway and the I-71 interchange. Flatbeds only, 24/7. Call (614) 633-8163.",
+    "Polaris towing and roadside help around Polaris Fashion Place, Polaris Parkway and the I-71 interchange. Flatbed tows, 24/7. Call (614) 633-8163.",
   h1: "Polaris towing for the mall, the Parkway and the lots in between",
   lede:
     "From the mall garage to a strip-center lot off Polaris Parkway, we jump, unlock and flatbed cars across the Polaris area at any hour.",
@@ -17,7 +17,7 @@ export default {
   },
   intro: [
     "Polaris isn't one parking lot. It's a two-level mall that opened in late 2001, wrapped by a long run of big-box stores, chain restaurants, hotels and office buildings strung along Polaris Parkway on both sides of I-71. Lewis Center sits just to the north and Westerville to the east, so a breakdown \"at Polaris\" could mean a dozen different places. That spread is exactly why we ask good questions before we send a truck.",
-    "Auto Lyft USA covers Polaris towing and roadside work around the clock with four flatbed carriers out of our Columbus yard. The calls we see here split roughly three ways: shoppers whose car died in a mall lot, office workers whose battery gave up after a full day in a parking space, and drivers who limped off I-71 at the Polaris Parkway exit with a warning light glowing.",
+    "Auto Lyft USA covers Polaris towing and roadside work around the clock with four flatbed carriers and wheel-lift trucks posted around the city. The calls we see here split roughly three ways: shoppers whose car died in a mall lot, office workers whose battery gave up after a full day in a parking space, and drivers who limped off I-71 at the Polaris Parkway exit with a warning light glowing.",
     "Whatever the situation, you get a firm quote over the phone, a live arrival estimate from the dispatcher, and a flatbed if the car has to be moved. We take it to the destination you pick, whether that's home, the dealership or an independent shop.",
   ],
   sections: [
@@ -71,7 +71,7 @@ export default {
     },
     {
       q: "Which towns near Polaris do you cover?",
-      a: "All of them. Polaris borders [Lewis Center](/areas/lewis-center-oh) to the north and [Westerville](/areas/westerville-oh) to the east, and much of it carries Columbus addresses, so we're regularly on calls in every direction from the interchange. We also cover Powell, Sunbury, Delaware and the rest of central Ohio from the same yard.",
+      a: "All of them. Polaris borders [Lewis Center](/areas/lewis-center-oh) to the north and [Westerville](/areas/westerville-oh) to the east, and much of it carries Columbus addresses, so we're regularly on calls in every direction from the interchange. We also cover Powell, Sunbury, Delaware and the rest of central Ohio at the same rates.",
     },
     {
       q: "Can you replace a battery in a Polaris parking lot?",
@@ -79,7 +79,7 @@ export default {
     },
     {
       q: "Do you push cars out of a parking space if they won't roll?",
-      a: "If a car is stuck in park, has a locked wheel or a dead electronic parking brake, the driver has ways to move it without damage. Every truck we run is a flatbed with a winch, so a car that can't roll can still be pulled onto the deck carefully. Let the dispatcher know up front if the car won't shift out of park.",
+      a: "If a car is stuck in park, has a locked wheel or a dead electronic parking brake, the driver has ways to move it without damage. Our flatbeds carry winches, so a car that can't roll can still be pulled onto the deck carefully, and dollies or a wheel lift can help in a tight spot. Let the dispatcher know up front if the car won't shift out of park.",
     },
     {
       q: "Is Polaris towing cheaper if I'm only going a few miles?",

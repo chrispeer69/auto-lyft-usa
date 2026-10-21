@@ -46,7 +46,7 @@ export default {
     },
     {
       q: "Do you fix radiators or water pumps?",
-      a: "We don't. Auto Lyft USA is a towing company with four flatbeds and no repair bays. We deliver the car to the shop of your choice or an independent partner shop, and that shop diagnoses the problem, writes up the estimate and handles the work. You deal with the shop directly about the repair and any terms that come with it.",
+      a: "We don't. Auto Lyft USA is a towing company with flatbeds and wheel-lift trucks but no repair bays. We deliver the car to the shop of your choice or an independent partner shop, and that shop diagnoses the problem, writes up the estimate and handles the work. You deal with the shop directly about the repair and any terms that come with it.",
     },
     {
       q: "What does it cost to fix an overheating problem?",

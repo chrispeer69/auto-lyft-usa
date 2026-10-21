@@ -16,7 +16,7 @@ export default {
   },
   intro: [
     "The Crew moved out of their original stadium near the state fairgrounds when their downtown home opened in 2021 on the western side of the Arena District, a short walk from Huntington Park and Nationwide Arena. Match days now pack a stadium full of soccer fans into the same few blocks of garages, lots and side streets, often on summer evenings when engines are already working hard. Our Columbus Crew stadium towing calls reflect that: overheating, empty tanks after a long idle in traffic, and the usual dead batteries and locked doors.",
-    "Auto Lyft USA dispatches four flatbed carriers from Harrisburg Pike, just southwest of downtown. The stadium sits close to the freeway ramps on that side of the city, so on a normal day it is an easy drive. On match days we plan around the crowds and any street closures near the venue, and we tell you plainly what that means for timing.",
+    "Auto Lyft USA keeps its office on Harrisburg Pike, just southwest of downtown, and posts its four flatbeds and wheel-lift trucks around the city. The stadium sits close to the freeway ramps, so on a normal day it is an easy place to reach. On match days we plan around the crowds and any street closures near the venue, and we tell you plainly what that means for timing.",
     "Most fans never need us. For the ones who do, the goal is simple: a fair price stated up front, help that fits the actual problem, and a car that ends up where you want it, whether that is your driveway or a shop.",
   ],
   sections: [
@@ -67,7 +67,7 @@ export default {
     },
     {
       q: "Do you tow from the garages that serve the Crew stadium?",
-      a: "We do when the garage has enough height and room for a flatbed. Clearances differ from one structure to the next, so give us the garage name and the level. If the carrier cannot fit, the driver can still jump the battery, unlock the car or change a tire inside, which handles most match day problems.",
+      a: "We do when the garage has enough height and room for a flatbed. Clearances differ from one structure to the next, so give us the garage name and the level. If the carrier cannot fit, a wheel-lift truck sometimes can, and the driver can still jump the battery, unlock the car or change a tire inside, which handles most match day problems.",
     },
     {
       q: "My keys are locked in the car and my kids are with me. What should I do?",

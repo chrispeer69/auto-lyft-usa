@@ -67,10 +67,10 @@ const schema = [
     h1={s.h1}
     lede={s.lede}
     facts={[
-      ["Truck", s.group === "roadside" ? "Service truck or flatbed" : "Flatbed carrier"],
+      ["Truck", s.slug === "wheel-lift-towing" ? "Wheel-lift truck" : s.group === "roadside" ? "Service truck or flatbed" : "Flatbed or wheel lift"],
       ["Hours", "24/7, holidays included"],
       ["Price", offers.length ? `From ${usd(offers[0].price)} ${offers[0].unit}` : "Quoted per job"],
-      ["Base", "Harrisburg Pike yard"],
+      ["Trucks", "Positioned across Columbus"],
     ]}
   />
 

@@ -18,7 +18,7 @@ export default {
   intro: [
     "Nobody lives on campus at Columbus State. Everyone drives in, rides the bus, or gets dropped off, which means a car that won't start in a campus lot isn't just an inconvenience; it's the plan for getting to work, picking up a kid, or making the next shift. Auto Lyft USA provides Columbus State towing and roadside service on the downtown campus, around the Spring Street and Cleveland Avenue corner of the Discovery District, at any hour.",
     "The main campus sits on the northeast edge of downtown, boxed in by I-670 to the north and I-71 to the east. That's handy for commuters and awkward for breakdowns: a car that dies on the ramp up to I-71 after an evening lab is in a worse spot than one that dies in a lot. Tell us which it is when you call, because a highway shoulder pickup is priced and staged differently.",
-    "Our trucks are flatbeds and our yard is on Harrisburg Pike, a short drive southwest of downtown. The dispatcher quotes the whole price before anyone heads your way, and you can call for yourself, a classmate or a family member stuck in a campus lot.",
+    "We tow on flatbeds and wheel lifts, and our yard is on Harrisburg Pike, a short drive southwest of downtown. The dispatcher quotes the whole price before anyone heads your way, and you can call for yourself, a classmate or a family member stuck in a campus lot.",
   ],
   sections: [
     {

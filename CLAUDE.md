@@ -30,4 +30,4 @@ Sister site to Columbus Roadside Towing (`../Columbus Roadside Towing/Website Fi
 - URLs: `/towing/x`, `/areas/<town>-oh`, `/areas/columbus-oh/<hood>`, `/local/x`, `/repair/x`, `/guides/x`, `/rates`, `/estimate`, `/questions`, `/go/x` (noindex ad landers).
 
 ## Business facts (only claim these)
-Auto Lyft USA Inc., owner Lisa Peer, founded 2024, 1620 Harrisburg Pike, Columbus OH 43223 (same yard as Roadside; owner accepted the map-pack risk). Phone (614) 633-8163, lisa@autolyftusa.online, domain autolyftusa.online. 24/7, four light-duty flatbeds, AmeriSure insurance. Never invent response times, ratings, call counts or licence numbers.
+Auto Lyft USA Inc., owner Lisa Peer, founded 2024, 1620 Harrisburg Pike, Columbus OH 43223 (same yard as Roadside; owner accepted the map-pack risk). Phone (614) 633-8163, lisa@autolyftusa.online, domain autolyftusa.online. 24/7, four light-duty flatbeds plus wheel-lift trucks (count unconfirmed) and dollies; trucks positioned around Columbus (en-route miles still counted from the yard). AmeriSure insurance. Never invent response times, ratings, call counts or licence numbers.

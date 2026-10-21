@@ -18,7 +18,7 @@ export default {
   intro: [
     "Franklin University built its reputation on teaching adults who already have jobs, and its downtown campus on South Grant Avenue reflects that. People arrive after work, park for a few hours, and drive home to the suburbs late in the evening. Many Franklin students take some or all of their classes online, so a trip downtown is often a specific errand: an exam, a meeting with an advisor, a class that meets in person. Auto Lyft USA handles Franklin University towing and roadside calls for students, staff and visitors when that trip ends with a car that won't go.",
     "A breakdown hits differently when you have to be at work at seven the next morning. Our job is to make the next step clear: a jump or a spare bolted on so you're home tonight, or a flatbed tow to the shop of your choice so the car is in line for repair first thing.",
-    "We dispatch from our yard on Harrisburg Pike, southwest of downtown, and every price is quoted before a driver is sent. You can call from the car, from a classroom or from the lobby while you wait somewhere warm.",
+    "Our office is on Harrisburg Pike, southwest of downtown, our trucks are posted around the city, and every price is quoted before a driver is sent. You can call from the car, from a classroom or from the lobby while you wait somewhere warm.",
   ],
   sections: [
     {
@@ -58,7 +58,7 @@ export default {
   faqs: [
     {
       q: "How quickly can Franklin University towing get to me downtown?",
-      a: "Downtown is close to our yard on Harrisburg Pike, so it's a short run for our trucks. Quoting an arrival time sight unseen would be a guess, because traffic and other jobs shift through the evening, but the dispatcher tells you what the board looks like right then and calls back if that changes. Wait close to the car with your ringer turned up; the driver phones as they turn onto your street.",
+      a: "Downtown is close to our yard on Harrisburg Pike, and dispatch sends whichever truck is nearest. Quoting an arrival time sight unseen would be a guess, because traffic and other jobs shift through the evening, but the dispatcher tells you what the board looks like right then and calls back if that changes. Wait close to the car with your ringer turned up; the driver phones as they turn onto your street.",
     },
     {
       q: "Will you take the car to a suburban mechanic I already use?",

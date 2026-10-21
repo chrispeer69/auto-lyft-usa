@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbed only, dispatched 24/7. (614) 633-8163.",
-  h1: "Need a Tow in Lincoln Village? Flatbeds Five Miles Away",
+    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbeds and wheel lifts, 24/7. (614) 633-8163.",
+  h1: "Need a Tow in Lincoln Village? Five Miles From Our Yard",
   lede:
     "Lincoln Village is the 1950s planned neighborhood just west of the outerbelt on West Broad Street, and few addresses outside the city sit closer to our gate.",
   intro: [
     "Measured in a straight line, Lincoln Village is about five miles to the northwest of the 1620 Harrisburg Pike yard. That puts it among the nearest places we serve outside Columbus proper. The neighborhood was laid out in the 1950s by a development company tied to Nationwide Insurance, and its curving residential streets were drawn on purpose to keep traffic slow. West Broad Street runs along its spine, Sullivant Avenue marks its southern side, and the I-270 interchange at Broad Street is right on its eastern doorstep.",
     "Most Lincoln Village calls start on West Broad. The stretch between the outerbelt and Hilliard-Rome Road has landscaped medians, bike lanes and a run of signals, so a car that quits in a through lane blocks traffic quickly. We also answer lots of no-start and lockout calls at Lincoln Village Plaza, where people leave the Giant Eagle or the library to find a dead battery. Inside the neighborhood, the winding streets and short driveways around Darbyhurst Road and Schoolhouse Lane mean the driver often loads from the curb.",
-    "Every vehicle we move rides on a flatbed deck, which is the safer choice for front-wheel-drive commuters and all-wheel-drive SUVs alike. Your quote comes from the dispatcher before the truck is sent, and the arrival time you hear is a live estimate, not a promise pulled from a script. Call [(614) 633-8163](/contact) any hour, or start an [online tow request](/request).",
+    "All-wheel-drive SUVs ride on a flatbed deck, the safer choice for them, and so do most other cars, though a wheel-lift tow is the quicker hookup when the car allows it. Your quote comes from the dispatcher before the truck is sent, and the arrival time you hear is a live estimate, not a promise pulled from a script. Call [(614) 633-8163](/contact) any hour, or start an [online tow request](/request).",
   ],
   roads: [
     { name: "I-270 at West Broad Street (US-40)", note: "The outerbelt exit that feeds straight into Lincoln Village. Ramp merges here produce a steady trickle of disabled cars on both the northbound and southbound sides." },
@@ -29,7 +29,7 @@ export default {
     { kind: "landmark", name: "Schoolhouse Lane churches", detail: "Westminster Presbyterian and Concordia Lutheran sit a few doors apart, and Sunday-morning dead batteries in their lots are a familiar call." },
   ],
   faqs: [
-    { q: "Is Lincoln Village a quick trip for your carriers?", a: "It is one of our shorter runs. Lincoln Village lies about five miles northwest of 1620 Harrisburg Pike, and the driver can come up the outerbelt to the Broad Street exit or use west-side surface streets when I-270 is jammed. Whoever takes your call checks the live traffic picture and passes along a current arrival window." },
+    { q: "How close is Lincoln Village to your yard?", a: "It is one of the nearest places we serve. Lincoln Village lies about five miles northwest of 1620 Harrisburg Pike, though the truck sent is the closest free one, wherever it is around Columbus. The driver can come along the outerbelt to the Broad Street exit or use west-side surface streets when I-270 is jammed. Whoever takes your call checks the live traffic picture and passes along a current arrival window." },
     { q: "My car died in a West Broad Street lane near the I-270 ramps. What should I do?", a: "Flashers on, seat belt fastened, and only leave the car if there is smoke or traffic is clipping past too close; then walk well clear of the lanes. When you phone (614) 633-8163, tell us which side of the outerbelt you stopped on and the way you were driving. Because the rebuilt Broad Street has medians and little shoulder, our driver may move the car to a side street before fully securing it." },
     { q: "Can you jump my car in the Lincoln Village Plaza parking lot?", a: "Yes. Dead batteries at the plaza, especially after a cold night or a long shopping trip with the lights left on, are among our routine calls in this neighborhood. Our operator connects a booster, gets the engine running, checks the charging system and then tells you plainly if the car can make the trip home under its own power or belongs on the deck." },
     { q: "Will a carrier fit on the curved streets inside Lincoln Village?", a: "Yes. The streets were designed in the 1950s with gentle curves to slow traffic, and they are wide enough for our light-duty flatbeds. Short driveways sometimes mean the driver loads from the curb and winches the car out, which is routine. Tell us if a car is parked in a garage or behind another vehicle." },

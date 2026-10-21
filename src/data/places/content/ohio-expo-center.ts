@@ -20,7 +20,7 @@ export default {
   intro: [
     "The Ohio Expo Center sits on the north side of Columbus right off I-71 at the 17th Avenue exit, beside the Ohio History Center. Every summer it hosts the Ohio State Fair, and for the rest of the year the same grounds hold horse shows, trade shows, weekend sales and all kinds of expos. Ohio State Fair towing is the busiest version of our work here, but we take calls from these grounds in every season.",
     "The fair is a heat-and-crowds event. Families arrive in the morning, park on a hot lot, and come back at night to a car that has been baking for ten hours. Exhibitors arrive days early with trucks, trailers and campers. Add summer storms and a highway exit that backs up at opening and closing, and you get dead batteries, overheated engines, flat tires and the occasional fender-bender on the ramps.",
-    "Our flatbeds come up from Harrisburg Pike on the southwest side, so the route to 17th Avenue runs straight up the freeway system. We handle cars, SUVs, minivans and light pickups ourselves. For a loaded livestock trailer, a camper or a heavy truck, we bring in a heavy-wrecker partner and coordinate the job so you only have to make one call.",
+    "Our trucks are posted around the city, and from the south side the route to 17th Avenue runs straight up the freeway system. We handle cars, SUVs, minivans and light pickups ourselves. For a loaded livestock trailer, a camper or a heavy truck, we bring in a heavy-wrecker partner and coordinate the job so you only have to make one call.",
   ],
   sections: [
     {

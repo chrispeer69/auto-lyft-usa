@@ -7,7 +7,7 @@ export default {
     "Otterbein student with a car that won't start in Uptown Westerville? Jump starts, lockouts and flatbed tows near campus, quoted first. (614) 633-8163.",
   h1: "Otterbein towing, jumps and lockouts near Uptown Westerville",
   lede:
-    "Otterbein's campus runs right into Uptown Westerville's brick storefronts. When a student's car quits there, we send a flatbed up from Columbus.",
+    "Otterbein's campus runs right into Uptown Westerville's brick storefronts. When a student's car quits there, we send a truck up from Columbus.",
   venue: {
     name: "Otterbein University",
     schemaType: "CollegeOrUniversity",
@@ -18,7 +18,7 @@ export default {
   intro: [
     "Otterbein has been part of Westerville since its founding in 1847, and the campus still feels woven into the town. Students walk to State Street for coffee, park on residential streets near Grove Street, and drive out to I-270 for jobs and trips home. Auto Lyft USA provides Otterbein towing and roadside service for students, faculty, staff and families visiting the campus.",
     "A car parked near Uptown Westerville sits in a pleasant, busy little district with tight parking and steady traffic along State Street. When it won't start, our driver handles the job without blocking the street any longer than necessary, whether that's a jump in a campus lot or loading a dead car onto the flatbed in front of a row of houses.",
-    "We're based on Harrisburg Pike in southwest Columbus, so Westerville is a longer drive than downtown and the en-route mileage reflects that. That mileage is spelled out on the phone, line by line with everything else, before any truck heads north. No surprises on the bill, and no membership to sign up for. A parent can book for a student, and a student can book for a roommate.",
+    "Our yard is on Harrisburg Pike in southwest Columbus, so Westerville sits farther from it than downtown does, and the en-route mileage reflects that. That mileage is spelled out on the phone, line by line with everything else, before any truck heads north. No surprises on the bill, and no membership to sign up for. A parent can book for a student, and a student can book for a roommate.",
   ],
   sections: [
     {

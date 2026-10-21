@@ -19,7 +19,7 @@ export default {
   },
   intro: [
     "The Schottenstein Center opened on Ohio State's west campus in 1998, and its main bowl, Value City Arena, keeps a busy calendar of Buckeyes basketball, hockey, concerts and touring shows. Unlike football, most of those events happen at night and many of them fall between November and March. Put those two facts together and you get the most common Schottenstein Center towing call we see: a car that sat in a cold lot for three hours and now only clicks.",
-    "We keep four flatbed carriers on the road from our Harrisburg Pike base, and the trip up to the Lane Avenue and SR-315 corner is direct once the event traffic thins out. Every unit carries jump packs and lockout tools, so plenty of these calls end with you driving away under your own power rather than riding in the truck cab.",
+    "We keep four flatbed carriers and wheel-lift trucks on the road, posted around the city, and reaching the Lane Avenue and SR-315 corner is direct once the event traffic thins out. Every unit carries jump packs and lockout tools, so plenty of these calls end with you driving away under your own power rather than riding in the truck cab.",
     "When the problem is bigger, such as a failed alternator, a seized brake or a car that will not shift out of park, the driver loads it on the deck and takes it wherever you choose. That might be your driveway, your usual mechanic, or an independent shop we work with that will diagnose it and call you with a quote before touching anything.",
   ],
   sections: [
@@ -65,7 +65,7 @@ export default {
     },
     {
       q: "Do you tow from the parking garages near Value City Arena?",
-      a: "We do when the garage clearance allows it. Some structures are too low for a flatbed carrier, which needs headroom to tilt its deck. If that is the case, we can usually get the car running with a jump or a tire change so you can drive it to the street. Tell us the garage name or entrance and the level when you call.",
+      a: "We do when the garage clearance allows it. Some structures are too low for a flatbed carrier, which needs headroom to tilt its deck. A wheel-lift truck sits lower and may fit where a carrier cannot. If that is the case, we can usually get the car running with a jump or a tire change so you can drive it to the street. Tell us the garage name or entrance and the level when you call.",
     },
     {
       q: "Is it safe to wait in my car until the truck arrives?",

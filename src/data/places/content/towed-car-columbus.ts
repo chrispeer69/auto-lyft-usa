@@ -15,7 +15,7 @@ export default {
   },
   intro: [
     "Walking back to an empty parking space is one of the worst feelings a driver can have. Your mind jumps straight to theft, but in a city the size of Columbus, a missing car has far more often been towed: from a private lot with posted signs, from a street during a snow emergency or special event, or at the direction of police. The steps below help you work out which it was and get the car back with as little cost and stress as possible.",
-    "This guide is written by Auto Lyft USA, a flatbed towing company whose yard is on Harrisburg Pike (US-62). We are not the city impound lot and we don't run the police tow program, so we can't look up your car in their systems. What we can do is explain how the process generally works in Ohio, point you toward the right people to call, and, once your car is released, haul it on a flatbed to your driveway or a mechanic if it can't be driven.",
+    "This guide is written by Auto Lyft USA, a Columbus towing company whose yard is on Harrisburg Pike (US-62). We are not the city impound lot and we don't run the police tow program, so we can't look up your car in their systems. What we can do is explain how the process generally works in Ohio, point you toward the right people to call, and, once your car is released, haul it on a flatbed to your driveway or a mechanic if it can't be driven.",
     "Nothing here is legal advice. Towing rules come from state law, city code and the property owner's own policies, and details change. When in doubt, ask the police non-emergency line or the towing company directly, and keep notes of who you spoke with and when.",
   ],
   sections: [

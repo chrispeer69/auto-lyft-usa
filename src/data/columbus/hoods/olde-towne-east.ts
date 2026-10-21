@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Olde Towne East towing for Bryden Road, East Broad, carriage-house alleys and Franklin Park Conservatory lots. Flatbed only, quoted first. (614) 633-8163.",
+    "Olde Towne East towing for Bryden Road, East Broad, carriage-house alleys and Franklin Park Conservatory lots. Quoted before dispatch. (614) 633-8163.",
   h1: "Olde Towne East Towing for Mansion Blocks and Alleys",
   lede:
     "Victorian houses, carriage-house garages and two interstates on the doorstep make Olde Towne East a neighborhood our drivers learn street by street.",
   intro: [
     "Olde Towne East lies just east of downtown, across I-71, with I-70 along its southern side. It holds some of the grandest late-nineteenth and early-twentieth-century homes in Columbus, many of them lining East Broad Street and Bryden Road, which gives a city historic district its name. Smaller brick and frame houses fill the blocks between, and the eastern edge reaches Franklin Park and its conservatory.",
     "The layout of these streets shapes the towing. Big homes on Bryden, Town and Oak often have carriage houses or garages at the back of deep lots, reached by alleys that were built for horses. A car stored back there can be a long way from the street, and the alleys are often broken pavement with tight corners and utility poles. Out front, curb parking fills up near churches, restaurants and the conservatory on weekends. East Broad Street is wide and fast, and a car stopped there in rush hour needs moving quickly.",
-    "From our Harrisburg Pike yard, our trucks usually come across downtown on I-70, which puts the south side of the neighborhood within easy reach. We carry every vehicle on a flatbed, which matters to the many owners here who keep older or restored cars. Call [(614) 633-8163](/contact) with the address and where the car sits on the lot, and the dispatcher quotes the full job first. You can also send the details through the [request page](/request).",
+    "Trucks coming from the west usually cross downtown on I-70, which puts the south side of the neighborhood within easy reach. We send a flatbed for any older or restored car, which matters to the many owners here who keep one. Call [(614) 633-8163](/contact) with the address and where the car sits on the lot, and the dispatcher quotes the full job first. You can also send the details through the [request page](/request).",
   ],
   roads: [
     { name: "East Broad Street", note: "The main east-west route past mansions, churches and the old Tudor-style commercial block. Fast traffic means we want you out of the car and on the sidewalk while you wait." },

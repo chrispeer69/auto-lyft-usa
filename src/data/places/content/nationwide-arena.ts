@@ -19,14 +19,14 @@ export default {
   },
   intro: [
     "Nationwide Arena has been home ice for the Columbus Blue Jackets since it opened in 2000, and between the NHL season and a steady run of concerts it fills up on a lot of nights. Most of the people who drive in park in structured garages and lots scattered through the Arena District and the blocks toward High Street. That shapes nearly every Nationwide Arena towing call we take, because a car that dies on level four of a garage is a very different job from one that dies at a curb.",
-    "Our trucks are light-duty flatbeds based on Harrisburg Pike, southwest of downtown, so getting to the arena is not a long haul. The harder part is the last few hundred feet: tight ramps, low ceilings, pay gates and one-way streets that funnel event traffic toward I-670 and SR-315 after the horn sounds.",
+    "Our light-duty flatbeds and wheel-lift trucks are posted around the city, and our office on Harrisburg Pike sits just southwest of downtown, so getting to the arena is not a long haul. The harder part is the last few hundred feet: tight ramps, low ceilings, pay gates and one-way streets that funnel event traffic toward I-670 and SR-315 after the horn sounds.",
     "The good news is that the typical arena problem does not require pulling a car out of a garage at all. A jump, an unlock or a spare tire gets most people moving. When a tow truly is needed, our dispatcher will ask the questions that matter before a truck heads your way, so the driver arrives with a plan instead of discovering that the deck will not fit under the first beam.",
   ],
   sections: [
     {
       heading: "Garages and flatbeds",
       paragraphs: [
-        "A flatbed carrier is tall, and its deck has to tilt and slide back to load a car. Plenty of downtown garages were built for passenger cars only, with entrance bars and ceiling beams that a carrier cannot clear. We do not guess at clearances, and we will not force a truck into a structure that was not built for it.",
+        "A flatbed carrier is tall, and its deck has to tilt and slide back to load a car. Plenty of downtown garages were built for passenger cars only, with entrance bars and ceiling beams that a carrier cannot clear. A wheel-lift truck sits lower and can sometimes get in where a carrier cannot. We do not guess at clearances, and we will not force a truck into a structure that was not built for it.",
         "Instead, the driver works with what the garage allows. Many cars can be jumped or unlocked right in the space. A car with a flat can often get a spare and roll down the ramp on its own. If it truly cannot move under its own power, the driver will talk with you, and with garage staff where they are present, about the safest way to get it to a loading spot. Our [parking garage towing](/towing/parking-garage-towing) page covers this in more detail.",
       ],
     },
@@ -52,7 +52,7 @@ export default {
     },
     {
       q: "Can your flatbed fit inside the garage where I parked?",
-      a: "It depends on that structure's clearance, which varies from garage to garage. If a carrier cannot enter, the driver can usually still help inside using portable jump packs, lockout tools and a jack. For a car that cannot be driven at all, we will work out a safe way to get it to a spot where loading is possible. Tell us the garage and level first.",
+      a: "It depends on that structure's clearance, which varies from garage to garage. If a carrier cannot enter, a lower wheel-lift truck sometimes can; failing that, the driver can usually still help inside using portable jump packs, lockout tools and a jack. For a car that cannot be driven at all, we will work out a safe way to get it to a spot where loading is possible. Tell us the garage and level first.",
     },
     {
       q: "My car won't start and the garage is closing. What happens?",
@@ -76,7 +76,7 @@ export default {
     },
     {
       q: "Can you take my car back to the suburbs after a breakdown downtown?",
-      a: "Yes. We regularly tow cars from downtown to homes and shops in Westerville, Gahanna, Grandview Heights and beyond. The cost depends on the loaded miles, so give the dispatcher the full destination address and you will hear the total price, including any late-night or weekend fee, before the truck leaves the yard.",
+      a: "Yes. We regularly tow cars from downtown to homes and shops in Westerville, Gahanna, Grandview Heights and beyond. The cost depends on the loaded miles, so give the dispatcher the full destination address and you will hear the total price, including any late-night or weekend fee, before a truck is sent.",
     },
   ],
   cities: ["columbus", "grandview-heights", "westerville", "gahanna"],

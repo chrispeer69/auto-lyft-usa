@@ -76,7 +76,7 @@ export default {
       heading: "What it costs and how to request it",
       paragraphs: [
         "A lockout with us is part of our $75 flat roadside rate, listed on our [rates page](/rates) along with the surcharges for highway, overnight (10 PM to 6 AM) and weekend calls. Veterans get 10% off with ID. You can call dispatch any hour or submit the details through our [online request form](/request), and the dispatcher will confirm the total and give you a live estimate of the arrival time.",
-        "We dispatch from our yard on the southwest side of Columbus, and lockout calls come from all over the metro: grocery store lots, apartment complexes, office parks and stadium parking. If you are in a parking garage, tell us the level and the clearance height if it is posted, so the right truck is sent. Where a door simply will not open, or the key turns out to be broken in the ignition, we can still bring the car on a flatbed to a dealer or a locksmith shop.",
+        "Our trucks are positioned around Columbus, and lockout calls come from all over the metro: grocery store lots, apartment complexes, office parks and stadium parking. If you are in a parking garage, tell us the level and the clearance height if it is posted, so the right truck is sent. Where a door simply will not open, or the key turns out to be broken in the ignition, we can still bring the car on a flatbed to a dealer or a locksmith shop.",
       ],
     },
   ],

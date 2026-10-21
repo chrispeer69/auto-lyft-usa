@@ -21,7 +21,7 @@ export default {
         "Every tow has these, whether it is two miles or forty.",
       ],
       bullets: [
-        "En-route miles at $4 per mile. These are the miles our flatbed drives from the yard at 1620 Harrisburg Pike to wherever your car is sitting. A pickup in Grove City or on the Hilltop costs less to reach than one in Westerville because the truck starts on the southwest side.",
+        "En-route miles at $4 per mile. Our rate card counts these from the yard at 1620 Harrisburg Pike to wherever your car is sitting, even though the trucks themselves are positioned around Columbus. A pickup in Grove City or on the Hilltop is fewer en-route miles than one in Westerville because the yard is on the southwest side.",
         "Hook-up at $125. This covers positioning the flatbed, pulling the car onto the deck and strapping it down at the wheels. It is charged once per tow.",
         "Loaded miles at $7 per mile. These are the miles your car rides on the deck, from the pickup spot to the drop-off.",
       ],
@@ -98,7 +98,7 @@ export default {
     },
     {
       q: "Why am I charged for miles before my car is even on the truck?",
-      a: "Because the truck, fuel and driver are working from the moment they leave the Harrisburg Pike yard. Charging en-route miles separately keeps the hook-up fee the same for everyone, so a driver five minutes from our yard is not quietly subsidizing one who lives forty minutes away. Closer pickups simply cost less.",
+      a: "Because the truck, fuel and driver are working from the moment they head your way. Charging en-route miles separately keeps the hook-up fee the same for everyone, so a driver five minutes from our yard is not quietly subsidizing one who lives forty minutes away. Closer pickups simply cost less.",
     },
     {
       q: "Do the night, weekend and highway surcharges stack?",

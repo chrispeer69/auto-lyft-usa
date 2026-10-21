@@ -18,7 +18,7 @@ export default {
   intro: [
     "Ohio Wesleyan has been in Delaware since 1842 and spreads across roughly 200 acres on the edge of downtown, with Sandusky Street running through the middle of it. It's a residential liberal arts school that draws students from around the country, which shapes the kind of calls we get there. Auto Lyft USA handles Ohio Wesleyan towing for jump starts, lockouts and tows to local shops, and for the longer job of carrying a student's car back home.",
     "Delaware is its own city, the seat of Delaware County, with a historic downtown, residential blocks of older homes and US-23 and US-36 carrying most of the traffic in and out. Our yard sits on Columbus's southwest side, so a call to Delaware is a real drive, and we price it honestly: the en-route mileage is part of every quote, stated before a driver leaves.",
-    "Every tow is on a flatbed. For a parent several states away, that means the student's car makes the trip home sitting on a deck, not rolling on its own tires behind a truck, and the price for the whole trip is settled on the phone before anything happens.",
+    "Long hauls always go on a flatbed. For a parent several states away, that means the student's car makes the trip home sitting on a deck, not rolling on its own tires behind a truck, and the price for the whole trip is settled on the phone before anything happens.",
   ],
   sections: [
     {

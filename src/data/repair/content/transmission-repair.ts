@@ -36,7 +36,7 @@ export default {
     },
     {
       q: "Why does the type of tow matter for a transmission problem?",
-      a: "Towing a car with its drive wheels rolling on the pavement spins parts of the transmission while the engine is off, so the internal pump is not supplying lubrication. For AWD and 4x4 models, even two wheels rolling on the road can strain the drivetrain. We use flatbeds for every tow, so the whole car rides on the deck and nothing turns on the way.",
+      a: "Towing a car with its drive wheels rolling on the pavement spins parts of the transmission while the engine is off, so the internal pump is not supplying lubrication. For AWD and 4x4 models, even two wheels rolling on the road can strain the drivetrain. A car with transmission trouble goes on one of our flatbeds, so the whole car rides on the deck and nothing turns on the way.",
     },
     {
       q: "Do you rebuild transmissions?",

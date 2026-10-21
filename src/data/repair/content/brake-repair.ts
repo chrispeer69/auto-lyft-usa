@@ -37,7 +37,7 @@ export default {
     },
     {
       q: "Why carry the car on a flatbed for a brake problem?",
-      a: "On a flatbed the car sits entirely on the deck, so the condition of its brakes, axles and transmission doesn't matter during the trip. That avoids dragging a locked caliper and keeps an all-wheel-drive system from being strained. Our trucks are all flatbed carriers, so this is simply how every repair tow goes. The [flatbed towing](/towing/flatbed-towing) page has more detail.",
+      a: "On a flatbed the car sits entirely on the deck, so the condition of its brakes, axles and transmission doesn't matter during the trip. That avoids dragging a locked caliper and keeps an all-wheel-drive system from being strained. A flatbed is our standard truck for repair tows, so this is how they normally go. The [flatbed towing](/towing/flatbed-towing) page has more detail.",
     },
     {
       q: "What if a brake is seized and the wheel won't turn?",

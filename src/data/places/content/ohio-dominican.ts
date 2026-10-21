@@ -18,7 +18,7 @@ export default {
   intro: [
     "Ohio Dominican University is a Catholic school in the Dominican tradition, set back from Sunbury Road on Columbus's northeast side. It's a residential campus with athletes, commuters and graduate students in the mix, and a good number of those students keep a car on campus. Auto Lyft USA provides Ohio Dominican towing and roadside service for all of them, whether the problem is a battery, a lockout, a flat or a car that simply won't run.",
     "Two things set ODU apart from the downtown schools. Students live on campus, so cars can sit for long stretches, and the campus is a drive from most of the shops and dealerships people use. When a car needs a mechanic, it usually needs a tow to get there, not just a jump to limp along.",
-    "Starting from Harrisburg Pike, the trip across town to Sunbury Road is a regular run for our drivers, usually by way of the interstates that ring and cross the city. Every tow is on a flatbed, and every price is quoted before we leave. Students, staff, visiting families and parents calling from home all get the same published rates.",
+    "Sunbury Road is a regular run for our drivers, who are posted around the city and usually come in by way of the interstates that ring and cross it. A flatbed goes out whenever the car needs one, and every price is quoted before we send a truck. Students, staff, visiting families and parents calling from home all get the same published rates.",
   ],
   sections: [
     {

@@ -11,7 +11,7 @@ import type { Faq } from "../data/types";
 const path = "/about";
 const faqs: Faq[] = [
   { q: "Is Auto Lyft USA part of a national chain?", a: `No. It is a local, independent business. ${COMPANY.owner.name} owns and runs it. She set it up in ${COMPANY.foundingYear} as ${COMPANY.legalName}, an Ohio corporation, and she is the person to email at ${COMPANY.email} about a billing question, a business account or anything a dispatcher could not settle.` },
-  { q: "Why only flatbeds and no wheel-lift trucks?", a: "A flatbed carries the whole vehicle off the pavement, so the drivetrain, bumpers and bodywork are not dragged or strained. That suits all-wheel-drive cars, EVs, lowered cars and anything already damaged. Keeping one kind of truck also means every driver trains on the same equipment." },
+  { q: "When do you use a flatbed and when a wheel lift?", a: "A flatbed carries the whole vehicle off the pavement, so the drivetrain, bumpers and bodywork are not dragged or strained. That suits all-wheel-drive cars, EVs, lowered cars and anything already damaged. A wheel-lift truck works where a deck cannot: low garages, narrow alleys and cars boxed in by others, with dollies under the free wheels when needed." },
   { q: "Can you visit the yard on Harrisburg Pike?", a: `Yes, if your vehicle is stored with us or you are picking up paperwork. Call ${COMPANY.phone} first so someone is at the gate to meet you; the trucks are often all out on calls.` },
   { q: "Are you insured?", a: `Yes. We carry commercial towing insurance through ${COMPANY.insurer}. If you need a certificate of insurance for a property account or a dealer, email the request and we will send one.` },
   { q: "What if my job needs a bigger truck than yours?", a: "We still take the call. For box trucks, buses and loaded commercial units we bring in a heavy-wrecker partner, pass along your details, and keep you updated so you are not left making five phone calls. See [heavy-duty towing](/towing/heavy-duty-towing)." },
@@ -19,7 +19,7 @@ const faqs: Faq[] = [
 ---
 <Base
   title="About Our Columbus Flatbed Company"
-  description="Auto Lyft USA Inc. is a Columbus flatbed towing company owned by Lisa Peer, running four carriers from Harrisburg Pike since 2024. (614) 633-8163."
+  description="Auto Lyft USA Inc. is a Columbus flatbed towing company owned by Lisa Peer, running flatbeds and wheel lifts across the city since 2024. (614) 633-8163."
   path={path}
   pageType={["WebPage", "AboutPage"]}
   crumbs={[{ name: "About", path }]}
@@ -39,10 +39,10 @@ const faqs: Faq[] = [
         Auto Lyft USA started in {COMPANY.foundingYear}, when {COMPANY.owner.name} decided Columbus drivers deserved a towing company that tells them the price on the phone and then sticks to it. The business is incorporated in Ohio as {COMPANY.legalName}, and it is still small enough that the owner reads the email inbox herself.
       </p>
       <p>
-        Our fleet is {COMPANY.fleet.trucks} {COMPANY.fleet.kind}. There is no wheel-lift truck in the lot and no plan to add one. Every car, SUV, pickup, motorcycle or EV we move rides fully on the deck, which is the gentlest way to haul a vehicle and the one most manufacturers ask for. That choice shapes what we do well: <a href="/towing/flatbed-towing">flatbed towing</a>, <a href="/towing/ev-towing">electric vehicle transport</a>, <a href="/towing/low-profile-towing">lowered and low-clearance cars</a>, plus the roadside calls that keep a car from needing a tow at all.
+        Our fleet is {COMPANY.fleet.trucks} {COMPANY.fleet.kind}, plus wheel-lift trucks and a set of wheel dollies on every call. Most cars, SUVs, pickups and motorcycles, and every EV, ride fully on a deck, the gentlest way to haul a vehicle and the one most manufacturers ask for; the wheel lift covers tight spots a deck cannot reach. That mix shapes what we do well: <a href="/towing/flatbed-towing">flatbed towing</a>, <a href="/towing/ev-towing">electric vehicle transport</a>, <a href="/towing/low-profile-towing">lowered and low-clearance cars</a>, plus the roadside calls that keep a car from needing a tow at all.
       </p>
       <p>
-        The trucks live in our yard at {COMPANY.address.full}. Harrisburg Pike is US-62, and from that stretch of the southwest side a driver reaches the I-70, I-71 and I-270 ramps within a few minutes. That position is why we cover the whole metro and the towns around it; see the <a href="/areas">service area list</a> for the places we reach most often.
+        Our office and yard are at {COMPANY.address.full}, on US-62 near the I-70, I-71 and I-270 ramps, but the trucks don't wait there. We keep them positioned around Columbus, and dispatch sends whichever is closest. That is how we cover the whole metro and the towns around it; see the <a href="/areas">service area list</a> for the places we reach most often.
       </p>
 
       <h2>How we work</h2>
@@ -86,7 +86,7 @@ const faqs: Faq[] = [
       </p>
     </div>
   </section>
-  <CtaBand heading="Need a flatbed now?" text="Call the yard on Harrisburg Pike. You hear the price first, then a truck is sent." />
+  <CtaBand heading="Need a flatbed now?" text="Call dispatch any hour. You hear the price first, then the nearest truck is sent." />
   <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Questions about the company" /></div></section>
   <Nap />
 </Base>

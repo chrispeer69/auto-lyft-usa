@@ -19,7 +19,7 @@ export default {
   },
   intro: [
     "Huntington Park opened in 2009 as the home of the Columbus Clippers, the Triple-A affiliate of the Cleveland Guardians, and it sits in the Arena District between Nationwide Arena and the Crew's soccer stadium. The minor league schedule is long, with dozens of home dates between spring and late summer, including weekday afternoon games that draw office workers and school groups. That steady rhythm makes Huntington Park towing a seasonal routine for our drivers.",
-    "Baseball crowds are friendlier to traffic than football crowds, but the parking is still downtown parking: shared garages, metered curbs and surface lots that may also be serving a hockey game or a concert on the same night. When something goes wrong, our dispatcher sorts out exactly where you are and sends one of our four flatbeds from the yard on Harrisburg Pike, a short trip up the freeway.",
+    "Baseball crowds are friendlier to traffic than football crowds, but the parking is still downtown parking: shared garages, metered curbs and surface lots that may also be serving a hockey game or a concert on the same night. When something goes wrong, our dispatcher sorts out exactly where you are and sends whichever of our trucks is nearest and free, since they are posted around the city rather than parked at the yard.",
     "Summer has its own pattern of failures. Heat is actually harder on a car battery than cold is, because it speeds up the chemical wear inside. A battery that was weakened over a hot July often gives up on a ballpark night. Tires on hot pavement and cooling systems stuck in traffic come next, followed by the ever-present lockout.",
   ],
   sections: [

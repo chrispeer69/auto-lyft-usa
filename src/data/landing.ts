@@ -20,17 +20,17 @@ export const LANDINGS: Landing[] = [
   {
     slug: "tow-truck-near-me", keyword: "tow truck near me", title: "Tow Truck Near Me — Columbus, OH",
     description: "Stranded in Columbus and searching for the closest tow truck? Auto Lyft USA dispatches flatbeds around the clock. Call now for a price before we roll.",
-    h1: "Tow Truck Near You in Columbus, Dispatched Now", sub: "Tell us where you are. We quote it, send the nearest flatbed, and text you the driver's name.",
-    ticks: ["Open 24/7, including holidays", "Every tow on a flatbed", "Price given before dispatch"],
+    h1: "Tow Truck Near You in Columbus, Dispatched Now", sub: "Tell us where you are. We quote it, send the nearest truck, and text you the driver's name.",
+    ticks: ["Open 24/7, including holidays", "Flatbed or wheel lift to suit the car", "Price given before dispatch"],
     faqs: [
-      { q: "How do you find the nearest truck?", a: "The dispatcher sees where each of our four flatbeds is and assigns whichever can reach you soonest, then gives you a live estimate." },
+      { q: "How do you find the nearest truck?", a: "The dispatcher sees where each of our trucks is and assigns whichever can reach you soonest, then gives you a live estimate." },
       { q: "Can I send my location instead of explaining it?", a: "Yes. After you call, we can text you a link, or you can text a map pin to (614) 633-8163." },
       { q: "Do you come out at night?", a: "Yes. The phone is answered and trucks run every hour of every day." },
     ],
   },
   {
     slug: "towing-near-me", keyword: "towing near me", title: "Towing Near Me in Columbus, OH",
-    description: "Towing near you anywhere in Columbus and nearby suburbs. Flatbed-only fleet, 24/7 dispatch, quote first. Call Auto Lyft USA now.",
+    description: "Towing near you anywhere in Columbus and nearby suburbs. Flatbeds and wheel lifts, 24/7 dispatch, quote first. Call Auto Lyft USA now.",
     h1: "Columbus Towing, Close By and Ready", sub: "From Hilltop to Westerville, a flatbed is on its way as soon as you approve the price.",
     ticks: ["Columbus + 40+ nearby towns", "Car, SUV, pickup or EV", "No membership required"],
     faqs: [
@@ -41,22 +41,22 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "towing-company", keyword: "towing company", title: "Columbus Towing Company, Open 24/7",
-    description: "Looking for a towing company in Columbus you can trust? Auto Lyft USA: locally owned, insured, flatbed-only, prices up front. Call now.",
-    h1: "A Columbus Towing Company That Quotes First", sub: "Locally owned, insured, and working from a yard on Harrisburg Pike since 2024.",
+    description: "Looking for a towing company in Columbus you can trust? Auto Lyft USA: locally owned, insured, flatbeds and wheel lifts, prices up front. Call now.",
+    h1: "A Columbus Towing Company That Quotes First", sub: "Locally owned, insured, with trucks across Columbus and a yard on Harrisburg Pike since 2024.",
     ticks: ["Locally owned and insured", "Photos before every load", "Itemized receipts"],
     faqs: [
-      { q: "Are you a dispatcher that sends someone else?", a: "No. Auto Lyft USA runs its own flatbeds out of its own yard. Only heavy trucks and buses go to partner wreckers, and we tell you if that applies." },
+      { q: "Are you a dispatcher that sends someone else?", a: "No. Auto Lyft USA runs its own flatbeds and wheel-lift trucks. Only heavy trucks and buses go to partner wreckers, and we tell you if that applies." },
       { q: "Are you insured?", a: "Yes, we carry commercial towing coverage. Drivers photograph your vehicle before loading it." },
       { q: "Can businesses set up an account?", a: "Yes. Fleets, dealers and property managers can set up billing; call or email the office." },
     ],
   },
   {
     slug: "flatbed-towing", keyword: "flatbed towing", title: "Flatbed Towing Columbus — Call Now",
-    description: "Flatbed towing in Columbus for AWD, EV, lowered and luxury cars. Every Auto Lyft USA truck is a flatbed. Call for a price before dispatch.",
+    description: "Flatbed towing in Columbus for AWD, EV, lowered and luxury cars. Four flatbeds in our fleet. Call for a price before dispatch.",
     h1: "Flatbed Towing in Columbus, With Every Wheel on the Deck", sub: "No dragging and no spinning drivetrain. Your vehicle rides on the carrier from pickup to drop-off.",
     ticks: ["All-wheel-drive safe", "Ramp extensions for low cars", "Soft straps at the tires"],
     faqs: [
-      { q: "Do you charge extra for a flatbed?", a: "No. Flatbeds are the only trucks we run, so there's no upgrade fee." },
+      { q: "Do you charge extra for a flatbed?", a: "No. Flatbed and wheel-lift tows use the same rate card, so there's no upgrade fee." },
       { q: "Will my lowered car fit?", a: "Usually yes, with ramp extensions. Tell the dispatcher how low it sits." },
       { q: "Can you move a car that won't roll?", a: "Yes. The winch pulls it aboard, and we use skates under locked wheels." },
     ],
@@ -107,13 +107,13 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "ev-towing", keyword: "EV towing", title: "EV & Tesla Towing in Columbus, OH",
-    description: "Electric vehicle and Tesla towing in Columbus on flatbeds only: transport mode, every wheel off the road, delivered to a charger or shop.",
+    description: "Electric vehicle and Tesla towing in Columbus on a flatbed: transport mode, every wheel off the road, delivered to a charger or shop.",
     h1: "EV and Tesla Towing in Columbus, Wheels Off the Ground", sub: "Out of charge or broken down, your EV goes on the deck in transport mode and to a charger, service center or home.",
     ticks: ["Tesla, Mach-E, Ioniq, Bolt and more", "Transport-mode loading", "Delivered to a charger"],
     faqs: [
       { q: "Can you charge my EV on the spot?", a: "No. We tow it to the nearest fast charger or wherever you choose." },
       { q: "Do I need to do anything first?", a: "If the car powers on, look up how to enter tow or transport mode; the driver will walk you through it." },
-      { q: "Is a flatbed really necessary?", a: "Most EV makers say to keep all four wheels off the road, and every truck we run is a flatbed." },
+      { q: "Is a flatbed really necessary?", a: "Most EV makers say to keep all four wheels off the road, so every EV we tow goes on a flatbed." },
     ],
   },
   {

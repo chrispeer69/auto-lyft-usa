@@ -66,7 +66,7 @@ export default {
       paragraphs: [
         "A wheel-lift truck cradles one axle and tows on the other. It is a useful tool for front-wheel-drive cars in tight spaces, and our [wheel-lift towing page](/towing/wheel-lift-towing) explains where that style makes sense and why our own fleet stays with flatbeds. For AWD, a wheel-lift is only acceptable if the rolling end sits on a set of dollies, which means every tire is lifted anyway. Dollies add steps, small tires and more chances for something to shift on a bump.",
         "Some part-time four-wheel-drive trucks with a manual transfer case can be flat-towed in neutral behind a motorhome, but that is a specific procedure in the manual, not a general rule. Do not assume your crossover has the same allowance.",
-        "Since every truck we run is a flatbed carrier, the question never comes up on our calls. The car rolls or is winched onto the deck, gets strapped by the tires, and rides with nothing turning. Details are on our [flatbed towing page](/towing/flatbed-towing).",
+        "On our calls an AWD car goes on a flatbed carrier by default, so the question rarely comes up. The car rolls or is winched onto the deck, gets strapped by the tires, and rides with nothing turning. If a tight spot means a short wheel-lift move instead, dollies go under the grounded axle so no wheel turns there either. Details are on our [flatbed towing page](/towing/flatbed-towing).",
       ],
     },
     {
@@ -89,7 +89,7 @@ export default {
     },
     {
       q: "Does a flatbed tow cost more than a wheel-lift tow?",
-      a: "With us it does not, because all four of our trucks are flatbed carriers and every tow is priced on the same published card. Other companies may charge a premium for a flatbed. Ask for the full price before dispatch, including hook-up, mileage and any surcharges, so you can compare quotes fairly.",
+      a: "With us it does not, because every tow, flatbed or wheel lift, is priced on the same published card. Other companies may charge a premium for a flatbed. Ask for the full price before dispatch, including hook-up, mileage and any surcharges, so you can compare quotes fairly.",
     },
     {
       q: "Do mismatched tires matter on an AWD car the same way?",

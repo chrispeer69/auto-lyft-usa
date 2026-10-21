@@ -19,7 +19,7 @@ export default {
     {
       heading: "Flatbed only, and why we load from the wheels",
       paragraphs: [
-        "Every tow we run is on one of our four light-duty flatbed carriers, so an EV customer never has to argue for the right truck. The car is winched up the tilted deck and secured with straps around the tires rather than chains hooked to the underbody. Wheel straps hold the car by its rubber, which keeps hardware away from the battery enclosure, cooling lines and the thin covers that protect the underside.",
+        "An EV always goes on one of our four light-duty flatbed carriers, so an EV customer never has to argue for the right truck. The car is winched up the tilted deck and secured with straps around the tires rather than chains hooked to the underbody. Wheel straps hold the car by its rubber, which keeps hardware away from the battery enclosure, cooling lines and the thin covers that protect the underside.",
         "If the car will not roll at all, because the parking brake is locked or the shifter cannot leave Park, the operator can set wheel skates (small rolling dollies) under the stuck wheels before winching. That lets the car move onto the deck without dragging a locked tire across the bed. Our [EV towing page](/towing/ev-towing) explains how we handle the job from call to drop-off, and the same reasoning applies to all-wheel-drive gas cars, covered in our guide on [why AWD cars need a flatbed](/guides/why-awd-cars-need-a-flatbed).",
       ],
     },

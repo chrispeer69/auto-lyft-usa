@@ -5,7 +5,7 @@ import type { Photo } from "../data/photos";
 interface Props { eyebrow: string; h1: string; lede: string; facts?: [string, string][]; secondary?: { href: string; label: string }; image?: Photo; showTrust?: boolean }
 const { eyebrow, h1, lede, facts, secondary = { href: "/request", label: "Request a tow online" }, image, showTrust = true } = Astro.props;
 // Only claims the business can stand behind (see CLAUDE.md): no times, ratings or counts.
-const trust = ["Open 24/7, 365 days", "Flatbed-only fleet", "Price quoted before dispatch", "Licensed & insured"];
+const trust = ["Open 24/7, 365 days", "Flatbeds + wheel lifts", "Price quoted before dispatch", "Licensed & insured"];
 ---
 <section class={`hero${image ? " has-photo" : ""}`}>
   {image && <img class="hero-bg" src={image.src} srcset={image.srcset} sizes="100vw" alt={image.alt} width="1920" height="1080" fetchpriority="high" decoding="async" />}

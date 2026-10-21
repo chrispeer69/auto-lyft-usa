@@ -18,7 +18,7 @@ export default {
   intro: [
     "The Columbus College of Art & Design has been teaching in Columbus since 1879, and today its buildings cluster on a handful of downtown acres along Cleveland Avenue, right beside the Columbus Museum of Art. Art school hours are not office hours. Students leave the studio at two in the morning, load sculptures and framed work into hatchbacks, and park wherever there's room. Auto Lyft USA offers towing near CCAD for the moments when those cars don't cooperate.",
     "A dead battery after a long critique, keys locked in a car full of supplies, a tire that went flat on a downtown pothole: we handle these with a flat-rate roadside visit. When the car needs a mechanic, it rides on one of our flatbeds to your shop, or to an independent garage we know that will diagnose it and give you a figure. When a student is heading home for good, it can ride much farther.",
-    "We're based on Harrisburg Pike on the southwest side, close enough to downtown that a call from Cleveland Avenue is a routine run. The dispatcher quotes the price before the truck rolls, whatever hour you call.",
+    "Our office sits southwest of downtown at 1620 Harrisburg Pike, and our trucks are posted around the city, so a call from Cleveland Avenue is a routine one. The dispatcher quotes the price before the truck rolls, whatever hour you call.",
   ],
   sections: [
     {

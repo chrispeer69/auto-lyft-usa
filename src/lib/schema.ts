@@ -58,7 +58,7 @@ export function businessNode({ cities, zips, services }: BusinessInput): Node {
     alternateName: COMPANY.alternateNames,
     foundingDate: String(COMPANY.foundingYear),
     description:
-      "Auto Lyft USA is a Columbus, Ohio towing company running light-duty flatbed carriers around the clock from a yard on Harrisburg Pike: car and SUV towing, EV transport, jump starts, lockouts, tire changes, fuel delivery and winch-outs across Franklin County and the surrounding Central Ohio towns.",
+      "Auto Lyft USA is a Columbus, Ohio towing company running light-duty flatbeds and wheel-lift trucks around the clock, with a yard on Harrisburg Pike: car and SUV towing, EV transport, jump starts, lockouts, tire changes, fuel delivery and winch-outs across Franklin County and the surrounding Central Ohio towns.",
     slogan: COMPANY.slogan,
     url: SITE_URL,
     telephone: COMPANY.phoneSchema,

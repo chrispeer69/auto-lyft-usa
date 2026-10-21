@@ -40,7 +40,7 @@ export default {
       heading: "Garage and lot logistics at the airport",
       paragraphs: [
         "Airport parking is run by the airport authority and its parking operator, and it has its own rules. Before calling us, check whether the parking operation offers any motorist help to its customers; it costs nothing to ask, and if they can't help, we can. You'll still need to pay your parking fee at the exit as usual; we don't handle that for you.",
-        "Parking structures have height limits, and we won't send a flatbed into a deck it doesn't fit. Jumps, lockouts and tire changes don't need the truck inside. If the car must be towed out of a structure, the dispatcher will ask for the posted clearance and talk through options. See [parking garage towing](/towing/parking-garage-towing) for how we approach those jobs.",
+        "Parking structures have height limits, and we won't send a flatbed into a deck it doesn't fit. Jumps, lockouts and tire changes don't need the truck inside. If the car must be towed out of a structure, the dispatcher will ask for the posted clearance and talk through options, including a lower wheel-lift truck. See [parking garage towing](/towing/parking-garage-towing) for how we approach those jobs.",
       ],
     },
     {
@@ -68,7 +68,7 @@ export default {
     },
     {
       q: "Can you reach my car inside the airport parking garage?",
-      a: "For a jump or lockout, yes; the driver can carry equipment to your level. For a tow, it depends on the garage's posted height limit and the ramps. Tell the dispatcher the facility, level and row. If the flatbed can't fit, we'll look for a safe way to get the car to an accessible spot, often by starting it so you can drive it down.",
+      a: "For a jump or lockout, yes; the driver can carry equipment to your level. For a tow, it depends on the garage's posted height limit and the ramps. Tell the dispatcher the facility, level and row. If the flatbed can't fit, a wheel-lift truck may; otherwise we'll look for a safe way to get the car to an accessible spot, often by starting it so you can drive it down.",
     },
     {
       q: "Can I call you before my plane lands?",

@@ -75,7 +75,7 @@ export default {
     {
       heading: "If something else goes wrong on the shoulder",
       paragraphs: [
-        "Flat tires sometimes arrive with company. A long wait on a summer afternoon can push an older car into overheating, and our [guide to handling an overheating car](/guides/car-overheating-what-to-do) covers that. If the car will not restart after sitting with the hazards on for a long time, a jump start usually sorts it out. And if the car needs to leave the interstate on a truck, our [emergency towing](/towing/emergency-towing) runs 24 hours a day from the yard on the southwest side of [Columbus](/areas/columbus-oh), a few minutes from I-70, I-71 and I-270.",
+        "Flat tires sometimes arrive with company. A long wait on a summer afternoon can push an older car into overheating, and our [guide to handling an overheating car](/guides/car-overheating-what-to-do) covers that. If the car will not restart after sitting with the hazards on for a long time, a jump start usually sorts it out. And if the car needs to leave the interstate on a truck, our [emergency towing](/towing/emergency-towing) runs 24 hours a day, with trucks positioned around [Columbus](/areas/columbus-oh) and the nearest free one sent your way.",
       ],
     },
   ],

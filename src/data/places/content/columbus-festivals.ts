@@ -15,7 +15,7 @@ export default {
   },
   intro: [
     "Summer in Columbus is a run of festival weekends. The Columbus Arts Festival fills the riverfront in June, ComFest takes over Goodale Park, Pride brings huge crowds downtown, and the Jazz & Rib Fest returns to the Scioto Mile. In between there are food truck gatherings, races, block parties and the first-Saturday Gallery Hop on High Street. Every one of them means full garages, closed streets and neighborhood blocks lined with visitors' cars, and that keeps Columbus festival towing steady from June onward.",
-    "Our flatbeds are based on Harrisburg Pike, not far southwest of downtown, so festival sites along the river and in the Short North are close by. The hard part is getting through closures and crowds, and finding one car among thousands parked on unfamiliar side streets. We ask good questions up front so the driver arrives at the right block.",
+    "Our office is on Harrisburg Pike, not far southwest of downtown, and our trucks are posted around the city, so festival sites along the river and in the Short North are never far from one. The hard part is getting through closures and crowds, and finding one car among thousands parked on unfamiliar side streets. We ask good questions up front so the driver arrives at the right block.",
     "Festival calls tend to be small problems that feel big in the moment: a car that will not start after a long hot day, keys locked inside with a picnic blanket, a flat from a curb on a tight street. Most are handled where the car sits. When a car does need to go somewhere, we take it to your home, your mechanic or a partner shop.",
   ],
   sections: [

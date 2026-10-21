@@ -5,15 +5,15 @@ const { place } = Astro.props as { place?: string };
 // Name the page's place when we have one, so local pages don't share this sentence.
 const lead = pick(Astro.url.pathname, place
   ? [
-      `Every truck sent to ${place} rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
-      `The flatbeds that cover ${place} are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
-      `All four carriers that work ${place} start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
-      `Calls from ${place} are dispatched from ${COMPANY.yardArea.replace(/^on /, "")}, ${COMPANY.hours}.`,
+      `Trucks are positioned around Columbus, so the closest one heads to ${place}; our yard is ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
+      `The trucks that cover ${place} work from spots around the metro, our office is ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
+      `Calls from ${place} go to whichever truck is nearest; vehicles we hold are kept at our yard ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
+      `Dispatch for ${place} runs ${COMPANY.hours}, and our yard sits ${COMPANY.yardArea}.`,
     ]
   : [
-      `Every Auto Lyft USA truck rolls out of our yard ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
-      `Our flatbeds are based ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
-      `All four carriers start and finish the day ${COMPANY.yardArea}. Call ${COMPANY.hours}.`,
+      `Auto Lyft USA trucks are positioned around Columbus; our yard is ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
+      `Our office and yard are ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
+      `The nearest truck takes your call, wherever it is parked. Call ${COMPANY.hours}.`,
       `Home base is ${COMPANY.yardArea.replace(/^on /, "")}; dispatch works ${COMPANY.hours}.`,
     ]);
 ---

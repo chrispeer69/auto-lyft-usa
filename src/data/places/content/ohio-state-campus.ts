@@ -15,9 +15,9 @@ export default {
     postal: "43210",
   },
   intro: [
-    "Ohio State packs tens of thousands of cars into one square of north Columbus: commuter lots on West Campus, structured garages along Lane Avenue and Tuttle Park Place, and thousands more parked on the side streets between High Street and the Olentangy. When one of them won't start, the driver is often nineteen, between classes, and not sure who to call. Auto Lyft USA handles towing near Ohio State campus from our yard on Harrisburg Pike, which sits on the southwest side a short run down SR-315 from the university.",
+    "Ohio State packs tens of thousands of cars into one square of north Columbus: commuter lots on West Campus, structured garages along Lane Avenue and Tuttle Park Place, and thousands more parked on the side streets between High Street and the Olentangy. When one of them won't start, the driver is often nineteen, between classes, and not sure who to call. Auto Lyft USA handles towing near Ohio State campus with trucks posted around the city; our yard is down SR-315 on the southwest side, along Harrisburg Pike.",
     "Most of what we do here is small: a jump for a car that sat through a cold week, a lockout outside a residence hall, a spare put on in a garage stall. The bigger jobs come at the edges of the academic calendar. In August, families arrive with loaded hatchbacks that overheat in traffic. In May, a student needs a car that hasn't run since spring break carried to a shop, a driveway in Toledo, or a family garage two states away.",
-    "Our carriers are all flatbeds, so a front-wheel-drive commuter car, an all-wheel-drive crossover and a hybrid all ride the same way: on the deck, wheels still. The dispatcher quotes the full price before a driver leaves the yard, and that quote doesn't change because the caller happens to be a student.",
+    "Most tows here ride on a flatbed, so an all-wheel-drive crossover or a hybrid travels on the deck, wheels still, while a wheel-lift tow covers a tight lot or a quick move when the car allows it. The dispatcher quotes the full price before a driver is sent, and that quote doesn't change because the caller happens to be a student.",
   ],
   sections: [
     {
@@ -47,7 +47,7 @@ export default {
       paragraphs: [
         "\"I'm at Ohio State\" covers more ground than most small towns. The fastest calls are the ones where we know the garage, the level and the nearest cross street before the truck leaves. Parking on campus is run by CampusParc, and the garages carry names such as Ohio Union South, Lane Avenue, Tuttle Park Place, Arps and 12th Avenue. Say the name, the level and the row or stall number, and mention whether the car is nose-in.",
         "For surface lots, give the lot's name or letter from the sign and the road you turned off. For street parking, the block and nearest cross street are enough, for example Chittenden near High, or 15th Avenue between Summit and Indianola. If you're at a residence hall, name the hall and which side of the building the car is on.",
-        "Structured garages are where details matter most. With a car on its deck, a carrier stands tall, so a breakdown on an upper level is something we plan around before leaving the yard. Our [parking garage towing](/towing/parking-garage-towing) page explains how we approach those jobs. Many dead-battery and lockout calls in garages never need the truck to enter at all, because the driver can carry a booster pack or tools on foot.",
+        "Structured garages are where details matter most. With a car on its deck, a carrier stands tall, so a breakdown on an upper level is something we plan around before a truck heads out. Our [parking garage towing](/towing/parking-garage-towing) page explains how we approach those jobs. Many dead-battery and lockout calls in garages never need the truck to enter at all, because the driver can carry a booster pack or tools on foot.",
       ],
     },
     {

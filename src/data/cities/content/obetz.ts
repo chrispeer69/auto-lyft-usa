@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Obetz towing from a nearby Columbus yard: flatbed tows by Fortress Obetz, Alum Creek Drive and the auto auction on Groveport Road. (614) 633-8163.",
+    "Obetz towing, a short hop from our Columbus yard: flatbed tows by Fortress Obetz, Alum Creek Drive and the auto auction on Groveport Road. (614) 633-8163.",
   h1: "Need a Tow in Obetz? Flatbeds for Alum Creek Drive and Beyond",
   lede:
-    "Obetz is a quick outerbelt run east of our yard, and between its auto auction, its container-built stadium and its new warehouses, it sends us a surprisingly mixed set of jobs.",
+    "Obetz sits a short way east of our yard along the outerbelt, and between its auto auction, its container-built stadium and its new warehouses, it sends us a surprisingly mixed set of jobs.",
   intro: [
-    "Obetz is about 6.5 miles east-southeast of our Harrisburg Pike yard, near enough that the trip is mostly a straight line along I-270. On the outerbelt, the Alum Creek Drive exit carries signs for both Obetz and Rickenbacker, and it drops our trucks beside the village government center and Memorial Park. For the west side of town, Lockbourne Road and Groveport Road work just as well.",
+    "Obetz is about 6.5 miles east-southeast of our Harrisburg Pike yard, with I-270 linking the two. Dispatch sends whichever of our trucks is nearest; on the outerbelt, the Alum Creek Drive exit carries signs for both Obetz and Rickenbacker, and it drops a truck beside the village government center and Memorial Park. For the west side of town, Lockbourne Road and Groveport Road work just as well.",
     "For a small place, Obetz produces an unusually wide range of calls. Groveport Road is home to America's Auto Auction Columbus Fair, whose weekly sales bring dealers who need cars moved to and from the lanes. Fortress Obetz, the stadium raised on the old Columbus Motor Speedway grounds, fills up for matches and for Zucchinifest over Labor Day weekend. And the distribution buildings going up in the Obetz Business Park add more traffic each season.",
-    "In the residential streets it is everyday trouble: a pickup with a dead battery in a driveway off Alum Creek Drive, or a sedan with a blown tire on the outerbelt ramp. Each of those jobs is handled on a flatbed, whether the car is headed to a shop down the road or across the county. Dealers can read about our [dealer and auction towing](/towing/dealer-auction-towing), and anyone else can call [(614) 633-8163](/contact) for a quote.",
+    "In the residential streets it is everyday trouble: a pickup with a dead battery in a driveway off Alum Creek Drive, or a sedan with a blown tire on the outerbelt ramp. Most of those jobs go on a flatbed, with a wheel-lift tow for quick moves where it suits the car, whether the car is headed to a shop down the road or across the county. Dealers can read about our [dealer and auction towing](/towing/dealer-auction-towing), and anyone else can call [(614) 633-8163](/contact) for a quote.",
   ],
   roads: [
     { name: "I-270 at Alum Creek Drive (Exit 49)", note: "The outerbelt exit signed for Obetz and Rickenbacker airport, and the ramp where many of our Obetz jobs begin or end." },
@@ -34,7 +34,7 @@ export default {
     { kind: "park", name: "D. Greg Scott Park and Obetz Community Center", detail: "The park and the community center sit together on Obetz Avenue; mention which building you parked closest to when you call." },
   ],
   faqs: [
-    { q: "How long a trip is it from your yard to Obetz?", a: "Short by our standards. Obetz is roughly 6.5 miles from 1620 Harrisburg Pike, and most of the route is I-270 heading east to the Alum Creek Drive exit. The dispatcher looks at what traffic is doing on the outerbelt before giving you a live arrival estimate, which is more honest than a fixed promise." },
+    { q: "How far is Obetz from your yard?", a: "Not far. Obetz is roughly 6.5 miles from 1620 Harrisburg Pike, with I-270 and the Alum Creek Drive exit between them. The truck sent is the nearest free one around Columbus. The dispatcher looks at what traffic is doing on the outerbelt before giving you a live arrival estimate, which is more honest than a fixed promise." },
     { q: "Can you move cars to or from America's Auto Auction on Groveport Road?", a: "Yes. We carry dealer and private cars to and from the auction on flatbeds, which is how most dealers want non-running or freshly reconditioned cars to travel. Book ahead for Wednesday sales so the truck is lined up before the lanes open, and have the gate pass or release paperwork ready for the driver." },
     { q: "My car broke down as I was leaving a match at Fortress Obetz. What now?", a: "Call and tell us which lot or side street you are on. After a match everyone leaves at once, and a carrier is easier to load once the crowd thins. The driver will try a jump or a spare tire first if that is the problem and tow only if the car really cannot be driven." },
     { q: "Do you still tow during Zucchinifest weekend?", a: "Yes. Dispatch runs through holidays, Labor Day included. During the festival the streets around Memorial Park and the stadium get crowded, and some may be closed. Tell us exactly where the car is and whether other cars are blocking it; the driver may need to wait for a lane to clear before hooking up." },

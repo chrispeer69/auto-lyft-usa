@@ -15,9 +15,9 @@ export default {
     postal: "43219",
   },
   intro: [
-    "Easton Town Center opened on the northeast side of Columbus in 1999 and has grown into roughly 90 acres of shops, restaurants, hotels and the enclosed Station Building with its big multiplex. On a busy Saturday that adds up to a sea of parked cars, and a few of them won't start when their owners come back with shopping bags. Auto Lyft USA handles Easton towing and roadside calls at any hour, dispatching from our flatbed yard on Harrisburg Pike.",
+    "Easton Town Center opened on the northeast side of Columbus in 1999 and has grown into roughly 90 acres of shops, restaurants, hotels and the enclosed Station Building with its big multiplex. On a busy Saturday that adds up to a sea of parked cars, and a few of them won't start when their owners come back with shopping bags. Auto Lyft USA handles Easton towing and roadside calls at any hour, sending the nearest of our trucks, which are posted around the city.",
     "Most trouble here turns out to be minor. A battery quits after a long movie on a cold night, a key fob ends up on the front seat of a locked car, or a tire picks up a screw somewhere along Morse Road and is flat by the time dinner is over. Those are roadside jobs at our $75 flat rate plus mileage, and the driver usually handles them right where you parked.",
-    "When the car really won't go, it rides out on a flatbed to wherever you choose: your driveway, your dealer, or an independent shop. We are not a repair shop ourselves, so the decision about where it goes stays with you. The dispatcher gives you a live arrival estimate and a price before anyone leaves the yard.",
+    "When the car really won't go, it rides out on a flatbed to wherever you choose: your driveway, your dealer, or an independent shop. We are not a repair shop ourselves, so the decision about where it goes stays with you. The dispatcher gives you a live arrival estimate and a price before a truck is sent.",
   ],
   sections: [
     {
@@ -57,7 +57,7 @@ export default {
   faqs: [
     {
       q: "Do you offer Easton towing late at night after the stores close?",
-      a: "Yes. Dispatch runs every hour of every day, including holidays, so a car that won't start after a late movie or a closing shift still gets help. Anything dispatched from 10 PM through 6 AM picks up a $150 overnight surcharge on our rate card, and the dispatcher tells you the total before a truck leaves the yard. You can decide then whether to go ahead or wait until morning if the car is parked somewhere safe.",
+      a: "Yes. Dispatch runs every hour of every day, including holidays, so a car that won't start after a late movie or a closing shift still gets help. Anything dispatched from 10 PM through 6 AM picks up a $150 overnight surcharge on our rate card, and the dispatcher tells you the total before a truck is sent. You can decide then whether to go ahead or wait until morning if the car is parked somewhere safe.",
     },
     {
       q: "Can you jump my car inside an Easton parking garage?",
@@ -77,7 +77,7 @@ export default {
     },
     {
       q: "Is a flatbed really necessary for a car stuck at Easton?",
-      a: "Every truck in our fleet is a flatbed, so that's what you get. It matters most for all-wheel-drive cars, electric vehicles and anything with a low front bumper, because all four wheels ride on the deck instead of being dragged. Read more on our [flatbed towing](/towing/flatbed-towing) page about why we run only this type of carrier.",
+      a: "For many cars, yes, and it is our default. It matters most for all-wheel-drive cars, electric vehicles and anything with a low front bumper, because all four wheels ride on the deck instead of being dragged. A car that can safely go on a wheel lift, with dollies under the other axle when needed, can leave that way instead. Read more on our [flatbed towing](/towing/flatbed-towing) page about why we lean on this type of carrier.",
     },
     {
       q: "How long will I wait for help at Easton?",

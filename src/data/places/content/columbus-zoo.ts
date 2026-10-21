@@ -19,8 +19,8 @@ export default {
   },
   intro: [
     "The Columbus Zoo and Aquarium sits north of the city near Powell, along Riverside Drive and the O'Shaughnessy Reservoir, with the Zoombezi Bay water park right next door. It has been open since 1927 and pulls visitors from all over Ohio and neighboring states. Most of them drive, and most of them bring children, which shapes almost every Columbus Zoo towing call we take: the car has to be dealt with, and so does a family that wants to get home.",
-    "This is one of the longer runs for our trucks. Our yard is down on Harrisburg Pike, and the zoo is up in southern Delaware County, so a driver heads north on the outerbelt and up toward Powell. We are upfront about that: the en-route mileage is a bigger share of the bill than it would be downtown, and the dispatcher will include it in the quote you hear before we roll.",
-    "What you get in return is a flatbed that can deal with whatever is wrong. Jumps, lockouts and spare tire swaps happen right in the lot. A car that truly needs a mechanic rides on the deck to a garage near your home or to an independent partner shop that will look at it and call you with a price.",
+    "The zoo is up in southern Delaware County, a long way from our yard down on Harrisburg Pike. Dispatch sends the nearest free truck, often by way of the outerbelt and up toward Powell. We are upfront about the distance: the en-route mileage is a bigger share of the bill than it would be downtown, and the dispatcher will include it in the quote you hear before we roll.",
+    "What you get in return is a driver equipped for whatever is wrong. Jumps, lockouts and spare tire swaps happen right in the lot. A car that truly needs a mechanic rides on the deck to a garage near your home or to an independent partner shop that will look at it and call you with a price.",
   ],
   sections: [
     {
@@ -73,7 +73,7 @@ export default {
     },
     {
       q: "Do you come to the zoo in the evening during the holiday lights?",
-      a: "Yes. Dispatch works through every evening, weekends and holidays. Cold winter nights mean more dead batteries, so a jump is the most common job then. Calls after 10 PM carry the overnight fee, and the weekend fee applies on Saturdays and Sundays. The dispatcher will tell you the full total before the driver leaves the yard.",
+      a: "Yes. Dispatch works through every evening, weekends and holidays. Cold winter nights mean more dead batteries, so a jump is the most common job then. Calls after 10 PM carry the overnight fee, and the weekend fee applies on Saturdays and Sundays. The dispatcher will tell you the full total before a driver is sent.",
     },
     {
       q: "Can you tow my minivan with a car seat installed?",

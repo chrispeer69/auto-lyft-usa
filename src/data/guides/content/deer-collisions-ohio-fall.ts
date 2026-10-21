@@ -80,7 +80,7 @@ export default {
     {
       heading: "Moving a deer-damaged car",
       paragraphs: [
-        "If the radiator is punctured, the engine will overheat within a few miles, so a leaking car should be towed even when it still runs. Our [accident towing](/towing/accident-towing) covers deer strikes as well as two-car crashes, and every tow rides on a flatbed. Our rates for that work are published, and rural calls are quoted from our yard on Harrisburg Pike before we dispatch. We can take the car to your body shop or to an independent partner shop for repair, including [cooling system work](/repair/cooling-system-repair) if the radiator took the hit.",
+        "If the radiator is punctured, the engine will overheat within a few miles, so a leaking car should be towed even when it still runs. Our [accident towing](/towing/accident-towing) covers deer strikes as well as two-car crashes, and a car with crash damage rides on a flatbed. Our rates for that work are published, and rural calls are quoted before we dispatch, with en-route miles counted from our yard on Harrisburg Pike. We can take the car to your body shop or to an independent partner shop for repair, including [cooling system work](/repair/cooling-system-repair) if the radiator took the hit.",
         "Call your insurer the same day. In general, animal strikes are handled under comprehensive coverage rather than collision, though every policy is different. For a broader checklist of photos, reports and storage costs, see our guide on [what to do after a crash in Ohio](/guides/after-a-car-accident-ohio).",
       ],
     },

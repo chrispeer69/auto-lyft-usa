@@ -18,7 +18,7 @@ export default {
   intro: [
     "Tanger's open-air outlet center sits on South Wilson Road in Sunbury, close to the Exit 131 interchange, where I-71 meets the US 36 and SR 37 corridor. It's a destination as much as a local mall: people drive in from all over central Ohio, and plenty of travelers heading up or down I-71 pull off for an hour of shopping. That mix means a breakdown here is often far from the driver's home and regular mechanic.",
     "Auto Lyft USA covers Tanger Outlets towing and roadside calls every hour of the year. Our yard is on the southwest side of Columbus, roughly 24 miles from Sunbury as the crow flies and farther by road, so we're upfront about mileage: the dispatcher quotes the full trip, including the drive out, before anyone leaves.",
-    "Small problems get solved in the parking lot for a flat $75 plus mileage. Bigger ones get a flatbed ride, either to a shop in Delaware County, back to Columbus, or to your own mechanic in another town. Every tow we run is a flatbed tow, which keeps all-wheel-drive and electric cars safe on a long highway haul, and you decide the destination before the car is ever loaded.",
+    "Small problems get solved in the parking lot for a flat $75 plus mileage. Bigger ones get a flatbed ride, either to a shop in Delaware County, back to Columbus, or to your own mechanic in another town. Long highway hauls ride on a flatbed, which keeps all-wheel-drive and electric cars safe over the distance, and you decide the destination before the car is ever loaded.",
   ],
   sections: [
     {
@@ -81,11 +81,11 @@ export default {
     },
     {
       q: "Which nearby towns do you also cover?",
-      a: "We cover [Sunbury](/areas/sunbury-oh) itself plus Galena, Lewis Center, Delaware, Westerville and the rest of the I-71 corridor down into Columbus. All of central Ohio is served from the same yard at the same published rates; only the en-route mileage changes with distance. If you're visiting from outside the region and need the car taken farther, the dispatcher can quote that run too.",
+      a: "We cover [Sunbury](/areas/sunbury-oh) itself plus Galena, Lewis Center, Delaware, Westerville and the rest of the I-71 corridor down into Columbus. All of central Ohio gets the same published rates; only the en-route mileage changes with distance. If you're visiting from outside the region and need the car taken farther, the dispatcher can quote that run too.",
     },
     {
       q: "My car has a flat in the Tanger lot and no spare. What are my options?",
-      a: "If there's an inflator kit and the puncture is small, the driver can try it. If that won't hold, the car can go on the flatbed to a tire shop or your home. Tell us your tire size if you know it, and the dispatcher can give you the total for the tow before we set out from the yard.",
+      a: "If there's an inflator kit and the puncture is small, the driver can try it. If that won't hold, the car can go on the flatbed to a tire shop or your home. Tell us your tire size if you know it, and the dispatcher can give you the total for the tow before we send a truck.",
     },
   ],
   cities: ["sunbury"],

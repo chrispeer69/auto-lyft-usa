@@ -20,7 +20,7 @@ export default {
   intro: [
     "The Greater Columbus Convention Center stretches along North High Street between downtown and the Short North, with hotels on both sides and the Arena District just to the west. Its calendar is packed with trade shows, conventions, gaming conventions and the Arnold Sports Festival each late winter. A lot of the people who come are not from Columbus, and that makes Convention Center towing a little different from our other downtown work.",
     "Visitors often do not have a local mechanic, a friend nearby or a clear sense of which garage they parked in. Exhibitors may be driving a loaded cargo van or a pickup with a trailer. Some cars sit for three or four days in a hotel garage and only reveal a problem on the morning of departure. Our job is to deal with all of that calmly, starting with a clear price before anything moves.",
-    "Auto Lyft USA is a locally owned company with a yard on Harrisburg Pike, a few minutes from I-70, I-71 and I-270. We run light-duty flatbeds, which suit cars, SUVs, minivans and most pickups. When the vehicle is bigger than that, we line up a heavy-wrecker partner and coordinate the job for you.",
+    "Auto Lyft USA is a locally owned company with a yard on Harrisburg Pike, a few minutes from I-70, I-71 and I-270. We run four light-duty flatbeds plus wheel-lift trucks, which suit cars, SUVs, minivans and most pickups. When the vehicle is bigger than that, we line up a heavy-wrecker partner and coordinate the job for you.",
   ],
   sections: [
     {

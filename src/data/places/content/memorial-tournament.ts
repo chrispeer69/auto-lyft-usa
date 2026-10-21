@@ -18,7 +18,7 @@ export default {
   intro: [
     "Jack Nicklaus opened Muirfield Village Golf Club in 1974 and founded the Memorial Tournament there two years later. Ever since, late spring has meant a week of world-class golf in northwest Dublin, along with crowds, shuttle buses, temporary traffic patterns and a lot of cars parked in places they normally would not be. Memorial Tournament towing is a short, intense season for us, packed into that one week.",
     "The callers are a mix. Spectators who parked early and came back to a dead battery. Volunteers who have been at the course since dawn. Vendors and caterers with loaded vans. Families who got caught in a spring thunderstorm and found their car sunk into a soft lot. Each of those calls needs a slightly different answer, and our dispatcher will ask enough questions to send the right help.",
-    "Our yard is on Harrisburg Pike, southwest of downtown Columbus, so the trip to Dublin follows I-270 around the west side. During tournament week we expect heavier traffic on the roads near the club and plan for it. The price is set before the truck leaves, and it does not go up because the event is famous.",
+    "Our yard is on Harrisburg Pike, southwest of downtown Columbus, and dispatch sends whichever truck is nearest; from the south, the trip to Dublin follows I-270 around the west side. During tournament week we expect heavier traffic on the roads near the club and plan for it. The price is set before the truck leaves, and it does not go up because the event is famous.",
   ],
   sections: [
     {
@@ -43,7 +43,7 @@ export default {
     {
       heading: "Price and timing",
       paragraphs: [
-        "Dublin is a mid-range trip for our trucks. Roadside work costs $75 flat, and a tow starts at $125 to load the car with $7 added for every mile it is carried. Both include $4 per mile for our drive up from the yard. A Saturday or Sunday call adds the $50 weekend fee. All figures are on the [rates page](/rates).",
+        "Dublin is a mid-range distance from our yard. Roadside work costs $75 flat, and a tow starts at $125 to load the car with $7 added for every mile it is carried. Both include $4 per mile for our drive up from the yard. A Saturday or Sunday call adds the $50 weekend fee. All figures are on the [rates page](/rates).",
         "We will not quote a fixed arrival time during tournament week, because traffic near the club changes hour by hour. The dispatcher will give you a live estimate and keep you informed if the driver runs into closures.",
       ],
     },
@@ -51,7 +51,7 @@ export default {
   faqs: [
     {
       q: "What does Memorial Tournament towing usually involve?",
-      a: "Most calls during tournament week are dead batteries, lockouts and flat tires in parking areas, plus a few cars stuck in soft ground after rain. Real breakdowns on the surrounding roads come next. We handle all of these with our flatbeds and roadside tools. Call (614) 633-8163, describe where you are and what happened, and the dispatcher will quote the job before sending a truck.",
+      a: "Most calls during tournament week are dead batteries, lockouts and flat tires in parking areas, plus a few cars stuck in soft ground after rain. Real breakdowns on the surrounding roads come next. We handle all of these with our tow trucks and roadside tools. Call (614) 633-8163, describe where you are and what happened, and the dispatcher will quote the job before sending a truck.",
     },
     {
       q: "My car is stuck in mud at a grass parking area. Can you pull it out without damage?",

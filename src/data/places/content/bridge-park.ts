@@ -17,14 +17,14 @@ export default {
   intro: [
     "Bridge Park is Dublin's newer, walkable district on the east bank of the Scioto River, packed with apartments, offices, restaurants and bars, and tied to Historic Dublin on the opposite bank by the Dublin Link, the curved pedestrian bridge that opened in 2020. Much of the parking is tucked into structured garages, which shapes almost every call we get there.",
     "Visitors usually call us after an evening out: a car that won't start after sitting in a cool garage, or keys locked in the trunk after someone strolled over the river to Historic Dublin and back. Residents tend to call for slower problems, like a second car that sat untouched for weeks and drained its battery, or an EV that needs to reach a service center.",
-    "Auto Lyft USA handles Bridge Park towing and roadside work 24 hours a day with flatbed carriers only. That matters in a district full of newer cars, electric vehicles and the occasional low-slung sports car, none of which should be dragged on two wheels. You'll get a quote and a live arrival estimate before we roll.",
+    "Auto Lyft USA handles Bridge Park towing and roadside work 24 hours a day and sends a flatbed whenever the car needs one. That matters in a district full of newer cars, electric vehicles and the occasional low-slung sports car, none of which should be dragged on two wheels. You'll get a quote and a live arrival estimate before we roll.",
   ],
   sections: [
     {
       heading: "Working inside Bridge Park's garages",
       paragraphs: [
         "Structured parking is convenient for people and awkward for tow trucks. Before we dispatch a flatbed into a garage, we want to know the posted height limit at the entrance, which level the car is on, and whether the ramps are tight. If you can, snap a photo of the clearance sign and text it to the dispatcher.",
-        "For a dead battery or a lockout, the truck rarely needs to go inside at all. The driver parks at street level and carries a portable jump pack or entry tools to your car. If the car does need a tow and the flatbed can't reach your level, we'll discuss safe options, such as starting it long enough to drive down to an open spot. Our [parking garage towing](/towing/parking-garage-towing) page explains the process.",
+        "For a dead battery or a lockout, the truck rarely needs to go inside at all. The driver parks at street level and carries a portable jump pack or entry tools to your car. If the car does need a tow and the flatbed can't reach your level, a lower wheel-lift truck may get in; otherwise we'll discuss safe options, such as starting it long enough to drive down to an open spot. Our [parking garage towing](/towing/parking-garage-towing) page explains the process.",
       ],
     },
     {

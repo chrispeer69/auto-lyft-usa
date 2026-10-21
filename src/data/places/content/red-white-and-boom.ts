@@ -15,7 +15,7 @@ export default {
   },
   intro: [
     "Red, White & BOOM! lights up downtown Columbus every year around July 3rd, and it is the one night when the whole region seems to try to park within walking distance of the Scioto riverfront. Garages fill hours ahead, side streets in the surrounding neighborhoods line up bumper to bumper, and many downtown streets close to traffic for the crowds and the show. Red White & BOOM towing is less about distance than about patience and planning.",
-    "Harrisburg Pike sits close to the riverfront, which normally makes this an easy run for us. On fireworks night, though, the last mile can take longer than the first ten. We will not pretend otherwise. The dispatcher will tell you what is realistic, suggest the quickest fix, and help you decide whether it makes sense to wait for the crowd to clear or to leave the car overnight and deal with it in the morning.",
+    "Our office on Harrisburg Pike sits close to the riverfront, and on a normal night the area is easy for our drivers to reach. On fireworks night, though, the last mile can take longer than the first ten. We will not pretend otherwise. The dispatcher will tell you what is realistic, suggest the quickest fix, and help you decide whether it makes sense to wait for the crowd to clear or to leave the car overnight and deal with it in the morning.",
     "What we can promise is a clear price before we roll, help that fits the actual problem, and a driver who is calm in a crowd. On fireworks night, a jumper pack or a lockout kit settles far more calls than the flatbed deck does.",
   ],
   sections: [

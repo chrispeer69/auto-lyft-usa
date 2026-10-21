@@ -50,7 +50,7 @@ type OfferLine = { name: string; price: number; unit: "per tow" | "per mile" | "
     (heavy, medium, fleet, repo, auction, property, junk, equipment) have none. */
 export function offersFor(slug: string): OfferLine[] {
   const tow: OfferLine[] = [
-    { name: "Hook-up", price: RATES.hookup, unit: "per tow", note: "Loading and securing the vehicle on the flatbed." },
+    { name: "Hook-up", price: RATES.hookup, unit: "per tow", note: "Loading and securing the vehicle on the flatbed or wheel lift." },
     { name: "Loaded miles", price: RATES.loadedPerMile, unit: "per mile", note: "Each mile the vehicle rides on the deck." },
     { name: "En-route miles", price: RATES.enroutePerMile, unit: "per mile", note: "Miles from our yard to the pickup." },
   ];
