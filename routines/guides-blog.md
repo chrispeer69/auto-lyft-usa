@@ -16,7 +16,7 @@ The two companies share a city, a yard address and a rate card, so Google will c
 - **No hero image** (guides on this site have none). Do not add one.
 
 ## Step 0 — Should this run write anything?
-1. `TZ=America/New_York date +%Y-%m-%d`. The series has no end date; it runs until the owner disables it at https://claude.ai/code/routines.
+1. `TZ=America/New_York date +%Y-%m-%d`. The series has no end date; it runs until the owner disables it at https://claude.ai/code/routines. If any guide in `src/data/guides/content/*.ts` on `origin/main` has a `date` within the last 2 days (a post was added by hand), write nothing, send no email, and stop: the twice-a-week pace is already met.
 2. Failure guard: `git fetch origin '+refs/heads/guide/*:refs/remotes/origin/guide/*'`, then `git branch -r --no-merged origin/main --list 'origin/guide/*'`. If 3 or more, write nothing; email a short note listing them ("3 guides failed their checks and are waiting for a fix") and stop.
 3. Network check: `curl -sS -m 15 -o /dev/null -w '%{http_code}' https://www.weather.gov/` and try one WebFetch of an official page. Note whether opening web pages works. This decides Step 2.
 
