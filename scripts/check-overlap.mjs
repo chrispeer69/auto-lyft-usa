@@ -16,7 +16,8 @@ import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import { parse } from "node-html-parser";
 
-const SISTER = "C:/Users/chris/OneDrive/Desktop/Website Files/Columbus Roadside Towing/Website Files/client/src";
+// SISTER_SRC overrides the path (the cloud blog routine clones the sister repo elsewhere).
+const SISTER = process.env.SISTER_SRC || "C:/Users/chris/OneDrive/Desktop/Website Files/Columbus Roadside Towing/Website Files/client/src";
 const fileMode = process.argv[2] === "--files";
 const N = 8;
 
