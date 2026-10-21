@@ -1,0 +1,112 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { COMPANY } from "../data/company";
+import { CONVINI, VIP_TIERS } from "../data/vip";
+import { abs, type Node } from "../lib/schema";
+import type { Faq } from "../data/types";
+
+const path = "/vip-program";
+const low = VIP_TIERS[0];
+const faqs: Faq[] = [
+  { q: "What is the Auto Lyft USA VIP program?", a: `It is a roadside membership run through the ${CONVINI.app} app from ${CONVINI.company}. You pick a plan, and each year it includes a set number of tows (up to a mileage cap) and roadside assists such as jump starts, lockouts, tire changes and fuel. You open the app at [convini.live](${CONVINI.url}) and request help in one tap.` },
+  { q: "Do I need a membership to get a tow from Auto Lyft USA?", a: `No. Anyone can call ${COMPANY.phone} and pay for the job on our [published rate card](/rates). The ROADSIDE app is also free to use without a plan, paying per service. A VIP plan only makes sense if you want tows and assists included each year.` },
+  { q: "How much does a VIP plan cost?", a: `Plans start at $${low.monthly} a month or $${low.annual} a year for ${low.name}. Silver, Gold and Platinum add more tows, more roadside assists and a longer included tow distance. The table on this page shows each one; CONVINI sets the prices, so the app always has the current figures.` },
+  { q: "How do I sign up?", a: `Open [convini.live](${CONVINI.url}), create a free account and choose a plan. A CONVINI concierge sets up the membership with you, nothing is charged online when you ask about a plan, and a paid plan becomes active once CONVINI reviews and approves it.` },
+  { q: "What if my tow is longer than my plan covers?", a: "The plan covers the tow up to its mileage cap. Extra miles, and any service your plan doesn't include, are still available and billed per service. You see the cost before you approve it." },
+  { q: "Do I have to download it from an app store?", a: "No. ROADSIDE runs in your phone's browser, and you can add it to your home screen so it opens like an app with one tap." },
+  { q: "What else is in the ROADSIDE app besides towing?", a: "Rental cars while yours is in the shop, auto repair and body shop scheduling with approved local shops, and a record of your vehicles and past requests. CONVINI also offers home services such as HVAC, electrical and plumbing through the same account." },
+];
+const usd = (n: number) => `$${n}`;
+const schema: Node[] = [
+  {
+    "@type": "OfferCatalog",
+    "@id": `${abs(path)}#plans`,
+    name: `${CONVINI.app} VIP roadside membership plans`,
+    url: abs(path),
+    itemListElement: VIP_TIERS.map((t) => ({
+      "@type": "Offer",
+      name: `${t.name} roadside membership`,
+      description: `${t.tows} tow${t.tows > 1 ? "s" : ""} per year up to ${t.towMiles} miles and ${t.assists} roadside assist${t.assists > 1 ? "s" : ""} per year.`,
+      price: t.annual,
+      priceCurrency: "USD",
+      priceSpecification: { "@type": "UnitPriceSpecification", price: t.annual, priceCurrency: "USD", unitText: "year" },
+      url: CONVINI.url,
+      seller: { "@type": "Organization", name: CONVINI.company, url: CONVINI.url },
+    })),
+  },
+];
+---
+<Base
+  title="VIP Roadside Membership in Columbus, OH"
+  description={`Auto Lyft USA VIP: the ROADSIDE app by CONVINI, Inc. Plans from $${low.monthly}/month include yearly tows and roadside assists in Columbus. (614) 633-8163.`}
+  path={path}
+  crumbs={[{ name: "VIP Program", path }]}
+  schema={schema}
+  faqs={faqs}
+>
+  <Hero image={PHOTOS.jump}
+    eyebrow="VIP Program · ROADSIDE by CONVINI"
+    h1="VIP Roadside Membership for Columbus Drivers"
+    lede={`Our VIP program runs on the ${CONVINI.app} app from ${CONVINI.company}: towing, roadside help, rental cars and repair in one tap, with plans that include tows and assists every year.`}
+    secondary={{ href: CONVINI.url, label: "Open the ROADSIDE app" }}
+    facts={[["Plans", "Bronze to Platinum"], ["From", `${usd(low.monthly)}/month`], ["App", "convini.live"], ["Without a plan", "Pay per service"]]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      <h2>What the ROADSIDE app does</h2>
+      <p>
+        {CONVINI.app} is a roadside emergency app made by {CONVINI.company}. When your car quits, you open it, confirm where you are and what you need, and it finds an approved tow company or roadside pro for you, so you aren't ringing around to see who is free. Nothing is charged without your OK, and you can follow the request in your account.
+      </p>
+      <ul>
+        <li><strong>Towing and roadside help:</strong> tows, jump starts, lockouts, flat tires and fuel.</li>
+        <li><strong>Rental cars:</strong> reserve a rental for the days your own car is being repaired. You'll need a photo of your driver's license and full-coverage insurance details.</li>
+        <li><strong>Auto repair and body shop:</strong> schedule work with approved local shops on the same account.</li>
+        <li><strong>Your vehicles on file:</strong> save each car's year, make and model so the next request is faster.</li>
+        <li><strong>No app store needed:</strong> it runs in the browser, and you can add it to your home screen.</li>
+      </ul>
+      <p><a class="btn btn-call" href={CONVINI.url} rel="noopener" target="_blank">Open ROADSIDE at convini.live</a></p>
+
+      <h2>VIP plans and what they include</h2>
+      <p>Every plan includes a set number of tows, each up to a mileage cap, plus roadside assists every year. Pay monthly, or pay yearly and save.</p>
+      <div class="table-scroll">
+        <table class="table">
+          <thead><tr><th>Plan</th><th>Monthly</th><th>Yearly</th><th>Tows per year</th><th>Tow distance</th><th>Roadside assists per year</th></tr></thead>
+          <tbody>
+            {VIP_TIERS.map((t) => (
+              <tr>
+                <td><strong>{t.name}</strong>{t.popular && <span class="muted small"> · most popular</span>}<br /><span class="muted small">{t.blurb}</span></td>
+                <td>{usd(t.monthly)}</td><td>{usd(t.annual)}</td><td>{t.tows}</td><td>up to {t.towMiles} miles</td><td>{t.assists}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">Prices and allowances as listed in the {CONVINI.app} app on {CONVINI.checked}. {CONVINI.company} sets them; the app always shows the current plans.</p>
+
+      <h2>How to join</h2>
+      <ol>
+        <li>Go to <a href={CONVINI.url} rel="noopener" target="_blank">www.convini.live</a> and create a free account.</li>
+        <li>Add your vehicle and pick Bronze, Silver, Gold or Platinum.</li>
+        <li>A CONVINI concierge confirms the membership with you. Asking about a plan costs nothing, and a paid plan starts once CONVINI approves it.</li>
+        <li>Save the app to your home screen so it is one tap away when you need it.</li>
+      </ol>
+
+      <h2>Membership or pay per tow?</h2>
+      <p>
+        You never need a plan to get a truck from us. Call <a href={COMPANY.telHref}>{COMPANY.phone}</a> any hour and you pay for that one job from our <a href="/rates">rate card</a>, quoted before a truck is sent. A VIP plan suits drivers who would rather have tows and assists already paid for: long commutes, older cars, teen drivers or a household with several vehicles. If one included tow a year would cover a typical local call for you, the plan has already done its job.
+      </p>
+      <p>
+        Questions about a plan, billing or your membership go to CONVINI through the app. Questions about a tow we are running go to our dispatch at <a href={COMPANY.telHref}>{COMPANY.phone}</a>.
+      </p>
+    </div>
+  </section>
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="VIP program questions" /></div></section>
+  <Nap />
+</Base>

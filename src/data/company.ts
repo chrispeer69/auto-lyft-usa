@@ -36,8 +36,9 @@ export const COMPANY = {
   hours: "around the clock, 365 days a year",
   fleet: { trucks: 4, kind: "light-duty flatbed carriers" },
   insurer: "AmeriSure",
-  /** US Tow Alliance member profile. VERIFY the company id before launch. */
+  /** US Tow Alliance member profile (checked live 2026-10-21: Elite member since 2026, registry ID 10602). */
   allianceProfile: "https://www.ustowalliance.com/company/10602/",
+  alliance: { name: "US Tow Alliance", url: "https://www.ustowalliance.com/", tier: "Elite", since: 2026, registryId: "10602", listed: "May 5, 2026" },
   /** Unconfirmed — rendered only once filled in. */
   pucoNumber: null as string | null,
   usdotNumber: null as string | null,

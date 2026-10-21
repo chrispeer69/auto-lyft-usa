@@ -28,7 +28,7 @@ const faqs: Faq[] = [
   <Hero image={PHOTOS.yard}
     eyebrow="About us"
     h1="Meet Auto Lyft USA: A Small Flatbed Outfit on the Southwest Side"
-    lede={`We are ${COMPANY.legalName}, owned by ${COMPANY.owner.name} and running ${COMPANY.fleet.trucks} ${COMPANY.fleet.kind} out of one yard on Harrisburg Pike.`}
+    lede={`We are ${COMPANY.legalName}, owned by ${COMPANY.owner.name} and running ${COMPANY.fleet.trucks} ${COMPANY.fleet.kind} plus wheel-lift trucks across Columbus, with our yard on Harrisburg Pike.`}
     facts={[["Founded", String(COMPANY.foundingYear)], ["Owner", COMPANY.owner.name], ["Fleet", `${COMPANY.fleet.trucks} flatbeds`], ["Dispatch", "24/7/365"]]}
   />
 
@@ -68,7 +68,7 @@ const faqs: Faq[] = [
           <tr><th scope="row">Hours</th><td>Dispatch answers {COMPANY.hours}</td></tr>
           <tr><th scope="row">Fleet</th><td>{COMPANY.fleet.trucks} {COMPANY.fleet.kind}</td></tr>
           <tr><th scope="row">Insurance</th><td>Commercial towing coverage through {COMPANY.insurer}</td></tr>
-          <tr><th scope="row">Association</th><td>Member of the <a href={COMPANY.allianceProfile} rel="noopener" target="_blank">US Tow Alliance</a></td></tr>
+          <tr><th scope="row">Association</th><td>{COMPANY.alliance.tier} member of the <a href="/us-tow-alliance">US Tow Alliance</a> (<a href={COMPANY.allianceProfile} rel="noopener" target="_blank">member profile</a>)</td></tr>
         </tbody>
       </table>
 
@@ -79,7 +79,7 @@ const faqs: Faq[] = [
       <ul>
         <li><strong>No involuntary repossessions.</strong> We do not take cars from people in the night on behalf of lenders. When a lender or dealer needs a vehicle moved that the owner has already surrendered, we can haul it, and our <a href="/towing/repo-towing">repo transport</a> page spells out exactly where that line sits.</li>
         <li><strong>No surprise fees.</strong> Every charge we bill appears on the published card: hook-up, mileage, the after-hours, weekend and highway add-ons, storage by the day. Nothing gets invented at the curb. If you are quoted one figure and the invoice shows another, the driver should have told you why before the work happened, and you can email the owner directly if that did not happen.</li>
-        <li><strong>No pretending we can do everything.</strong> If a job is outside what a light-duty flatbed handles safely, we say so on the phone and line up the right partner instead of sending a truck that cannot finish it.</li>
+        <li><strong>No pretending we can do everything.</strong> If a job is outside what our light-duty trucks handle safely, we say so on the phone and line up the right partner instead of sending a truck that cannot finish it.</li>
       </ul>
       <p>
         That is the whole pitch: a straight quote, careful loading and honest answers when something is not ours to handle. If that sounds like the company you want to call, the number is <a href={COMPANY.telHref}>{COMPANY.phone}</a>, or you can <a href="/request">send a tow request from your phone</a>.

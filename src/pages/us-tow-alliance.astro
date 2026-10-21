@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { COMPANY } from "../data/company";
+import type { Faq } from "../data/types";
+
+const path = "/us-tow-alliance";
+const A = COMPANY.alliance;
+const faqs: Faq[] = [
+  { q: "What is the US Tow Alliance?", a: `A national network and directory of independent towing companies across the United States. It publishes a registry profile for each member so drivers, businesses, search engines and AI assistants can look up who a towing company is, where it works and how to reach it. Its home page is [ustowalliance.com](${A.url}).` },
+  { q: "Where can I see Auto Lyft USA's alliance profile?", a: `At [${COMPANY.allianceProfile}](${COMPANY.allianceProfile}). It lists our name, address on Harrisburg Pike, phone, hours, fleet and insurance, and it links back to this website.` },
+  { q: "Does alliance membership mean Auto Lyft USA is endorsed or inspected?", a: "No. The alliance says plainly that a listing is not an endorsement and that membership is not the same as verification. Treat the profile as a second, independent place to confirm our contact details and basic facts, then judge us on the quote and the job." },
+  { q: "Is Auto Lyft USA owned by the US Tow Alliance?", a: `No. ${COMPANY.legalName} is a local, independent Ohio company owned by ${COMPANY.owner.name}. The alliance publishes our profile but does not own or run the business, set our prices or dispatch our trucks.` },
+  { q: "If something on the alliance profile looks wrong, who do I tell?", a: `Tell us at ${COMPANY.email} so we can fix it with the alliance, or use the "Report incorrect information" link at the bottom of the profile itself. If the two ever disagree, the rate card and service area on this website are the current ones.` },
+];
+---
+<Base
+  title="US Tow Alliance Member in Columbus, OH"
+  description={`Auto Lyft USA is a ${A.tier} member of the US Tow Alliance, the national towing registry. See our member profile and what membership means. (614) 633-8163.`}
+  path={path}
+  crumbs={[{ name: "About", path: "/about" }, { name: "US Tow Alliance", path }]}
+  faqs={faqs}
+>
+  <Hero image={PHOTOS.yard}
+    eyebrow="Membership"
+    h1="Auto Lyft USA and the US Tow Alliance"
+    lede={`We are a ${A.tier} member of the US Tow Alliance, a national registry of independent towing companies. Our public member profile is a second place to check who we are.`}
+    facts={[["Member level", A.tier], ["Member since", String(A.since)], ["Registry ID", A.registryId], ["Profile", "Public"]]}
+  />
+
+  <section class="band">
+    <div class="wrap prose">
+      <h2>Our member profile</h2>
+      <p>
+        The full profile lives on the alliance's own site:
+        <a href={COMPANY.allianceProfile} rel="noopener" target="_blank"><strong>{COMPANY.allianceProfile}</strong></a>.
+        It shows the same core facts you will find on this website, published by an organization that is not us.
+      </p>
+      <table class="table">
+        <tbody>
+          <tr><th scope="row">Listed as</th><td>{COMPANY.name}, {COMPANY.address.city}, Ohio</td></tr>
+          <tr><th scope="row">Membership</th><td>{A.tier} member since {A.since}</td></tr>
+          <tr><th scope="row">Registry ID</th><td>{A.registryId}, added to the registry {A.listed}</td></tr>
+          <tr><th scope="row">Address</th><td>{COMPANY.address.full}</td></tr>
+          <tr><th scope="row">Phone</th><td><a href={COMPANY.telHref}>{COMPANY.phone}</a></td></tr>
+          <tr><th scope="row">Hours</th><td>24/7/365</td></tr>
+          <tr><th scope="row">Insurance</th><td>Commercial towing coverage through {COMPANY.insurer}</td></tr>
+          <tr><th scope="row">Alliance home page</th><td><a href={A.url} rel="noopener" target="_blank">www.ustowalliance.com</a></td></tr>
+        </tbody>
+      </table>
+      <p><a class="btn btn-call" href={COMPANY.allianceProfile} rel="noopener" target="_blank">View our US Tow Alliance profile</a></p>
+
+      <h2>What the alliance is</h2>
+      <p>
+        The US Tow Alliance is a national directory and network of independent towing companies. Each member gets a registry record that lays out its identity, location, service area, services and credentials in a consistent format, so a driver comparing companies, a fleet manager vetting a vendor, a search engine or an AI assistant can all read the same structured facts. The alliance also runs sister directories for roadside help, auto body and independent repair shops.
+      </p>
+
+      <h2>Why we joined</h2>
+      <p>
+        A towing company is easy to claim online and hard to check from the side of the road. Listing with a national registry gives anyone a way to confirm, from a source other than our own website, that {COMPANY.name} is a real Columbus business at a real address with a working dispatch line. It also keeps our name, address and phone identical everywhere they appear, which is how search engines and AI tools decide which towing company a page is talking about.
+      </p>
+
+      <h2>What membership does and doesn't mean</h2>
+      <ul>
+        <li><strong>It is a public record.</strong> Our profile can be viewed, cited and checked by anyone, and it links back to this site.</li>
+        <li><strong>It is not an endorsement.</strong> The alliance states that a listing is not an endorsement and that membership is not the same as verification. We would rather say that up front than overstate it.</li>
+        <li><strong>It doesn't change who runs the job.</strong> {COMPANY.legalName} stays independent and locally owned by {COMPANY.owner.name}. Our prices come from our own <a href="/rates">published rate card</a>, and our dispatcher quotes before a truck is sent.</li>
+      </ul>
+      <p>
+        More about the company is on our <a href="/about">about page</a>. If you need a tow right now, call <a href={COMPANY.telHref}>{COMPANY.phone}</a> or <a href="/request">request one from your phone</a>.
+      </p>
+    </div>
+  </section>
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="US Tow Alliance questions" /></div></section>
+  <Nap />
+</Base>
