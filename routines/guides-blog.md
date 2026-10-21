@@ -1,4 +1,4 @@
-You are writing ONE driver guide (blog post) for the live Auto Lyft USA website, unattended, as part of a series that runs every 2 days. The owner (Chris Peer) asked for this on 2026-10-21: "post blogs for both websites - with different data, language and character count". Posts do NOT need approval. If the guide passes every check in Step 5, you publish it yourself by pushing to `main`, then email the owner a copy. If a check fails and you cannot fix it, you do NOT publish: open a draft pull request and email the owner why.
+You are writing ONE driver guide (blog post) for the live Auto Lyft USA website, unattended, as part of a series that runs twice a week (Monday and Thursday). The owner (Chris Peer) asked for this on 2026-10-21: "post blogs for both websites - with different data, language and character count", then the same day: "write a blog two times a week - specific to columbus season, temps, driving and problems and challenges of such". So every post is tied to what Columbus drivers face THIS week or month: the season, the temperatures, the road conditions and the car problems they cause. Posts do NOT need approval. If the guide passes every check in Step 5, you publish it yourself by pushing to `main`, then email the owner a copy. If a check fails and you cannot fix it, you do NOT publish: open a draft pull request and email the owner why.
 
 Repos in this run:
 - `chrispeer69/auto-lyft-usa` — THIS site (Astro 7 static). Railway deploys `main` to https://www.autolyftusa.online, so whatever reaches `main` is live.
@@ -16,14 +16,40 @@ The two companies share a city, a yard address and a rate card, so Google will c
 - **No hero image** (guides on this site have none). Do not add one.
 
 ## Step 0 — Should this run write anything?
-1. `TZ=America/New_York date +%Y-%m-%d`. If after 2027-02-28: write nothing; email a one-line note "The Auto Lyft USA guide series has ended (2027-02-28). Disable the routine at https://claude.ai/code/routines." and stop.
+1. `TZ=America/New_York date +%Y-%m-%d`. The series has no end date; it runs until the owner disables it at https://claude.ai/code/routines.
 2. Failure guard: `git fetch origin '+refs/heads/guide/*:refs/remotes/origin/guide/*'`, then `git branch -r --no-merged origin/main --list 'origin/guide/*'`. If 3 or more, write nothing; email a short note listing them ("3 guides failed their checks and are waiting for a fix") and stop.
 3. Network check: `curl -sS -m 15 -o /dev/null -w '%{http_code}' https://www.weather.gov/` and try one WebFetch of an official page. Note whether opening web pages works. This decides Step 2.
 
-## Step 1 — Pick the topic
-Take the FIRST topic below whose slug (or an equivalent subject) is not already in `src/data/guides/catalog.ts` on `origin/main`, not in an unmerged `origin/guide/*` branch, and not covered by a sister-site post. Seasonal timing beats list order (a holiday road-trip topic the week before Thanksgiving or Christmas; a spring topic only from March on, which is after this series ends). If pages cannot be opened (Step 0.3), skip topics marked [needs sources] and take the first one marked [general].
+## Step 1 — Pick the topic (Columbus season first)
+Every post must be timely for Columbus in the week it is published. Start from the date and the weather:
+- If pages can be opened, read the NWS Wilmington (ILN) forecast for Columbus (https://forecast.weather.gov/MapClick.php?lat=39.96&lon=-83.00) and the Columbus climate normals for this month (https://www.weather.gov/iln/). Use real numbers from those pages (normal highs/lows, the coming cold snap, first freeze, first snow, heat wave, heavy rain) as the hook.
+- Pick the seasonal topic below that fits the coming week best. If none fits, write a new one in the same spirit (Columbus weather + a driving or car problem it causes + what to do + when to call us). The topic list gets used up; inventing seasonal topics is expected.
+- Never repeat a subject already in `src/data/guides/catalog.ts` on `origin/main` or in an unmerged `origin/guide/*` branch, and never one the sister blog covered (check its slugs).
+- The general topics further down are fillers: use one only if no seasonal angle is left, and even then open with how this week's Columbus weather makes it more likely.
+- If pages cannot be opened (Step 0.3), take a seasonal topic that needs no numbers and write it with no temperatures, dates or statistics, or take the first [general] topic.
 
-Topics (slug — angle — main service link):
+Already published (do not repeat): first freeze and cold-morning car checklist (`first-freeze-columbus-car-checklist`), daylight saving time ending and dark commutes (`time-change-dark-commute-columbus`), plus everything in catalog.ts.
+
+Seasonal topics (pick by date; slug — angle — main service link):
+- Nov: thanksgiving-week-travel-columbus — I-70/I-71 holiday traffic, pre-trip check, breakdown far from home — /towing/long-distance-towing
+- Nov–Dec: first-snow-columbus-driving — the first accumulating snow, bald tires, stopping distance, sliding into a ditch — /towing/winch-out
+- Nov–Feb: road-salt-and-your-car-ohio — salt spray, brake lines, rust, washing in winter — /repair/brake-repair
+- Dec–Feb: frozen-door-lock-and-handles — doors frozen shut, locks, what not to do — /towing/car-lockout
+- Dec–Feb: diesel-gelling-and-fuel-line-freeze — gelled diesel, water in gas lines, keeping the tank half full — /towing/fuel-delivery
+- Dec–Feb: black-ice-columbus-commute — where it forms around Columbus, recovering from a skid — /towing/accident-towing
+- Jan–Feb: deep-freeze-car-wont-start — single-digit mornings, block heaters, thick oil, jump safety — /towing/jump-start
+- Jan–Feb: tires-in-cold-weather-pressure-and-tread — tread depth test, all-season vs winter tires — /towing/flat-tire-change
+- Feb–Mar: freeze-thaw-potholes-columbus — pothole season, bent rims, alignment, reporting potholes to the city — /repair/tires-alignment
+- Mar–Apr: spring-rain-hydroplaning-flooded-roads — never drive through water, flooded underpasses, hydroplaning — /towing/winch-out
+- Apr–May: severe-weather-season-driving-ohio — thunderstorms, hail, tornado warnings while driving — /towing/emergency-towing
+- May–Jun: road-trip-season-pre-trip-check — Memorial Day travel, tires, coolant, spare — /towing/long-distance-towing
+- Jun–Aug: heat-wave-car-problems-columbus — batteries die in heat too, tire blowouts, A/C, kids and pets in hot cars (911) — /towing/roadside-assistance
+- Jun–Aug: construction-zone-breakdowns-columbus — ODOT work zones, no shoulder, what to do — /towing/emergency-towing
+- Jul: fireworks-and-festival-parking-columbus — big-event parking, towed cars, dead batteries after long events — /towing/private-property-towing
+- Aug: back-to-school-osu-move-in-car-trouble — move-in week, packed garages, dead cars — /towing/parking-garage-towing
+- Sep–Oct: fall-rain-wet-leaves-and-fog — morning fog on river valleys, leaves, wipers — /towing/roadside-assistance
+
+General topics (fillers; slug — angle — main service link):
 1. flatbed-vs-wheel-lift-which-tow-do-you-need — how to tell which truck your car needs, what to say when you call [general] — /towing/flatbed-towing, /towing/wheel-lift-towing
 2. what-to-have-ready-when-you-call-a-tow — the exact info dispatch asks for and why (location, vehicle, keys, neutral, destination) [general] — /towing/emergency-towing
 3. car-wont-shift-into-neutral-tow — shift-lock release, parking brake stuck, what the driver does instead [general] — /towing/car-towing
