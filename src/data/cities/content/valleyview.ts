@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Valleyview tow trucks on Richardson Avenue, Valleyview Drive and near the I-70 and I-670 split, with flatbed tows and roadside help 24/7. (614) 633-8163.",
+    "Valleyview tow trucks on Richardson Avenue, Valleyview Drive and near the I-70 and I-670 split, with flatbed tows and roadside help 24-7. (614) 633-8163.",
   h1: "Tow Truck Service in Valleyview on the Hilltop",
   lede:
     "Valleyview is a tiny village surrounded by Columbus's West Side, and with our yard barely three miles away, it is one of the nearest places we serve.",

@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed tows across New Albany: SR 161, Johnstown Road (US 62), Market Square and the business park on Beech Road. Dispatch 24/7 at (614) 633-8163.",
+    "Flatbed tows across New Albany: SR 161, Johnstown Road (US 62), Market Square and the business park on Beech Road. Dispatch 24-7 at (614) 633-8163.",
   h1: "Flatbed Tows Across New Albany and the SR 161 Corridor",
   lede:
     "New Albany pairs a brick-and-white-fence town center with one of the busiest construction and business corridors in central Ohio, and we tow in both.",

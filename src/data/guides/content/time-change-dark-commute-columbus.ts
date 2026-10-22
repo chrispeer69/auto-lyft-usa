@@ -57,7 +57,7 @@ export default {
     {
       heading: "What it costs to get help at night",
       paragraphs: [
-        "Auto Lyft USA answers 24/7, and the dispatcher quotes the price before a truck is sent. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), [lockout](/towing/car-lockout) or [tire change](/towing/flat-tire-change), plus en-route miles. The overnight window, 10 p.m. to 6 a.m., carries a $150 surcharge, and highway calls add $75. A dead evening commute at 6 p.m. pays neither of those. The full table is on our [rates page](/rates), and our [breakdown guide](/guides/what-to-do-when-your-car-breaks-down-columbus) walks through the rest.",
+        "Auto Lyft USA answers 24-7, and the dispatcher quotes the price before a truck is sent. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), [lockout](/towing/car-lockout) or [tire change](/towing/flat-tire-change), plus en-route miles. The overnight window, 10 p.m. to 6 a.m., carries a $150 surcharge, and highway calls add $75. A dead evening commute at 6 p.m. pays neither of those. The full table is on our [rates page](/rates), and our [breakdown guide](/guides/what-to-do-when-your-car-breaks-down-columbus) walks through the rest.",
         "Ohio's Move Over law requires drivers to change lanes or slow down for stopped vehicles with flashing lights, including tow trucks and roadside crews. When it's your turn to pass someone on the shoulder after dark, give them the lane.",
       ],
     },

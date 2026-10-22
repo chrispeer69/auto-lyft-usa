@@ -4,7 +4,7 @@ export default {
   keyword: "Polaris towing",
   title: "Polaris Towing & Roadside Service",
   description:
-    "Polaris towing and roadside help around Polaris Fashion Place, Polaris Parkway and the I-71 interchange. Flatbed tows, 24/7. Call (614) 633-8163.",
+    "Polaris towing and roadside help around Polaris Fashion Place, Polaris Parkway and the I-71 interchange. Flatbed tows, 24-7. Call (614) 633-8163.",
   h1: "Polaris towing for the mall, the Parkway and the lots in between",
   lede:
     "From the mall garage to a strip-center lot off Polaris Parkway, we jump, unlock and flatbed cars across the Polaris area at any hour.",

@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Westerville flatbed towing for State Street in Uptown, Polaris Parkway and the SR 3 exit on I-270. Lockouts and jumps too, dispatched 24/7. (614) 633-8163.",
+    "Westerville flatbed towing for State Street in Uptown, Polaris Parkway and the SR 3 exit on I-270. Lockouts and jumps too, dispatched 24-7. (614) 633-8163.",
   h1: "Towing Service for Westerville, From Uptown to Polaris",
   lede:
     "Westerville sits across town from our yard, so we tell you honestly how far out the nearest truck is and what the job costs before it is sent.",

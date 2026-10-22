@@ -43,7 +43,7 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
   schema={schema}
   faqs={h.faqs}
 >
-  <Hero image={PHOTOS.city} eyebrow={`Columbus · ${h.name}`} h1={h.h1} lede={h.lede} facts={[["Neighborhood", h.name], ["City", "Columbus, Franklin County"], ["ZIP codes", h.zips.join(", ")], ["Dispatch", "24/7, price quoted first"]]} />
+  <Hero image={PHOTOS.city} eyebrow={`Columbus · ${h.name}`} h1={h.h1} lede={h.lede} facts={[["Neighborhood", h.name], ["City", "Columbus, Franklin County"], ["ZIP codes", h.zips.join(", ")], ["Dispatch", "24-7, price quoted first"]]} />
   <section class="band"><div class="wrap prose">{h.intro.map((p) => <p set:html={rich(p)} />)}</div></section>
   <section class="band alt" aria-labelledby="streets-h">
     <div class="wrap">

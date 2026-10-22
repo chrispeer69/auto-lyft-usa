@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbeds and wheel lifts, 24/7. (614) 633-8163.",
+    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbeds and wheel lifts, 24-7. (614) 633-8163.",
   h1: "Need a Tow in Lincoln Village? Five Miles From Our Yard",
   lede:
     "Lincoln Village is the 1950s planned neighborhood just west of the outerbelt on West Broad Street, and few addresses outside the city sit closer to our gate.",

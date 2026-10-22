@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "West Jefferson towing across Madison County: I-70 exits 80 and 85, Main Street (US-40) and the warehouse parks off SR-142. Flatbeds 24/7. (614) 633-8163.",
+    "West Jefferson towing across Madison County: I-70 exits 80 and 85, Main Street (US-40) and the warehouse parks off SR-142. Flatbeds 24-7. (614) 633-8163.",
   h1: "West Jefferson Car Towing and Roadside Help Along I-70",
   lede:
     "Just across the Madison County line, West Jefferson mixes a small-town Main Street with some of the biggest new warehouses on the west side of the region.",

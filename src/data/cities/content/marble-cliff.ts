@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Marble Cliff towing, lockouts and jump starts on Cambridge Boulevard, Arlington Avenue and at Quarry Trails Metro Park, sent 24/7. (614) 633-8163.",
+    "Marble Cliff towing, lockouts and jump starts on Cambridge Boulevard, Arlington Avenue and at Quarry Trails Metro Park, sent 24-7. (614) 633-8163.",
   h1: "Marble Cliff Village Towing, Lockouts and Jump Starts",
   lede:
     "Marble Cliff covers only a few dozen quiet blocks, but stone mansions, a boulevard with a planted median and a busy Metro Park next door make for some careful loading.",

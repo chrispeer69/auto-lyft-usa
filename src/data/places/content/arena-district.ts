@@ -4,7 +4,7 @@ export default {
   keyword: "Arena District towing",
   title: "Arena District Towing, Columbus",
   description:
-    "Locked out after dinner or dead battery in a district garage? Arena District towing and roadside help for residents and visitors, 24/7. (614) 633-8163.",
+    "Locked out after dinner or dead battery in a district garage? Arena District towing and roadside help for residents and visitors, 24-7. (614) 633-8163.",
   h1: "Arena District Towing for Residents, Diners and Fans",
   lede:
     "Between the apartments, offices, restaurants and three event venues, the Arena District is busy most nights of the week. Our trucks cover all of it.",

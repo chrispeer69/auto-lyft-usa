@@ -64,7 +64,7 @@ export default {
     {
       heading: "If the cold wins anyway",
       paragraphs: [
-        "Some cars won't start on the first hard frost no matter what. Auto Lyft USA runs 24/7 across Columbus and the nearby towns. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), lockout or tire swap, plus en-route miles, and the dispatcher gives you the full price before a truck is sent. When a jump won't do it, a flatbed takes it to the mechanic you choose; see [our rate card](/rates) for how tows are priced.",
+        "Some cars won't start on the first hard frost no matter what. Auto Lyft USA runs 24-7 across Columbus and the nearby towns. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), lockout or tire swap, plus en-route miles, and the dispatcher gives you the full price before a truck is sent. When a jump won't do it, a flatbed takes it to the mechanic you choose; see [our rate card](/rates) for how tows are priced.",
       ],
     },
   ],

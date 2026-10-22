@@ -4,7 +4,7 @@ export default {
   keyword: "Columbus State towing",
   title: "Columbus State Towing & Jump Starts",
   description:
-    "Car won't start after a night class at Columbus State? Flat-rate jumps, lockouts and flatbed tows in the Discovery District, 24/7. (614) 633-8163.",
+    "Car won't start after a night class at Columbus State? Flat-rate jumps, lockouts and flatbed tows in the Discovery District, 24-7. (614) 633-8163.",
   h1: "Columbus State towing, jumps and lockouts in the Discovery District",
   lede:
     "Columbus State is a commuter campus, so when your car fails there, it's your ride home that's gone. We get you running again, or get the car to a shop.",

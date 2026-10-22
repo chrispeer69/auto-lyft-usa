@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Canal Winchester towing on US-33, Gender Road and Diley Road: flatbed tows, lockouts and jump starts dispatched 24/7 from Columbus. (614) 633-8163.",
+    "Canal Winchester towing on US-33, Gender Road and Diley Road: flatbed tows, lockouts and jump starts dispatched 24-7 from Columbus. (614) 633-8163.",
   h1: "Canal Winchester Towing Along US-33 and Gender Road",
   lede:
     "Canal Winchester straddles the US-33 freeway on the southeast edge of the metro, and a truck heading out from the city reaches it on divided highway nearly the whole way.",

@@ -135,7 +135,7 @@ const groups = [
 ];
 const company = readFileSync("src/data/company.ts", "utf8");
 const phone = company.match(/phone: "([^"]+)"/)[1];
-let llms = `# Auto Lyft USA\n\n> Auto Lyft USA Inc. is a 24/7 flatbed towing and roadside assistance company based at 1620 Harrisburg Pike, Columbus, OH 43223. Phone ${phone}. It serves Columbus, Ohio and the surrounding Central Ohio towns.\n\nFull text of every page: ${SITE}/llms-full.txt\nSitemap: ${SITE}/sitemap.xml\n`;
+let llms = `# Auto Lyft USA\n\n> Auto Lyft USA Inc. is a 24-7 towing and roadside assistance company based at 1620 Harrisburg Pike, Columbus, OH 43223. Phone ${phone}. It serves Columbus, Ohio and the surrounding Central Ohio towns.\n\nFull text of every page: ${SITE}/llms-full.txt\nSitemap: ${SITE}/sitemap.xml\n`;
 for (const [label, test] of groups) {
   const list = indexable.filter((p) => test(p.path));
   if (!list.length) continue;

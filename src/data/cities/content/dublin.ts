@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed towing in Dublin, OH: Tuttle Crossing, Bridge Park, US-33 and the Avery-Muirfield corridor, dispatched 24/7 from around Columbus. (614) 633-8163.",
+    "Flatbed towing in Dublin, OH: Tuttle Crossing, Bridge Park, US-33 and the Avery-Muirfield corridor, dispatched 24-7 from around Columbus. (614) 633-8163.",
   h1: "Dublin, Ohio Flatbed Towing and Roadside Help",
   lede:
     "From the office parks along Frantz Road to the brick lanes of Historic Dublin, we send the right truck, usually a flatbed, whenever a car quits anywhere in this Scioto River suburb.",

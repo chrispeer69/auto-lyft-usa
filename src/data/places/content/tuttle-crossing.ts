@@ -4,7 +4,7 @@ export default {
   keyword: "Tuttle Crossing towing",
   title: "Tuttle Crossing Towing & Jump-Starts",
   description:
-    "Tuttle Crossing towing for the mall, hotels and office lots on the Dublin-Hilliard line. Jumps, lockouts and flatbed tows 24/7. Call (614) 633-8163.",
+    "Tuttle Crossing towing for the mall, hotels and office lots on the Dublin-Hilliard line. Jumps, lockouts and flatbed tows 24-7. Call (614) 633-8163.",
   h1: "Tuttle Crossing towing around the mall, hotels and offices",
   lede:
     "Stuck near the I-270 Tuttle Crossing Boulevard exit? We handle no-starts, lockouts, flat tires and flatbed tows for shoppers, hotel guests and commuters.",

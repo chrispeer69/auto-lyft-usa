@@ -4,7 +4,7 @@ export default {
   keyword: "Convention Center towing",
   title: "Convention Center Towing in Columbus",
   description:
-    "In town for a show on North High Street and the car quit? Convention Center towing, jumps and lockouts for visitors and exhibitors, 24/7. (614) 633-8163.",
+    "In town for a show on North High Street and the car quit? Convention Center towing, jumps and lockouts for visitors and exhibitors, 24-7. (614) 633-8163.",
   h1: "Greater Columbus Convention Center Towing for Visitors and Exhibitors",
   lede:
     "Trade shows, expos and the Arnold bring drivers from across the region to North High Street. If your car or van gives out mid-show, one call sorts it.",

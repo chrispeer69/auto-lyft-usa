@@ -1,7 +1,7 @@
 {
   "name": "Auto Lyft USA — Columbus Towing",
   "short_name": "Auto Lyft",
-  "description": "24/7 flatbed towing and roadside help in Columbus, Ohio.",
+  "description": "24-7 towing and roadside help in Columbus, Ohio.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f1419",

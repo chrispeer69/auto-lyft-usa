@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing in Delaware, Ohio on US 23, William Street and Sandusky Street, from Ohio Wesleyan to the fairgrounds. Flatbeds dispatched 24/7. (614) 633-8163.",
+    "Towing in Delaware, Ohio on US 23, William Street and Sandusky Street, from Ohio Wesleyan to the fairgrounds. Flatbeds dispatched 24-7. (614) 633-8163.",
   h1: "Towing in Delaware, Ohio: Our Longest Regular Run North",
   lede:
     "Delaware is the county seat at the top of our map, a college town on the Olentangy River that a truck reaches by US 23 or I-71 from Columbus.",

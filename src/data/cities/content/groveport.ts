@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Groveport towing for drivers on SR-317 Hamilton Road, Groveport Road and the Rickenbacker-area warehouse parks. Flatbed tows 24/7. Call (614) 633-8163.",
+    "Groveport towing for drivers on SR-317 Hamilton Road, Groveport Road and the Rickenbacker-area warehouse parks. Flatbed tows 24-7. Call (614) 633-8163.",
   h1: "Flatbed Tows for Groveport, From Main Street to the Warehouse Parks",
   lede:
     "Groveport pairs a small canal-era downtown with a ring of very large distribution buildings, and our drivers answer calls from both.",

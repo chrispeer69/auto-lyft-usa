@@ -54,7 +54,7 @@ Redirects (301, `server/seoMiddleware.ts`): `/services/heavy-duty-towing` -> `/s
 
 | URL | Title | H1 |
 |---|---|---|
-| `/` | Tow Truck & Towing Columbus \| Roadside Towing & Recovery Inc | 24/7 Tow Truck & Roadside Assistance — FREE TOW Columbus |
+| `/` | Tow Truck & Towing Columbus \| Roadside Towing & Recovery Inc | 24-7 Tow Truck & Roadside Assistance — FREE TOW Columbus |
 
 ### 1.2 Core / utility pages
 
@@ -76,7 +76,7 @@ Indexable (17 "core" in the sitemap test, plus 2 review pages):
 | `/sos` | SOS Tow Request Columbus | Request a Tow Now (GPS request wizard) | 0.7 monthly |
 | `/about` | About Our Towing Company | About Roadside Towing & Recovery Inc | 0.7 monthly |
 | `/faq` | Towing FAQ & Ohio Tow Laws | Towing Questions, Answered | 0.8 monthly |
-| `/contact` | Contact Us \| 24/7 Dispatch | Contact Roadside Towing & Recovery Inc | 0.7 monthly |
+| `/contact` | Contact Us \| 24-7 Dispatch | Contact Roadside Towing & Recovery Inc | 0.7 monthly |
 | `/privacy-policy` | Privacy Policy (legal-name suffix) | Privacy Policy | 0.4 yearly |
 | `/terms-of-service` | Terms of Service (legal-name suffix) | Terms of Service | 0.4 yearly |
 | `/reviews` | Customer Reviews | Customer Reviews: Our Own Scorecard | 0.8 daily, lastmod = today |
@@ -124,7 +124,7 @@ Data: `client/src/lib/serviceData/<slug>.ts` (one file each), list in `serviceDa
 | tire-changes | Tire Change Columbus OH | Tire Changes | 6 |
 | winch-out-recovery | Winch Out Service Columbus | Winch Out Service Columbus OH — Car Stuck in a Ditch, Snow or Mud | 10 |
 | auto-repair-partners | Repair Partners Columbus OH | Auto Repair Partners | 6 |
-| roadside-assistance | Roadside Assistance Near Me | Roadside Assistance Columbus OH — 24/7 Help, No Membership Needed | 13 |
+| roadside-assistance | Roadside Assistance Near Me | Roadside Assistance Columbus OH — 24-7 Help, No Membership Needed | 13 |
 
 (List order above is the `SERVICE_DATA_LIST` order used for nav, footer and ItemList.)
 
@@ -294,7 +294,7 @@ Data: `client/src/lib/landingPages.ts`; markup from `lib/landingHtml.ts` (identi
 
 `/lp/tow-near-me`, `/lp/towing-near-me`, `/lp/flatbed-towing`, `/lp/jump-start`, `/lp/battery`, `/lp/free-tow`, `/lp/tow-truck-near-me`, `/lp/towing-company-near-me`, `/lp/tow-truck`, `/lp/tow-service-near-me`, `/lp/towing-service`, `/lp/jump-start-car`, `/lp/battery-jump-start`, `/lp/car-battery-replacement`, `/lp/battery-replacement`, `/lp/ev-towing`, `/lp/tesla-tow-near-me`, `/lp/lockout`, `/lp/flat-tire`, `/lp/roadside-flat-tire`, `/lp/towing`, `/lp/roadside`.
 
-Title pattern differs from organic pages: `{Keyword} — Columbus, OH | {Benefit}` or `{Keyword} Columbus OH | {Benefit}` (e.g. "Tow Truck Near Me — Columbus, OH | Fast Dispatch 24/7"). Fields: path, title, description, eyebrow (exact ad keyword), h1, h1City, localize, fine, sub, heroImage, heroAlt, hook, ticks[3], steps[3], trust[], faqs[], genie[] (starter questions), callback, cta. 340–510 words each.
+Title pattern differs from organic pages: `{Keyword} — Columbus, OH | {Benefit}` or `{Keyword} Columbus OH | {Benefit}` (e.g. "Tow Truck Near Me — Columbus, OH | Fast Dispatch 24-7"). Fields: path, title, description, eyebrow (exact ad keyword), h1, h1City, localize, fine, sub, heroImage, heroAlt, hook, ticks[3], steps[3], trust[], faqs[], genie[] (starter questions), callback, cta. 340–510 words each.
 
 ---
 
@@ -327,9 +327,9 @@ Conventions used on every page type:
   10. `#contact` "Contact Us" (NAP, hours, form).
   11. `#faq` "Frequently Asked Questions" (26 Q&As from `lib/homeFaq.ts`; first five are the top `/faq` questions).
   12. Long-form SEO block "Towing Service in Columbus, Ohio — Your Reliable Partner on the Road".
-- **Server static body** (in `client/index.html`, between `<!--STATIC_FALLBACK_START-->` markers): hero + `<!--HOME_REVIEWS-->` (newest written reviews) + H2 "24/7 Towing Services in Columbus, Ohio" (opens with "Searching for a tow truck near me in Columbus?...") + H2 "Serving All of Central Ohio" (list of suburbs and interstates) + NAP + H2 "Why Choose ..." with a 7-item trust list (fleet types, PUCO/USDOT, 100,000+ calls, 4.8-star Google rating, GPS dispatch, no hidden fees) + H2 "Frequently Asked Questions" (generated list) + link to `/faq` + footer nav. About 300+ words before the FAQ, ~2,000+ with the 26 FAQs.
+- **Server static body** (in `client/index.html`, between `<!--STATIC_FALLBACK_START-->` markers): hero + `<!--HOME_REVIEWS-->` (newest written reviews) + H2 "24-7 Towing Services in Columbus, Ohio" (opens with "Searching for a tow truck near me in Columbus?...") + H2 "Serving All of Central Ohio" (list of suburbs and interstates) + NAP + H2 "Why Choose ..." with a 7-item trust list (fleet types, PUCO/USDOT, 100,000+ calls, 4.8-star Google rating, GPS dispatch, no hidden fees) + H2 "Frequently Asked Questions" (generated list) + link to `/faq` + footer nav. About 300+ words before the FAQ, ~2,000+ with the 26 FAQs.
 - **Title:** `Tow Truck & Towing Columbus | Roadside Towing & Recovery Inc` (60 chars; target terms "tow truck", "towing Columbus").
-- **Description:** "24/7 towing in Columbus, OH from Roadside Towing & Recovery Inc: tow truck dispatch, roadside assistance and a published rate card. Call (740) 812-9489."
+- **Description:** "24-7 towing in Columbus, OH from Roadside Towing & Recovery Inc: tow truck dispatch, roadside assistance and a published rate card. Call (740) 812-9489."
 - **Schema:** sitewide `#business`, `#owner` (Person), `#website` (with SearchAction) from index.html + per-route `WebPage` (no breadcrumb) + homepage-only `FAQPage` (26 Qs).
 
 ### 2.2 Service page `/services/:slug` (26)
@@ -357,10 +357,10 @@ Conventions used on every page type:
 - **Word count:** 1,090–3,960 (avg ~2,000). Thin pages (~1,100–1,400): auction, voluntary-repo, fleet, police, wheel-lift, parking-garage, fuel, tires, impound. Rich pages (2,900–3,900): flatbed, lockout, jump-starts, EV, low-profile, battery, emergency.
 - **Title pattern:** `{Service} Columbus [OH] | Roadside Towing & Recovery Inc` (56–60 chars), or a search phrase variant (`Roadside Assistance Near Me | ...`).
 - **H1 pattern:** either plain service name ("Fuel Delivery") or `{Service} Columbus OH — {benefit phrase}` on target-keyword pages.
-- **Description pattern:** `{Problem/keyword} in Columbus OH: {what we do/equipment}, {price or 24/7}. Call (740) 812-9489.`
-  - "Locked keys in your car in Columbus OH? 24/7 non-destructive car door lockout service, flat $75 + $4/mi en-route. Call (740) 812-9489."
-  - "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24/7 dispatch. Call (740) 812-9489."
-  - "Car stuck in a ditch, snow or mud in Columbus OH? 24/7 winch-out recovery for cars, SUVs and light trucks at 150/hr published. Call (740) 812-9489."
+- **Description pattern:** `{Problem/keyword} in Columbus OH: {what we do/equipment}, {price or 24-7}. Call (740) 812-9489.`
+  - "Locked keys in your car in Columbus OH? 24-7 non-destructive car door lockout service, flat $75 + $4/mi en-route. Call (740) 812-9489."
+  - "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24-7 dispatch. Call (740) 812-9489."
+  - "Car stuck in a ditch, snow or mud in Columbus OH? 24-7 winch-out recovery for cars, SUVs and light trucks at 150/hr published. Call (740) 812-9489."
 - **Internal links out:** 90–127 per page (4 related services, all 26 services, 5–11 city pages, places, /sos, /quote, /pricing, footer).
 - **Schema:** WebPage (with primaryImageOfPage = hero), Service (with Offers from the rate card where priced), FAQPage, BreadcrumbList (Home > Services > {name}).
 
@@ -378,8 +378,8 @@ Conventions used on every page type:
 Two React generations exist: 35 "rich" city pages (340–670 lines each, hand-built sections incl. Leaflet map, "Every {City} Neighborhood Covered", "Our {City} Service Area") and 5 "slim" newest pages (Commercial Point, London, Plain City, Prairie Township, West Jefferson; ~105 lines, built only from shared components). The server crawlable body is identical in structure for all 40.
 
 - **Server crawlable body sections in order:**
-  1. Hero: eyebrow "Local Towing & Roadside Assistance", H1 `Towing {City} OH — 24/7 Tow Truck & Roadside Assistance`, generic subhead listing services, Call button.
-  2. H2 "24/7 Towing & Roadside Assistance in {City}" + intro (rewritten `cityCopy` intro, or generic paragraph with the tier ETA).
+  1. Hero: eyebrow "Local Towing & Roadside Assistance", H1 `Towing {City} OH — 24-7 Tow Truck & Roadside Assistance`, generic subhead listing services, Call button.
+  2. H2 "24-7 Towing & Roadside Assistance in {City}" + intro (rewritten `cityCopy` intro, or generic paragraph with the tier ETA).
   3. "ZIP codes we serve in {City}: ..."
   4. H2 "Local Guide: Towing Around {City}" with H3 groups Landmarks / Schools / Colleges / Main Routes / Major Employers & Projects (each item: bold name — one sourced fact).
   5. CTA links.
@@ -389,18 +389,18 @@ Two React generations exist: 35 "rich" city pages (340–670 lines each, hand-bu
   9. H2 "Nearby Service Areas" (3–6 neighbour city links + "See all 40 ...").
   10. H2 "Events & Places Near {City}" (places that list this city).
   11. H2 "Contact & Service Area" + NAP.
-- **React sections (rich template, Dublin example):** SiteHeader -> CityHero (H1, description line, Call / SOS / Quote CTAs, quick stats bar: Response Time = tier ETA, Cities Served = 40, Available 24/7) -> [CityIntro for rewritten cities] -> H2 "Towing Experts Who Know {City} Inside & Out" -> LocalAreaGuide -> H2 "Towing & Roadside Services in {City}, OH" (service cards) -> H2 "Every {City} Neighborhood Covered" -> H2 "Our {City} Service Area" + map -> H2 "Need a Tow in {City}?" CTA -> H2 "Frequently Asked Questions" -> NearbyCities -> long-form "Towing Service in {City}, Ohio — {Business}" footer block.
+- **React sections (rich template, Dublin example):** SiteHeader -> CityHero (H1, description line, Call / SOS / Quote CTAs, quick stats bar: Response Time = tier ETA, Cities Served = 40, Available 24-7) -> [CityIntro for rewritten cities] -> H2 "Towing Experts Who Know {City} Inside & Out" -> LocalAreaGuide -> H2 "Towing & Roadside Services in {City}, OH" (service cards) -> H2 "Every {City} Neighborhood Covered" -> H2 "Our {City} Service Area" + map -> H2 "Need a Tow in {City}?" CTA -> H2 "Frequently Asked Questions" -> NearbyCities -> long-form "Towing Service in {City}, Ohio — {Business}" footer block.
 - **React sections (slim template):** SiteHeader -> CityHero -> CityIntro -> LocalAreaGuide -> services section -> FAQ section -> amber CTA -> NearbyCities.
 - **Word count:** 1,150–2,370 (avg ~1,480).
 - **Title:** exactly `Towing {City} OH | Roadside Towing & Recovery Inc` (test-enforced).
   - "Towing Dublin OH | Roadside Towing & Recovery Inc"
   - "Towing Grandview Heights OH | Roadside Towing & Recovery Inc"
-- **Description pattern:** `24/7 towing in {City}, OH. Serving {2–4 local landmarks/roads}. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.` Newer cities vary the tail with locally relevant services:
-  - "24/7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489."
-  - "24/7 towing in Lewis Center, OH. US-23, I-71 exit 121 at Polaris, Alum Creek State Park & Orange Township. Winch-outs, jump starts. Call (740) 812-9489."
-  - "24/7 towing in London, OH on I-70 and US-42 in Madison County: light, medium and heavy-duty tows, winch-outs and long-distance. Call (740) 812-9489."
+- **Description pattern:** `24-7 towing in {City}, OH. Serving {2–4 local landmarks/roads}. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.` Newer cities vary the tail with locally relevant services:
+  - "24-7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489."
+  - "24-7 towing in Lewis Center, OH. US-23, I-71 exit 121 at Polaris, Alum Creek State Park & Orange Township. Winch-outs, jump starts. Call (740) 812-9489."
+  - "24-7 towing in London, OH on I-70 and US-42 in Madison County: light, medium and heavy-duty tows, winch-outs and long-distance. Call (740) 812-9489."
 - **Internal links:** 84–110 (26 services, 3–6 nearby cities, /service-areas, places, CTAs, footer).
-- **Schema:** WebPage, Service (areaServed = City with geo + containsPlace from the local guide, plus DefinedRegion of the city's ZIPs; availableChannel; hoursAvailable 24/7), FAQPage, BreadcrumbList (Home > Service Areas > {City}, OH).
+- **Schema:** WebPage, Service (areaServed = City with geo + containsPlace from the local guide, plus DefinedRegion of the city's ZIPs; availableChannel; hoursAvailable 24-7), FAQPage, BreadcrumbList (Home > Service Areas > {City}, OH).
 
 ### 2.5 Columbus hub `/service-area/columbus` and neighborhood pages (26)
 
@@ -411,7 +411,7 @@ Two React generations exist: 35 "rich" city pages (340–670 lines each, hand-bu
 - **Title:** `Towing {Name} [Columbus] | Roadside Towing & Recovery Inc` ("Towing Hilltop Columbus | ...", "Towing German Village | ...").
 - **Description pattern:** `Towing in {Name}, Columbus: {3 hyper-local call types tied to streets/landmarks}. Call (740) 812-9489.`
   - "Towing in German Village, Columbus: careful tows on brick streets, lockouts and jump starts with tight parking and small garages in mind. (740) 812-9489."
-  - "Towing in downtown Columbus: low-clearance parking garage recovery, lockouts and tows around event parking and one-way streets, 24/7. (740) 812-9489."
+  - "Towing in downtown Columbus: low-clearance parking garage recovery, lockouts and tows around event parking and one-way streets, 24-7. (740) 812-9489."
 - **FAQ themes per neighborhood (pattern, 6 each):** response time from the yard; most common local call types on named streets; what to do if you break down on the nearest interstate; narrow driveways/alleys/brick streets; "a car is blocking my driveway" (police non-emergency rules, private-property tows); where the car goes and how it is priced.
 - **Schema:** WebPage, Service (areaServed = Place "{Name}, Columbus, Ohio" containedInPlace Columbus City in Ohio, + containsPlace from local guide), FAQPage, BreadcrumbList with 4 levels (Home > Service Areas > Columbus > {Name}).
 
@@ -545,7 +545,7 @@ County coverage is not a per-city field; it is described in copy (Franklin, Dela
 | GeoCoordinates, GeoCircle | business/tow yard, city areaServed, service areaServed (50 km circle) |
 | PostalAddress | business, tow yard, place venues |
 | ContactPoint, ServiceChannel | business contactPoint (3), service availableChannel |
-| OpeningHoursSpecification | business (24/7 + office hours contact point), services hoursAvailable |
+| OpeningHoursSpecification | business (24-7 + office hours contact point), services hoursAvailable |
 | PropertyValue | `#business.identifier` (PUCO certificate, USDOT) |
 | SpeakableSpecification | every WebPage |
 | ImageObject | primaryImageOfPage |
@@ -556,12 +556,12 @@ Rule: LocalBusiness subtypes (Hospital, Library, StadiumOrArena, ShoppingCenter,
 
 ### 4.3 `#business` properties
 
-`name` (public/GBP name), `legalName`, `foundingDate`, `alternateName[]` (trade name + legal-name variants + short brand), `description` (services list, PUCO/USDOT numbers, "100,000+ calls completed since 2020", published rate card), `url`, `telephone`, `contactPoint[]` (emergency dispatch 24/7; customer service Mon–Fri 08:00–18:00; SMS/text line), `email`, `address` (corporate office, labeled "private offices, no walk-ins"), `geo` (corporate office), `location[]` (tow yard Place with its own address + geo, `@id #tow-yard`), `openingHours: "Mo-Su 00:00-23:59"`, `openingHoursSpecification` (all 7 days 00:00–23:59), `areaServed[]` (41 City nodes: Columbus + every city page, each `containedInPlace` State Ohio, plus a DefinedRegion of every served ZIP injected at request time from `ALL_SERVED_ZIPS`), `priceRange: "$100 - $300"`, `logo` (512 px PNG), `image` (OG image), `sameAs[]` (Google Maps CID URL, US Tow Alliance profile, Facebook), `hasOfferCatalog` (16 service Offers + a veterans-discount Offer with its own `@id`), `paymentAccepted`, `currenciesAccepted`, `hasMap` (GBP CID URL), `identifier[]` (PropertyValue PUCO + USDOT), `slogan`, `founder {@id #owner}`, `knowsAbout[]` (14 topical phrases incl. Ohio statute reference, interstates, EV towing method). No `aggregateRating`.
+`name` (public/GBP name), `legalName`, `foundingDate`, `alternateName[]` (trade name + legal-name variants + short brand), `description` (services list, PUCO/USDOT numbers, "100,000+ calls completed since 2020", published rate card), `url`, `telephone`, `contactPoint[]` (emergency dispatch 24-7; customer service Mon–Fri 08:00–18:00; SMS/text line), `email`, `address` (corporate office, labeled "private offices, no walk-ins"), `geo` (corporate office), `location[]` (tow yard Place with its own address + geo, `@id #tow-yard`), `openingHours: "Mo-Su 00:00-23:59"`, `openingHoursSpecification` (all 7 days 00:00–23:59), `areaServed[]` (41 City nodes: Columbus + every city page, each `containedInPlace` State Ohio, plus a DefinedRegion of every served ZIP injected at request time from `ALL_SERVED_ZIPS`), `priceRange: "$100 - $300"`, `logo` (512 px PNG), `image` (OG image), `sameAs[]` (Google Maps CID URL, US Tow Alliance profile, Facebook), `hasOfferCatalog` (16 service Offers + a veterans-discount Offer with its own `@id`), `paymentAccepted`, `currenciesAccepted`, `hasMap` (GBP CID URL), `identifier[]` (PropertyValue PUCO + USDOT), `slogan`, `founder {@id #owner}`, `knowsAbout[]` (14 topical phrases incl. Ohio statute reference, interstates, EV towing method). No `aggregateRating`.
 
 ### 4.4 Service node variants
 
-- **Service page:** `name` = service name, `serviceType` = service name, `description` = meta description, `url`, `image` = hero, `provider #business`, `areaServed` GeoCircle (yard geo, `geoRadius "50000"` metres), `hoursAvailable` 24/7, `offers[]` from `shared/servicePricing.ts` (each Offer: name, description with full formula, url, price, priceCurrency USD, availability InStock, `priceSpecification` UnitPriceSpecification with `unitText` and UN/CEFACT `unitCode` SMI/HUR/DAY, `offeredBy #business`, `areaServed` "Central Ohio"). Services quoted per job (repo, auction, fleet, police, medium/heavy, equipment, junk) carry no offers.
-- **City:** `name` = "Towing {City} OH", `serviceType` "Towing service", `areaServed` [City + geo + containsPlace, DefinedRegion of ZIPs], `availableChannel` (ServiceChannel with dispatch ContactPoint + `serviceUrl /sos`), `hoursAvailable` 24/7.
+- **Service page:** `name` = service name, `serviceType` = service name, `description` = meta description, `url`, `image` = hero, `provider #business`, `areaServed` GeoCircle (yard geo, `geoRadius "50000"` metres), `hoursAvailable` 24-7, `offers[]` from `shared/servicePricing.ts` (each Offer: name, description with full formula, url, price, priceCurrency USD, availability InStock, `priceSpecification` UnitPriceSpecification with `unitText` and UN/CEFACT `unitCode` SMI/HUR/DAY, `offeredBy #business`, `areaServed` "Central Ohio"). Services quoted per job (repo, auction, fleet, police, medium/heavy, equipment, junk) carry no offers.
+- **City:** `name` = "Towing {City} OH", `serviceType` "Towing service", `areaServed` [City + geo + containsPlace, DefinedRegion of ZIPs], `availableChannel` (ServiceChannel with dispatch ContactPoint + `serviceUrl /sos`), `hoursAvailable` 24-7.
 - **Neighborhood:** `name` = H1, areaServed Place "{Name}, Columbus, Ohio" in City Columbus in State Ohio + containsPlace.
 - **Hub:** areaServed City Columbus + geo + containsPlace = 26 neighborhood Places with URLs.
 - **Place:** areaServed = the venue node (typed, address, geo, containedInPlace).
@@ -580,7 +580,7 @@ Home carries the three sitewide blocks from `index.html` plus the per-route WebP
   "legalName": "Roadside Towing & Recovery, Inc.",
   "foundingDate": "2020-05-05",
   "alternateName": ["Columbus Roadside Towing", "Roadside Towing and Recovery Inc", "Roadside Towing and Recovery", "CRT Towing"],
-  "description": "24/7 towing and roadside assistance in Columbus and Central Ohio: ... PUCO towing certificate 650256, USDOT 03560921, insured, 100,000+ calls completed since 2020, published rate card.",
+  "description": "24-7 towing and roadside assistance in Columbus and Central Ohio: ... PUCO towing certificate 650256, USDOT 03560921, insured, 100,000+ calls completed since 2020, published rate card.",
   "url": "https://www.columbusroadsidetowing.com",
   "telephone": "+1-740-812-9489",
   "contactPoint": [
@@ -677,7 +677,7 @@ Home carries the three sitewide blocks from `index.html` plus the per-route WebP
     "@id": "https://www.columbusroadsidetowing.com/#webpage",
     "url": "https://www.columbusroadsidetowing.com",
     "name": "Tow Truck & Towing Columbus | Roadside Towing & Recovery Inc",
-    "description": "24/7 towing in Columbus, OH from Roadside Towing & Recovery Inc: tow truck dispatch, roadside assistance and a published rate card. Call (740) 812-9489.",
+    "description": "24-7 towing in Columbus, OH from Roadside Towing & Recovery Inc: tow truck dispatch, roadside assistance and a published rate card. Call (740) 812-9489.",
     "inLanguage": "en-US",
     "isPartOf": {"@id": "https://www.columbusroadsidetowing.com/#website"},
     "about": {"@id": "https://www.columbusroadsidetowing.com/#business"},
@@ -701,7 +701,7 @@ FAQ answers shortened; 17 questions in the real block.
     "@id": "https://www.columbusroadsidetowing.com/services/flatbed-towing#webpage",
     "url": "https://www.columbusroadsidetowing.com/services/flatbed-towing",
     "name": "Flatbed Towing Columbus OH | Roadside Towing & Recovery Inc",
-    "description": "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24/7 dispatch. Call (740) 812-9489.",
+    "description": "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24-7 dispatch. Call (740) 812-9489.",
     "inLanguage": "en-US",
     "isPartOf": {"@id": "https://www.columbusroadsidetowing.com/#website"},
     "about": {"@id": "https://www.columbusroadsidetowing.com/#business"},
@@ -715,7 +715,7 @@ FAQ answers shortened; 17 questions in the real block.
     "@id": "https://www.columbusroadsidetowing.com/services/flatbed-towing#service",
     "name": "Flatbed Towing",
     "serviceType": "Flatbed Towing",
-    "description": "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24/7 dispatch. Call (740) 812-9489.",
+    "description": "Flatbed tow truck in Columbus OH for AWD, EV, luxury, and lowered vehicles. Hydraulic carriers with soft tie-downs, 24-7 dispatch. Call (740) 812-9489.",
     "url": "https://www.columbusroadsidetowing.com/services/flatbed-towing",
     "image": "https://www.columbusroadsidetowing.com/img/service-flatbed-towing-new-9ztLgtsVU7r2yfHeqMYSme.webp",
     "provider": {"@id": "https://www.columbusroadsidetowing.com/#business"},
@@ -790,7 +790,7 @@ FAQ answers shortened; 17 questions in the real block.
     "@id": "https://www.columbusroadsidetowing.com/service-area/dublin#webpage",
     "url": "https://www.columbusroadsidetowing.com/service-area/dublin",
     "name": "Towing Dublin OH | Roadside Towing & Recovery Inc",
-    "description": "24/7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.",
+    "description": "24-7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.",
     "inLanguage": "en-US",
     "isPartOf": {"@id": "https://www.columbusroadsidetowing.com/#website"},
     "about": {"@id": "https://www.columbusroadsidetowing.com/#business"},
@@ -803,7 +803,7 @@ FAQ answers shortened; 17 questions in the real block.
     "@id": "https://www.columbusroadsidetowing.com/service-area/dublin#service",
     "name": "Towing Dublin OH",
     "serviceType": "Towing service",
-    "description": "24/7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.",
+    "description": "24-7 towing in Dublin, OH. Serving Bridge Park, Tuttle Crossing, I-270 & US-33. Flatbed, wheel lift, roadside assistance. Call (740) 812-9489.",
     "url": "https://www.columbusroadsidetowing.com/service-area/dublin",
     "provider": {"@id": "https://www.columbusroadsidetowing.com/#business"},
     "areaServed": [
@@ -887,7 +887,7 @@ FAQ answers shortened; 17 questions in the real block.
 
 - Built from data modules (`buildSitemapEntries`): home, 17 core, Columbus hub + 26 neighborhoods, 40 cities, /reviews + /reviews/all, /places + 27 places, 26 services, 12 auto-repair, 14 blog posts = 167 URLs. Excludes /lp/*, /app, /ask, /careers, /park-garage-details, /404.
 - Namespaces: sitemap 0.9, `image` (Google image sitemap), `xhtml`.
-- **Image entries:** home (hero, OG image, logo), every city (hero, title = city H1, caption "24/7 towing and roadside assistance in {City}, Ohio"), every service and auto-repair page (its hero, "{Name} Columbus OH"), every blog post (its hero, title = headline, caption = alt). All image URLs on the same origin (test).
+- **Image entries:** home (hero, OG image, logo), every city (hero, title = city H1, caption "24-7 towing and roadside assistance in {City}, Ohio"), every service and auto-repair page (its hero, "{Name} Columbus OH"), every blog post (its hero, title = headline, caption = alt). All image URLs on the same origin (test).
 - **Priority / changefreq:** home 1.0 daily; services/service-areas/auto-repair/pricing 0.9 weekly or monthly; cities and hub 0.85 monthly; neighborhoods, places, services, auto-repair 0.8 monthly; blog posts 0.65 monthly; legal 0.4 yearly; reviews daily.
 - **lastmod logic:** a hand-maintained `LASTMOD` map of real content-change dates (`YYYY-MM-DD`), never "now" (except /reviews pages, whose content really changes daily). Defaults: `SITE_LASTMOD`; groups bumped together (all cities/neighborhoods/places to the local-guide date; all services/auto-repair to the FAQ-render date); individual overrides per page; blog posts = publish date. Rule in code: "Bump a route here when its content changes — never derive lastmod from now."
 - Headers: `application/xml`, `Cache-Control: public, max-age=3600, s-maxage=86400`, `X-Robots-Tag: noindex` (the file itself).
@@ -1076,7 +1076,7 @@ Match coverage, not text. Minimum parity list:
 1. **Data-first architecture:** React-free data modules for site meta, services, cities (meta + FAQs + intros + local guides + nearby graph), neighborhoods, places, blog metadata, landing pages, pricing; the server and React read the same modules.
 2. **Server injection** of title/description/canonical/OG/Twitter/robots, per-route JSON-LD array, and a full per-route crawlable body inside `#root` markers; real 404 with noindex and no canonical.
 3. **Page families:** home; ~26 service pages; ~12 secondary-vertical pages (auto repair or equivalent); one page per served city (with ZIPs, geo, ETA tier, distance, local guide, 6+ FAQs, nearby links); a main-city hub + neighborhood pages; an events/places hub + venue pages; blog; pricing, quote, FAQ, about, contact, service-areas (with ZIP table and `?q=` filter), SOS, reviews; legal pages server-rendered; noindex ad landers.
-4. **Schema graph:** one `#business` (Organization + LocalBusiness + industry subtype + EmergencyService if 24/7), `#website` with SearchAction, `#owner`; per route WebPage + BreadcrumbList + Service/FAQPage/BlogPosting/ItemList as listed in 4.2; Offers from the real rate card; no self-serving AggregateRating.
+4. **Schema graph:** one `#business` (Organization + LocalBusiness + industry subtype + EmergencyService if 24-7), `#website` with SearchAction, `#owner`; per route WebPage + BreadcrumbList + Service/FAQPage/BlogPosting/ItemList as listed in 4.2; Offers from the real rate card; no self-serving AggregateRating.
 5. **Sitemap** with real lastmod map and image entries; **robots** with AI-crawler allows; **llms.txt** generated from data; **llms-full.txt** from crawlable bodies; **IndexNow** daily ping and protected manual trigger.
 6. **Redirect middleware:** apex -> www, trailing slash, lowercase, retired slugs, `/index.html`.
 7. **Performance:** static hero `<img>` LCP with 800w/1280w WebP, preload swap per route, inline critical CSS in a cascade layer, non-blocking CSS, self-hosted fonts with metric fallbacks, delayed gtag/chat, code splitting.

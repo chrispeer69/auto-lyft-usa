@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed towing in Reynoldsburg, OH: breakdowns at I-70 and Brice Road, Main Street lockouts and SR-256 jump starts, dispatched 24/7. (614) 633-8163.",
+    "Flatbed towing in Reynoldsburg, OH: breakdowns at I-70 and Brice Road, Main Street lockouts and SR-256 jump starts, dispatched 24-7. (614) 633-8163.",
   h1: "Reynoldsburg Towing and Roadside Help, Day or Night",
   lede:
     "From the Brice Road ramps to the SR-256 interchange, Reynoldsburg sits on the busiest stretch of the I-70 east corridor, and our flatbeds work it around the clock.",

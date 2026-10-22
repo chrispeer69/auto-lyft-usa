@@ -4,7 +4,7 @@ export default {
   keyword: "Nationwide Arena towing",
   title: "Nationwide Arena Towing and Lockouts",
   description:
-    "Stuck after a Blue Jackets game or show at Nationwide Arena? Garage-aware flatbed towing, jump starts and lockouts downtown, 24/7. (614) 633-8163.",
+    "Stuck after a Blue Jackets game or show at Nationwide Arena? Garage-aware flatbed towing, jump starts and lockouts downtown, 24-7. (614) 633-8163.",
   h1: "Nationwide Arena Towing When the Car Won't Leave the Garage",
   lede:
     "Hockey nights and arena concerts end with thousands of cars spiraling out of downtown garages at once. If yours is the one that won't start, we can help.",

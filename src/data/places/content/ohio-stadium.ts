@@ -4,7 +4,7 @@ export default {
   keyword: "Ohio State game day towing",
   title: "Ohio State Game Day Towing & Jump Starts",
   description:
-    "Dead battery or keys locked in the car after a Buckeyes game? Flatbed tows and roadside help around Ohio Stadium and Lane Avenue, 24/7. (614) 633-8163.",
+    "Dead battery or keys locked in the car after a Buckeyes game? Flatbed tows and roadside help around Ohio Stadium and Lane Avenue, 24-7. (614) 633-8163.",
   h1: "Ohio State Game Day Towing Around the Horseshoe",
   lede:
     "When the tailgate is over and the car will not cooperate, call one number for a jump, a lockout or a flatbed out of the campus traffic.",

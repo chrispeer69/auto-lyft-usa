@@ -40,7 +40,7 @@ const towns = p.cities.map((s) => (s === "columbus" ? { slug: "columbus", name: 
 const related = p.related.map((s) => placeBySlug(s)).filter((s) => s !== undefined);
 ---
 <Base title={p.title} description={p.description} path={path} crumbs={[{ name: "Venues & campuses", path: "/local" }, { name: p.label, path }]} schema={schema} faqs={p.faqs}>
-  <Hero image={PHOTOS.heroDusk} eyebrow={category.label} h1={p.h1} lede={p.lede} facts={[["Location", `${v.name}, ${v.locality}`], ["Dispatch", "24/7"], ["Price", "Quoted before we roll"]]} />
+  <Hero image={PHOTOS.heroDusk} eyebrow={category.label} h1={p.h1} lede={p.lede} facts={[["Location", `${v.name}, ${v.locality}`], ["Dispatch", "24-7"], ["Price", "Quoted before we roll"]]} />
   <section class="band"><div class="wrap prose">{p.intro.map((t) => <p set:html={rich(t)} />)}</div></section>
   {p.sections.map((sec, i) => (
     <section class={`band${i % 2 === 0 ? " alt" : ""}`}>

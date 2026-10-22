@@ -5,7 +5,7 @@ export default {
   title: "Emergency Towing in Columbus, OH",
   description:
     "Emergency towing in Columbus, OH, any hour of any day. A live dispatcher, a flatbed sent your way and the full price quoted first. Call (614) 633-8163.",
-  h1: "24/7 Emergency Towing Across Columbus and Central Ohio",
+  h1: "24-7 Emergency Towing Across Columbus and Central Ohio",
   lede:
     "When a car quits on the freeway or in a dark lot, one call reaches a person who can send a flatbed and tell you exactly what the job will cost.",
   intro: [

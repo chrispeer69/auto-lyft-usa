@@ -4,7 +4,7 @@ export default {
   keyword: "Easton towing",
   title: "Easton Towing & Roadside Help",
   description:
-    "Easton towing, jump-starts and lockouts for Town Center shoppers in northeast Columbus. Flatbed tows to any shop, 24/7. Call (614) 633-8163.",
+    "Easton towing, jump-starts and lockouts for Town Center shoppers in northeast Columbus. Flatbed tows to any shop, 24-7. Call (614) 633-8163.",
   h1: "Easton towing and roadside help for Town Center shoppers",
   lede:
     "Car dead in an Easton garage or locked with the keys inside? We send a driver to your row, fix it on the spot when we can, and flatbed it out when we can't.",

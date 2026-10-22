@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Powell, OH car towing from Sawmill Parkway to the Four Corners and Columbus Zoo traffic on Powell Road. Flatbed carriers on call 24/7. (614) 633-8163.",
+    "Powell, OH car towing from Sawmill Parkway to the Four Corners and Columbus Zoo traffic on Powell Road. Flatbed carriers on call 24-7. (614) 633-8163.",
   h1: "Powell, OH Car Towing From Sawmill Parkway to the Zoo",
   lede:
     "Powell has grown from a crossroads village into a Delaware County suburb of cul-de-sacs, shopping centers and summer zoo crowds, and we cover all of it.",

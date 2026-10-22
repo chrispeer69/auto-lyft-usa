@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing in London, Ohio around the Madison County courthouse, US-42, SR-56 and the I-70 exit at US-42. Flatbed and wheel-lift tows, 24/7. (614) 633-8163.",
+    "Towing in London, Ohio around the Madison County courthouse, US-42, SR-56 and the I-70 exit at US-42. Flatbed and wheel-lift tows, 24-7. (614) 633-8163.",
   h1: "London, Ohio Towing for the Madison County Seat",
   lede:
     "Madison County government is based in London, a courthouse town ringed by farmland, and our trucks make the run out from Columbus around the clock.",

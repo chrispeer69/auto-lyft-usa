@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Tow trucks for Plain City on SR-161, US-42 and SR-736, from uptown by the town clock to Pastime Park. Flatbed carriers dispatched 24/7. (614) 633-8163.",
+    "Tow trucks for Plain City on SR-161, US-42 and SR-736, from uptown by the town clock to Pastime Park. Flatbed carriers dispatched 24-7. (614) 633-8163.",
   h1: "Tow Trucks for Plain City, From Uptown to US-42",
   lede:
     "Plain City straddles the Madison and Union county line northwest of Columbus, where suburban growth from Dublin meets open farm country.",

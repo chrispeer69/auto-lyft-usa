@@ -4,7 +4,7 @@ export default {
   keyword: "Columbus Crew stadium towing",
   title: "Columbus Crew Stadium Towing",
   description:
-    "Overheated, out of gas or locked out on a Crew match day? Columbus Crew stadium towing and roadside help in the Arena District, 24/7. (614) 633-8163.",
+    "Overheated, out of gas or locked out on a Crew match day? Columbus Crew stadium towing and roadside help in the Arena District, 24-7. (614) 633-8163.",
   h1: "Columbus Crew Stadium Towing and Match Day Roadside Help",
   lede:
     "Black and gold all day, then a car that refuses to go home. We handle the jump, the gas can or the flatbed so the match stays the memorable part.",

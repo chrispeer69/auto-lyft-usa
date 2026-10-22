@@ -21,7 +21,7 @@ export const LANDINGS: Landing[] = [
     slug: "tow-truck-near-me", keyword: "tow truck near me", title: "Tow Truck Near Me — Columbus, OH",
     description: "Stranded in Columbus and searching for the closest tow truck? Auto Lyft USA dispatches flatbeds around the clock. Call now for a price before we roll.",
     h1: "Tow Truck Near You in Columbus, Dispatched Now", sub: "Tell us where you are. We quote it, send the nearest truck, and text you the driver's name.",
-    ticks: ["Open 24/7, including holidays", "Flatbed or wheel lift to suit the car", "Price given before dispatch"],
+    ticks: ["Open 24-7, including holidays", "Flatbed or wheel lift to suit the car", "Price given before dispatch"],
     faqs: [
       { q: "How do you find the nearest truck?", a: "The dispatcher sees where each of our trucks is and assigns whichever can reach you soonest, then gives you a live estimate." },
       { q: "Can I send my location instead of explaining it?", a: "Yes. After you call, we can text you a link, or you can text a map pin to (614) 633-8163." },
@@ -30,7 +30,7 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "towing-near-me", keyword: "towing near me", title: "Towing Near Me in Columbus, OH",
-    description: "Towing near you anywhere in Columbus and nearby suburbs. Flatbeds and wheel lifts, 24/7 dispatch, quote first. Call Auto Lyft USA now.",
+    description: "Towing near you anywhere in Columbus and nearby suburbs. Flatbeds and wheel lifts, 24-7 dispatch, quote first. Call Auto Lyft USA now.",
     h1: "Columbus Towing, Close By and Ready", sub: "From Hilltop to Westerville, a flatbed is on its way as soon as you approve the price.",
     ticks: ["Columbus + 40+ nearby towns", "Car, SUV, pickup or EV", "No membership required"],
     faqs: [
@@ -40,7 +40,7 @@ export const LANDINGS: Landing[] = [
     ],
   },
   {
-    slug: "towing-company", keyword: "towing company", title: "Columbus Towing Company, Open 24/7",
+    slug: "towing-company", keyword: "towing company", title: "Columbus Towing Company, Open 24-7",
     description: "Looking for a towing company in Columbus you can trust? Auto Lyft USA: locally owned, insured, flatbeds and wheel lifts, prices up front. Call now.",
     h1: "A Columbus Towing Company That Quotes First", sub: "Locally owned, insured, with trucks across Columbus and a yard on Harrisburg Pike since 2024.",
     ticks: ["Locally owned and insured", "Photos before every load", "Itemized receipts"],
@@ -85,7 +85,7 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "car-lockout", keyword: "locked keys in car", title: "Locked Keys in Car? Columbus Lockouts",
-    description: "Keys locked in your car in Columbus? Auto Lyft USA opens most vehicles without damage, 24/7. Call now and a driver heads your way.",
+    description: "Keys locked in your car in Columbus? Auto Lyft USA opens most vehicles without damage, 24-7. Call now and a driver heads your way.",
     h1: "Keys Locked in the Car? We'll Open It Without a Scratch", sub: "Air wedges and long-reach tools, not coat hangers. Have your ID ready so we can confirm it's your car.",
     ticks: ["Damage-free entry", "Cars, SUVs and pickups", "Child or pet inside? Say so first"],
     faqs: [
@@ -95,7 +95,7 @@ export const LANDINGS: Landing[] = [
     ],
   },
   {
-    slug: "flat-tire", keyword: "flat tire help", title: "Flat Tire Help in Columbus — 24/7",
+    slug: "flat-tire", keyword: "flat tire help", title: "Flat Tire Help in Columbus — 24-7",
     description: "Flat tire in Columbus? Auto Lyft USA mounts your spare where you are, including highway shoulders, or tows you to a tire shop. Call now.",
     h1: "Flat Tire? We'll Mount the Spare or Tow You to a Tire Shop", sub: "Stay off the shoulder. The driver swaps the spare and checks the lug nuts. No usable spare? It goes on the flatbed.",
     ticks: ["Highway shoulders included", "Lug nuts torqued by hand", "Tow to a tire shop if needed"],
@@ -118,7 +118,7 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "tesla-tow", keyword: "Tesla tow near me", title: "Tesla Tow Near Me — Columbus Flatbeds",
-    description: "Tesla towing near you in Columbus: flatbed transport in tow mode to a Supercharger, Tesla Service or home. Auto Lyft USA, 24/7. Call now.",
+    description: "Tesla towing near you in Columbus: flatbed transport in tow mode to a Supercharger, Tesla Service or home. Auto Lyft USA, 24-7. Call now.",
     h1: "Tesla Tow Near You: Flatbed to a Supercharger or Service Center", sub: "Model 3, Y, S or X: loaded in Transport Mode, strapped at the tires, delivered where you need it.",
     ticks: ["Transport Mode loading", "Tow eye and dead-12V experience", "Any Tesla model that fits a light-duty deck"],
     faqs: [
@@ -129,7 +129,7 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "roadside-assistance", keyword: "roadside assistance", title: "Roadside Assistance Columbus, No Plan",
-    description: "Roadside assistance in Columbus without a membership: jump starts, lockouts, tire changes, fuel and winch-outs. Auto Lyft USA, 24/7.",
+    description: "Roadside assistance in Columbus without a membership: jump starts, lockouts, tire changes, fuel and winch-outs. Auto Lyft USA, 24-7.",
     h1: "Roadside Assistance in Columbus, No Membership Needed", sub: "Pay per call for the fix you need, from a battery jump to a few gallons of gas to a pull out of a ditch.",
     ticks: ["Jumps, lockouts, tires, fuel", "Winch-outs from ditches and snow", "Tow on the spot if needed"],
     faqs: [
@@ -151,7 +151,7 @@ export const LANDINGS: Landing[] = [
   },
   {
     slug: "accident-towing", keyword: "accident towing", title: "Accident Towing in Columbus, OH",
-    description: "After a crash in Columbus, Auto Lyft USA flatbeds tow your car to the body shop of your choice or to our yard. 24/7. Call now.",
+    description: "After a crash in Columbus, Auto Lyft USA flatbeds tow your car to the body shop of your choice or to our yard. 24-7. Call now.",
     h1: "Towing After an Accident, to the Shop You Choose", sub: "Once police clear the scene, we load the car, pick up loose parts and take it where you or your insurer wants it.",
     ticks: ["Your choice of body shop", "Loose parts secured on the deck", "Yard storage if you need time"],
     faqs: [
