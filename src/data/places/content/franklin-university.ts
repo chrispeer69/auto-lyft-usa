@@ -44,7 +44,7 @@ export default {
     {
       heading: "How to describe where you're parked",
       paragraphs: [
-        "Franklin's campus is in the Discovery District, a short walk from the Main Library and Topiary Park, and its surroundings mix university buildings, offices and apartments. Give the dispatcher the street you're on and the nearest cross street, such as Grant Avenue at Town Street or Main Street, then mention whether you're curbside, in a lot or inside a garage.",
+        "Franklin's campus is in the Discovery District, a short walk from the Main Library and Topiary Park, and its surroundings mix university buildings, offices and apartments. Name your street and its closest intersection for the dispatcher, for instance Grant Avenue at Town Street or Main Street, then mention whether you're curbside, in a lot or inside a garage.",
         "In a garage, the level number and whichever stairwell you can see are the two most useful details. If the car is in a lot behind a building, name the building and which entrance the lot is off. Details like these let the driver come straight to you.",
       ],
     },

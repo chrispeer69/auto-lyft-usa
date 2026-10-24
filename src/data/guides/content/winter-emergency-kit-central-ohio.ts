@@ -23,7 +23,7 @@ export default {
       ],
       bullets: [
         "A wool or fleece blanket, or an inexpensive sleeping bag. Wool keeps insulating even when damp from snow tracked into the car.",
-        "A warm hat, gloves and a spare pair of socks. Wet socks pull heat from your feet faster than almost anything else.",
+        "A warm hat, gloves and dry socks to change into. Wet socks pull heat from your feet faster than almost anything else.",
         "Chemical hand warmers. They are cheap, last for hours and fit in a glove box.",
         "Water and a few high-calorie snacks. Eating helps your body make heat, and a long backup on the outerbelt can stretch well past dinner.",
       ],
@@ -81,7 +81,7 @@ export default {
       heading: "Habits that matter as much as the kit",
       paragraphs: [
         "The tote helps once you are stuck, but a few habits keep you from getting stuck at all. Keep the fuel tank at least half full through the winter; it gives you reserve to run the heater in a long backup and reduces moisture in the tank. Check tire pressure when the first real cold arrives, because it drops as temperatures fall. Have the battery tested in early fall, a step covered in more depth in our [battery and cold weather guide](/guides/car-battery-cold-weather).",
-        "If you do run the engine for heat while stuck in snow, first make sure the tailpipe is completely clear. Snow around the exhaust lets carbon monoxide seep inside, and the gas has no odor to warn you. Run the engine in short intervals and crack a window on the side away from the wind.",
+        "If you do run the engine for heat while stuck in snow, first make sure the tailpipe is completely clear. Snow around the exhaust lets carbon monoxide seep inside, and the gas has no odor to warn you. Run the engine in short intervals and open a window slightly on the downwind side.",
       ],
     },
     {

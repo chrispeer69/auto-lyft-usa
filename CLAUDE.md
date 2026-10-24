@@ -15,7 +15,7 @@ Sister site to Columbus Roadside Towing (`../Columbus Roadside Towing/Website Fi
 
 ## Commands
 - `npm run build`: builds `dist/`, then runs `scripts/check-seo.mjs` (fails on bad titles/descriptions, duplicate H1s, schema problems or broken links; writes sitemap.xml, llms.txt and llms-full.txt).
-- `npm run check:overlap`: compares built pages to the sister site's source. **Must report 0.** `node scripts/check-overlap.mjs --files <file.ts>` checks a data file before building.
+- `npm run check:overlap`: refreshes `.sister/columbus-towing` (a gitignored shallow clone of the sister repo's current `main`, via `scripts/sync-sister.mjs`), then compares built pages to it. **Must report 0.** `npm run sister:sync && node scripts/check-overlap.mjs --files <file.ts>` checks a data file before building. Never point it at a local Roadside checkout: those sit on other branches. `SISTER_SRC` overrides the path.
 - `npm run audit:seo`: deep per-page SEO audit of `dist/` (head tags, social cards, headings, images, links, schema, sitemap, orphans, click depth). Run after a build; should report 0 errors and 0 warnings.
 - `npm run lastmod`: after a build and before committing, rewrites `src/data/lastmod.json` (sitemap dates) from each page's git history. Never hand-edit dates.
 - `node scripts/optimize-photos.mjs <folder>`: turns real photos into `public/img/*.webp` (+ `-640` copies). Keep the file names in `src/data/photos.ts`.

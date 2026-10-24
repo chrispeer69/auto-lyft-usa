@@ -2,3 +2,6 @@ node_modules/
 dist/
 .astro/
 .env
+
+# Read-only copy of the sister site (scripts/sync-sister.mjs)
+.sister/

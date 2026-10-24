@@ -57,7 +57,7 @@ export default {
   faqs: [
     {
       q: "Do you offer Easton towing late at night after the stores close?",
-      a: "Yes. Dispatch runs every hour of every day, including holidays, so a car that won't start after a late movie or a closing shift still gets help. Anything dispatched from 10 PM through 6 AM picks up a $150 overnight surcharge on our rate card, and the dispatcher tells you the total before a truck is sent. You can decide then whether to go ahead or wait until morning if the car is parked somewhere safe.",
+      a: "Yes. Dispatch runs every hour of every day, including holidays, so a car that won't start after a late movie or a closing shift still gets help. Anything dispatched from 10 PM through 6 AM picks up a $150 overnight surcharge on our rate card, and that is already inside the figure the dispatcher quotes. You can decide then whether to go ahead or wait until morning if the car is parked somewhere safe.",
     },
     {
       q: "Can you jump my car inside an Easton parking garage?",

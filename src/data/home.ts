@@ -9,7 +9,7 @@ export const HOME = {
     "Fast, reliable service throughout Columbus and surrounding communities.",
   intro: [
     "Auto Lyft USA is a Columbus towing company with one simple rule: the truck fits the car. Most tows ride on a flatbed, while our wheel-lift trucks and dollies take care of cramped spots and short moves. When you call for a tow truck in Columbus, the dispatcher asks where you are, what you drive and where it needs to go, then quotes the job before a driver is assigned. No membership, no app to download, no surprise line items when the truck arrives.",
-    "Our yard sits on Harrisburg Pike on the southwest side, a few minutes from I-70, I-71 and the I-270 outerbelt. From there the trucks cover Franklin County and the towns around it — from Delaware and Sunbury in the north to Lancaster in the southeast and London to the west.",
+    "Home base is Harrisburg Pike on the southwest side, a few minutes from I-70, I-71 and the I-270 outerbelt. From there the trucks cover Franklin County and the towns around it — from Delaware and Sunbury in the north to Lancaster in the southeast and London to the west.",
   ],
   steps: [
     { title: "Tell us where you are", text: "A cross street, a mile marker or a parking-lot row is enough. If you can, text a pin from your phone's map app." },

@@ -37,7 +37,7 @@ export default {
       heading: "Pinpointing your spot",
       paragraphs: [
         "The district packs many garages and surface lots into a few blocks, and several of them sit right next to each other. When you call, give us the name of your building or garage, the street the entrance faces, the level you are on and the space number if there is one.",
-        "If you are at your apartment building, mention whether a key card or gate code is needed for the garage. The driver cannot help if they cannot get through the door, so it helps to meet them at the entrance or to let building staff know a tow truck is on the way.",
+        "If you are at your apartment building, mention whether a key card or gate code is needed for the garage. The driver cannot help if they cannot get through the door, so it helps to meet them at the entrance or to tell building staff that a tow truck is coming.",
       ],
     },
     {

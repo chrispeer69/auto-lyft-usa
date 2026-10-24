@@ -8,7 +8,8 @@
     "build": "astro build && node scripts/check-seo.mjs",
     "preview": "astro preview",
     "check:seo": "node scripts/check-seo.mjs",
-    "check:overlap": "node scripts/check-overlap.mjs",
+    "check:overlap": "node scripts/sync-sister.mjs && node scripts/check-overlap.mjs",
+    "sister:sync": "node scripts/sync-sister.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
     "lastmod": "node scripts/lastmod.mjs"

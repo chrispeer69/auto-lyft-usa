@@ -4,7 +4,7 @@ Project root: `C:\Users\chris\OneDrive\Desktop\Website Files\Auto lyft USA` (Ast
 
 ## The #1 rule: original text
 A sister company (Columbus Roadside Towing) has a site covering the same pages. Google filters copied text, so **no sentence may echo that site**, and pages on this site must not echo each other.
-- After writing each file: `node scripts/check-overlap.mjs --files <your files>` → must say **0 shared 8-word runs**. Reword until it does. Never open the sister site's source.
+- After writing each file: `npm run sister:sync && node scripts/check-overlap.mjs --files <your files>` (compares against the sister repo's current main) → must say **0 shared 8-word runs**. Reword until it does. Never open the sister site's source.
 - Don't reuse sentences or sentence templates across your own pages, or from existing content files in this project (vary openings, structure and questions page to page).
 
 ## Business facts (claim only these)

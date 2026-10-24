@@ -13,7 +13,7 @@ export default {
   ],
   roads: [
     { name: "US-62 / SR-3 (Harrisburg Pike)", note: "Our own street, continuing southwest through Grove City and farmland to the village. Streetlights thin out once it leaves Grove City." },
-    { name: "I-71 Exit 94", note: "The interstate exit for US-62 and SR-3, signed for Grove City, Orient and Harrisburg; handy when a truck is already working on I-71." },
+    { name: "I-71 Exit 94", note: "Where I-71 meets US-62 and SR-3, with signs pointing to Grove City, Orient and Harrisburg; handy when a truck is already working on I-71." },
     { name: "SR-665 (London-Groveport Road)", note: "Crosses US-62 north of the village in Pleasant Township, a useful landmark to mention when you call from a rural address." },
     { name: "SR-762", note: "Begins at a signal on US-62 just south of the village limits and heads east toward Commercial Point." },
     { name: "Harrisburg-Georgesville Road", note: "A county road through Darbydale, past the Osprey Lake entrance to Battelle Darby Creek Metro Park." },

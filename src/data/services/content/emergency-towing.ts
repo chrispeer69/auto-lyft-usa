@@ -35,7 +35,7 @@ export default {
       ],
       bullets: [
         "Turn on your hazard lights and, if it is dark, the dome light so other drivers can see the car is occupied.",
-        "If you can get out on the side away from traffic and stand behind a guardrail, do that. If not, stay buckled in.",
+        "If you can leave by the doors facing away from the lanes and stand behind a guardrail, do that. If not, stay buckled in.",
         "Don't stand between your car and the moving lanes, and don't try to push the car on a highway.",
         "Have your keys, registration and the address of the destination shop ready for the driver.",
         "If your phone battery is low, tell the dispatcher early so they can text the details instead of calling back.",
@@ -51,7 +51,7 @@ export default {
     {
       heading: "Where the emergency calls come from",
       paragraphs: [
-        "A lot of our late-night work happens on the interstates: I-70 east toward Reynoldsburg and west past Hilltop, the I-71 corridor down toward Grove City, and the full loop of I-270. We also get regular calls from the retail strips on Morse Road, Broad Street and Hamilton Road, and from neighborhoods all over the city. Check the [service areas](/areas) page for the full list of towns.",
+        "A lot of our late-night work happens on the interstates: I-70 out to Reynoldsburg on one side and past the Hilltop on the other, the I-71 corridor down toward Grove City, and the full loop of I-270. We also get regular calls from the retail strips on Morse Road, Broad Street and Hamilton Road, and from neighborhoods all over the city. Check the [service areas](/areas) page for the full list of towns.",
       ],
     },
   ],
@@ -59,7 +59,7 @@ export default {
     { q: "Do you offer emergency towing at 3 a.m. on a holiday?", a: "Yes. Someone answers the dispatch line every hour of every day, including Thanksgiving, Christmas and New Year's Eve. Overnight and holiday calls may carry an added charge, and if they do, the dispatcher includes it in the single price you hear before a truck is assigned." },
     { q: "How long will an emergency towing truck take to reach me?", a: "It depends on how far you are from the nearest available truck and what traffic is doing at that moment. We don't publish a promised arrival time because a snowstorm or a closed lane on I-270 changes everything. The dispatcher looks at where the trucks are and gives you an honest live estimate on the call." },
     { q: "What does an emergency tow cost?", a: "The price depends on the distance to reach you, the miles to the destination, whether it is a late-night call and any added work like winching or cleanup. The dispatcher quotes the full job before dispatch, so there is no surprise at drop-off. Our [rates page](/rates) explains how each part of a bill is figured." },
-    { q: "Should I call 911 or a tow company first?", a: "If anyone is hurt, if the car is blocking a travel lane, or if you feel unsafe where you are, call 911 first. Police can close a lane and protect the scene. Once you are safe, call us at (614) 633-8163 and we will coordinate with the officers on the scene." },
+    { q: "Should I call 911 or a tow company first?", a: "If someone is injured, if the car is blocking a travel lane, or if the spot simply feels unsafe, 911 is the first call. Police can close a lane and protect the scene. Once you are safe, call us at (614) 633-8163 and we will coordinate with the officers on the scene." },
     { q: "Can you tow my car if I can't stay with it?", a: "Often, yes. If you need to leave with a ride or an ambulance, tell the dispatcher where the keys will be and where the car is going. The driver photographs the car before loading so you have a record of its condition even though you weren't there." },
     { q: "Can I ride with the driver in an emergency?", a: "Usually one adult can ride in the cab, which helps when you are stranded on a highway with no other way home. Mention it when you call so the dispatcher can confirm there is a seat. Kids can only ride if you bring a proper seat for them, and the driver has the final say on safety." },
     { q: "Where will you take my car in the middle of the night?", a: "Wherever you want it. If your mechanic is closed, we can drop it in their after-hours lot if they allow that, or keep it at our yard on Harrisburg Pike and deliver it once they open. You don't have to decide the long-term plan while standing on a shoulder." },

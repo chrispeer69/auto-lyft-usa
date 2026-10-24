@@ -53,7 +53,7 @@ export default {
     },
     {
       q: "What will the tow to an A/C shop cost?",
-      a: "Towing follows our published card: a hook-up charge plus per-mile rates for the drive from our yard and for each loaded mile, with surcharges for late-night, weekend or highway pickups. The dispatcher quotes the total before the truck leaves. Repair charges are separate and come from the shop. Our [rates](/rates) page lists every towing fee.",
+      a: "Towing follows our published card: a hook-up charge plus per-mile rates for the drive from our yard and for each loaded mile, with surcharges for late-night, weekend or highway pickups. You get the full figure on the phone before the truck leaves. Repair charges are separate and come from the shop. Our [rates](/rates) page lists every towing fee.",
     },
     {
       q: "Should I run the A/C in winter?",

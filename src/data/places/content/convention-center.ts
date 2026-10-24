@@ -45,7 +45,7 @@ export default {
     {
       heading: "Costs and how to plan around them",
       paragraphs: [
-        "The [rate card](/rates) is the same for locals and visitors. A jump, unlock or tire change is a $75 flat fee. Towing means $125 to attach the car, then $7 for every mile it rides. Both add $4 a mile for the trip from our yard, and a weekend or overnight call adds the listed surcharge. Ohio sales tax follows the pickup county, and the convention center falls in Franklin County.",
+        "The [rate card](/rates) is the same for locals and visitors. A jump, unlock or tire change is a $75 flat fee. Towing means $125 to attach the car, then $7 for every mile it rides. Both add $4 a mile for the trip from our yard, and a weekend or overnight call adds the listed surcharge. The convention center is in Franklin County, so that county's Ohio sales tax applies.",
         "Want a number before you call? Use the [online estimate](/estimate) or send a [service request](/request) and we will reply with a quote.",
       ],
     },

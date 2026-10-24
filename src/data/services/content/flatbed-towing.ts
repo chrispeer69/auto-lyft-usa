@@ -51,7 +51,7 @@ export default {
     {
       heading: "Where our flatbeds work most",
       paragraphs: [
-        "Our carriers are spread around Columbus instead of waiting at one lot, and dispatch sends the nearest one that is free. The office and storage yard sit on Harrisburg Pike, a few minutes from the I-70 and I-71 split, the I-270 outerbelt and US-62. A lot of our flatbed work comes from the west side — Hilltop, Westgate, [Grove City](/areas/grove-city-oh), [Hilliard](/areas/hilliard-oh) and [Galloway](/areas/galloway-oh) — and from the busy commercial strips along Morse Road, Sawmill Road and Hamilton Road. We also cover the outer towns from [Delaware](/areas/delaware-oh) down to [Lancaster](/areas/lancaster-oh).",
+        "Our carriers are spread around Columbus instead of waiting at one lot, and dispatch sends the nearest one that is free. The office and storage yard sit on Harrisburg Pike, a few minutes from where I-70 and I-71 split, from the I-270 outerbelt and from US-62. A lot of our flatbed work comes from the west side — Hilltop, Westgate, [Grove City](/areas/grove-city-oh), [Hilliard](/areas/hilliard-oh) and [Galloway](/areas/galloway-oh) — and from the busy commercial strips along Morse Road, Sawmill Road and Hamilton Road. We also cover the outer towns from [Delaware](/areas/delaware-oh) down to [Lancaster](/areas/lancaster-oh).",
       ],
     },
   ],

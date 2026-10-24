@@ -16,8 +16,10 @@ import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import { parse } from "node-html-parser";
 
-// SISTER_SRC overrides the path (the cloud blog routine clones the sister repo elsewhere).
-const SISTER = process.env.SISTER_SRC || "C:/Users/chris/OneDrive/Desktop/Website Files/Columbus Roadside Towing/Website Files/client/src";
+// Default: the copy of the sister repo's current main that scripts/sync-sister.mjs
+// keeps in .sister/ (npm run check:overlap refreshes it first). SISTER_SRC
+// overrides the path (the cloud routines clone the sister repo elsewhere).
+const SISTER = process.env.SISTER_SRC || ".sister/columbus-towing/client/src";
 const fileMode = process.argv[2] === "--files";
 const N = 8;
 
@@ -51,7 +53,7 @@ function shingles(words) {
 const ALLOW = [/harrisburg pike columbus oh 43223/, /^1620 harrisburg pike/, /ohio revised code/];
 
 if (!existsSync(SISTER)) {
-  console.error(`Sister source not found: ${SISTER}`);
+  console.error(`Sister source not found: ${SISTER}. Run \`npm run sister:sync\` (or set SISTER_SRC).`);
   process.exit(2);
 }
 const sisterSet = new Set();

@@ -42,7 +42,7 @@ export default {
         "Think in three calls, and most breakdowns only need the last one.",
       ],
       bullets: [
-        "911, if anyone is hurt, if the car is in a live lane, if there is smoke or fire, or if you feel unsafe where you are.",
+        "911, if someone is injured, if the car sits in a live lane, if there is smoke or fire, or if you feel unsafe where you are.",
         "Your roadside plan, if you have one through an insurer, a credit card or a membership. Ask what they cover and how long they expect it to take, then decide whether to wait for them.",
         "A local tow company, directly. Calling us at (614) 633-8163 puts you through to dispatch around the clock, and the dispatcher quotes a price and a live arrival estimate before any truck leaves. If talking is hard where you are, the [tow request page](/request) takes the same details in writing.",
       ],
@@ -80,7 +80,7 @@ export default {
   faqs: [
     {
       q: "Should I get out of my car if it breaks down on I-270?",
-      a: "It depends on the shoulder. If there is a guardrail or a grass bank with room to stand well away from traffic, getting out and moving behind the barrier is usually safer. If the shoulder is narrow and there is nowhere protected to stand, stay buckled in with the hazards on and call 911 if any part of the car is in a travel lane.",
+      a: "It depends on the shoulder. If there is a guardrail or a grass bank with room to stand well away from traffic, getting out and moving behind the barrier is usually safer. If the shoulder is narrow and there is nowhere protected to stand, keep your belt on and flashers going, and dial 911 if any part of the car pokes into a travel lane.",
     },
     {
       q: "How do I describe my location on a Columbus highway?",

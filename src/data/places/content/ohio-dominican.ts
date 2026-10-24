@@ -69,7 +69,7 @@ export default {
     },
     {
       q: "My car broke down on I-670 coming back to ODU. What should I do?",
-      a: "Steer right, onto the shoulder or up an exit ramp if one is close, and switch on the flashers. Unless smoke or traffic makes the car unsafe, buckle back in and wait inside. A car that died in a lane is a 911 call before it's a towing call. When you reach us, the useful details are the highway, eastbound or westbound, and the most recent exit sign. Highway pickups add $75 because of the extra safety work involved.",
+      a: "Steer right, onto the shoulder or up an exit ramp if one is close, and switch on the flashers. Unless smoke or traffic makes the car unsafe, buckle back in and wait inside. A car that died in a lane is a 911 call before it's a towing call. When you reach us, the useful details are the highway, your direction of travel and the latest exit sign. Highway pickups add $75 because of the extra safety work involved.",
     },
     {
       q: "Can you take a student's car home at the end of the school year?",

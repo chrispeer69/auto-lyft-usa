@@ -19,7 +19,7 @@ export default {
   },
   intro: [
     "You land at John Glenn Columbus International after a week away, ride the shuttle or walk out to the car, turn the key, and get a click. It happens more than most travelers expect. A car that sits untouched for days slowly drains its battery, and a cold snap or a heat wave while you're gone finishes the job. The good news is that it's usually a quick fix.",
-    "Auto Lyft USA handles towing at CMH airport and roadside calls in the airport's garage and surface lots at any hour, including the late-night arrivals when few other options are open. Most dead-battery calls end with a jump and you driving yourself home. When the car truly won't run, we load it on a flatbed and take it to your house, your dealer or an independent shop.",
+    "Auto Lyft USA handles towing at CMH airport and roadside calls in the airport's garage and surface lots at any hour, including the late-night arrivals when few other options are open. Most dead-battery calls end with a jump and you driving yourself home. When the car truly won't run, it goes on a flatbed to your house, your dealer or an independent shop.",
     "CMH sits on the east side of Columbus, reached by I-670, with Gahanna right next door. Our yard is on the southwest side, and the dispatcher will give you a live estimate when you call. If you're still on the plane or waiting at baggage claim, it's fine to call ahead which gets a truck on the road while the carousel is still turning.",
   ],
   sections: [

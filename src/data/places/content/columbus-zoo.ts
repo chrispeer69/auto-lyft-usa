@@ -53,7 +53,7 @@ export default {
   faqs: [
     {
       q: "How much does Columbus Zoo towing cost from your yard?",
-      a: "Because our yard is on the southwest side of Columbus, the en-route charge of $4 per mile is a bigger part of the bill here than for downtown calls. On top of that, towing adds a $125 hook-up fee and $7 for every mile your car rides on the deck. Roadside help is $75 flat instead of the hook-up and loaded miles. The dispatcher gives you the complete figure before sending a truck.",
+      a: "With our yard on the southwest side of Columbus, the en-route charge of $4 per mile is a bigger part of the bill here than for downtown calls. On top of that, towing adds a $125 hook-up fee and $7 for every mile your car rides on the deck. Roadside help is $75 flat instead of the hook-up and loaded miles. The dispatcher gives you the complete figure before sending a truck.",
     },
     {
       q: "My key fob got wet at Zoombezi Bay and the car won't unlock. Can you help?",

@@ -21,7 +21,7 @@ export default {
         "Every tow has these, whether it is two miles or forty.",
       ],
       bullets: [
-        "En-route miles at $4 per mile. Our rate card counts these from the yard at 1620 Harrisburg Pike to wherever your car is sitting, even though the trucks themselves are positioned around Columbus. A pickup in Grove City or on the Hilltop is fewer en-route miles than one in Westerville because the yard is on the southwest side.",
+        "En-route miles at $4 per mile. Our rate card counts these from the yard at 1620 Harrisburg Pike to wherever your car is sitting, even though the trucks themselves are positioned around Columbus. A pickup in Grove City or on the Hilltop is fewer en-route miles than one in Westerville since the yard sits on the southwest side.",
         "Hook-up at $125. This covers positioning the flatbed, pulling the car onto the deck and strapping it down at the wheels. It is charged once per tow.",
         "Loaded miles at $7 per mile. These are the miles your car rides on the deck, from the pickup spot to the drop-off.",
       ],

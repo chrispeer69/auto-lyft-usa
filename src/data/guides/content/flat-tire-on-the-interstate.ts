@@ -33,7 +33,7 @@ export default {
       heading: "Waiting safely while help comes",
       paragraphs: [
         "If you decide not to change it, call early, so a truck is on the way while you sort out the rest. Turn on your hazard lights. At night, leave the parking lights on too. If you carry reflective triangles, place them behind the car only if you can do it without walking into traffic.",
-        "Then decide where to wait. When there is a guardrail and space behind it, getting everyone out on the side away from traffic and standing behind the rail is generally the safer position. When there is no barrier and nowhere to go, staying in the car with seatbelts on is usually better than standing on the shoulder. Do not stand directly behind or in front of the car.",
+        "Then decide where to wait. When there is a guardrail and space behind it, the safer position is usually everyone out through the doors farthest from the lanes and standing behind that rail. When there is no barrier and nowhere to go, staying in the car with seatbelts on is usually better than standing on the shoulder. Do not stand directly behind or in front of the car.",
         "When you call, say which way you were heading and name the closest exit or mile marker, and say which tire is flat. That helps the driver plan how to position the truck as a buffer. Our [flat tire change service](/towing/flat-tire-change) is a $75 roadside flat rate, with the $75 highway surcharge applying on interstates; the full list is on our [rates page](/rates).",
       ],
     },
@@ -86,7 +86,7 @@ export default {
     },
     {
       q: "Is it safer to wait inside the car or outside on the interstate?",
-      a: "It depends on the spot. If there is a guardrail with room behind it, getting out on the side away from traffic and waiting behind the rail is generally safer. With no barrier and a narrow shoulder, staying in the car with seatbelts fastened is usually the better choice. Never wait in front of or directly behind the car.",
+      a: "It depends on the spot. If there is a guardrail with room behind it, leaving by the doors that face away from the lanes and waiting behind the rail is generally safer. With no barrier and a narrow shoulder, staying in the car with seatbelts fastened is usually the better choice. Never wait in front of or directly behind the car.",
     },
     {
       q: "What if my car has no spare tire?",

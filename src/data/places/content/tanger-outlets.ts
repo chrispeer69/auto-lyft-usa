@@ -17,7 +17,7 @@ export default {
   },
   intro: [
     "Tanger's open-air outlet center sits on South Wilson Road in Sunbury, close to the Exit 131 interchange, where I-71 meets the US 36 and SR 37 corridor. It's a destination as much as a local mall: people drive in from all over central Ohio, and plenty of travelers heading up or down I-71 pull off for an hour of shopping. That mix means a breakdown here is often far from the driver's home and regular mechanic.",
-    "Auto Lyft USA covers Tanger Outlets towing and roadside calls every hour of the year. Our yard is on the southwest side of Columbus, roughly 24 miles from Sunbury as the crow flies and farther by road, so we're upfront about mileage: the dispatcher quotes the full trip, including the drive out, before anyone leaves.",
+    "Auto Lyft USA covers Tanger Outlets towing and roadside calls every hour of the year. Our yard sits southwest of downtown Columbus, roughly 24 miles from Sunbury as the crow flies and farther by road, so we're upfront about mileage: the dispatcher quotes the full trip, including the drive out, before anyone leaves.",
     "Small problems get solved in the parking lot for a flat $75 plus mileage. Bigger ones get a flatbed ride, either to a shop in Delaware County, back to Columbus, or to your own mechanic in another town. Long highway hauls ride on a flatbed, which keeps all-wheel-drive and electric cars safe over the distance, and you decide the destination before the car is ever loaded.",
   ],
   sections: [

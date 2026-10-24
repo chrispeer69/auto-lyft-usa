@@ -84,5 +84,5 @@ export default {
   services: ["roadside-assistance", "jump-start", "car-lockout", "fuel-delivery", "motorcycle-towing"],
   related: ["red-white-and-boom", "arena-district", "convention-center", "nationwide-arena"],
   notAffiliated:
-    "Auto Lyft USA is not affiliated with or endorsed by any of the festivals mentioned on this page, their organizers or the City of Columbus.",
+    "Auto Lyft USA has no affiliation with, or endorsement from, the festivals mentioned on this page, their organizers or the City of Columbus.",
 } satisfies Omit<Place, "slug" | "category" | "label">;

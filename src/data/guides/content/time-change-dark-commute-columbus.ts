@@ -72,7 +72,7 @@ export default {
       a: "Yes. A mat of wet leaves cuts tire grip sharply, much like a thin layer of snow, and it hides potholes and lane markings. Slow down, leave extra stopping distance, and brake before turns on leafy residential streets.",
     },
     {
-      q: "Should I stay in my car if I break down on the highway at night?",
+      q: "Broke down on the highway after dark: stay in the car or get out?",
       a: "Usually yes. Get off the travel lanes, hazards on, belt fastened, unless the car is smoking or on fire or you can get well away from traffic behind a barrier. Call for help with your exact location.",
     },
     {

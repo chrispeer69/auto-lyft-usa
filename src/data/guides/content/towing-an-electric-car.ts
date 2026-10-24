@@ -48,7 +48,7 @@ export default {
       heading: "What an EV tow costs with us",
       paragraphs: [
         "We publish a separate EV rate card on our [rates page](/rates): $2.50 per mile en route from our yard on Harrisburg Pike, a $150 hook-up, and $7.50 per loaded mile. Highway pickups add $100, and storage for an EV is $75 a day if the car has to wait at the yard.",
-        "As a worked example only: a pickup 10 miles from the yard on a city street, towed 8 miles to a dealer service department, would be $25 en route, $150 hook-up and $60 loaded, or $235 before any night or weekend surcharge and Ohio sales tax for the pickup county. Veterans get 10% off with ID. The dispatcher will run your real numbers before the truck rolls.",
+        "As a worked example only: a pickup 10 miles from the yard on a city street, towed 8 miles to a dealer service department, would be $25 en route, $150 hook-up and $60 loaded, or $235 before any night or weekend surcharge and the pickup county's Ohio sales tax. Veterans get 10% off with ID. The dispatcher will run your real numbers before the truck rolls.",
         "Longer trips follow the same math. Owners sometimes need a car moved to the nearest brand service center, which for some makes is not in Franklin County at all. In that case the loaded miles make up most of the bill, so it pays to call the service center first and confirm they can take the car that day.",
       ],
     },
