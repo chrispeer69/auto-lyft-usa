@@ -95,6 +95,8 @@ export default {
       q: "How much is a jump start near campus?",
       a: "A jump is a flat $75 roadside visit plus $4 per mile from our yard on Harrisburg Pike to wherever the car sits. A weekend job is $50 higher, and the overnight window from 10 PM to 6 AM puts $150 on top. Sales tax is added by county. That's the whole price for the jump; there's no membership needed and no annual fee to sign up for.",
     },
+    { q: "Who do I call for a tow on the Ohio State campus?", a: "Call Auto Lyft USA at (614) 633-8163, any hour. We handle dead batteries, lockouts, flats and flatbed tows for students, staff, parents and visitors around campus. The dispatcher quotes the job and gives a live estimate before the truck heads your way. If a car is blocking a road or anyone is hurt, call 911 first." },
+    { q: "How should I describe where I am on campus?", a: "Give a street and a building or garage name, not just \"campus\". Lane Avenue, High Street, Neil Avenue, Woodruff Avenue and King Avenue are the easiest anchors. If you are on SR-315, say the exit (Lane Avenue or King Avenue); if you are on I-71, the 11th or 17th Avenue exit. For garages, add the level and nearest stairwell." },
   ],
   cities: ["columbus", "upper-arlington", "grandview-heights"],
   services: ["jump-start", "car-lockout", "parking-garage-towing", "long-distance-towing", "flatbed-towing"],

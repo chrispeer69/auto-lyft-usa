@@ -9,7 +9,7 @@ export default {
   lede:
     "A driver with an inflatable wedge and a long-reach rod gets the door open without prying on paint, glass or weatherstripping.",
   intro: [
-    "A car lockout usually happens in a hurry: groceries in one hand, the door swings shut, and the fob is sitting in the cupholder. Auto Lyft USA dispatches a truck out of the Harrisburg Pike lot (US-62) to open the vehicle so you can get your keys back and get moving. We work every day of the year, around the clock, across Columbus and the surrounding suburbs.",
+    "A car lockout usually happens in a hurry: groceries in one hand, the door swings shut, and the fob is sitting in the cupholder. Auto Lyft USA dispatches a truck out of the Harrisburg Pike lot (US-62) to open the vehicle so you can get your keys back and get moving. Lockouts get answered every day of the year, day or night, in Columbus and its suburbs.",
     "The technique is simple and careful. A soft air wedge goes into the top corner of the door frame and is pumped up just enough to make a narrow gap. A coated long-reach tool slides through that gap to press the unlock button or lift the handle from inside. Nothing is forced, nothing is drilled, and the window stays in one piece. Most modern doors, including ones with frameless glass, respond to this method.",
     "Before we open anything, expect a quick check that the car belongs to you or that you are allowed to drive it. A driver's license that matches the registration or insurance card in the glovebox is usually enough. That step protects you as much as anyone. One thing we don't do is make keys: we don't cut blades or program fobs, so if the key is lost rather than locked inside, the dispatcher will explain your options, including a [tow to a dealer](/towing/car-towing). Call (614) 633-8163 and tell us where you are parked, or read our [locked-keys guide](/guides/keys-locked-in-car) for what to try first.",
   ],
@@ -47,6 +47,13 @@ export default {
         "Whether a spare key exists somewhere nearby. Sometimes a family member with a spare is quicker, and we will tell you so.",
       ],
     },
+    {
+      heading: "Lockout service or a locksmith: which one you need",
+      paragraphs: [
+        "If the key is sitting on the seat, in the ignition or in a bag in the trunk, you need the car opened, and that is what our lockout service does. The driver uses long-reach tools and an air wedge to reach the inside handle or lock switch, the door opens, you grab your key and drive away.",
+        "If the key is lost, broken off in the lock, or the fob no longer talks to the car, opening the door will not get you home. That is a job for a locksmith who cuts and programs keys, or for a dealership. Auto Lyft USA unlocks cars only; we never cut or program keys. When the key is truly gone, we can tow the car to the dealer so it can be keyed there.",
+      ],
+    },
   ],
   faqs: [
     { q: "How does your car lockout service work?", a: "A driver places a soft inflatable wedge at the top edge of the door, pumps it until there is a slim opening, and uses a coated long-reach rod to press the unlock switch or pull the inside handle. No glass is broken and the lock cylinder is never drilled. Once the door is open you grab your keys and we check that the locks work normally." },
@@ -61,6 +68,8 @@ export default {
     { q: "The fob is in the trunk, not the cabin. Can you still help?", a: "We open a door first. Most cars have a trunk release on the dash, the driver's door or the fob, and that pops the lid. Some sedans with fold-down rear seats let you reach the trunk from the cabin. A few models lock the trunk separately, and the driver will look at it with you." },
     { q: "Do you handle lockouts at night or on holidays?", a: "Yes. Someone picks up the dispatch line at any hour, 365 days a year, including Thanksgiving and New Year's Eve. Some late-night and holiday calls cost more, and the dispatcher folds that into the quote before a driver heads out. Nights are also when we see the most lockouts outside bars, restaurants and late shifts." },
     { q: "Can you help if I'm locked out and the battery is dead too?", a: "Yes. Once the door is open, the driver can boost the battery on the same visit. Mention both problems on the phone so the quote covers the boost as well as the door, and so the driver brings a charged booster pack. More on that is on the [jump start](/towing/jump-start) page." },
+    { q: "Locked out of my car: locksmith or roadside help?", a: "It depends on where the key is. If you can see it, or know it is inside the car, call roadside: we open the door for a $75 flat call plus en-route miles. If the key is lost or broken, call a locksmith or the dealer, because a new key has to be made and we do not make keys." },
+    { q: "Will you make me a spare key while you're there?", a: "No. We only unlock vehicles. Cutting, copying and programming keys and fobs is locksmith or dealer work. If you need the car moved to the dealer to get a new key, a [tow](/towing/car-towing) can take it there." },
   ],
   related: ["roadside-assistance", "jump-start", "car-battery-replacement", "flat-tire-change"],
 } satisfies Omit<Service, "slug" | "name" | "group" | "blurb">;

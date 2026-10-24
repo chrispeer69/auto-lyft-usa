@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import { PHOTOS } from "../data/photos";
+import FaqList from "../components/FaqList.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Nap from "../components/Nap.astro";
+import { HIGHWAY_PAGES } from "../data/highways";
+import { highwayPath } from "../data/highways/catalog";
+import { itemListNode } from "../lib/schema";
+import type { Faq } from "../data/types";
+
+const path = "/highways";
+const faqs: Faq[] = [
+  { q: "Should I call 911 or a tow company first when I stall on the interstate?", a: "If any part of the car sits in a travel lane, if someone is hurt, or if you simply feel unsafe where you stopped, 911 comes first. From a cell phone, #677 reaches the Ohio State Highway Patrol for a highway problem that is not an emergency. With everyone safe, the truck is one call away: (614) 633-8163." },
+  { q: "Do you work for ODOT or the police on these roads?", a: "No. Auto Lyft USA is an independent company that comes when a driver, a family member or a business calls us about their own vehicle. If officers arranged a tow, ask them which company took it and where it is being held; our [towed-car guide](/local/towed-car-columbus) lists who to ask." },
+  { q: "Is there an extra charge for a highway pickup?", a: "Yes, one line: the interstate shoulder charge on our [rate card](/rates), which covers the extra lighting, cones and time it takes to work safely beside fast traffic. Street calls just off an exit do not carry it. The dispatcher tells you which applies before a truck is assigned." },
+];
+const schema = [itemListNode(path, HIGHWAY_PAGES.map((h) => ({ name: h.label, path: highwayPath(h.slug) })))];
+---
+<Base title="Highway Breakdowns Around Columbus" description="Broke down on I-71, I-270, I-70, US-23, SR-315 or I-670? Road-by-road exits, safety steps and what to tell dispatch, 24-7. Call (614) 633-8163." path={path} pageType={["WebPage", "CollectionPage"]} crumbs={[{ name: "Highways", path }]} schema={schema} faqs={faqs}>
+  <Hero image={PHOTOS.highway} eyebrow="Highway breakdowns" h1="Stalled on a Columbus Freeway? Start With Your Road" lede="Each page below walks one road from end to end: the exits drivers name when they call, the spots with no shoulder, and what the dispatcher needs to find you fast." />
+  <section class="band">
+    <div class="wrap">
+      <h2>Pick the road you are on</h2>
+      <ul class="rules cols two grid">{HIGHWAY_PAGES.map((h) => <li><a href={highwayPath(h.slug)}><strong>{h.label}</strong></a><p>{h.lede}</p></li>)}</ul>
+    </div>
+  </section>
+  <section class="band alt">
+    <div class="wrap prose">
+      <h2>Why our highway pages start on the south side</h2>
+      <p>Our yard is on Harrisburg Pike, inside the southwest corner of the outerbelt, and the south and west halves of the metro are the ground we know best. I-71 toward Grove City, the bottom of I-270, I-70 west of downtown and the far south end of US-23 are the stretches our trucks run most often, so those get the most detail. Every page still covers its whole road, because a breakdown near Polaris or Gahanna gets the same answer on the phone.</p>
+      <p>Whatever road you are on, the order never changes: get safe, call 911 if a lane is involved, then call us. Our <a href="/guides/flat-tire-on-the-interstate">flat tire on the interstate guide</a> goes deeper on waiting out a tire problem beside traffic.</p>
+    </div>
+  </section>
+  <CtaBand />
+  <section class="band"><div class="wrap prose"><FaqList faqs={faqs} heading="Before you call from a freeway" /></div></section>
+  <Nap />
+</Base>

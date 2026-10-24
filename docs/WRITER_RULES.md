@@ -24,7 +24,7 @@ Use `docs/seed/columbus-facts.json` (`localAreas[<slug>]`) for sourced local fac
 - Full `<title>` = your title + " | Auto Lyft USA" (16 chars) → your **title must be ≤ 44 chars** (and the full title ≥ 20). Unique site-wide.
 - description **120–155 chars**, unique, normally ending with "(614) 633-8163."
 - h1 unique site-wide, different wording from the title.
-- Internal links inside copy: `[label](/path)`. Only link to pages that exist: `/towing/<slug in src/data/services/catalog.ts>`, `/areas`, `/areas/<city slug>-oh` (slugs in `src/data/cities/catalog.ts`), `/areas/columbus-oh`, `/areas/columbus-oh/<hood slug>` (`src/data/columbus/catalog.ts`), `/local`, `/local/<slug>` (`src/data/places/catalog.ts`), `/repair`, `/repair/<slug>` (`src/data/repair/catalog.ts`), `/guides`, `/guides/<slug>` (`src/data/guides/catalog.ts`), `/rates`, `/estimate`, `/request`, `/contact`, `/about`, `/questions`.
+- Internal links inside copy: `[label](/path)`. Only link to pages that exist: `/towing/<slug in src/data/services/catalog.ts>`, `/areas`, `/areas/<city slug>-oh` (slugs in `src/data/cities/catalog.ts`), `/areas/columbus-oh`, `/areas/columbus-oh/<hood slug>` (`src/data/columbus/catalog.ts`), `/local`, `/local/<slug>` (`src/data/places/catalog.ts`), `/highways`, `/highways/<slug>` (`src/data/highways/catalog.ts`), `/repair`, `/repair/<slug>` (`src/data/repair/catalog.ts`), `/guides`, `/guides/<slug>` (`src/data/guides/catalog.ts`), `/rates`, `/estimate`, `/request`, `/contact`, `/about`, `/questions`.
 - Write "24-7", never "24-7" (owner's style, 2026-10-22).
 - Plain, confident, local voice. No hype ("premier", "top-notch"), no emojis.
 

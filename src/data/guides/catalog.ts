@@ -1,6 +1,7 @@
 /* Driver guides (the blog). Copy for each lives in ./content/<slug>.ts (type Guide). */
 export interface GuideEntry { slug: string; topic: string }
 export const GUIDES: GuideEntry[] = [
+  { slug: "what-it-takes-to-run-a-tow-company", topic: "What a professional towing company pays for: trucks, coverage, round-the-clock staff, yard and gear, maintenance, standards; posted retail rates and calling for a fair quote" },
   { slug: "first-freeze-columbus-car-checklist", topic: "Columbus first freeze (avg Oct 27, NWS): tire pressure, batteries, glass and washer fluid, bridges icing first, a weekend checklist" },
   { slug: "time-change-dark-commute-columbus", topic: "DST ends Nov 1, 2026: dark evening commutes, headlight checks, wet leaves, deer at dusk, breaking down at night, night pricing" },
   { slug: "what-to-do-when-your-car-breaks-down-columbus", topic: "Step-by-step: what to do the minute your car breaks down in Columbus (highway vs. city street, safety, who to call)" },

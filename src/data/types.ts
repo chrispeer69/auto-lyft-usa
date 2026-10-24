@@ -123,3 +123,39 @@ export interface Guide {
   body: Section[];
   faqs: Faq[];
 }
+
+/** One interchange or exit on a highway page. */
+export interface Exit {
+  exit: string; // exit number as signed, e.g. "97" or "1D"
+  road: string; // what it serves
+  note?: string;
+}
+
+/** Highway breakdown pages under /highways (I-70, I-71, I-270, US-23, SR-315, I-670). */
+export interface Highway {
+  slug: string;
+  label: string;
+  road: { name: string; alternateName?: string[] };
+  keyword: string;
+  title: string; // page part, <= 44 chars
+  description: string; // 120–155, ends with the phone
+  h1: string;
+  lede: string;
+  intro: string[];
+  /** Ordered first moves after the car quits, highway-specific wording. */
+  firstMoves: string[];
+  /** Stretches of the road, south and west first. */
+  stretches: { name: string; paragraphs: string[]; exits: Exit[] }[];
+  sections?: Section[];
+  /** What the dispatcher needs from this road. */
+  tellDispatch: string[];
+  /** Pricing paragraphs for this road (numbers come from data/rates.ts). */
+  pricing: string[];
+  faqs: Faq[];
+  cities: string[];
+  hoods: string[];
+  services: string[];
+  related: string[];
+  sources: string[];
+  notAffiliated: string;
+}

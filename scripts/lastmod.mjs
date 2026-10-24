@@ -35,6 +35,7 @@ const rules = [
   [/^\/areas\/columbus-oh\/(.+)$/, (s) => [`src/data/columbus/hoods/${s}.ts`, "src/pages/areas/columbus-oh/[hood].astro"]],
   [/^\/areas\/columbus-oh$/, () => ["src/data/columbus/hub.ts", "src/pages/areas/columbus-oh.astro"]],
   [/^\/areas\/(.+)-oh$/, (s) => [`src/data/cities/content/${s}.ts`, "src/pages/areas/[city].astro"]],
+  [/^\/highways\/(.+)$/, (s) => [`src/data/highways/content/${s}.ts`, "src/pages/highways/[slug].astro"]],
   [/^\/local\/(.+)$/, (s) => [`src/data/places/content/${s}.ts`, "src/pages/local/[slug].astro"]],
   [/^\/repair\/(.+)$/, (s) => [`src/data/repair/content/${s}.ts`, "src/pages/repair/[slug].astro"]],
   [/^\/guides\/(.+)$/, (s) => [`src/data/guides/content/${s}.ts`, "src/pages/guides/[slug].astro"]],

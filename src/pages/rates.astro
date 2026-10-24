@@ -7,7 +7,7 @@ import CtaBand from "../components/CtaBand.astro";
 import Nap from "../components/Nap.astro";
 import { RATES, EV_RATES, COUNTY_TAX, AFTER_HOURS_WINDOW, usd } from "../data/rates";
 import { serviceNode, abs } from "../lib/schema";
-import { ids } from "../data/company";
+import { ids, COMPANY } from "../data/company";
 import type { Faq } from "../data/types";
 
 const path = "/rates";
@@ -39,11 +39,12 @@ const ex2Tax = Math.round(ex2 * 7.25) / 100;
 const faqs: Faq[] = [
   { q: "How much is a tow in Columbus with Auto Lyft USA?", a: `A local flatbed tow is ${usd(RATES.enroutePerMile)} per mile from our yard to you, then ${usd(RATES.hookup)} to load it and ${usd(RATES.loadedPerMile)} per mile on the deck, plus sales tax. Night, weekend and interstate calls add the surcharges listed on this page. The dispatcher adds it up for you before the truck is sent.` },
   { q: "Why do you charge for the miles to reach me?", a: "Because that drive is real work: a driver and a truck spend the time and fuel to get to you. Charging it per mile keeps the price fair. Someone two miles from our yard pays less than someone twenty miles away, instead of everyone paying the same padded flat fee." },
-  { q: "Is a jump start cheaper than a tow?", a: `Yes. A jump start is a ${usd(RATES.roadsideFlat)} roadside call plus the en-route miles, with no hook-up and no loaded miles. If the car still won't run after the jump, the driver can load it then, and you pay the tow charges instead.` },
+  { q: "Is a jump start cheaper than a tow?", a: `Yes. A jump start is a ${usd(RATES.roadsideFlat)} roadside call plus the en-route miles; the hook-up and loaded-mile lines never appear. If the car still won't run after the jump, the driver can load it then, and you pay the tow charges instead.` },
   { q: "Do electric vehicles cost more to tow?", a: `EVs have their own card: a ${usd(EV_RATES.hookup)} hook-up and ${usd(EV_RATES.loadedPerMile)} per loaded mile, but a lower ${usd(EV_RATES.enroutePerMile)} per en-route mile. Loading an EV in transport mode takes more time and care. Price one on the [EV estimate page](/estimate/ev).` },
   { q: "Do you charge sales tax on towing in Ohio?", a: "Yes. Ohio taxes towing and roadside services, and the rate depends on the county where we pick the car up, from 7.25% to 8.25% in the counties we serve. The table on this page lists each one." },
   { q: "Is there a discount for veterans?", a: `Yes: ${RATES.veteranPercent}% off for veterans who show a military or VA ID to the driver. Mention it when you call so the dispatcher includes it in your quote.` },
   { q: "What payment do you take?", a: `Cash and cards. Paying online by card adds a ${RATES.cardFeePercent}% card fee, which is shown before you pay. Businesses with an approved [fleet account](/towing/fleet-towing) can be invoiced monthly.` },
+  { q: "Is the rate card the only price you'll give me?", a: "It is our standard retail pricing and the starting point for every quote. Because each situation is different, the best move is to call, describe yours, and let the dispatcher work out a fair, competitive price for that exact job. Stuck on a freeway? Start at [highway breakdowns](/highways)." },
   { q: "Will the final bill ever be higher than the quote?", a: "Only if the job changes, for example the car turns out to be stuck in mud and needs a winch, or you ask to go somewhere farther. When that happens, the driver tells you the new price before doing the extra work, not afterward." },
 ];
 const schema = [
@@ -81,6 +82,14 @@ const schema = [
         <tbody>{card.map(([a, b, c]) => <tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>)}</tbody>
       </table></div>
       <p class="small muted mt-12">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county.</p>
+    </div>
+  </section>
+  <section class="band dark" aria-labelledby="quote-h">
+    <div class="wrap prose">
+      <h2 id="quote-h">These are retail rates. Your quote is about your job.</h2>
+      <p>The numbers above are our standard retail rates. They reflect what it costs to run a towing company right now, and fuel, labor, equipment and coverage for the cars in our care have all become more expensive. We would rather show you that honestly than hide it in a vague phone price.</p>
+      <p>No two calls are the same, though. A dead battery in a driveway two miles from the yard is a different job from a car in a ditch off I-70 at midnight, and both are different from a planned move to a dealer across the state. So call <a href={COMPANY.telHref}>{COMPANY.phone}</a>, walk the dispatcher through the problem, the car's location and its destination, and you will get a fair, competitive quote for that situation before a truck is assigned. Our aim is to help every person who calls.</p>
+      <p>Curious what sits behind a rate card? Read <a href="/guides/what-it-takes-to-run-a-tow-company">what it takes to keep a professional tow truck ready</a>.</p>
     </div>
   </section>
   <section class="band alt">

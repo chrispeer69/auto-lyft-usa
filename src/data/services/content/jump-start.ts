@@ -54,6 +54,13 @@ export default {
         "Apartment lots on the Hilltop and in [Whitehall](/areas/whitehall-oh), office parks in [Hilliard](/areas/hilliard-oh), hospital garages and the surface lots around Ohio State all produce dead batteries on cold mornings. If your car is in a tight or covered spot, tell the dispatcher; the portable booster means the truck does not have to get right next to your car.",
       ],
     },
+    {
+      heading: "A dead battery after dark",
+      paragraphs: [
+        "Batteries pick the worst hours to quit: after a late shift, outside a restaurant at closing time, or on the first cold morning before sunrise. Our phone is answered through the night, and a driver with a booster pack and a battery tester comes out the same way at 2 AM as at 2 PM. The only difference is the overnight line on the [rate card](/rates), which the dispatcher adds into your quote before anyone heads out.",
+        "While you wait, if the spot feels deserted or badly lit, wait behind locked doors or poorly lit, and keep your phone charged from a power bank if you have one, since the car's own outlets may be dead too. The driver calls when close, so you never have to stand in a dark lot watching for headlights.",
+      ],
+    },
   ],
   faqs: [
     { q: "How much does a jump start cost?", a: "The price depends mainly on where the car is and the hour you call. You get the full amount from dispatch before a driver is sent, so you know what you are agreeing to. If the battery turns out to need replacing, that is priced separately and only done if you approve. More on charges is on the [rates page](/rates)." },
@@ -69,6 +76,8 @@ export default {
     { q: "My car is stuck in park with a dead battery. What happens?", a: "A boost usually releases the shift lock so you can drive or the car can be rolled. If the car still will not start, the driver can use the shift lock override on many cars and load it on the flatbed. Mention it when you call so we know the car cannot be moved yet." },
     { q: "Do I need to be with the car?", a: "Ideally, yes. Without the key or fob in hand, nobody can turn the engine over and prove the boost worked. If you cannot be there, call the dispatcher to talk about options, such as having a family member, coworker or building manager meet the driver with the key." },
     { q: "Should I try a jump start myself with cables?", a: "If you have cables, a willing helper and a safe spot, it can work. The risks come from hooking clamps up in the wrong order, working beside traffic or boosting a battery that is cracked or frozen. When any of that applies, or you just would rather not, a driver with a booster pack is the simpler choice." },
+    { q: "Can I get a jump start in Columbus in the middle of the night?", a: "Yes. Auto Lyft USA dispatches jump starts 24-7, including overnight, weekends and holidays. A jump is a $75 flat roadside call plus en-route miles, with $150 more for the overnight window, 10 PM to 6 AM. The dispatcher totals it for you on the phone at (614) 633-8163 before a truck is assigned." },
+    { q: "I'm alone in an empty lot at night with a dead battery. What should I do while I wait?", a: "Stay inside with the doors locked, keep the hazard lights off if the battery is weak so there is enough charge left to help the boost, and give the dispatcher a number that will stay on. The driver phones as they arrive, so you can confirm it is our truck before you step out." },
   ],
   related: ["car-battery-replacement", "roadside-assistance", "car-lockout", "parking-garage-towing"],
 } satisfies Omit<Service, "slug" | "name" | "group" | "blurb">;

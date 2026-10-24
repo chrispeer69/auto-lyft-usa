@@ -1,0 +1,108 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import { PHOTOS } from "../../data/photos";
+import FaqList from "../../components/FaqList.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import Nap from "../../components/Nap.astro";
+import { HIGHWAY_PAGES } from "../../data/highways";
+import { highwayBySlug, highwayPath } from "../../data/highways/catalog";
+import { cityBySlug, cityPath } from "../../data/cities/catalog";
+import { HOODS } from "../../data/columbus/catalog";
+import { serviceBySlug, servicePath } from "../../data/services/catalog";
+import { RATES, AFTER_HOURS_WINDOW, usd } from "../../data/rates";
+import { serviceNode } from "../../lib/schema";
+import { rich } from "../../lib/text";
+import type { Highway } from "../../data/types";
+
+export function getStaticPaths() {
+  return HIGHWAY_PAGES.map((h) => ({ params: { slug: h.slug }, props: { h } }));
+}
+const { h } = Astro.props as { h: Highway };
+const path = highwayPath(h.slug);
+const short = highwayBySlug(h.slug)?.short ?? h.road.name;
+const roadNode = {
+  "@type": "Place",
+  name: h.road.name,
+  ...(h.road.alternateName?.length ? { alternateName: h.road.alternateName } : {}),
+  containedInPlace: { "@type": "State", name: "Ohio" },
+};
+const schema = [serviceNode({ path, name: h.h1, serviceType: "Towing service", description: h.description, areaServed: roadNode })];
+const services = h.services.map((s) => serviceBySlug(s)).filter((s) => s !== undefined);
+const towns = h.cities.map((s) => cityBySlug(s)).filter((c) => c !== undefined);
+const hoods = h.hoods.map((s) => HOODS.find((x) => x.slug === s)).filter((x) => x !== undefined);
+const related = h.related.map((s) => highwayBySlug(s)).filter((s) => s !== undefined);
+const priceRows: [string, string][] = [
+  ["Drive to you", `${usd(RATES.enroutePerMile)} per mile from the yard`],
+  ["Hook-up, if it rides", usd(RATES.hookup)],
+  ["Loaded miles", `${usd(RATES.loadedPerMile)} per mile`],
+  ["Jump, tire swap or unlock", `${usd(RATES.roadsideFlat)} flat`],
+  ["Interstate or freeway shoulder", `+${usd(RATES.highway)}`],
+  [`Overnight (${AFTER_HOURS_WINDOW})`, `+${usd(RATES.afterHours)}`],
+];
+---
+<Base title={h.title} description={h.description} path={path} crumbs={[{ name: "Highways", path: "/highways" }, { name: h.label, path }]} schema={schema} faqs={h.faqs}>
+  <Hero image={PHOTOS.highway} eyebrow="Highway breakdowns" h1={h.h1} lede={h.lede} facts={[["Road", h.road.name], ["Dispatch", "24-7"], ["Emergency", "911, or #677 for the Patrol"]]} />
+  <section class="band"><div class="wrap prose">{h.intro.map((t) => <p set:html={rich(t)} />)}</div></section>
+  <section class="band alt" aria-labelledby="first-h">
+    <div class="wrap prose">
+      <h2 id="first-h">The car just quit on {short}: do these in order</h2>
+      <ol>{h.firstMoves.map((t) => <li set:html={rich(t)} />)}</ol>
+    </div>
+  </section>
+  {h.stretches.map((s, i) => (
+    <section class={`band${i % 2 ? " alt" : ""}`}>
+      <div class="wrap prose">
+        <h2>{s.name}</h2>
+        {s.paragraphs.map((t) => <p set:html={rich(t)} />)}
+        {s.exits.length > 0 && (
+          <div class="table-scroll"><table class="table">
+            <thead><tr><th>Exit or junction</th><th>Where it goes</th><th>Worth knowing</th></tr></thead>
+            <tbody>{s.exits.map((e) => <tr><td>{e.exit}</td><td>{e.road}</td><td>{e.note ?? ""}</td></tr>)}</tbody>
+          </table></div>
+        )}
+      </div>
+    </section>
+  ))}
+  {(h.sections ?? []).map((sec, i) => (
+    <section class={`band${(h.stretches.length + i) % 2 ? " alt" : ""}`}>
+      <div class="wrap prose">
+        <h2>{sec.heading}</h2>
+        {sec.paragraphs.map((t) => <p set:html={rich(t)} />)}
+        {sec.bullets && <ul>{sec.bullets.map((b) => <li set:html={rich(b)} />)}</ul>}
+      </div>
+    </section>
+  ))}
+  <section class="band dark" aria-labelledby="tell-h">
+    <div class="wrap prose">
+      <h2 id="tell-h">Read these to the dispatcher</h2>
+      <ul>{h.tellDispatch.map((t) => <li set:html={rich(t)} />)}</ul>
+    </div>
+  </section>
+  <section class="band" aria-labelledby="price-h">
+    <div class="wrap cols two">
+      <div class="prose">
+        <h2 id="price-h">Price for a {short} call</h2>
+        {h.pricing.map((t) => <p set:html={rich(t)} />)}
+      </div>
+      <div>
+        <table class="table"><tbody>{priceRows.map(([a, b]) => <tr><td>{a}</td><td>{b}</td></tr>)}</tbody></table>
+        <p class="small muted mt-12">From our <a href="/rates">published rate card</a>. Ohio sales tax by pickup county. EVs have their own card.</p>
+      </div>
+    </div>
+  </section>
+  <section class="band alt"><div class="wrap prose"><FaqList faqs={h.faqs} heading={`${h.label}: questions from the shoulder`} /></div></section>
+  <CtaBand place={h.road.name} />
+  <section class="band" aria-labelledby="links-h">
+    <div class="wrap cols three">
+      <div><h2 id="links-h">Help we bring</h2><ul class="linklist one-col">{services.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}<li><a href="/rates">Our rates</a></li></ul></div>
+      <div><h2>Towns along the road</h2><ul class="linklist one-col">{towns.map((t) => <li><a href={cityPath(t.slug)}>{t.name}</a></li>)}{hoods.map((x) => <li><a href={`/areas/columbus-oh/${x.slug}`}>{x.name}, Columbus</a></li>)}</ul></div>
+      <div><h2>Other highways</h2><ul class="linklist one-col">{related.map((r) => <li><a href={highwayPath(r.slug)}>{r.label}</a></li>)}<li><a href="/highways">All highway pages</a></li></ul></div>
+    </div>
+    <div class="wrap">
+      <p class="small muted mt-20">Exit numbers checked against: {h.sources.map((u, i) => <>{i ? ", " : ""}<a href={u} rel="noopener" target="_blank">{decodeURIComponent(u.split("/").pop() ?? u).replace(/_/g, " ")}</a></>)}. Exits get renumbered during rebuilds, so trust the sign in front of you over this page.</p>
+      <p class="small muted">{h.notAffiliated}</p>
+    </div>
+  </section>
+  <Nap place={h.road.name} />
+</Base>

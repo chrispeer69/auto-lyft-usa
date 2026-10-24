@@ -108,7 +108,7 @@ const priorityFor = (path) => {
   if (path === "/") return "1.0";
   if (["/towing", "/areas", "/rates", "/areas/columbus-oh", "/about"].includes(path)) return "0.9";
   if (/^\/(towing|areas)\//.test(path)) return "0.8";
-  if (/^\/(local|repair)\//.test(path)) return "0.7";
+  if (/^\/(local|repair|highways)\//.test(path)) return "0.7";
   if (/^\/guides\//.test(path)) return "0.6";
   if (["/privacy", "/terms"].includes(path)) return "0.3";
   return "0.6";
@@ -125,11 +125,12 @@ writeFileSync(join(DIST, "sitemap.xml"), sitemap);
 
 // --- llms.txt (curated index) and llms-full.txt (every page's text) ---
 const groups = [
-  ["Core pages", (p) => !/^\/(towing|areas|local|repair|guides)\//.test(p)],
+  ["Core pages", (p) => !/^\/(towing|areas|local|highways|repair|guides)\//.test(p)],
   ["Towing and roadside services", (p) => p.startsWith("/towing/")],
   ["Columbus neighborhoods", (p) => p.startsWith("/areas/columbus-oh/")],
   ["Cities and towns served", (p) => p.startsWith("/areas/") && !p.startsWith("/areas/columbus-oh/")],
   ["Venues, campuses and travel", (p) => p.startsWith("/local/")],
+  ["Highway breakdowns", (p) => p.startsWith("/highways/")],
   ["Auto repair help", (p) => p.startsWith("/repair/")],
   ["Driver guides", (p) => p.startsWith("/guides/")],
 ];

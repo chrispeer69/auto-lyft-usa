@@ -13,6 +13,8 @@ import { rich } from "../../lib/text";
 import { COMPANY } from "../../data/company";
 import { placesForCity } from "../../data/places";
 import { placePath } from "../../data/places/catalog";
+import { highwaysForCity } from "../../data/highways";
+import { highwayPath } from "../../data/highways/catalog";
 
 export function getStaticPaths() {
   return CITIES.map((c) => ({ params: { city: `${c.slug}-oh` }, props: { c } }));
@@ -47,6 +49,7 @@ let ctaHash = 0;
 for (const ch of c.slug) ctaHash = (ctaHash * 31 + ch.charCodeAt(0)) >>> 0;
 const ctaText = CTA_LINES[ctaHash % CTA_LINES.length](c.name);
 const venues = placesForCity(c.slug);
+const roads = highwaysForCity(c.slug);
 const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefined);
 ---
 <Base
@@ -139,6 +142,10 @@ const neighbours = c.nearby.map((s) => cityBySlug(s)).filter((n) => n !== undefi
       {venues.length > 0 && (<>
         <h2 class="mt-28">Venues and campuses near {c.name}</h2>
         <ul class="linklist">{venues.map((v) => <li><a href={placePath(v.slug)}>{v.label}</a></li>)}</ul>
+      </>)}
+      {roads.length > 0 && (<>
+        <h2 class="mt-28">Highways through {c.name}</h2>
+        <ul class="linklist">{roads.map((r) => <li><a href={highwayPath(r.slug)}>{r.label}</a></li>)}</ul>
       </>)}
     </div>
   </section>
