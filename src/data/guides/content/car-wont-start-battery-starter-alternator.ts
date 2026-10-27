@@ -45,7 +45,7 @@ export default {
     {
       heading: "When it is none of the three",
       paragraphs: [
-        "If the engine cranks at normal speed but never catches, the electrical side is probably fine. The problem is more likely fuel, spark or the engine's sensors. Check the fuel gauge first; an empty tank is more common than people admit, and [fuel delivery](/towing/fuel-delivery) costs far less than a tow. If there is fuel and the engine still will not fire, the car needs a shop with diagnostic equipment.",
+        "When the starter spins the engine briskly yet it never catches, the electrical side is probably fine. The problem is more likely fuel, spark or the engine's sensors. Check the fuel gauge first; an empty tank is more common than people admit, and [fuel delivery](/towing/fuel-delivery) costs far less than a tow. If there is fuel and the engine still will not fire, the car needs a shop with diagnostic equipment.",
         "A modern car can also refuse to start because of a security system, a key fob with a dead battery, or a gear selector that is not fully in park. Try the spare key, press the start button using the fob itself, and shift firmly into park before deciding the car is broken.",
       ],
     },
@@ -54,7 +54,7 @@ export default {
       paragraphs: [
         "If you are unsure whether the battery has any strength left, there is a simple test that needs no tools. Switch the headlights on, without starting the engine, and look at them against a wall or garage door. Then try to start the car while watching the beams.",
         "If the lights are dim to begin with and nearly go out when you turn the key, the battery is too weak to do the job. If the lights stay bright and steady while nothing happens at the engine, power is reaching the car but not turning the engine, which points toward the starter or its connections. If the lights dim only slightly and the engine cranks normally without firing, look past the electrical system altogether.",
-        "While you are at it, open the hood and look at the battery terminals. A loose clamp or a thick layer of corrosion can block current as effectively as a dead battery. Do not pry at anything or touch both terminals with metal; just note what you see so you can tell the roadside technician or the shop.",
+        "While you are at it, lift the hood and check the battery terminals. A loose clamp or a thick layer of corrosion can block current as effectively as a dead battery. Do not pry at anything or touch both terminals with metal; just note what you see so you can tell the roadside technician or the shop.",
       ],
     },
     {

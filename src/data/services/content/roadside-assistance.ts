@@ -44,7 +44,7 @@ export default {
     {
       heading: "Waiting safely for the truck",
       paragraphs: [
-        "A stop on the shoulder of I-670 near downtown or the narrow stretches of SR-315 by the river is not a comfortable place to sit. If you can coast off at the next exit or into a lot, do it. If you are stuck on the highway, put your hazards on, keep your belt on while seated inside, and step out only on the side away from traffic.",
+        "A stop on the shoulder of I-670 near downtown or the narrow stretches of SR-315 by the river is not a comfortable place to sit. Coast onto the next exit ramp or into a parking lot if you can. If you are stuck on the highway, put your hazards on, keep your belt on while seated inside, and step out only on the side away from traffic.",
         "In neighborhood settings, like a tight street in Clintonville or a crowded apartment lot near the Ohio State campus, tell the dispatcher about anything that will help the driver find you: a building number, a parking level, the color of your car. A precise location saves more time than anything else.",
       ],
     },
@@ -65,11 +65,12 @@ export default {
     { q: "Can you unlock any car?", a: "Most cars, trucks and SUVs can be opened with standard entry tools. Some vehicles with advanced security systems are more difficult, and the driver will explain if there is a risk before trying. We cannot make keys, so if the key is lost rather than locked inside, a locksmith or dealer is the next step." },
     { q: "How much fuel do you bring?", a: "Enough to get you to a nearby station so you can fill up yourself. We are not a fuel supplier, and the goal is to get you moving again safely. Tell the dispatcher whether the car takes regular gas or diesel." },
     { q: "Can you help if I'm in a parking garage?", a: "Usually, yes. Jumps, lockouts and tire changes can be done in most garages because they do not need the flatbed to enter. Tell the dispatcher which level and section you are on, and whether the garage has a height limit, so the driver knows how to reach you." },
-    { q: "Do you provide roadside help for motorcycles?", a: "Some services, like jump starts and fuel, work fine on many motorcycles. Tire changes usually do not, because bikes rarely carry a spare. If the bike will not run, we can load it on the deck and take it where it needs to go." },
+    { q: "Do you provide roadside help for motorcycles?", a: "Yes, we jump-start motorcycles, and fuel delivery works for bikes too. Tire changes usually do not, because bikes rarely carry a spare. If the bike will not run, we can load it on the deck and take it where it needs to go." },
     { q: "Are you available on holidays and overnight?", a: "Yes. Our dispatch never closes, including weekends, holidays and the middle of the night. Some late-night and holiday calls carry an added charge, and that charge is part of the quoted price you hear before the driver heads out. Nothing gets added after the fact for the hour you called." },
     { q: "Can I request roadside help for someone else?", a: "Yes. Parents often call for a student near campus, and employers call for staff. Give us the driver's name and phone number, the car details and the location. We will confirm the price with you as the person paying and keep the driver informed." },
     { q: "What should I do while waiting for roadside assistance?", a: "Stay somewhere safe, keep your phone charged, and have your ID and keys ready if they are not locked inside. When stopped beside a busy road, stay buckled in with hazards on or wait well behind a guardrail. Pick up if the driver phones, since they may need directions." },
     { q: "Will you jump a car with a battery that looks damaged?", a: "No. If the case is cracked, swollen, leaking or the terminals are heavily corroded, connecting a booster can be dangerous. The driver will point out what they see and talk through options, which usually means replacing the battery on the spot or loading the car for a trip to your mechanic." },
+    { q: "Can you add coolant if my car is overheating?", a: "No. Topping off coolant is mechanic work, and we are not mobile mechanics. Let the engine cool without opening the radiator cap, then call us to tow the car to a shop." },
   ],
   related: ["jump-start", "car-lockout", "flat-tire-change", "fuel-delivery"],
 } satisfies Omit<Service, "slug" | "name" | "group" | "blurb">;

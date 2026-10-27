@@ -91,7 +91,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: "Will you damage my door or window?", a: "No. Our tools open the door without prying paint or breaking glass." },
       { q: "Can you make me a new key?", a: "No. We open the vehicle. Lost or broken keys need a locksmith or dealer." },
-      { q: "What do I need to show you?", a: "A photo ID and something tying you to the car, like the registration once the door is open." },
+      { q: "What do I need to show you?", a: "A photo ID plus the car's registration, which we can check once the door is open." },
     ],
   },
   {
@@ -156,8 +156,8 @@ export const LANDINGS: Landing[] = [
     ticks: ["Your choice of body shop", "Loose parts secured on the deck", "Yard storage if you need time"],
     faqs: [
       { q: "Do I have to use the tow truck police call?", a: "If police order a tow, they choose. Otherwise you can ask for the company you want." },
-      { q: "Will my insurance pay?", a: "Many policies cover towing after a crash. We give you an itemized receipt for your claim." },
-      { q: "Can the car stay with you while I decide?", a: "Yes, at our Harrisburg Pike yard. Daily storage applies after the first day." },
+      { q: "Will my insurance pay?", a: "For accident tows we bill the insurer directly. Have your claim number ready." },
+      { q: "Can the car stay with you while I decide?", a: "Yes, at our Harrisburg Pike yard. Storage is billed by the day, starting the day it comes in." },
     ],
   },
   {
@@ -167,7 +167,7 @@ export const LANDINGS: Landing[] = [
     ticks: ["Ohio and neighboring states", "One car per truck", "Quoted door to door"],
     faqs: [
       { q: "How far will you go?", a: "Anywhere in Ohio and into the neighboring states. Give us both addresses for a quote." },
-      { q: "Can I ride along?", a: "Often one passenger can, if the driver has room. Ask when you book." },
+      { q: "Can I ride along?", a: "Often one or two people can, depending on cab space. Ask when you book." },
       { q: "Can you pick up a car I bought out of town?", a: "Yes. Arrange the pickup with the seller and we'll bring it home." },
     ],
   },

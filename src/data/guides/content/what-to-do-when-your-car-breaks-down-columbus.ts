@@ -87,7 +87,7 @@ export default {
       a: "Give the highway, the direction you were driving, and the last exit or interchange you passed. A mile marker helps a lot if you can see one. Around Columbus the interstates loop and cross, so naming the direction prevents a driver from arriving on the wrong side of the median.",
     },
     {
-      q: "Can I ride in the tow truck with my car?",
+      q: "Is there a seat for me in the tow truck?",
       a: "Ask when you call rather than assuming. Riding along is handy because you are there when the car comes off the deck at the shop or your home, but cab space is limited. Tell the dispatcher how many people need a ride and whether a child seat is involved, so the answer is settled before the driver pulls up.",
     },
     {

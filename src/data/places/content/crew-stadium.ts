@@ -23,7 +23,7 @@ export default {
     {
       heading: "Hot evenings are hard on cars",
       paragraphs: [
-        "Much of the soccer season runs through Ohio's hottest months. A car that crawls for half an hour toward the ramps with the air conditioning on full can push its cooling system past the limit, especially if a hose, fan or thermostat was already marginal. If the temperature gauge climbs into the red or steam appears, pull over somewhere safe and shut the engine off. Driving on can turn a cheap repair into a ruined engine.",
+        "Much of the soccer season runs through Ohio's hottest months. A car that crawls for half an hour toward the ramps with the air conditioning on full can push its cooling system past the limit, especially if a hose, fan or thermostat was already marginal. If the temperature gauge climbs into the red or steam appears, pull over somewhere safe and switch the engine off, since pushing on can turn a cheap repair into a ruined engine.",
         "Our guide on [what to do when a car overheats](/guides/car-overheating-what-to-do) walks through the safe steps. If the car will not cool down or keeps overheating, a flatbed tow to a shop is the right call.",
       ],
     },

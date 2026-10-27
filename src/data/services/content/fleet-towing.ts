@@ -4,14 +4,14 @@ export default {
   keyword: "fleet towing",
   title: "Fleet Towing in Columbus, OH",
   description:
-    "Fleet towing accounts in Columbus, OH: one dispatch line, monthly invoicing for approved firms and photos at each pickup and drop-off. (614) 633-8163.",
+    "Fleet towing accounts in Columbus, OH: jobs logged and billed in RoadsideMC.com on net-15 terms, with photos at pickup and drop-off. (614) 633-8163.",
   h1: "Columbus Fleet Towing Accounts for Company Cars, Vans and Pickups",
   lede:
-    "Company vehicles reach the shop you pick on a flatbed, with photos at both ends of the trip and a single invoice when the month closes.",
+    "Company vehicles reach the shop you pick on a flatbed, with photos at both ends of the trip and every job logged and billed through RoadsideMC.com.",
   intro: [
-    "Fleet towing for Columbus businesses works best when nobody on your team has to hunt for a phone number or chase a receipt. Auto Lyft USA gives each business account one dispatch line that is answered around the clock, a driver who photographs the vehicle when it goes onto the deck and again when it comes off, and a monthly invoice in place of a card payment at every breakdown. Your employee calls, describes the problem and gets on with the workday while we deal with the vehicle.",
+    "Fleet towing for Columbus businesses works best when nobody on your team has to hunt for a phone number or chase a receipt. Auto Lyft USA gives each business account one dispatch line that is answered around the clock, a driver who photographs the vehicle when it goes onto the deck and again when it comes off, and billing that runs through RoadsideMC.com on net-15 terms rather than a card swipe at every breakdown. Your employee calls, describes the problem and gets on with the workday while we deal with the vehicle.",
     "Our four light-duty flatbed carriers suit the vehicles most local fleets actually run: sales sedans, service pickups, cargo and passenger vans, rental cars, and motor-pool cars for agencies and nonprofits. Everything rides on the deck, so a van with a slipping transmission or an all-wheel-drive crossover reaches the shop without extra wear. When a unit is larger than a light-duty carrier should handle, such as a loaded box truck, we set it up through partner operators and keep the job on your account so the records stay together.",
-    "Lisa Peer opened Auto Lyft USA in 2024 at 1620 Harrisburg Pike, southwest of downtown and minutes from I-70, I-71 and the I-270 outerbelt. To start an account, call [(614) 633-8163](/contact) or write to lisa@autolyftusa.online, and the office will explain approval, account pricing and how your drivers should request a truck.",
+    "Lisa Peer opened Auto Lyft USA in 2024 at 1620 Harrisburg Pike, southwest of downtown and minutes from I-70, I-71 and the I-270 outerbelt. Accounts begin with a note of interest at RoadsideMC.com. For questions about approval or account pricing before then, call [(614) 633-8163](/contact) or write to lisa@autolyftusa.online.",
   ],
   situations: [
     { title: "Service vans stuck mid-route", text: "A plumbing, HVAC or electrical van that dies between appointments goes to your preferred shop, and the technician can catch a ride with a coworker instead of waiting on the curb." },
@@ -23,9 +23,9 @@ export default {
   ],
   method: [
     { title: "Account setup", text: "The office records your billing contact, approved shops, the people allowed to request service and any unit-number or purchase-order rules your company follows." },
-    { title: "Your driver calls in", text: "Whoever is with the vehicle phones dispatch, gives the company name and unit number, and describes where it is parked and what failed." },
+    { title: "Request the tow", text: "Your staff log the job in RoadsideMC.com, or whoever is with the vehicle phones dispatch with the company name, unit number, location and what failed." },
     { title: "Photos at both ends", text: "The operator photographs every side of the vehicle and the odometer at pickup, repeats the set at drop-off, and files the images with that job." },
-    { title: "One monthly invoice", text: "Approved accounts get a single bill each month listing every job by date, unit, pickup point and destination, which makes reconciling quick." },
+    { title: "Billed in RoadsideMC.com", text: "Each job lands in your RoadsideMC.com account with its date, unit, pickup point and destination, and approved accounts pay on net-15 terms." },
   ],
   sections: [
     {
@@ -51,13 +51,13 @@ export default {
     },
   ],
   faqs: [
-    { q: "What comes with a fleet towing account?", a: "You get around-the-clock dispatch on one number, flatbed transport to the shop you name, photos of each vehicle at pickup and at drop-off, and monthly invoicing once your account is approved. You can also hand us a list of approved repair shops and the employees allowed to request a tow, and we will follow it on every call." },
-    { q: "How does a business get approved for monthly invoicing?", a: "Reach the office by phone, or send a note to lisa@autolyftusa.online listing your company name, a billing contact and a rough count of the vehicles you run. We review the request and confirm the terms in writing before the first invoice goes out. Until approval comes through, jobs can be paid by card when the service is done." },
+    { q: "What comes with a fleet towing account?", a: "You get around-the-clock dispatch on one number, flatbed transport to the shop you name, photos of each vehicle at pickup and at drop-off, and net-15 billing inside RoadsideMC.com once your account is approved. You can also hand us a list of approved repair shops and the employees allowed to request a tow, and we will follow it on every call." },
+    { q: "How does a business open a fleet towing account?", a: "Go to RoadsideMC.com and let us know your company wants fleet service. After the account is set up, your people enter tows there and every bill is posted there as well, payable on net-15 terms. Until approval comes through, jobs can be paid by card when the service is done." },
     { q: "How are fleet rates set?", a: "The office quotes account pricing before any work begins, based on the kinds of vehicles you run and the distances your units usually travel. Drivers do not make up prices at the roadside. If you want to see the parts that make up a typical tow bill, the [rates page](/rates) lays them out." },
     { q: "Which vehicles can your own trucks carry?", a: "Our four flatbeds are light-duty carriers. They take sedans, SUVs, crossovers, light pickups and cargo or passenger vans that fall inside the deck's weight rating. When your driver calls, the dispatcher asks about weight, length and any racks or ladders on the roof so the right equipment is sent." },
-    { q: "What if a unit is too heavy for your flatbeds?", a: "We book a partner with the right truck and keep the job on your account, so your employee still makes only one call. The dispatcher tells you a partner is handling it and passes along that price before the truck is sent, and the job appears on your monthly statement with the rest." },
+    { q: "What if a unit is too heavy for your flatbeds?", a: "We book a partner with the right truck and keep the job on your account, so your employee still makes only one call. The dispatcher tells you a partner is handling it and passes along that price before the truck is sent, and that job sits in RoadsideMC.com beside your other tows." },
     { q: "Why do you photograph fleet vehicles?", a: "Company cars change hands a lot, and nobody remembers who put the dent in the tailgate. The pictures taken at pickup and drop-off show the condition of each side and the odometer reading, so if a question about damage or mileage comes up later, both of us have the same record to look at." },
-    { q: "Can an employee ride along to the shop?", a: "On short local runs there is normally space for one employee next to our driver. Mention it on the call so the seat is held. If the employee needs to get back to a job site instead, a coworker pickup is often faster than riding to the shop and waiting there." },
+    { q: "Can an employee ride along to the shop?", a: "Usually. Depending on the cab, one or two coworkers can come along on a local run. Mention it when the tow is requested so the seats are held. If the employee needs to get back to a job site instead, a coworker pickup is often faster than riding to the shop and waiting there." },
     { q: "Can you drop a vehicle at our shop after hours?", a: "Yes, when your shop or in-house garage has a key drop and a safe spot to leave the vehicle. Tell the office about those arrangements during setup. If the shop is closed and there is nowhere to leave it, the vehicle stays at our Harrisburg Pike yard and goes over once the doors open." },
     { q: "Do you only serve fleets inside Columbus city limits?", a: "No. We cover Franklin County and the surrounding towns, from Delaware and Marysville down to Canal Winchester and Lancaster. For a unit that breaks down farther out on a highway trip, call anyway; the dispatcher will tell you whether we can reach it or set up a partner." },
     { q: "Can we schedule moves that aren't emergencies?", a: "Yes, and planned moves are some of the easiest jobs for us. Give the office the unit, the pickup spot, the destination and the day you want it moved, and dispatch builds it into the schedule. That works well for recalls, inspections, upfit appointments and returning repaired vehicles to your lot." },

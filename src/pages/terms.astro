@@ -45,12 +45,12 @@ const faqs: Faq[] = [
 
       <h2>Payment</h2>
       <p>
-        We accept cash, debit and credit cards. Card payments made online carry a {RATES.cardFeePercent}% card fee, shown before you pay. Veterans receive {RATES.veteranPercent}% off with a military or VA ID presented to the driver. Business customers with an approved account may be invoiced on the terms agreed in writing for that account.
+        We accept cash, debit and credit cards. Card payments made online carry a {RATES.cardFeePercent}% card fee, shown before you pay. Veterans receive {RATES.veteranPercent}% off with a military or VA ID presented to the driver. Business customers with an approved account may be invoiced on the terms agreed in writing for that account; fleet accounts are billed through RoadsideMC.com, normally net 15. Payment plans are offered only in extenuating circumstances and only with the owner's approval.
       </p>
 
       <h2>Storage</h2>
       <p>
-        If a vehicle stays in our yard past the day it arrives, storage is charged at {usd(RATES.storagePerDay)} per day, or {usd(EV_RATES.storagePerDay)} per day for an electric vehicle. Towing and storage charges must be paid before the vehicle is released. The person collecting it needs photo ID and proof of ownership or written authorization from the owner. Vehicles left unclaimed are handled under the procedures Ohio law sets for abandoned vehicles.
+        Storage is charged from the day a vehicle is towed into our yard, at {usd(RATES.storagePerDay)} per day, or {usd(EV_RATES.storagePerDay)} per day for an electric vehicle. Towing and storage charges must be paid before the vehicle is released. The person collecting it needs photo ID and proof of ownership or written authorization from the owner. An expired registration does not prevent release. For vehicles left unclaimed, Ohio law sets the steps and we follow them: we track down and notify the owner, let the required waiting period run, and then apply for title. A vehicle titled to us may then be sold.
       </p>
 
       <h2>Your vehicle and what is in it</h2>
@@ -63,8 +63,9 @@ const faqs: Faq[] = [
       <ol>
         <li>Before loading, the driver photographs the vehicle on all sides. Those photos are part of the job record.</li>
         <li>At drop-off, look the vehicle over and tell the driver about any new damage before the truck leaves. If no one will be present at drop-off, inspect it as soon as you can.</li>
-        <li>Email <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> with the date, the location, a description and your own photos.</li>
-        <li>We compare the report against the loading photos and reply. Where we caused the damage, we arrange repair or payment directly or through our commercial insurer, {COMPANY.insurer}.</li>
+        <li>Send a written claim to our office at <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> with the date, the location, a description and your own photos or video.</li>
+        <li>Our owner reviews each claim personally, compares it with the loading photos, pins down the problem and looks for a fix acceptable to everyone, usually a repair at a body or repair shop we work with.</li>
+        <li>If the two of us can't settle it, you are free to go through your own insurance company, which will then take it up with us and our commercial insurer, {COMPANY.insurer}.</li>
       </ol>
 
       <h2>Limits of our liability</h2>

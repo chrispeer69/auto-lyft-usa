@@ -34,3 +34,11 @@ Things the site leaves out (or flags) until confirmed. Each one is a single edit
 6. Customers with roadside plans pay us, then claim reimbursement from their plan.
 7. The host keeps standard server logs, and we never ask for full card numbers by text or email.
 8. Drivers need a valid licence and a clean driving record. Openings depend on call volume.
+
+## Owner answers of 2026-10-27 (applied on branch owner-answers-2026-10-27): please confirm
+1. **Fuel delivery** is now described as "the fuel plus the trip", using our existing card: fuel at 3× the pump price, plus the $75 delivery call and $4/mi en-route. Confirm that matches "cost of the fuel plus the trip".
+2. **Battery testing fee and trip fee** are new charges that are not on the rate card (`src/data/rates.ts`). The battery page gives no figure for them. Add them to the card or confirm they stay unpriced. /about still says every charge appears on the card.
+3. **Damage claims** say repairs usually happen "at a body or repair shop we work with". The owner said "our body or repair shops", but this site says Auto Lyft is not a repair shop. Confirm the wording.
+4. **Written damage claims** go to the office by email (lisa@autolyftusa.online), as /terms already said. Confirm there is no other corporate address to name.
+5. **Dealer and lender accounts** (`dealer-auction-towing.ts`, `repo-towing.ts`) still promise monthly invoicing. Only fleets were moved to RoadsideMC.com net-15. Should dealers and lenders move too?
+6. **Repo**: "No lender/involuntary repo work" was read as no involuntary repos. The voluntary-surrender page still works with lenders. Confirm that lender-arranged voluntary surrenders are fine.

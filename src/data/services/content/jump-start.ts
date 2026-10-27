@@ -78,6 +78,7 @@ export default {
     { q: "Should I try a jump start myself with cables?", a: "If you have cables, a willing helper and a safe spot, it can work. The risks come from hooking clamps up in the wrong order, working beside traffic or boosting a battery that is cracked or frozen. When any of that applies, or you just would rather not, a driver with a booster pack is the simpler choice." },
     { q: "Can I get a jump start in Columbus in the middle of the night?", a: "Yes. Auto Lyft USA dispatches jump starts 24-7, including overnight, weekends and holidays. A jump is a $75 flat roadside call plus en-route miles, with $150 more for the overnight window, 10 PM to 6 AM. The dispatcher totals it for you on the phone at (614) 633-8163 before a truck is assigned." },
     { q: "I'm alone in an empty lot at night with a dead battery. What should I do while I wait?", a: "Stay inside with the doors locked, keep the hazard lights off if the battery is weak so there is enough charge left to help the boost, and give the dispatcher a number that will stay on. The driver phones as they arrive, so you can confirm it is our truck before you step out." },
+    { q: "Do you jump-start motorcycles?", a: "Yes. Bikes get boosted too, with the clamps placed carefully since a motorcycle battery is small and often tucked under the seat or a side cover. Give the dispatcher the make and model when you call." },
   ],
   related: ["car-battery-replacement", "roadside-assistance", "car-lockout", "parking-garage-towing"],
 } satisfies Omit<Service, "slug" | "name" | "group" | "blurb">;
