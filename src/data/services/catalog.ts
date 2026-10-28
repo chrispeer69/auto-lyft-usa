@@ -37,6 +37,7 @@ export const SERVICES: ServiceEntry[] = [
   { slug: "low-profile-towing", name: "Low Profile Towing", group: "specialty", blurb: "Lowered, sports and exotic cars loaded with ramp extensions at a shallow angle." },
   { slug: "motorcycle-towing", name: "Motorcycle Towing", group: "specialty", blurb: "Bikes chocked and soft-strapped upright on the deck, never dragged." },
   { slug: "parking-garage-towing", name: "Parking Garage Towing", group: "specialty", blurb: "Cars that die on level three of a low-clearance garage get out with us." },
+  { slug: "wheel-theft-towing", name: "Wheel Theft Towing", group: "specialty", blurb: "Wheels stolen? Fresh wheels mounted where it's parked, or a GUNI Wheel flatbed ride to any shop." },
   { slug: "equipment-hauling", name: "Equipment Hauling", group: "specialty", blurb: "Mowers, small skid steers, golf carts and trailers moved on the flatbed." },
   { slug: "junk-car-removal", name: "Junk Car Removal", group: "specialty", blurb: "Dead cars hauled out of driveways and yards, title paperwork explained." },
   { slug: "fleet-towing", name: "Fleet Towing Accounts", group: "commercial", blurb: "Net billing, one dispatch number and photo records for company vehicles." },

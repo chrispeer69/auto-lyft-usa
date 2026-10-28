@@ -53,6 +53,7 @@ const SERVICE_PHOTO: Record<string, Photo> = {
   "medium-duty-towing": PHOTOS.van,
   "repair-shop-towing": PHOTOS.accident,
   "dealer-auction-towing": PHOTOS.highway,
+  "wheel-theft-towing": PHOTOS.highway,
 };
 
 export const servicePhoto = (slug: string, group: ServiceGroup) => SERVICE_PHOTO[slug] ?? GROUP_PHOTO[group];

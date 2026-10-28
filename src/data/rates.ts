@@ -19,6 +19,7 @@ export const RATES = {
   fuelMultiplier: 3, // fuel billed at 3× pump cost
   cardFeePercent: 3,
   veteranPercent: 10,
+  guniWheelPerWheel: 75, // owner 2026-10-28: per wheel, GUNI Wheel fitted at pickup and removed at drop-off (wheel theft tows)
 };
 
 export const EV_RATES = {
@@ -44,7 +45,7 @@ export const COUNTY_TAX: { county: string; rate: number }[] = [
 
 export const usd = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 
-type OfferLine = { name: string; price: number; unit: "per tow" | "per mile" | "per hour" | "per call"; note: string };
+type OfferLine = { name: string; price: number; unit: "per tow" | "per mile" | "per hour" | "per call" | "per wheel"; note: string };
 
 /** Which rate-card lines apply to each priced service page. Per-job services
     (heavy, medium, fleet, repo, auction, property, junk, equipment) have none. */
@@ -76,6 +77,11 @@ export function offersFor(slug: string): OfferLine[] {
     case "parking-garage-towing":
     case "repair-shop-towing":
       return tow;
+    case "wheel-theft-towing":
+      return [
+        ...tow,
+        { name: "GUNI Wheel", price: RATES.guniWheelPerWheel, unit: "per wheel", note: "A temporary wheel bolted to each bare hub at pickup and taken off at the drop-off." },
+      ];
     case "roadside-assistance":
     case "jump-start":
     case "car-battery-replacement":

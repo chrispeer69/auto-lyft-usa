@@ -18,6 +18,7 @@ const card: [string, string, string][] = [
   ["Roadside service call", usd(RATES.roadsideFlat), "Jump start, lockout, spare-tire change or battery call."],
   ["Fuel delivery", `${usd(RATES.fuelBase)} + fuel at ${RATES.fuelMultiplier}× pump price`, "A few gallons to get you to a station."],
   ["Winch-out", `${usd(RATES.winchPerHour)} per hour`, "Ditch, snow or mud recovery; one-hour minimum."],
+  ["GUNI Wheel (stolen wheels)", `${usd(RATES.guniWheelPerWheel)} per wheel`, "Added to a tow when a wheel was stolen: a temporary wheel goes on that hub at pickup and comes off at drop-off."],
   ["Interstate shoulder", `+${usd(RATES.highway)}`, "Breakdowns on the shoulder of any interstate or limited-access freeway."],
   ["After hours", `+${usd(RATES.afterHours)}`, `Calls between ${AFTER_HOURS_WINDOW}.`],
   ["Weekend", `+${usd(RATES.weekend)}`, "Saturday and Sunday calls."],
@@ -59,6 +60,7 @@ const schema = [
       { name: "En-route mileage", price: RATES.enroutePerMile, unit: "per mile", code: "SMI" },
       { name: "Roadside service call", price: RATES.roadsideFlat, unit: "per call" },
       { name: "Winch-out", price: RATES.winchPerHour, unit: "per hour", code: "HUR" },
+      { name: "GUNI Wheel for a stolen-wheel tow", price: RATES.guniWheelPerWheel, unit: "per wheel" },
       { name: "EV hook-up", price: EV_RATES.hookup, unit: "per tow" },
     ].map((o) => ({
       "@type": "Offer",
@@ -81,7 +83,7 @@ const schema = [
         <thead><tr><th>Charge</th><th>Rate</th><th>When it applies</th></tr></thead>
         <tbody>{card.map(([a, b, c]) => <tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>)}</tbody>
       </table></div>
-      <p class="small muted mt-12">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county.</p>
+      <p class="small muted mt-12">Veterans: {RATES.veteranPercent}% off with a military or VA ID. Online card payments add {RATES.cardFeePercent}%. Ohio sales tax applies, by pickup county. Wheels stolen? See <a href="/towing/wheel-theft-towing">wheel theft towing</a> for how the GUNI Wheel line works.</p>
     </div>
   </section>
   <section class="band dark" aria-labelledby="quote-h">
