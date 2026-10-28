@@ -46,7 +46,7 @@ export default {
       heading: "When it is none of the three",
       paragraphs: [
         "When the starter spins the engine briskly yet it never catches, the electrical side is probably fine. The problem is more likely fuel, spark or the engine's sensors. Check the fuel gauge first; an empty tank is more common than people admit, and [fuel delivery](/towing/fuel-delivery) costs far less than a tow. If there is fuel and the engine still will not fire, the car needs a shop with diagnostic equipment.",
-        "A modern car can also refuse to start because of a security system, a key fob with a dead battery, or a gear selector that is not fully in park. Try the spare key, press the start button using the fob itself, and shift firmly into park before deciding the car is broken.",
+        "A modern car can also refuse to start because of a security system, a fob whose own battery has died, or a gear selector that is not fully in park. Try the spare key, press the start button using the fob itself, and shift firmly into park before deciding the car is broken.",
       ],
     },
     {

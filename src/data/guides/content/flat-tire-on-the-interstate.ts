@@ -90,7 +90,7 @@ export default {
     },
     {
       q: "What if my car has no spare tire?",
-      a: "Look for a sealant and inflator kit under the trunk floor. It can seal a small tread puncture well enough to reach a tire shop, but not a sidewall cut or a blowout. If the kit cannot fix it, call for a tow to a tire shop. We can bring the car to your preferred shop or a partner shop nearby.",
+      a: "Look for a sealant and inflator kit under the trunk floor. It can seal a small tread puncture well enough to reach a tire shop; it cannot fix a cut sidewall or a blowout. If the kit cannot fix it, call for a tow to a tire shop. We can bring the car to your preferred shop or a partner shop nearby.",
     },
     {
       q: "Can I drive slowly to the next exit on a flat tire?",

@@ -56,7 +56,7 @@ export default {
     },
     {
       q: "Can the car be towed if it's dead and stuck in park?",
-      a: "Yes. Many cars have a shift-lock release that lets the lever move to neutral without power, and the driver will look for it. If the car still can't be put in neutral, the winch pulls it onto the deck, and on a tight driveway wheel dollies help position it first. Mention the dead electrical system when you call so the right equipment comes along.",
+      a: "Yes. Many cars have a shift-lock release that lets the lever move to neutral without power, and the driver will look for it. If the car still can't be put in neutral, the winch pulls it onto the deck, and on a tight driveway wheel dollies help position it first. Mention the dead electrical system on the call, and the truck arrives with the gear for it.",
     },
   ],
   related: ["engine-diagnostics", "ac-heating-repair", "exhaust-repair"],

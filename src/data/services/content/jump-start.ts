@@ -41,7 +41,7 @@ export default {
         "Getting the engine running is only half the job. The battery needs time to recover.",
       ],
       bullets: [
-        "Drive for at least 20 to 30 minutes, ideally at steady speed, such as a loop on I-270 or a run up SR-315, rather than a few blocks.",
+        "Keep driving for a good 20 to 30 minutes, ideally at steady speed, such as a loop on I-270 or a run up SR-315, rather than a few blocks.",
         "Keep heavy electrical loads like the rear defroster and heated seats off for the first part of the drive if you can see safely.",
         "Avoid shutting the engine off at a quick stop right after the jump; the car may not restart.",
         "If the car needed a boost twice in a short time, have the battery and charging system tested or replaced.",

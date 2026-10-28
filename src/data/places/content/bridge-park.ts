@@ -35,7 +35,7 @@ export default {
       ],
       bullets: [
         "Have the car's key card or phone key handy; some EVs won't shift without it.",
-        "Tell the dispatcher the make and model so the driver brings the right gear.",
+        "Give the dispatcher the make and model, and the driver loads gear to suit it.",
         "If the car still has power, check the owner's manual for a tow or transport mode.",
       ],
     },
