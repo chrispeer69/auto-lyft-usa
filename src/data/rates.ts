@@ -19,7 +19,7 @@ export const RATES = {
   fuelMultiplier: 3, // fuel billed at 3× pump cost
   cardFeePercent: 3,
   veteranPercent: 10,
-  guniWheelPerWheel: 75, // owner 2026-10-28: per wheel, GUNI Wheel fitted at pickup and removed at drop-off (wheel theft tows)
+  guniWheelPerWheel: 100, // owner 2026-10-29 (was 75 on 10-28): per wheel; car + truck GUNI sets carried, GUNI Wheel fitted at pickup and removed at drop-off (wheel theft tows)
 };
 
 export const EV_RATES = {

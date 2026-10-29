@@ -1,5 +1,5 @@
 {
-  "default": "2026-10-28",
+  "default": "2026-10-29",
   "paths": {
     "/": "2026-10-28",
     "/404": "2026-10-13",
@@ -131,7 +131,7 @@
     "/local/tuttle-crossing": "2026-10-22",
     "/privacy": "2026-10-14",
     "/questions": "2026-10-27",
-    "/rates": "2026-10-28",
+    "/rates": "2026-10-29",
     "/repair": "2026-10-20",
     "/repair/ac-heating-repair": "2026-10-24",
     "/repair/brake-repair": "2026-10-21",
