@@ -7,9 +7,9 @@ export default {
   lede:
     "Groveport pairs a small canal-era downtown with a ring of very large distribution buildings, and our drivers answer calls from both.",
   intro: [
-    "Groveport lies roughly 10.4 miles east-southeast of our yard on Harrisburg Pike. Dispatch sends the nearest of our trucks, which are spread around Columbus. One crossing the south side would use I-270, then come down Alum Creek Drive or Hamilton Road, which is State Route 317 and widens into a divided four-lane road as it enters the city. That approach passes Obetz and the northern fringe of the Rickenbacker area, two places we also serve.",
-    "Groveport calls follow the shift clock. The business parks around the city house distribution operations for companies such as Cardinal Health, FedEx, Gap and Walmart, and when a worker's car won't turn over at the end of a night shift, the lot is often half empty and poorly lit. Daytime calls lean toward the older streets near Main Street and the subdivisions off Hamilton Road, where the car usually goes to a local shop or back to the owner's driveway. Weekend calls bring in the parks and the golf course.",
-    "Steady truck traffic on the main roads also brings more tire debris and more fender-benders at the signals. A damaged car goes on one of our four flatbeds and travels with no wheels on the pavement. Call [(614) 633-8163](/contact) and you will get a price and an arrival estimate before anything is dispatched.",
+    "Groveport grew up as a canal town, and the evidence is still on the map: Blacklick Park keeps old Lock 22 in view, and Heritage Park on Wirt Road holds a log house built in 1815. Around that small downtown, five business parks now hold distribution buildings for companies such as Cardinal Health, FedEx, Gap and Walmart, and Hamilton Road (SR-317) widens into a divided four-lane road as it carries their traffic north toward I-270 and I-70.",
+    "Groveport calls follow the shift clock. When a worker's car won't turn over at the end of a night shift, the employee lot is often half empty and poorly lit, and the dispatcher will ask for the building, the door number and whether a guard has to open a gate. Daytime calls lean toward the older streets near Main Street and the subdivisions off Hamilton Road, where the car usually goes to a local shop or back to the owner's driveway. Weekends bring in the parks, the aquatic center and the golf course.",
+    "Steady truck traffic on SR-317 and Alum Creek Drive also leaves more tire debris on the shoulders and more fender-benders at the signals than a town this size would otherwise see. A damaged car goes on a flatbed and travels with no wheels on the pavement, while a flat on an otherwise healthy car is usually changed right where it sits. Either way, you hear the price on the call, before any truck is sent.",
   ],
   roads: [
     { name: "SR-317 (Hamilton Road)", note: "The main north-south route, divided four-lane through town and linked north to I-270 and I-70. School and warehouse traffic peak at the same hours." },
@@ -29,13 +29,32 @@ export default {
     { kind: "landmark", name: "Groveport Municipal Golf Course", detail: "The city-owned course, where grass overflow parking can turn soft after rain and call for a winch rather than a push." },
   ],
   faqs: [
-    { q: "What route does a truck take to Groveport?", a: "That depends on where the closest free truck is, since ours are positioned around Columbus. One coming along the south outerbelt exits I-270 at Alum Creek Drive or Hamilton Road, depending on which part of Groveport you are in. The straight-line distance from our yard is about 10.4 miles. Traffic around the Rickenbacker warehouses swings sharply at shift change, so the dispatcher checks conditions before giving you an arrival estimate." },
-    { q: "My car won't start in a warehouse lot after a night shift. Will you come out?", a: "Yes, at any hour; dispatch is staffed around the clock every day of the year. Tell us the company, the building or door number, and whether security has to wave the truck through a gate. A [jump start](/towing/jump-start) solves many of these calls on the spot. If the battery is finished, we can tow the car or talk about a new one." },
+    { q: "Is downtown Groveport hard to reach on Apple Butter Day?", a: "The festival fills the downtown streets on a Saturday each October, with apple butter cooked over open fires at the log house and vendors along the old blocks. Expect a crowd around Main Street and Heritage Park that day. If your car quits there, tell us the nearest cross street outside the festival area, and the driver will come in from that side." },
+    { q: "My car won't start in a warehouse lot after a night shift. Will you come out?", a: "Yes, at any hour; dispatch answers 24-7, every day of the year. Tell us the company, the building or door number, and whether security has to wave the truck through a gate. A [jump start](/towing/jump-start) solves many of these calls on the spot. If the battery is finished, we can tow the car or talk about a new one." },
     { q: "Can you handle company cars and vans for Groveport businesses?", a: "We can, as long as the vehicle is light-duty, which covers cars, SUVs, pickups and most cargo vans. Businesses in the Groveport parks can set up a [fleet towing](/towing/fleet-towing) account so their drivers call one number and billing goes to the company. Anything too big for our trucks, the dispatcher will tell you right away." },
     { q: "Can you reach my car at Groveport Park on a busy pool day?", a: "Yes. The park's lots fill quickly in hot weather, so tell the dispatcher which lot and the nearest building: the recreation center, the senior center or the aquatic center. If the car is boxed in by others, the driver may need a few minutes for a neighboring car to leave before loading." },
     { q: "Is Hamilton Road a dangerous place to break down?", a: "It carries a lot of trucks. Through Groveport, SR-317 is a divided four-lane road, so if the car still rolls, coast into a business entrance or a side street. If it stops in the lane, light up the hazards and, once traffic allows, climb out the door farthest from the lanes and wait well off the road." },
-    { q: "Will a tow from Groveport to a Columbus shop cost more than one inside town?", a: "Usually somewhat more, because distance is part of every quote. A move from a Groveport street to a shop on Main Street is short; a trip to a dealer on the north side of Columbus adds miles. The dispatcher prices the job before a truck goes out, and our [rates](/rates) page breaks down what goes into the figure." },
+    { q: "Is a police-ordered tow in Groveport handled at Clyde Moore Drive?", a: "Contact the Groveport Police Department on Clyde Moore Drive; officers can tell you which tow company has the car and what you need to release it. Bring a photo ID and the registration or title. If the car won't drive afterward, call us to move it from that lot to your shop." },
     { q: "Do you tow from Motts Military Museum or Heritage Park on event days?", a: "Yes. Both draw crowds at times, and concerts at Heritage Park pack the parking around Wirt Road. Tell us when you call that the lot is full so the driver can plan. If the car will roll, pushing it closer to the exit before we arrive can make loading much simpler." },
-    { q: "Do your trucks continue to Obetz and Canal Winchester?", a: "Yes. Groveport sits between the two, so it is normal for a truck to finish a job in [Obetz](/areas/obetz-oh) and come on to Groveport, or keep going east to [Canal Winchester](/areas/canal-winchester-oh). The dispatcher sends whichever truck is best placed at the time of your call, and a car can be delivered to a shop in any of the three towns if that is where you want it." },
+    { q: "I picked up a nail on a warehouse road. Can you change it there?", a: "Yes, if you have a usable spare. Debris from truck traffic makes punctures common around the business parks. Pull into a lot or a wide driveway rather than the shoulder if you can, and tell us where the spare and lug-lock key are. Our [flat tire change](/towing/flat-tire-change) page covers what happens when there is no spare." },
+    { q: "My car sank into the grass overflow lot at the golf course. Can you get it out?", a: "Yes. After rain the overflow parking at the city golf course can turn soft enough to bury a tire. Don't keep spinning the wheels; that digs the car in deeper. The driver anchors on pavement and pulls the car back to solid ground with a [winch-out](/towing/winch-out), then checks whether it needs to be towed at all." },
   ],
+  eyebrow: "Canal-era Main Street and the SR-317 warehouse corridor",
+  headings: {
+    roads: "SR-317, Alum Creek Drive and the old canal streets",
+    services: "Night-shift lots and truck-route shoulders need these",
+    local: "Lock 22, an 1815 log house and the Cruisers' campus",
+    faqs: "Apple Butter Day, shift-change lots and police tows",
+    near: "Down Alum Creek Drive and east along the canal route",
+  },
+  cta: {
+    heading: "Dead car in a business-park lot off Hamilton Road?",
+    text: "Have the company name, building or door number and any gate instructions ready, and the dispatcher can line up the right truck in one call.",
+  },
+  nap: {
+    heading: "When a Groveport car has to wait",
+    text: "A car towed from a warehouse lot at 3 a.m. can sit at our Harrisburg Pike yard until your shop opens, and you can collect it or have us deliver it later.",
+  },
+  services: ["fleet-towing", "jump-start", "emergency-towing", "accident-towing", "flat-tire-change", "winch-out", "flatbed-towing"],
+  order: ["faqs", "local", "roads", "services"],
 } satisfies CityContent;

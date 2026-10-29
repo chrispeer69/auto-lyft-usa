@@ -7,9 +7,9 @@ export default {
   lede:
     "Our yard sits on Harrisburg Pike, and if you follow that road far enough southwest you arrive in the village that gave it its name.",
   intro: [
-    "Harrisburg is about 10.1 miles southwest of our yard, and the road between the two could hardly be simpler: Harrisburg Pike, which is US-62, south through Grove City and on into open farm country until it reaches the village. Along the way it carries SR-3 as well and crosses SR-665, London-Groveport Road, north of town. Drivers coming off I-71 use exit 94, which is signed for Harrisburg.",
-    "Harrisburg is a village of a few streets built around High Street, where the village hall, the community center and the library stand within a block of each other. Its limits cross the border between Franklin and Pickaway counties inside Pleasant Township, with the Big Darby Creek valley and parcels of Battelle Darby Creek Metro Park off to the north. Most calls here come from homes on streets like Chenoweth, Springlawn and Hillside, or from cars that gave out along US-62 between Harrisburg and Grove City.",
-    "Out here the roads are two-lane and dark after sunset, and a car that drifts onto a soft shoulder can sink fast. Each of our flatbeds carries a winch for exactly that, and the driver brings lights and reflective gear for a roadside job in the dark. If the car is drivable once it is back on firm ground, there may be no tow at all. For a quote and an arrival estimate, call [(614) 633-8163](/contact).",
+    "Before it was Harrisburg, this crossroads was known as Darby Cross Roads; the post office that opened here in 1834 was named Big Darby after the creek valley to the north. Joseph Chenoweth, whose parents were among Pleasant Township's first settlers, had the village surveyed in 1836, and by 1848 a turnpike company was charging ten cents each way at the gates of its toll road. That road is now US-62 and SR-3, and the village it serves still straddles the Franklin and Pickaway county line.",
+    "Harrisburg itself is a few streets built around High Street, where the village hall, the community center and the library stand within a block of each other. Most calls here come from homes on streets like Chenoweth, Springlawn and Hillside, or from cars that gave out on the two-lane stretch of US-62 between the village and Grove City. Since that same highway runs past our gate as Harrisburg Pike, a truck coming from our end follows it nearly the whole way, and drivers on I-71 reach the village from exit 94.",
+    "Out here the roads are two-lane and dark after sunset, and a car that drifts onto a soft shoulder can sink fast. Each of our flatbeds carries a winch for exactly that, and the driver brings lights and reflective gear for a roadside job in the dark. If the car is drivable once it is back on firm ground, there may be no tow at all, which is the outcome most people hope for on a farm road at night.",
   ],
   roads: [
     { name: "US-62 / SR-3 (Harrisburg Pike)", note: "Our own street, continuing southwest through Grove City and farmland to the village. Streetlights thin out once it leaves Grove City." },
@@ -33,13 +33,32 @@ export default {
     { kind: "landmark", name: "Harrisburg United Methodist Church", detail: "A High Street congregation in the middle of the village and a clear reference point when you call from the older blocks." },
   ],
   faqs: [
-    { q: "Is Harrisburg really straight down your road?", a: "Yes. The road outside our gate at 1620 Harrisburg Pike is US-62, and it runs southwest through Grove City and on to the village. The straight-line distance is about 10.1 miles, Our trucks are positioned around Columbus rather than parked at the gate, so the one sent is the nearest free truck, and the dispatcher checks traffic before giving you a live estimate." },
+    { q: "Harrisburg has its own police and Mayor's Court. Does that matter for a towed car?", a: "The village lists its own Police Department and a Mayor's Court, and its offices are at 1100 High Street. Call the village and ask the police which company towed the car and what the release needs; if you got a citation, the Mayor's Court handles it. Once the car is released, we can carry it from the tow lot to your driveway or shop." },
     { q: "Do you cover the Pickaway County side of Harrisburg?", a: "Yes. The village sits on the line between Franklin and Pickaway counties, and both sides get the same service from us. Give the dispatcher the street and house number, and the driver will find you no matter which county the address falls in. If you are just outside the village, a nearby crossroad helps." },
     { q: "My car went off US-62 into the grass between Grove City and Harrisburg. Can you pull it out?", a: "Probably. Every carrier we run has a winch, and a car resting in soft ground beside the road is a routine [winch-out](/towing/winch-out). The driver checks for damage before you drive off. If the car has gone down a steep bank or into water, say so when you call, because that changes the plan." },
+    { q: "I stalled on the I-71 ramp at exit 94. What should I tell you?", a: "Say which ramp you are on, northbound or southbound, and whether you were getting off toward Harrisburg and Orient or getting on. That exit links I-71 with US-62 and SR-3, so a car that can still roll is better off at the bottom of the ramp than on it. Keep the flashers on and stay off the travel lanes while you wait." },
     { q: "Can your driver find a farmhouse outside the village?", a: "Yes, with a little help. Give the road name, the nearest crossroad and a landmark such as the SR-665 intersection, the SR-762 signal or the name on the mailbox. Rural addresses sometimes land in the wrong spot on GPS, so a phone number where the driver can reach you is useful too. Porch or yard lights left on at night make the house much easier to spot." },
     { q: "Do you tow from Battelle Darby Creek Metro Park lots near Harrisburg?", a: "Yes. The park is spread out, with parcels reaching south toward Harrisburg and an Osprey Lake entrance on Harrisburg-Georgesville Road. Tell us the lot or trailhead name. Park drives can be narrow, so the driver may load your car near the lot entrance rather than deep inside. Mention whether the gate closes at dusk, since that affects timing." },
-    { q: "Can I have my car towed to a shop in Grove City?", a: "Of course. [Grove City](/areas/grove-city-oh) is just up US-62 toward Columbus and has plenty of repair shops along Broadway and Stringtown Road. We will take the car wherever you choose, including your own driveway, a Columbus dealer or a shop farther afield. If the shop is not open yet, the car can wait at our yard on Harrisburg Pike, which sits right on the route." },
-    { q: "How is a Harrisburg tow priced?", a: "The quote reflects the distance from our yard to you, the distance from you to the destination, and any winching or special handling. Harrisburg is a direct run down our own road, so travel costs stay moderate. The dispatcher gives you the full figure before sending a truck; our [rates](/rates) page explains how." },
+    { q: "I ran out of gas on Harrisburg-Georgesville Road. Can you bring fuel instead of towing?", a: "Yes. That county road through Darbydale has long gaps between stations, and a [fuel delivery](/towing/fuel-delivery) call gets you enough to reach the nearest pump. Tell us whether the car takes regular, premium or diesel, and pull as far off the pavement as the shoulder allows." },
+    { q: "Can you move a riding mower or small trailer from a Harrisburg property?", a: "Light equipment that fits safely on a flatbed deck, such as a lawn tractor or a small utility trailer, is something we can usually haul. Tell us the item and its rough size when you call. Bigger farm equipment goes to a partner with heavier gear, and the dispatcher will say so up front; see [equipment hauling](/towing/equipment-hauling)." },
     { q: "I'm stuck at night on a dark road near the village. What should I do?", a: "Move the car clear of the pavement as far as it is safe to go, and switch on the hazard flashers. If you are unsure of your location, open the map on your phone and read the nearest crossroad or your coordinates to the dispatcher. Stay out of the travel lane while you wait, and keep your phone charged and on." },
   ],
+  eyebrow: "Darby Cross Roads, the old turnpike and the county-line village",
+  headings: {
+    roads: "US-62, SR-762 and the village grid off High Street",
+    services: "What dark two-lanes and farm lanes tend to call for",
+    local: "Village hall, the creek valley and the 1836 street plan",
+    faqs: "Harrisburg calls, from the Mayor's Court to Osprey Lake",
+    near: "Up the old turnpike and across Pleasant Township",
+  },
+  cta: {
+    heading: "Off the shoulder on US-62 south of Grove City?",
+    text: "A crossroad, a mailbox name or the nearest state-route sign is all the driver needs; tell the dispatcher which one you can see.",
+  },
+  nap: {
+    heading: "Same highway, other end",
+    text: "The highway through the village also passes our gate, so a car towed from the village can sit at the yard on Harrisburg Pike until you decide where it goes next.",
+  },
+  services: ["winch-out", "flatbed-towing", "emergency-towing", "fuel-delivery", "flat-tire-change", "equipment-hauling", "jump-start"],
+  order: ["local", "roads", "services", "faqs"],
 } satisfies CityContent;

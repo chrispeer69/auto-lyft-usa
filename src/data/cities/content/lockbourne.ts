@@ -7,8 +7,8 @@ export default {
   lede:
     "Lockbourne is a small canal village sitting beside Rickenbacker's cargo airport and rail terminal, and our calls there reflect both sides of that.",
   intro: [
-    "Lockbourne is about 9.2 miles south-southeast of our yard. Dispatch sends the nearest of our trucks; one crossing the south side normally takes I-270 east to the US-23 exit at South High Street and heads south, or comes down Alum Creek Drive past Obetz when the call is on the airport side. US-23 runs along the village's western edge, and SR-762 links it east to Rickenbacker International Airport.",
-    "The village itself is compact: a few streets around Commerce Street, the old canal lock in Lock Meadows Park, several churches and a veterans park. What surrounds it is much bigger. Rickenbacker's cargo operations, the Air National Guard station, Norfolk Southern's intermodal terminal and large distribution campuses such as ODW Logistics pull a constant stream of commuters through the area. Plenty of our Lockbourne calls are those commuters, stranded on SR-762 or in a warehouse lot after a long shift.",
+    "Lockbourne takes its name from the locks that once stepped boats up and down the Ohio and Erie Canal, and Lock No. 30 still sits in Lock Meadows Park at the edge of the village. US-23 runs along the western side, SR-762 heads east to Rickenbacker International Airport, and the village line spills over from Franklin County into Pickaway County, so a few addresses here belong to a different county than their neighbours.",
+    "The village itself is compact: a few streets around Commerce Street, the old canal lock, several churches and a veterans park. What surrounds it is much bigger. Rickenbacker's cargo operations, the Air National Guard station, Norfolk Southern's intermodal terminal and large distribution campuses such as ODW Logistics pull a constant stream of commuters through the area. Plenty of our Lockbourne calls are those commuters, stranded on SR-762 or in a warehouse lot after a long shift.",
     "The rural stretches of US-23 and the township roads outside the village also send us cars that slid off in bad weather, which is where a [winch-out](/towing/winch-out) comes in. The low-slung commuter cars and newer SUVs we see in the warehouse lots go on a flatbed, which protects bumpers and drivetrains alike. Call [(614) 633-8163](/contact) and the dispatcher will give you a price and an arrival estimate before sending anyone.",
   ],
   roads: [
@@ -36,13 +36,32 @@ export default {
     { kind: "park", name: "Lockbourne Veterans Park", detail: "Flags, memorial bricks and a gazebo; the Memorial Day parade closes nearby streets, so a tow that morning may need a longer way in." },
   ],
   faqs: [
-    { q: "Which way do your trucks come to Lockbourne?", a: "Our trucks are positioned around Columbus, so it depends on which one is nearest. One coming across the south side usually takes I-270 east and then US-23 south from the South High Street exit, and for jobs on the Rickenbacker side the driver may come down Alum Creek Drive instead. Lockbourne is about 9.2 miles from our yard in a straight line, and the dispatcher bases the live estimate on where the nearest truck happens to be." },
     { q: "Can you pick up a car parked at Rickenbacker airport?", a: "Yes, from public parking and from tenant lots where we are allowed in. Give us the lot or building name and the gate you came through. If the car sits inside a secured area, someone with access will need to bring it out to us or escort the driver in, because we cannot enter restricted ground on our own. Have the car's keys with you at the meeting point." },
     { q: "My car won't start at a warehouse off SR-762. Can you help?", a: "Yes, and that is one of the most typical calls we get around Lockbourne. Tell the dispatcher the employer, the building address and where in the lot you are standing. The driver will try a [jump start](/towing/jump-start) first and load the car only if it still will not run. Long walks across a big lot in the dark are no fun, so you can wait in the building until the truck pulls up." },
     { q: "My car slid off a country road near Lockbourne. Can a flatbed get it out?", a: "Often, yes. The driver uses the carrier's winch to draw the car out of a shallow ditch or a soft field edge, then looks it over before you drive away, or loads it if something is damaged. A very deep ditch or a steep drop may call for a different approach, and the dispatcher will ask questions to judge that first." },
     { q: "Is the US-23 shoulder near Lockbourne safe to wait on?", a: "Traffic there moves quickly. If you can, ease the car onto a side road or into a business lot before it quits completely. If you are stuck on the shoulder, switch on the flashers and, when it is safe, stand well back from the pavement, behind a guardrail if one is close by." },
     { q: "Does the Memorial Day parade affect tows in the village?", a: "It can. The parade and the ceremony at Veterans Park close streets in the village center for part of the day. If you need a tow that morning, give the dispatcher your street so the driver can find an open way in, and expect a short wait while the route clears." },
-    { q: "How is the price worked out for a tow in Lockbourne?", a: "We add up the distance from the yard, the distance to your destination and any special work such as a winch-out, then quote the total before a driver heads your way. The figure stays put unless the job turns out to be different from what was described, such as a car buried deeper in a ditch than expected. The [rates page](/rates) sets out the details." },
-    { q: "Do you also tow around Commercial Point and Groveport?", a: "Yes. Lockbourne sits between several towns we cover. [Commercial Point](/areas/commercial-point-oh) is a few miles west along SR-762, and Groveport and Obetz lie a short way north and east, so a carrier working anywhere in this corner of the county can usually be redirected to you. The car can also be dropped at a shop in any of those towns." },
+    { q: "Lockbourne has no police station of its own. Who do I ask about a car that was towed?", a: "The village directs residents to the Franklin County Sheriff's Office, so start with its non-emergency line and give the plate number. If the car was on the Pickaway County side of the line, the Pickaway County Sheriff may have handled it instead, and on US-23 it could be the Highway Patrol. Whoever ordered the tow can tell you which lot has the car." },
+    { q: "I work at the Air National Guard station and my car died in the parking area. Can you come on base?", a: "Only as far as the public side of the gate. Entry to the station is controlled, so arrange for the car to be brought out, or for an escort if the base allows it, before the driver arrives. Once the car is at an open lot or the roadside, the job is the same as anywhere else." },
+    { q: "Is a tow from the Pickaway County part of Lockbourne taxed differently?", a: "Yes. Ohio sales tax follows the county where the car is picked up, and our published card lists Pickaway County at 7.25 percent against 8 percent in Franklin County. The tow charges themselves, from the $125 hook-up to the loaded miles, are identical on both sides of the line. Every line item is listed on our [rates page](/rates)." },
+    { q: "Can the carrier fit down Rowe Road near the bridge?", a: "Yes, but direction matters. Rowe Bridge is a 150-foot steel span at the west end of the village, so tell us which side of it the car is on. The driver can then approach from that end instead of crossing and turning around on a narrow road." },
   ],
+  eyebrow: "Canal-lock village beside Rickenbacker's cargo airport",
+  headings: {
+    roads: "SR-762, US-23 and the streets around Commerce Street",
+    services: "Help for warehouse shifts and soft-shouldered county roads",
+    local: "Lock No. 30, the old air base and the intermodal yard",
+    faqs: "Base gates, county lines and parade morning",
+    near: "North toward Obetz and Groveport, west to Commercial Point",
+  },
+  cta: {
+    heading: "Stuck off SR-762 or in a Rickenbacker lot?",
+    text: "Give us the employer or lot name and the gate you used, and the dispatcher will price the job before a truck heads south of the outerbelt.",
+  },
+  nap: {
+    heading: "From the canal village to our yard",
+    text: "Lockbourne lies southeast of our Harrisburg Pike yard, where cars that cannot go straight to a shop are stored and released with the owner's ID.",
+  },
+  services: ["flatbed-towing", "jump-start", "winch-out", "emergency-towing", "car-lockout", "fleet-towing", "accident-towing"],
+  order: ["roads", "services", "local", "faqs"],
 } satisfies CityContent;

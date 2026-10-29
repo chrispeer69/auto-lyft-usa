@@ -7,9 +7,9 @@ export default {
   lede:
     "Madison County government is based in London, a courthouse town ringed by farmland, and our trucks make the run out from Columbus around the clock.",
   intro: [
-    "Of the west-side towns we cover, London is one of the farthest out, roughly twenty miles west and a little south of the yard. A truck coming from Columbus usually runs I-70 west to the US-42 interchange, then south into town; for addresses on the southeast side, SR-56 from I-71 can be quicker. Either way it is a real drive, so we plan London jobs carefully and keep you posted on where the truck is.",
-    "Downtown London centers on the intersection of Main Street and High Street, where the Madison County Courthouse stands and several state routes share the same blocks. That makes uptown a tight place to load a car, and our drivers often use a side street. Outside the center, our calls tend to come from three areas: the US-42 corridor between town and I-70, the SR-56 stretch west of town past the state prisons, and the neighborhoods around the fairgrounds and London High School on Elm Street. Rural slide-offs on county roads are common after snow or heavy rain.",
-    "For a run this long your vehicle goes on a flatbed, the gentlest way to carry a car twenty miles or more. The dispatcher gives you a firm price and a live arrival estimate before a truck is sent, so you know what to expect. Call [(614) 633-8163](/contact) or [send a request](/request) with your location.",
+    "The Second Empire courthouse that has anchored London since 1892 stands at the corner of Main and High, and four state and federal routes squeeze through the blocks around it: US-42, SR-38, SR-56 and SR-665 all share stretches of High and Center streets. That is a lot of through traffic for a Madison County seat of farm-town size, and it is why downtown loading takes more planning here than the population would suggest.",
+    "Outside the center, our London calls tend to come from three areas: the US-42 corridor running up to I-70, the SR-56 stretch west of town past the two state prisons, and the neighborhoods around the fairgrounds and London High School on Elm Street. Rural slide-offs on county roads are common after snow or heavy rain, and the deep ditches out here are not forgiving. Drivers coming from the I-71 side usually reach town on SR-56 from the Mount Sterling interchange.",
+    "For a run this long from Columbus, your vehicle goes on a flatbed, the gentlest way to carry a car twenty miles or more, and the price is agreed before anyone sets out. London also marks the northeast end of the Xenia-to-London stretch of the Ohio to Erie Trail, so the West High Street trailhead sees cyclists coming back to cars at all hours of a summer day.",
   ],
   roads: [
     { name: "US-42 between London and I-70", note: "The main way in from the interstate. Long, straight and fast, so breakdowns here are usually on narrow shoulders with farm traffic passing close." },
@@ -34,13 +34,31 @@ export default {
     { kind: "landmark", name: "Madison County Historical Society Museum", detail: "The museum keeps settler Jonathan Alder's log cabin on its grounds and opens only a few afternoons a week, so its lot is usually quiet and easy for a flatbed to use." },
   ],
   faqs: [
-    { q: "How long does it take a truck to reach London?", a: "As the crow flies London sits some twenty miles from our yard; on the pavement it is farther via I-70 and US-42. Our trucks are spread around Columbus, and traffic, weather and what they are already doing all affect timing, so our dispatcher checks the board and quotes a live arrival window on the phone instead of a stock number." },
     { q: "Can you load a car parked around the courthouse square?", a: "Yes, though the blocks around the courthouse are busy, and several state routes run through them. The driver may use a side street or nearby lot to load, and if your car is wedged into a tight parallel spot, wheel dollies and a winch get it out. Mention any reserved or time-limited space when you call." },
     { q: "Do you tow from Madison Health's parking lot?", a: "Yes. If the car is dead in the hospital lot, or you were brought in and need the car taken home, we can handle it. Arrange the pickup with the dispatcher, and if you cannot be there, we will explain what we need to confirm ownership and where to leave the keys." },
     { q: "My car broke down visiting someone at the correctional institution on SR-56. Can you help?", a: "Yes. We pick up cars from the visitor parking at both state prisons west of London. Our driver stays in public areas only, so tell us which lot you are in and wait by your car if you can. If it is a battery or tire problem, we fix it on the spot through [roadside assistance](/towing/roadside-assistance)." },
-    { q: "Do you work during the Madison County Fair?", a: "We do. Fair week brings crowds and grass parking to the fairgrounds on Elm Street, and keys locked in cars, drained batteries and tires sunk in wet grass keep us busy. Tell the dispatcher which gate or parking area you are near. If the car is stuck in mud, our driver can winch it to firm ground first." },
-    { q: "How much does a tow from London cost?", a: "London is one of our farther service areas, so the travel part of the price is larger than for a nearby suburb. The total also depends on where the car goes and on any extra work. Before anyone drives out, you are told the total for the job, and the [rates page](/rates) lays out what feeds into it." },
-    { q: "Can you tow my car from London back to a dealer in Columbus?", a: "Yes. Many London drivers want their car taken to a Columbus dealership or a specialist shop, and carrying it on a deck makes sense over twenty-plus miles. We can also deliver it to a garage in town or to [West Jefferson](/areas/west-jefferson-oh) on the way. For longer trips beyond Columbus, see [long-distance towing](/towing/long-distance-towing)." },
+    { q: "Do you work during the Madison County Fair?", a: "We do. The fair takes over the Elm Street fairgrounds for a week in July, and keys locked in cars, drained batteries and tires sunk in wet grass keep us busy. Tell the dispatcher which gate or parking area you are near. If the car is stuck in mud, our driver can winch it to firm ground first." },
     { q: "What about cars stuck in ditches on Madison County back roads?", a: "That is a regular winter job for us out here. Rural roads around London have deep ditches and soft shoulders, and a car can slide off easily on ice. Our driver winches the car back onto the road and checks whether it can be driven. If it is beyond what our light-duty trucks can safely recover, we say so and help find heavier equipment." },
+    { q: "Who do I call to find a car the police towed in or around London?", a: "Inside the city it will be the London police; on county and township roads, the Madison County Sheriff's Office; and on I-70 or I-71, usually the State Highway Patrol. Call the non-emergency line of whichever agency fits with your plate number, and they will tell you which company holds the car. Bring ID, registration and proof of insurance to get it released." },
+    { q: "Does a breakdown on I-70 near the US-42 exit cost more than one in town?", a: "One line changes: a pickup on the interstate shoulder carries the $75 highway charge on our published card. Madison County sales tax is 7.25 percent, a little under Franklin County's 8, because tax follows the pickup county. The hook-up, mileage and any after-hours line are listed on the [rates page](/rates), and you hear the full figure before a truck is assigned." },
+    { q: "Back at the Prairie Grass Trail lot after a ride, the car is dead. What now?", a: "Call us from the lot. The trailhead parking next to the Madison County Senior Center on West High Street is easy for our truck to pull into. Most of these are a battery run down by a light or a long cold sit, which a jump usually fixes; if not, we can carry the car and a bike rack's worth of gear to your shop." },
   ],
+  eyebrow: "Madison County seat, where four routes meet at the courthouse",
+  headings: {
+    roads: "US-42, SR-56 and the courthouse blocks on High and Main",
+    services: "Long-run towing and farm-road recovery around London",
+    local: "Courthouse, fairgrounds, trailheads and the prisons on SR-56",
+    faqs: "Fair week, prison visits and county ditches",
+    near: "Madison County neighbours: West Jefferson and Plain City",
+  },
+  cta: {
+    heading: "Off the road on US-42 or a Madison County back road?",
+    text: "Give us the road name and the nearest crossroad or mile marker, and we will price the run from Columbus before anyone sets out.",
+  },
+  nap: {
+    heading: "Bringing a London car back to Columbus",
+    text: "A car hauled in from Madison County can wait at our Harrisburg Pike yard until your Columbus shop or dealer has a bay ready for it.",
+  },
+  services: ["long-distance-towing", "flatbed-towing", "winch-out", "roadside-assistance", "jump-start", "equipment-hauling", "wheel-lift-towing"],
+  order: ["local", "faqs", "roads", "services"],
 } satisfies CityContent;
