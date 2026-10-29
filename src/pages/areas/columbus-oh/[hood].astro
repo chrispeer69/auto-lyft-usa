@@ -1,14 +1,15 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import Hero from "../../../components/Hero.astro";
-import { PHOTOS } from "../../../data/photos";
 import FaqList from "../../../components/FaqList.astro";
 import CtaBand from "../../../components/CtaBand.astro";
 import Nap from "../../../components/Nap.astro";
 import { HOOD_PAGES, hoodTitle, type Hood } from "../../../data/columbus";
 import { hoodBySlug, hoodPath } from "../../../data/columbus/catalog";
 import { localPlaceNode, LOCAL_LABELS } from "../../../data/cities";
-import { SERVICES, servicePath } from "../../../data/services/catalog";
+import { serviceBySlug, servicePath } from "../../../data/services/catalog";
+import type { SectionKey } from "../../../data/types";
+import { PHOTOS } from "../../../data/photos";
 import { serviceNode } from "../../../lib/schema";
 import { rich } from "../../../lib/text";
 
@@ -34,6 +35,10 @@ const schema = [
 ];
 const kinds = [...new Set(h.local.map((l) => l.kind))];
 const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
+const picked = h.services.map((s) => serviceBySlug(s)).filter((s) => s !== undefined);
+const order: SectionKey[] = h.order ?? ["roads", "local", "faqs", "services"];
+const hero = PHOTOS.city;
+const shade = (i: number) => (i % 2 === 0 ? "band alt" : "band");
 ---
 <Base
   title={hoodTitle(h.name)}
@@ -43,42 +48,50 @@ const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
   schema={schema}
   faqs={h.faqs}
 >
-  <Hero image={PHOTOS.city} eyebrow={`Columbus · ${h.name}`} h1={h.h1} lede={h.lede} facts={[["Neighborhood", h.name], ["City", "Columbus, Franklin County"], ["ZIP codes", h.zips.join(", ")], ["Dispatch", "24-7, price quoted first"]]} />
+  <Hero image={hero} eyebrow={h.eyebrow} h1={h.h1} lede={h.lede} facts={[["Neighborhood", h.name], ["City", "Columbus, Franklin County"], ["ZIP codes", h.zips.join(", ")], ["Main streets", h.roads.slice(0, 2).map((r) => r.name).join(" · ")]]} />
   <section class="band"><div class="wrap prose">{h.intro.map((p) => <p set:html={rich(p)} />)}</div></section>
-  <section class="band alt" aria-labelledby="streets-h">
-    <div class="wrap">
-      <p class="kicker">Street by street</p>
-      <h2 id="streets-h">Where we pick up cars in {h.name}</h2>
-      <ul class="rules cols two grid">{h.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}</ul>
-    </div>
-  </section>
-  {h.local.length > 0 && (
-    <section class="band dark" aria-labelledby="local-h">
-      <div class="wrap">
-        <h2 id="local-h">{h.name} landmarks drivers ask about</h2>
-        <div class="cols two">
-          {kinds.map((k) => (<div><h3>{LOCAL_LABELS[k]}</h3><ul class="rules">{h.local.filter((l) => l.kind === k).map((l) => <li><strong>{l.name}</strong><p set:html={rich(l.detail)} /></li>)}</ul></div>))}
+  {order.map((key, i) => {
+    if (key === "roads") return (
+      <section class={shade(i)} aria-labelledby="streets-h">
+        <div class="wrap">
+          <h2 id="streets-h">{h.headings.roads}</h2>
+          <ul class="rules cols two grid">{h.roads.map((r) => <li><h3>{r.name}</h3><p set:html={rich(r.note)} /></li>)}</ul>
         </div>
-      </div>
-    </section>
-  )}
-  <section class="band"><div class="wrap prose"><FaqList faqs={h.faqs} heading={`${h.name} towing questions`} /></div></section>
-  <CtaBand heading={`Need a truck in ${h.name}?`} place={h.name} />
-  <section class="band alt">
-    <div class="wrap cols two">
-      <div>
-        <h2>Neighboring parts of Columbus</h2>
-        <ul class="linklist one-col">
-          {next.map((n) => <li><a href={hoodPath(n.slug)}>{n.name}</a></li>)}
-          <li><a href="/areas/columbus-oh">All Columbus neighborhoods</a></li>
-          <li><a href="/areas">Suburbs and towns</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>What we do in {h.name}</h2>
-        <ul class="linklist">{SERVICES.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}</ul>
-      </div>
+      </section>
+    );
+    if (key === "local") return h.local.length > 0 && (
+      <section class="band dark" aria-labelledby="local-h">
+        <div class="wrap">
+          <h2 id="local-h">{h.headings.local}</h2>
+          <div class="cols two">
+            {kinds.map((k) => (<div><h3>{LOCAL_LABELS[k]}</h3><ul class="rules">{h.local.filter((l) => l.kind === k).map((l) => <li><strong>{l.name}</strong><p set:html={rich(l.detail)} /></li>)}</ul></div>))}
+          </div>
+        </div>
+      </section>
+    );
+    if (key === "services") return (
+      <section class={shade(i)} aria-labelledby="svc-h">
+        <div class="wrap">
+          <h2 id="svc-h">{h.headings.services}</h2>
+          <ul class="linklist">
+            {picked.map((s) => <li><a href={servicePath(s.slug)}>{s.name}</a></li>)}
+            <li><a href="/towing">All services</a></li>
+          </ul>
+        </div>
+      </section>
+    );
+    return <section class={shade(i)}><div class="wrap prose"><FaqList faqs={h.faqs} heading={h.headings.faqs} /></div></section>;
+  })}
+  <CtaBand heading={h.cta.heading} text={h.cta.text} />
+  <section class="band alt" aria-labelledby="near-h">
+    <div class="wrap">
+      <h2 id="near-h">{h.headings.near}</h2>
+      <ul class="linklist">
+        {next.map((n) => <li><a href={hoodPath(n.slug)}>{n.name}</a></li>)}
+        <li><a href="/areas/columbus-oh">All Columbus neighborhoods</a></li>
+        <li><a href="/areas">Suburbs and towns</a></li>
+      </ul>
     </div>
   </section>
-  <Nap place={h.name} />
+  <Nap place={h.name} heading={h.nap.heading} lead={h.nap.text} />
 </Base>

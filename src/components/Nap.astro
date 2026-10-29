@@ -1,9 +1,9 @@
 ---
 import { COMPANY } from "../data/company";
 import { pick } from "../lib/pick";
-const { place } = Astro.props as { place?: string };
+const { place, heading = "Where the trucks start", lead: leadText } = Astro.props as { place?: string; heading?: string; lead?: string };
 // Name the page's place when we have one, so local pages don't share this sentence.
-const lead = pick(Astro.url.pathname, place
+const lead = leadText ?? pick(Astro.url.pathname, place
   ? [
       `Trucks are positioned around Columbus, so the closest one heads to ${place}; our yard is ${COMPANY.yardArea}. Dispatch runs ${COMPANY.hours}.`,
       `The trucks that cover ${place} work from spots around the metro, our office is ${COMPANY.yardArea}, and the phone is answered ${COMPANY.hours}.`,
@@ -20,7 +20,7 @@ const lead = pick(Astro.url.pathname, place
 <section class="band alt" aria-labelledby="nap-h">
   <div class="wrap cols two">
     <div>
-      <h2 id="nap-h">Where the trucks start</h2>
+      <h2 id="nap-h">{heading}</h2>
       <p>{lead}</p>
     </div>
     <address class="small">

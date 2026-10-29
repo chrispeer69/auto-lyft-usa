@@ -55,7 +55,21 @@ export interface CityContent {
   /** Places around town, each with one sentence written in our own words. */
   local: LocalItem[];
   faqs: Faq[]; // 8–10, about this town
+  /** Hero eyebrow line, written for this page. */
+  eyebrow: string;
+  /** Section headings, written fresh per page so no two pages share them. */
+  headings: { roads: string; services: string; local: string; faqs: string; near: string };
+  /** Call-to-action band, unique per page. */
+  cta: { heading: string; text: string };
+  /** Heading and one-sentence intro for the address block at the foot of the page. */
+  nap: { heading: string; text: string };
+  /** 6–8 service slugs that matter most here; the page also links to /towing. */
+  services: string[];
+  /** Optional order for the middle sections (default: roads, local, services, faqs). */
+  order?: SectionKey[];
 }
+
+export type SectionKey = "roads" | "services" | "local" | "faqs";
 
 export interface Neighborhood {
   slug: string;
