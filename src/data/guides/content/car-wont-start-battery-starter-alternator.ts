@@ -64,7 +64,7 @@ export default {
       ],
       bullets: [
         "Battery suspected: ask for a [jump start](/towing/jump-start). Our rate card lists it at $75 for the call, plus the miles our truck drives to reach you. If the battery is old or will not hold a charge, ask about [battery replacement](/towing/car-battery-replacement) on the spot.",
-        "Starter suspected: a jump will not help. The car needs a tow to a shop, and a flatbed is the gentle way to move it.",
+        "Starter suspected: a jump will not help. It has to ride to a shop, and a flatbed is the gentle way to move it.",
         "Alternator suspected: a jump may get you moving, but do not count on reaching a destination far away. Drive directly to a shop with accessories off, or have the car towed.",
         "Engine cranks but will not fire: rule out fuel first, then plan on a tow to a shop for diagnosis.",
       ],

@@ -77,7 +77,7 @@ export default {
     },
     {
       q: "Does a tow cost more at night?",
-      a: "Yes, but only late at night: our rate card adds $150 for jobs after 10 p.m. and before 6 a.m., plus $75 for any highway call. An early-evening breakdown after the time change is priced like a daytime call. The dispatcher gives you the full price before a truck is sent.",
+      a: "Yes, but only late at night: our rate card adds $150 for jobs after 10 p.m. and before 6 a.m., plus $75 for any highway call. An early-evening breakdown after the time change is priced like a daytime call. Dispatch quotes the complete amount before anyone heads your way.",
     },
   ],
 } satisfies Omit<Guide, "slug">;

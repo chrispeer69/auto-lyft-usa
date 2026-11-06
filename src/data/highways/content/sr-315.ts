@@ -9,7 +9,7 @@ export default {
     "SR-315 towing on the Olentangy freeway, from the I-70 and I-71 junction past Ohio State and Henderson Road to I-270 and Powell. Call (614) 633-8163.",
   h1: "Route 315 Tows: Downtown Junction to Powell",
   lede:
-    "Plenty of drivers call it I-315. It is actually State Route 315, a freeway from the downtown junction up the Olentangy to I-270, then a two-lane road north.",
+    "Plenty of drivers call it I-315. It is actually State Route 315, a freeway from the downtown junction up the Olentangy as far as I-270, and a two-lane highway north of there.",
   intro: [
     "SR-315 towing calls usually start with a correction: there is no I-315. Route 315 is a state route, not an interstate, though its southern half is built like one. It begins at the big I-70 and I-71 junction on the southwest edge of downtown, rises past Franklinton and Grandview, follows the Olentangy River past Ohio State, Riverside Methodist and the Henderson and Bethel shopping areas, and ends as a freeway at I-270. North of the outerbelt it shrinks to a winding two-lane road toward Powell and US-23.",
     "The downtown end is a short drive from our Harrisburg Pike yard, which keeps that busy stretch quick to reach. Dial 911 first when a lane is blocked by your car or somebody is injured. For a freeway problem that is not an emergency, dial #677 from your cell for the Highway Patrol. Then call Auto Lyft USA at (614) 633-8163.",

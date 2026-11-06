@@ -17,9 +17,9 @@ export default {
       ],
     },
     {
-      heading: "Flatbed only, and why we load from the wheels",
+      heading: "Deck or dollies, and why we load from the wheels",
       paragraphs: [
-        "An EV always goes on one of our four light-duty flatbed carriers, so an EV customer never has to argue for the right truck. The car is winched up the tilted deck and secured with straps around the tires rather than chains hooked to the underbody. Wheel straps hold the car by its rubber, which keeps hardware away from the battery enclosure, cooling lines and the thin covers that protect the underside.",
+        "Every EV we move has all four tires off the pavement, and the owner's manual for that model decides how. Most makers list a flatbed first; several, Tesla, Ford and Hyundai among them, also accept a wheel-lift with dollies under the axle left behind, and Tesla caps that method at 55 km (about 35 miles). For anything farther, or when the manual names only a flatbed, the car goes on one of our four carriers. On the deck, the car is winched up the tilted bed and secured with straps around the tires rather than chains hooked to the underbody. Wheel straps hold the car by its rubber, which keeps hardware away from the battery enclosure, cooling lines and the thin covers that protect the underside.",
         "If the car will not roll at all, because the parking brake is locked or the shifter cannot leave Park, the operator can set wheel skates (small rolling dollies) under the stuck wheels before winching. That lets the car move onto the deck without dragging a locked tire across the bed. Our [EV towing page](/towing/ev-towing) explains how we handle the job from call to drop-off, and the same reasoning applies to all-wheel-drive gas cars, covered in our guide on [why AWD cars need a flatbed](/guides/why-awd-cars-need-a-flatbed).",
       ],
     },
@@ -57,14 +57,14 @@ export default {
       paragraphs: [
         "Decide where the car goes before the truck arrives. A dealer or EV-capable shop is the usual choice for a fault, but if the car simply ran out of charge, the cheapest fix may be a short tow home to your own Level 2 charger. Ask the dispatcher to drop the car close to the outlet so the cable reaches; once the car is off the deck it may not move again on its own.",
         "A drained pack should be charged at a normal rate first. Most cars report an error if something is wrong, so watch for warnings in the first few minutes of charging and again after a full cycle. Cold mornings make this worse: a pack that is near empty in January has less usable range than the same reading in July, so plan your next drive with margin.",
-        "A car that was in a crash is different. A damaged high-voltage pack can heat up hours or days later, so collision-damaged EVs are often parked outdoors and apart from other vehicles until someone qualified inspects them. Do not plug a crash-damaged EV in to charge until a shop says it is safe. If the car was in a wreck, our guide on [what to do after a crash in Ohio](/guides/after-a-car-accident-ohio) covers the first hour.",
+        "A car that was in a crash is different. A damaged high-voltage pack can heat up hours or days later, so collision-damaged EVs are often parked outdoors and apart from other vehicles until someone qualified inspects them; our guide on [storing a damaged EV after a crash](/guides/storing-a-damaged-ev-after-a-crash) explains why. Do not plug a crash-damaged EV in to charge until a shop says it is safe. If the car was in a wreck, our guide on [what to do after a crash in Ohio](/guides/after-a-car-accident-ohio) covers the first hour.",
       ],
     },
   ],
   faqs: [
     {
       q: "Is it okay to pull an electric car with one axle still rolling?",
-      a: "Most EV makers advise against it because the drive motor turns whenever the wheels do, and a spinning motor generates current and heat with nothing managing it. Some manuals allow very short moves at walking speed to get a car out of a tight spot, but for any real distance the car should travel on a flatbed deck with nothing touching the road.",
+      a: "Most EV makers advise against it because the drive motor turns whenever the wheels do, and a spinning motor generates current and heat with nothing managing it. Some manuals allow very short moves at walking speed to get a car out of a tight spot. For a real trip, every wheel comes up, either on a deck or on a wheel-lift with dollies where the manual approves, and long runs go on the deck.",
     },
     {
       q: "My EV shows a full battery but nothing works. What happened?",

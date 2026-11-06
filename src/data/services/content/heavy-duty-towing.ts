@@ -42,6 +42,21 @@ export default {
       ],
     },
     {
+      heading: "Heavy truck corridors south and southwest of Columbus",
+      paragraphs: [
+        "Because Auto Lyft USA dispatches from Harrisburg Pike, the routes freight uses to leave Columbus to the south, east and west are the ones our dispatchers know street by street. Heavy units are lifted by a partner heavy-wrecker company, not by us. Our part is to pin down the location the way a big-rig crew needs it, by route, direction, exit and mile marker, and to keep you informed until the unit is parked. On the far ends of these runs, arrival time depends on where the nearest suitable partner crew is, so you hear a current estimate once a partner confirms, not a promise made in advance.",
+      ],
+      bullets: [
+        "I-71 south: the Stringtown Road exit in [Grove City](/areas/grove-city-oh), the SR-665 London-Groveport Road exit in Jackson Township, the US-62/SR-3 exit toward Harrisburg and Orient, and on down to the US-35 exit at Jeffersonville, where the Love's and TA travel centers sit. See our [I-71 page](/highways/i-71).",
+        "I-70 west: the Wilson Road exit beside the Pilot on Interchange Road, Hilliard-Rome Road, the SR-142 and SR-29 exits around [West Jefferson](/areas/west-jefferson-oh), where a Love's opened in 2025, and the US-42 exit at [London](/areas/london-oh) with its TA stop.",
+        "I-70 east: Brice Road and SR-256 near Reynoldsburg, the SR-310 exit at [Etna](/areas/etna-oh) with its Love's, and the SR-37 exit at Hebron with its TA. The [I-70 page](/highways/i-70) covers both directions.",
+        "US-23 south: from the I-270 interchange through [Lockbourne](/areas/lockbourne-oh) country and South Bloomfield to the Pilot on US-23 at the Pittsburgh Road interchange outside Circleville. See [US-23](/highways/us-23).",
+        "I-270 south: the I-71, US-23 (High Street) and Alum Creek Drive interchanges, including the Love's on Alum Creek Drive in [Obetz](/areas/obetz-oh), plus the US-33 interchange on the southeast side. See [I-270](/highways/i-270).",
+        "US-33 southeast: the freeway past [Canal Winchester](/areas/canal-winchester-oh) and Carroll to the US-22 exit at [Lancaster](/areas/lancaster-oh), a stretch with no big truck stop, so tell us the nearest exit or crossroad.",
+        "Rickenbacker and Groveport: the cargo side of Rickenbacker International Airport, the Norfolk Southern intermodal terminal inside the Rickenbacker Global Logistics Park off Alum Creek Drive and Rickenbacker Parkway, and the warehouse roads around [Groveport](/areas/groveport-oh).",
+      ],
+    },
+    {
       heading: "What a coordinator saves you",
       paragraphs: [
         "When a truck goes down far from its home terminal, a dispatcher in another state often has to call around blind. We know the roads here, from the [Grove City](/areas/grove-city-oh) truck stops to the outerbelt interchanges, and we know who to call. We describe the vehicle the way a heavy-wrecker crew needs to hear it, confirm they have the right gear, and give you one clear answer on price and timing. Owner-operators and smaller carriers find that especially useful when they have no local contacts in Ohio.",
@@ -50,7 +65,7 @@ export default {
     },
   ],
   faqs: [
-    { q: "Does Auto Lyft USA do heavy duty towing with its own trucks?", a: "No, and we want that clear. Everything we own is a light-duty flatbed, four of them. For semis, coaches and other heavy vehicles, we handle the call, work out what the vehicle needs and book a heavy-wrecker partner to do the lift. We coordinate it for you from the first call to the drop-off." },
+    { q: "Does Auto Lyft USA do heavy duty towing with its own trucks?", a: "No, and we want that clear. Everything we own is light duty: four flatbed carriers plus wheel-lift trucks. For semis, coaches and other heavy vehicles, we handle the call, work out what the vehicle needs and book a heavy-wrecker partner to do the lift. We coordinate it for you from the first call to the drop-off." },
     { q: "Why call you instead of a heavy-wrecker company directly?", a: "You certainly can. Calling us makes sense when you do not know who operates in this area, when you want one person tracking the job, or when your company already uses us for its lighter vehicles. We handle the questions, the matching and the follow-up so you can focus on the driver and the load." },
     { q: "What information do you need about the truck?", a: "The tractor make and model, trailer type and length, whether it is loaded and roughly how heavy, axle count, the exact location such as a mile marker or exit, and what failed. If the truck has a known issue like a broken drive shaft or locked brakes, mention that too, because it changes how the crew hooks up." },
     { q: "How much does a heavy tow cost?", a: "Heavy jobs vary widely with the vehicle, the distance, whether the load stays on and whether recovery work is needed. The dispatcher gets the price from the partner and gives you the full quoted amount before any truck is sent. You can read how towing charges are structured on our [rates page](/rates)." },
@@ -63,7 +78,7 @@ export default {
     { q: "Can a pickup with a fifth-wheel camper be handled?", a: "It depends on the combination. A disconnected pickup is usually light-duty work we can do ourselves, while a large fifth-wheel or a truck still hitched to one may need a bigger unit. Describe the setup to the dispatcher and we will tell you which way it goes." },
     { q: "My truck just needs a jump or air. Is that a tow?", a: "Not necessarily. Some heavy trucks need a commercial jump or service call rather than a tow. Describe the problem and we will look for the simplest fix, whether through a partner road service or a wrecker if the truck truly cannot move." },
     { q: "Can my company set up an account for heavy and light units?", a: "Yes. A fleet account lets every vehicle you run, from cars and vans to tractors, go through one dispatcher with consistent billing. Light units may ride on our own flatbeds while heavy units are handled through partners, all under the same arrangement. Use the [request form](/request) or call the office to get started." },
-    { q: "Which parts of Central Ohio do you coordinate heavy tows for?", a: "We take calls for Columbus and the surrounding counties, including the I-70 corridor out toward West Jefferson and the I-71 stretch south of the city. The [service areas page](/areas) lists the towns we cover. For a truck farther out, call anyway and the dispatcher will tell you whether a partner can reach it." },
+    { q: "Which parts of Central Ohio do you coordinate heavy tows for?", a: "We take calls for Columbus and the surrounding counties, with the south side in focus: I-71 toward Jeffersonville, US-23 to Circleville, US-33 to Lancaster, I-70 east and west, and the Rickenbacker freight district. The [service areas page](/areas) lists the towns we cover. For a truck farther out, call anyway and the dispatcher will tell you whether a partner can reach it." },
   ],
   related: ["medium-duty-towing", "fleet-towing", "accident-towing", "long-distance-towing"],
 } satisfies Omit<Service, "slug" | "name" | "group" | "blurb">;

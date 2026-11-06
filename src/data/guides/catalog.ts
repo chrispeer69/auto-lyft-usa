@@ -1,6 +1,7 @@
 /* Driver guides (the blog). Copy for each lives in ./content/<slug>.ts (type Guide). */
 export interface GuideEntry { slug: string; topic: string }
 export const GUIDES: GuideEntry[] = [
+  { slug: "storing-a-damaged-ev-after-a-crash", topic: "After an EV crash: stranded energy and reignition, where the 50-foot storage distance comes from (NHTSA, Tesla, IAFF/USFA), NTSB finding that yards often cannot provide it, barriers vs. gas build-up, owner checklist" },
   { slug: "thanksgiving-week-travel-columbus", topic: "Thanksgiving week out of Columbus: a 20-minute pre-trip car check, I-70/I-71 holiday traffic, breaking down far from home, getting the car back on a flatbed" },
   { slug: "road-salt-and-your-car-ohio", topic: "Columbus road-salt season: how wet salt rusts brake lines, exhaust and the underbody, a winter wash routine, brake-line warning signs, why a soft pedal means tow" },
   { slug: "coolant-antifreeze-check-before-winter", topic: "Before Columbus hard freezes: checking coolant level and freeze protection, topping off with the right type, leak and heater-core signs, when to stop and tow" },
@@ -14,7 +15,7 @@ export const GUIDES: GuideEntry[] = [
   { slug: "car-wont-start-battery-starter-alternator", topic: "Car won't start: telling a dead battery from a bad starter or alternator by the sounds and signs" },
   { slug: "winter-emergency-kit-central-ohio", topic: "What to keep in your car for a Central Ohio winter, and why each item matters when you're stuck" },
   { slug: "car-battery-cold-weather", topic: "Why batteries die on the first cold mornings, how to test one, when to replace it" },
-  { slug: "towing-an-electric-car", topic: "What EV owners should know before a tow: transport mode, flatbed only, dead 12V battery, charging after a tow" },
+  { slug: "towing-an-electric-car", topic: "What EV owners should know before a tow: transport mode, all four wheels up (deck or wheel-lift with dollies per the manual), dead 12V battery, charging after a tow" },
   { slug: "why-awd-cars-need-a-flatbed", topic: "Why all-wheel-drive cars should ride on a flatbed and what damage a two-wheel tow can do" },
   { slug: "after-a-car-accident-ohio", topic: "After a crash in Ohio: the first hour, photos, police reports, choosing where the car is towed, storage fees" },
   { slug: "car-overheating-what-to-do", topic: "Summer overheating: warning signs, what to do on the shoulder, why not to open a hot radiator" },

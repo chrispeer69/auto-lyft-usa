@@ -43,7 +43,7 @@ const faqs: Faq[] = [
   { q: "Is a jump start cheaper than a tow?", a: `Yes. A jump start is a ${usd(RATES.roadsideFlat)} roadside call plus the en-route miles; the hook-up and loaded-mile lines never appear. If the car still won't run after the jump, the driver can load it then, and you pay the tow charges instead.` },
   { q: "Do electric vehicles cost more to tow?", a: `EVs have their own card: a ${usd(EV_RATES.hookup)} hook-up and ${usd(EV_RATES.loadedPerMile)} per loaded mile, but a lower ${usd(EV_RATES.enroutePerMile)} per en-route mile. Loading an EV in transport mode takes more time and care. Price one on the [EV estimate page](/estimate/ev).` },
   { q: "Do you charge sales tax on towing in Ohio?", a: "Yes. Ohio taxes towing and roadside services, and the rate depends on the county where we pick the car up, from 7.25% to 8.25% in the counties we serve. The table on this page lists each one." },
-  { q: "Is there a discount for veterans?", a: `Yes: ${RATES.veteranPercent}% off for veterans who show a military or VA ID to the driver. Mention it when you call so the dispatcher includes it in your quote.` },
+  { q: "Is there a discount for veterans?", a: `Yes: ${RATES.veteranPercent}% off for veterans; show the driver a military or VA card. Mention it when you call so the dispatcher includes it in your quote.` },
   { q: "What payment do you take?", a: `Cash and cards. Paying online by card adds a ${RATES.cardFeePercent}% card fee, which is shown before you pay. Businesses with an approved [fleet account](/towing/fleet-towing) are billed through RoadsideMC.com on net-15 terms.` },
   { q: "Is the rate card the only price you'll give me?", a: "It is our standard retail pricing and the starting point for every quote. Because each situation is different, the best move is to call, describe yours, and let the dispatcher work out a fair, competitive price for that exact job. Stuck on a freeway? Start at [highway breakdowns](/highways)." },
   { q: "Will the final bill ever be higher than the quote?", a: "Only if the job changes, for example the car turns out to be stuck in mud and needs a winch, or you ask to go somewhere farther. When that happens, the driver tells you the new price before doing the extra work, not afterward." },
@@ -98,7 +98,7 @@ const schema = [
     <div class="wrap cols two">
       <div>
         <h2>Electric vehicle card</h2>
-        <p>EVs go on the flatbed in transport mode, which takes longer to load, so they are billed on their own card. Night, weekend and large-vehicle charges are the same as above.</p>
+        <p>EVs are loaded in transport mode with every wheel off the road, which takes longer, so they are billed on their own card. Night, weekend and large-vehicle charges are the same as above.</p>
         <table class="table"><tbody>{evCard.map(([a, b]) => <tr><td>{a}</td><td>{b}</td></tr>)}</tbody></table>
         <p class="mt-12"><a href="/estimate/ev">Estimate an EV tow →</a></p>
       </div>

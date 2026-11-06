@@ -123,7 +123,7 @@ export default {
     },
     {
       q: "Do you tow electric cars from I-70?",
-      a: "Yes. EVs ride on the flatbed in transport mode with all four wheels off the ground. If the small 12-volt battery is dead, the driver boosts it so the car can be put in transport mode. See [EV towing](/towing/ev-towing).",
+      a: "Yes. An EV is set in transport mode and carried with no tire touching I-70, either on our deck or on dollies behind a wheel-lift, as its maker's manual directs. If the small 12-volt battery is dead, the driver boosts it so the car can be put in transport mode. See [EV towing](/towing/ev-towing).",
     },
     {
       q: "Are you the city's or the state's tow company on I-70?",
