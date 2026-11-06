@@ -16,7 +16,7 @@ The two companies share a city, a yard address and a rate card, so Google will c
 - **No hero image** (guides on this site have none). Do not add one.
 
 ## Step 0 — Should this run write anything?
-1. `TZ=America/New_York date +%Y-%m-%d`. The series has no end date; it runs until the owner disables it at https://claude.ai/code/routines. If any guide in `src/data/guides/content/*.ts` on `origin/main` has a `date` within the last 2 days (a post was added by hand), write nothing, send no email, and stop: the twice-a-week pace is already met.
+1. `TZ=America/New_York date +%Y-%m-%d`. The series has no end date; it runs until the owner disables it at https://claude.ai/code/routines. If any guide in `src/data/guides/content/*.ts` on `origin/main` has a `date` within the last 2 days (a post was added by hand; ignore guides whose catalog topic starts with `[EV weekly]`, which come from `routines/ev-weekly.md`), write nothing, send no email, and stop: the twice-a-week pace is already met.
 2. Failure guard: `git fetch origin '+refs/heads/guide/*:refs/remotes/origin/guide/*'`, then `git branch -r --no-merged origin/main --list 'origin/guide/*'`. If 3 or more, write nothing; email a short note listing them ("3 guides failed their checks and are waiting for a fix") and stop.
 3. Network check: `curl -sS -m 15 -o /dev/null -w '%{http_code}' https://www.weather.gov/` and try one WebFetch of an official page. Note whether opening web pages works. This decides Step 2.
 
@@ -24,7 +24,7 @@ The two companies share a city, a yard address and a rate card, so Google will c
 Every post must be timely for Columbus in the week it is published. Start from the date and the weather:
 - If pages can be opened, read the NWS Wilmington (ILN) forecast for Columbus (https://forecast.weather.gov/MapClick.php?lat=39.96&lon=-83.00) and the Columbus climate normals for this month (https://www.weather.gov/iln/). Use real numbers from those pages (normal highs/lows, the coming cold snap, first freeze, first snow, heat wave, heavy rain) as the hook.
 - Pick the seasonal topic below that fits the coming week best. If none fits, write a new one in the same spirit (Columbus weather + a driving or car problem it causes + what to do + when to call us). The topic list gets used up; inventing seasonal topics is expected.
-- Never repeat a subject already in `src/data/guides/catalog.ts` on `origin/main` or in an unmerged `origin/guide/*` branch, and never one the sister blog covered (check its slugs).
+- Leave EV topics to `routines/ev-weekly.md`. Never repeat a subject already in `src/data/guides/catalog.ts` on `origin/main` or in an unmerged `origin/guide/*` branch, and never one the sister blog covered (check its slugs).
 - The general topics further down are fillers: use one only if no seasonal angle is left, and even then open with how this week's Columbus weather makes it more likely.
 - If pages cannot be opened (Step 0.3), take a seasonal topic that needs no numbers and write it with no temperatures, dates or statistics, or take the first [general] topic.
 
@@ -86,7 +86,7 @@ Create `src/data/guides/content/<slug>.ts` exactly like the existing files (`exp
 - `metaTitle` ≤ 44 characters and unique; `title` (the H1) worded differently from `metaTitle`; `description` 120–155 characters ending with "(614) 633-8163." where it fits; `date` today as YYYY-MM-DD; `readMinutes` realistic (about 200 words a minute).
 - 3–4 `faqs` (sister blog uses 3–5; keep ours short: answers 1–3 sentences).
 - Internal links as `[label](/path)`, only to pages that exist (see WRITER_RULES): the main service page twice (once in the first section), 1–3 other `/towing/*` pages, `/rates` or `/estimate` when cost comes up, 1–2 area pages (`/areas/<slug>-oh` or `/areas/columbus-oh/<hood>`), and 1 existing guide.
-- Business facts and prices: only what `CLAUDE.md` / `docs/WRITER_RULES.md` allow. Prices only from `src/data/rates.ts`. Timing: "the dispatcher gives a live estimate", never minutes. Medium/heavy jobs go to partner companies. Lockouts: we open the car; we do not cut or program keys. EVs ride on a flatbed.
+- Business facts and prices: only what `CLAUDE.md` / `docs/WRITER_RULES.md` allow. Prices only from `src/data/rates.ts`. Timing: "the dispatcher gives a live estimate", never minutes. Medium/heavy jobs go to partner companies. Lockouts: we open the car; we do not cut or program keys. EVs travel with all four wheels off the ground, on a flatbed or a wheel-lift with dollies as the owner's manual directs; never write "flatbed only" as our general practice, and longer EV runs go on a flatbed.
 - Safety: injury, a child or pet locked in a car, a car stopped in a live lane, smoke or fire → call 911 first.
 - End with a short closing section telling the reader to call (614) 633-8163 or use [request a tow](/request).
 
