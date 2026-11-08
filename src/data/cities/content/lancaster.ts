@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing in Lancaster, OH and along US-33 through Fairfield County: flatbed tows to local shops or back to Columbus, priced up front. (614) 633-8163.",
+    "Towing in Lancaster, OH and along US-33 through Fairfield County: flatbed tows to local shops or back to Columbus, priced up front. (614) 714-5785.",
   h1: "Towing Lancaster, Ohio: Long Runs on US-33 and Moves Across Town",
   lede:
     "Lancaster marks the far end of our regular southeast coverage, and a lot of what we do there involves carrying a car the full distance back toward Columbus.",

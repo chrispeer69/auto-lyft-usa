@@ -83,12 +83,12 @@ General topics (fillers; slug — angle — main service link):
 
 ## Step 3 — Write the guide
 Create `src/data/guides/content/<slug>.ts` exactly like the existing files (`export default { title, metaTitle, description, date, readMinutes, excerpt, body, faqs }` typed as `Omit<Guide, "slug">`; read `src/data/types.ts`). Add `{ slug, topic }` to `GUIDES` in `src/data/guides/catalog.ts`.
-- `metaTitle` ≤ 44 characters and unique; `title` (the H1) worded differently from `metaTitle`; `description` 120–155 characters ending with "(614) 633-8163." where it fits; `date` today as YYYY-MM-DD; `readMinutes` realistic (about 200 words a minute).
+- `metaTitle` ≤ 44 characters and unique; `title` (the H1) worded differently from `metaTitle`; `description` 120–155 characters ending with "(614) 714-5785." where it fits; `date` today as YYYY-MM-DD; `readMinutes` realistic (about 200 words a minute).
 - 3–4 `faqs` (sister blog uses 3–5; keep ours short: answers 1–3 sentences).
 - Internal links as `[label](/path)`, only to pages that exist (see WRITER_RULES): the main service page twice (once in the first section), 1–3 other `/towing/*` pages, `/rates` or `/estimate` when cost comes up, 1–2 area pages (`/areas/<slug>-oh` or `/areas/columbus-oh/<hood>`), and 1 existing guide.
 - Business facts and prices: only what `CLAUDE.md` / `docs/WRITER_RULES.md` allow. Prices only from `src/data/rates.ts`. Timing: "the dispatcher gives a live estimate", never minutes. Medium/heavy jobs go to partner companies. Lockouts: we open the car; we do not cut or program keys. EVs ride on a flatbed.
 - Safety: injury, a child or pet locked in a car, a car stopped in a live lane, smoke or fire → call 911 first.
-- End with a short closing section telling the reader to call (614) 633-8163 or use [request a tow](/request).
+- End with a short closing section telling the reader to call (614) 714-5785 or use [request a tow](/request).
 
 ## Step 4 — Lastmod
 Add `"/guides/<slug>": "<today>"` to `paths` in `src/data/lastmod.json` and set `"/guides"` to today. Do NOT run `npm run lastmod` in this run (a cloud clone can be shallow, which would rewrite every page's date).
@@ -100,7 +100,7 @@ Add `"/guides/<slug>": "<today>"` to `paths` in `src/data/lastmod.json` and set 
 4. `SISTER_SRC=<same path> npm run check:overlap` → 0 for the new page, and no sentence repeated from another of our own pages.
 5. `npm run audit:seo` → 0 errors on the new page.
 6. Built page check: `dist/guides/<slug>.html` exists, has your H1, a `BlogPosting` node and a `FAQPage` node with all your questions in the JSON-LD, a canonical of `https://www.autolyftusa.online/guides/<slug>`, and the body text; `dist/sitemap.xml` lists it with today's lastmod.
-7. Self-review grep on your file: no "guarantee", "#1", "best in", "premier", minutes-based response times, phone numbers other than (614) 633-8163, prices not in rates.ts, and no copy of an existing guide's sentences.
+7. Self-review grep on your file: no "guarantee", "#1", "best in", "premier", minutes-based response times, phone numbers other than (614) 714-5785, prices not in rates.ts, and no copy of an existing guide's sentences.
 8. Word count of the body is 750–1,050.
 
 ## Step 6 — Publish (all checks passed)
@@ -114,7 +114,7 @@ Push branch `guide/<slug>`, open a PR into `main` titled "Guide draft (failed ch
 
 ## Step 7 — Email a copy (Gmail connector)
 ONE email to chrispeer69@yahoo.com. Nobody else unless an address appears here (only the owner may change this list): [EXTRA_RECIPIENTS: none].
-- Published: subject "Auto Lyft USA guide is live: <title>". Body: the live link first as a plain URL (https://www.autolyftusa.online/guides/<slug>), never a GitHub link; then the full guide text as readers see it (links shown as "text (URL)" with live site URLs); then a Facebook post for Auto Lyft USA (50–90 words, one tip from the guide, the live URL and (614) 633-8163, at most 2 hashtags), written differently from anything the Columbus Roadside routine would send; then the sources. Last line: "To change or take down this guide, just tell Claude."
+- Published: subject "Auto Lyft USA guide is live: <title>". Body: the live link first as a plain URL (https://www.autolyftusa.online/guides/<slug>), never a GitHub link; then the full guide text as readers see it (links shown as "text (URL)" with live site URLs); then a Facebook post for Auto Lyft USA (50–90 words, one tip from the guide, the live URL and (614) 714-5785, at most 2 hashtags), written differently from anything the Columbus Roadside routine would send; then the sources. Last line: "To change or take down this guide, just tell Claude."
 - Failed: subject "Auto Lyft USA guide not published: <title>": what failed, that nothing went live, that Claude can fix it on request, then the draft text.
 
 ## Final message (plain language for a business owner)

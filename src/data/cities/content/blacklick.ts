@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Blacklick, OH tows and ditch pulls on Clark State Road, Havens Corners and Reynoldsburg-New Albany Road, by flatbed any hour. Call (614) 633-8163.",
+    "Blacklick, OH tows and ditch pulls on Clark State Road, Havens Corners and Reynoldsburg-New Albany Road, by flatbed any hour. Call (614) 714-5785.",
   h1: "Need a Tow in Blacklick? Flatbeds for Jefferson Township",
   lede:
     "Blacklick mixes newer subdivisions with the winding two-lane roads of Jefferson Township, so our calls here run from driveway jump starts to cars pulled out of roadside ditches.",
   intro: [
     "Blacklick is an unincorporated community in the southern part of Jefferson Township, and the 43004 post office was moved out of the old village to a site a little south, along Reynoldsburg-New Albany Road. In 2003 ODOT named 15 miles of township roads an Ohio Scenic Byway, and those wooded two-lanes, Havens Road and Clark State Road among them, shape most of the work we do out here. On the west side, Rocky Fork Creek has carved a gorge you can look down into from the Clark State Road bridge.",
     "Those byway roads are lovely in daylight and unforgiving after dark. Shoulders are soft, ditches run deep along the curves, and deer cross from the creek corridors at dusk, so a slide-off on a wet or icy night usually means winching before the car can ride anywhere. Upkeep is a patchwork, too: the township crews handle most roads, the Franklin County Engineer keeps Babbitt and Waggoner, and Gahanna shares stretches of Headley Road, which is why a house number or crossroad beats a road name alone when you call.",
-    "Down toward Broad Street the township looks like the rest of the east side, with apartment complexes, subdivisions and schools where a dead battery or a locked door is the usual problem. Most cars still leave on a flatbed, and a wheel-lift tow handles the cramped spots. If yours is nose-down in a ditch, our [winch-out service](/towing/winch-out) gets it back on the pavement first; for anything else, call (614) 633-8163 and say where the car should end up.",
+    "Down toward Broad Street the township looks like the rest of the east side, with apartment complexes, subdivisions and schools where a dead battery or a locked door is the usual problem. Most cars still leave on a flatbed, and a wheel-lift tow handles the cramped spots. If yours is nose-down in a ditch, our [winch-out service](/towing/winch-out) gets it back on the pavement first; for anything else, call (614) 714-5785 and say where the car should end up.",
   ],
   roads: [
     { name: "Reynoldsburg-New Albany Road", note: "Blacklick's north-south artery and the street the 43004 post office moved to; most addresses we are sent to here are a short turn off it." },

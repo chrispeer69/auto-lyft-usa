@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Westgate towing, lockouts and jump starts between West Broad, Sullivant and Wilson Road, near our Harrisburg Pike yard. (614) 633-8163.",
+    "Westgate towing, lockouts and jump starts between West Broad, Sullivant and Wilson Road, near our Harrisburg Pike yard. (614) 714-5785.",
   h1: "Westgate Car Towing, a Short Run From Our Gate",
   lede:
     "Curving 1920s streets around a lake park on the west side, framed by West Broad, Sullivant and Wilson Road.",
   intro: [
     "Westgate's first six houses went up on Binns Boulevard in 1923, on ground that had been part of Camp Chase, the Civil War camp that reached from about today's Westgate Avenue east to Hague Avenue. The camp's Confederate cemetery, with a stone arch from 1902, still faces Sullivant Avenue on the neighborhood's south side. West Broad Street, roughly four miles west of Downtown, forms the north edge and Wilson Road the west, and the curving streets in between wrap around Westgate Park and Harder Lake.",
     "The houses are mostly modest brick and frame homes with single-lane driveways leading back to garages set at the rear of the lot. That layout decides a lot about how a tow goes: the carrier often stays at the curb, the driver winches the car down the drive, or a second car has to be moved out of the way first. Broad and Sullivant are a different job, with shoppers, commuters and church traffic, and now and then a car that dies at a bus stop. COTA's planned LinkUS line, with dedicated bus lanes on West Broad, will change that curb in the years ahead.",
-    "Our yard at 1620 Harrisburg Pike is a short drive south, past the Hilltop, which keeps the en-route part of a Westgate bill small. A flatbed is the default for an all-wheel-drive crossover or a family van, and a wheel-lift truck handles tight driveway jobs when the car allows it. Reach us at [(614) 633-8163](/contact) any hour, or send the details through the [request page](/request).",
+    "Our yard at 1620 Harrisburg Pike is a short drive south, past the Hilltop, which keeps the en-route part of a Westgate bill small. A flatbed is the default for an all-wheel-drive crossover or a family van, and a wheel-lift truck handles tight driveway jobs when the car allows it. Reach us at [(614) 714-5785](/contact) any hour, or send the details through the [request page](/request).",
   ],
   roads: [
     { name: "West Broad Street (north edge)", note: "The busy side of Westgate, with the Saturday farmers market on the West Gate Lodge lawn in season and the coming LinkUS bus lanes along the curb." },

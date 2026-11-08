@@ -6,20 +6,20 @@ export default {
   keyword: "I-71 towing",
   title: "I-71 Towing in Columbus and Grove City",
   description:
-    "I-71 towing from the Madison County line through Grove City, downtown and up to Polaris. Tire swaps, jumps, fuel and flatbeds 24-7. Call (614) 633-8163.",
+    "I-71 towing from the Madison County line through Grove City, downtown and up to Polaris. Tire swaps, jumps, fuel and flatbeds 24-7. Call (614) 714-5785.",
   h1: "Broke Down on I-71? Help From Grove City to Polaris",
   lede:
     "The south end of I-71, from the Harrisburg and Orient exits up through Stringtown Road, is the closest freeway to our yard. We cover the rest of the road too.",
   intro: [
     "I-71 towing is the call we get most from the south side. The interstate runs up from Madison County past Harrisburg and Grove City, crosses I-270, ducks through the downtown overlap with I-70, then heads north past Linden, Clintonville and the north outerbelt to Polaris and Delaware County. Our yard on Harrisburg Pike sits a short hop from the south-end exits, and our trucks are parked around the metro, so the nearest one takes the job wherever you are on the road.",
-    "Before anything else: if someone is injured, the car is sitting in a lane, or you do not feel safe where you stopped, dial 911. Troopers also take #677 from any cell phone when the problem is not an emergency. When you are out of danger, call Auto Lyft USA at (614) 633-8163. The dispatcher prices the job before a truck is assigned and gives you a live arrival estimate.",
+    "Before anything else: if anyone is hurt, the car is stopped in a live lane, or you do not feel safe where you stopped, dial 911. Troopers also take #677 from any cell phone when the problem is not an emergency. When you are out of danger, call Auto Lyft USA at (614) 714-5785. The dispatcher prices the job before a truck is assigned and gives you a live arrival estimate.",
   ],
   firstMoves: [
     "Steer for the right shoulder, or the widest flat spot you can reach, and switch on the hazard flashers.",
     "If you stopped in a lane, in the downtown overlap or on a ramp with no shoulder, call 911 from inside the car.",
     "Keep everyone buckled in. A parked car is struck from behind more often than drivers expect, and the seat belt is your best protection.",
     "Not an emergency but you still want police aware? From a cell phone, dial #677 for the Highway Patrol.",
-    "Call us at (614) 633-8163 with your direction and the last exit sign you passed.",
+    "Call us at (614) 714-5785 with your direction and the last exit sign you passed.",
   ],
   stretches: [
     {
@@ -91,7 +91,7 @@ export default {
     "Main line, ramp, or the shoulder of a ramp; and whether any wheel is over the white line",
     "What the car did: a bang and a pull (tire), a slow fade (fuel or alternator), steam (overheating), or nothing at all",
     "Whether you have a usable spare and the wheel-lock key",
-    "Make and model, and whether it is electric or all-wheel drive",
+    "Make, model, and whether it runs on a battery pack or drives all four wheels",
     "The shop or address for the car if it has to ride, and whether anyone is there to take it",
   ],
   pricing: [
@@ -101,7 +101,7 @@ export default {
   faqs: [
     {
       q: "Who handles I-71 towing near Grove City?",
-      a: "We do, at any hour. Auto Lyft USA is based on Harrisburg Pike, which is the road exit 94 lands on, so the stretch from Orient and Harrisburg up past Stringtown Road is home ground for our trucks. Call (614) 633-8163 with your direction and the last exit. If you are in a lane or hurt, call 911 first.",
+      a: "We do, at any hour. Auto Lyft USA is based on Harrisburg Pike, which is the road exit 94 lands on, so the stretch from Orient and Harrisburg up past Stringtown Road is home ground for our trucks. Call (614) 714-5785 with your direction and the last exit. If you are in a lane or hurt, call 911 first.",
     },
     {
       q: "I have a flat on I-71 and the shoulder is narrow. Should I change it myself?",

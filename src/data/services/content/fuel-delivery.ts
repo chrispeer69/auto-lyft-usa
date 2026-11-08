@@ -4,14 +4,14 @@ export default {
   keyword: "fuel delivery",
   title: "Fuel Delivery in Columbus, OH",
   description:
-    "Ran dry on the outerbelt? Columbus fuel delivery from Auto Lyft USA brings a few gallons of gas or diesel to get you to a pump. Call (614) 633-8163.",
+    "Ran dry on the outerbelt? Columbus fuel delivery from Auto Lyft USA brings a few gallons of gas or diesel to get you to a pump. Call (614) 714-5785.",
   h1: "Emergency Fuel Delivery Anywhere Around Columbus",
   lede:
     "We pour in a few gallons of the right fuel, gasoline or diesel, so the engine restarts and you can drive yourself to the closest station.",
   intro: [
     "Running out of gas is one of the easier roadside problems to fix, as long as someone shows up with the right can. Our fuel delivery service in Columbus does exactly that. A driver arrives with sealed containers of regular unleaded or diesel, pours a few gallons into your tank, and stays until the engine catches. From there you drive to a station and fill up at pump prices. Dispatch takes calls at every hour and sends the nearest available truck, since ours are positioned around the city rather than parked at one yard.",
     "This is a get-you-moving service, not a fill-up. We carry enough fuel to cover the distance to the nearest pump with a margin to spare, and the dispatcher will ask how far you are from the closest open station. If you run a diesel pickup, say so on the phone, because putting gasoline in a diesel engine, or the other way around, is an expensive mistake we take care to avoid.",
-    "One limit is worth knowing before you call: we don't carry mobile charging equipment. If an electric car's battery hits zero, the answer is a flatbed ride to a working charger, and our [EV towing](/towing/ev-towing) page explains how that's done. For gas and diesel vehicles, call (614) 633-8163 with your location and the type of fuel and you'll hear the full price before a truck is assigned.",
+    "One limit is worth knowing before you call: we don't carry mobile charging equipment. If an electric car's battery hits zero, the answer is a flatbed ride to a working charger, and our [EV towing](/towing/ev-towing) page explains how that's done. For gas and diesel vehicles, call (614) 714-5785 with your location and the type of fuel and you'll hear the full price before a truck is assigned.",
   ],
   situations: [
     { title: "Gauge read wrong", text: "Older cars and some trucks with tired sending units show a quarter tank right up until they sputter. A few gallons gets you to a pump and a mechanic can check the gauge later." },

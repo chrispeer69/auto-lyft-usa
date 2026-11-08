@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Suspension and Steering Help, Columbus",
   description:
-    "Loose steering, clunks or a wheel at an odd angle? We tow the car to a Columbus shop for suspension and steering work. (614) 633-8163.",
+    "Loose steering, clunks or a wheel at an odd angle? We tow the car to a Columbus shop for suspension and steering work. (614) 714-5785.",
   h1: "Clunks, Pulls or Loose Steering? Get It Inspected",
   lede:
     "Worn struts, broken springs and failing tie rods change how a car handles. When the steering feels loose or a wheel sits at an odd angle, we tow it to a shop.",

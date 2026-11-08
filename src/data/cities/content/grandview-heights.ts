@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing in Grandview Heights for Grandview Avenue, Grandview Yard and Goodale Boulevard: flatbed loads, jump starts and lockouts all night. (614) 633-8163.",
+    "Towing in Grandview Heights for Grandview Avenue, Grandview Yard and Goodale Boulevard: flatbed loads, jump starts and lockouts all night. (614) 714-5785.",
   h1: "Towing Service for Grandview Heights and Grandview Yard",
   lede:
     "A compact city of older homes on one side and glass office towers on the other, Grandview Heights is one of the closest cities to our yard.",

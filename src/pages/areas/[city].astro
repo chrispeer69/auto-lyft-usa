@@ -4,6 +4,7 @@ import Hero from "../../components/Hero.astro";
 import FaqList from "../../components/FaqList.astro";
 import CtaBand from "../../components/CtaBand.astro";
 import Nap from "../../components/Nap.astro";
+import ServiceCorridorCluster from "../../components/ServiceCorridorCluster.astro";
 import { CITIES, cityTitle, localPlaceNode, LOCAL_LABELS, type City } from "../../data/cities";
 import { cityBySlug, cityPath } from "../../data/cities/catalog";
 import { serviceBySlug, servicePath } from "../../data/services/catalog";
@@ -143,5 +144,6 @@ const shade = (i: number) => (i % 2 === 0 ? "band alt" : "band");
     </div>
   </section>
 
+  <ServiceCorridorCluster compact current={cityPath(c.slug)} heading={`Beyond ${c.name}: our other dispatch corridors`} />
   <Nap place={c.name} heading={c.nap.heading} lead={c.nap.text} />
 </Base>

@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Prairie Township towing from Lake Darby Estates to the old New Rome strip of West Broad Street and I-70. Flatbeds out day and night. (614) 633-8163.",
+    "Prairie Township towing from Lake Darby Estates to the old New Rome strip of West Broad Street and I-70. Flatbeds out day and night. (614) 714-5785.",
   h1: "Prairie Township Towing, From New Rome to Lake Darby",
   lede:
     "The township covers a wide slice of western Franklin County, so a call here might be a suburban driveway near the outerbelt or a farm-country shoulder out by Big Darby Creek.",
   intro: [
     "New Rome was a village of about sixty people on West Broad Street, incorporated in 1947, until Prairie Township absorbed it in September 2004. The township also holds Lincoln Village, a planned community a Nationwide Insurance subsidiary began in 1955 near US-40 and I-270, and much of Galloway. Its eastern edge touches the outerbelt at Exit 7, much of its eastern half is inside the city of Columbus, and its western reaches run past Lake Darby Estates and Big Darby Creek toward the Madison County line.",
     "Because the township is long and narrow along US-40, West Broad Street generates more of our work here than any other road. The section through old New Rome, with its quick string of driveways and side streets, sees plenty of fender-benders and stalled cars. I-70 runs across the township's southern half, and drivers who break down near the Hilliard-Rome Road or SR-142 interchanges often call us first. Out west, Lake Darby Estates brings in residential calls, and the rural roads past it send us the occasional car in a ditch after a storm.",
-    "Cars with all-wheel drive or a delicate transmission go on a flatbed, so you do not have to worry about either being damaged on the way to the shop. The truck sent is the nearest of the ones we keep around Columbus, and the dispatcher gives you the price and a live estimate first. Phone [(614) 633-8163](/contact) or [request a tow online](/request).",
+    "Cars with all-wheel drive or a delicate transmission go on a flatbed, so you do not have to worry about either being damaged on the way to the shop. The truck sent is the nearest of the ones we keep around Columbus, and the dispatcher gives you the price and a live estimate first. Phone [(614) 714-5785](/contact) or [request a tow online](/request).",
   ],
   roads: [
     { name: "West Broad Street (US-40) through old New Rome", note: "A short commercial strip with many curb cuts, rebuilt in 2015-2016 with bike lanes. Cars entering and leaving businesses cause a lot of the low-speed collisions we clear here." },

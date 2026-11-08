@@ -25,7 +25,7 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
       { q: "Can I pay over time?", a: "Sometimes. In extenuating circumstances a payment plan is possible, and whether to approve one is the owner's call. Explain your situation to the dispatcher before the job so it can be considered." },
       { q: "Should I tip the driver?", a: "Tips are welcome, never expected. We prefer that you tip through Blue Collar Tips, and cash handed to the driver is fine too." },
       { q: "Is there a cheaper way to book a tow or roadside call?", a: "Yes: use the Roadside Emergency Management app at convini.live. Register, finish adding your vehicles to your garage, and send the request from the app to get app pricing. Discounts go only to registered users, so sign up before you need help." },
-      { q: "Do you offer any discounts?", a: `Veterans who show a military or VA ID get ${RATES.veteranPercent}% taken off. Tell the dispatcher when you call so the quote reflects it. You can also check a price yourself with our [online estimator](/estimate) before calling.` },
+      { q: "Do you offer any discounts?", a: `Veterans get ${RATES.veteranPercent}% taken off once they show the driver proof of service. Tell the dispatcher when you call so the quote reflects it. You can also check a price yourself with our [online estimator](/estimate) before calling.` },
     ],
   },
   {
@@ -73,7 +73,7 @@ const allFaqs = groups.flatMap((g) => g.faqs);
 ---
 <Base
   title="Towing Questions and Answers"
-  description="Answers on towing prices, payment, getting a towed car back, storage, insurance reimbursement, EVs, AWD and where we go. Auto Lyft USA, (614) 633-8163."
+  description="Answers on towing prices, payment, getting a towed car back, storage, insurance reimbursement, EVs, AWD and where we go. Auto Lyft USA, (614) 714-5785."
   path={path}
   crumbs={[{ name: "Questions", path }]}
   faqs={allFaqs}

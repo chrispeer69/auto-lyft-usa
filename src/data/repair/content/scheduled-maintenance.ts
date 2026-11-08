@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Scheduled Car Maintenance, Columbus",
   description:
-    "Car overdue for service or sitting for months? We tow it to your Columbus mechanic or a partner shop for scheduled maintenance. (614) 633-8163.",
+    "Car overdue for service or sitting for months? We tow it to your Columbus mechanic or a partner shop for scheduled maintenance. (614) 714-5785.",
   h1: "Keep Up With Maintenance and Stay Off the Shoulder",
   lede:
     "Plenty of roadside breakdowns trace back to a skipped service. If your car is overdue and not fit to drive, we can take it to the shop for that work.",

@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Weinland Park tow service between Fifth Avenue and Chittenden: flatbed tows, battery jumps and lockouts off Summit, Fourth and 11th. (614) 633-8163.",
+    "Weinland Park tow service between Fifth Avenue and Chittenden: flatbed tows, battery jumps and lockouts off Summit, Fourth and 11th. (614) 714-5785.",
   h1: "Towing and Roadside Help in Weinland Park",
   lede:
     "A compact neighborhood squeezed between campus, Italian Village and the rail line, with one-way streets that every tow driver has to plan around.",

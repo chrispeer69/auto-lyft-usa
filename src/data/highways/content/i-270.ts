@@ -6,7 +6,7 @@ export default {
   keyword: "I-270 towing",
   title: "I-270 Towing on the Columbus Outerbelt",
   description:
-    "I-270 towing on the whole Columbus outerbelt, strongest on the south and west sides near our Harrisburg Pike yard. Help 24-7. Call (614) 633-8163.",
+    "I-270 towing on the whole Columbus outerbelt, strongest on the south and west sides near our Harrisburg Pike yard. Help 24-7. Call (614) 714-5785.",
   h1: "Outerbelt Breakdown? I-270 Tows, South Side First",
   lede:
     "Harrisburg Pike crosses the outerbelt at exit 2, a few minutes from our yard. The bottom and west side of the loop are where our trucks spend their nights.",
@@ -19,7 +19,7 @@ export default {
     "Stuck in a lane, in a merge area or on a ramp with no shoulder? Call 911 from your seat.",
     "Stay belted in the car with the doors shut. On a ring road with constant merging, standing outside is the riskiest place to be.",
     "If you are safely off the lanes and just want troopers to know, dial #677 for the Ohio State Highway Patrol.",
-    "Then call us at (614) 633-8163 with the last exit number you saw.",
+    "Then call us at (614) 714-5785 with the last exit number you saw.",
   ],
   stretches: [
     {
@@ -103,7 +103,7 @@ export default {
   faqs: [
     {
       q: "Who does I-270 towing on the south side of Columbus?",
-      a: "Auto Lyft USA does, around the clock. Our yard is on Harrisburg Pike, which crosses the outerbelt at exit 2, so the bottom of the loop from Grove City across to Obetz and South High Street is close to home. Call (614) 633-8163 with the last exit number. If you are in a lane or injured, call 911 first.",
+      a: "Auto Lyft USA does, around the clock. Our yard is on Harrisburg Pike, which crosses the outerbelt at exit 2, so the bottom of the loop from Grove City across to Obetz and South High Street is close to home. Call (614) 714-5785 with the last exit number. If you are in a lane or injured, call 911 first.",
     },
     {
       q: "Inner loop, outer loop: I honestly can't tell. Does it matter?",

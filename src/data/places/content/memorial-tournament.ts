@@ -4,7 +4,7 @@ export default {
   keyword: "Memorial Tournament towing",
   title: "Memorial Tournament Towing, Dublin",
   description:
-    "Golf fan, volunteer or vendor with a stalled car during Memorial week in Dublin? Flatbed towing, jumps and winch-outs near Muirfield. (614) 633-8163.",
+    "Golf fan, volunteer or vendor with a stalled car during Memorial week in Dublin? Flatbed towing, jumps and winch-outs near Muirfield. (614) 714-5785.",
   h1: "Memorial Tournament Towing Around Muirfield Village",
   lede:
     "One week each spring, a quiet corner of Dublin turns into a PGA Tour stop. If your car quits on the way in, at a shuttle lot or on the drive home, we can help.",
@@ -51,7 +51,7 @@ export default {
   faqs: [
     {
       q: "What does Memorial Tournament towing usually involve?",
-      a: "Most calls during tournament week are dead batteries, lockouts and flat tires in parking areas, plus a few cars stuck in soft ground after rain. Real breakdowns on the surrounding roads come next. We handle all of these with our tow trucks and roadside tools. Call (614) 633-8163, describe where you are and what happened, and the dispatcher will quote the job before sending a truck.",
+      a: "Most calls during tournament week are dead batteries, lockouts and flat tires in parking areas, plus a few cars stuck in soft ground after rain. Real breakdowns on the surrounding roads come next. We handle all of these with our tow trucks and roadside tools. Call (614) 714-5785, describe where you are and what happened, and the dispatcher will quote the job before sending a truck.",
     },
     {
       q: "My car is stuck in mud at a grass parking area. Can you pull it out without damage?",

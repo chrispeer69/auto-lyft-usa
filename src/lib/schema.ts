@@ -37,6 +37,8 @@ export function businessNode({ cities, zips, services }: BusinessInput): Node {
     identifier.push({ "@type": "PropertyValue", propertyID: "PUCO towing certificate", value: COMPANY.pucoNumber });
   if (COMPANY.usdotNumber)
     identifier.push({ "@type": "PropertyValue", propertyID: "USDOT", value: COMPANY.usdotNumber });
+  if (COMPANY.mcNumber)
+    identifier.push({ "@type": "PropertyValue", propertyID: "FMCSA MC number", value: COMPANY.mcNumber });
 
   const sameAs = [COMPANY.allianceProfile, COMPANY.facebook, COMPANY.googleMapsCid && `https://www.google.com/maps?cid=${COMPANY.googleMapsCid}`].filter(Boolean);
 
@@ -85,6 +87,8 @@ export function businessNode({ cities, zips, services }: BusinessInput): Node {
       },
     ],
     areaServed: [
+      { "@type": "AdministrativeArea", name: "Franklin County, Ohio", containedInPlace: ohio },
+      { "@type": "AdministrativeArea", name: "Greater Columbus metro area", containedInPlace: ohio },
       ...cities.map((c) => ({ "@type": "City", name: c.name, containedInPlace: ohio })),
       { "@type": "DefinedRegion", name: "Central Ohio ZIP codes served", addressCountry: "US", addressRegion: "OH", postalCode: zips },
     ],
@@ -104,7 +108,11 @@ export function businessNode({ cities, zips, services }: BusinessInput): Node {
     image: `${SITE_URL}/og.png`,
     founder: { "@id": ids.owner },
     knowsAbout: [
+      "Light-duty towing",
       "Flatbed towing",
+      "Accident recovery and towing",
+      "Equipment hauling",
+      "Long-distance towing",
       "Electric vehicle transport on a flatbed",
       "Low-clearance and lowered car towing",
       "All-wheel-drive vehicle towing",

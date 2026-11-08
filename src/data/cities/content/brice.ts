@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing for Brice, OH and the Brice Road corridor: I-70 work-zone breakdowns, Tussing Road lockouts and flatbed tows any hour. Call (614) 633-8163.",
+    "Towing for Brice, OH and the Brice Road corridor: I-70 work-zone breakdowns, Tussing Road lockouts and flatbed tows any hour. Call (614) 714-5785.",
   h1: "Brice Road and Village of Brice Towing",
   lede:
     "The Village of Brice is tiny, but the Brice Road corridor around it is one of the busiest pieces of pavement on the east side, and that is where most of our calls here start.",

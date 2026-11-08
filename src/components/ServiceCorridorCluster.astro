@@ -1,0 +1,100 @@
+---
+/*
+  Dispatch corridors: links to towns, Columbus neighborhoods and highway guides,
+  grouped by the side of the metro a truck heads to. Sits above the NAP block on
+  /towing/* and /areas/<town>-oh pages so deep area pages are one click from
+  every service page. Slugs are checked at build time; a bad one fails the build.
+*/
+import { cityBySlug, cityPath } from "../data/cities/catalog";
+import { hoodBySlug, hoodPath } from "../data/columbus/catalog";
+import { highwayBySlug, highwayPath } from "../data/highways/catalog";
+
+interface Props {
+  /** Path of the page this sits on; a link to it is left out. */
+  current?: string;
+  heading?: string;
+  /** Links only, no corridor notes: for the 40 town pages, so they don't share prose. */
+  compact?: boolean;
+}
+const { current, heading = "Where our trucks run: dispatch corridors", compact = false } = Astro.props;
+
+type Spot = { kind: "town" | "hood" | "hub"; slug: string };
+const CORRIDORS: { id: string; name: string; note: string; spots: Spot[]; roads: string[] }[] = [
+  {
+    id: "central-west",
+    name: "Central and west side",
+    note: "Closest to the Harrisburg Pike yard: downtown streets and garages, the river flats and the west-side neighborhoods along Broad Street.",
+    spots: [
+      { kind: "hub", slug: "columbus" },
+      { kind: "hood", slug: "downtown" },
+      { kind: "hood", slug: "franklinton" },
+      { kind: "hood", slug: "hilltop" },
+      { kind: "hood", slug: "westgate" },
+      { kind: "town", slug: "grandview-heights" },
+      { kind: "town", slug: "hilliard" },
+    ],
+    roads: ["i-70", "i-670", "sr-315"],
+  },
+  {
+    id: "north",
+    name: "North and northwest",
+    note: "Up the Olentangy and the Scioto: older neighborhoods inside the outerbelt and the suburbs past it.",
+    spots: [
+      { kind: "hood", slug: "clintonville" },
+      { kind: "town", slug: "upper-arlington" },
+      { kind: "town", slug: "dublin" },
+      { kind: "town", slug: "worthington" },
+      { kind: "town", slug: "powell" },
+      { kind: "town", slug: "westerville" },
+    ],
+    roads: ["sr-315", "us-23", "i-71", "i-270"],
+  },
+  {
+    id: "south-east",
+    name: "South and east",
+    note: "From the south-side warehouse belt to the eastern suburbs and the airport side of town.",
+    spots: [
+      { kind: "town", slug: "grove-city" },
+      { kind: "town", slug: "groveport" },
+      { kind: "town", slug: "whitehall" },
+      { kind: "town", slug: "reynoldsburg" },
+      { kind: "town", slug: "gahanna" },
+      { kind: "town", slug: "canal-winchester" },
+    ],
+    roads: ["i-70", "i-71", "i-270"],
+  },
+];
+
+function resolve(s: Spot): { name: string; href: string } {
+  if (s.kind === "hub") return { name: "Columbus (all neighborhoods)", href: "/areas/columbus-oh" };
+  const hit = s.kind === "town" ? cityBySlug(s.slug) : hoodBySlug(s.slug);
+  if (!hit) throw new Error(`ServiceCorridorCluster: unknown ${s.kind} slug "${s.slug}"`);
+  return { name: hit.name, href: s.kind === "town" ? cityPath(s.slug) : hoodPath(s.slug) };
+}
+function road(slug: string) {
+  const hit = highwayBySlug(slug);
+  if (!hit) throw new Error(`ServiceCorridorCluster: unknown highway slug "${slug}"`);
+  return { name: hit.short, href: highwayPath(slug) };
+}
+const groups = CORRIDORS.map((c) => ({
+  ...c,
+  links: c.spots.map(resolve).filter((l) => l.href !== current),
+  roadLinks: c.roads.map(road),
+}));
+---
+<section class="band corridors" aria-labelledby="corridors-h">
+  <div class="wrap">
+    <h2 id="corridors-h">{heading}</h2>
+    <div class="cols three">
+      {groups.map((g) => (
+        <div>
+          <h3>{g.name}</h3>
+          {!compact && <p class="muted">{g.note}</p>}
+          <ul class="linklist">{g.links.map((l) => <li><a href={l.href}>{l.name}</a></li>)}</ul>
+          <p class="corridor-roads">Highway guides: {g.roadLinks.map((r, i) => <>{i > 0 && ", "}<a href={r.href}>{r.name}</a></>)}</p>
+        </div>
+      ))}
+    </div>
+    {!compact && <p class="mt-28">Broken down on a freeway? Our <a href="/highways">highway guides</a> walk through exits, shoulder safety and the details a dispatcher needs, road by road. The full town list lives on the <a href="/areas">service areas page</a>.</p>}
+  </div>
+</section>

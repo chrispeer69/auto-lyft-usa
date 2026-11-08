@@ -4,7 +4,7 @@ export default {
   keyword: "towing near CCAD",
   title: "Towing Near CCAD, Downtown Columbus",
   description:
-    "Art student with a dead car on Cleveland Avenue? Jumps, lockouts and flatbed tows near the Columbus College of Art & Design, any hour. (614) 633-8163.",
+    "Art student with a dead car on Cleveland Avenue? Jumps, lockouts and flatbed tows near the Columbus College of Art & Design, any hour. (614) 714-5785.",
   h1: "Towing near CCAD for art students, faculty and visiting families",
   lede:
     "Late studio nights, cars full of canvases and a campus squeezed into a few downtown blocks. When the car quits, we come to Cleveland Avenue.",

@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Bexley, OH towing on East Main Street, Drexel Avenue and near Capital University: flatbed tows, lockouts and jump starts. Call (614) 633-8163.",
+    "Bexley, OH towing on East Main Street, Drexel Avenue and near Capital University: flatbed tows, lockouts and jump starts. Call (614) 714-5785.",
   h1: "Towing Service for Bexley's Main Street and Tree-Lined Neighborhoods",
   lede:
     "Bexley is the nearest of the east-side cities to our yard, a leafy, walkable town where most calls come from Main Street parking, campus lots at Capital University and tight residential driveways.",

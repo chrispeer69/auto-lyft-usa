@@ -4,14 +4,14 @@ export default {
   keyword: "flat tire change",
   title: "Flat Tire Change in Columbus, OH",
   description:
-    "Flat on I-270 or in your driveway? We mount your spare in Columbus and torque the lugs, or tow to a tire shop if the spare is shot. (614) 633-8163.",
+    "Flat on I-270 or in your driveway? We mount your spare in Columbus and torque the lugs, or tow to a tire shop if the spare is shot. (614) 714-5785.",
   h1: "Columbus Flat Tire Change, Done Off the Shoulder Safely",
   lede:
     "A driver with a floor jack, an impact gun and a torque wrench swaps the bad tire for your spare, then checks the spare's pressure before you pull away.",
   intro: [
     "Getting a flat tire change on the side of a Columbus highway is not something most people want to attempt with the little scissor jack from the trunk, and they shouldn't have to. Auto Lyft USA sends a truck with real tools: a low-profile floor jack, an impact wrench for rusted lug nuts, and a torque wrench to tighten everything to the number your owner's manual lists. Our trucks are positioned around Columbus so dispatch can send whichever driver is nearest, and it runs all night and all weekend.",
     "Here is the part to know up front: we install the spare that came with your car. That may be a full-size wheel, a skinny temporary donut, or a matching alloy in an SUV's under-floor carrier. We don't sell tires and we don't patch them at the roadside. If the spare is missing, flat itself, or the wrong size, the fix is a short ride on our flatbed to a tire shop of your choosing, so you still end up rolling on four good tires.",
-    "When you call (614) 633-8163, the dispatcher will ask which tire is down, where the car is sitting, and whether you know your spare is there. Many newer cars ship with an inflator kit instead of a spare, and it saves a trip if we know that before we roll. You get the full price on the phone first, and our [rates page](/rates) explains how roadside work is billed.",
+    "When you call (614) 714-5785, the dispatcher will ask which tire is down, where the car is sitting, and whether you know your spare is there. Many newer cars ship with an inflator kit instead of a spare, and it saves a trip if we know that before we roll. You get the full price on the phone first, and our [rates page](/rates) explains how roadside work is billed.",
   ],
   situations: [
     { title: "Blowout on the interstate", text: "A shredded tread on I-71 or I-70 leaves you on a narrow shoulder. We position the truck behind your car as a buffer while the wheel is swapped." },
@@ -68,7 +68,7 @@ export default {
     { q: "Will you put the flat tire in my car?", a: "Yes. The damaged tire goes into the trunk, the cargo area or the bed of a pickup, wherever the spare came from or wherever it fits. If the wheel is dirty or wet, we lay something down first so it doesn't stain the carpet." },
     { q: "Do you handle flat tires in the snow?", a: "Yes. Winter is busy for flats because cold air drops tire pressure and potholes open up. In snow we clear a spot for the jack and use a solid base so it doesn't sink. If the car is stuck as well, a [winch-out](/towing/winch-out) may come first." },
     { q: "Are your drivers available at night for a flat?", a: "Yes. Dispatch staffs the phone at all hours, weekends and holidays included. A night call may carry an after-hours charge, which is already built into the figure you are quoted. If you are on a dark road, keep the hazard lights on and wait inside the car unless it's unsafe to stay there." },
-    { q: "I got a flat on the interstate. Should I get out and change it?", a: "No. Stay in the car with your belt on and the flashers going. Dial 911 when the car is partly in a lane or the spot feels dangerous; for a non-emergency, #677 reaches the Highway Patrol. Then call us at (614) 633-8163 and a driver will swap it or move the car to a safer spot first." },
+    { q: "I got a flat on the interstate. Should I get out and change it?", a: "No. Stay in the car with your belt on and the flashers going. Dial 911 when the car is partly in a lane or the spot feels dangerous; for a non-emergency, #677 reaches the Highway Patrol. Then call us at (614) 714-5785 and a driver will swap it or move the car to a safer spot first." },
     { q: "The shoulder is too narrow to change my tire. What happens?", a: "The driver loads the car and takes it to the next exit or a wide, flat lot, then changes the tire there. Without a good spare, it goes to a tire shop or home instead. The dispatcher tells you how that is priced before the truck heads out." },
   ],
   related: ["roadside-assistance", "car-towing", "winch-out", "jump-start"],

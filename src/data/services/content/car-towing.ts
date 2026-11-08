@@ -4,7 +4,7 @@ export default {
   keyword: "car towing",
   title: "Car Towing in Columbus, OH",
   description:
-    "Car towing in Columbus for sedans, SUVs, minivans and half-ton pickups. Flatbed by default, price set before a truck rolls. Call us at (614) 633-8163.",
+    "Car towing in Columbus for sedans, SUVs, minivans and half-ton pickups. Flatbed by default, price set before a truck rolls. Call us at (614) 714-5785.",
   h1: "Car Towing Around Columbus for Sedans, SUVs and Pickups",
   lede:
     "Everyday vehicles that won't start, won't shift or shouldn't be driven get picked up from wherever they sit and dropped off where you need them.",

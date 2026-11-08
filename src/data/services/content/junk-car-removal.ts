@@ -4,14 +4,14 @@ export default {
   keyword: "junk car removal",
   title: "Junk Car Removal in Columbus, OH",
   description:
-    "Free junk car removal in Columbus with a signed title: dead, wrecked or half-built project cars winched onto a flatbed and gone. Call (614) 633-8163.",
+    "Free junk car removal in Columbus with a signed title: dead, wrecked or half-built project cars winched onto a flatbed and gone. Call (614) 714-5785.",
   h1: "Columbus Junk Car Removal From Driveways, Yards and Lots",
   lede:
     "A car that hasn't moved in months is taking up space and drawing notices. Sign the title over, and we winch it onto a flatbed and take it away at no charge.",
   intro: [
     "Junk car removal is for the vehicle that isn't worth fixing and isn't going anywhere on its own: a sedan with a blown engine in the driveway, a truck that sank into the side yard, a project car that never got finished. Auto Lyft USA hauls these cars out of homes, rental properties and small business lots around Columbus with the same flatbed carriers we use for everyday tows. Flat tires, missing wheels and seized brakes don't stop the winch, and a car buried in weeds or parked against a fence can usually be pulled clear first.",
     "What we do need is a signed title, every time. It has to be the Ohio title in the name of the person releasing the car, signed over. In Ohio, ownership changes hands through a title office or the BMV, so the paperwork has to be in order before a car leaves. If the title is lost or still lists a late relative or an old lender, the dispatcher will explain what needs to happen first rather than taking the car anyway.",
-    "Call [(614) 633-8163](/contact) with the year, make and model, the car's condition and where it sits. With the signed title ready, the haul costs you nothing. We don't buy cars or make cash offers; we just clear the car away once a truck is scheduled.",
+    "Call [(614) 714-5785](/contact) with the year, make and model, the car's condition and where it sits. With the signed title ready, the haul costs you nothing. We don't buy cars or make cash offers; we just clear the car away once a truck is scheduled.",
   ],
   situations: [
     { title: "Dead car in the driveway", text: "An engine failure that would cost more than the car is worth leaves it parked for good. We clear the spot so you can use it again." },

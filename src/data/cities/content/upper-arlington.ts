@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Upper Arlington tow trucks for Lane Avenue, Tremont Road, Kingsdale and Riverside Drive. Flatbed carriers and roadside help any hour. (614) 633-8163.",
+    "Upper Arlington tow trucks for Lane Avenue, Tremont Road, Kingsdale and Riverside Drive. Flatbed carriers and roadside help any hour. (614) 714-5785.",
   h1: "Upper Arlington Tow Trucks for Lane Avenue, Tremont and Riverside",
   lede:
     "Tree-lined streets, a busy Lane Avenue business district and a border with Ohio State's campus give Upper Arlington a mix of calls you won't find in the outer suburbs.",
@@ -36,7 +36,7 @@ export default {
   ],
   faqs: [
     { q: "Will you come to Lane Avenue on an Ohio State game day?", a: "Yes, though we plan around it. Roads near the stadium close or back up for hours before and after kickoff, and police may limit turns. If your car breaks down on Lane Avenue on a Saturday in the fall, tell us exactly which block you are on and we will find the cleanest way in, even if it means approaching from the north or west." },
-    { q: "My car stalled on Riverside Drive by Griggs Reservoir. Is it safe to wait?", a: "Ease the car onto whatever shoulder or grass exists, flip on the four-way flashers, and keep your belt fastened unless there is a safe spot well clear of the lanes to stand. The shoulders on that stretch are narrow and drivers come around the curves quickly. Call (614) 633-8163, tell us your direction of travel and the nearest landmark, and we will send a carrier." },
+    { q: "My car stalled on Riverside Drive by Griggs Reservoir. Is it safe to wait?", a: "Ease the car onto whatever shoulder or grass exists, flip on the four-way flashers, and keep your belt fastened unless there is a safe spot well clear of the lanes to stand. The shoulders on that stretch are narrow and drivers come around the curves quickly. Call (614) 714-5785, tell us your direction of travel and the nearest landmark, and we will send a carrier." },
     { q: "Can you pick up my car from the Kingsdale area while construction is going on?", a: "Yes. Work around the Kingsdale redevelopment sometimes closes drive aisles or moves parking, so name the nearest storefront and the driveway you turned in from. The driver will call you on the way if a route is blocked. Most problems in those lots are dead batteries or lockouts, and a [car lockout](/towing/car-lockout) visit is often enough." },
     { q: "Can a flatbed fit in an Old Arlington driveway?", a: "Usually it can stop on the street and winch the car down the driveway onto the bed, which is gentler than backing into a narrow drive. Low-hanging trees can be an issue on some older streets, so the driver may ask you to move another car or open the garage. If your car is lowered or has a front spoiler, mention it so the right ramps are ready." },
     { q: "What happens to cars parked along Northwest Boulevard on the Fourth of July?", a: "The Upper Arlington Civic Association has run the city's Independence Day celebration since 1933, and the parade follows Northwest Boulevard for about two miles between Zollinger Road and North Star Road. That stretch and the side streets around it are closed to traffic for the morning, so a car stuck inside the route usually has to wait until the street reopens. If yours is just outside it, give us the nearest cross street and we will come in from the far side." },

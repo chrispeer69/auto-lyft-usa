@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Overheating Car Repair Help, Columbus",
   description:
-    "Engine overheating in Columbus? Shut it off, and we will flatbed the car to a shop that fixes radiators, pumps and thermostats. (614) 633-8163.",
+    "Engine overheating in Columbus? Shut it off, and we will flatbed the car to a shop that fixes radiators, pumps and thermostats. (614) 714-5785.",
   h1: "Engine Overheating? Get It to a Cooling-System Shop",
   lede:
     "A temperature gauge in the red means stop driving now. One of our flatbeds carries the car to a shop that can find the leak, pump or thermostat behind it.",

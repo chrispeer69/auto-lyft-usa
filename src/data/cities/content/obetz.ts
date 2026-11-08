@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Obetz towing, a short hop from our Columbus yard: flatbed tows by Fortress Obetz, Alum Creek Drive and the auto auction on Groveport Road. (614) 633-8163.",
+    "Obetz towing, a short hop from our Columbus yard: flatbed tows by Fortress Obetz, Alum Creek Drive and the auto auction on Groveport Road. (614) 714-5785.",
   h1: "Need a Tow in Obetz? Flatbeds for Alum Creek Drive and Beyond",
   lede:
     "Obetz sits a short way east of our yard along the outerbelt, and between its auto auction, its container-built stadium and its new warehouses, it sends us a surprisingly mixed set of jobs.",

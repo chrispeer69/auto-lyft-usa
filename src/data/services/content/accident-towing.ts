@@ -4,7 +4,7 @@ export default {
   keyword: "accident towing",
   title: "Accident Towing in Columbus, OH",
   description:
-    "Accident towing in Columbus: wrecked cars loaded on a flatbed, debris swept up, and delivery to your body shop or our yard. Call 24-7 at (614) 633-8163.",
+    "Accident towing in Columbus: wrecked cars loaded on a flatbed, debris swept up, and delivery to your body shop or our yard. Call 24-7 at (614) 714-5785.",
   h1: "Columbus Accident Towing After a Crash or Collision",
   lede:
     "After a wreck you have enough to deal with. We clear the car, pick up the pieces and take it where your claim needs it to go.",
@@ -34,12 +34,12 @@ export default {
         "Right after a collision, it is hard to think clearly. A short checklist helps you keep the important things straight while you wait for police and a truck.",
       ],
       bullets: [
-        "Check for injuries and call 911 if anyone is hurt or if vehicles are blocking traffic.",
+        "Make sure everyone is okay. Dial 911 for any injury, or when the wrecked cars block traffic.",
         "If the cars can move and no one is injured, it is usually safest to steer them out of the travel lanes and onto the shoulder or a side street.",
         "Exchange names, phone numbers, insurance details and plate numbers with the other driver.",
         "Take your own photos of both cars, the scene, road signs and any skid marks.",
         "Ask the officer for the report number so you can request the crash report later.",
-        "Call your insurer to open a claim, then call us at (614) 633-8163 to move the car.",
+        "Call your insurer to open a claim, then call us at (614) 714-5785 to move the car.",
       ],
     },
     {

@@ -6,13 +6,13 @@ export default {
   keyword: "I-70 towing",
   title: "I-70 Towing, West Jefferson to Etna",
   description:
-    "I-70 towing across Columbus: the west side past Hilliard-Rome Road, the downtown split and east to Etna. Shoulder help 24-7. Call (614) 633-8163.",
+    "I-70 towing across Columbus: the west side past Hilliard-Rome Road, the downtown split and east to Etna. Shoulder help 24-7. Call (614) 714-5785.",
   h1: "Stopped on I-70? West Side, Downtown Split and East",
   lede:
     "I-70 west of downtown runs past the Hilltop, Lincoln Village and Galloway, a short drive from our Harrisburg Pike yard. We cover the road out to Etna as well.",
   intro: [
     "I-70 towing for us starts on the west side. The interstate comes in from Madison County past West Jefferson and Lake Darby, crosses I-270, rolls past the Hilltop and Franklinton into the downtown split with I-71, then heads east past Bexley, Whitehall and Reynoldsburg to Etna in Licking County. Harrisburg Pike, where our office and yard are, sits just south of the west-side stretch, so that end of the road is our backyard.",
-    "If you just rolled to a stop: a car sitting in a lane, an injury, or a gut feeling that you are not safe means 911 comes first. For a highway problem that is not an emergency, the Highway Patrol answers #677 from any cell phone. When everyone is out of harm's way, call Auto Lyft USA at (614) 633-8163 and the dispatcher will quote the job and give you a live estimate for the truck.",
+    "If you just rolled to a stop: a car sitting in a lane, an injury, or a gut feeling that you are not safe means 911 comes first. For a highway problem that is not an emergency, the Highway Patrol answers #677 from any cell phone. When everyone is out of harm's way, call Auto Lyft USA at (614) 714-5785 and the dispatcher will quote the job and give you a live estimate for the truck.",
   ],
   firstMoves: [
     "Get as far right as the car will go and turn the flashers on. On the rural west end, the grass beyond the shoulder is softer than it looks, so stay on pavement.",
@@ -93,7 +93,7 @@ export default {
     "Shoulder, median side, ramp, or a lane; and if you are inside the downtown overlap",
     "What happened: tire, no power, smoke or steam, out of fuel, crash, or off the road",
     "Whether the car is upright and on pavement if it slid off",
-    "Make, model, and whether it is electric or all-wheel drive",
+    "Make and model, plus a note if it is an EV or has AWD",
     "Where it should go if it rides, and a number that will stay on",
   ],
   pricing: [
@@ -103,7 +103,7 @@ export default {
   faqs: [
     {
       q: "Who can tow my car off I-70 west of downtown Columbus?",
-      a: "Auto Lyft USA, at any hour. Our yard is on Harrisburg Pike, just south of the west-side stretch, and covers everything from the Hilltop out past Galloway to West Jefferson. Call (614) 633-8163. If you are in a lane or hurt, call 911 first.",
+      a: "Auto Lyft USA, at any hour. Our yard is on Harrisburg Pike, just south of the west-side stretch, and covers everything from the Hilltop out past Galloway to West Jefferson. Call (614) 714-5785. If you are in a lane or hurt, call 911 first.",
     },
     {
       q: "My car quit on I-70 near Hilliard-Rome Road at night. What do I do?",

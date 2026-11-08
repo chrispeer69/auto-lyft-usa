@@ -62,7 +62,7 @@ export default {
       heading: "What this means for your quote",
       paragraphs: [
         "Our posted prices are standard retail rates, and like every price in the economy they reflect what fuel, labor, equipment and coverage cost today. They are a starting point, not a script. Every breakdown is different: where the car is, what is wrong with it, where it needs to go and what time it is all change the job.",
-        "So the best thing you can do is call (614) 633-8163 and describe your exact situation. The dispatcher will give you a fair, competitive quote for that job before a truck is assigned. Our goal is simple: to help every person who calls, at a price that is honest for both sides.",
+        "So the best thing you can do is call (614) 714-5785 and describe your exact situation. The dispatcher will give you a fair, competitive quote for that job before a truck is assigned. Our goal is simple: to help every person who calls, at a price that is honest for both sides.",
       ],
     },
   ],

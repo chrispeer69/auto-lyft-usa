@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Etna, OH towing between I-70 Exit 118 and US-40: flatbed tows near the Mink Road warehouses, SR-310 breakdowns and lockouts. Call (614) 633-8163.",
+    "Etna, OH towing between I-70 Exit 118 and US-40: flatbed tows near the Mink Road warehouses, SR-310 breakdowns and lockouts. Call (614) 714-5785.",
   h1: "When You Need a Tow in Etna Township",
   lede:
     "Etna has gone from a quiet crossroads to one of the busiest warehouse districts in Ohio, and our flatbeds now spend much of their time here among delivery vans, commuter cars and shift workers.",
   intro: [
     "Etna's old village center was laid out in 1832 around the spot where SR-310 meets the National Road, and the historic township hall still stands there on Liberty Street. Two roads frame the community: US-40, the old National Road that once carried an interurban line to Columbus, runs along the north side, and I-70 forms the southern edge, with Exit 118 at SR-310 as the only freeway door.",
     "Between those two roads, the farm fields have given way to some of the biggest warehouses in the state. Kohl's filled a 1.2-million-square-foot building at The Cubes at Etna 70, Amazon and Ashley Furniture took earlier ones, and Mink Road and Southgate Parkway are now lined with distribution centers, enough that residents have started calling Etna the warehouse capital of Ohio. The steady flow of semis, delivery vans and shift workers has changed what our calls here look like.",
-    "A typical Etna job now is a warehouse worker whose engine will not turn over after clocking out, a van that quits on the way to a loading dock, or a fender-bender at one of the busy SR-310 entrances. Cars and light vans leave on a flatbed or a wheel-lift truck, whichever suits the vehicle, and semis go through our [heavy-duty towing](/towing/heavy-duty-towing) partners. Call (614) 633-8163 and tell the dispatcher the building or gate you are near.",
+    "A typical Etna job now is a warehouse worker whose engine will not turn over after clocking out, a van that quits on the way to a loading dock, or a fender-bender at one of the busy SR-310 entrances. Cars and light vans leave on a flatbed or a wheel-lift truck, whichever suits the vehicle, and semis go through our [heavy-duty towing](/towing/heavy-duty-towing) partners. Call (614) 714-5785 and tell the dispatcher the building or gate you are near.",
   ],
   roads: [
     { name: "I-70 at SR-310 (Exit 118)", note: "Etna's only freeway interchange, carrying a heavy mix of semis and commuters; a disabled car on these ramps is a serious hazard, so tell the dispatcher right away that you are on a ramp." },

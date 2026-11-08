@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Beechwold towing between Henderson and Morse Road: flatbed tows, battery calls and lockouts near High Street, Cooke Road and Graceland. (614) 633-8163.",
+    "Beechwold towing between Henderson and Morse Road: flatbed tows, battery calls and lockouts near High Street, Cooke Road and Graceland. (614) 714-5785.",
   h1: "Beechwold Tow Trucks Between Henderson and Morse",
   lede:
     "Stone houses on winding streets by the river, busy school traffic on Cooke Road, and big shopping lots just north of Morse. Beechwold has a bit of everything we handle.",

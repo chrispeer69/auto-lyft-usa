@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Lockbourne towing by flatbed near Rickenbacker airport, US-23 and SR-762, plus the canal village center on Commerce Street. Call (614) 633-8163.",
+    "Lockbourne towing by flatbed near Rickenbacker airport, US-23 and SR-762, plus the canal village center on Commerce Street. Call (614) 714-5785.",
   h1: "Lockbourne and Rickenbacker: Where We Tow South of the Outerbelt",
   lede:
     "Lockbourne is a small canal village sitting beside Rickenbacker's cargo airport and rail terminal, and our calls there reflect both sides of that.",
   intro: [
     "Lockbourne takes its name from the locks that once stepped boats up and down the Ohio and Erie Canal, and Lock No. 30 still sits in Lock Meadows Park at the edge of the village. US-23 runs along the western side, SR-762 heads east to Rickenbacker International Airport, and the village line spills over from Franklin County into Pickaway County, so a few addresses here belong to a different county than their neighbours.",
     "The village itself is compact: a few streets around Commerce Street, the old canal lock, several churches and a veterans park. What surrounds it is much bigger. Rickenbacker's cargo operations, the Air National Guard station, Norfolk Southern's intermodal terminal and large distribution campuses such as ODW Logistics pull a constant stream of commuters through the area. Plenty of our Lockbourne calls are those commuters, stranded on SR-762 or in a warehouse lot after a long shift.",
-    "The rural stretches of US-23 and the township roads outside the village also send us cars that slid off in bad weather, which is where a [winch-out](/towing/winch-out) comes in. The low-slung commuter cars and newer SUVs we see in the warehouse lots go on a flatbed, which protects bumpers and drivetrains alike. Call [(614) 633-8163](/contact) and the dispatcher will give you a price and an arrival estimate before sending anyone.",
+    "The rural stretches of US-23 and the township roads outside the village also send us cars that slid off in bad weather, which is where a [winch-out](/towing/winch-out) comes in. The low-slung commuter cars and newer SUVs we see in the warehouse lots go on a flatbed, which protects bumpers and drivetrains alike. Call [(614) 714-5785](/contact) and the dispatcher will give you a price and an arrival estimate before sending anyone.",
   ],
   roads: [
     { name: "US-23 (South High Street)", note: "Skirts the village's west side, with its outerbelt interchange at exit 52. It is a fast divided highway, so a shoulder stop sits close to moving traffic." },

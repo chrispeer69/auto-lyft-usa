@@ -6,13 +6,13 @@ export default {
   keyword: "US-23 towing",
   title: "US-23 Towing, Lockbourne to Delaware",
   description:
-    "US-23 towing from the Pickaway County line and Lockbourne up South High Street, through campus and north to Delaware. Help 24-7. Call (614) 633-8163.",
+    "US-23 towing from the Pickaway County line and Lockbourne up South High Street, through campus and north to Delaware. Help 24-7. Call (614) 714-5785.",
   h1: "US-23 Breakdowns From the South End to Delaware",
   lede:
     "US-23 enters Columbus from the south as a rural divided road, becomes South High Street, splits into one-way streets downtown, and runs north to Delaware.",
   intro: [
     "US-23 towing is a mixed job, because US-23 changes character every few miles. South of the outerbelt it is a fast divided highway coming up from Circleville. Inside the city it is South High Street, then a pair of one-way downtown streets, then Indianola Avenue and High Street again on the north side. Past the north outerbelt it becomes Columbus Pike, and through Delaware it turns into a true freeway. The south end, around Lockbourne and the I-270 crossing at South High Street, is the part closest to our Harrisburg Pike yard.",
-    "On the fast stretches, freeway rules apply. An injury or a car stuck in traffic is for 911; troopers take lesser problems on #677, dialed from a mobile. On the city stretches, most calls are a dead battery at the curb or a flat in a parking lot. Either way, Auto Lyft USA answers at (614) 633-8163 and quotes the job before a truck is assigned.",
+    "On the fast stretches, freeway rules apply. An injury or a car stuck in traffic is for 911; troopers take lesser problems on #677, dialed from a mobile. On the city stretches, most calls are a dead battery at the curb or a flat in a parking lot. Either way, Auto Lyft USA answers at (614) 714-5785 and quotes the job before a truck is assigned.",
   ],
   firstMoves: [
     "On the divided highway south of town or the Delaware freeway, get onto the right shoulder or into a lot, and put the flashers on.",
@@ -86,7 +86,7 @@ export default {
   faqs: [
     {
       q: "Which tow company covers US-23 south of Columbus?",
-      a: "Auto Lyft USA covers the south end of US-23 at any hour, from the Pickaway County line past Lockbourne up to the outerbelt at South High Street. That stretch is a short run from our Harrisburg Pike yard. Call (614) 633-8163. Hurt, or sitting in traffic? Dial 911 before us.",
+      a: "Auto Lyft USA covers the south end of US-23 at any hour, from the Pickaway County line past Lockbourne up to the outerbelt at South High Street. That stretch is a short run from our Harrisburg Pike yard. Call (614) 714-5785. Hurt, or sitting in traffic? Dial 911 before us.",
     },
     {
       q: "Is South High Street the same road as US-23?",

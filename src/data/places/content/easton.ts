@@ -4,7 +4,7 @@ export default {
   keyword: "Easton towing",
   title: "Easton Towing & Roadside Help",
   description:
-    "Easton towing, jump-starts and lockouts for Town Center shoppers in northeast Columbus. Flatbed tows to any shop, 24-7. Call (614) 633-8163.",
+    "Easton towing, jump-starts and lockouts for Town Center shoppers in northeast Columbus. Flatbed tows to any shop, 24-7. Call (614) 714-5785.",
   h1: "Easton towing and roadside help for Town Center shoppers",
   lede:
     "Car dead in an Easton garage or locked with the keys inside? We send a driver to your row, fix it on the spot when we can, and flatbed it out when we can't.",
@@ -37,7 +37,7 @@ export default {
       heading: "Trouble on the way out: Morse Road, Easton Way and I-270",
       paragraphs: [
         "Plenty of Easton calls actually come from just outside the district. Drivers reach the shopping area from I-270 using the Easton Way and Morse Road exits, and alongside Easton the outerbelt is divided into separate local and express lanes. A car that overheats or loses a tire in that stretch can end up on a narrow shoulder with fast traffic beside it.",
-        "If that happens, ease onto the right shoulder, flash the hazards, and keep your seat belt fastened with the doors closed unless there's a safe patch of ground well clear of traffic. Tell the dispatcher which direction you were heading and which exit you last passed. Highway pickups carry a $75 surcharge on our rate card, and the dispatcher will say so before confirming the job.",
+        "If that happens, ease onto the right shoulder, flash the hazards, and keep your seat belt fastened with the doors closed unless there's a safe patch of ground well clear of traffic. Say whether you were eastbound or westbound, northbound or southbound, and name the exit you passed most recently. Highway pickups carry a $75 surcharge on our rate card, and the dispatcher will say so before confirming the job.",
       ],
     },
     {

@@ -4,7 +4,7 @@ export default {
   keyword: "Tanger Outlets towing",
   title: "Tanger Outlets Towing in Sunbury",
   description:
-    "Tanger Outlets towing and roadside help in Sunbury at I-71 Exit 131. Jumps, lockouts, tire changes and long flatbed tows home. Call (614) 633-8163.",
+    "Tanger Outlets towing and roadside help in Sunbury at I-71 Exit 131. Jumps, lockouts, tire changes and long flatbed tows home. Call (614) 714-5785.",
   h1: "Tanger Outlets towing and roadside help off I-71 in Sunbury",
   lede:
     "Shopping trip cut short by a dead battery or a flat in the outlet lot? We come up I-71 to fix it on the spot or carry the car home on a flatbed.",
@@ -65,7 +65,7 @@ export default {
     },
     {
       q: "Can you tow my car from Tanger back to my hometown?",
-      a: "Yes. Tell the dispatcher where you want the car to go, and we'll quote the trip based on the loaded miles. For a long run, call the destination shop first to make sure someone can receive the car, or arrange for it to go to your driveway. Remove valuables and anything you'll need that night before the car is loaded.",
+      a: "Yes. Give dispatch the drop-off address, and we'll quote the trip based on the loaded miles. For a long run, call the destination shop first to make sure someone can receive the car, or arrange for it to go to your driveway. Remove valuables and anything you'll need that night before the car is loaded.",
     },
     {
       q: "My car won't start after sitting in the sun at the outlets. Is it the battery?",

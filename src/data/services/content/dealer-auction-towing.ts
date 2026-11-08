@@ -4,14 +4,14 @@ export default {
   keyword: "dealer transport",
   title: "Dealer Transport in Columbus, OH",
   description:
-    "Dealer transport in Columbus by flatbed: lot-to-lot moves, auction runs, body shop trips and buyer deliveries, all with photo reports. (614) 633-8163.",
+    "Dealer transport in Columbus by flatbed: lot-to-lot moves, auction runs, body shop trips and buyer deliveries, all with photo reports. (614) 714-5785.",
   h1: "Columbus Dealer Transport and Auction Runs on a Flatbed",
   lede:
     "Inventory moves between your lot, the auction, the reconditioning shop and the buyer's driveway without adding a mile to the odometer.",
   intro: [
     "Dealer transport keeps inventory moving between the places a car has to visit before it sells: the auction lane, the body or paint shop, the detailer, another store in your group and, finally, the buyer's driveway. Auto Lyft USA runs those trips on light-duty flatbeds, so a vehicle that has just been cleaned, repaired or inspected arrives looking the way it did when it left.",
     "Central Ohio has several wholesale auto auctions, and sale days fill the surrounding roads with haulers. We take single units and small batches across our four carriers, collecting from your lot or the auction's lot and delivering to wherever the vehicle needs to be next. Each car gets a photo condition report at pickup and a second one at drop-off, which settles questions about a scuff or a chipped wheel before they turn into arguments between the buyer, the seller and the shop.",
-    "We work with independent lots along the Broad Street, Morse Road and Parsons Avenue corridors, franchise stores, wholesalers, and the body and detail shops that serve them. Approved businesses can be billed monthly. To set up regular runs, ring the office at [(614) 633-8163](/contact) or send the details by email to lisa@autolyftusa.online, and we will go over the routes you use most and how they are priced. Single moves for a one-time sale are welcome too, and the dispatcher can quote one of those on the same call.",
+    "We work with independent lots along the Broad Street, Morse Road and Parsons Avenue corridors, franchise stores, wholesalers, and the body and detail shops that serve them. Approved businesses can be billed monthly. To set up regular runs, ring the office at [(614) 714-5785](/contact) or send the details by email to lisa@autolyftusa.online, and we will go over the routes you use most and how they are priced. Single moves for a one-time sale are welcome too, and the dispatcher can quote one of those on the same call.",
   ],
   situations: [
     { title: "Auction purchases", text: "Units your buyer picked up at a Central Ohio sale come back to your lot, or straight to the reconditioning shop if they need work before going on the line." },

@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Lewis Center flatbed towing on US 23, Polaris Parkway and East Orange Road, plus jump starts and lockouts across Orange Township. Call (614) 633-8163.",
+    "Lewis Center flatbed towing on US 23, Polaris Parkway and East Orange Road, plus jump starts and lockouts across Orange Township. Call (614) 714-5785.",
   h1: "Lewis Center Flatbed Towing Along US 23 and I-71",
   lede:
     "Lewis Center spreads across Orange Township in southern Delaware County, between the shops on US 23 and the interchanges on I-71.",
   intro: [
     "Lewis Center began as a railroad stop: the Lewis family gave land for a station around 1850 in return for having it carry their name, and the post office opened in 1852 under the spelling Lewis Centre. It has never incorporated, so today the name covers a big slice of Orange Township rather than a town with its own city hall or police force. Deputies from the Delaware County Sheriff's Office patrol it, and the township handles roads and snow.",
     "Because there is no single downtown, our calls are spread along a few busy corridors. US 23 is lined with strip centers, restaurants and the entrance to Evans Farm; Polaris Parkway and Gemini Place near I-71 pull in shoppers and office workers; and East Orange Road ties the two together past Olentangy Orange High School and the township hall. Away from those roads it is subdivision streets, cul-de-sacs and new construction, so many jobs are dead batteries and flats in driveways, plus the odd car that slid off a rural road in winter.",
-    "Our light-duty flatbeds suit the minivans, crossovers and electric cars common in Orange Township garages, because nothing on the car turns during the trip. The car can go to a dealer near Polaris, a shop on US 23 or anywhere else you name. Call (614) 633-8163, or read about [winch-outs](/towing/winch-out) if you are stuck in a ditch or a snowy yard.",
+    "Our light-duty flatbeds suit the minivans, crossovers and electric cars common in Orange Township garages, because nothing on the car turns during the trip. The car can go to a dealer near Polaris, a shop on US 23 or anywhere else you name. Call (614) 714-5785, or read about [winch-outs](/towing/winch-out) if you are stuck in a ditch or a snowy yard.",
   ],
   roads: [
     { name: "US 23 (Columbus Pike)", note: "Lewis Center's commercial spine, with frequent signals and turn lanes. A car stalled here is often moved into the nearest parking lot before it is loaded." },

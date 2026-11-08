@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Johnstown, OH tows on Coshocton Street (US 62), Main Street (SR 37) and the roads around the Intel site. Flatbed carriers, price set first. (614) 633-8163.",
+    "Johnstown, OH tows on Coshocton Street (US 62), Main Street (SR 37) and the roads around the Intel site. Flatbed carriers, price set first. (614) 714-5785.",
   h1: "Johnstown Towing for Licking County's Northwest Corner",
   lede:
     "Johnstown is a small Licking County city built around a public square, now sitting next door to one of the largest construction projects in Ohio.",

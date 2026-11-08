@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Sharon Woods towing between SR-161 and Schrock Road: flatbed tows, battery jumps and lockouts near Beechcroft High and the I-270 ramps. (614) 633-8163.",
+    "Sharon Woods towing between SR-161 and Schrock Road: flatbed tows, battery jumps and lockouts near Beechcroft High and the I-270 ramps. (614) 714-5785.",
   h1: "Sharon Woods Towing and Roadside Calls",
   lede:
     "A quiet, curving subdivision tucked between Dublin-Granville Road and the outerbelt. Most calls here start in a driveway, a school lot or a shopping center on SR-161.",

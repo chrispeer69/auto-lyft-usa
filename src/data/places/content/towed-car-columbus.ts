@@ -4,7 +4,7 @@ export default {
   keyword: "find my towed car in Columbus",
   title: "Find My Towed Car in Columbus",
   description:
-    "Find my towed car in Columbus: check towed vs. stolen, read the tow signs, know your Ohio rights and what to bring to the lot. Call (614) 633-8163.",
+    "Find my towed car in Columbus: check towed vs. stolen, read the tow signs, know your Ohio rights and what to bring to the lot. Call (614) 714-5785.",
   h1: "Find my towed car in Columbus: a step-by-step guide",
   lede:
     "Your parking spot is empty. Before panicking, work through these steps to learn whether the car was towed or stolen, where it went, and how to get it back.",
@@ -54,7 +54,7 @@ export default {
       paragraphs: [
         "A police-ordered tow is different from a private-property tow. Columbus police may have a car towed after a crash, an arrest, when it's left on a street during a snow emergency or event restriction, when it's blocking traffic or a driveway, or when it's been reported as abandoned. Those cars usually go to a city-designated impound or storage lot rather than to a private towing company's yard of choice.",
         "Getting a police-towed car back can involve extra steps. Some cars are held as evidence or until a driver's license or registration issue is cleared up, and the lot won't release them until the police or a court say so. Ask the non-emergency dispatcher whether there's a hold on your car and what's needed to clear it. Fees in this case are generally set by the city, and you'll pay them at the impound lot, not to us or to the officer.",
-        "If your car was towed after a crash, you may also be dealing with insurance. Call your insurer early; many policies cover towing and some storage after an accident, and the adjuster may want to inspect the car where it sits before it's moved again. Our page on [accident towing](/towing/accident-towing) explains what we do once the car is released.",
+        "When a crash is the reason it got towed, you may also be dealing with insurance. Call your insurer early; many policies cover towing and some storage after an accident, and the adjuster may want to inspect the car where it sits before it's moved again. Our page on [accident towing](/towing/accident-towing) explains what we do once the car is released.",
       ],
     },
     {
@@ -62,7 +62,7 @@ export default {
       paragraphs: [
         "Not every car can be driven off the lot. A battery may have drained after days in storage, a tire may have gone flat, or the car may have damage from the incident that led to the tow. That's the point where Auto Lyft USA can help. Once the lot has released the car to you, we can jump it, change a tire, or load it on one of our flatbeds and take it to your home, your mechanic or an independent partner shop that will diagnose the problem and send you a quote.",
         "Before calling us, confirm with the lot that the car is released and ask whether they allow outside tow trucks to pick up vehicles and during which hours. Most lots require the registered owner or an authorized person to be present at pickup. Have your release paperwork with you.",
-        "Our [published rates](/rates) don't change for impound pickups: a $125 hook-up, $7 for each loaded mile, and $4 a mile for the drive out to the lot. Roadside help such as a jump-start is $75 flat plus mileage. If you need somewhere to keep the car for a few days while a shop gets ready for it, our own yard charges $45 a day for storage. If a private-lot sign names Auto Lyft USA as the towing company, call us at (614) 633-8163 and we'll tell you whether we have the car and what release requires.",
+        "Our [published rates](/rates) don't change for impound pickups: a $125 hook-up, $7 for each loaded mile, and $4 a mile for the drive out to the lot. Roadside help such as a jump-start is $75 flat plus mileage. If you need somewhere to keep the car for a few days while a shop gets ready for it, our own yard charges $45 a day for storage. If a private-lot sign names Auto Lyft USA as the towing company, call us at (614) 714-5785 and we'll tell you whether we have the car and what release requires.",
       ],
     },
   ],
@@ -104,12 +104,12 @@ export default {
       a: "Yes. Once the lot confirms the car is released to you, we can come jump it as a $75 flat roadside call plus mileage from our yard. If it still won't start, or there's damage from the incident, the flatbed carries it to your house or a garage you pick. Ask the lot about outside tow trucks and pickup hours before you call.",
     },
     {
-      q: "Can you tow my car from the impound lot to my mechanic?",
+      q: "Once I get it out of impound, can you haul it to my mechanic?",
       a: "Yes, as long as the lot allows outside tow trucks to collect released vehicles. You'll generally need to be there with your release paperwork and ID. Pricing follows the normal card, which means a $125 hook-up, $7 for every mile the car rides, and en-route mileage at $4. We'll take the car anywhere you choose.",
     },
     {
       q: "Did Auto Lyft USA tow my car?",
-      a: "Check the signs where you parked. If a private-lot sign names Auto Lyft USA, call us at (614) 633-8163 with your plate number and vehicle description, and we'll tell you whether we have it, what release requires and where to pick it up. If the sign names a different company, contact them directly, since we can't see other companies' records.",
+      a: "Check the signs where you parked. If a private-lot sign names Auto Lyft USA, call us at (614) 714-5785 with your plate number and vehicle description, and we'll tell you whether we have it, what release requires and where to pick it up. If the sign names a different company, contact them directly, since we can't see other companies' records.",
     },
   ],
   cities: ["columbus"],

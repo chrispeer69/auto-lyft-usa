@@ -2,14 +2,14 @@ import type { HubContent } from "./index";
 
 export default {
   description:
-    "Columbus towing with trucks posted around town: flatbed tows, jumps and lockouts in every neighborhood, from the Hilltop to Northland. (614) 633-8163.",
+    "Columbus towing with trucks posted around town: flatbed tows, jumps and lockouts in every neighborhood, from the Hilltop to Northland. (614) 714-5785.",
   h1: "Flatbed Towing in Every Corner of Columbus",
   lede:
     "Our trucks are spread across the city, with the office on Harrisburg Pike on the southwest side. Choose your neighborhood for the streets, landmarks and questions we hear there.",
   intro: [
     "Columbus is a big city to tow in. It spreads across more than two hundred square miles, and the routes that tie it together, I-70, I-71 and the I-270 outerbelt, are what our drivers use to get across it. Rather than parking every truck at our office on 1620 Harrisburg Pike, we keep them positioned in different parts of town, and dispatch sends whichever one is nearest and free. The west-side neighborhoods, the Hilltop, Westgate and Franklinton, are practically next door.",
     "Downtown is where most cross-town trips meet. I-70 and I-71 share a crowded stretch along the south and east sides of the center, and the rebuilt ramps still catch drivers off guard. I-670 runs along the north edge toward the airport, and SR-315 follows the Olentangy past Ohio State to the northwest side. Each of those roads produces its own breakdowns, and the outerbelt adds a long loop of ramps and shoulders. Away from the highways, the work changes: parking garages downtown and around campus, where clearance matters more than horsepower, and older neighborhoods on the east and south sides where streets are narrow, brick in places, and garages sit back on alleys.",
-    "Whatever part of town you are in, the process is the same. Most cars ride on a flatbed, and a wheel-lift tow covers tight spots where that is safe. The dispatcher learns the location and the symptoms, quotes the full price from our published [rate card](/rates), and gives you a live arrival estimate before a truck leaves. We take the car where you choose, or suggest an independent partner shop. Call [(614) 633-8163](/contact) any hour, or use the [request form](/request).",
+    "Whatever part of town you are in, the process is the same. Most cars ride on a flatbed, and a wheel-lift tow covers tight spots where that is safe. The dispatcher learns the location and the symptoms, quotes the full price from our published [rate card](/rates), and gives you a live arrival estimate before a truck leaves. We take the car where you choose, or suggest an independent partner shop. Call [(614) 714-5785](/contact) any hour, or use the [request form](/request).",
   ],
   blurbs: {
     "hilltop": "Our closest neighbor: West Broad, Sullivant and Hague, a short climb up Harrisburg Pike from the yard.",

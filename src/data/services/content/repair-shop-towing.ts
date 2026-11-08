@@ -4,14 +4,14 @@ export default {
   keyword: "tow to repair shop",
   title: "Tow to Repair Shop in Columbus",
   description:
-    "Columbus tows to the mechanic you choose, any garage or dealer, with night-drop delivery when the shop allows it and yard storage if not. (614) 633-8163.",
+    "Columbus tows to the mechanic you choose, any garage or dealer, with night-drop delivery when the shop allows it and yard storage if not. (614) 714-5785.",
   h1: "Tow to Repair Shop Service Anywhere in Columbus",
   lede:
     "Name the shop and your car goes straight there on a flatbed, whether it is the neighborhood garage you have trusted for years or a dealer service department.",
   intro: [
     "A tow to repair shop sounds simple, and with Auto Lyft USA it stays that way: you choose the mechanic and we deliver the car there. It can be an independent garage in Clintonville, a dealership service lane off I-71, a transmission specialist on the west side or a tire store near your office. We don't push you toward any particular business, and you can change the destination right up until the car is loaded.",
     "If you don't have a mechanic, or you just moved to Central Ohio, ask the dispatcher. We can suggest a partner shop that handles the kind of repair your car seems to need, and our [repair help](/repair) page describes the work those shops take on. The final call is still yours, and the car goes wherever you decide.",
-    "Breakdowns rarely wait for business hours. When a shop has a key drop box and a place to leave vehicles, the driver can make a night drop and let you know when it is done. When the shop doesn't allow that, your car spends the night at our yard on Harrisburg Pike and goes over once the shop opens. Phone [(614) 633-8163](/contact) day or night. The dispatcher asks where the car is, what it is doing and which shop should get it, then quotes the trip so you know the cost before anything moves.",
+    "Breakdowns rarely wait for business hours. When a shop has a key drop box and a place to leave vehicles, the driver can make a night drop and let you know when it is done. When the shop doesn't allow that, your car spends the night at our yard on Harrisburg Pike and goes over once the shop opens. Phone [(614) 714-5785](/contact) day or night. The dispatcher asks where the car is, what it is doing and which shop should get it, then quotes the trip so you know the cost before anything moves.",
   ],
   situations: [
     { title: "A warning light you can't ignore", text: "A flashing check-engine light, an overheating gauge or a red oil lamp means the car shouldn't be driven. We carry it to the shop instead." },

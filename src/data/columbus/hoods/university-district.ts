@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Towing in the University District near Ohio State: flatbed tows, dead batteries and lockouts on High, Indianola and Summit, game days too. (614) 633-8163.",
+    "Towing in the University District near Ohio State: flatbed tows, dead batteries and lockouts on High, Indianola and Summit, game days too. (614) 714-5785.",
   h1: "University District Towing Around the OSU Campus",
   lede:
     "Student rentals, game-day crowds, move-in weekends and a lot of cars that only get driven once a month. The work here rises and falls with the campus calendar.",

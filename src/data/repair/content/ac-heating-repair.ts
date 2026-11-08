@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "A/C and Heater Repair Help, Columbus",
   description:
-    "No heat or warm A/C in Columbus? Learn when it's safe to drive, and when we should flatbed the car to a climate-control shop. (614) 633-8163.",
+    "No heat or warm A/C in Columbus? Learn when it's safe to drive, and when we should flatbed the car to a climate-control shop. (614) 714-5785.",
   h1: "No Heat or No Cold Air? Getting the Car Looked At",
   lede:
     "A dead A/C in July or a cold cabin in January is more than a comfort issue when it hides a coolant leak. Here is when to drive in and when we should tow it.",

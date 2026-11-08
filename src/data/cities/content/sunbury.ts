@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Sunbury tow trucks for I-71 exit 131, Tanger Outlets on Wilson Road and the town square on Cherry Street. Tows quoted up front, any hour. (614) 633-8163.",
+    "Sunbury tow trucks for I-71 exit 131, Tanger Outlets on Wilson Road and the town square on Cherry Street. Tows quoted up front, any hour. (614) 714-5785.",
   h1: "Sunbury Tow Trucks for Exit 131 and the Town Square",
   lede:
     "Sunbury mixes a New England-style village green with a fast-growing interstate edge, and our flatbeds work both ends of it.",

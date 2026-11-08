@@ -4,7 +4,7 @@ export default {
   keyword: "Ohio State Fair towing",
   title: "Ohio State Fair Towing & Expo Center Help",
   description:
-    "Breakdown at the fairgrounds off I-71 and 17th Avenue? Ohio State Fair towing, jumps and lockouts at the Ohio Expo Center, all year. (614) 633-8163.",
+    "Breakdown at the fairgrounds off I-71 and 17th Avenue? Ohio State Fair towing, jumps and lockouts at the Ohio Expo Center, all year. (614) 714-5785.",
   h1: "Ohio State Fair Towing on the Expo Center Grounds",
   lede:
     "Twelve days of rides, livestock and fried food each summer, plus horse shows and expos the rest of the year. If your car gives out at the fairgrounds, call us.",
@@ -59,11 +59,11 @@ export default {
   faqs: [
     {
       q: "Do you offer Ohio State Fair towing every day the fair is open?",
-      a: "Yes. Our dispatch line is open 24 hours a day, every day, so we cover the fair from opening morning to the last night. The worst times for traffic are usually the morning arrival rush and the hour after the fair closes. A call in the middle of the afternoon or early evening is often easier to reach. Phone (614) 633-8163 with your gate and lot.",
+      a: "Yes. Our dispatch line is open 24 hours a day, every day, so we cover the fair from opening morning to the last night. The worst times for traffic are usually the morning arrival rush and the hour after the fair closes. A call in the middle of the afternoon or early evening is often easier to reach. Phone (614) 714-5785 with your gate and lot.",
     },
     {
       q: "My car overheated in the line leaving the fairgrounds. What should I do?",
-      a: "Get out of the travel lane if you can, switch off the engine and turn on the hazards. Do not open the radiator cap while it is hot. Let it cool for at least half an hour. If it overheats again right away, or you see coolant pouring out, call us for a tow rather than trying to drive home on I-71.",
+      a: "If the car will move, clear the travel lane, switch off the engine and turn on the hazards. Do not open the radiator cap while it is hot. Let it cool for at least half an hour. If it overheats again right away, or you see coolant pouring out, call us for a tow rather than trying to drive home on I-71.",
     },
     {
       q: "Can you tow my pickup with a livestock trailer still attached?",

@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Whitehall, OH flatbed tows on East Broad Street, Hamilton Road and Yearling Road, plus I-70 and I-270 breakdown help day or night. (614) 633-8163.",
+    "Whitehall, OH flatbed tows on East Broad Street, Hamilton Road and Yearling Road, plus I-70 and I-270 breakdown help day or night. (614) 714-5785.",
   h1: "Whitehall Car Towing on Broad, Main and Hamilton",
   lede:
     "Whitehall is boxed in by I-70 and the I-270 outerbelt, with East Broad Street and Hamilton Road running through the middle, and nearly every call we take here traces back to one of those four.",

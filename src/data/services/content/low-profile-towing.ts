@@ -4,14 +4,14 @@ export default {
   keyword: "low profile towing",
   title: "Low Profile Towing in Columbus, OH",
   description:
-    "Low profile towing in Columbus for lowered, sports and exotic cars: shallow deck angle, ramp boards, slow winch, soft tire straps. Call (614) 633-8163.",
+    "Low profile towing in Columbus for lowered, sports and exotic cars: shallow deck angle, ramp boards, slow winch, soft tire straps. Call (614) 714-5785.",
   h1: "Columbus Low Profile Towing for Lowered and Exotic Cars",
   lede:
     "Splitters, air dams and slammed suspensions need a gentle climb onto the carrier. We lower the angle with ramp boards and pull the car up an inch at a time.",
   intro: [
     "Low profile towing is about one thing: getting a car that sits close to the pavement onto a truck without touching its nose, rocker panels or exhaust. Auto Lyft USA handles these loads around Columbus with tilt-deck flatbed carriers, ramp extensions and a winch run at a crawl. A driver watches the front lip the whole way up, and the car is secured with soft straps over the tires rather than chains near the body.",
     "The usual customers are owners of Corvettes, Porsches, Miatas on coilovers, stanced imports, track-day builds and late-model sports sedans with factory aero. Many of these cars clear a speed bump with a finger's width to spare. On a carrier with a standard approach angle, the bumper cover can catch at the hinge point where the deck meets the road. Our job is to remove that hinge point, or make it so shallow that nothing contacts it. Electric sports cars with battery packs low in the floor get the same treatment.",
-    "When you call [(614) 633-8163](/contact), give the dispatcher the car's year and model, a rough figure for its ground clearance the car has, and whether anything hangs below the bumper, such as a splitter or a long exhaust. That tells the driver how many boards to bring. You get the full price for the job before anyone heads your way.",
+    "When you call [(614) 714-5785](/contact), give the dispatcher the car's year and model, a rough figure for its ground clearance the car has, and whether anything hangs below the bumper, such as a splitter or a long exhaust. That tells the driver how many boards to bring. You get the full price for the job before anyone heads your way.",
   ],
   situations: [
     { title: "Lowered on coilovers or air", text: "A static drop or bagged suspension that is aired out leaves very little room under the chassis. We stack ramp boards so the tires climb before the body reaches the deck tail." },

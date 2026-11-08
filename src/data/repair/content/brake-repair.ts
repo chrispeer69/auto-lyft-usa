@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Brake Repair Help in Columbus, OH",
   description:
-    "Grinding, a soft pedal or a brake light? We tow the car on a flatbed to your shop or a Columbus partner shop for brake work. (614) 633-8163.",
+    "Grinding, a soft pedal or a brake light? We tow the car on a flatbed to your shop or a Columbus partner shop for brake work. (614) 714-5785.",
   h1: "Brakes Failing? We Tow the Car to a Brake Shop",
   lede:
     "Brakes that grind, pull or sink to the floor are not something to nurse across town. We carry the car on a flatbed to a shop that inspects and repairs braking systems.",

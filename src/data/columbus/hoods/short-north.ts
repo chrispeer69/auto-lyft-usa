@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Short North flatbed towing and roadside help along High Street, from Goodale to Fifth Avenue: garages, metered spots, permit blocks. (614) 633-8163.",
+    "Short North flatbed towing and roadside help along High Street, from Goodale to Fifth Avenue: garages, metered spots, permit blocks. (614) 714-5785.",
   h1: "Short North Tows Under the High Street Arches",
   lede:
     "Tight curbs, packed garages and a crowd every weekend night, so the driver hunts for an alley mouth or loading zone and keeps the strip moving while your car goes on the deck.",
   intro: [
     "Seventeen lighted steel arches, finished in 2002, span North High Street from the I-670 cap to just past Fifth Avenue, and that row of light is the Short North. The strip begins at Goodale Street, where shops built over the freeway tie it to Downtown and the convention center, and runs north past the 1920 Garden Theater. Since January 2019 its side streets, along with Victorian Village and Italian Village, have been under the city's paid and permit parking plan, so most visitors pay by meter or phone app and residents park on permits.",
     "Few jobs here are breakdowns in moving traffic. More often it is a car that won't start on a deck behind the galleries, a battery that gave up during a long dinner, keys locked inside on Lincoln or Russell Street, or a car that has to come off a crowded permit block. A flatbed needs a clear run of curb behind it to tilt the bed, so the driver looks for an alley mouth or a loading zone before committing to a spot on High Street itself.",
-    "Garages take the most planning. Many decks near the convention center and along the strip have low entrances, which can rule out a loaded carrier. Tell us the garage name and your level, and the driver decides between a wheel-lift truck, rolling the car down the ramp, or loading at the entrance. Call [(614) 633-8163](/contact) with those details, or put them in the [online request](/request).",
+    "Garages take the most planning. Many decks near the convention center and along the strip have low entrances, which can rule out a loaded carrier. Tell us the garage name and your level, and the driver decides between a wheel-lift truck, rolling the car down the ramp, or loading at the entrance. Call [(614) 714-5785](/contact) with those details, or put them in the [online request](/request).",
   ],
   roads: [
     { name: "North High Street, Goodale to Fifth Avenue", note: "The arched retail strip. Curb space is metered and full most evenings, so drivers stage on a side street and load quickly." },

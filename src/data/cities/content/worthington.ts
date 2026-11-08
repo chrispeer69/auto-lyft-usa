@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Worthington towing along High Street, Wilson Bridge Road and SR-161, from Old Worthington to I-270. Flatbeds dispatched around the clock. (614) 633-8163.",
+    "Worthington towing along High Street, Wilson Bridge Road and SR-161, from Old Worthington to I-270. Flatbeds dispatched around the clock. (614) 714-5785.",
   h1: "Worthington Towing Along High Street and Wilson Bridge Road",
   lede:
     "Worthington mixes an 1803 village square with an outerbelt business corridor, and our carriers spend time in both.",
   intro: [
     "Worthington's settlers laid out the Village Green in December 1803 and ringed it with 160 town lots, and High Street still runs straight through the middle of that plan. A few of the early buildings survive within sight of the square, including the 1811 Orange Johnson House just to the north. The old grid meets modern traffic at two points: SR-161 crossing High Street at a signal right by the Green, and the I-270 interchange with US-23 on the city's north edge.",
-    "Old Worthington, laid out around the Village Green, is all brick sidewalks, historic houses and on-street parking in front of restaurants and shops. Calls there are often lockouts, dead batteries or a car that won't start after dinner, and loading has to be done carefully with pedestrians and parked cars close by. North of downtown, the Wilson Bridge Road corridor holds offices, hotels and the Worthington Gateway development, where weekday parking-lot calls are the norm. The busiest highway work comes from the I-270 and US-23 interchange and the SR-161 crossing at SR-315, where merging and stop-and-go traffic produce stalls and minor collisions.",
-    "Two high schools, the community center and the arts center keep evenings busy, and most cars we move here go on a flatbed; collision cleanup is covered on the [accident towing](/towing/accident-towing) page. The price is agreed before a carrier heads your way. If you need a hand, dial (614) 633-8163 or fill out the [web request](/request).",
+    "Old Worthington, laid out around the Village Green, is all brick sidewalks, historic houses and on-street parking in front of restaurants and shops. Calls there are often lockouts, dead batteries or a car that won't start after dinner, and loading has to be done carefully with pedestrians and parked cars close by. North of downtown, the Wilson Bridge Road corridor holds offices, hotels and the Worthington Gateway development, where weekday parking-lot calls are the norm. The busiest highway work comes where I-270 meets US-23, plus the spot where SR-161 crosses at SR-315, where merging and stop-and-go traffic produce stalls and minor collisions.",
+    "Two high schools, the community center and the arts center keep evenings busy, and most cars we move here go on a flatbed; collision cleanup is covered on the [accident towing](/towing/accident-towing) page. The price is agreed before a carrier heads your way. If you need a hand, dial (614) 714-5785 or fill out the [web request](/request).",
   ],
   roads: [
     { name: "I-270 at US-23 (Exit 23)", note: "The outerbelt exit signed for Worthington and Delaware. Its ramps and the High Street signals just beyond them see a steady stream of rush-hour breakdowns." },

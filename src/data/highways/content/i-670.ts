@@ -6,13 +6,13 @@ export default {
   keyword: "I-670 towing",
   title: "I-670 Towing: Downtown, Airport, Gahanna",
   description:
-    "I-670 towing from the I-70 split west of downtown, under the High Street cap, past the airport to I-270 and Gahanna. SmartLane tips. Call (614) 633-8163.",
+    "I-670 towing from the I-70 split west of downtown, under the High Street cap, past the airport to I-270 and Gahanna. SmartLane tips. Call (614) 714-5785.",
   h1: "Trouble on I-670? From the West Split to the Airport",
   lede:
     "I-670 is only about ten miles long, but it packs in tight ramps, a sunken downtown trench, airport traffic and a part-time shoulder lane. Here is how to handle each.",
   intro: [
     "I-670 towing starts closest to us at the west end, where the interstate peels off I-70 west of downtown, a short run from our Harrisburg Pike yard. From there I-670 passes Franklinton and Grandview, swaps traffic with SR-315, drops below street level through the north edge of downtown, crosses I-71, and heads east past the airport to end at I-270 by Gahanna. Eastbound between I-71 and I-270 it also has the SmartLane, a shoulder that turns into a travel lane at busy times.",
-    "If your car is in a lane, if anyone is hurt, or if you are stuck in the SmartLane while it is open, call 911 first. Troopers answer #677 from cell phones when the trouble is not an emergency. After that, call Auto Lyft USA at (614) 633-8163 for the truck.",
+    "If your car is in a lane, if anyone is hurt, or if you are stuck in the SmartLane while it is open, call 911 first. Troopers answer #677 from cell phones when the trouble is not an emergency. After that, call Auto Lyft USA at (614) 714-5785 for the truck.",
   ],
   firstMoves: [
     "Flashers on. If the car still rolls, aim for the next exit ramp rather than stopping in the walled downtown section.",
@@ -91,7 +91,7 @@ export default {
     },
     {
       q: "Who handles I-670 towing near downtown and Grandview?",
-      a: "Auto Lyft USA, at any hour. The west end of I-670, by the I-70 split, Grandview Avenue and the SR-315 ramps, is a short drive from our Harrisburg Pike yard. Call (614) 633-8163. Blocking a lane? 911 comes before us.",
+      a: "Auto Lyft USA, at any hour. The west end of I-670, by the I-70 split, Grandview Avenue and the SR-315 ramps, is a short drive from our Harrisburg Pike yard. Call (614) 714-5785. Blocking a lane? 911 comes before us.",
     },
     {
       q: "My car broke down in the sunken section of I-670 downtown. What now?",

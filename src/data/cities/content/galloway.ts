@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed towing in Galloway, OH on Georgesville Road, Galloway Road and I-70, plus lockouts and jump starts near Battelle Darby Creek. (614) 633-8163.",
+    "Flatbed towing in Galloway, OH on Georgesville Road, Galloway Road and I-70, plus lockouts and jump starts near Battelle Darby Creek. (614) 714-5785.",
   h1: "Towing in Galloway, Ohio: Flatbeds on the West Side",
   lede:
     "Galloway sits between the I-270 outerbelt and Big Darby Creek, and our Harrisburg Pike yard sits only a few miles to the east.",

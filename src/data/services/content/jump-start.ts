@@ -4,14 +4,14 @@ export default {
   keyword: "jump start",
   title: "Jump Start Service in Columbus, OH",
   description:
-    "Jump start service in Columbus, OH: a driver brings a booster pack, gets your engine turning and tests the battery and charging system. (614) 633-8163.",
+    "Jump start service in Columbus, OH: a driver brings a booster pack, gets your engine turning and tests the battery and charging system. (614) 714-5785.",
   h1: "Need a Jump Start in Columbus? We Come to Your Car",
   lede:
     "Dead battery in the driveway, the office lot or a campus garage? A driver brings a booster pack, gets the engine running and checks whether the battery is worth keeping.",
   intro: [
     "A jump start is the most common reason people call us for help without needing a tow. Columbus winters are hard on batteries: a cold snap drops their output just as the engine needs more power to turn over, and a battery that was borderline in October can give up on the first single-digit morning in January. Summer heat wears them down too, which is why the failures often show up when the weather turns. Short trips around town, where the alternator never gets enough time to refill what the starter used, speed up the decline.",
     "When you call Auto Lyft USA, a driver comes out in one of our trucks with a portable booster pack. There is no second car to position nose to nose and no tangle of cables across a parking lot, so the job works in tight spaces like a garage stall, a crowded curb or a spot wedged between two pickups. Once the engine is running, the driver checks the battery and the charging output so you know whether you can trust the car tomorrow.",
-    "Sometimes a jump is all you need. Other times the test shows the battery is finished, and you can have a [replacement installed](/towing/car-battery-replacement) right there instead of going through the same thing again next week. Phone [(614) 633-8163](/contact) to hear the full price before a driver is sent.",
+    "Sometimes a jump is all you need. Other times the test shows the battery is finished, and you can have a [replacement installed](/towing/car-battery-replacement) right there instead of going through the same thing again next week. Phone [(614) 714-5785](/contact) to hear the full price before a driver is sent.",
   ],
   situations: [
     { title: "Lights left on", text: "A dome light or headlights left on overnight can drain a healthy battery. A boost usually gets you going, and a drive across town recharges it." },
@@ -76,7 +76,7 @@ export default {
     { q: "My car is stuck in park with a dead battery. What happens?", a: "A boost usually releases the shift lock so you can drive or the car can be rolled. If the car still will not start, the driver can use the shift lock override on many cars and load it on the flatbed. Mention it when you call so we know the car cannot be moved yet." },
     { q: "Do I need to be with the car?", a: "Ideally, yes. Without the key or fob in hand, nobody can turn the engine over and prove the boost worked. If you cannot be there, call the dispatcher to talk about options, such as having a family member, coworker or building manager meet the driver with the key." },
     { q: "Should I try a jump start myself with cables?", a: "If you have cables, a willing helper and a safe spot, it can work. The risks come from hooking clamps up in the wrong order, working beside traffic or boosting a battery that is cracked or frozen. When any of that applies, or you just would rather not, a driver with a booster pack is the simpler choice." },
-    { q: "Can I get a jump start in Columbus in the middle of the night?", a: "Yes. Auto Lyft USA dispatches jump starts 24-7, including overnight, weekends and holidays. A jump is a $75 flat roadside call plus en-route miles, with $150 more for the overnight window, 10 PM to 6 AM. The dispatcher totals it for you on the phone at (614) 633-8163 before a truck is assigned." },
+    { q: "Can I get a jump start in Columbus in the middle of the night?", a: "Yes. Auto Lyft USA dispatches jump starts 24-7, including overnight, weekends and holidays. A jump is a $75 flat roadside call plus en-route miles, with $150 more for the overnight window, 10 PM to 6 AM. The dispatcher totals it for you on the phone at (614) 714-5785 before a truck is assigned." },
     { q: "I'm alone in an empty lot at night with a dead battery. What should I do while I wait?", a: "Stay inside with the doors locked, keep the hazard lights off if the battery is weak so there is enough charge left to help the boost, and give the dispatcher a number that will stay on. The driver phones as they arrive, so you can confirm it is our truck before you step out." },
     { q: "Do you jump-start motorcycles?", a: "Yes. Bikes get boosted too, with the clamps placed carefully since a motorcycle battery is small and often tucked under the seat or a side cover. Give the dispatcher the make and model when you call." },
   ],

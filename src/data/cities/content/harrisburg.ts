@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Harrisburg, OH towing at the far end of US-62/SR-3, the road our yard is on: flatbeds for High Street, SR-762 and I-71 exit 94. (614) 633-8163.",
+    "Harrisburg, OH towing at the far end of US-62/SR-3, the road our yard is on: flatbeds for High Street, SR-762 and I-71 exit 94. (614) 714-5785.",
   h1: "Our Street Leads There: Towing in Harrisburg, Ohio",
   lede:
     "Our yard sits on Harrisburg Pike, and if you follow that road far enough southwest you arrive in the village that gave it its name.",

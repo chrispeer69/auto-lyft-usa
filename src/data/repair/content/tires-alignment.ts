@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Tire and Alignment Help in Columbus",
   description:
-    "Bent rim, no spare or a hard pull after a pothole? We tow the car to a Columbus tire and alignment shop on a flatbed. (614) 633-8163.",
+    "Bent rim, no spare or a hard pull after a pothole? We tow the car to a Columbus tire and alignment shop on a flatbed. (614) 714-5785.",
   h1: "Shredded Tire or Bent Wheel? Get It to a Tire Shop",
   lede:
     "A spare can't fix a bent rim, two flats at once or a car pulling hard after a pothole. We carry it on the flatbed to a shop that handles tires and alignment.",

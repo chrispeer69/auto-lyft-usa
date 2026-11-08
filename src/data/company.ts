@@ -16,11 +16,11 @@ export const COMPANY = {
   alternateNames: ["Auto Lyft USA Inc.", "Auto Lyft", "AutoLyft USA"],
   owner: { name: "Lisa Peer", title: "Owner" },
   foundingYear: 2024,
-  phone: "(614) 633-8163",
-  phoneE164: "+16146338163",
-  phoneSchema: "+1-614-633-8163",
-  telHref: "tel:+16146338163",
-  smsHref: "sms:+16146338163",
+  phone: "(614) 714-5785",
+  phoneE164: "+16147145785",
+  phoneSchema: "+1-614-714-5785",
+  telHref: "tel:+16147145785",
+  smsHref: "sms:+16147145785",
   email: "lisa@autolyftusa.online",
   address: {
     street: "1620 Harrisburg Pike",
@@ -41,7 +41,9 @@ export const COMPANY = {
   alliance: { name: "US Tow Alliance", url: "https://www.ustowalliance.com/", tier: "Elite", since: 2026, registryId: "10602", listed: "May 5, 2026" },
   /** Unconfirmed — rendered only once filled in. */
   pucoNumber: null as string | null,
-  usdotNumber: null as string | null,
+  /** FMCSA SAFER, checked 2026-11-08: AUTO LYFT USA INC, USDOT 4214342, MC-1627897, active, authorized for hire. */
+  usdotNumber: "4214342" as string | null,
+  mcNumber: "MC-1627897" as string | null,
   googleMapsCid: null as string | null,
   facebook: null as string | null,
   slogan: "Four wheels up. Every time.",
@@ -64,5 +66,6 @@ export function licenceLine(): string {
   const parts: string[] = [];
   if (COMPANY.pucoNumber) parts.push(`PUCO towing certificate ${COMPANY.pucoNumber}`);
   if (COMPANY.usdotNumber) parts.push(`USDOT ${COMPANY.usdotNumber}`);
+  if (COMPANY.mcNumber) parts.push(COMPANY.mcNumber);
   return parts.join(" · ");
 }

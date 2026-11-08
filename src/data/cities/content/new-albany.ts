@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed tows across New Albany: SR 161, Johnstown Road (US 62), Market Square and the business park on Beech Road. Dispatch 24-7 at (614) 633-8163.",
+    "Flatbed tows across New Albany: SR 161, Johnstown Road (US 62), Market Square and the business park on Beech Road. Dispatch 24-7 at (614) 714-5785.",
   h1: "Flatbed Tows Across New Albany and the SR 161 Corridor",
   lede:
     "New Albany pairs a brick-and-white-fence town center with one of the busiest construction and business corridors in central Ohio, and we tow in both.",
   intro: [
     "The SR 161 freeway is what ties New Albany together, running east from the I-270 exits signed for the city, crossing Johnstown Road (US 62) at an interchange and reaching Beech Road over the line in Licking County. Around Beech Road, the New Albany International Business Park holds data centers, distribution buildings and the Intel chip campus that has been under construction since 2022, and the stream of contractors' pickups and commuters there keeps the ramps and connector roads busy.",
     "Closer to the center of town, Market Square, the single K-12 learning campus and the 786-seat McCoy Center draw evening crowds, while the neighborhoods along New Albany-Condit Road and Central College Road produce the usual driveway no-starts and flat tires. Our trucks are spread around Columbus, and the dispatcher sends the closest one and gives you a live estimate before anything is booked.",
-    "The electric and luxury models common in New Albany garages ride on a flatbed, so there is no wear on the transmission and nothing hanging off the back. Companies with vehicles based in the business park can set up a [fleet account](/towing/fleet-towing) for billing and photo records. For a one-off tow, the price is given before dispatch: call (614) 633-8163.",
+    "The electric and luxury models common in New Albany garages ride on a flatbed, so there is no wear on the transmission and nothing hanging off the back. Companies with vehicles based in the business park can set up a [fleet account](/towing/fleet-towing) for billing and photo records. For a one-off tow, the price is given before dispatch: call (614) 714-5785.",
   ],
   roads: [
     { name: "SR 161 freeway", note: "New Albany's main high-speed route, connecting I-270 to Beech Road. Shoulders are wide but traffic is fast, so we ask callers to stay in their cars until the truck is in place." },

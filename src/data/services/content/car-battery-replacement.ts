@@ -4,14 +4,14 @@ export default {
   keyword: "car battery replacement",
   title: "Car Battery Replacement in Columbus",
   description:
-    "Mobile car battery replacement in Columbus: matched to your vehicle's group size and specs, tested before and after, old unit recycled. (614) 633-8163.",
+    "Mobile car battery replacement in Columbus: matched to your vehicle's group size and specs, tested before and after, old unit recycled. (614) 714-5785.",
   h1: "Mobile Car Battery Replacement Wherever You Are in Columbus",
   lede:
     "When a battery is past saving, a driver brings a new one that fits your vehicle, installs it where you are parked and takes the old one away for recycling.",
   intro: [
     "Car battery replacement is the step after a jump stops being enough. If your car has needed a boost more than once in the past few weeks, if it cranks slowly every cold morning, or if a test shows the battery cannot hold a charge, putting in a new one is usually the fix. Auto Lyft USA brings that service to you in Columbus, so you do not have to coax a weak car to a parts store and hope it restarts in their lot, or leave it sitting while you wait on a friend with cables.",
     "Batteries are not one size fits all. Before a driver comes out, the dispatcher takes your year, make, model and engine, and the battery is matched to the group size and specs your vehicle calls for, including the cold-cranking rating, terminal layout and type, such as flooded or AGM. We test the old battery first so you are not paying for a part you do not need, then test the new installation and the charging system before we leave.",
-    "The old battery goes back with us and is taken for recycling, since lead-acid batteries should never end up in the trash. Call [(614) 633-8163](/contact) and you will hear the full price for the battery and installation before anyone heads your way. If you just need a boost, our [jump start](/towing/jump-start) page covers that.",
+    "The old battery goes back with us and is taken for recycling, since lead-acid batteries should never end up in the trash. Call [(614) 714-5785](/contact) and you will hear the full price for the battery and installation before anyone heads your way. If you just need a boost, our [jump start](/towing/jump-start) page covers that.",
   ],
   situations: [
     { title: "Repeated jumps", text: "A car that needed a boost last week and needs one again today is telling you the battery is worn out. Replacing it ends the cycle." },

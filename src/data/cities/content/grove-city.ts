@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Grove City, OH towing, with our yard just up Harrisburg Pike: flatbed tows, jump starts and lockouts on Stringtown Road, I-71 and I-270. (614) 633-8163.",
+    "Grove City, OH towing, with our yard just up Harrisburg Pike: flatbed tows, jump starts and lockouts on Stringtown Road, I-71 and I-270. (614) 714-5785.",
   h1: "Grove City Towing Just Down the Pike From Our Yard",
   lede:
     "Our yard sits a short drive north of Grove City on the same road that becomes its Broadway, so this is one of the closest towns we serve.",
   intro: [
     "For decades the Beulah Park racetrack sat beside Grove City's old downtown on Broadway, and the 212 acres it left behind are now turning into a neighborhood of homes, shops and offices next to the Historic Town Center. Farther back, this was farm country; the Gantz Homestead, a farmhouse from 1832, is still standing and listed on the National Register. Today the city is defined as much by I-71 and the Stringtown Road interchange as by any of that history.",
     "Most of what we see in Grove City comes from three places: the I-71 corridor on the east side of town, the Stringtown Road shopping strip that sits on top of it, and the outerbelt interchange where US-62 meets I-270 at exit 2. We also pick up a steady run of driveway jobs in the neighborhoods off Hoover Road and Orders Road, which are usually dead batteries on cold mornings and cars that won't shift out of park. The two hospital campuses, OhioHealth on Stringtown and Mount Carmel on North Meadows Drive, add garage calls from visitors at every hour.",
-    "Flatbeds carry most of the crossovers and family SUVs we move out of Grove City, and a wheel lift takes over in tight lots and short driveways. With the Beulah Park streets still being laid out, it pays to describe your spot by a business sign or the nearest finished cross street rather than trusting the map pin. Reach the dispatcher at [(614) 633-8163](/contact) or send the [online request](/request) and you will hear the full price before a truck is assigned.",
+    "Flatbeds carry most of the crossovers and family SUVs we move out of Grove City, and a wheel lift takes over in tight lots and short driveways. With the Beulah Park streets still being laid out, it pays to describe your spot by a business sign or the nearest finished cross street rather than trusting the map pin. Reach the dispatcher at [(614) 714-5785](/contact) or send the [online request](/request) and you will hear the full price before a truck is assigned.",
   ],
   roads: [
     { name: "I-71 at Stringtown Road", note: "The southbound ramps here were rebuilt as part of ODOT's South Side Mega Fix. Merging traffic and short weave lanes make this a common breakdown and fender-bender spot." },

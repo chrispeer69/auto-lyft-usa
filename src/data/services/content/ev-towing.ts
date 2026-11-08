@@ -4,14 +4,14 @@ export default {
   keyword: "EV towing",
   title: "EV Towing & Tesla Towing in Columbus",
   description:
-    "Columbus EV towing on flatbeds only: Teslas, Mach-Es, Ioniqs, Bolts and more set in transport mode with no wheel touching the road. (614) 633-8163.",
+    "Columbus EV towing on flatbeds only: Teslas, Mach-Es, Ioniqs, Bolts and more set in transport mode with no wheel touching the road. (614) 714-5785.",
   h1: "Electric Vehicle Help in Columbus: EV Towing With Zero Wheels Down",
   lede:
     "Electric cars ride entirely on the deck of our carriers, placed in tow or transport mode first, so the drive motors never turn on the way to a charger, a service center or home.",
   intro: [
     "EV towing has one rule we never bend: all four wheels come off the ground. An electric motor is connected to the wheels without a clutch or a neutral gear in the usual sense, so a spinning wheel turns the motor, and a turning motor generates electricity the car isn't expecting. That's why Auto Lyft USA moves every electric vehicle on a flatbed, whether it is a Tesla Model 3 with a dead 12-volt battery or a Mach-E that ran its pack down on I-270.",
     "Our four light-duty carriers are positioned around Columbus and cover the city and its suburbs at all hours, with the office and yard on Harrisburg Pike (US-62). Tesla towing makes up a good share of our EV calls, but we regularly load Ford Mustang Mach-Es, Chevy Bolts and Equinox EVs, Hyundai Ioniq 5s and 6s, Kia EV6s and Nissan Leafs. Larger electric trucks and SUVs are heavy, so for a Rivian R1T, R1S or another big EV the dispatcher checks the vehicle's weight against our deck rating before a truck is promised.",
-    "Before the driver arrives, find out how to put your car in tow or transport mode; it is usually in the touchscreen menu or the owner's manual. If the car is completely dead and can't enter that mode, tell the dispatcher, because the driver will bring skates to roll locked wheels onto the deck. Call (614) 633-8163 and you'll hear the complete price before we roll.",
+    "Before the driver arrives, find out how to put your car in tow or transport mode; it is usually in the touchscreen menu or the owner's manual. If the car is completely dead and can't enter that mode, tell the dispatcher, because the driver will bring skates to roll locked wheels onto the deck. Call (614) 714-5785 and you'll hear the complete price before we roll.",
   ],
   situations: [
     { title: "Battery at zero percent", text: "We don't charge EVs at the roadside. An electric car that runs out of range goes on the flatbed to the charger you pick, or to your home outlet." },

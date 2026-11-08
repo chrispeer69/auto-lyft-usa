@@ -4,7 +4,7 @@ export default {
   keyword: "Red White & BOOM towing",
   title: "Red White & BOOM Towing, Columbus",
   description:
-    "Fireworks over, car dead in a packed downtown garage? Red White & BOOM towing, jump starts and lockouts on the biggest night downtown. (614) 633-8163.",
+    "Fireworks over, car dead in a packed downtown garage? Red White & BOOM towing, jump starts and lockouts on the biggest night downtown. (614) 714-5785.",
   h1: "Red White & BOOM Towing on Fireworks Night",
   lede:
     "Columbus's early-July fireworks pack the riverfront like nothing else all year. If your car is the one that won't leave afterward, here is how we help.",

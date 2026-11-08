@@ -4,14 +4,14 @@ export default {
   keyword: "medium duty towing",
   title: "Medium Duty Towing in Columbus, OH",
   description:
-    "Medium duty towing in Columbus for box trucks, step vans and shuttle buses, coordinated through partner wreckers with one dispatcher. (614) 633-8163.",
+    "Medium duty towing in Columbus for box trucks, step vans and shuttle buses, coordinated through partner wreckers with one dispatcher. (614) 714-5785.",
   h1: "Medium-Duty Towing in Columbus: Box Trucks, Step Vans and Buses",
   lede:
     "One call to our dispatcher gets your stalled work truck sized up and matched with the right wrecker, whether that is a partner rig or, for lighter vans, one of our own carriers.",
   intro: [
     "Medium duty towing covers the vehicles that sit between a family pickup and a tractor-trailer: 16- to 26-foot box trucks, step vans, cutaway shuttle buses, landscaping trucks and loaded dually pickups pulling equipment. In Columbus, Auto Lyft USA handles these calls a little differently from our car work, and we would rather say so up front. Our own fleet is built around four light-duty flatbed carriers. They are the right tool for sedans and SUVs, but a loaded box truck is past their weight rating.",
     "So for most medium-duty jobs we act as your coordinator. You call one number, we ask the questions a wrecker operator needs answered, and we line up a partner heavy-wrecker company with the equipment for that specific truck. We stay on the job until the vehicle is unloaded at the shop, the yard or your lot, and you deal with one dispatcher instead of phoning around the south end of town at midnight.",
-    "There is an exception. A light cargo van, a small box truck or a work pickup that falls within a light-duty carrier's rating may ride on our own deck. That is the dispatcher's call once you share the make, model, body length and what is loaded inside. Reach us at [(614) 633-8163](/contact) and we will tell you which route your truck takes before anything rolls.",
+    "There is an exception. A light cargo van, a small box truck or a work pickup that falls within a light-duty carrier's rating may ride on our own deck. That is the dispatcher's call once you share the make, model, body length and what is loaded inside. Reach us at [(614) 714-5785](/contact) and we will tell you which route your truck takes before anything rolls.",
   ],
   situations: [
     { title: "Box truck dead on a delivery route", text: "A rental or company box truck quits on Morse Road or in a strip-mall loading zone with a full load. We find a wrecker sized for the gross weight and get the truck off the dock lane." },

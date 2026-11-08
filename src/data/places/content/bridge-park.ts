@@ -4,7 +4,7 @@ export default {
   keyword: "Bridge Park towing",
   title: "Bridge Park Towing in Dublin, Ohio",
   description:
-    "Bridge Park towing and roadside help in Dublin: garage jump-starts, lockouts, EV and low-car flatbed tows for diners and residents. Call (614) 633-8163.",
+    "Bridge Park towing and roadside help in Dublin: garage jump-starts, lockouts, EV and low-car flatbed tows for diners and residents. Call (614) 714-5785.",
   h1: "Bridge Park towing for Dublin's riverside district",
   lede:
     "Dinner ran late and now the car won't start in the garage? We help Bridge Park visitors and residents with jumps, lockouts and careful flatbed tows.",

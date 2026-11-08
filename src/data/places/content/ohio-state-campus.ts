@@ -4,7 +4,7 @@ export default {
   keyword: "towing near Ohio State campus",
   title: "Towing Near Ohio State Campus",
   description:
-    "Dead battery in a campus garage, a car stuck on North Campus or a tow home for summer? Flatbed towing and roadside help around Ohio State. (614) 633-8163.",
+    "Dead battery in a campus garage, a car stuck on North Campus or a tow home for summer? Flatbed towing and roadside help around Ohio State. (614) 714-5785.",
   h1: "Towing near Ohio State campus, for students and the parents who get the call",
   lede:
     "Jump starts, lockouts and flatbed tows across Ohio State's campus and the University District, plus long hauls home when the school year ends.",
@@ -37,7 +37,7 @@ export default {
     {
       heading: "Parents calling from out of state",
       paragraphs: [
-        "A good share of our Ohio State calls come from a mother in Chicago or a father in Pittsburgh who just got a text that says the car won't start. That works fine. The parent can call (614) 633-8163 or use the [request form](/request), pass along how to reach the student and where the car sits, and hear the full price before hanging up. The driver then deals with the student on site.",
+        "A good share of our Ohio State calls come from a mother in Chicago or a father in Pittsburgh who just got a text that says the car won't start. That works fine. The parent can call (614) 714-5785 or use the [request form](/request), pass along how to reach the student and where the car sits, and hear the full price before hanging up. The driver then deals with the student on site.",
         "Two things make those calls go faster. First, have the student send you a pin or the exact garage and level before you call, so you aren't relaying questions back and forth. Second, tell us where the car should end up. If it's going to a shop, give us the shop's name; if the student has no mechanic in town, ask for one of the independent shops we partner with. Diagnosis and the repair estimate happen there, because we only do the hauling.",
         "If the plan is to bring the car home rather than fix it in Columbus, that's a [long-distance tow](/towing/long-distance-towing). We carry single vehicles from campus to anywhere in Ohio and the neighboring states, and the same per-mile rate applies the whole way.",
       ],
@@ -61,7 +61,7 @@ export default {
   faqs: [
     {
       q: "How do I get towing near Ohio State campus late at night?",
-      a: "Call (614) 633-8163. Dispatch answers around the clock, every day, including breaks and holidays when campus is quiet. Tell us the garage or street, what the car is doing and where it needs to go, and we'll quote the price before a driver heads out. Overnight jobs, from 10 PM to 6 AM, carry a $150 after-hours charge, and the dispatcher folds it into the quote so nothing is a surprise.",
+      a: "Call (614) 714-5785. Dispatch answers around the clock, every day, including breaks and holidays when campus is quiet. Tell us the garage or street, what the car is doing and where it needs to go, and we'll quote the price before a driver heads out. Overnight jobs, from 10 PM to 6 AM, carry a $150 after-hours charge, and the dispatcher folds it into the quote so nothing is a surprise.",
     },
     {
       q: "Can you jump a car inside an Ohio State parking garage?",
@@ -95,7 +95,7 @@ export default {
       q: "How much is a jump start near campus?",
       a: "A jump is a flat $75 roadside visit plus $4 per mile from our yard on Harrisburg Pike to wherever the car sits. A weekend job is $50 higher, and the overnight window from 10 PM to 6 AM puts $150 on top. Sales tax is added by county. That's the whole price for the jump; there's no membership needed and no annual fee to sign up for.",
     },
-    { q: "Who do I call for a tow on the Ohio State campus?", a: "Call Auto Lyft USA at (614) 633-8163, any hour. We handle dead batteries, lockouts, flats and flatbed tows for students, staff, parents and visitors around campus. The dispatcher quotes the job and gives a live estimate before the truck heads your way. If a car is blocking a road or anyone is hurt, call 911 first." },
+    { q: "Who do I call for a tow on the Ohio State campus?", a: "Call Auto Lyft USA at (614) 714-5785, any hour. We handle dead batteries, lockouts, flats and flatbed tows for students, staff, parents and visitors around campus. The dispatcher quotes the job and gives a live estimate before the truck heads your way. If a car is blocking a road or anyone is hurt, call 911 first." },
     { q: "How should I describe where I am on campus?", a: "Give a street and a building or garage name, not just \"campus\". Lane Avenue, High Street, Neil Avenue, Woodruff Avenue and King Avenue are the easiest anchors. If you are on SR-315, say the exit (Lane Avenue or King Avenue); if you are on I-71, the 11th or 17th Avenue exit. For garages, add the level and nearest stairwell." },
   ],
   cities: ["columbus", "upper-arlington", "grandview-heights"],

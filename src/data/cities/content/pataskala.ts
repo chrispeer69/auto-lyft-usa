@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Pataskala towing by flatbed on Broad Street (SR-16), Main Street (SR-310) and Mink Street, from downtown to the corporate park. (614) 633-8163.",
+    "Pataskala towing by flatbed on Broad Street (SR-16), Main Street (SR-310) and Mink Street, from downtown to the corporate park. (614) 714-5785.",
   h1: "Flatbed Tows for Pataskala, Day and Night",
   lede:
     "Pataskala spreads across a big piece of western Licking County, from a small historic downtown to new subdivisions and a growing corporate park, and our calls here come from every corner of it.",
   intro: [
     "Eleven of Pataskala's buildings are on the National Register of Historic Places, among them the old jail, the former town hall on Main Street and the Pataskala Banking Company, and most of them cluster where Broad Street (SR-16) crosses Main Street (SR-310). From that small core the city spreads over a large piece of western Licking County: SR-310 runs south to I-70 at Exit 118, and SR-16 heads west toward the Franklin County line and Columbus.",
     "Because the city is big in area but light on traffic lights, our work here is a blend of town and country. Downtown produces lockouts and no-start calls. Newer neighborhoods and the Licking Heights schools on the west side bring early-morning jump starts. On the south side, the Pataskala Corporate Park between Mink Street and Refugee Road is filling with company headquarters and plants, and back roads like Township Road and McIntosh Road see the occasional slide-off into a ditch. We keep trucks positioned around Columbus, and the one sent is whichever is nearest, with a live estimate from the dispatcher.",
-    "For most jobs the car rides on one of our flatbeds with all four wheels off the road. If yours will not move at all, from an old project car to a vehicle that has sat for years, our [junk car removal](/towing/junk-car-removal) service can clear it out. For anything else, phone (614) 633-8163 or fill in our [tow request](/request), and you will have the price before dispatch.",
+    "For most jobs the car rides on one of our flatbeds with all four wheels off the road. If yours will not move at all, from an old project car to a vehicle that has sat for years, our [junk car removal](/towing/junk-car-removal) service can clear it out. For anything else, phone (614) 714-5785 or fill in our [tow request](/request), and you will have the price before dispatch.",
   ],
   roads: [
     { name: "Ohio State Route 16 (Broad Street)", note: "The main east-west road through Pataskala, briefly sharing pavement with SR-310 near Main Street, where turning traffic stacks up." },

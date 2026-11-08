@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Electrical & Charging Help, Columbus",
   description:
-    "Car keeps dying after a jump? We tow it to a Columbus shop that tests the alternator, starter, wiring and parasitic drains. (614) 633-8163.",
+    "Car keeps dying after a jump? We tow it to a Columbus shop that tests the alternator, starter, wiring and parasitic drains. (614) 714-5785.",
   h1: "Dead Battery Again? Find the Real Electrical Fault",
   lede:
     "When a jump only buys a day, the culprit is usually the alternator, starter, wiring or a hidden drain. We get the car to a shop that can test the whole charging system.",

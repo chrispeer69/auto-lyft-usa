@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Urbancrest towing, 2.5 miles from our Harrisburg Pike yard: flatbeds for First Avenue, Urbancrest Industrial Drive and the nearby I-270. (614) 633-8163.",
+    "Urbancrest towing, 2.5 miles from our Harrisburg Pike yard: flatbeds for First Avenue, Urbancrest Industrial Drive and the nearby I-270. (614) 714-5785.",
   h1: "The Closest Village We Tow In: Urbancrest, Ohio",
   lede:
     "Urbancrest is the nearest town to our gate, a small village tucked between the outerbelt and Grove City with homes on one side and warehouses on the other.",
   intro: [
     "Urbancrest began in 1889, when Samuel and Ella Quinichett built the first house at the corner of First Avenue and what is now John Cooley Drive, and the village incorporated in 1948. It sits just north of Grove City and a short way off I-270, close enough that many of its businesses carry Grove City mailing addresses. That quirk trips up map apps more often than anything else here, so the street name and building number matter more than the town name on the envelope.",
     "The village has two distinct halves. The residential side centers on First Avenue, where village hall, the Vaughn E. Hairston-South West Community Center and Martin Luther King Park sit beside one another. The industrial side spreads along Urbancrest Industrial Drive and Centerpoint Drive, where warehouse buildings, including a Best Buy facility, keep trucks and employee cars coming and going all day. The two halves are only a few blocks apart, but a driver needs to know which one you are in before setting out.",
-    "That split shows up in the calls we get: jump starts and lockouts on the residential streets, and no-starts or flat tires in warehouse lots once a shift lets out. Company vehicles from those buildings can be covered under our [fleet towing](/towing/fleet-towing) service. Day or night, call [(614) 633-8163](/contact) for a quote.",
+    "That split shows up in the calls we get: jump starts and lockouts on the residential streets, and no-starts or flat tires in warehouse lots once a shift lets out. Company vehicles from those buildings can be covered under our [fleet towing](/towing/fleet-towing) service. Day or night, call [(614) 714-5785](/contact) for a quote.",
   ],
   roads: [
     { name: "First Avenue", note: "The village's civic street, with village hall, the community center and MLK Park; event days fill the parking near the center." },

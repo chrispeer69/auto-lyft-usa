@@ -28,14 +28,14 @@ export default {
   keyword: "wheels stolen",
   title: "Wheels Stolen? Columbus Car & Truck Help",
   description:
-    "Car or pickup left on bare hubs after a wheel theft in Columbus? We mount new wheels on site or flatbed it on GUNI Wheels. Call (614) 633-8163.",
+    "Car or pickup left on bare hubs after a wheel theft in Columbus? We mount new wheels on site or flatbed it on GUNI Wheels. Call (614) 714-5785.",
   h1: "Wheels Stolen Overnight? Getting Your Car or Pickup Moving Again",
   lede:
     "Two ways out of a wheel theft: new wheels and tires mounted in your driveway or lot, or temporary GUNI Wheels and a ride on our flatbed to the shop you pick.",
   intro: [
     "Finding your wheels stolen is a gut punch, and the vehicle is usually left in an awkward state: perched on a floor jack, stacked on bricks or resting on its brake rotors in a driveway or apartment lot. A car in that condition cannot roll, and hauling it onto a truck by force bends control arms, grinds rotors and rips off plastic underbody panels. Auto Lyft USA takes these calls for cars, crossovers, SUVs and light pickups across Columbus, 24-7, and nothing gets dragged.",
     "You get a choice. One route ends with the vehicle back on real wheels and tires that you can drive away on. The other uses GUNI Wheels, temporary bolt-on wheels made for towing crews, so the vehicle can roll up the deck of a [flatbed](/towing/flatbed-towing) and roll back down wherever you want it delivered. The dispatcher talks you through both before anyone is sent.",
-    "One thing we are not is a repair shop. If the thieves nicked a brake line, a wheel-speed sensor or a suspension part while they worked, we deliver the vehicle to your mechanic or to an independent shop we work with, and that shop inspects it and quotes the fix. Call (614) 633-8163 to get started.",
+    "One thing we are not is a repair shop. If the thieves nicked a brake line, a wheel-speed sensor or a suspension part while they worked, we deliver the vehicle to your mechanic or to an independent shop we work with, and that shop inspects it and quotes the fix. Call (614) 714-5785 to get started.",
   ],
   situations: [
     { title: "Driveway theft found at dawn", text: "Most wheel thefts happen in the small hours and are noticed when someone heads out to work. The car is often tilted on whatever the thieves shoved under it." },
@@ -96,7 +96,7 @@ export default {
         "Photograph all four sides, each empty hub and anything the thieves left lying nearby.",
         "File a police report and write down the report number; your insurer will want it.",
         "Phone your insurance company and ask what the policy covers before buying anything.",
-        "Call (614) 633-8163 with the exact address or spot ready, along with the vehicle's year, make and model and a count of the missing wheels.",
+        "Call (614) 714-5785 with the exact address or spot ready, along with the vehicle's year, make and model and a count of the missing wheels.",
       ],
     },
     {
@@ -108,7 +108,7 @@ export default {
     },
   ],
   faqs: [
-    { q: "My wheels were stolen overnight. Who do I call first?", a: "The police, so the theft is on record and you have a report number. Next your insurance company, then us at (614) 633-8163. Leave the vehicle as it is until our driver arrives." },
+    { q: "My wheels were stolen overnight. Who do I call first?", a: "The police, so the theft is on record and you have a report number. Next your insurance company, then us at (614) 714-5785. Leave the vehicle as it is until our driver arrives." },
     { q: "How do you move a vehicle that has no wheels at all?", a: "Temporary GUNI Wheels bolt onto the bare hubs with lug nuts, so the vehicle can roll onto our flatbed on the winch line. It rides the trip on the deck, and the temporary wheels are removed at the destination. A corner that can't take one gets a dolly or skate." },
     { q: "Is a GUNI Wheel the same thing as a spare tire?", a: "No. A compact spare is built to be driven a short distance. A GUNI Wheel is a towing tool with a solid polyurethane tire, limited to 5 mph and not meant for public roads, so its only job is getting the vehicle on and off the truck." },
     { q: "What does the per-wheel GUNI charge cover?", a: `It is ${usd(RATES.guniWheelPerWheel)} per wheel for fitting a GUNI Wheel at pickup and unbolting it at the destination. Only corners that need one are counted, so a car missing two wheels carries two of these charges, not four.` },

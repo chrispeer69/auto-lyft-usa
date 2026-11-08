@@ -24,7 +24,7 @@ export const LANDINGS: Landing[] = [
     ticks: ["Open 24-7, including holidays", "Flatbed or wheel lift to suit the car", "Price given before dispatch"],
     faqs: [
       { q: "How do you find the nearest truck?", a: "The dispatcher sees where each of our trucks is and assigns whichever can reach you soonest, then gives you a live estimate." },
-      { q: "Can I send my location instead of explaining it?", a: "Yes. After you call, we can text you a link, or you can text a map pin to (614) 633-8163." },
+      { q: "Can I send my location instead of explaining it?", a: "Yes. After you call, we can text you a link, or you can text a map pin to (614) 714-5785." },
       { q: "Do you come out at night?", a: "Yes. The phone is answered and trucks run every hour of every day." },
     ],
   },

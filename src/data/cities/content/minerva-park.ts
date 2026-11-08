@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Need a tow in Minerva Park? Flatbed service for Cleveland Avenue, the lake streets and the I-270 Cleveland Ave exit, any hour. Call (614) 633-8163.",
+    "Need a tow in Minerva Park? Flatbed service for Cleveland Avenue, the lake streets and the I-270 Cleveland Ave exit, any hour. Call (614) 714-5785.",
   h1: "Need a Tow in Minerva Park? Flatbed Help Inside the Village",
   lede:
     "Minerva Park is a small lakeside village wedged between Cleveland Avenue and the outerbelt, and most of our work there happens in residents' driveways.",

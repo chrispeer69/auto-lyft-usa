@@ -4,7 +4,7 @@ export default {
   keyword: "wheel lift towing",
   title: "Wheel Lift Towing in Columbus",
   description:
-    "Wheel lift towing in Columbus for alleys, low garages and boxed-in cars, with dollies so drive wheels stay still. Flatbeds too. Call (614) 633-8163.",
+    "Wheel lift towing in Columbus for alleys, low garages and boxed-in cars, with dollies so drive wheels stay still. Flatbeds too. Call (614) 714-5785.",
   h1: "Wheel-Lift Towing in Columbus: Tight Spots, Honest Options",
   lede:
     "Alongside our four flatbeds, we run wheel-lift towing for places a carrier can't reach and short moves where a quick hookup is safe. When a drive wheel would otherwise touch the road, the driver puts dollies under it.",

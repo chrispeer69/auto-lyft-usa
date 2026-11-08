@@ -3,7 +3,7 @@ import type { Guide } from "../../types";
 export default {
   title: "Clocks Fall Back Nov. 1: Getting Ready for Darker Drives Home in Columbus",
   metaTitle: "Driving After the Time Change in Columbus",
-  description: "Daylight saving time ends Sunday, Nov. 1, and Columbus commutes move into the dark. Lights, wet leaves and night breakdowns. (614) 633-8163.",
+  description: "Daylight saving time ends Sunday, Nov. 1, and Columbus commutes move into the dark. Lights, wet leaves and night breakdowns. (614) 714-5785.",
   date: "2026-10-21",
   readMinutes: 5,
   excerpt: "On Sunday, November 1, clocks go back an hour at 2 a.m. The next evening, many Columbus drivers will make the trip home in the dark for the first time since spring. Here is what changes on the road, and how to handle a breakdown after sunset.",
@@ -77,7 +77,7 @@ export default {
     },
     {
       q: "Does a tow cost more at night?",
-      a: "Yes, but only late at night: our rate card adds $150 for jobs after 10 p.m. and before 6 a.m., plus $75 for any highway call. An early-evening breakdown after the time change is priced like a daytime call. The dispatcher gives you the full price before a truck is sent.",
+      a: "Yes, but only late at night: our rate card adds $150 for jobs after 10 p.m. and before 6 a.m., plus $75 for any highway call. An early-evening breakdown after the time change is priced like a daytime call. You get the total from dispatch before we send anyone.",
     },
   ],
 } satisfies Omit<Guide, "slug">;

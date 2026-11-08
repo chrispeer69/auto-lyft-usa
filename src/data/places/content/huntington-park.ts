@@ -4,7 +4,7 @@ export default {
   keyword: "Huntington Park towing",
   title: "Huntington Park Towing for Clippers Fans",
   description:
-    "Ballgame over and the car won't crank? Huntington Park towing, jumps, unlocks and tire swaps for Clippers fans in the Arena District. (614) 633-8163.",
+    "Ballgame over and the car won't crank? Huntington Park towing, jumps, unlocks and tire swaps for Clippers fans in the Arena District. (614) 714-5785.",
   h1: "Huntington Park Towing and Roadside Service",
   lede:
     "Summer baseball downtown is a great night out until a hot battery quits in the lot. We cover Clippers games from the first pitch in April to the last out in September.",
@@ -53,7 +53,7 @@ export default {
   faqs: [
     {
       q: "Is Huntington Park towing available during afternoon Clippers games?",
-      a: "Yes. Our dispatch line works every hour of every day, so a weekday afternoon game is covered the same as a Saturday night. Weekday daytime calls avoid both the weekend fee and the overnight fee, which makes them the least expensive time on our rate card. Call (614) 633-8163 and tell us which garage or lot you are in.",
+      a: "Yes. Our dispatch line works every hour of every day, so a weekday afternoon game is covered the same as a Saturday night. Weekday daytime calls avoid both the weekend fee and the overnight fee, which makes them the least expensive time on our rate card. Call (614) 714-5785 and tell us which garage or lot you are in.",
     },
     {
       q: "Can heat really kill a car battery?",

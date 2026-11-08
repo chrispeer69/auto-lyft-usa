@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Merion Village towing between South High, Parsons and Greenlawn, near the I-71 ramps: flatbed tows, jumps and lockouts, priced first. (614) 633-8163.",
+    "Merion Village towing between South High, Parsons and Greenlawn, near the I-71 ramps: flatbed tows, jumps and lockouts, priced first. (614) 714-5785.",
   h1: "Towing Help for Merion Village Streets and Alleys",
   lede:
     "Front-porch blocks, alley garages and two I-71 exits on the edges: Merion Village is the south side's quieter grid, with the interstate never far off.",

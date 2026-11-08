@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Northwest Columbus towing on Bethel, Sawmill and Henderson roads and SR-315: flatbed tows, jumps, lockouts and tire changes. (614) 633-8163.",
+    "Northwest Columbus towing on Bethel, Sawmill and Henderson roads and SR-315: flatbed tows, jumps, lockouts and tire changes. (614) 714-5785.",
   h1: "Northwest Columbus Flatbed Towing, Bethel to Sawmill",
   lede:
     "Shopping plazas on Bethel and Sawmill, a university airport on Case Road, and quiet subdivisions and apartment complexes in between.",
@@ -32,7 +32,7 @@ export default {
   faqs: [
     { q: "My car died in a Bethel Road parking lot. Can you jump it?", a: "Yes. The Bethel Road centers send us plenty of no-start calls. Once the engine runs, the driver checks the battery and charging system, and a battery that is too weak can be replaced in the lot. If the trouble is something else, the car is loaded and taken to your shop." },
     { q: "What should I do if the car quits on SR-315 by the Bethel Road exit?", a: "Pull as far onto the shoulder as is safe and switch on the hazards. Stay buckled in unless you feel unsafe. With narrow shoulders and fast traffic near Bethel, expect an officer to push for the car to be gone soon. Give your direction and the closest interchange, Henderson, Bethel or SR-161. Freeway pickups add the highway line to the bill." },
-    { q: "Can you tow from the apartment complexes off Bethel and Kenny roads?", a: "Yes. Residents can have their own cars towed any time, and property owners or managers can have unauthorized vehicles removed with the signs Ohio law requires. If your car was taken from your complex, the sign at the entrance names the company that did it. Our page on [finding a towed car](/local/towed-car-columbus) has more help." },
+    { q: "Can you tow from the apartment complexes off Bethel and Kenny roads?", a: "Yes. Residents can have their own cars towed any time, and property owners or managers can have unauthorized vehicles removed with the signs Ohio law requires. If your car was taken from your complex, the posted towing sign at the complex entrance tells you who did it. Our page on [finding a towed car](/local/towed-car-columbus) has more help." },
     { q: "Can you help at the Antrim Park or sports park lots?", a: "Yes. Dead batteries and lockouts in the Antrim Park lot and at the Anheuser-Busch Sports Park come up most on busy weekends. Say which lot you are in. If it turns out a tow is needed, the car goes onto the flatbed right there and heads to your house or a garage you choose." },
     { q: "What does it cost to tow from Northwest Columbus to a dealer in Dublin or Worthington?", a: "Plenty of owners here service their cars just over the line in [Dublin](/areas/dublin-oh) or [Worthington](/areas/worthington-oh). Our rate card bills loaded miles at $7 apiece on top of the $125 hook-up and the en-route miles, so a hop up Sawmill Road or across SR-161 stays at the low end. Night and weekend lines apply when they apply, and the total is read to you before dispatch." },
     { q: "I have a flat in the middle of Sawmill Road traffic. What happens?", a: "If the car can creep along safely, move it into the nearest plaza lot; Sawmill has plenty. If not, hazards on and stay belted in. With a usable spare the driver mounts it once the car is somewhere safe. With no spare, or a bent wheel, the car rides to a tire shop instead." },

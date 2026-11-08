@@ -4,14 +4,14 @@ export default {
   keyword: "flatbed towing",
   title: "Flatbed Towing in Columbus, OH",
   description:
-    "Flatbed towing in Columbus, OH for AWD cars, EVs, lowered and luxury vehicles. Tilting carrier decks, wheel straps and a price up front. (614) 633-8163.",
+    "Flatbed towing in Columbus, OH for AWD cars, EVs, lowered and luxury vehicles. Tilting carrier decks, wheel straps and a price up front. (614) 714-5785.",
   h1: "Flatbed Towing in Columbus — Your Car Rides on the Deck",
   lede:
     "A tilt-deck carrier winches your vehicle aboard and straps it at the tires, so the drivetrain, bumpers and suspension take no strain between pickup and drop-off.",
   intro: [
     "Flatbed towing is the default at Auto Lyft USA in Columbus. Instead of lifting one end of your car and letting the other end roll, our carriers tilt their steel deck down to the pavement, pull the vehicle up with a cable winch and lock it in place with straps over the tires. The car travels as cargo. Its wheels don't turn, its transmission doesn't spin and nothing hangs off the back of the truck.",
     "That matters more every year. Most new crossovers and SUVs sold around Central Ohio are all-wheel drive, a growing share are electric, and plenty of sedans now sit lower than a towing boom was designed to clear. A flatbed handles all of them the same way, which is why four of our trucks are carriers and the deck is the standard tow, not an upgrade you have to ask for.",
-    "Call [(614) 633-8163](/contact) and the dispatcher will ask for the year, make and model, whether the car rolls and steers, and where it is going. You hear the full price before we assign a driver.",
+    "Call [(614) 714-5785](/contact) and the dispatcher will ask for the year, make and model, whether the car rolls and steers, and where it is going. You hear the full price before we assign a driver.",
   ],
   situations: [
     { title: "All-wheel or four-wheel drive", text: "Towing an AWD vehicle with two wheels on the ground can overheat the center differential or transfer case. On the deck, nothing in the driveline moves." },

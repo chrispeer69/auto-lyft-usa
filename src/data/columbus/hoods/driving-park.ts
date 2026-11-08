@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Driving Park tow trucks for East Livingston, Fairwood, Alum Creek Drive and the I-70 exits at Kelton and Livingston, flatbed first. (614) 633-8163.",
+    "Driving Park tow trucks for East Livingston, Fairwood, Alum Creek Drive and the I-70 exits at Kelton and Livingston, flatbed first. (614) 714-5785.",
   h1: "Driving Park Towing on the Old Racetrack Grounds",
   lede:
     "Columbus once raced cars around a track here. These days we mostly haul the ones that won't start on Livingston Avenue.",
   intro: [
     "Driving Park gets its name from a horse and auto racing track that stood between Ellsworth and Seymour avenues, where the first 24-hour automobile race in the country ran in 1905. Eddie Rickenbacker grew up a few blocks away on East Livingston Avenue, and his boyhood home is now a National Historic Landmark. After the track was split into lots in the 1920s, the area filled with houses, and today it is a residential east-side neighborhood between I-70 to the north, Whittier Street to the south and Alum Creek Drive to the east.",
     "Livingston Avenue is the main street, an old streetcar line with storefronts, churches and the library branch. Off it, the housing varies: the Old Oaks historic district has big early-twentieth-century homes on tree-lined blocks, Hanford Village has modest Cape Cods built after World War II, and many streets in between have frame houses with driveways or garages off the alley. Calls here are a mix of curbside no-starts, older cars that need to go to a mechanic, and breakdowns that roll off I-70 at Kelton or Livingston.",
-    "Hanford Village deserves a special mention: it was built for Black veterans of World War II, Tuskegee Airmen among them, and went onto the National Register in 2013. Its short driveways off Alum Creek Drive are among the easiest loads in the neighborhood, while the Old Oaks blocks, with their big trees and cars on both curbs, take more planning. Either way, give the street and nearest corner and we take it from there. Call [(614) 633-8163](/contact) or [book online](/request).",
+    "Hanford Village deserves a special mention: it was built for Black veterans of World War II, Tuskegee Airmen among them, and went onto the National Register in 2013. Its short driveways off Alum Creek Drive are among the easiest loads in the neighborhood, while the Old Oaks blocks, with their big trees and cars on both curbs, take more planning. Either way, give the street and nearest corner and we take it from there. Call [(614) 714-5785](/contact) or [book online](/request).",
   ],
   roads: [
     { name: "East Livingston Avenue", note: "The historic commercial corridor, past the Rickenbacker House and the library branch. Cars stall at its signals and in small storefront lots." },

@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Berwick towing and roadside help on curving streets off College Avenue, James Road and Livingston, plus the I-70 ramp at exit 105. (614) 633-8163.",
+    "Berwick towing and roadside help on curving streets off College Avenue, James Road and Livingston, plus the I-70 ramp at exit 105. (614) 714-5785.",
   h1: "Berwick Towing Along the Old Golf Course Streets",
   lede:
     "Berwick's streets bend around the ghost of a 1930s golf course, which is good for quiet blocks and tricky for out-of-town GPS units.",

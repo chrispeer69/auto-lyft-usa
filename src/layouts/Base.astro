@@ -144,8 +144,23 @@ const robots = notFound ? "noindex, nofollow" : noindex ? "noindex, follow" : "i
     </main>
     {!bare && <Footer />}
     <nav class="callbar" aria-label="Quick contact">
-      <a class="primary" href={COMPANY.telHref}>Call {COMPANY.phone}</a>
+      <a class="primary" href={COMPANY.telHref} data-track="Sticky_Mobile_Dispatch">
+        <span class="live"><span class="dot" aria-hidden="true"></span>24/7 Live Dispatch</span>
+        <span>Call {COMPANY.phone}</span>
+      </a>
       <a href="/request">Request a tow</a>
     </nav>
+    <script>
+      // Call tracking: every tel: link reports a click to GA4/GTM once one is installed.
+      // No-op until then (no analytics on the site yet; see docs/INPUTS_REQUIRED.md #12).
+      document.addEventListener("click", (e) => {
+        const a = (e.target as Element | null)?.closest?.('a[href^="tel:"]');
+        if (!a) return;
+        const label = a.getAttribute("data-track") ?? `tel_link:${location.pathname}`;
+        const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+        if (w.gtag) w.gtag("event", "click", { event_category: "Call", event_label: label });
+        else if (w.dataLayer) w.dataLayer.push({ event: "call_click", event_category: "Call", event_label: label });
+      });
+    </script>
   </body>
 </html>

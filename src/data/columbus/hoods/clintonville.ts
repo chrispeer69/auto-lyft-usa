@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Clintonville towing on High Street, Indianola and North Broadway: flatbed tows, jump starts and lockouts from Glen Echo to Henderson Road. (614) 633-8163.",
+    "Clintonville towing on High Street, Indianola and North Broadway: flatbed tows, jump starts and lockouts from Glen Echo to Henderson Road. (614) 714-5785.",
   h1: "Clintonville Towing From Glen Echo to Henderson Rd",
   lede:
     "Driveways, ravines and a long run of High Street shops. Clintonville calls are mostly about getting a car off a narrow drive or a hilly street without fuss.",

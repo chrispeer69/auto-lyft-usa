@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Commercial Point towing in Pickaway County: flatbeds for SR-104, SR-762, the Foxfire homes and the Rickenbacker Exchange warehouses. Call (614) 633-8163.",
+    "Commercial Point towing in Pickaway County: flatbeds for SR-104, SR-762, the Foxfire homes and the Rickenbacker Exchange warehouses. Call (614) 714-5785.",
   h1: "Tow Service for Commercial Point and the Pickaway County Line",
   lede:
     "Commercial Point sits just over the Pickaway County line, a growing village where new subdivisions and warehouses surround a small old town center.",

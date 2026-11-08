@@ -34,7 +34,7 @@ Same standard as `routines/guides-blog.md` Step 2: every specific number, law, d
 For each outlet not opted out, ONE email:
 - To: the outlet address. Subject: "Free local article: <headline>".
 - Body: a short note (3–5 sentences), then the article below it as plain text. The note says: this is a free article for <outlet>'s readers about <topic>, written for <area>; they may run or edit it at no cost; we only ask that the byline and the one-line bio stay; it has not been published elsewhere; a new one can come every week if useful; and the last sentence is exactly: "If you'd rather not receive these, just reply 'no thanks' and I'll stop."
-- Signature: "Auto Lyft USA / (614) 633-8163 / 1620 Harrisburg Pike, Columbus, OH 43223"
+- Signature: "Auto Lyft USA / (614) 714-5785 / 1620 Harrisburg Pike, Columbus, OH 43223"
 - If an editor ever asks whether AI helped write it, the answer is yes (owner reviews them); never claim otherwise. You never reply to editors yourself; flag it for the owner.
 - REVIEW mode: use the Gmail create-draft tool for each email instead of sending.
 - SEND mode: use the Gmail send tool.

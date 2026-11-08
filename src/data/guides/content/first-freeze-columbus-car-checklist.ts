@@ -3,7 +3,7 @@ import type { Guide } from "../../types";
 export default {
   title: "Columbus's First Freeze Is Due: What the Cold Does to Your Car",
   metaTitle: "First Freeze in Columbus: Car Checklist",
-  description: "Columbus usually sees its first 32-degree night in late October. How the cold hits tires, batteries, glass and bridges. (614) 633-8163.",
+  description: "Columbus usually sees its first 32-degree night in late October. How the cold hits tires, batteries, glass and bridges. (614) 714-5785.",
   date: "2026-10-21",
   readMinutes: 6,
   excerpt: "The National Weather Service puts the average first freeze in Columbus around October 27, and the countryside often gets there a week or more sooner. The first frosty morning finds every weak spot in a car at once. Here is what to look at this week.",
@@ -64,7 +64,7 @@ export default {
     {
       heading: "If the cold wins anyway",
       paragraphs: [
-        "Some cars won't start on the first hard frost no matter what. Auto Lyft USA runs 24-7 across Columbus and the nearby towns. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), lockout or tire swap, plus en-route miles, and the dispatcher gives you the full price before a truck is sent. When a jump won't do it, a flatbed takes it to the mechanic you choose; see [our rate card](/rates) for how tows are priced.",
+        "Some cars won't start on the first hard frost no matter what. Auto Lyft USA runs 24-7 across Columbus and the nearby towns. Our flat $75 roadside rate covers a [jump start](/towing/jump-start), lockout or tire swap, plus en-route miles, and you hear the whole price from the dispatcher before any truck leaves. When a jump won't do it, a flatbed takes it to the mechanic you choose; see [our rate card](/rates) for how tows are priced.",
       ],
     },
   ],

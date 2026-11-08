@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Eastmoor flatbed towing between Broad and Livingston: Main Street, Eastmoor Academy, Hamilton Road and the I-70 ramps, quoted up front. (614) 633-8163.",
+    "Eastmoor flatbed towing between Broad and Livingston: Main Street, Eastmoor Academy, Hamilton Road and the I-70 ramps, quoted up front. (614) 714-5785.",
   h1: "Eastmoor Tow Service Between Bexley and Whitehall",
   lede:
     "Eastmoor is a settled, tree-lined east-side neighborhood squeezed between Bexley and Whitehall, with East Main Street running straight through the middle.",

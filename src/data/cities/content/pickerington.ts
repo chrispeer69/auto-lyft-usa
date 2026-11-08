@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Pickerington tow truck service on SR-256, Refugee Road and Diley Road, from the I-70 interchange to Olde Pickerington Village. Call (614) 633-8163.",
+    "Pickerington tow truck service on SR-256, Refugee Road and Diley Road, from the I-70 interchange to Olde Pickerington Village. Call (614) 714-5785.",
   h1: "Pickerington Tow Truck Service Across Fairfield County's Northwest Corner",
   lede:
     "Pickerington has grown fast along SR-256 and Refugee Road, and the traffic that came with it is behind most of the breakdowns, lockouts and fender-benders we handle in town.",
@@ -31,7 +31,7 @@ export default {
     { kind: "park", name: "Victory Park", detail: "A Lockville Road park with reservable courts, a picnic shelter and part of the city's bike trail, close enough to City Hall to serve as a meeting point." },
   ],
   faqs: [
-    { q: "Who do I call when the car quits on the SR-256 ramps?", a: "Call (614) 633-8163. The I-70 and SR-256 ramps are one of our busiest Pickerington locations. Hazard lights on, seatbelt fastened, and remain seated while you are on a ramp; then let us know which side of I-70 you are on, eastbound or westbound. If police need the car cleared quickly, our driver works with them to move it." },
+    { q: "Who do I call when the car quits on the SR-256 ramps?", a: "Call (614) 714-5785. The I-70 and SR-256 ramps are one of our busiest Pickerington locations. Hazard lights on, seatbelt fastened, and remain seated while you are on a ramp; then let us know which side of I-70 you are on, eastbound or westbound. If police need the car cleared quickly, our driver works with them to move it." },
     { q: "My car won't start in a lot on Hill Road. What can you do?", a: "The stores and restaurants along SR-256 produce more Pickerington battery calls than anywhere else. The driver brings a booster pack, starts the car and tests the battery. If it is too weak to rely on, we can arrange a [replacement battery](/towing/car-battery-replacement) installed on site so you can drive home rather than ride in the truck." },
     { q: "Do you tow from Pickerington Methodist Hospital?", a: "Yes. Visitors and staff call us from the lots on Refugee Road for dead batteries, flat tires and the occasional lockout. With the expansion under way, some lots and drives may shift, so tell the dispatcher which entrance or building you are near. Hospital security may ask our driver to check in, which is no problem." },
     { q: "Can you tow a motorcycle after a visit to the AMA Hall of Fame?", a: "Yes. Bikes go on our flatbeds standing upright, held with a wheel chock and soft straps so nothing scratches the paint or bends the controls. We can take it to a dealer, a shop or your garage. Let us know the make and whether it has any damage when you call." },

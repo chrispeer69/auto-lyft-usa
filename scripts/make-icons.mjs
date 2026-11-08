@@ -14,7 +14,7 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <text x="118" y="266" fill="#868f9c" font-family="Arial, sans-serif" font-size="22" letter-spacing="8">TOWING · COLUMBUS, OHIO</text>
   <line x1="80" y1="380" x2="1120" y2="380" stroke="#262b33" stroke-width="2"/>
   <text x="80" y="450" fill="#c7ccd4" font-family="Arial, sans-serif" font-size="36">24-7 towing and roadside help</text>
-  <text x="80" y="510" fill="#ffffff" font-family="Arial, sans-serif" font-weight="700" font-size="40">(614) 633-8163</text>
+  <text x="80" y="510" fill="#ffffff" font-family="Arial, sans-serif" font-weight="700" font-size="40">(614) 714-5785</text>
 </svg>`;
 await sharp(Buffer.from(og)).png().toFile("public/og.png");
 console.log("icons + og.png written");

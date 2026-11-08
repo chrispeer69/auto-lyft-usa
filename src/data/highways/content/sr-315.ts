@@ -6,13 +6,13 @@ export default {
   keyword: "SR-315 towing",
   title: "SR-315 Towing on the Olentangy Freeway",
   description:
-    "SR-315 towing on the Olentangy freeway, from the I-70 and I-71 junction past Ohio State and Henderson Road to I-270 and Powell. Call (614) 633-8163.",
+    "SR-315 towing on the Olentangy freeway, from the I-70 and I-71 junction past Ohio State and Henderson Road to I-270 and Powell. Call (614) 714-5785.",
   h1: "Route 315 Tows: Downtown Junction to Powell",
   lede:
-    "Plenty of drivers call it I-315. It is actually State Route 315, a freeway from the downtown junction up the Olentangy to I-270, then a two-lane road north.",
+    "Plenty of drivers call it I-315. It is actually State Route 315, a freeway from the downtown junction up the Olentangy as far as I-270; past the outerbelt it narrows to two lanes heading north.",
   intro: [
     "SR-315 towing calls usually start with a correction: there is no I-315. Route 315 is a state route, not an interstate, though its southern half is built like one. It begins at the big I-70 and I-71 junction on the southwest edge of downtown, rises past Franklinton and Grandview, follows the Olentangy River past Ohio State, Riverside Methodist and the Henderson and Bethel shopping areas, and ends as a freeway at I-270. North of the outerbelt it shrinks to a winding two-lane road toward Powell and US-23.",
-    "The downtown end is a short drive from our Harrisburg Pike yard, which keeps that busy stretch quick to reach. Dial 911 first when a lane is blocked by your car or somebody is injured. For a freeway problem that is not an emergency, dial #677 from your cell for the Highway Patrol. Then call Auto Lyft USA at (614) 633-8163.",
+    "The downtown end is a short drive from our Harrisburg Pike yard, which keeps that busy stretch quick to reach. Dial 911 first when a lane is blocked by your car or somebody is injured. For a freeway problem that is not an emergency, dial #677 from your cell for the Highway Patrol. Then call Auto Lyft USA at (614) 714-5785.",
   ],
   firstMoves: [
     "Flashers on. Coast to the right shoulder if there is one; on the downtown ramps there often is not.",
@@ -97,7 +97,7 @@ export default {
   faqs: [
     {
       q: "Is it I-315 or SR-315?",
-      a: "State Route 315. It is built like an interstate from downtown to I-270, hence the I-315 nickname, yet ODOT signs it as a state route. Either name works when you call us at (614) 633-8163.",
+      a: "State Route 315. It is built like an interstate from downtown to I-270, hence the I-315 nickname, yet ODOT signs it as a state route. Either name works when you call us at (614) 714-5785.",
     },
     {
       q: "Who can tow my car off 315 near downtown?",

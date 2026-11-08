@@ -6,7 +6,7 @@ export default {
   description: "A calm, ordered plan for a breakdown in Columbus: getting off the lane, staying visible, who to call first and what the tow dispatcher will ask you.",
   date: "2026-09-02",
   readMinutes: 5,
-  excerpt: "A breakdown feels chaotic, but the right order of moves is short and simple. Here is the sequence we would want a family member to follow, on the interstate or on a side street.",
+  excerpt: "A breakdown feels chaotic, but the right order of moves is short and simple. This is the order we'd hand to our own relatives, on the interstate or on a side street.",
   body: [
     {
       heading: "The order matters more than speed",
@@ -42,9 +42,9 @@ export default {
         "Think in three calls, and most breakdowns only need the last one.",
       ],
       bullets: [
-        "911, if someone is injured, if the car sits in a live lane, if there is smoke or fire, or if you feel unsafe where you are.",
+        "911, if someone is injured, if the car sits in a live lane, if you see smoke or flames, or if you feel unsafe where you are.",
         "Your roadside plan, if you have one through an insurer, a credit card or a membership. Ask what they cover and how long they expect it to take, then decide whether to wait for them.",
-        "A local tow company, directly. Calling us at (614) 633-8163 puts you through to dispatch around the clock, and the dispatcher quotes a price and a live arrival estimate before any truck leaves. If talking is hard where you are, the [tow request page](/request) takes the same details in writing.",
+        "A local tow company, directly. Calling us at (614) 714-5785 puts you through to dispatch around the clock, and the dispatcher quotes a price and a live arrival estimate before any truck leaves. If talking is hard where you are, the [tow request page](/request) takes the same details in writing.",
       ],
     },
     {
@@ -84,7 +84,7 @@ export default {
     },
     {
       q: "How do I describe my location on a Columbus highway?",
-      a: "Give the highway, the direction you were driving, and the last exit or interchange you passed. A mile marker helps a lot if you can see one. Around Columbus the interstates loop and cross, so naming the direction prevents a driver from arriving on the wrong side of the median.",
+      a: "Name the highway, which way you were going, and the most recent exit or interchange behind you. A mile marker helps a lot if you can see one. Around Columbus the interstates loop and cross, so naming the direction prevents a driver from arriving on the wrong side of the median.",
     },
     {
       q: "Is there a seat for me in the tow truck?",

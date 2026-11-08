@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Exhaust and Muffler Help in Columbus",
   description:
-    "Exhaust dragging, fumes in the cabin or a stolen converter? We flatbed the car to a Columbus muffler or repair shop. (614) 633-8163.",
+    "Exhaust dragging, fumes in the cabin or a stolen converter? We flatbed the car to a Columbus muffler or repair shop. (614) 714-5785.",
   h1: "Loud Exhaust or Fumes in the Cabin? Here Is What to Do",
   lede:
     "A rumbling muffler is annoying. Exhaust fumes inside the car or a pipe dragging on the road are dangerous, and that is when we tow it to a shop that handles exhaust work.",

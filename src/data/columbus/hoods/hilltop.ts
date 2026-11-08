@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Hilltop tows and roadside help near our Harrisburg Pike yard: West Broad, Sullivant, Hague and the I-70 ramps, flatbed first. (614) 633-8163.",
+    "Hilltop tows and roadside help near our Harrisburg Pike yard: West Broad, Sullivant, Hague and the I-70 ramps, flatbed first. (614) 714-5785.",
   h1: "Hilltop Towing Next Door to Our Harrisburg Pike Yard",
   lede:
     "West Broad Street's car lots and bus lanes, alley garages between Broad and Sullivant, and two interstates on the edges. The Hilltop is the side of town our drivers know best.",

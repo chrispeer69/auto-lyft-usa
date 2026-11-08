@@ -4,7 +4,7 @@ export default {
   keyword: "towing at CMH airport",
   title: "Towing at CMH Airport, Columbus",
   description:
-    "Towing at CMH airport and jump-starts for travelers whose car died in long-term parking at John Glenn Columbus International. Call (614) 633-8163.",
+    "Towing at CMH airport and jump-starts for travelers whose car died in long-term parking at John Glenn Columbus International. Call (614) 714-5785.",
   h1: "Towing at CMH airport for travelers coming home to a dead car",
   lede:
     "Back from a trip and your car won't start in airport parking? We jump it, change the tire or flatbed it home from John Glenn Columbus International.",

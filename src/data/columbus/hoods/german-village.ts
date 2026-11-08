@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "German Village towing that respects brick streets: flatbed loads on Third Street, around Schiller Park and from back-alley garages. (614) 633-8163.",
+    "German Village towing that respects brick streets: flatbed loads on Third Street, around Schiller Park and from back-alley garages. (614) 714-5785.",
   h1: "Careful Towing on German Village's Brick Streets",
   lede:
     "Brick paving, parked cars on both curbs and garages tucked behind the houses: a German Village tow takes more planning than most.",

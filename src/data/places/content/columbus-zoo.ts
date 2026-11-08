@@ -4,7 +4,7 @@ export default {
   keyword: "Columbus Zoo towing",
   title: "Columbus Zoo Towing & Roadside, Powell",
   description:
-    "Family day at the zoo or Zoombezi Bay ended with a car that won't start? Columbus Zoo towing and roadside help on Riverside Drive. (614) 633-8163.",
+    "Family day at the zoo or Zoombezi Bay ended with a car that won't start? Columbus Zoo towing and roadside help on Riverside Drive. (614) 714-5785.",
   h1: "Columbus Zoo Towing for Family Day Breakdowns",
   lede:
     "A dead battery with tired kids in the back seat is nobody's idea of fun. We send help to the zoo, the water park and Riverside Drive any time of day.",

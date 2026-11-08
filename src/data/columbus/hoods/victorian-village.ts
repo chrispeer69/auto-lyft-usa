@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Victorian Village towing around Goodale Park and Neil Avenue: flatbed tows, jump starts and lockouts on brick streets west of High. (614) 633-8163.",
+    "Victorian Village towing around Goodale Park and Neil Avenue: flatbed tows, jump starts and lockouts on brick streets west of High. (614) 714-5785.",
   h1: "Victorian Village Car Towing Near Goodale Park",
   lede:
     "Old brick streets, big trees and cars parked bumper to bumper outside 1890s houses, so loading here is slow, careful work.",
   intro: [
     "Neil Avenue got its first streetcars in 1879 and electric cars in 1891, and the houses built along that line are why Victorian Village looks the way it does: tall brick homes set close to the sidewalk from Goodale Park north to Fifth Avenue, with Harrison Avenue on the west and the Short North to the east. The city named it a historic district in 1973. Few of those lots were ever given a driveway, so nearly every car in the Village is parked at the curb.",
     "That puts most of our work out on the street. A battery fades after a week of sitting, a tire goes soft overnight, or a car is boxed in so tightly the owner cannot ease it out. Brick pavers, lifted tree roots and narrow lanes call for slow, careful loading. Since January 2019 the Village has also been part of the city's paid and permit parking plan, so a dead car keeps eating into a parking session while it waits. ComFest, a June fixture in Goodale Park since 1972, and the Tour of Homes and Gardens, usually in September, crowd the blocks around the park even more.",
-    "Goodale Park, given to the city in 1851, is the easiest landmark to give, and its edges, Goodale Street and Buttles Avenue, are where a carrier has the most room to stop. If your car is deeper in, on Third or Fourth Avenue or an alley off Neil, describe how it is parked when you call [(614) 633-8163](/contact) or [book online](/request).",
+    "Goodale Park, given to the city in 1851, is the easiest landmark to give, and its edges, Goodale Street and Buttles Avenue, are where a carrier has the most room to stop. If your car is deeper in, on Third or Fourth Avenue or an alley off Neil, describe how it is parked when you call [(614) 714-5785](/contact) or [book online](/request).",
   ],
   roads: [
     { name: "Neil Avenue", note: "The main north-south street, with parked cars on both sides and a straight run into Ohio State. Plenty of our Village pickups are along it." },

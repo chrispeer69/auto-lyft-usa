@@ -3,7 +3,7 @@ import type { Faq } from "./types";
 export const HOME = {
   title: "Towing Columbus, Ohio & Surrounding Suburbs",
   description:
-    "Need a tow truck in Columbus, OH? Auto Lyft USA sends a flatbed day or night for tows, jump starts, lockouts and EV transport. Call (614) 633-8163.",
+    "Need a tow truck in Columbus, OH? Auto Lyft USA sends a flatbed day or night for tows, jump starts, lockouts and EV transport. Call (614) 714-5785.",
   h1: "24-7 Towing & Roadside Help in Columbus, Ohio",
   lede:
     "Fast, reliable service throughout Columbus and surrounding communities.",
@@ -26,7 +26,7 @@ export const HOME = {
 };
 
 export const HOME_FAQS: Faq[] = [
-  { q: "How do I get a tow truck in Columbus right now?", a: "Call (614) 633-8163. A dispatcher answers at any hour, takes your location and vehicle, gives you the price and sends the closest available truck. If you would rather type than talk, use the [online tow request](/request)." },
+  { q: "How do I get a tow truck in Columbus right now?", a: "Call (614) 714-5785. A dispatcher answers at any hour, takes your location and vehicle, gives you the price and sends the closest available truck. If you would rather type than talk, use the [online tow request](/request)." },
   { q: "Do you only use flatbed tow trucks?", a: "No. We run four light-duty flatbeds and wheel-lift trucks, and our drivers carry wheel dollies. Flatbeds take AWD cars, EVs, wrecks and low or high-value cars. A wheel lift handles low garages, tight alleys and short moves; see the [wheel-lift towing page](/towing/wheel-lift-towing)." },
   { q: "What will my tow cost in Columbus?", a: "The price depends on the en-route miles from our yard to you, the distance to the drop-off, the time of day and the vehicle. The dispatcher quotes the full amount before a truck leaves. See the [rates page](/rates) for how a towing bill is built." },
   { q: "Can you tow my car to my own mechanic?", a: "Yes. Tell the dispatcher the shop's name or address and we deliver it there. After hours we can leave it in the shop's night-drop area when they allow it, or hold it at our yard and take it over in the morning." },

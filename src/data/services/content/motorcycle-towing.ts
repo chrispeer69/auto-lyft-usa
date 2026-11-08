@@ -4,14 +4,14 @@ export default {
   keyword: "motorcycle towing",
   title: "Motorcycle Towing in Columbus, OH",
   description:
-    "Motorcycle towing around Columbus on a flatbed: front wheel chocked, soft straps, bike kept upright. Cruisers, sport bikes and trikes. (614) 633-8163.",
+    "Motorcycle towing around Columbus on a flatbed: front wheel chocked, soft straps, bike kept upright. Cruisers, sport bikes and trikes. (614) 714-5785.",
   h1: "Columbus Motorcycle Towing That Keeps Your Bike Upright",
   lede:
     "Your bike rides on the carrier deck standing up, its front tire locked in a chock and its frame held by soft ties, from the roadside to your garage or shop.",
   intro: [
     "Motorcycle towing takes different gear than moving a car, and riders know it. A bike has two contact patches, a high center of gravity and plenty of parts that bend or scuff if a strap lands in the wrong place. Auto Lyft USA hauls bikes across Columbus on the same tilt-deck flatbeds we use for cars, fitted with a wheel chock that grips the front tire so the motorcycle stands on its own while the driver secures it.",
     "Once the bike is chocked, soft loop straps go around solid points such as the lower triple clamp or handlebar risers, and ratchet straps pull it down evenly so the suspension compresses slightly and stays there. Nothing metal touches the paint, and the bike never lies on its side. Sport bikes, standards, cruisers, adventure bikes and dirt bikes all load this way, and so do trikes and heavy touring machines as long as they fit on the deck.",
-    "When you call [(614) 633-8163](/contact), let the dispatcher know what you ride, whether it rolls and steers, whether you have the key, and where the bike is sitting. A motorcycle down in a ditch or on a grass shoulder may need a little recovery work first, and the driver plans for it. The total for the job is quoted before a truck is sent, so the number is settled up front.",
+    "When you call [(614) 714-5785](/contact), let the dispatcher know what you ride, whether it rolls and steers, whether you have the key, and where the bike is sitting. A motorcycle down in a ditch or on a grass shoulder may need a little recovery work first, and the driver plans for it. The total for the job is quoted before a truck is sent, so the number is settled up front.",
   ],
   situations: [
     { title: "Breakdown on a ride", text: "A dead stator, a snapped chain or a flat rear tire on I-71 or a county road leaves you stranded with no trunk and no spare. We bring the bike and you home." },

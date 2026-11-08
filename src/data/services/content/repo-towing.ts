@@ -4,14 +4,14 @@ export default {
   keyword: "repo towing",
   title: "Voluntary Repo Towing in Columbus",
   description:
-    "Voluntary repo towing in Columbus: we collect vehicles a borrower has agreed to surrender and deliver them where the lender directs. (614) 633-8163.",
+    "Voluntary repo towing in Columbus: we collect vehicles a borrower has agreed to surrender and deliver them where the lender directs. (614) 714-5785.",
   h1: "Columbus Repo Towing for Voluntary Surrenders Only",
   lede:
     "When a borrower agrees to give a vehicle back, we arrive at the arranged time, record its condition and take it to the lot or auction the lender names.",
   intro: [
     "Repo towing at Auto Lyft USA means one thing: voluntary repossession towing. A borrower who can no longer keep a financed or leased vehicle agrees to return it, the lender or its servicer sets up the surrender, and we arrive at a scheduled time to collect it. The borrower knows we are coming and is usually standing there with the keys and the paperwork the lender sent.",
     "We do not perform involuntary repossessions. We don't recover vehicles without the borrower's agreement, we don't search for accounts that have stopped answering, and we don't take cars from driveways or parking lots without notice. A lender that needs that kind of recovery should hire a repossession agency. Saying this plainly at the start keeps expectations accurate for lenders and borrowers alike, and it keeps our operators out of arguments in somebody's front yard.",
-    "For banks, credit unions, buy-here-pay-here dealers and leasing companies, the result is a calm handoff with good records. The driver photographs the vehicle, notes the mileage, collects every key, and delivers it to your storage lot, a dealer or one of Central Ohio's wholesale auto auctions. Borrowers who have already arranged a surrender with their lender can call too. To book a pickup, phone [(614) 633-8163](/contact); written requests can go to lisa@autolyftusa.online, and we reply with the scheduling details and a quote.",
+    "For banks, credit unions, buy-here-pay-here dealers and leasing companies, the result is a calm handoff with good records. The driver photographs the vehicle, notes the mileage, collects every key, and delivers it to your storage lot, a dealer or one of Central Ohio's wholesale auto auctions. Borrowers who have already arranged a surrender with their lender can call too. To book a pickup, phone [(614) 714-5785](/contact); written requests can go to lisa@autolyftusa.online, and we reply with the scheduling details and a quote.",
   ],
   situations: [
     { title: "Surrender at the borrower's home", text: "The most common case: the lender agrees to take the vehicle back, and the borrower picks a time when they can meet the driver in the driveway or apartment lot." },

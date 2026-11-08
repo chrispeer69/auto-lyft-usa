@@ -49,7 +49,7 @@ export default {
         "A charged power bank and a charging cable that fits your phone. Top it up once a month.",
         "Jumper cables, or better, a portable jump pack that works without a second car. Read its instructions before you need it.",
         "A flashlight or headlamp with fresh batteries. Winter evenings are long, and you may need both hands free.",
-        "A paper card with important numbers, including a tow company you trust. Our dispatch line is (614) 633-8163.",
+        "A paper card with important numbers, including a tow company you trust. Our dispatch line is (614) 714-5785.",
       ],
     },
     {
@@ -87,7 +87,7 @@ export default {
     {
       heading: "When the kit is not enough",
       paragraphs: [
-        "Some situations call for a truck, not a shovel. If the car is down a slope, in a ditch with a drop on one side, or stuck on a highway shoulder near moving traffic, do not try to rock it free. A [winch-out](/towing/winch-out) pulls the car back to solid ground in a controlled way, and if anything is damaged, a flatbed can take it home or to a shop.",
+        "Some situations call for a truck, not a shovel. If the car is down a slope, in a ditch with a drop on one side, or stuck on a highway shoulder near moving traffic, do not try to rock it free. A [winch-out](/towing/winch-out) pulls the car back to solid ground in a controlled way, and if anything is damaged, a flatbed can haul it to your driveway or a mechanic.",
         "For a dead battery or a flat tire in the cold, our [roadside assistance](/towing/roadside-assistance) service handles it on the spot. If you are unsure what to do first after a winter slide or stall, our [breakdown checklist](/guides/what-to-do-when-your-car-breaks-down-columbus) walks through the order of steps.",
       ],
     },

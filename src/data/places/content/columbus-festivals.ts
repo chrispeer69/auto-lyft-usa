@@ -4,7 +4,7 @@ export default {
   keyword: "Columbus festival towing",
   title: "Columbus Festival Towing & Roadside",
   description:
-    "Arts Fest, ComFest, Pride or Jazz & Rib Fest weekend and your car won't budge? Columbus festival towing, jumps and lockouts downtown. (614) 633-8163.",
+    "Arts Fest, ComFest, Pride or Jazz & Rib Fest weekend and your car won't budge? Columbus festival towing, jumps and lockouts downtown. (614) 714-5785.",
   h1: "Columbus Festival Towing for Busy Summer Weekends",
   lede:
     "From June into late summer, downtown and the Short North host one big festival after another. We keep a flatbed ready for the drivers who need one.",
@@ -49,7 +49,7 @@ export default {
   faqs: [
     {
       q: "Is Columbus festival towing still possible on the biggest weekends, like ComFest?",
-      a: "Yes. Our dispatch line works every day and night of the summer, including the biggest festival weekends. During those events, streets near the grounds may be closed and traffic is heavy, so the dispatcher will tell you the most realistic approach and timing. Call (614) 633-8163 with the address or nearest intersection where your car is parked.",
+      a: "Yes. Our dispatch line works every day and night of the summer, including the biggest festival weekends. During those events, streets near the grounds may be closed and traffic is heavy, so the dispatcher will tell you the most realistic approach and timing. Call (614) 714-5785 with the address or nearest intersection where your car is parked.",
     },
     {
       q: "My car won't start after a hot afternoon at the Jazz & Rib Fest. Is it the battery?",

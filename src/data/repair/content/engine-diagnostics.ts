@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Check Engine Light Help in Columbus",
   description:
-    "Check-engine light flashing in Columbus? We flatbed the car to your mechanic or a partner shop that reads and traces the fault. (614) 633-8163.",
+    "Check-engine light flashing in Columbus? We flatbed the car to your mechanic or a partner shop that reads and traces the fault. (614) 714-5785.",
   h1: "Check-Engine Light? Get the Car to a Diagnostic Shop",
   lede:
     "A glowing or flashing check-engine light needs a proper diagnosis. When the car shouldn't be driven, we flatbed it to a shop that can read and trace the fault.",

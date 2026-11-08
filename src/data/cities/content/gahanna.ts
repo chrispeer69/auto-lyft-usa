@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Gahanna towing on Hamilton Road, at the I-270 and I-670 interchange and around Creekside. Flatbed tows, jumps and lockouts any hour. (614) 633-8163.",
+    "Gahanna towing on Hamilton Road, at the I-270 and I-670 interchange and around Creekside. Flatbed tows, jumps and lockouts any hour. (614) 714-5785.",
   h1: "Gahanna Towing Between the Airport and Big Walnut Creek",
   lede:
     "Gahanna sits just past the airport on Columbus's east side, and I-670 does most of the work for a truck coming out through downtown.",

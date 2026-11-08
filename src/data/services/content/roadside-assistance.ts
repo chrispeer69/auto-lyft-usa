@@ -4,14 +4,14 @@ export default {
   keyword: "roadside assistance",
   title: "Roadside Assistance in Columbus, OH",
   description:
-    "Roadside assistance in Columbus with no membership: jump starts, lockouts, spare swaps, fuel and winch-outs, each priced before we roll. (614) 633-8163.",
+    "Roadside assistance in Columbus with no membership: jump starts, lockouts, spare swaps, fuel and winch-outs, each priced before we roll. (614) 714-5785.",
   h1: "Pay-Per-Call Roadside Assistance Across Columbus and Nearby Suburbs",
   lede:
     "When the car is fine except for one problem, one of our drivers fixes that problem on the spot, so you can keep your day moving.",
   intro: [
     "Roadside assistance from Auto Lyft USA is for the breakdowns that do not need a tow. A battery that went flat overnight, keys sitting on the driver seat behind a locked door, a tire that lost its air on the way to work, or a gas gauge that was more optimistic than it should have been. In Columbus, one of our drivers rolls out and handles the issue at the curb, in the parking lot or on the shoulder, often in less time than it would take to arrange a ride.",
     "There is no club to join and no yearly fee. You call when something goes wrong, the dispatcher asks what happened and where you are, and you hear the full price for that one service call before anyone is sent. If you already have coverage through your insurer or a motor club, you can still call us directly and pay for the visit yourself, which some drivers prefer when their provider is backed up on a snowy morning.",
-    "Because the driver arrives in a tow truck, the car can also be towed on the spot if the roadside fix does not work. That means a dead alternator or a ruined tire does not leave you waiting for a second company. Call [(614) 633-8163](/contact) any hour of the day or night, or start a [service request](/request) online.",
+    "Because the driver arrives in a tow truck, the car can also be towed on the spot if the roadside fix does not work. That means a dead alternator or a ruined tire does not leave you waiting for a second company. Call [(614) 714-5785](/contact) any hour of the day or night, or start a [service request](/request) online.",
   ],
   situations: [
     { title: "Car won't start", text: "Clicking, a slow crank or total silence usually points to the battery. A [jump start](/towing/jump-start) and a quick test tell you whether it will hold a charge or needs replacing." },
@@ -45,7 +45,7 @@ export default {
       heading: "Waiting safely for the truck",
       paragraphs: [
         "A stop on the shoulder of I-670 near downtown or the narrow stretches of SR-315 by the river is not a comfortable place to sit. Coast onto the next exit ramp or into a parking lot if you can. If you are stuck on the highway, put your hazards on, keep your belt on while seated inside, and step out only on the side away from traffic.",
-        "In neighborhood settings, like a tight street in Clintonville or a crowded apartment lot near the Ohio State campus, tell the dispatcher about anything that will help the driver find you: a building number, a parking level, the color of your car. A precise location saves more time than anything else.",
+        "In neighborhood settings, like a tight street in Clintonville or a crowded apartment lot near the Ohio State campus, tell the dispatcher about anything that will help the driver find you: a building number, a parking level, the color of your car. Nothing shortens the wait like an exact spot.",
       ],
     },
     {

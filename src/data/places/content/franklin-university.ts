@@ -4,7 +4,7 @@ export default {
   keyword: "Franklin University towing",
   title: "Franklin University Towing Downtown",
   description:
-    "Working adult with a car that won't start after an evening class on Grant Avenue? Jumps, lockouts and flatbed tows around Franklin. (614) 633-8163.",
+    "Working adult with a car that won't start after an evening class on Grant Avenue? Jumps, lockouts and flatbed tows around Franklin. (614) 714-5785.",
   h1: "Franklin University towing for students who work all day and study at night",
   lede:
     "Franklin's students tend to have jobs, families and long commutes. When the car fails downtown after class, we get it started or get it to a shop.",
@@ -74,7 +74,7 @@ export default {
     },
     {
       q: "I take most classes online. Do you cover my home too?",
-      a: "Yes. We serve Columbus and the surrounding towns in central Ohio, not just downtown. If your car fails in your driveway in Reynoldsburg or at work in Dublin, the same rates apply. Only the en-route miles change, because they're measured from our yard to wherever the car is. Call the same number, (614) 633-8163.",
+      a: "Yes. We serve Columbus and the surrounding towns in central Ohio, not just downtown. If your car fails in your driveway in Reynoldsburg or at work in Dublin, the same rates apply. Only the en-route miles change, because they're measured from our yard to wherever the car is. Call the same number, (614) 714-5785.",
     },
     {
       q: "Can you change a flat in a downtown garage?",

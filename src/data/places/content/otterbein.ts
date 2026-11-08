@@ -4,7 +4,7 @@ export default {
   keyword: "Otterbein towing",
   title: "Otterbein Towing in Westerville",
   description:
-    "Otterbein student with a car that won't start in Uptown Westerville? Jump starts, lockouts and flatbed tows near campus, quoted first. (614) 633-8163.",
+    "Otterbein student with a car that won't start in Uptown Westerville? Jump starts, lockouts and flatbed tows near campus, quoted first. (614) 714-5785.",
   h1: "Otterbein towing, jumps and lockouts near Uptown Westerville",
   lede:
     "Otterbein's campus runs right into Uptown Westerville's brick storefronts. When a student's car quits there, we send a truck up from Columbus.",

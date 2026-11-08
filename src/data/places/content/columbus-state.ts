@@ -4,7 +4,7 @@ export default {
   keyword: "Columbus State towing",
   title: "Columbus State Towing & Jump Starts",
   description:
-    "Car won't start after a night class at Columbus State? Flat-rate jumps, lockouts and flatbed tows in the Discovery District, 24-7. (614) 633-8163.",
+    "Car won't start after a night class at Columbus State? Flat-rate jumps, lockouts and flatbed tows in the Discovery District, 24-7. (614) 714-5785.",
   h1: "Columbus State towing, jumps and lockouts in the Discovery District",
   lede:
     "Columbus State is a commuter campus, so when your car fails there, it's your ride home that's gone. We get you running again, or get the car to a shop.",
@@ -77,7 +77,7 @@ export default {
     },
     {
       q: "Can someone else call for me if my phone is locked in the car?",
-      a: "Yes. A classmate, a parent or a coworker can call (614) 633-8163 with the car's location and your description. The driver will still check your ID against the registration before opening or towing anything, so make sure you're with the car when the truck arrives, or tell the dispatcher how to reach you if you've had to step away.",
+      a: "Yes. A classmate, a parent or a coworker can call (614) 714-5785 with the car's location and your description. The driver will still check your ID against the registration before opening or towing anything, so make sure you're with the car when the truck arrives, or tell the dispatcher how to reach you if you've had to step away.",
     },
     {
       q: "Will you come if my car dies on the interstate near campus?",

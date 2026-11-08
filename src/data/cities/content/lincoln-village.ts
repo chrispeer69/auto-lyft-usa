@@ -2,7 +2,7 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbeds and wheel lifts, 24-7. (614) 633-8163.",
+    "Lincoln Village tow trucks for West Broad Street, Sullivant Avenue and the I-270 Broad Street ramps. Flatbeds and wheel lifts, 24-7. (614) 714-5785.",
   h1: "Need a Tow in Lincoln Village? Five Miles From Our Yard",
   lede:
     "Lincoln Village is the 1950s planned neighborhood just west of the outerbelt on West Broad Street, and few addresses outside the city sit closer to our gate.",
@@ -29,7 +29,7 @@ export default {
     { kind: "landmark", name: "Schoolhouse Lane churches", detail: "Westminster Presbyterian and Concordia Lutheran sit a few doors apart, and Sunday-morning dead batteries in their lots are a familiar call." },
   ],
   faqs: [
-    { q: "My car died in a West Broad Street lane near the I-270 ramps. What should I do?", a: "Flashers on, seat belt fastened, and only leave the car if there is smoke or traffic is clipping past too close; then walk well clear of the lanes. When you phone (614) 633-8163, tell us which side of the outerbelt you stopped on and the way you were driving. Because the rebuilt Broad Street has medians and little shoulder, our driver may move the car to a side street before fully securing it." },
+    { q: "My car died in a West Broad Street lane near the I-270 ramps. What should I do?", a: "Flashers on, seat belt fastened, and only leave the car if there is smoke or traffic is clipping past too close; then walk well clear of the lanes. When you phone (614) 714-5785, tell us which side of the outerbelt you stopped on and the way you were driving. Because the rebuilt Broad Street has medians and little shoulder, our driver may move the car to a side street before fully securing it." },
     { q: "Can you jump my car in the Lincoln Village Plaza parking lot?", a: "Yes. Dead batteries at the plaza, especially after a cold night or a long shopping trip with the lights left on, are among our routine calls in this neighborhood. Our operator connects a booster, gets the engine running, checks the charging system and then tells you plainly if the car can make the trip home under its own power or belongs on the deck." },
     { q: "Will a carrier fit on the curved streets inside Lincoln Village?", a: "Yes. The streets were designed in the 1950s with gentle curves to slow traffic, and they are wide enough for our light-duty flatbeds. Short driveways sometimes mean the driver loads from the curb and winches the car out, which is routine. Tell us if a car is parked in a garage or behind another vehicle." },
     { q: "Do you tow on Sullivant Avenue and the south side of the neighborhood?", a: "We do. Sullivant Avenue forms the southern border, and we pick up from homes, apartment lots and businesses along it as well as the streets around Lakota Park. Many of those calls are older vehicles headed to a mechanic, and a fair number are cars that have sat for months and are finally being cleared out through [junk car removal](/towing/junk-car-removal)." },

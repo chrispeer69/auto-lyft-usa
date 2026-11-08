@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Used Car Inspection Help in Columbus",
   description:
-    "Buying a used car in Columbus? We can tow or transport it to a mechanic for a pre-purchase inspection before you pay. (614) 633-8163.",
+    "Buying a used car in Columbus? We can tow or transport it to a mechanic for a pre-purchase inspection before you pay. (614) 714-5785.",
   h1: "Buying a Used Car? Get It to a Mechanic First",
   lede:
     "Before you hand over money for a used car, have a mechanic look it over. If it can't be driven, isn't registered or the seller won't drive it, we can carry it to the shop.",

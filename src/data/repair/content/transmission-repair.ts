@@ -3,7 +3,7 @@ import type { RepairService } from "../../types";
 export default {
   title: "Transmission Repair Help Columbus",
   description:
-    "Slipping or stuck in gear? We flatbed the car to a Columbus transmission shop so the gearbox never turns on the way there. (614) 633-8163.",
+    "Slipping or stuck in gear? We flatbed the car to a Columbus transmission shop so the gearbox never turns on the way there. (614) 714-5785.",
   h1: "Transmission Trouble? Have It Towed, Not Driven",
   lede:
     "Slipping gears, harsh shifts or a car that won't move in drive usually need a specialist. We haul the vehicle on a flatbed so the gearbox isn't turning on the way.",

@@ -4,7 +4,7 @@ export default {
   keyword: "Schottenstein Center towing",
   title: "Schottenstein Center Towing & Jumps",
   description:
-    "Dead car in a Schott lot after the show or the final buzzer? Jump starts, lockouts and flatbed tows near Lane Avenue and SR-315, any hour. (614) 633-8163.",
+    "Dead car in a Schott lot after the show or the final buzzer? Jump starts, lockouts and flatbed tows near Lane Avenue and SR-315, any hour. (614) 714-5785.",
   h1: "Schottenstein Center Towing for Concert and Game Nights",
   lede:
     "Winter basketball, hockey and big-name shows at Value City Arena mean cold lots and late exits. We answer at any hour if your car won't go home with you.",
@@ -53,7 +53,7 @@ export default {
   faqs: [
     {
       q: "How does Schottenstein Center towing work after a late concert?",
-      a: "Call (614) 633-8163 as soon as you know the car is not going to start. The dispatcher takes your location, describes the price including the overnight fee if it is after 10 PM, and sends the nearest flatbed. Most post-show calls turn out to be dead batteries, so the driver will try a jump first. If that does not work, we tow the car where you want it.",
+      a: "Call (614) 714-5785 as soon as you know the car is not going to start. The dispatcher takes your location, describes the price including the overnight fee if it is after 10 PM, and sends the nearest flatbed. Most post-show calls turn out to be dead batteries, so the driver will try a jump first. If that does not work, we tow the car where you want it.",
     },
     {
       q: "Can you replace my battery right there in the arena lot?",

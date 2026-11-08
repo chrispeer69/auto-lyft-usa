@@ -4,14 +4,14 @@ export default {
   keyword: "long distance towing",
   title: "Long Distance Towing from Columbus",
   description:
-    "Long-distance towing from Columbus to any city in Ohio or a neighboring state. One car per flatbed, door to door, price set before pickup. (614) 633-8163.",
+    "Long-distance towing from Columbus to any city in Ohio or a neighboring state. One car per flatbed, door to door, price set before pickup. (614) 714-5785.",
   h1: "Long-Distance Towing to and from Columbus, One Car per Truck",
   lede:
     "When a vehicle has to travel a hundred miles or more, it goes alone on one of our flatbeds, picked up at one address and unloaded at the other by the same driver.",
   intro: [
     "Long-distance towing covers the trips that go well past the outerbelt: a car that broke down on a road trip and needs to come home to Columbus, a used SUV bought from a seller in Toledo, a student's hatchback headed back from Athens for the summer, or a vehicle moving with its owner to Indianapolis or Pittsburgh. Auto Lyft USA runs these from our Harrisburg Pike yard to destinations across Ohio and into the neighboring states.",
     "Unlike a car-hauler that collects eight or nine vehicles along a route and drops them off over several days, our trucks carry a single vehicle and drive straight between the two addresses. That means a set pickup time, no stops at a terminal, no transfers between trucks, and one driver responsible for your car the entire way. Long trips ride on a flatbed, so the odometer doesn't move and the tires, transmission and suspension take no wear from the trip.",
-    "Price for a long tow is based mostly on loaded miles, plus the drive out to reach the car and any tolls. Call [(614) 633-8163](/contact) or use the [estimate page](/estimate) with both addresses and the vehicle details, and you will have the full figure before you book. The dispatcher will also tell you a realistic pickup window and roughly how long the drive should take, so you can plan who will be waiting at the other end.",
+    "Price for a long tow is based mostly on loaded miles, plus the drive out to reach the car and any tolls. Call [(614) 714-5785](/contact) or use the [estimate page](/estimate) with both addresses and the vehicle details, and you will have the full figure before you book. The dispatcher will also tell you a realistic pickup window and roughly how long the drive should take, so you can plan who will be waiting at the other end.",
   ],
   situations: [
     { title: "Breakdown far from home", text: "Your car quit near Mansfield or outside Cincinnati and you would rather have your own mechanic in Columbus fix it. We bring it back to the shop you trust." },

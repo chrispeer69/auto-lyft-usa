@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Towing in Delaware, Ohio on US 23, William Street and Sandusky Street, from Ohio Wesleyan to the fairgrounds. Flatbeds dispatched 24-7. (614) 633-8163.",
+    "Towing in Delaware, Ohio on US 23, William Street and Sandusky Street, from Ohio Wesleyan to the fairgrounds. Flatbeds dispatched 24-7. (614) 714-5785.",
   h1: "Towing in Delaware, Ohio: Our Longest Regular Run North",
   lede:
     "Delaware is the county seat at the top of our map, a college town on the Olentangy River that a truck reaches by US 23 or I-71 from Columbus.",
   intro: [
     "Delaware is the county seat on the Olentangy River, the birthplace of Rutherford B. Hayes, and home to Ohio Wesleyan University, founded in 1842 on what is now a 200-acre campus beside downtown. US-23 runs through the city as a freeway and crosses US-36 there, while I-71 passes a few miles east, reached by William Street. Every September the county fairgrounds on the north side host the Little Brown Jug, a leg of harness racing's Triple Crown.",
     "Calls here come from a recognizable set of places. US-23 is the main way in from the south, with long stretches of signals and business driveways below town, and William Street carries US-36 and SR-37 east toward I-71 and west through downtown. Sandusky Street runs north-south past the courthouse blocks and the Ohio Wesleyan campus, where student cars and on-street spaces supply a good share of our lockouts and jump starts. Add Grady Memorial Hospital, the fairgrounds and the industrial streets on the city's edges, and you have most of the Delaware map.",
-    "Many Delaware jobs end up as tows heading south: a car going to a dealer, a specialist or the owner's home in another suburb. A flatbed handles those longer moves without putting miles on the drivetrain, and our [long-distance towing](/towing/long-distance-towing) page explains how they are arranged. The quote always comes before a truck heads north; call (614) 633-8163.",
+    "Many Delaware jobs end up as tows heading south: a car going to a dealer, a specialist or the owner's home in another suburb. A flatbed handles those longer moves without putting miles on the drivetrain, and our [long-distance towing](/towing/long-distance-towing) page explains how they are arranged. The quote always comes before a truck heads north; call (614) 714-5785.",
   ],
   roads: [
     { name: "US 23", note: "The main highway between Columbus and Delaware, with long stretches of signals and commercial driveways south of town. A stall here usually means guiding the car into a business lot before loading." },

@@ -9,6 +9,7 @@ import { COMPANY, ids } from "../../data/company";
 import { abs } from "../../lib/schema";
 import { rich, slugify } from "../../lib/text";
 import type { Guide } from "../../data/types";
+import { helpFor } from "../../data/guides/related";
 
 export function getStaticPaths() {
   return GUIDE_PAGES.map((g) => ({ params: { slug: g.slug }, props: { g } }));
@@ -33,6 +34,7 @@ const schema = [
     isPartOf: { "@id": ids.website },
   },
 ];
+const help = helpFor(g.slug);
 const more = GUIDE_PAGES.filter((x) => x.slug !== g.slug).slice(0, 4);
 const pretty = new Date(`${g.date}T12:00:00`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
@@ -53,6 +55,11 @@ const pretty = new Date(`${g.date}T12:00:00`).toLocaleDateString("en-US", { year
           {sec.bullets && <ul>{sec.bullets.map((b) => <li set:html={rich(b)} />)}</ul>}
         </section>
       ))}
+      <aside class="guide-help" aria-labelledby="help-h">
+        <h2 id="help-h">Need a hand right now?</h2>
+        <p>Call <a href={COMPANY.telHref}>{COMPANY.phone}</a> any hour, or start with the service that fits:</p>
+        <ul>{help.map((h) => <li><a href={h.href}><strong>{h.label}</strong></a>: {h.note}</li>)}</ul>
+      </aside>
     </div>
   </article>
   <section class="band alt"><div class="wrap prose"><FaqList faqs={g.faqs} heading="Quick answers" /></div></section>

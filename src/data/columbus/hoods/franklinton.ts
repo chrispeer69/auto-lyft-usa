@@ -2,14 +2,14 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Franklinton towing by flatbed: COSI and Veterans Museum lots, Sullivant, West Broad and the Peninsula, near our Harrisburg Pike yard. (614) 633-8163.",
+    "Franklinton towing by flatbed: COSI and Veterans Museum lots, Sullivant, West Broad and the Peninsula, near our Harrisburg Pike yard. (614) 714-5785.",
   h1: "Franklinton Flatbed Tows From Our Neighbor Yard",
   lede:
     "Our Harrisburg Pike office sits almost on Franklinton's doorstep, so the Bottoms is home ground for our drivers.",
   intro: [
     "Lucas Sullivant laid out Franklinton on the west bank of the Scioto in 1797, years before Columbus existed across the river, and the post office building from 1807 still stands on its original foundation. The low ground in the river bend earned the nickname the Bottoms, and today a floodwall holds the Scioto back from the streets. West Broad Street runs through the middle, Sullivant Avenue parallels it to the south, and I-70 forms the western edge.",
     "For a tow driver the neighborhood is really two places. Right on the river, the Scioto Peninsula has become a district of museums, offices and new apartments, with COSI, the National Veterans Memorial and Museum and the Peninsula development clustered together. Visitors park in big surface lots and garages, and the calls are mostly dead batteries, lockouts and the odd bump at a busy entrance. West of that, the older grid between Broad and Greenlawn is full of narrow streets, small houses close to the curb, warehouses turned into studios and the arts district around Gift and Lucas streets, where box trucks and contractor vans share the lanes.",
-    "On the second Friday of every month, Franklinton Fridays opens the studios at 400 West Rich and the galleries nearby, and the arts grid fills with parked cars well into the evening. If yours won't start after one, give the dispatcher the closest corner on Rich, Town or Lucas rather than the building name alone. Ring [(614) 633-8163](/contact) or fill in the [online request](/request).",
+    "On the second Friday of every month, Franklinton Fridays opens the studios at 400 West Rich and the galleries nearby, and the arts grid fills with parked cars well into the evening. If yours won't start after one, give the dispatcher the closest corner on Rich, Town or Lucas rather than the building name alone. Ring [(614) 714-5785](/contact) or fill in the [online request](/request).",
   ],
   roads: [
     { name: "West Broad Street on the Peninsula", note: "Runs past COSI and the Veterans Museum. Event days back traffic up toward the bridge, and we load from side lots rather than in the travel lanes whenever we can." },

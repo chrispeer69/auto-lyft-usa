@@ -2,7 +2,7 @@ import type { HoodContent } from "../index";
 
 export default {
   description:
-    "Old North Columbus towing from Lane Avenue up to Glen Echo: flatbed tows, jumps and lockouts on High, Hudson and Indianola. (614) 633-8163.",
+    "Old North Columbus towing from Lane Avenue up to Glen Echo: flatbed tows, jumps and lockouts on High, Hudson and Indianola. (614) 714-5785.",
   h1: "Old North Columbus Tows, Lane Avenue to Glen Echo",
   lede:
     "Half college town, half old streetcar suburb. Old North mixes students, longtime owners and ravine streets that take some care with a flatbed.",

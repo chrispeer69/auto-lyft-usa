@@ -12,6 +12,8 @@ import type { SectionKey } from "../../../data/types";
 import { PHOTOS } from "../../../data/photos";
 import { serviceNode } from "../../../lib/schema";
 import { rich } from "../../../lib/text";
+import { highwaysForHood } from "../../../data/highways";
+import { highwayPath } from "../../../data/highways/catalog";
 
 export function getStaticPaths() {
   return HOOD_PAGES.map((h) => ({ params: { hood: h.slug }, props: { h } }));
@@ -37,6 +39,7 @@ const kinds = [...new Set(h.local.map((l) => l.kind))];
 const next = h.nearby.map((s) => hoodBySlug(s)).filter((n) => n !== undefined);
 const picked = h.services.map((s) => serviceBySlug(s)).filter((s) => s !== undefined);
 const order: SectionKey[] = h.order ?? ["roads", "local", "faqs", "services"];
+const roadsNear = highwaysForHood(h.slug);
 const hero = PHOTOS.city;
 const shade = (i: number) => (i % 2 === 0 ? "band alt" : "band");
 ---
@@ -91,6 +94,12 @@ const shade = (i: number) => (i % 2 === 0 ? "band alt" : "band");
         <li><a href="/areas/columbus-oh">All Columbus neighborhoods</a></li>
         <li><a href="/areas">Suburbs and towns</a></li>
       </ul>
+      {roadsNear.length > 0 && (
+        <>
+          <h3 class="mt-28">Highway guides for {h.name}</h3>
+          <ul class="linklist">{roadsNear.map((r) => <li><a href={highwayPath(r.slug)}>{r.label}</a></li>)}</ul>
+        </>
+      )}
     </div>
   </section>
   <Nap place={h.name} heading={h.nap.heading} lead={h.nap.text} />

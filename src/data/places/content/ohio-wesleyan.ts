@@ -4,7 +4,7 @@ export default {
   keyword: "Ohio Wesleyan towing",
   title: "Ohio Wesleyan Towing in Delaware, OH",
   description:
-    "Flatbed tows, jump starts and lockouts for Ohio Wesleyan students in Delaware, plus long hauls home at semester's end. Priced first. (614) 633-8163.",
+    "Flatbed tows, jump starts and lockouts for Ohio Wesleyan students in Delaware, plus long hauls home at semester's end. Priced first. (614) 714-5785.",
   h1: "Ohio Wesleyan towing for students, parents and visitors in Delaware",
   lede:
     "Ohio Wesleyan sits a good distance north of Columbus, and many of its students come from much farther. We handle the breakdown on campus and the trip home.",
@@ -61,7 +61,7 @@ export default {
     },
     {
       q: "Can I arrange the tow if I live out of state?",
-      a: "Yes. Phone (614) 633-8163 or book online. We need a way to reach your student, the car's location near campus and the destination address. You get the quote and settle the details; your student brings the key and meets our driver at the car. If you pay online by card, there's a 3% fee.",
+      a: "Yes. Phone (614) 714-5785 or book online. We need a way to reach your student, the car's location near campus and the destination address. You get the quote and settle the details; your student brings the key and meets our driver at the car. If you pay online by card, there's a 3% fee.",
     },
     {
       q: "My car is on the other side of Sandusky Street from my dorm. Does that matter?",

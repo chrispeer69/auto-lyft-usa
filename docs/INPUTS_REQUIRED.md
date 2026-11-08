@@ -5,8 +5,8 @@ Things the site leaves out (or flags) until confirmed. Each one is a single edit
 | # | Item | Why it matters | Where it goes |
 |---|---|---|---|
 | 1 | **PUCO towing certificate number** for Auto Lyft USA Inc. | Trust signal; schema `identifier`; footer licence line | `COMPANY.pucoNumber` |
-| 2 | **USDOT number** | Same | `COMPANY.usdotNumber` |
-| 3 | **Google Business Profile** (CID or maps link), once created | Ties the site to the map listing (`sameAs`, `hasMap`) | `COMPANY.googleMapsCid` |
+| 2 | ~~**USDOT number**~~ DONE 2026-11-08: USDOT 4214342 and MC-1627897 (checked on FMCSA SAFER). **The SAFER record still shows 3879 Regatta Ct, Delaware OH 43035 and the old phone (614) 633-8163; update it with an MCS-150 so it matches the site.** | Same | `COMPANY.usdotNumber`, `COMPANY.mcNumber` |
+| 3 | **Google Business Profile** (CID or maps link): being built as of 2026-11-08. Use (614) 714-5785 and the Harrisburg Pike address. | Ties the site to the map listing (`sameAs`, `hasMap`) | `COMPANY.googleMapsCid` |
 | 4 | **Facebook / social profiles** | `sameAs` | `COMPANY.facebook` |
 | 5 | **Verify the US Tow Alliance profile URL** (`/company/10602/` assumed) | Footer link + `sameAs` | `COMPANY.allianceProfile` |
 | 6 | **Real photos** (trucks, yard, jobs; at least 1 hero and 4–6 job shots) | Image search, trust; the site currently uses no photos | `public/img/` |

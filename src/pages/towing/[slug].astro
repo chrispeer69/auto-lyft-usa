@@ -5,6 +5,7 @@ import { servicePhoto } from "../../data/photos";
 import FaqList from "../../components/FaqList.astro";
 import CtaBand from "../../components/CtaBand.astro";
 import Nap from "../../components/Nap.astro";
+import ServiceCorridorCluster from "../../components/ServiceCorridorCluster.astro";
 import { SERVICE_CONTENT, townsForService } from "../../data/services";
 import { SERVICES, SERVICE_GROUPS, servicePath, serviceBySlug } from "../../data/services/catalog";
 import { CITY_FACTS, cityPath } from "../../data/cities/catalog";
@@ -128,7 +129,7 @@ const schema = [
           <p class="small muted mt-12">Surcharges where they apply: after hours ({AFTER_HOURS_WINDOW}) +{usd(RATES.afterHours)} · Saturday or Sunday +{usd(RATES.weekend)} · interstate shoulder +{usd(RATES.highway)}. Ohio sales tax is added for the pickup county. Veterans get {RATES.veteranPercent}% off with a military or VA ID. Full details on the <a href="/rates">rates page</a>, or price your exact trip with the <a href="/estimate">estimate tool</a>.</p>
         </>
       ) : (
-        <p>This work is priced per job because the equipment, distance and time vary so much. Call {"(614) 633-8163"} with the details and the office quotes it before anything is scheduled. See the <a href="/rates">rates page</a> for our standard charges.</p>
+        <p>This work is priced per job because the equipment, distance and time vary so much. Call {"(614) 714-5785"} with the details and the office quotes it before anything is scheduled. See the <a href="/rates">rates page</a> for our standard charges.</p>
       )}
     </div>
   </section>
@@ -174,5 +175,6 @@ const schema = [
     </div>
   </section>
 
+  <ServiceCorridorCluster heading={`${s.name} across Columbus: dispatch corridors`} />
   <Nap />
 </Base>

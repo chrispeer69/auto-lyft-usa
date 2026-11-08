@@ -4,7 +4,7 @@ export default {
   keyword: "Nationwide Arena towing",
   title: "Nationwide Arena Towing and Lockouts",
   description:
-    "Stuck after a Blue Jackets game or show at Nationwide Arena? Garage-aware flatbed towing, jump starts and lockouts downtown, 24-7. (614) 633-8163.",
+    "Stuck after a Blue Jackets game or show at Nationwide Arena? Garage-aware flatbed towing, jump starts and lockouts downtown, 24-7. (614) 714-5785.",
   h1: "Nationwide Arena Towing When the Car Won't Leave the Garage",
   lede:
     "Hockey nights and arena concerts end with thousands of cars spiraling out of downtown garages at once. If yours is the one that won't start, we can help.",
@@ -48,7 +48,7 @@ export default {
   faqs: [
     {
       q: "Do you handle Nationwide Arena towing on Blue Jackets game nights?",
-      a: "Yes. Game nights are some of our busier evenings downtown, mostly for dead batteries and keys locked in cars. Dispatch is open all night, so whether the problem shows up before the puck drops or after the third period, call (614) 633-8163. The dispatcher will ask for the garage or lot name and give you a live arrival estimate and price.",
+      a: "Yes. Game nights are some of our busier evenings downtown, mostly for dead batteries and keys locked in cars. Dispatch is open all night, so whether the problem shows up before the puck drops or after the third period, call (614) 714-5785. The dispatcher will ask for the garage or lot name and give you a live arrival estimate and price.",
     },
     {
       q: "Can your flatbed fit inside the garage where I parked?",

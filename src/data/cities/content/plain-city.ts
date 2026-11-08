@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Tow trucks for Plain City on SR-161, US-42 and SR-736, from uptown by the town clock to Pastime Park. Flatbed carriers dispatched 24-7. (614) 633-8163.",
+    "Tow trucks for Plain City on SR-161, US-42 and SR-736, from uptown by the town clock to Pastime Park. Flatbed carriers dispatched 24-7. (614) 714-5785.",
   h1: "Tow Trucks for Plain City, From Uptown to US-42",
   lede:
     "Plain City straddles the Madison and Union county line northwest of Columbus, where suburban growth from Dublin meets open farm country.",
   intro: [
     "The clock at SR-161 and Chillicothe Street was dedicated in November 1902, and its non-electric Seth Thomas works still keep time over uptown Plain City. SR-161 itself was laid out in 1924 to connect the village with Dublin, and it meets US-42 here, so nearly every call in the village starts on or near one of those two roads. To the south, US-42 reaches I-70 at Exit 79, and Plain City-Georgesville Road runs up from the SR-142 exit.",
     "A lot of what we do in Plain City is commuter work. SR-161 carries traffic between the village and Dublin, and US-42 brings drivers up from I-70 and down from the Marysville area, so stalled cars and minor collisions on those two roads are routine. Newer subdivisions around Madison Meadows and the growing south side generate driveway calls such as flat batteries on frosty mornings and worn-out sedans bound for a mechanic. Summer is busy around Pastime Park, especially during the steam threshers show and when the campground is full.",
-    "Family SUVs, pickups and farm-country commuter cars mostly go on a flatbed and make the trip with no wheels turning. The dispatcher sets the price before the truck leaves and keeps you updated on a live arrival estimate. Call [(614) 633-8163](/contact) any hour, or fill in our [online form](/request).",
+    "Family SUVs, pickups and farm-country commuter cars mostly go on a flatbed and make the trip with no wheels turning. The dispatcher sets the price before the truck leaves and keeps you updated on a live arrival estimate. Call [(614) 714-5785](/contact) any hour, or fill in our [online form](/request).",
   ],
   roads: [
     { name: "SR-161 between Plain City and Dublin", note: "The busiest route into the village from the east. Rush-hour fender-benders and disabled cars on the two-lane sections are frequent calls." },
@@ -35,7 +35,7 @@ export default {
     { kind: "landmark", name: "Farmers National Bank building", detail: "The 1902 bank at Main and Chillicothe streets, on the National Register since 1995; a solid uptown reference if the clock is out of sight." },
   ],
   faqs: [
-    { q: "My car stalled on SR-161 between Dublin and Plain City. What should I do?", a: "Steer onto whatever shoulder exists and start the flashers. Parts of SR-161 have little room, so if traffic is passing close, get out on the side away from the road and stand well back. Call (614) 633-8163 and tell us the nearest cross road, such as a township road or subdivision entrance, so the driver finds you quickly." },
+    { q: "My car stalled on SR-161 between Dublin and Plain City. What should I do?", a: "Steer onto whatever shoulder exists and start the flashers. Parts of SR-161 have little room, so if traffic is passing close, get out on the side away from the road and stand well back. Call (614) 714-5785 and tell us the nearest cross road, such as a township road or subdivision entrance, so the driver finds you quickly." },
     { q: "Can you help during the steam threshers show at Pastime Park?", a: "Yes. Every July the Miami Valley Steam Threshers gathering brings big crowds that fill the grass lots and nearby streets. That week we see plenty of locked-in keys, run-down batteries and wheels spinning in muddy fields. Tell the dispatcher which entrance you used, such as North Chillicothe Street, and we will find a route through the event traffic." },
     { q: "Do you tow from Jonathan Alder High School on US-42?", a: "We do. Cars that will not start after school, practices or games at Jonathan Alder are regular calls for us. The campus is on US-42 south of the village, and our driver works with school staff on where to load. If it is only a dead battery, a [jump start](/towing/jump-start) usually gets the student home without a tow." },
     { q: "Is Plain City in Madison County or Union County for towing?", a: "Both. The village straddles the county line, with most of it in Madison County and part in Union County. That only matters if police are working a crash, since the responding agency depends on the location. We tow from anywhere in or around the village no matter which county the address is in." },

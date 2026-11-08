@@ -4,14 +4,14 @@ export default {
   keyword: "winch out",
   title: "Winch-Out Service in Columbus, OH",
   description:
-    "Slid into a ditch, snowbank or muddy yard near Columbus? Our winch-out crews pull light vehicles back to firm ground with care. Call (614) 633-8163.",
+    "Slid into a ditch, snowbank or muddy yard near Columbus? Our winch-out crews pull light vehicles back to firm ground with care. Call (614) 714-5785.",
   h1: "Columbus Winch Out and Ditch Recovery for Cars and Light Trucks",
   lede:
     "A steel cable, a snatch block and a slow, steady pull bring your car back onto pavement without yanking on the bumper or tearing up the underside.",
   intro: [
     "When a car slides off the road and the tires just spin, what it needs is a winch out: a controlled pull from a truck anchored on solid ground. Every one of the four flatbed carriers at Auto Lyft USA has a winch mounted behind the cab, and our drivers use it to recover sedans, crossovers, minivans and light pickups from ditches, snowbanks, mud and soggy lawns around Columbus. We dispatch from 1620 Harrisburg Pike at any hour, which matters, because most of these calls come at night or during a storm.",
     "Pulling a car out is not the same as dragging it. The driver looks at how the vehicle is sitting, where the tires have traction and what's underneath it before hooking anything up. The cable attaches to a tow point or frame, never a plastic bumper cover, and the pull goes slow enough that the car rolls rather than plows. If the car can be driven afterward, you go on your way. If something broke on the way into the ditch, the same truck can load it and haul it to a shop.",
-    "Not every stuck vehicle is a light-duty job. A car deep in a creek, a truck far down an embankment or an off-road rig in a field may need a heavier wrecker or a rotator, and we'll arrange a partner for those and tell you so on the first call. Ring (614) 633-8163, describe where the car is and how it's sitting, and you'll get a price for the full job before a driver heads your way.",
+    "Not every stuck vehicle is a light-duty job. A car deep in a creek, a truck far down an embankment or an off-road rig in a field may need a heavier wrecker or a rotator, and we'll arrange a partner for those and tell you so on the first call. Ring (614) 714-5785, describe where the car is and how it's sitting, and you'll get a price for the full job before a driver heads your way.",
   ],
   situations: [
     { title: "Slid off on ice or snow", text: "The first real snow of the year sends cars into the median and the ditch along I-71 north toward Delaware, I-270 in Dublin and US-33 toward Marysville." },

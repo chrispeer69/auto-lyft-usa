@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Flatbed towing in Reynoldsburg, OH: breakdowns at I-70 and Brice Road, Main Street lockouts and SR-256 jump starts, dispatched 24-7. (614) 633-8163.",
+    "Flatbed towing in Reynoldsburg, OH: breakdowns at I-70 and Brice Road, Main Street lockouts and SR-256 jump starts, dispatched 24-7. (614) 714-5785.",
   h1: "Reynoldsburg Towing and Roadside Help, Day or Night",
   lede:
     "From the Brice Road ramps to the SR-256 interchange, Reynoldsburg sits on the busiest stretch of the I-70 east corridor, and our flatbeds work it around the clock.",
   intro: [
     "Alexander Livingston bred the Paragon tomato at his home on Graham Road, and Reynoldsburg has called itself the Birthplace of the Tomato ever since, throwing a festival for it every August since 1965. The modern city stretches along I-70 well beyond that old core, crossing from Franklin County into Licking and Fairfield counties, with Olde Reynoldsburg and City Hall on East Main Street, the old National Road.",
     "Because the city is strung out along the interstate, a large share of Reynoldsburg calls begin on I-70 itself, between the Brice Road interchange on the west and SR-256 on the east. Off the highway, local drivers lean on two east-west arteries, East Main Street and East Broad Street, and the shopping centers on both are where people discover a flat tire or a battery that will not turn over. Livingston Avenue on the south side and the warehouse growth along Taylor Road add a steady mix of commuter cars and work vehicles.",
-    "All-wheel-drive SUVs and EVs ride on one of our four flatbeds with no wheels rolling, which is what they need. Tell us where it should go, whether that is a shop on Brice Road, a dealership or your garage near Rosehill Road, and you will get the full price before anyone leaves. You can [request a tow online](/request) or phone (614) 633-8163.",
+    "All-wheel-drive SUVs and EVs ride on one of our four flatbeds with no wheels rolling, which is what they need. Tell us where it should go, whether that is a shop on Brice Road, a dealership or your garage near Rosehill Road, and you will get the full price before anyone leaves. You can [request a tow online](/request) or phone (614) 714-5785.",
   ],
   roads: [
     { name: "I-70 at Brice Road (Exit 110)", note: "A rebuilt bridge and shifted lanes on the Brice Road side make this interchange a frequent stall and fender-bender location for Reynoldsburg drivers." },
@@ -36,7 +36,7 @@ export default {
     { kind: "landmark", name: "Reynoldsburg Tomato Festival", detail: "Held each August; streets near the festival grounds close, so give the dispatcher a cross street outside the event area." },
   ],
   faqs: [
-    { q: "My car died on I-70 between Brice Road and SR-256. What should I do?", a: "Get the car onto the right-hand shoulder if it will still roll, put the flashers on, and keep your seatbelt fastened while traffic goes by. Phone (614) 633-8163 with your travel direction and the last interchange you went by. Highway breakdowns there are routine work for our [emergency towing](/towing/emergency-towing) crews, and we coordinate with police if they need the lane cleared fast." },
+    { q: "My car died on I-70 between Brice Road and SR-256. What should I do?", a: "Get the car onto the right-hand shoulder if it will still roll, put the flashers on, and keep your seatbelt fastened while traffic goes by. Phone (614) 714-5785 with your travel direction and the last interchange you went by. Highway breakdowns there are routine work for our [emergency towing](/towing/emergency-towing) crews, and we coordinate with police if they need the lane cleared fast." },
     { q: "Can you tow my car from near Huber Park during the Tomato Festival?", a: "Yes, though the festival takes over Huber Park off Davidson Drive for three days in mid-August, and nearby streets are often closed or packed with foot traffic. Walk to an open cross street outside the event area and tell us where to meet you. If the car has to stay put until roads reopen, we can schedule the pickup for later that evening." },
     { q: "Do you jump start cars at the Victoria's Secret campus or other offices on Broad Street?", a: "Yes. Employee lots along East Broad Street and Taylor Road are a common place for a car to refuse to start after a long shift. A driver brings a booster pack and checks the battery, and if it is past saving, we can arrange a [battery replacement](/towing/car-battery-replacement) right in the lot. Building security sometimes asks for the driver's name, so let us know." },
     { q: "I'm locked out at Blacklick Woods. Can you help?", a: "We can. Let the dispatcher know the parking area by name, whether that is near the golf courses or the nature center, since the park is large and the lots are well apart. The driver uses non-damaging wedge tools to open the door and will ask to see ID before unlocking. No glass is broken and no paint is scratched in the process." },

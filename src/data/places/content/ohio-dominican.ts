@@ -4,7 +4,7 @@ export default {
   keyword: "Ohio Dominican towing",
   title: "Ohio Dominican Towing & Roadside Help",
   description:
-    "Dead battery in a residence hall lot or a car to get home for summer? Jumps, lockouts and flatbed tows at Ohio Dominican on Sunbury Road. (614) 633-8163.",
+    "Dead battery in a residence hall lot or a car to get home for summer? Jumps, lockouts and flatbed tows at Ohio Dominican on Sunbury Road. (614) 714-5785.",
   h1: "Ohio Dominican towing on Sunbury Road, for Panthers and their families",
   lede:
     "A residential campus on the northeast side, with students who drive in from all over. Jumps, lockouts, tows to the shop and long hauls home.",

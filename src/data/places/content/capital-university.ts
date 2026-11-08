@@ -4,7 +4,7 @@ export default {
   keyword: "Capital University towing",
   title: "Capital University Towing in Bexley",
   description:
-    "Jump starts, lockouts and flatbed tows for Capital University students, staff and visitors at College and Main in Bexley. Quoted up front. (614) 633-8163.",
+    "Jump starts, lockouts and flatbed tows for Capital University students, staff and visitors at College and Main in Bexley. Quoted up front. (614) 714-5785.",
   h1: "Capital University towing and roadside help at College and Main",
   lede:
     "A small campus on a quiet Bexley street, and a car that picked the worst week to quit. We handle jumps, lockouts and tows for Capital students and their families.",

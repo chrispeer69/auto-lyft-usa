@@ -4,14 +4,14 @@ export default {
   keyword: "equipment hauling",
   title: "Equipment Hauling in Columbus, OH",
   description:
-    "Equipment hauling in Columbus on a light-duty flatbed: mowers, compact tractors, golf carts, small skid steers, trailers and generators. (614) 633-8163.",
+    "Equipment hauling in Columbus on a light-duty flatbed: mowers, compact tractors, golf carts, small skid steers, trailers and generators. (614) 714-5785.",
   h1: "Light Equipment Hauling Across Columbus and Nearby Counties",
   lede:
     "If it fits on a light-duty flatbed and stays under the carrier's weight rating, we can winch it aboard, chain or strap it down and deliver it where you need it.",
   intro: [
     "Equipment hauling with Auto Lyft USA means using the same flatbed carriers that move cars around Columbus to carry the machines people own for work, land and play. A tilt deck makes loading simple: the bed slides back to the ground, the machine drives or is winched up, and it is tied down for the trip. No trailer rental, no borrowed pickup and no wrestling a mower up a pair of loose ramps.",
     "The limit is the truck. Equipment rides on our four light-duty flatbeds, so we take riding mowers, zero-turns, compact and sub-compact tractors, golf carts, side-by-sides, utility trailers, portable generators, and small skid steers or mini excavators whose weight falls within the carrier's rating. Before a truck is sent, the dispatcher asks for the make, model and attachments so the weight can be checked. If a machine is too heavy for us, we tell you on that call and connect you with a partner who runs larger equipment.",
-    "Call [(614) 633-8163](/contact) with the pickup address, the delivery address and a description of what is moving. Mention whether it runs, whether it has a bucket, deck or loader attached, and how the truck reaches it, since a machine in a back pasture or behind a fence needs a plan. You hear the total for the move before it is scheduled, and planned moves can be booked for a day that suits you.",
+    "Call [(614) 714-5785](/contact) with the pickup address, the delivery address and a description of what is moving. Mention whether it runs, whether it has a bucket, deck or loader attached, and how the truck reaches it, since a machine in a back pasture or behind a fence needs a plan. You hear the total for the move before it is scheduled, and planned moves can be booked for a day that suits you.",
   ],
   situations: [
     { title: "Mower to the repair shop", text: "A riding mower or zero-turn that quit mid-season goes to the small-engine shop on the deck, and comes back when it is fixed." },

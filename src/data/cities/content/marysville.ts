@@ -2,14 +2,14 @@ import type { CityContent } from "../../types";
 
 export default {
   description:
-    "Marysville, OH flatbed towing along US-33, Delaware Avenue and Elwood Avenue (SR-31), plus Union County roadside help day or night. (614) 633-8163.",
+    "Marysville, OH flatbed towing along US-33, Delaware Avenue and Elwood Avenue (SR-31), plus Union County roadside help day or night. (614) 714-5785.",
   h1: "Marysville, OH Flatbed Towing up the US-33 Corridor",
   lede:
     "Marysville is the Union County seat at the far end of the US-33 freeway, home to big employers and a fast-growing ring of new neighborhoods.",
   intro: [
     "O.M. Scott started selling lawn seed in Marysville in 1868, and the company that grew from it still runs its headquarters campus on Scottslawn Road at the south edge of town. Honda arrived more than a century later, building Accords at its plant northwest of the city since 1982. Between those two anchors sits the Union County seat itself: an uptown grid around the 1883 courthouse, wrapped by the US-33 freeway and a widening ring of subdivisions.",
     "US-33 is where many of our Marysville jobs begin. It is a four-lane, limited-access road carrying commuters between Union County and Columbus as well as shift traffic headed for the industrial area northwest of town, so disabled cars on its shoulders and ramps are a steady call. Inside the city, Delaware Avenue, Elwood Avenue and the Five Points intersection see slow-speed bumps and cars that quit at the lights, while the retail strip on Coleman's Crossing Boulevard brings lockouts and no-starts in big parking fields.",
-    "Because the trip from Columbus is a long one, the car rides on one of our flatbeds rather than rolling behind the truck. You hear the price before anything is dispatched, and the dispatcher gives a live estimate of the arrival. Call [(614) 633-8163](/contact) or [request a pickup online](/request).",
+    "Because the trip from Columbus is a long one, the car rides on one of our flatbeds rather than rolling behind the truck. You hear the price before anything is dispatched, and the dispatcher gives a live estimate of the arrival. Call [(614) 714-5785](/contact) or [request a pickup online](/request).",
   ],
   roads: [
     { name: "US-33 between Dublin and Marysville", note: "The freeway that links Marysville to I-270. Long, fast and lightly lit at night, so a stalled car on the shoulder needs hazards and a clear location." },

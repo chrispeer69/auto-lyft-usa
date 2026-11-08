@@ -4,14 +4,14 @@ export default {
   keyword: "fleet towing",
   title: "Fleet Towing in Columbus, OH",
   description:
-    "Fleet towing accounts in Columbus, OH: jobs logged and billed in RoadsideMC.com on net-15 terms, with photos at pickup and drop-off. (614) 633-8163.",
+    "Fleet towing accounts in Columbus, OH: jobs logged and billed in RoadsideMC.com on net-15 terms, with photos at pickup and drop-off. (614) 714-5785.",
   h1: "Columbus Fleet Towing Accounts for Company Cars, Vans and Pickups",
   lede:
     "Company vehicles reach the shop you pick on a flatbed, with photos at both ends of the trip and every job logged and billed through RoadsideMC.com.",
   intro: [
-    "Fleet towing for Columbus businesses works best when nobody on your team has to hunt for a phone number or chase a receipt. Auto Lyft USA gives each business account one dispatch line that is answered around the clock, a driver who photographs the vehicle when it goes onto the deck and again when it comes off, and billing that runs through RoadsideMC.com on net-15 terms rather than a card swipe at every breakdown. Your employee calls, describes the problem and gets on with the workday while we deal with the vehicle.",
+    "Fleet towing for Columbus businesses works best when nobody on your team has to hunt for a phone number or chase a receipt. Auto Lyft USA gives each business account one dispatch line that is answered around the clock, a driver who photographs the vehicle when it goes onto the deck and again when it comes off, and invoices handled by RoadsideMC.com, due net-15 rather than a card swipe at every breakdown. Your employee calls, describes the problem and gets on with the workday while we deal with the vehicle.",
     "Our four light-duty flatbed carriers suit the vehicles most local fleets actually run: sales sedans, service pickups, cargo and passenger vans, rental cars, and motor-pool cars for agencies and nonprofits. Everything rides on the deck, so a van with a slipping transmission or an all-wheel-drive crossover reaches the shop without extra wear. When a unit is larger than a light-duty carrier should handle, such as a loaded box truck, we set it up through partner operators and keep the job on your account so the records stay together.",
-    "Lisa Peer opened Auto Lyft USA in 2024 at 1620 Harrisburg Pike, southwest of downtown and minutes from I-70, I-71 and the I-270 outerbelt. Accounts begin with a note of interest at RoadsideMC.com. For questions about approval or account pricing before then, call [(614) 633-8163](/contact) or write to lisa@autolyftusa.online.",
+    "Lisa Peer opened Auto Lyft USA in 2024 at 1620 Harrisburg Pike, southwest of downtown and minutes from I-70, I-71 and the I-270 outerbelt. Accounts begin with a note of interest at RoadsideMC.com. For questions about approval or account pricing before then, call [(614) 714-5785](/contact) or write to lisa@autolyftusa.online.",
   ],
   situations: [
     { title: "Service vans stuck mid-route", text: "A plumbing, HVAC or electrical van that dies between appointments goes to your preferred shop, and the technician can catch a ride with a coworker instead of waiting on the curb." },

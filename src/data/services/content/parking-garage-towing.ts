@@ -4,14 +4,14 @@ export default {
   keyword: "parking garage towing",
   title: "Parking Garage Towing in Columbus",
   description:
-    "Parking garage towing in Columbus: we get your car out of low downtown, OSU and Easton decks and load it on the flatbed at the exit. Call (614) 633-8163.",
+    "Parking garage towing in Columbus: we get your car out of low downtown, OSU and Easton decks and load it on the flatbed at the exit. Call (614) 714-5785.",
   h1: "Car Stuck in a Columbus Garage? Parking Garage Towing",
   lede:
     "Most city parking decks are too low for a flatbed carrier, so we bring your car down to the exit with a jump, a spare or wheel dollies and load it outside.",
   intro: [
     "Parking garage towing is mostly about the part before the tow. A flatbed carrier with its deck stowed stands taller than the entry beams in many Columbus garages, so the truck usually stays on the street while the driver walks in with the tools to move your car. Once it reaches the exit or the curb, it goes up on the deck like any other tow and heads to your shop, your home or our yard.",
     "How the car gets down depends on why it stopped. A dead battery may only need a jump, and then you or the driver can drive it out. A flat can be swapped for your spare. A car that won't start at all can sit on wheel dollies, sometimes called go-jaks, which slip under the tires so it can be steered and pushed down the ramps by hand. Whatever the method, nothing is attempted until the driver has walked the route to the exit and checked the turns, speed bumps and any gate arm along the way.",
-    "When you call [(614) 633-8163](/contact), have the garage name or address, the level and space number, and the posted clearance height from the sign at the entrance. Those three details decide what the driver brings and where the truck waits. The dispatcher quotes the entire job before anyone is sent, including any time spent moving the car through the deck.",
+    "When you call [(614) 714-5785](/contact), have the garage name or address, the level and space number, and the posted clearance height from the sign at the entrance. Those three details decide what the driver brings and where the truck waits. The dispatcher quotes the entire job before anyone is sent, including any time spent moving the car through the deck.",
   ],
   situations: [
     { title: "Dead battery on an upper level", text: "Lights left on during a long shift or a ballgame drain the battery. A jump often solves it right there. See [jump start service](/towing/jump-start) for the roadside side of that call." },
