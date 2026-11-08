@@ -113,7 +113,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: "Can you charge my EV on the spot?", a: "No. We tow it to the nearest fast charger or wherever you choose." },
       { q: "Do I need to do anything first?", a: "If the car powers on, look up how to enter tow or transport mode; the driver will walk you through it." },
-      { q: "Is a flatbed really necessary?", a: "Most EV makers say to keep all four wheels off the road, so every EV we tow goes on a flatbed." },
+      { q: "Is a flatbed really necessary?", a: "Not always. Every tire has to be off the road, and your owner's manual decides how: a carrier deck, or a wheel-lift with dollies under the other axle where the maker allows it. Long trips ride the deck." },
     ],
   },
   {

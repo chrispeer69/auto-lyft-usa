@@ -38,6 +38,10 @@ export const GUIDE_HELP: Record<string, HelpLink[]> = {
   "how-towing-prices-work-columbus": [estimate, rates, flatbed],
   "choosing-a-towing-company-checklist": [rates, flatbed, contact],
   "what-it-takes-to-run-a-tow-company": [rates, estimate, contact],
+  "coolant-antifreeze-check-before-winter": [jump, flatbed, rates],
+  "road-salt-and-your-car-ohio": [flatbed, roadside, estimate],
+  "storing-a-damaged-ev-after-a-crash": [{ href: "/towing/ev-towing", label: "EV towing", note: "Electric cars carried on a flatbed, all four wheels up." }, accident, contact],
+  "thanksgiving-week-travel-columbus": [{ href: "/towing/long-distance-towing", label: "Long-distance towing", note: "Trips across Ohio and into neighboring states, priced before you commit." }, roadside, estimate],
 };
 
 export const helpFor = (slug: string) => GUIDE_HELP[slug] ?? DEFAULT_HELP;

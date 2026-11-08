@@ -76,7 +76,7 @@ export default {
     },
     {
       q: "Do you tow electric cars from the Tuttle area?",
-      a: "We do, on a flatbed, which is how most EV makers say their cars should travel. EV tows follow a separate rate card: $2.50 per mile en-route, $150 hook-up, $7.50 per loaded mile, and a $100 highway surcharge. If the car still has some power, put it in tow or transport mode if it has one. See our [EV towing](/towing/ev-towing) page for details.",
+      a: "We do, with all four wheels up: most EV makers name a flatbed first, and some also allow a wheel-lift with dollies. EV tows follow a separate rate card: $2.50 per mile en-route, $150 hook-up, $7.50 per loaded mile, and a $100 highway surcharge. If the car still has some power, put it in tow or transport mode if it has one. See our [EV towing](/towing/ev-towing) page for details.",
     },
     {
       q: "What if my car breaks down in heavy traffic on Tuttle Crossing Boulevard?",
