@@ -95,7 +95,7 @@ export default {
     },
     {
       q: "After a slide-off, do I wait inside the car or get out?",
-      a: "Yes, in most cases. Stay buckled in with the hazards on, keep the tailpipe clear, and call for help. Leave the car only if it's on fire or in danger of being hit.",
+      a: "Wait inside in most cases. Stay buckled in with the hazards on, keep the tailpipe clear, and call for help. Leave the car only if it's on fire or in danger of being hit.",
     },
   ],
 } satisfies Omit<Guide, "slug">;
