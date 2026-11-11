@@ -1,6 +1,7 @@
 /* Driver guides (the blog). Copy for each lives in ./content/<slug>.ts (type Guide). */
 export interface GuideEntry { slug: string; topic: string }
 export const GUIDES: GuideEntry[] = [
+  { slug: "ev-out-of-charge-on-i-71-south", topic: "[EV weekly] EV out of charge on I-71 south of Columbus: what zero means, why a jump adds no range, shoulder safety, getting carried to a working charger" },
   { slug: "first-snow-columbus-driving", topic: "The first snowfall of the season in Columbus: a night-before tire/wiper check, clearing the car, braking and following room on snow, sliding off the road and staying put, winch-out costs" },
   { slug: "storing-a-damaged-ev-after-a-crash", topic: "After an EV crash: stranded energy and reignition, where the 50-foot storage distance comes from (NHTSA, Tesla, IAFF/USFA), NTSB finding that yards often cannot provide it, barriers vs. gas build-up, owner checklist" },
   { slug: "thanksgiving-week-travel-columbus", topic: "Thanksgiving week out of Columbus: a 20-minute pre-trip car check, I-70/I-71 holiday traffic, breaking down far from home, getting the car back on a flatbed" },

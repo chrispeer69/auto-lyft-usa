@@ -74,7 +74,7 @@ export default {
       a: "On average, around October 27, according to the National Weather Service office in Wilmington. Any single year can be weeks earlier or later, and rural areas outside the city usually freeze about a week to ten days before the urban core.",
     },
     {
-      q: "Why does my tire pressure light come on when it gets cold?",
+      q: "Cold morning, and the tire pressure warning is lit. Why?",
       a: "Cooler air takes up less space, so the pressure inside each tire drops, roughly one psi for every 10-degree fall. A big overnight drop can push the tires below the warning threshold. Add air to the pressure on the door-jamb sticker, checked before driving, and the light should go out after a short drive.",
     },
     {
@@ -83,7 +83,7 @@ export default {
     },
     {
       q: "Do bridges really freeze before the road?",
-      a: "Yes. A bridge has cold air above and below it, so the deck sheds heat faster than pavement sitting on the ground. In the first cold snaps of the season, bridges and elevated ramps are often the only icy spots on an otherwise wet road.",
+      a: "Yes. Air chills a bridge deck from the top and the underside at once, while ordinary road surface keeps some warmth from the earth beneath it. In the first cold snaps of the season, bridges and elevated ramps are often the only icy spots on an otherwise wet road.",
     },
   ],
 } satisfies Omit<Guide, "slug">;

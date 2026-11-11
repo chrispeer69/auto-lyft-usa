@@ -49,7 +49,7 @@ export default {
     {
       heading: "Working out the total",
       paragraphs: [
-        "Since the drive from our yard to Sunbury is longer than to most Columbus shopping centers, en-route mileage at $4 per mile makes up a bigger share of a Tanger bill. The dispatcher will give you the full figure up front. Weekend pickups add $50, and overnight calls add $150. See the [rates page](/rates) for the complete card, or put your pickup and drop-off into the [estimate tool](/estimate).",
+        "Since the drive from our yard to Sunbury is longer than to most Columbus shopping centers, en-route mileage at $4 per mile makes up a bigger share of a Tanger bill. The dispatcher will give you the full figure up front. Weekend pickups add $50, and overnight calls add $150. See the [rates page](/rates) for the complete card, or try the [estimate tool](/estimate) with both addresses.",
         "Sunbury is in Delaware County, so Delaware County's sales tax rate applies to the invoice.",
       ],
     },

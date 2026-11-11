@@ -99,7 +99,7 @@ export default {
       a: "We are not lawyers, so check the current rules, but calling law enforcement is wise when the deer or your car is blocking the road, anyone is hurt, or the damage is more than cosmetic. A police report also gives your insurer a clear record. If you plan to keep the deer, ask the officer first, since Ohio has rules about possessing one.",
     },
     {
-      q: "Can I drive my car after hitting a deer if it seems fine?",
+      q: "The car seems fine after the deer strike. Is it safe to keep driving?",
       a: "Possibly, but inspect it first. Look for coolant leaking under the front, broken headlights, a loose hood and parts touching a tire, and watch for new warning lights. Then keep an eye on the temperature gauge for the first several miles, since a damaged radiator may leak slowly. If anything seems off, pull over and arrange a tow.",
     },
   ],

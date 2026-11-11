@@ -76,11 +76,11 @@ export default {
     },
     {
       q: "Do you come out to Westerville late at night?",
-      a: "Yes. Dispatch is open around the clock, every day of the year. Overnight work, from 10 PM to 6 AM, has a $150 surcharge that's printed on our rate card and built into the quote. If the car is safely parked and you have somewhere to stay, you can choose to wait until morning; it's your call.",
+      a: "Yes. Dispatch is staffed 24-7, weekends and holidays included. Overnight work, from 10 PM to 6 AM, has a $150 surcharge that's printed on our rate card and built into the quote. If the car is safely parked and you have somewhere to stay, you can choose to wait until morning; it's your call.",
     },
     {
       q: "Can you move a car that broke down on I-270 near the Westerville exits?",
-      a: "Yes. Ease right, as far off the pavement as the shoulder allows, flashers on. Sitting in the car with the belt on is usually safer than standing next to it. When the car is blocking a lane, police come first, so dial 911, then us. Our dispatcher will want your direction of travel and the interchange you last saw. A highway pickup adds $75 to the usual rate.",
+      a: "Yes. Ease right, onto the widest bit of shoulder you can find, flashers on. Sitting in the car with the belt on is usually safer than standing next to it. When the car is blocking a lane, police come first, so dial 911, then us. Our dispatcher will want your direction of travel and the interchange you last saw. A highway pickup adds $75 to the usual rate.",
     },
   ],
   cities: ["westerville", "columbus", "worthington"],

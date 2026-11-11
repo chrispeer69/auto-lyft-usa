@@ -84,7 +84,7 @@ export default {
     },
     {
       q: "How late can I call for help in Bridge Park?",
-      a: "Any hour. Our dispatch line is answered around the clock, every day of the year. Calls from 10 PM to 6 AM carry a $150 overnight surcharge, which the dispatcher includes in your quote. If the car is parked somewhere safe and you'd rather avoid the surcharge, you can schedule the call for the morning instead.",
+      a: "Any hour. Someone picks up our dispatch line at all hours, holidays included. Calls from 10 PM to 6 AM carry a $150 overnight surcharge, which the dispatcher includes in your quote. If the car is parked somewhere safe and you'd rather avoid the surcharge, you can schedule the call for the morning instead.",
     },
   ],
   cities: ["dublin"],

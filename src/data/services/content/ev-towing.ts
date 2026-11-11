@@ -57,6 +57,15 @@ export default {
       ],
     },
     {
+      heading: "New EV guides from our dispatch desk",
+      paragraphs: [
+        "Each week our dispatchers add a short guide for electric car drivers. The newest are listed first.",
+      ],
+      bullets: [
+        "[Your EV Hit Zero on I-71 South](/guides/ev-out-of-charge-on-i-71-south): what an empty pack means on the interstate, and how the car reaches a working plug.",
+      ],
+    },
+    {
       heading: "Models we tow often, and what to know about each",
       paragraphs: [
         "These notes are general. Your owner's manual is the final word on how your car should be moved.",

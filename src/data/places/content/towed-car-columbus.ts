@@ -116,5 +116,5 @@ export default {
   services: ["car-towing", "flatbed-towing", "jump-start", "repair-shop-towing", "accident-towing"],
   related: ["cmh-airport", "easton", "polaris"],
   notAffiliated:
-    "Auto Lyft USA is a private towing company; it is not part of, affiliated with or endorsed by the City of Columbus, the Columbus Division of Police or any city impound operation.",
+    "Auto Lyft USA is a private towing company; it is not part of, affiliated with or endorsed by Columbus city government, its police division or any city impound operation.",
 } satisfies Omit<Place, "slug" | "category" | "label">;

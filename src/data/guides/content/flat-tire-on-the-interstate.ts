@@ -65,7 +65,7 @@ export default {
         "Plenty of flats are pure bad luck: a screw from a construction site, a chunk of truck tire in the lane. Others build for weeks. A tire running low on air flexes more, gets hotter at speed and is far more likely to fail on a long interstate drive, especially on a hot summer day. Central Ohio's freeze-thaw cycles add to the risk every late winter, when potholes open up on the outerbelt and the ramps that feed it.",
       ],
       bullets: [
-        "Check pressure monthly with a gauge, using the number on the driver's door jamb, not the maximum printed on the tire.",
+        "Check pressure monthly with a gauge, using the figure on the sticker inside the driver's door; the number molded into the sidewall is a ceiling, not a target.",
         "Treat a tire pressure warning light as a reason to stop at the next station, not a nuisance to ignore.",
         "Look at the tread. Once it is down to about 2/32 of an inch, the tire is worn out and should be replaced.",
         "Watch for bulges or cracks in the sidewall, often left by a hard pothole or curb strike.",

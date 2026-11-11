@@ -85,7 +85,7 @@ export default {
     },
     {
       q: "What voltage should a good car battery show?",
-      a: "A fully charged 12-volt battery at rest, after sitting several hours, typically reads about 12.6 volts. Around 12.4 is partly discharged, and 12.2 or lower suggests trouble on a cold morning. Voltage alone does not prove the battery is healthy, though; a load test or conductance test shows whether it can still deliver starting power.",
+      a: "A fully charged 12-volt battery at rest, after sitting several hours, typically reads about 12.6 volts. Around 12.4 is partly discharged, and 12.2 or lower suggests trouble on a cold morning. Voltage alone does not prove the battery is healthy, though; a load test or conductance test is what tells you if it can still crank the engine.",
     },
     {
       q: "How long does a car battery usually last in Ohio?",

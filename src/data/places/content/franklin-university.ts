@@ -78,7 +78,7 @@ export default {
     },
     {
       q: "Can you change a flat in a downtown garage?",
-      a: "Usually, yes. A tire change is a flat-rate roadside job. The driver needs room to get a jack under the car and the spare needs to be inflated. Tell us the garage name and level so we know how to reach you. If the spare is missing or flat too, we'll quote a tow to a tire shop instead.",
+      a: "Usually, yes. A tire change is a flat-rate roadside job. The driver needs room to get a jack under the car and the spare needs to be inflated. Tell us the garage name and level so we know how to reach you. With no usable spare in the car, we'll quote a tow to a tire shop instead.",
     },
     {
       q: "Do I need to be there when the driver arrives?",
