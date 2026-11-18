@@ -51,14 +51,14 @@ export default {
         "The heater blows lukewarm air even after a long drive. Low coolant or a thermostat stuck open are common causes.",
         "A sweet smell inside the cabin, or an oily film that keeps clouding the glass from inside. That can mean a leaking heater core.",
         "The temperature needle sits higher than normal, or swings up and down.",
-        "White steam from under the hood, or a puddle under the front of the car after it sits overnight.",
+        "White steam from under the hood, or a puddle below the front bumper after it sits overnight.",
         "A warning light shaped like a thermometer in liquid.",
       ],
     },
     {
       heading: "When to stop driving and call",
       paragraphs: [
-        "If the gauge goes into the red, pull off where it's safe and shut the engine off. Leave the caps closed. A hot cooling system is under pressure and can spray scalding fluid. For the roadside steps, read [what to do when the engine overheats](/guides/car-overheating-what-to-do).",
+        "If the gauge goes into the red, pull off where it's safe and shut the engine off. Leave the caps closed. When it is hot, the cooling system holds pressure, and opening it can throw out scalding coolant. For the roadside steps, read [what to do when the engine overheats](/guides/car-overheating-what-to-do).",
         "Don't keep driving with no coolant to reach a shop a few miles away. An engine run hot can warp its head or blow the head gasket, and then the repair bill outgrows the car. If there's smoke you can't explain, or flames, get everyone out and call 911 first.",
         "A car with a known leak or a cracked radiator should ride to the shop, not limp there. Book [repair shop towing](/towing/repair-shop-towing) to send it to your own mechanic, or let us take it to an independent partner shop that handles [cooling system repair](/repair/cooling-system-repair). We are not a repair shop ourselves; the shop diagnoses it and gives you the quote.",
       ],

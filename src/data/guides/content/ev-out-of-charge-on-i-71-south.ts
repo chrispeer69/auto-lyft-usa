@@ -36,7 +36,7 @@ export default {
         "Interstate shoulders south of the outerbelt carry fast, heavy traffic, with plenty of trucks heading toward Cincinnati. Your safety comes before the car.",
       ],
       bullets: [
-        "If you see smoke, smell burning, or hear hissing or popping from under the car, get everyone out, move well away and call 911 first.",
+        "Smoke, a burning smell, or a hiss or pop coming from beneath the floor means get everyone out, move well away and call 911 first.",
         "Stuck in a travel lane? Dial 911 before anyone else, us included.",
         "On the shoulder, keep the hazards on and leave seat belts fastened if you stay inside.",
         "If you step out, use the door away from traffic and stand behind the guardrail when there is one.",
@@ -70,7 +70,7 @@ export default {
     {
       heading: "Before your next long drive",
       paragraphs: [
-        "Holiday trips are when most drivers push range the hardest. A few habits keep you off the shoulder.",
+        "Holiday trips are when most drivers push range the hardest. A few habits keep you off the shoulder. And if a station takes your car but will not hand it back, our guide to an [EV stuck at a charger](/guides/ev-stuck-at-a-charger) covers what to try first.",
       ],
       bullets: [
         "Plan two charging stops for every one you need, so a broken station does not strand you.",

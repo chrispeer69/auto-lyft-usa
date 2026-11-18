@@ -11,7 +11,7 @@ export default {
     {
       heading: "The quick answer",
       paragraphs: [
-        "A badly damaged EV battery can catch fire again hours or days after a crash. Keep the car outdoors, in the open and well away from buildings and other cars, and never in your garage. If you see smoke or hear hissing or popping, get away from it and call 911.",
+        "A badly damaged EV battery can catch fire again hours or days after a crash. Keep the car outdoors, in the open and well away from buildings and other cars, and never in your garage. Smoke, hissing or popping from the car means get away from it and call 911.",
         "For how we load and move an electric car in the first place, see our [EV towing page](/towing/ev-towing).",
       ],
     },

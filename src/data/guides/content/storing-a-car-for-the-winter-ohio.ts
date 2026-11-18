@@ -28,7 +28,7 @@ export default {
         "Top the tank off and pour in a fuel stabilizer, following the directions on the bottle. Drive a few miles afterward so treated fuel reaches the lines and injectors. A full tank leaves less room for moisture to condense.",
         "Change the oil if it's close to due. Used oil carries acids you don't want sitting on engine parts for months.",
         "Charge the battery and keep it charged. A plug-in maintainer (a smart charger that tops up and then holds) is the easy route. No outlet? Disconnect the negative cable, and expect to reset the clock and radio presets in spring.",
-        "Air the tires to the pressure on the driver's door sticker. Tires lose air in the cold, and a car resting on soft tires for months can develop flat spots.",
+        "Air the tires to the figure printed on the door-jamb sticker. Tires lose air in the cold, and a car resting on soft tires for months can develop flat spots.",
         "Think twice about the parking brake. Pads can stick to rotors over a long, damp rest. On level ground in a garage, many owners chock the wheels and leave the brake off. On a slope, keep it set.",
         "Block the critters. Mice look for warm, quiet engine bays in winter and chew wiring. Close gaps, skip leaving food or wrappers inside, and set traps around the car rather than in it.",
         "Cover it with a breathable cover, not a plastic tarp, which traps moisture against the paint.",

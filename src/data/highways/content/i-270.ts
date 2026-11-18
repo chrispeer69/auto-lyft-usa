@@ -17,7 +17,7 @@ export default {
   firstMoves: [
     "Hazards on, and work the car to the right shoulder if it will still roll. Do not cut across lanes to reach the median side.",
     "Stuck in a lane, in a merge area or on a ramp with no shoulder? Call 911 from your seat.",
-    "Stay belted in the car with the doors shut. On a ring road with constant merging, standing outside is the riskiest place to be.",
+    "Keep your belt on and the doors closed. On a ring road with constant merging, standing outside is the riskiest place to be.",
     "If you are safely off the lanes and just want troopers to know, dial #677 for the Ohio State Highway Patrol.",
     "Then call us at (614) 714-5785 with the last exit number you saw.",
   ],
@@ -75,7 +75,7 @@ export default {
     {
       name: "The east side and back down to South High Street",
       paragraphs: [
-        "Exit 35 is I-670 and US-62 for the airport and Gahanna. Exit 37 is Hamilton Road, exit 39 is SR-16 Broad Street, exit 41 is US-40 Main Street for Whitehall and Reynoldsburg, and exit 43 is I-70 east of town. Then the loop bends back toward our side of the city: exit 46 is US-33, exit 49 is Alum Creek Drive for Obetz and Rickenbacker, and exit 52 is US-23, South High Street, toward Lockbourne and Circleville.",
+        "Exit 35 splits off to I-670 and US-62, toward the airport and Gahanna. Exit 37 is Hamilton Road, exit 39 is SR-16 Broad Street, exit 41 is US-40 Main Street for Whitehall and Reynoldsburg, and exit 43 is I-70 east of town. Then the loop bends back toward our side of the city: exit 46 is US-33, exit 49 is Alum Creek Drive for Obetz and Rickenbacker, and exit 52 is US-23, South High Street, toward Lockbourne and Circleville.",
         "Those last three exits are the southeast corner many drivers forget is part of the outerbelt. Freight traffic from the Rickenbacker side runs heavy, and calls here reach us quickly because the route home to Harrisburg Pike follows the bottom of the loop. See the [US-23 page](/highways/us-23) for the road south.",
       ],
       exits: [

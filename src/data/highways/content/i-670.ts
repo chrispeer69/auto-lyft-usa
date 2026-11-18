@@ -12,7 +12,7 @@ export default {
     "I-670 is only about ten miles long, but it packs in tight ramps, a sunken downtown trench, airport traffic and a part-time shoulder lane. Here is how to handle each.",
   intro: [
     "I-670 towing starts closest to us at the west end, where the interstate peels off I-70 west of downtown, a short run from our Harrisburg Pike yard. From there I-670 passes Franklinton and Grandview, swaps traffic with SR-315, drops below street level through the north edge of downtown, crosses I-71, and heads east past the airport to end at I-270 by Gahanna. Eastbound between I-71 and I-270 it also has the SmartLane, a shoulder that turns into a travel lane at busy times.",
-    "If your car is in a lane, if anyone is hurt, or if you are stuck in the SmartLane while it is open, call 911 first. Troopers answer #677 from cell phones when the trouble is not an emergency. After that, call Auto Lyft USA at (614) 714-5785 for the truck.",
+    "If your car is in a lane, someone is injured, or you are stuck in the SmartLane while it is open, call 911 first. Troopers answer #677 from cell phones when the trouble is not an emergency. After that, call Auto Lyft USA at (614) 714-5785 for the truck.",
   ],
   firstMoves: [
     "Flashers on. If the car still rolls, aim for the next exit ramp rather than stopping in the walled downtown section.",

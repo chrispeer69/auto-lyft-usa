@@ -44,7 +44,7 @@ export default {
     },
     {
       q: "Do you change oil or top off fluids at the roadside?",
-      a: "No. Roadside, we handle dead batteries, lockouts, spare-tire swaps and cars that ran out of gas. Oil and fluid service is shop work. If the car isn't safe to drive, we tow it to your own garage or an independent partner, which handles the service and puts a quote in writing before starting. You can also send it to a quick-lube place you already use.",
+      a: "No. Roadside, we handle dead batteries, lockouts, spare-tire swaps and cars that ran out of gas. Oil and fluid service is shop work. If the car isn't safe to drive, we haul it to your own garage or an independent partner, which handles the service and puts a quote in writing before starting. You can also send it to a quick-lube place you already use.",
     },
     {
       q: "What does the tow cost to get an oil leak fixed?",

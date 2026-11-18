@@ -77,7 +77,7 @@ export default {
     },
     {
       q: "Can you bring gas to my car near the riverfront?",
-      a: "Yes. Fuel delivery costs $75 plus the fuel at three times the pump price, along with $4 per mile from our yard. We bring enough to get you to the nearest station. If the car is deep in a garage, tell us the level so the driver can carry the fuel to you if the truck cannot fit.",
+      a: "Yes. Fuel delivery costs $75 plus the fuel at three times the pump price, along with $4 per mile from our yard. We bring enough fuel to reach the closest pump. If the car is deep in a garage, tell us the level so the driver can carry the fuel to you if the truck cannot fit.",
     },
   ],
   cities: ["columbus", "grandview-heights", "upper-arlington", "worthington"],

@@ -52,7 +52,7 @@ export default {
   },
   cta: {
     heading: "Stopped between the Gender and Diley exits?",
-    text: "Tell us which side of US-33 you are on and the last exit you passed, or the store lot you are in on Gender Road, and a quote comes back before a truck is assigned.",
+    text: "Tell us which side of US-33 you are on and the most recent exit sign behind you, or the store lot you are in on Gender Road, and a quote comes back before a truck is assigned.",
   },
   nap: {
     heading: "Canal Winchester cars and our lot",

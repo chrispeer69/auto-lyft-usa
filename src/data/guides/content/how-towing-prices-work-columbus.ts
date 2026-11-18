@@ -67,7 +67,7 @@ export default {
       heading: "Ways to keep your own bill lower",
       paragraphs: [
         "Some charges are fixed by where and when trouble strikes, but you still have a few levers. None of them should ever come before safety; if the car is in a dangerous spot, move it first and worry about the price afterwards.",
-        "The cheapest tow is often the one you do not need. A dead battery, a flat with a good spare, an empty tank or a lockout can usually be handled where the car sits for a flat $75 service call plus en-route miles, which is a fraction of any of the totals above. Describe the symptoms honestly to the dispatcher so the right service is sent.",
+        "The cheapest tow is often the one you do not need. A dead battery, a flat with a good spare, an empty tank or a lockout is usually fixed on the spot for a flat $75 service call plus en-route miles, which is a fraction of any of the totals above. Describe the symptoms honestly to the dispatcher so the right service is sent.",
       ],
       bullets: [
         "Choose the destination carefully. Loaded miles are the biggest variable line, so a capable shop five miles away costs less to reach than a favorite one twenty miles across town.",

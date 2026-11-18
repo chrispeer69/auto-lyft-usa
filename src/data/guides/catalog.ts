@@ -1,6 +1,7 @@
 /* Driver guides (the blog). Copy for each lives in ./content/<slug>.ts (type Guide). */
 export interface GuideEntry { slug: string; topic: string }
 export const GUIDES: GuideEntry[] = [
+  { slug: "ev-stuck-at-a-charger", topic: "[EV weekly] EV stuck at a charger: cable won't release, car won't wake or shift after a session, what to try in order, what not to do, when it becomes a tow" },
   { slug: "storing-a-car-for-the-winter-ohio", topic: "Putting a car away for a Columbus winter: wash off salt, full tank and stabilizer, battery maintainer, tire pressure, parking brake, rodents, insurance talk, spring wake-up, flatbed for a car that won't roll" },
   { slug: "black-ice-columbus-commute", topic: "Black ice on the Columbus commute in late fall: melt-and-refreeze mornings, where it hides on the southwest side, how to feel it, steering out of a skid, crash steps and accident-tow costs" },
   { slug: "ev-out-of-charge-on-i-71-south", topic: "[EV weekly] EV out of charge on I-71 south of Columbus: what zero means, why a jump adds no range, shoulder safety, getting carried to a working charger" },

@@ -11,7 +11,7 @@ export default {
     {
       heading: "A child or pet in the car? Call 911 first",
       paragraphs: [
-        "This comes first because time matters. A closed car parked in the sun heats up fast, even on a mild day, and young children and pets cannot cool themselves the way adults can. If a child is locked in a car, call 911 right away, before calling anyone else. Emergency responders can get into a car quickly and bring medical help with them.",
+        "This comes first because time matters. A closed car parked in the sun heats up fast, even on a mild day, and young children and pets cannot cool themselves the way adults can. If a child is locked in a car, dial 911 immediately, ahead of any other call. Emergency responders can get into a car quickly and bring medical help with them.",
         "While you wait, keep talking to the child, try to get them to press the unlock button if they are old enough, and shade the windshield if you can. If the child seems distressed, overheated or unresponsive, tell the dispatcher immediately and follow their instructions. A window can be replaced. For a pet in the heat, the same urgency applies; call 911 or local animal control if you cannot get in fast.",
       ],
     },

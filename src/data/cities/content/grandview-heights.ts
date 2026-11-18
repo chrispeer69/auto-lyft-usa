@@ -55,7 +55,7 @@ export default {
   },
   cta: {
     heading: "Car stuck on a Yard garage deck or a Grandview Avenue curb?",
-    text: "Give us the garage name and level, or the nearest storefront sign, and the dispatcher will tell you which truck can reach it.",
+    text: "Give us the garage name and which floor you are on, or the closest storefront sign, and the dispatcher will tell you which truck can reach it.",
   },
   nap: {
     heading: "A short haul from the Yard to our lot",
