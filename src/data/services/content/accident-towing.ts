@@ -36,7 +36,7 @@ export default {
       bullets: [
         "Make sure everyone is okay. Dial 911 for any injury, or when the wrecked cars block traffic.",
         "If the cars can move and no one is injured, it is usually safest to steer them out of the travel lanes and onto the shoulder or a side street.",
-        "Exchange names, phone numbers, insurance details and plate numbers with the other driver.",
+        "Swap names, phone numbers, insurance information and plates with the other driver.",
         "Take your own photos of both cars, the scene, road signs and any skid marks.",
         "Ask the officer for the report number so you can request the crash report later.",
         "Call your insurer to open a claim, then call us at (614) 714-5785 to move the car.",

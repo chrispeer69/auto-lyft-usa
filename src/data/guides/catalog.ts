@@ -1,6 +1,7 @@
 /* Driver guides (the blog). Copy for each lives in ./content/<slug>.ts (type Guide). */
 export interface GuideEntry { slug: string; topic: string }
 export const GUIDES: GuideEntry[] = [
+  { slug: "ev-dead-12-volt-battery-south-columbus", topic: "[EV weekly] EV locked and dark with range left: the small 12-volt battery, getting inside, boosting only at maker-approved points, when it becomes a dolly-and-flatbed tow, winter habits" },
   { slug: "dead-key-fob-push-button-car-wont-start", topic: "Cold mornings and keyless cars: weak fob coin cell vs. weak 12V battery, reading the dash, the hidden metal key, backup fob spots for push-button start, swapping the cell, when it is a jump, lockout or tow" },
   { slug: "diesel-gelling-and-fuel-line-freeze", topic: "Cold nights and fuel: diesel wax gelling and gas-line water freezing in a Columbus late fall, warning signs, an anti-gel and half-tank prevention list, what not to do, when it needs a warm shop tow vs. fuel delivery" },
   { slug: "ev-stuck-at-a-charger", topic: "[EV weekly] EV stuck at a charger: cable won't release, car won't wake or shift after a session, what to try in order, what not to do, when it becomes a tow" },

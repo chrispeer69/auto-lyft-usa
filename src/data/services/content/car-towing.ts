@@ -16,7 +16,7 @@ export default {
   situations: [
     { title: "No-start in the driveway", text: "A car that clicks, cranks without firing or won't shift out of park is a common call. If it turns out to be only the battery, a jump start may save you the tow." },
     { title: "A warning light you don't trust", text: "A flashing check-engine light, low oil pressure or a temperature gauge in the red means it is time to stop driving and have the car carried instead." },
-    { title: "Brakes, steering or suspension trouble", text: "A spongy pedal, a clunk over bumps or a wheel that sits at an odd angle makes the car unsafe on Broad Street or anywhere else." },
+    { title: "Brakes, steering or suspension trouble", text: "A spongy pedal, a clunk over bumps or a wheel leaning at a strange angle makes the car unsafe on Broad Street or anywhere else." },
     { title: "Taking it to a specific shop", text: "Your mechanic in Clintonville, the dealer on Sawmill Road or a transmission specialist across town: you name the place and we deliver to that door." },
     { title: "Moving a car that isn't registered", text: "A project car, an inherited vehicle with expired tags or one you just bought from a private seller can't be driven legally, but it can ride on the deck." },
     { title: "Pickups and family haulers", text: "Half-ton trucks, three-row SUVs and minivans fit our carriers. Heavier work trucks go to our [medium-duty towing](/towing/medium-duty-towing) partners." },

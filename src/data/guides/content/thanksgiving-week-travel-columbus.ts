@@ -29,7 +29,7 @@ export default {
       ],
       bullets: [
         "Tires: set the pressure cold, to the number on the driver's door sticker, not the one on the sidewall. Look for bulges, cracks and nails. Push a penny into the tread; if you can see the top of Lincoln's head, the tread is too thin for wet highway miles.",
-        "Spare: find it, check its pressure and make sure the jack and lug wrench are in the car. Many newer cars carry only a sealant kit, so learn which one you have.",
+        "Spare: find it, check its pressure and confirm the jack and wrench are actually on board. Many newer cars carry only a sealant kit, so learn which one you have.",
         "Battery: if it has seen several winters or starts sound sluggish, get it load-tested at a parts store or shop before the trip. Our [guide to batteries in the cold](/guides/car-battery-cold-weather) covers the warning signs.",
         "Fluids: oil level, coolant in the reservoir between the marks, and a full washer tank with winter fluid that won't freeze.",
         "Wipers and lights: replace streaky blades, then switch on every light and have someone confirm the headlights, brake lights and turn signals all work.",
@@ -61,7 +61,7 @@ export default {
       heading: "Getting the car home to Columbus",
       paragraphs: [
         "If you break down inside Central Ohio, we tow it where you want it, whether that's your driveway, your own mechanic or a [tow to a repair shop](/towing/repair-shop-towing), such as a partner shop that can diagnose it. If you break down farther out, you have two choices. A local shop near the trip can fix it while you wait, or the car can ride back on one of our flatbeds while you finish the holiday.",
-        "Around Columbus, a tow is priced from our posted card: hook-up is $125, each mile with your car on the truck is $7, and the drive from our yard out to you is $4 a mile. A breakdown on an interstate adds $75, a Saturday or Sunday adds $50, and the late-night stretch, 10 p.m. until 6 a.m., is $150 extra. All-wheel-drive cars and EVs ride on a [flatbed](/towing/flatbed-towing). For a long run home, send the pickup and drop-off addresses through the [estimate page](/estimate) or call, and the number is settled before the truck rolls. The [rates page](/rates) lists every line.",
+        "Around Columbus, a tow is priced from our posted card: hook-up is $125, every loaded mile is $7, and the drive from our yard out to you is $4 a mile. A breakdown on an interstate adds $75, a Saturday or Sunday adds $50, and the late-night stretch, 10 p.m. until 6 a.m., is $150 extra. All-wheel-drive cars and EVs ride on a [flatbed](/towing/flatbed-towing). For a long run home, send the pickup and drop-off addresses through the [estimate page](/estimate) or call, and the number is settled before the truck rolls. The [rates page](/rates) lists every line.",
         "Coming home through [Grove City](/areas/grove-city-oh) or the [Hilltop](/areas/columbus-oh/hilltop)? Those are close to our Harrisburg Pike yard, so the drive-out charge on a local call stays small.",
       ],
     },

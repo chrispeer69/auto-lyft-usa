@@ -75,7 +75,7 @@
     "/contact": "2026-11-08",
     "/estimate": "2026-11-08",
     "/estimate/ev": "2026-11-06",
-    "/guides": "2026-11-23",
+    "/guides": "2026-11-25",
     "/guides/diesel-gelling-and-fuel-line-freeze": "2026-11-19",
     "/guides/black-ice-columbus-commute": "2026-11-12",
     "/guides/first-snow-columbus-driving": "2026-11-09",
@@ -162,7 +162,7 @@
     "/towing/dealer-auction-towing": "2026-11-08",
     "/towing/emergency-towing": "2026-11-11",
     "/towing/equipment-hauling": "2026-11-08",
-    "/towing/ev-towing": "2026-11-18",
+    "/towing/ev-towing": "2026-11-25",
     "/towing/flat-tire-change": "2026-11-11",
     "/towing/flatbed-towing": "2026-11-08",
     "/towing/fleet-towing": "2026-11-08",
@@ -186,7 +186,8 @@
     "/vip-program": "2026-11-08",
     "/guides/ev-out-of-charge-on-i-71-south": "2026-11-18",
     "/guides/storing-a-car-for-the-winter-ohio": "2026-11-16",
-    "/guides/ev-stuck-at-a-charger": "2026-11-18",
-    "/guides/dead-key-fob-push-button-car-wont-start": "2026-11-23"
+    "/guides/ev-stuck-at-a-charger": "2026-11-25",
+    "/guides/dead-key-fob-push-button-car-wont-start": "2026-11-23",
+    "/guides/ev-dead-12-volt-battery-south-columbus": "2026-11-25"
   }
 }

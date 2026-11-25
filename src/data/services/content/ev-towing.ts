@@ -62,6 +62,7 @@ export default {
         "Each week our dispatchers add a short guide for electric car drivers. The newest are listed first.",
       ],
       bullets: [
+        "[Your EV Is Locked and Dark: Dealing With a Flat 12-Volt Battery](/guides/ev-dead-12-volt-battery-south-columbus): why a car with range can still play dead, and how to wake it or get it moved.",
         "[Stuck at the Plug: When Your EV Won't Unlatch, Wake or Leave a Charger](/guides/ev-stuck-at-a-charger): what to try when the cable stays locked or the car won't start after a session.",
         "[Your EV Hit Zero on I-71 South](/guides/ev-out-of-charge-on-i-71-south): what an empty pack means on the interstate, and how the car reaches a working plug.",
       ],

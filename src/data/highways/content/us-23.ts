@@ -63,7 +63,7 @@ export default {
     {
       name: "Lewis Center north to the Delaware freeway",
       paragraphs: [
-        "Through Lewis Center, US-23 is a four-lane road with a grass median and at-grade intersections, lined with plazas, restaurants and dealerships. Through Delaware it becomes a freeway and crosses US-36. This is the far end of the road from our yard, and the dispatcher will give you an honest estimate rather than a rosy one.",
+        "Through Lewis Center, US-23 is a four-lane road with a grass median and at-grade intersections, lined with plazas, restaurants and dealerships. Through Delaware it becomes a freeway and crosses US-36. This is the far end of the road from our yard, so expect a straight estimate from the dispatcher, not an optimistic one.",
         "On the Delaware freeway, treat a stop like any interstate stop. Our [Lewis Center](/areas/lewis-center-oh) and [Delaware](/areas/delaware-oh) pages cover the side streets and lots.",
       ],
       exits: [

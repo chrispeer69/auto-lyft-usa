@@ -32,7 +32,7 @@ export default {
         "There is no single right answer. Here is how we think about it with callers:",
       ],
       bullets: [
-        "Call right away if the car is in a travel lane, blocking a garage exit or anywhere unsafe.",
+        "Call right away if the car is sitting in a lane of traffic, blocking a garage exit or anywhere unsafe.",
         "Call right away if you are alone, have small children with you or do not feel safe.",
         "Consider waiting an hour if the car is safely parked and the problem is a dead battery or a flat. The streets clear and the driver reaches you sooner.",
         "Consider leaving the car until morning if the garage allows it and you have another way home. It avoids the overnight fee and the crowd.",

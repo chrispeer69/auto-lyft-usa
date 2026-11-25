@@ -47,7 +47,7 @@ export default {
       heading: "The cable came out, but the car won't go",
       paragraphs: [
         "Sometimes the plug lets go and the real problem shows up next. The screen stays dark, the car says it cannot start, or the shifter refuses to leave Park.",
-        "A dark car after a full session usually points at the small 12-volt battery, not the big pack. That small battery runs the locks, the screen and the switches that connect the main battery. A low-voltage boost at the points your manual approves can sometimes wake it; our [jump start service](/towing/jump-start) handles that where your maker allows it.",
+        "A dark car after a full session usually points at the small 12-volt battery, not the big pack. That small battery runs the locks, the screen and the switches that connect the main battery. A low-voltage boost at the points your manual approves can sometimes wake it; our [jump start service](/towing/jump-start) handles that where your maker allows it. If the car is dark and locked away from any charger, our walk-through on a [flat 12-volt battery in an EV](/guides/ev-dead-12-volt-battery-south-columbus) goes further.",
         "A fault message that will not clear after a restart is different. Write down exactly what the screen says, take a photo of it, and tell the dispatcher. That message helps the shop, and it helps us decide how to load the car.",
         "If the shifter won't move, check that nothing is still in the port and the port door shows as closed. Then try one full shutdown and restart, following your manual.",
       ],
@@ -56,7 +56,7 @@ export default {
       heading: "When it becomes a tow",
       paragraphs: [
         "Call us when the car won't wake after a boost, when a fault keeps it from driving, or when the station operator tells you the car has to leave the stall and it can't. We cannot haul a car with a cable still in the port, so get the plug out first, with the network's help if needed.",
-        "Every EV we carry travels with all four wheels clear of the road. That means the [flatbed](/towing/flatbed-towing) deck, or a [wheel-lift](/towing/wheel-lift-towing) with dollies under the other axle when your owner's manual allows it. Longer trips ride the deck. If the car is locked in Park and asleep, the operator can set rolling skates under the stuck wheels so nothing drags.",
+        "No electric car leaves with a tire touching the pavement. It rides the [flatbed](/towing/flatbed-towing) deck, or a [wheel-lift](/towing/wheel-lift-towing) holds one axle while dollies carry the other, if your owner's manual allows that. Longer trips ride the deck. If the car is locked in Park and asleep, the operator can set rolling skates under the stuck wheels so nothing drags.",
         "Give the dispatcher the year, make and model, which station you are at, and what the screen says. The dispatcher gives a live estimate of when the truck will get there.",
       ],
     },

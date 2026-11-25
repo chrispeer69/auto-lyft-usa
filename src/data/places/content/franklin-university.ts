@@ -51,7 +51,7 @@ export default {
     {
       heading: "What it costs",
       paragraphs: [
-        "We price from our [published rates](/rates). Roadside visits are $75 flat plus $4 per mile from our yard. A tow is $125 to hook up, $7 per loaded mile and $4 per mile en route. After 10 PM and before 6 AM, the job costs $150 more. Weekends cost $50 more. Sales tax follows the county of the pickup. A tow from Grant Avenue to a shop 15 miles away is $125 plus $105 in loaded miles, plus the short en-route leg downtown and tax.",
+        "We price from our [published rates](/rates). Roadside visits are $75 flat plus $4 per mile from our yard; towing runs $125 to hook up, $7 per loaded mile and $4 per mile en route. After 10 PM and before 6 AM, the job costs $150 more. Weekends cost $50 more. Sales tax follows the county of the pickup. A tow from Grant Avenue to a shop 15 miles away is $125 plus $105 in loaded miles, plus the short en-route leg downtown and tax.",
       ],
     },
   ],

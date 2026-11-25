@@ -48,7 +48,7 @@ export default {
     {
       heading: "Living with a temporary spare",
       paragraphs: [
-        "The small spare, often called a donut, is meant to get you to a tire shop, not to replace the tire for weeks. Most are rated for about 50 mph, and many carmakers suggest limiting the distance to somewhere in the range of 50 to 70 miles. The exact numbers are printed on the spare's sidewall or a label nearby.",
+        "The small spare, often called a donut, is a short-term fix to reach a tire shop, not something to ride on for weeks. Most are rated for about 50 mph, and many carmakers suggest limiting the distance to somewhere in the range of 50 to 70 miles. The exact numbers are printed on the spare's sidewall or a label nearby.",
         "Treat the drive to the tire shop as its own short trip. Leave the interstate if you can, take surface roads at moderate speed, and go straight there rather than finishing the day's errands first. If the original tire was only punctured in the tread, the shop may be able to patch it from the inside; a tire driven flat for any distance usually has internal damage and needs replacing.",
       ],
       bullets: [

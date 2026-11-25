@@ -39,7 +39,7 @@ export default {
         "Smoke, a burning smell, or a hiss or pop coming from beneath the floor means get everyone out, move well away and call 911 first.",
         "Stuck in a travel lane? Dial 911 before anyone else, us included.",
         "On the shoulder, keep the hazards on and leave seat belts fastened if you stay inside.",
-        "If you step out, use the door away from traffic and stand behind the guardrail when there is one.",
+        "If you must get out, exit on the side facing away from the lanes and wait behind the guardrail if there is one.",
         "Note the nearest mile marker, exit sign or overpass. That is how the driver finds you.",
         "Keep your key card or phone key on you, and keep your phone charged with the car's USB port while it still works.",
       ],

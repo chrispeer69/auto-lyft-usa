@@ -12,7 +12,7 @@ export default {
     "The south end of I-71, from the Harrisburg and Orient exits up through Stringtown Road, is the closest freeway to our yard. We cover the rest of the road too.",
   intro: [
     "I-71 towing is the call we get most from the south side. The interstate runs up from Madison County past Harrisburg and Grove City, crosses I-270, ducks through the downtown overlap with I-70, then heads north past Linden, Clintonville and the north outerbelt to Polaris and Delaware County. Our yard on Harrisburg Pike sits a short hop from the south-end exits, and our trucks are parked around the metro, so the nearest one takes the job wherever you are on the road.",
-    "Before anything else: if anyone is hurt, the car is stopped in a live lane, or you do not feel safe where you stopped, dial 911. Troopers also take #677 from any cell phone when the problem is not an emergency. When you are out of danger, call Auto Lyft USA at (614) 714-5785. The dispatcher prices the job before a truck is assigned and gives you a live arrival estimate.",
+    "Before anything else: if anyone is hurt, the car has stopped where traffic is still moving past it, or you do not feel safe where you stopped, dial 911. Troopers also take #677 from any cell phone when the problem is not an emergency. When you are out of danger, call Auto Lyft USA at (614) 714-5785. The dispatcher prices the job before a truck is assigned and gives you a live arrival estimate.",
   ],
   firstMoves: [
     "Steer for the right shoulder, or the widest flat spot you can reach, and switch on the hazard flashers.",

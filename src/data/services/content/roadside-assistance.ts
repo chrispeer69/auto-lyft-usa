@@ -16,7 +16,7 @@ export default {
   situations: [
     { title: "Car won't start", text: "Clicking, a slow crank or total silence usually points to the battery. A [jump start](/towing/jump-start) and a quick test tell you whether it will hold a charge or needs replacing." },
     { title: "Locked out", text: "Keys in the ignition, on the seat or in a trunk that latched shut. The driver uses proper entry tools to open the door without damage." },
-    { title: "Flat or shredded tire", text: "If you have a usable spare, we mount it, tighten the lug nuts properly and stow the damaged tire. Tire pressure warnings on a cold morning are common here." },
+    { title: "Flat or shredded tire", text: "If your spare is usable, we put it on, tighten the lug nuts properly and stow the damaged tire. Tire pressure warnings on a cold morning are common here." },
     { title: "Ran out of gas", text: "A few gallons go in your tank, which is plenty to reach a pump. Running dry is common on long stretches like US-33 toward Lancaster or I-71 north of Polaris." },
     { title: "Slid off the edge", text: "A car with two wheels in a snowy ditch or a soft lawn can often be pulled back to pavement with a winch, no tow needed." },
     { title: "Fix fails, car needs to go", text: "If the problem is bigger than a roadside repair, the same driver can load your car on the flatbed and take it to your shop or home." },

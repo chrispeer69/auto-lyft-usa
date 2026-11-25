@@ -90,7 +90,7 @@ export default {
     },
     {
       q: "How much does an accident tow cost with Auto Lyft USA?",
-      a: "Accident tows are billed from the same published card as any other tow. That means $4 a mile for the drive out from our yard, then $125 to hook up, then $7 for each loaded mile, along with the posted surcharges for highway, overnight or weekend calls. Storage is $45 a day if the car stays with us. The dispatcher gives you the full figure before the truck is sent.",
+      a: "Accident tows are billed from the same published card as any other tow. That means $4 a mile for the truck's trip from our yard to you, then $125 to hook up, then $7 for each loaded mile, along with the posted surcharges for highway, overnight or weekend calls. Storage is $45 a day if the car stays with us. The dispatcher gives you the full figure before the truck is sent.",
     },
     {
       q: "Is it safe to drive my car home after a minor crash?",

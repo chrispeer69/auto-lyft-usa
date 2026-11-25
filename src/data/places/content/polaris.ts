@@ -51,7 +51,7 @@ export default {
     {
       heading: "Prices around Polaris",
       paragraphs: [
-        "We charge our standard published rates here. Roadside help is $75 flat. A tow starts with a $125 hook-up, then each mile with your car on the deck is $7. Both add $4 per mile for the drive out from our yard on the southwest side, and weekends carry a $50 surcharge. The full list is on our [rates page](/rates).",
+        "We charge our standard published rates here. Roadside help is $75 flat. A tow starts with a $125 hook-up, then each mile with your car on the deck is $7. Both add $4 per mile for the run from our southwest-side yard to you, and weekends carry a $50 surcharge. The full list is on our [rates page](/rates).",
         "One local wrinkle: the Polaris area sits near the line between Franklin and Delaware counties, and Ohio sales tax on the invoice is based on the county where the car is picked up. The dispatcher will tell you which applies.",
       ],
     },

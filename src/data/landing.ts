@@ -102,7 +102,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: "What if I don't have a spare?", a: "Then the car rides the flatbed to a tire shop, or home if you prefer." },
       { q: "Can you fix the tire on the spot?", a: "We don't patch tires roadside. We mount your spare so you can get to a shop." },
-      { q: "Is it safe to wait on I-270?", a: "Stay buckled in with hazards on unless you can get well away from traffic. We'll call when we're close." },
+      { q: "Is it safe to wait on I-270?", a: "Stay buckled in with hazards on unless there's a safe spot well clear of the lanes. We'll call when we're close." },
     ],
   },
   {
@@ -113,7 +113,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: "Can you charge my EV on the spot?", a: "No. We tow it to the nearest fast charger or wherever you choose." },
       { q: "Do I need to do anything first?", a: "If the car powers on, look up how to enter tow or transport mode; the driver will walk you through it." },
-      { q: "Is a flatbed really necessary?", a: "Not always. Every tire has to be off the road, and your owner's manual decides how: a carrier deck, or a wheel-lift with dollies under the other axle where the maker allows it. Long trips ride the deck." },
+      { q: "Is a flatbed really necessary?", a: "Not always. Every tire has to be off the road, and your owner's manual decides how: a carrier deck, or a wheel-lift on one axle and dollies under the rest, if the maker allows it. Long trips ride the deck." },
     ],
   },
   {

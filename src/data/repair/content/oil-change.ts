@@ -48,7 +48,7 @@ export default {
     },
     {
       q: "What does the tow cost to get an oil leak fixed?",
-      a: "The towing charge comes from our published card: a hook-up fee, a per-mile charge for the drive out from our yard and a rate for each loaded mile, plus any late-night, weekend or highway surcharge. See [rates](/rates) for the actual numbers. The shop sets its own price for the leak repair and will give you a written estimate before doing it.",
+      a: "The towing charge comes from our published card: a hook-up fee, a per-mile charge for reaching you from our yard and a per-mile charge once your car is loaded, plus any late-night, weekend or highway surcharge. See [rates](/rates) for the actual numbers. The shop sets its own price for the leak repair and will give you a written estimate before doing it.",
     },
     {
       q: "Is a little oil on the driveway a reason to tow?",

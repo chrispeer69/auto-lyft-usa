@@ -31,7 +31,7 @@ export default {
       heading: "Flat tires and nails from the office parks",
       paragraphs: [
         "A slow leak that started on the drive in often shows up as a flat at the end of the workday. If you have a usable spare and the lug nuts aren't seized, a [flat tire change](/towing/flat-tire-change) is one of our $75 roadside calls. The driver will check the spare's air pressure before mounting it.",
-        "A lot of newer cars ship with no spare at all, just an inflator kit. If the kit won't seal the puncture, the car can ride on the flatbed to a tire shop. Tell the dispatcher which you have, and whether there's a locking lug nut key in the glovebox or trunk.",
+        "Instead of a spare, many late-model cars carry a small pump and sealant. If the kit won't seal the puncture, the car can ride on the flatbed to a tire shop. Tell the dispatcher which you have, and whether there's a locking lug nut key in the glovebox or trunk.",
       ],
       bullets: [
         "Have the wheel lock key ready if your car uses one.",

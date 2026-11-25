@@ -73,7 +73,7 @@ export default {
     },
     {
       q: "Broke down on the highway after dark: stay in the car or get out?",
-      a: "Usually yes. Get off the travel lanes, hazards on, belt fastened, unless the car is smoking or on fire or you can get well away from traffic behind a barrier. Call for help with your exact location.",
+      a: "Usually yes. Get off the travel lanes, hazards on, belt fastened, unless the car is smoking or on fire or there is a barrier you can stand behind, well clear of the lanes. Call for help with your exact location.",
     },
     {
       q: "Does a tow cost more at night?",
