@@ -30,5 +30,6 @@ export const GUIDES: GuideEntry[] = [
   { slug: "deer-collisions-ohio-fall", topic: "Deer season on Ohio roads: when and where collisions peak, what to do after hitting a deer" },
   { slug: "flat-tire-on-the-interstate", topic: "Flat tire on I-270 or I-71: whether to change it yourself, how to wait safely, spare-tire limits" },
   { slug: "keys-locked-in-car", topic: "Keys locked in the car: what to try, what not to do, how a lockout service opens a door without damage, kids/pets inside" },
+  { slug: "cold-start-noises-and-warning-lights", topic: "Late-fall cold starts in Columbus: belt squeal, rotor rust scrape, cold tick and tailpipe vapor that fade vs. noises that do not, red/amber dash lights, roadside steps, tow-or-drive call, tow and jump costs" },
 ];
 export const guidePath = (slug: string) => `/guides/${slug}`;
