@@ -25,7 +25,7 @@ export default {
       paragraphs: ["Work down this list the day you park it. It takes an afternoon."],
       bullets: [
         "Wash it, underside included. Salt and road grime left on the body keep eating paint and metal all winter. Let it dry fully before covering it.",
-        "Top the tank off and pour in a fuel stabilizer, following the directions on the bottle. Drive a few miles afterward so treated fuel reaches the lines and injectors. A full tank leaves less room for moisture to condense.",
+        "Top the tank off and pour in a fuel stabilizer, following the directions on the bottle. Drive a few miles afterward so treated fuel reaches the lines and injectors. With the tank full, there is little air space left for condensation to form.",
         "Change the oil if it's close to due. Used oil carries acids you don't want sitting on engine parts for months.",
         "Charge the battery and keep it charged. A plug-in maintainer (a smart charger that tops up and then holds) is the easy route. No outlet? Disconnect the negative cable, and expect to reset the clock and radio presets in spring.",
         "Air the tires to the figure printed on the door-jamb sticker. Tires lose air in the cold, and a car resting on soft tires for months can develop flat spots.",
